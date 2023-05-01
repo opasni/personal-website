@@ -1,0 +1,20 @@
+{
+    "header": {
+        "switch-language": "Sprache wechseln"
+    },
+    "about": {
+        "title": "Über mich"
+    },
+    "experience": {
+        "title": "Erfahrungen"
+    },
+    "skills": {
+        "title": "Fähigkeiten"
+    },
+    "education": {
+        "title": "Ausbildung"
+    },
+    "contact": {
+        "title": "Kontakt"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "header": {
+        "switch-language": "Spremeni jezik"
+    },
+    "about": {
+        "title": "O Meni"
+    },
+    "experience": {
+        "title": "Izkušnje"
+    },
+    "skills": {
+        "title": "Spretnosti"
+    },
+    "education": {
+        "title": "Izobrazba"
+    },
+    "contact": {
+        "title": "Stik"
+    }
+}

@@ -1,0 +1,100 @@
+<!-- TOGGLE MOBILE BUTTON ICON-->
+<button
+	class="btn menu-icon"
+	id="sidebar-toggle-button"
+	(click)="toggleMenu()"
+	[ngClass]="{ 'button-hidden': isMenuOpen }"
+>
+	<i class="bi bi-list"> </i>
+</button>
+<nav id="sidebar" [ngClass]="{ 'mobile-sidebar-open': isMenuOpen }" class="language-icon">
+	<!-- CLOSE MOBILE MENU BUTTON-->
+	<button class="btn text-white menu-icon" id="close-mobile-menu-button" *ngIf="isMenuOpen" (click)="toggleMenu()">
+		<i class="bi bi-chevron-left"> </i>
+	</button>
+	<div class="sidebar-content">
+		<ul class="nav d-flex flex-column flex-nowrap">
+			<!-- PROFILE IMAGE-->
+			<div class="logo-image text-center"></div>
+			<!-- SQUAD TOOL -->
+			<div>
+				<li [routerLinkActive]="['active']" class="nav-item">
+					<a class="nav-link" (click)="toggleMenu()" [routerLink]="['about']">
+						<i class="bi bi-person-circle"> </i>
+						{{ 'about.title' | translate }}
+					</a>
+				</li>
+				<li [routerLinkActive]="['active']" class="nav-item">
+					<a class="nav-link" (click)="toggleMenu()" [routerLink]="['experience']">
+						<i class="bi bi-lightbulb-fill"></i>
+						{{ 'experience.title' | translate }}
+					</a>
+				</li>
+				<li [routerLinkActive]="['active']" class="nav-item">
+					<a class="nav-link" (click)="toggleMenu()" [routerLink]="['skills']">
+						<i class="bi bi-person-fill-gear"> </i>
+						{{ 'skills.title' | translate }}
+					</a>
+				</li>
+				<li [routerLinkActive]="['active']" class="nav-item">
+					<a class="nav-link" (click)="toggleMenu()" [routerLink]="['education']">
+						<i class="bi bi-mortarboard-fill"> </i>
+						{{ 'education.title' | translate }}
+					</a>
+				</li>
+				<li [routerLinkActive]="['active']" class="nav-item">
+					<a class="nav-link" (click)="toggleMenu()" [routerLink]="['contact']">
+						<i class="bi bi-send-fill"> </i>
+						{{ 'contact.title' | translate }}
+					</a>
+				</li>
+			</div>
+			<div class="bottom-area">
+				<!-- LANGUAGE SWITCHING -->
+
+				<li class="nav-item" *ngIf="selectedLanguage$ | async as selectedLanguage">
+					<a
+						role="button"
+						class="nav-link pe-auto"
+						(click)="changeLanguage(selectedLanguage.id)"
+					>
+						<img class="language-icon" [src]="selectedLanguage.meta" [alt]="selectedLanguage.name + ' flag'" />
+						{{ 'header.switch-language' | translate }}
+					</a>
+				</li>
+				<!-- USER INFO -->
+				<a
+					*ngIf="userData$ | async as userData"
+					class="d-flex border border-secondary rounded p-2 mt-3 nav-link"
+				>
+					<div class="profile-image-container me-3">
+						<!-- TODO: fix userImagePath-->
+						<img appHoverImage="assets/profile_image_hover.jpeg" class="rounded" src="assets/profile_image.jpg"/>
+					</div>
+					<div class="w-100">
+						<div>
+							<h4 class="text-white">{{ userData.firstName }} {{ userData.lastName }}</h4>
+                            <div class="footer-social-icons">
+                                <a href="https://www.linkedin.com/in/%C4%8Drt-harej-1b704997/" target="_blank">
+                                    <div class="footer-social-icon">
+                                        <i class="bi bi-linkedin"></i>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/opasni" target="_blank">
+                                    <div class="footer-social-icon">
+                                        <i class="bi bi-github"></i>
+                                    </div>
+                                </a>
+                                <a href="https://www.instagram.com/crtharej" target="_blank">
+                                    <div class="footer-social-icon">
+                                        <i class="bi bi-instagram"></i>
+                                    </div>
+                                </a>
+                            </div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</ul>
+	</div>
+</nav>
