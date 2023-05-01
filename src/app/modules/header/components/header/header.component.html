@@ -5,7 +5,7 @@
 	[ngClass]="{ 'button-hidden': isMenuOpen }">
 	<i class="bi bi-list"> </i>
 </button>
-<nav [ngClass]="{ 'mobile-sidebar-open': isMenuOpen }" class="sidebar background-gradient language-icon">
+<nav id="sidebar" [ngClass]="{ 'mobile-sidebar-open': isMenuOpen }" class="sidebar background-gradient language-icon">
 	<!-- CLOSE MOBILE MENU BUTTON-->
 	<button class="btn text-white menu-icon close-mobile-menu-button" *ngIf="isMenuOpen" (click)="toggleMenu()">
 		<i class="bi bi-chevron-left"> </i>
@@ -72,19 +72,19 @@
 					<div class="w-100">
 						<div>
 							<h4 class="text-white">{{ userData.firstName }} {{ userData.lastName }}</h4>
-                            <div class="footer-social-icons">
+                            <div class="social-icons">
                                 <a href="https://www.linkedin.com/in/%C4%8Drt-harej-1b704997/" target="_blank">
-                                    <div class="footer-social-icon">
+                                    <div class="social-icon social-icon-color">
                                         <i class="bi bi-linkedin"></i>
                                     </div>
                                 </a>
                                 <a href="https://github.com/opasni" target="_blank">
-                                    <div class="footer-social-icon">
+                                    <div class="social-icon social-icon-color">
                                         <i class="bi bi-github"></i>
                                     </div>
                                 </a>
                                 <a href="https://www.instagram.com/crtharej" target="_blank">
-                                    <div class="footer-social-icon">
+                                    <div class="social-icon social-icon-color">
                                         <i class="bi bi-instagram"></i>
                                     </div>
                                 </a>
