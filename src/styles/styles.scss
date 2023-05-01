@@ -24,3 +24,11 @@
 	padding: 0;
 	font-family: 'Inter';
 }
+
+.background-gradient {
+    // background: -webkit-linear-gradient(to bottom, $primary-color, $dark-background 20%);
+    // background: -moz-linear-gradient(to bottom, $primary-color, $dark-background 20%);
+    // background: linear-gradient(to bottom, $primary-color 0%, $dark-background 20%);
+    background-color: $dark-background;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}

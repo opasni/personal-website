@@ -28,7 +28,7 @@ $secondary: $secondary-color;
 	display: none;
 }
 
-#sidebar {
+.sidebar {
 	height: 100% !important;
 	top: 0;
 	width: 0;
@@ -39,7 +39,6 @@ $secondary: $secondary-color;
 	top: 0;
 	overflow-x: hidden;
 	transition: 0.2s; // duration of transition effect to slide in or slide down the overlay
-	background-color: $dark-background;
 	font-size: 0.9em;
 
 	.sidebar-content {
@@ -174,30 +173,30 @@ $secondary: $secondary-color;
             margin-right: 0;
         }
     }
-
-}
-@media (max-height: 870px) {
-	.logo-image {
-		height: 20px !important;
-		margin-top: 0 !important;
-		background-image: url('/assets/images/logo.png') !important;
-	}
 }
 
 @media (min-width: $breakpoint-x-large) {
-	#sidebar-toggle-button {
+	.sidebar-toggle-button {
 		display: none;
 	}
 
-	#close-mobile-menu-button {
+	.close-mobile-menu-button {
 		display: none;
 	}
 
-	#sidebar {
+	.sidebar {
 		width: $menu-width !important;
 		height: 100vh!important;
 		display: block !important;
 		position: sticky !important;
+	}
+}
+
+@media (max-height: $breakpoint-medium) {
+	.logo-image {
+		height: 20px !important;
+		margin-top: 0 !important;
+		background-image: url('/assets/images/logo.png') !important;
 	}
 }
 
