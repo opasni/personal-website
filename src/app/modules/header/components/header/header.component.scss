@@ -34,6 +34,7 @@
 	overflow-x: hidden;
 	transition: 0.2s; // duration of transition effect to slide in or slide down the overlay
 	font-size: 0.9em;
+	box-shadow: 0px 2px 4px var(--pop-color);
 
 	.sidebar-content {
 		height: calc(100vh - 67px);
