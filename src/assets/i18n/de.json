@@ -1,6 +1,7 @@
 {
     "header": {
-        "switch-language": "Sprache wechseln"
+        "switch-language": "Sprache wechseln",
+        "switch-theme": "Thema wechseln"
     },
     "about": {
         "title": "Über mich"
@@ -16,5 +17,9 @@
     },
     "contact": {
         "title": "Kontakt"
+    },
+    "theme": {
+        "light": "Lichtmodus",
+        "dark": "Dunkelmodus"
     }
 }

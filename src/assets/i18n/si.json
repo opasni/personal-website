@@ -16,5 +16,9 @@
     },
     "contact": {
         "title": "Stik"
+    },
+    "theme": {
+        "light": "Svetli Nacin",
+        "dark": "Temni Nacin"
     }
 }

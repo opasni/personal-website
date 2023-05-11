@@ -25,7 +25,15 @@
 	font-family: 'Inter';
 }
 
-.background-gradient {
-    background-color: $dark-background;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+.text-primary {
+	color: $primary-color !important;
+}
+
+.text-standard {
+    color: var(--font-color);
+}
+
+.background-color {
+    background-color: var(--background-color);
+    box-shadow: 0px 2px 4px var(--pop-color);
 }

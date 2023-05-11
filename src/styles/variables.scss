@@ -2,13 +2,27 @@
 $primary-color: #d1081f;
 $secondary-color: #08D1BA;
 
+// fonts
+$gray-font: #8E8E91;
+
+// shaders
+$light-background: #f8f9fa;
 $dark-background: #1C1D22;
 $light-dark-background: #d1081f40;
 
-$light-background:   rgba(248, 249, 250);
+.dark-theme {
+    --font-color: #8E8E91;
+    --background-color: #1C1D22;
+    --pop-color: #f8f9fa;
+    --light-background: #d1081f40;
+}
 
-//fonts
-$gray-font: #8E8E91;
+.light-theme {
+    --font-color: #8E8E91;
+    --background-color: #f8f9fa;
+    --pop-color: #1C1D22;
+    --light-background: #d1081f40;
+}
 
 $transparent-white: rgba(255,255,255,.25);
 $transparent-dark: rgba(70,70,70,.10);

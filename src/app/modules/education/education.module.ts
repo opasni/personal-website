@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { EducationComponent } from './education/education.component';
 import { ShareModule } from '../share/share.module';
-import { AboutRoutingModule } from '../about/about-routing.module';
-import { SkillsComponent } from './skills/skills.component';
+import { EducationRoutingModule } from './education-routing.module';
 
 
 
 @NgModule({
     declarations: [
-    SkillsComponent
-  ],
+        EducationComponent
+    ],
     imports: [
         CommonModule,
         ShareModule,
-        AboutRoutingModule
+        EducationRoutingModule
     ]
 })
-export class SkillsModule { }
+export class EducationModule { }
