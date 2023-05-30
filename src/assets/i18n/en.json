@@ -4,19 +4,70 @@
         "switch-theme": "Change theme"
     },
     "about": {
-        "title": "About Me"
+        "menu-item": "About Me",
+        "title": ""
     },
     "experience": {
-        "title": "Experience"
+        "menu-item": "Experience",
+        "title": ""
     },
     "skills": {
-        "title": "Skills"
+        "menu-item": "Skills",
+        "title": ""
     },
     "education": {
-        "title": "Education"
+        "menu-item": "Education",
+        "title": ""
     },
     "contact": {
-        "title": "Contact"
+        "menu-item": "Contact",
+        "title": "Want to get in touch?",
+        "title-success": "Thanks for getting in touch!",
+        "full-name": {
+            "label": "Full Name",
+            "placeholder": "Enter Full Name",
+            "error": {
+                "required": "Please enter your name."
+            }
+        },
+        "email": {
+            "label": "Email address",
+            "placeholder": "example@gmail.com",
+            "hint": "I'll never share your email with anyone else.",
+            "error": {
+                "required": "Please enter your email address.",
+                "email": "Please enter a valid email address."
+            }
+        },
+        "subject": {
+            "label": "Why do you want to get in contact?",
+            "placeholder": "I am contacting you because... (please choose one)",
+            "option": {
+                "freelance": "I need something done...",
+                "offering-position": "Are you interested in working with us?",
+                "technical-advice": "I need technical consultant?",
+                "seeking-job": "I am searching for a job.",
+                "other": "Just want to chat"
+            },
+            "error": {
+                "required": "Please select a purpose of contact."
+            }
+        },
+        "message": {
+            "label": "Message",
+            "placeholder": "Type your message...",
+            "error": {
+                "required": "Please enter a message."
+            }
+        },
+        "checkout": "",
+        "submit": {
+            "label": "Submit",
+            "subject": "Online Contact",
+            "one-last-thing": "Just to make sure you are not a bot. I know it's a bit annoying, but bare with me.",
+            "fail": "Something went wrong. Please try again or write me on LinkedIn:",
+            "success": "Message was sent successfully! I will reach out to you as soon as possible."
+        }
     },
     "theme": {
         "light": "Light Mode",

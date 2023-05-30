@@ -4,19 +4,70 @@
         "switch-theme": "Thema wechseln"
     },
     "about": {
-        "title": "Über mich"
+        "menu-item": "Über mich",
+        "title": ""
     },
     "experience": {
-        "title": "Erfahrungen"
+        "menu-item": "Erfahrungen",
+        "title": ""
     },
     "skills": {
-        "title": "Fähigkeiten"
+        "menu-item": "Fähigkeiten",
+        "title": ""
     },
     "education": {
-        "title": "Ausbildung"
+        "menu-item": "Ausbildung",
+        "title": ""
     },
     "contact": {
-        "title": "Kontakt"
+        "menu-item": "Kontakt",
+        "title": "Möchten Sie Kontakt aufnehmen?",
+        "title-success": "Vielen Dank für Ihre Kontaktaufnahme!",
+        "full-name": {
+            "label": "Vollständiger Name",
+            "placeholder": "Geben Sie Ihren vollständigen Namen ein",
+            "error": {
+                "required": "Bitte geben Sie Ihren Namen ein."
+            }
+        },
+        "email": {
+            "label": "E-Mail-Addresse",
+            "placeholder": "beispiel@gmx.com",
+            "hint": "Ich werde Ihre E-Mail-Adresse niemals an Dritte weitergeben.",
+            "error": {
+                "required": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+                "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
+            }
+        },
+        "subject": {
+            "label": "Warum möchten Sie Kontakt aufnehmen?",
+            "placeholder": "Ich nehme Kontakt auf, weil... (bitte wählen Sie eine Option)",
+            "option": {
+                "freelance": "Ich benötige eine Dienstleistung...",
+                "offering-position": "Sind Sie an einer Zusammenarbeit interessiert?",
+                "technical-advice": "Ich benötige technische Beratung.",
+                "seeking-job": "Ich suche nach einer Stelle.",
+                "other": "Ich möchte nur plaudern."
+            },
+            "error": {
+                "required": "Bitte wählen Sie einen Zweck aus."
+            }
+        },
+        "message": {
+            "label": "Nachricht",
+            "placeholder": "Geben Sie Ihre Nachricht ein...",
+            "error": {
+                "required": "Bitte geben Sie eine Nachricht ein."
+            }
+        },
+        "checkout": "",
+        "submit": {
+            "label": "Absenden",
+            "subject": "Online-Kontakt",
+            "one-last-thing": "Nur um sicherzugehen, dass Sie kein Bot sind. Ich weiß, es ist ein bisschen lästig, aber bitte haben Sie Geduld.",
+            "fail": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie mir auf LinkedIn:",
+            "success": "Nachricht wurde erfolgreich gesendet! Ich werde mich schnellstmöglich bei Ihnen melden."
+        }
     },
     "theme": {
         "light": "Lichtmodus",

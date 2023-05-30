@@ -3,19 +3,70 @@
         "switch-language": "Spremeni jezik"
     },
     "about": {
-        "title": "O Meni"
+        "menu-item": "O Meni",
+        "title": ""
     },
     "experience": {
-        "title": "Izkušnje"
+        "menu-item": "Izkušnje",
+        "title": ""
     },
     "skills": {
-        "title": "Spretnosti"
+        "menu-item": "Spretnosti",
+        "title": ""
     },
     "education": {
-        "title": "Izobrazba"
+        "menu-item": "Izobrazba",
+        "title": ""
     },
     "contact": {
-        "title": "Stik"
+        "menu-item": "Stik",
+        "title": "Si želite stopiti v stik?",
+        "title-success": "Hvala, ker ste stopili v stik!",
+        "full-name": {
+            "label": "Polno ime",
+            "placeholder": "Vnesi polno ime",
+            "error": {
+                "required": "Prosimo, vnesite svoje ime."
+            }
+        },
+        "email": {
+            "label": "Spletna pošta",
+            "placeholder": "primer@gmail.com",
+            "hint": "Vaše spletne pošte ne bom delil z nikomer.",
+            "error": {
+                "required": "Prosimo, vnesite vaš e-poštni naslov.",
+                "email": "Prosimo, vnesite veljaven e-poštni naslov."
+            }
+        },
+        "subject": {
+            "label": "Zakaj želite vzpostaviti stik?",
+            "placeholder": "Vzpostavljam stik, ker... (prosim izberite eno možnost)",
+            "option": {
+                "freelance": "Potrebujem nekaj storjenega...",
+                "offering-position": "Ste zainteresirani za sodelovanje z nami?",
+                "technical-advice": "Potrebujem tehnično svetovanje.",
+                "seeking-job": "Iščem zaposlitev.",
+                "other": "Želim samo klepetati."
+            },
+            "error": {
+                "required": "Prosimo, izberite namen."
+            }
+        },
+        "message": {
+            "label": "Sporočilo",
+            "placeholder": "Opišite zakaj želite stopiti v kontakt...",
+            "error": {
+                "required": "Prosimo, vnesite sporočilo."
+            }
+        },
+        "checkout": "",
+        "submit": {
+            "label": "Pošlji",
+            "subject": "Spletno povpraševanje",
+            "one-last-thing": "Samo da se prepričam, da niste robot. Vem, da je malce nadležno, ampak prosim, vztrajajte z menoj.",
+            "fail": "Nekaj je šlo narobe. Prosimo, poskusite znova ali mi pišite na LinkedInu:",
+            "success": "Sporočilo uspešno poslano! V kontakt bom stopil v najkrajšem možnem času."
+        }
     },
     "theme": {
         "light": "Svetli Nacin",

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ShareModule } from '../share/share.module';
 import { AboutRoutingModule } from '../about/about-routing.module';
 import { SkillsComponent } from './skills/skills.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -13,6 +14,7 @@ import { SkillsComponent } from './skills/skills.component';
     imports: [
         CommonModule,
         ShareModule,
+        TranslateModule,
         AboutRoutingModule
     ]
 })

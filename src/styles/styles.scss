@@ -37,3 +37,8 @@
     background-color: var(--background-color);
 		color: var(--font-color);
 }
+
+.form-control, .form-select {
+	color: var(--font-color) !important;
+	background-color: var(--light-background);
+}

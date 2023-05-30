@@ -1,26 +1,20 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { Observable, tap } from 'rxjs';
-import { Theme } from 'src/app/modules/share/enums/theme.enum';
+import { AfterViewInit, Component } from '@angular/core';
+import { ThemeComponent } from 'src/app/modules/share/abstracts/theme.component';
 import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
-  selector: 'app-backbone',
-  templateUrl: './backbone.component.html',
-  styleUrls: ['./backbone.component.scss']
+	selector: 'app-backbone',
+	templateUrl: './backbone.component.html',
+	styleUrls: ['./backbone.component.scss']
 })
-export class BackboneComponent implements OnInit, AfterViewInit {
+export class BackboneComponent extends ThemeComponent implements AfterViewInit {
 
-    public selectedTheme$: Observable<Theme> | undefined;
+	constructor(themeService: ThemeService) {
+		super(themeService);
+	}
 
-    constructor(private themeService: ThemeService) { }
-
-    ngOnInit(): void {
-        this.selectedTheme$ = this.themeService.selectedTheme.pipe(tap(d => console.log(d)));
-    }
-
-    ngAfterViewInit(): void {
-        const loadingElement = document.getElementById('appSplashScreen');
-        loadingElement?.remove();
-    }
-
+	ngAfterViewInit(): void {
+		const loadingElement = document.getElementById('appSplashScreen');
+		loadingElement?.remove();
+	}
 }

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { EducationComponent } from './education/education.component';
 import { ShareModule } from '../share/share.module';
 import { EducationRoutingModule } from './education-routing.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -13,6 +14,7 @@ import { EducationRoutingModule } from './education-routing.module';
     imports: [
         CommonModule,
         ShareModule,
+        TranslateModule,
         EducationRoutingModule
     ]
 })

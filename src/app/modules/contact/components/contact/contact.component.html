@@ -1,0 +1,105 @@
+<div class="container">
+  <ng-container *ngIf="selectedTheme$ | async as theme">
+    <div class="header">
+      <h1>
+        {{ 'contact.title' | translate }}
+      </h1>
+    </div>
+    <div class="body">
+      <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+        <div class="form-group mt-1 mb-3">
+          <label for="inputName">{{ 'contact.full-name.label' | translate }}</label>
+          <input type="text" name="name" formControlName="name" class="form-control"
+            [ngClass]="{ 'bg-light': theme === 'light', 'bg-dark': theme === 'dark', 'is-invalid': submitted && emailForm.getControl('name').invalid }"
+            aria-describedby="nameHelp" [placeholder]="'contact.full-name.placeholder' | translate">
+          <div class="invalid-feedback" *ngIf="submitted && emailForm.getControl('name').invalid">
+            <p *ngIf="emailForm.getControl('name') | filterError:'required'">{{ 'contact.full-name.error.required' |
+              translate }}</p>
+          </div>
+        </div>
+        <div class="form-group mt-1 mb-3">
+          <label for="inputEmail">{{ 'contact.email.label' | translate }}</label>
+          <input type="email" name="replyto" formControlName="replyto" class="form-control"
+            [ngClass]="{ 'bg-light': theme === 'light', 'bg-dark': theme === 'dark', 'is-invalid': submitted && emailForm.getControl('replyto').invalid }"
+            aria-describedby="emailHelp" [placeholder]="'contact.email.placeholder' | translate">
+          <small id="emailHelp" class="form-text text-muted">{{ 'contact.email.hint' | translate }}</small>
+          <div class="invalid-feedback" *ngIf="submitted && emailForm.getControl('replyto').invalid">
+            <p *ngIf="emailForm.getControl('replyto') | filterError:'required'">{{ 'contact.email.error.required' |
+              translate }}</p>
+            <p *ngIf="emailForm.getControl('replyto') | filterError:'email'">{{ 'contact.email.error.email' | translate
+              }}</p>
+          </div>
+        </div>
+        <div class="form-group mt-1 mb-3">
+          <label for="inputSubject">{{ 'contact.subject.label' | translate }}</label>
+          <select name="subject" formControlName="subject" class="form-select"
+            [ngClass]="{ 'bg-light': theme === 'light', 'bg-dark': theme === 'dark', 'is-invalid': submitted && emailForm.getControl('subject').invalid }"
+            aria-label="Select purpose of contact.">
+            <option [value]="null" disabled="disabled">{{ 'contact.subject.placeholder' | translate }}</option>
+            <option [value]="Purpose.Freelance">{{ 'contact.subject.option.freelance' | translate }}</option>
+            <option [value]="Purpose.OfferingPosition">{{ 'contact.subject.option.offering-position' | translate }}
+            </option>
+            <option [value]="Purpose.TechnicalAdvice">{{ 'contact.subject.option.technical-advice' | translate }}
+            </option>
+            <option [value]="Purpose.SeekingJob">{{ 'contact.subject.option.seeking-job' | translate }}</option>
+            <option [value]="Purpose.Other">{{ 'contact.subject.option.other' | translate }}</option>
+          </select>
+          <div class="invalid-feedback" *ngIf="submitted && emailForm.getControl('subject').invalid">
+            <p *ngIf="emailForm.getControl('subject') | filterError:'required'">{{ 'contact.subject.error.required' |
+              translate }}</p>
+          </div>
+        </div>
+        <div class="form-group mt-1 mb-3">
+          <label for="inputMessage">{{ 'contact.message.label' | translate }}</label>
+          <textarea class="form-control"
+            [ngClass]="{ 'bg-light': theme === 'light', 'bg-dark': theme === 'dark', 'is-invalid': submitted && emailForm.getControl('message').invalid }"
+            name="message" formControlName="message" rows="9" [placeholder]="'contact.message.placeholder' | translate">
+            </textarea>
+          <div class="invalid-feedback" *ngIf="submitted && emailForm.getControl('message').invalid">
+            <p *ngIf="emailForm.getControl('message') | filterError:'required'">{{ 'contact.message.error.required' |
+              translate }}</p>
+          </div>
+        </div>
+        <input type="hidden" name="_honeypot" formControlName="_honeypot">
+
+        <!-- <div class="form-check" *ngIf="'contact.checkout' | translate">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">{{ 'contact.checkout' | translate }}</label>
+        </div> -->
+        <!-- recaptcha -->
+        <div class="d-flex justify-content-end">
+          <button *ngIf="!submitter$; else submitting" type="submit" class="btn btn-primary">{{ 'contact.submit.label' |
+            translate }}</button>
+          <ng-template #submitting>
+            <p class="d-flex">
+              <ng-container *ngIf="submitter$ | async; else submitFail">
+                <ng-container *ngIf="verify">
+                  {{ 'contact.submit.one-last-thing' | translate }}
+                </ng-container>
+                <ng-container *ngIf="!verify">
+                  {{ 'contact.submit.success' | translate }}
+                </ng-container>
+              </ng-container>
+              <ng-template #submitFail>
+                <ng-container *ngIf="fail">
+                  {{ 'contact.submit.fail' | translate }}
+                  <a class="linkedin-icon" href="https://www.linkedin.com/in/%C4%8Drt-harej-1b704997/"
+                    target="_blank">
+                    <div class="social-icon">
+                      <i class="bi bi-linkedin"></i>
+                    </div>
+                  </a>
+                </ng-container>
+              </ng-template>
+            </p>
+          </ng-template>
+        </div>
+        <div class="separator recaptcha">
+          <re-captcha class="contact-recaptcha" *ngIf="submitted && emailForm.valid && verify" [theme]="theme"
+            (resolved)="resolved($event)" [siteKey]="recaptchaKey">
+          </re-captcha>
+        </div>
+      </form>
+    </div>
+  </ng-container>
+</div>
