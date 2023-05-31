@@ -6,6 +6,7 @@ const routes: Routes = [
 	{
 		path: '',
 		component: AboutComponent,
+        data: { animation: 0 },
     }
 ];
 

@@ -42,3 +42,8 @@
 	color: var(--font-color) !important;
 	background-color: var(--light-background);
 }
+
+.container {
+	max-width: none !important;
+	min-height: calc(100vh - 6rem);
+}

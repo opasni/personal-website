@@ -7,6 +7,7 @@ const routes: Routes = [
 	{
 		path: '',
 		component: ContactComponent,
+        data: { animation: 4 },
     },
     {
         path: 'success',

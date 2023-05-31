@@ -2,14 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DefaultPhotoDirective } from './directives/default-photo/default-photo.directive';
 import { TranslateModule } from '@ngx-translate/core';
-import { HoverImageDirective } from './directives/hoverImage/hover-image.directive';
+import { HoverImageDirective } from './directives/hover-image/hover-image.directive';
+import { ScrollDetectDirective } from './directives/scroll-detect/scroll-detect.directive';
 
 
 
 @NgModule({
     declarations: [
         DefaultPhotoDirective,
-        HoverImageDirective
+        HoverImageDirective,
+        ScrollDetectDirective
     ],
     imports: [
         CommonModule,
@@ -17,7 +19,8 @@ import { HoverImageDirective } from './directives/hoverImage/hover-image.directi
     ],
     exports: [
         DefaultPhotoDirective,
-        HoverImageDirective
+        HoverImageDirective,
+        ScrollDetectDirective
     ]
 })
 export class ShareModule { }

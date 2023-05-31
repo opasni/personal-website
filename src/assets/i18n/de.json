@@ -5,19 +5,19 @@
     },
     "about": {
         "menu-item": "Über mich",
-        "title": ""
+        "title": "Über mich"
     },
     "experience": {
         "menu-item": "Erfahrungen",
-        "title": ""
+        "title": "Erfahrungen"
     },
     "skills": {
         "menu-item": "Fähigkeiten",
-        "title": ""
+        "title": "Fähigkeiten"
     },
     "education": {
         "menu-item": "Ausbildung",
-        "title": ""
+        "title": "Ausbildung"
     },
     "contact": {
         "menu-item": "Kontakt",

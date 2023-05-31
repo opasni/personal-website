@@ -5,19 +5,19 @@
     },
     "about": {
         "menu-item": "About Me",
-        "title": ""
+        "title": "About Me"
     },
     "experience": {
         "menu-item": "Experience",
-        "title": ""
+        "title": "Experience"
     },
     "skills": {
         "menu-item": "Skills",
-        "title": ""
+        "title": "Skills"
     },
     "education": {
         "menu-item": "Education",
-        "title": ""
+        "title": "Education"
     },
     "contact": {
         "menu-item": "Contact",

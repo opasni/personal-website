@@ -1,7 +1,9 @@
 <div class="wrapper background-color" [ngClass]="(selectedTheme$ | async) + '-theme'">
 	<app-header> </app-header>
 
-	<div class="w-100 p-sm-5 pt-5" style="overflow-x: hidden;">
+	<div [@routeAnimations]="getRouteAnimation()"
+		class="w-100 p-sm-5 pt-5"
+		style="overflow-x: hidden; overflow-y: scroll; max-height: 100vh;">
 		<router-outlet></router-outlet>
 	</div>
 </div>
