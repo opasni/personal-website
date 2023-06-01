@@ -1,11 +1,11 @@
 {
   "name": "website",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "deploy": "ng build --base-href / && cp ./src/.htaccess ./dist/website/.htaccess",
+    "deploy": "ng build --base-href /",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

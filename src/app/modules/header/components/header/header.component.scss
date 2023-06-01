@@ -34,7 +34,7 @@
 	overflow-x: hidden;
 	transition: 0.2s; // duration of transition effect to slide in or slide down the overlay
 	font-size: 0.9em;
-	box-shadow: 0px 2px 4px var(--pop-color);
+	box-shadow: none;
 	background-color: var(--background-color);
 
 	.sidebar-content {
@@ -185,6 +185,7 @@
 		height: 100vh !important;
 		display: block !important;
 		position: sticky !important;
+		box-shadow: 0px 2px 4px var(--pop-color);
 
 		.sidebar-content {
 			padding-top: 2em;
@@ -196,6 +197,8 @@
 @media (max-width: $breakpoint-small) {
 	.menu-icon {
 		font-size: 1.4em;
+		z-index: 100;
+		background-color: var(--background-color);
 	}
 
 	.sidebar-content {

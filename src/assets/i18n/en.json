@@ -7,19 +7,131 @@
         "menu-item": "About Me",
         "title": "About Me"
     },
-    "experience": {
-        "menu-item": "Experience",
-        "title": "Experience"
-    },
     "skills": {
         "menu-item": "Skills",
         "title": "Skills"
+    },
+    "experience": {
+        "menu-item": "Experience",
+        "title": "Experience",
+        "references": "References",
+        "institution": {
+            "bia-separation": "BIA Separations d.o.o.",
+            "institute-js": "Jozef Stefan Institute",
+            "akka": "AKKA GmbH",
+            "achtzig20": "Achtzig20 GmbH"
+        },
+        "achtzig20": {
+            "type": "Employee",
+            "title": "Management Consultant",
+            "abstract": [
+                ""
+            ],
+            "noa": {
+                "type": "CTO @ newonads GmbH",
+                "title": "newonads",
+                "link": "Website",
+                "abstract": [
+                    "Something"
+                ]
+            },
+            "grid3": {
+                "type": "CTO @ Studio3 GmbH",
+                "title": "Grid3 Platform",
+                "link": "Website",
+                "abstract": [
+                    "Something"
+                ]
+            },
+            "achtzig20": {
+                "type": "CEO @ achtzig20 d.o.o.",
+                "title": "Achtzig20 d.o.o.",
+                "abstract": [
+                    "Something"
+                ]
+            },
+            "development": {
+                "type": "Technical Lead, Software Development and Requirements engineering",
+                "alice": {
+                    "title": "ALICE",
+                    "abstract": [
+                        "Something"
+                    ]
+                },
+                "new": {
+                    "title": "NEW",
+                    "abstract": [
+                        "Something"
+                    ]
+                },
+                "fapos": {
+                    "title": "FAPOS",
+                    "abstract": [
+                        "Something"
+                    ]
+                }
+            },
+            "trainings": {
+                "type": "Trainings",
+                "title": "Data Analytics Training",
+                "abstract": [
+                    "Something"
+                ]
+            }
+        },
+        "akka": {
+            "type": "Employee",
+            "title": "Graduate Engineer",
+            "abstract": [
+                "During my 8-month journey with AKKA, I had the opportunity to attend a 1-month program at Akkademy in Geneva, followed by work in Ingolstadt. Despite the newness of the program and some initial challenges, I seized a valuable chance and established important contacts that paved the way for my future work."
+            ],
+            "certificate": "Certificate",
+            "projects": {
+                "type": "Projects",
+                "carship": {
+                    "title": "Carship",
+                    "link": "carship.online",
+                    "abstract": [
+                        "In my role as the main software developer and architecture designer of carship.online, I had a significant involvement in the development of the platform. I was responsible for implementing software components and designing the user flow. Through my work, I contributed to ensuring the platform operates efficiently and is user-friendly, meeting the needs of its users."
+                    ]
+                },
+                "second-hand": {
+                    "title": "Analyzing Optional Features' Influence on AUDI resale price",
+                    "abstract": [
+                        "In this project, we conducted a comprehensive analysis of the dependency of second-hand prices for vehicles, specifically focusing on AUDI cars. Our main objective was to investigate the role of optional features in the persistence of the price.",
+                        "Through meticulous research and data analysis, we examined various optional features available for AUDI vehicles and their impact on the resale value. By analyzing historical sales data, market trends, and buyer preferences, we aimed to identify which optional features had a significant influence on the price retention of AUDI cars."
+                    ]
+                }
+            },
+            "akkademy": {
+                "type": "Onboarding",
+                "title": "Akkademy",
+                "abstract": [
+                    "Akkademy is an onboarding program that I attended during my employment at AKKA GmbH. This program allowed me to acquire new knowledge and skills and gain a deeper understanding of the company's work processes and values. Through Akkademy, I gained valuable experiences and fostered stronger connections with my colleagues."
+                ]
+            }
+        },
+        "institute-js": {
+            "type": "Student Researcher",
+            "title": "Researcher at the Jozef Stefan Institute",
+            "abstract": [
+                "During my master studies I started working as a student researcher in the Jozef Stefan Institute. My mentor was Prof. Dr. Simon Sirca. During this period I learned doing data analysis, C++ programming, running simulations, interpreting and presenting data among others. During the last six months I did my internship in Mainz."
+            ]
+        },
+        "bia-separation": {
+            "type": "Student Researcher",
+            "title": "Researcher at the BIA Separations d.o.o.",
+            "abstract": [
+                "First bigger project was in the company called BIA Separations from Slovenia in collaboration with Institute Jozef Stefan. Company is producing special materials, which are used for virus and protein filtration in various chemical and pharmaceutical laboratories. I was doing my research in the Institute and presented conclusions to the company. This required being autonomous, responsible and precise."
+            ]
+        }
     },
     "education": {
         "menu-item": "Education",
         "title": "Education",
         "institution": {
-            "university": "University of Ljubljana, Faculty of Mathematics and Physics",
+            "university": "University of Ljubljana",
+            "faculty": "Faculty of Mathematics and Physics",
             "high-school": "Vipava Diocesan Gymnasium",
             "primary-school": "Primary School Dornberk"
         },
@@ -62,7 +174,7 @@
             "title": "Erasmus+ Students Exchange Program",
             "abstract": [
                 "I joined the Erasmus+ student exchange program in my last semester of studies. I was working as a trainee in the Microtron in Mainz (Germany). During my internship, I also attended few classes in the local university (Johannes Guttenberg Universität). Alongside the basic knowledge of German I met a great deal of people, expanded my horizons and improved my social skills. During the internship, I learned how to analyze big amounts of data. I was also working on a project, which included design, construction and testing of a detector upgrade."
-             ]
+            ]
         },
         "manhattan-project": {
             "type": "Seminar",
@@ -71,7 +183,7 @@
             "presentation": "Presentation",
             "abstract": [
                 "In this seminar physics behind Manhattan Project is presented. I tried to describe problems physicists were facing when assembling the nuclear bomb during World War II and the decisions they made. By that I mean the choice of the proper fissile material, type of detonation and other aspects. Processes in the bomb core are presented by using simple models and techniques. At the end we test a numerical simulation of the detonation by using the acquired results, and compare them with the actual data."
-             ]
+            ]
         },
         "bachelor-thesis": {
             "type": "Bachelor Thesis",

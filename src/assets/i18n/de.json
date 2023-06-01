@@ -7,19 +7,131 @@
         "menu-item": "Über mich",
         "title": "Über mich"
     },
-    "experience": {
-        "menu-item": "Erfahrungen",
-        "title": "Erfahrungen"
-    },
     "skills": {
         "menu-item": "Fähigkeiten",
         "title": "Fähigkeiten"
+    },
+    "experience": {
+        "menu-item": "Erfahrung",
+        "title": "Berufserfahrung",
+        "references": "Referenzen",
+        "institution": {
+            "bia-separation": "BIA Separations d.o.o.",
+            "institute-js": "Jožef Stefan Institut",
+            "akka": "AKKA GmbH",
+            "achtzig20": "Achtzig20 GmbH"
+        },
+        "achtzig20": {
+            "type": "Employee",
+            "title": "Management Consultant",
+            "abstract": [
+                ""
+            ],
+            "noa": {
+                "type": "CTO @ newonads GmbH",
+                "title": "newonads",
+                "link": "Website",
+                "abstract": [
+                    "Something"
+                ]
+            },
+            "grid3": {
+                "type": "CTO @ Studio3 GmbH",
+                "title": "Grid3 Platform",
+                "link": "Website",
+                "abstract": [
+                    "Something"
+                ]
+            },
+            "achtzig20": {
+                "type": "CEO @ achtzig20 d.o.o.",
+                "title": "Achtzig20 d.o.o.",
+                "abstract": [
+                    "Something"
+                ]
+            },
+            "development": {
+                "type": "Technical Lead, Software Development and Requirements engineering",
+                "alice": {
+                    "title": "ALICE",
+                    "abstract": [
+                        "Something"
+                    ]
+                },
+                "new": {
+                    "title": "NEW",
+                    "abstract": [
+                        "Something"
+                    ]
+                },
+                "fapos": {
+                    "title": "FAPOS",
+                    "abstract": [
+                        "Something"
+                    ]
+                }
+            },
+            "trainings": {
+                "type": "Trainings",
+                "title": "Data Analytics Training",
+                "abstract": [
+                    "Something"
+                ]
+            }
+        },
+        "akka": {
+            "type": "Angestellter",
+            "title": "Absolvent Ingenieur",
+            "abstract": [
+                "Während meiner 8-monatigen Reise mit der Firma AKKA hatte ich die Möglichkeit, einen 1-monatigen Kurs bei Akkademy in Genf zu absolvieren und anschließend in Ingolstadt zu arbeiten. Obwohl das Programm neu war und der Prozess anfangs etwas chaotisch verlief, ergab sich für mich eine großartige Gelegenheit und ich knüpfte wertvolle Kontakte, die mir meine zukünftige Arbeit ermöglichten."
+            ],
+            "certificate": "Zertifikat",
+            "projects": {
+                "type": "Projekti",
+                "carship": {
+                    "title": "Carship",
+                    "link": "carship.online",
+                    "abstract": [
+                        "In meiner Rolle als Hauptentwickler und Architekturentwerfer von carship.online hatte ich eine maßgebliche Beteiligung an der Entwicklung der Plattform. Ich war verantwortlich für die Implementierung von Softwarekomponenten sowie die Gestaltung des Benutzerflusses. Durch meine Arbeit konnte ich dazu beitragen, dass die Plattform effizient und benutzerfreundlich funktioniert und den Bedürfnissen der Nutzer gerecht wird."
+                    ]
+                },
+                "second-hand": {
+                    "title": "Analyse des Einflusses optionaler Ausstattungsmerkmale auf den Preis von gebrauchten AUDI-Fahrzeugen",
+                    "abstract": [
+                        "In diesem Projekt haben wir eine umfassende Analyse der Abhängigkeit von Gebrauchtwagenpreisen durchgeführt, wobei der Schwerpunkt auf AUDI-Fahrzeugen lag. Unser Hauptziel bestand darin, die Rolle der optionalen Ausstattungsmerkmale für die Preisbeständigkeit zu untersuchen.",
+                        "Durch gründliche Recherche und Datenanalyse haben wir verschiedene optionale Ausstattungsmerkmale für AUDI-Fahrzeuge untersucht und ihren Einfluss auf den Wiederverkaufswert analysiert. Durch die Auswertung historischer Verkaufsdaten, Markttrends und der Vorlieben der Käufer wollten wir herausfinden, welche optionalen Ausstattungsmerkmale einen signifikanten Einfluss auf den Preisrückgang von AUDI-Fahrzeugen haben."
+                    ]
+                }
+            },
+            "akkademy": {
+                "type": "Einarbeitung",
+                "title": "Akkademy",
+                "abstract": [
+                    "Akkademy ist ein Einarbeitungsprogramm, das ich während meiner Anstellung bei AKKA GmbH besucht habe. Dieses Programm ermöglichte es mir, neue Kenntnisse und Fähigkeiten zu erwerben und mich tiefer in die Arbeitsprozesse und Werte des Unternehmens einzuarbeiten. Durch die Teilnahme an der Akkademy konnte ich wertvolle Erfahrungen sammeln und mich enger mit meinen Kollegen vernetzen."
+                ]
+            }
+        },
+        "institute-js": {
+            "type": "Studentischer Forscher",
+            "title": "Forscher am Jožef Stefan Institut",
+            "abstract": [
+                "Während meines Masterstudiums arbeitete ich als studentischer Forscher am Jožef Stefan Institut. Mein Mentor war Prof. Dr. Simon Sirca. In dieser Zeit lernte ich Datenanalyse, C++-Programmierung, Durchführung von Simulationen, Interpretation und Präsentation von Daten sowie vieles mehr. In den letzten sechs Monaten absolvierte ich mein Praktikum in Mainz."
+            ]
+        },
+        "bia-separation": {
+            "type": "Studentischer Forscher",
+            "title": "Forscher bei BIA Separations d.o.o.",
+            "abstract": [
+                "Das erste größere Projekt führte ich in Zusammenarbeit mit dem Unternehmen BIA Separations und dem Jožef Stefan Institut durch. Das Unternehmen stellt spezielle Materialien her, die in verschiedenen chemischen und pharmazeutischen Labors zur Filtration von Viren und Proteinen verwendet werden. Meine Forschung führte ich im Institut durch und präsentierte die Ergebnisse dem Unternehmen. Dies erforderte Selbstständigkeit, Verantwortungsbewusstsein und Genauigkeit."
+            ]
+        }
     },
     "education": {
         "menu-item": "Ausbildung",
         "title": "Ausbildung",
         "institution": {
-            "university": "Universität von Ljubljana, Fakultät für Mathematik und Physik",
+            "university": "Universität von Ljubljana",
+            "faculty": "Fakultät für Mathematik und Physik",
             "high-school": "Vipava Diözesangymnasium",
             "primary-school": "Grundschule Dornberk"
         },
@@ -62,7 +174,7 @@
             "title": "Erasmus+ Studentenaustauschprogramm",
             "abstract": [
                 "Im letzten Semester meines Studiums habe ich am Erasmus+ Studentenaustauschprogramm teilgenommen. Ich habe als Praktikant im Mikrotron in Mainz (Deutschland) gearbeitet. Während meines Praktikums habe ich auch einige Kurse an der örtlichen Universität (Johannes Gutenberg-Universität) besucht. Neben den Grundkenntnissen der deutschen Sprache habe ich viele Menschen kennengelernt, meinen Horizont erweitert und meine sozialen Fähigkeiten verbessert. Während des Praktikums habe ich gelernt, große Datenmengen zu analysieren. Außerdem habe ich an einem Projekt gearbeitet, das Design, Konstruktion und Test einer Detektorerweiterung umfasste."
-             ]
+            ]
         },
         "manhattan-project": {
             "type": "Seminar",
