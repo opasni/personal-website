@@ -1,0 +1,17 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { SkillsComponent } from './components/skills/skills.component';
+
+const routes: Routes = [
+	{
+		path: '',
+		component: SkillsComponent,
+        data: { animation: 1 }
+    }
+];
+
+@NgModule({
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule]
+})
+export class SkillsRoutingModule { }

@@ -1,20 +1,152 @@
 {
     "header": {
-        "switch-language": "Switch language"
+        "switch-language": "Change language",
+        "switch-theme": "Change theme"
     },
     "about": {
+        "menu-item": "About Me",
         "title": "About Me"
     },
     "experience": {
+        "menu-item": "Experience",
         "title": "Experience"
     },
     "skills": {
+        "menu-item": "Skills",
         "title": "Skills"
     },
     "education": {
-        "title": "Education"
+        "menu-item": "Education",
+        "title": "Education",
+        "institution": {
+            "university": "University of Ljubljana, Faculty of Mathematics and Physics",
+            "high-school": "Vipava Diocesan Gymnasium",
+            "primary-school": "Primary School Dornberk"
+        },
+        "degree": {
+            "master": {
+                "title": "Master's study of mathematical physics",
+                "abstract": [
+                    "Master study was a big leap into practical skills and revealed a lot about my wishes for the future career.",
+                    "My GPA was 9.0, which is equivalent to A (USA) and 1.7 (Germany)."
+                ]
+            },
+            "bachelor": {
+                "title": "Undergraduate study of general physics",
+                "abstract": [
+                    "During the first stage of my studies, I did not want to specialize too much due to the desire for breadth. Therefore, in choosing subjects, I tried to cover a wide range of knowledge. In addition to general subjects such as mathematics and classical and modern physics, I also familiarized myself with the principles of astronomy, geophysics, electronics, and particularly computational physics.",
+                    "My GPA was 8.3, which is equivalent to A (USA) and 2.3 (Germany)."
+                ]
+            },
+            "high-school": {
+                "title": "General Gymnasium Program",
+                "abstract": "The high school gymnasium program, which enabled me to acquire an above-average general education, emphasized the importance of humanity, ethics, and moral questions, thereby facilitating a better understanding of myself and others. In addition to general subjects, I also gained basic knowledge of the Italian and Latin languages. Furthermore, I was awarded the Zois Scholarship for gifted students."
+            },
+            "primary-school": {
+                "title": "Primary education",
+                "abstract": "Early involvement in various extracurricular activities such as music education, chess competitions, and sports enabled me to broaden my horizons."
+            }
+        },
+        "master-thesis": {
+            "type": "Master Thesis",
+            "title": "Establishment of an Experiment for Measuring the Axial Form Factor of the Proton",
+            "file": "PDF Download",
+            "code": "Source Code",
+            "abstract": [
+                "I discuss here the feasibility of a weak charged current experiment using a low energy electron beam with energies below the pion threshold (120 MeV). The goal is to measure the Q&#178; dependence of the axial-vector form factor GA. It can be extracted model-independently and as robustly as for electromagnetic form factors from typical electron scattering experiments with low uncertainty, in contrast to the ways used so far to access GA, such as neutrino measurements and pion electroproduction.",
+                "Such a pioneering experiment may also allow to access other quantities, among which is also the free-neutron magnetic form factor. Not many free-neutron characteristics have been measured so far though they are the quantities of fundamental importance for hadronic and nuclear physics. The feasibility was tested with a tool-kit Geant4, whose purpose is to simulate the passage of particles trough matter and their various interactions."
+            ]
+        },
+        "student-exchange": {
+            "type": "Student Exchange",
+            "title": "Erasmus+ Students Exchange Program",
+            "abstract": [
+                "I joined the Erasmus+ student exchange program in my last semester of studies. I was working as a trainee in the Microtron in Mainz (Germany). During my internship, I also attended few classes in the local university (Johannes Guttenberg Universität). Alongside the basic knowledge of German I met a great deal of people, expanded my horizons and improved my social skills. During the internship, I learned how to analyze big amounts of data. I was also working on a project, which included design, construction and testing of a detector upgrade."
+             ]
+        },
+        "manhattan-project": {
+            "type": "Seminar",
+            "title": "Physics of the Manhattan Project",
+            "file": "PDF Download",
+            "presentation": "Presentation",
+            "abstract": [
+                "In this seminar physics behind Manhattan Project is presented. I tried to describe problems physicists were facing when assembling the nuclear bomb during World War II and the decisions they made. By that I mean the choice of the proper fissile material, type of detonation and other aspects. Processes in the bomb core are presented by using simple models and techniques. At the end we test a numerical simulation of the detonation by using the acquired results, and compare them with the actual data."
+             ]
+        },
+        "bachelor-thesis": {
+            "type": "Bachelor Thesis",
+            "title": "Bariogenesis via Leptogenesis",
+            "file": "PDF Download",
+            "presentation": "Presentation",
+            "abstract": [
+                "The seminar presents a possible scenario of baryogenesis that could lead to the observed cosmological baryon asymmetry. This scenario is called baryogenesis via leptogenesis and is feasible if a theory assuming all neutrinos to be Majorana fermions holds. In addition to light left-handed neutrinos, the theory also predicts heavy right-handed neutrinos with a mass of M. At temperatures around T ∼ M, these neutrinos, through decays out of thermal equilibrium, generate a lepton asymmetry, breaking the conservation of lepton number and CP symmetry. Non-perturbative processes of the electroweak interaction in the Standard Model then convert the excess of leptons into a baryon asymmetry."
+            ]
+        },
+        "iskre": {
+            "type": "Technical editor",
+            "title": "Iskre",
+            "issue": "issue",
+            "number": "number",
+            "abstract": [
+                "During the high school program, I worked as a technical editor for 4 years, participating in the production of the school newsletter called Iskre. You can check the results of my work at the links below."
+            ]
+        }
     },
     "contact": {
-        "title": "Contact"
+        "menu-item": "Contact",
+        "title": "Want to get in touch?",
+        "title-success": "Thanks for getting in touch!",
+        "full-name": {
+            "label": "Full Name",
+            "placeholder": "Enter Full Name",
+            "error": {
+                "required": "Please enter your name."
+            }
+        },
+        "email": {
+            "label": "Email address",
+            "placeholder": "example@gmail.com",
+            "hint": "I'll never share your email with anyone else.",
+            "error": {
+                "required": "Please enter your email address.",
+                "email": "Please enter a valid email address."
+            }
+        },
+        "subject": {
+            "label": "Why do you want to get in contact?",
+            "placeholder": "I am contacting you because... (please choose one)",
+            "option": {
+                "freelance": "I need something done...",
+                "offering-position": "Are you interested in working with us?",
+                "technical-advice": "I need technical consultant?",
+                "seeking-job": "I am searching for a job.",
+                "other": "Just want to chat"
+            },
+            "error": {
+                "required": "Please select a purpose of contact."
+            }
+        },
+        "message": {
+            "label": "Message",
+            "placeholder": "Type your message...",
+            "error": {
+                "required": "Please enter a message."
+            }
+        },
+        "checkout": "",
+        "submit": {
+            "label": "Submit",
+            "subject": "Online Contact",
+            "one-last-thing": "Just to make sure you are not a bot. I know it's a bit annoying, but bare with me.",
+            "fail": "Something went wrong. Please try again or write me on LinkedIn:",
+            "success": "Message was sent successfully! I will reach out to you as soon as possible."
+        }
+    },
+    "theme": {
+        "light": "Light Mode",
+        "dark": "Dark Mode"
+    },
+    "website": {
+        "link": "Website"
     }
 }

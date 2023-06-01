@@ -3,18 +3,149 @@
         "switch-language": "Spremeni jezik"
     },
     "about": {
+        "menu-item": "O Meni",
         "title": "O Meni"
     },
     "experience": {
+        "menu-item": "Izkušnje",
         "title": "Izkušnje"
     },
     "skills": {
+        "menu-item": "Spretnosti",
         "title": "Spretnosti"
     },
     "education": {
-        "title": "Izobrazba"
+        "menu-item": "Izobrazba",
+        "title": "Izobrazba",
+        "institution": {
+            "university": "Univerza v Ljubljani, Fakulteta za matematiko in fiziko",
+            "high-school": "Škofijska Gimnazija Vipava",
+            "primary-school": "Osnovna šola Dornberk"
+        },
+        "degree": {
+            "master": {
+                "title": "Magistrski študij matematične fizike",
+                "abstract": [
+                    "Magistrski študij je predstavljal velik korak k pridobivanju praktičnih veščin ter razkril veliko o mojih željah glede prihodnje kariere.",
+                    "Moje povprečje ocen je bilo 8,3, kar ustreza oceni A (ZDA) in 2,3 (Nemčija)."
+                ]
+            },
+            "bachelor": {
+                "title": "Dodiplomski študij splošne fizike",
+                "abstract": [
+                    "Na prvi stopnji študija se zaradi želje po širini nisem želel preveč specializirati. Zato sem pri izbiri predmetov poskušal zajeti čim širši spekter znanja. Poleg splošnih predmetov, kot so matematika in klasična ter moderna fizika, sem se seznanil tudi z načeli astronomije, geofizike, elektronike in predvsem modelne fizike.",
+                    "Moje povprečje ocen je bilo 8,3, kar ustreza oceni A (ZDA) in 2,3 (Nemčija)."
+                ]
+            },
+            "high-school": {
+                "title": "Splošni gimnazijski program",
+                "abstract": "Srednješolski gimnazijski program, ki mi je omogočil pridobitev nadpovprečne splošne izobrazbe, je poudaril pomembnost sočloveka, etike in moralnih vprašanj ter mi tako omogočil boljše razumevanje sebe in drugih. Poleg splošnih predmetov sem pridobil tudi osnovno znanje italijanskega in latinskega jezika ter prejemal Zoisovo štipendijo za nadarjene študente."
+            },
+            "primary-school": {
+                "title": "Osnovnošolska izobrazba",
+                "abstract": "Zgodnje sodelovanje v raznolikih zunajšolskih dejavnostih, kot so glasbena izobrazba, šahovska tekmovanja in šport, mi je omogočilo razširitev svojih obzorij."
+            }
+        },
+        "master-thesis": {
+            "type": "Magistersko delo",
+            "title": "Zasnova experimenta za meritev aksialnega oblikovnega faktorja protona",
+            "file": "Prenesi datoteko",
+            "code": "Source Code",
+            "abstract": [
+                "V tem delu se ukvarjam z vprašanjem o izvedljivosti poskusa na osnovi nabite šibke interakcije, s katerim bi s pomočjo do sedaj še ne uporabljene metode izmerili odvisnost aksialnega oblikovnega faktorja GA od prenosa gibalne količine Q&#178;. Pri tem bi uporabili elektronski žarek z energijo pod pragom produkcije pionov (120 MeV). Pretekli poskusi meritve aksialnega oblikovnega faktorja, so potekali preko nevtrinskih reakcij s snovjo, katerih velika slabost sta slabo poznana tok in energija vpadnih delcev. Drug način meritev je preko elektroprodukcije pionov, pri katerih je rezultat močno odvisen od privzetega modela. Predlagan poskus nima modelske odvisnosti, prav tako sta dobro poznana tok in energija vpadnih delcev, zaradi česar bi lahko odvisnost aksialnega oblikovnega faktorja določili z veliko manjšo napako.",
+                "Izvedljivost takega poskusa bi odprla vrata podobnim poskusom, s katerimi bi lahko npr. določili tudi magnetni oblikovni faktor prostega nevtrona, ki do sedaj še ni bil izmerjen in pomeni eno od osnovnih količin jedrske fizike. Izvedba in natančnost pa sta pogojena s kvalitetno odstranitvijo elektromagnetnega ozadja. To sem testiral s programskim orodjem Geant4, ki je namenjeno analizi prehoda delcev skozi snov."
+            ]
+        },
+        "student-exchange": {
+            "type": "Študentska izmenjava",
+            "title": "Program študijske izmenjave Erasmus+",
+            "abstract": [
+                "V zadnjem semestru študija sem se pridružil programu študentske izmenjave Erasmus+. Kot pripravnik sem delal v Mikotronu v Mainzu (Nemčija). Med pripravništvom sem se udeležil tudi nekaj predavanj na lokalni univerzi (Johannes Guttenberg Universität). Poleg osnovnega znanja nemškega jezika sem spoznal veliko ljudi, razširil svoje obzorje in izboljšal socialne veščine. Med pripravništvom sem se naučil analizirati velike količine podatkov. Prav tako sem delal na projektu, ki je vključeval oblikovanje, konstrukcijo in testiranje nadgradnje detektorja."
+             ]
+        },
+        "manhattan-project": {
+            "type": "Seminar",
+            "title": "Fizika projekta Manhattan",
+            "file": "Prenesi datoteko",
+            "presentation": "Prezentacija",
+            "abstract": [
+                "V tem seminarju je predstavljena fizika za Manhattanov projekt. Opisani so problemi, s katerimi so se fiziki srečevali pri sestavljanju jedrske bombe med drugo svetovno vojno, ter sprejete odločitve. To vključuje izbiro pravega fisilnega materiala, vrsto detonacije in druge vidike. Procesi v jedrskem središču bombe so predstavljeni z uporabo preprostih modelov in tehnik. Na koncu preizkusimo numerično simulacijo detonacije z uporabo pridobljenih rezultatov ter jih primerjamo z dejanskimi podatki."
+             ]
+        },
+        "bachelor-thesis": {
+            "type": "Dodiplomsko delo",
+            "title": "Bariogeneza preko Leptogeneze",
+            "file": "Prenesi datoteko",
+            "presentation": "Prezentacija",
+            "abstract": [
+                "V seminarju je predstavljen možen scenarij bariogeneze, ki bi lahko pripeljal do opazovane kozmološke barionske asimetrije. Ta scenarij se imenuje bariogeneza preko leptogeneze in je mogoč, če velja teorija, ki predpostavlja, da so vsi nevtrini Majoranovi fermioni. Poleg lahkih levosučnih nevtrinov teorija predvideva tudi težke desnosučne nevtrine z maso M. Pri temperaturah okoli T ∼ M ti nevtrini, skozi razpade izven termičnega ravnotežja, ustvarijo leptonsko asimetrijo, pri čemer kršijo ohranitev leptonskega števila in CP simetrijo. Neperturbativni procesi elektrošibke interakcije v standardnem modelu nato presežek leptonov pretvorijo v barionsko asimetrijo."
+            ]
+        },
+        "iskre": {
+            "type": "Tehnični urednik",
+            "title": "Iskre",
+            "issue": "letnik",
+            "number": "številka",
+            "abstract": [
+                "Tekom gimnazijskega programa sem 4 leta kot tehnični urednik sodeloval pri izdelavi šolskega glasila po imenu Iskre. Rezultate dela lahko preverite na spodnjih povezavah."
+            ]
+        }
     },
     "contact": {
-        "title": "Stik"
+        "menu-item": "Stik",
+        "title": "Želite stopiti v stik?",
+        "title-success": "Hvala, ker ste stopili v stik!",
+        "full-name": {
+            "label": "Polno ime",
+            "placeholder": "Vnesi polno ime",
+            "error": {
+                "required": "Prosimo, vnesite svoje ime."
+            }
+        },
+        "email": {
+            "label": "Spletna pošta",
+            "placeholder": "primer@gmail.com",
+            "hint": "Vaše spletne pošte ne bom delil z nikomer.",
+            "error": {
+                "required": "Prosimo, vnesite vaš e-poštni naslov.",
+                "email": "Prosimo, vnesite veljaven e-poštni naslov."
+            }
+        },
+        "subject": {
+            "label": "Zakaj želite vzpostaviti stik?",
+            "placeholder": "Vzpostavljam stik, ker... (prosim izberite eno možnost)",
+            "option": {
+                "freelance": "Potrebujem nekaj storjenega...",
+                "offering-position": "Ste zainteresirani za sodelovanje z nami?",
+                "technical-advice": "Potrebujem tehnično svetovanje.",
+                "seeking-job": "Iščem zaposlitev.",
+                "other": "Želim samo klepetati."
+            },
+            "error": {
+                "required": "Prosimo, izberite namen."
+            }
+        },
+        "message": {
+            "label": "Sporočilo",
+            "placeholder": "Opišite zakaj želite stopiti v kontakt...",
+            "error": {
+                "required": "Prosimo, vnesite sporočilo."
+            }
+        },
+        "checkout": "",
+        "submit": {
+            "label": "Pošlji",
+            "subject": "Spletno povpraševanje",
+            "one-last-thing": "Samo da se prepričam, da niste robot. Vem, da je malce nadležno, ampak prosim, vztrajajte z menoj.",
+            "fail": "Nekaj je šlo narobe. Prosimo, poskusite znova ali mi pišite na LinkedInu:",
+            "success": "Sporočilo uspešno poslano! V kontakt bom stopil v najkrajšem možnem času."
+        }
+    },
+    "theme": {
+        "light": "Svetli Nacin",
+        "dark": "Temni Nacin"
+    },
+    "website": {
+        "link": "Spletna stran"
     }
 }
