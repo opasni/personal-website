@@ -9,7 +9,9 @@
       <!-- ******************* MASTER PROGRAM ******************* -->
       <div class="card my-3" [ngClass]="['bg-' + theme]">
         <div class="card-body">
-          <h5 class="card-title">{{ 'education.institution.university' | translate }}</h5>
+          <h5 class="card-title">
+            {{ 'education.institution.university' | translate }}, {{ 'education.institution.faculty' | translate }}
+          </h5>
           <h6 class="card-subtitle mb-2 text-muted">{{ 'education.degree.master.title' | translate }}</h6>
           <p class="card-text"><i>2014 - 2017</i></p>
           <p class="card-text" *ngFor="let par of ('education.degree.master.abstract' | translate)">
@@ -34,10 +36,10 @@
                   <p class="card-text" *ngFor="let par of ('education.master-thesis.abstract' | translate)">
                     <span [innerHTML]="par"></span>
                   </p>
-                  <a href="/uploads/20171026_master_thesis_final.pdf" class="card-link">
+                  <a href="/uploads/20171026_master_thesis_final.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
                     {{ 'education.master-thesis.file' | translate}}
                   </a>
-                  <a href="https://github.com/opasni/GeantCode" class="card-link">
+                  <a href="https://github.com/opasni/GeantCode" target="_blank" rel="noopener noreferrer" class="card-link">
                     {{ 'education.master-thesis.code' | translate}}
                   </a>
                 </div>
@@ -82,10 +84,10 @@
                   <p class="card-text" *ngFor="let par of ('education.manhattan-project.abstract' | translate)">
                     {{ par }}
                   </p>
-                  <a href="/uploads/20150327_manhattan_project.pdf" class="card-link">
+                  <a href="/uploads/20150327_manhattan_project.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
                     {{ 'education.manhattan-project.file' | translate}}
                   </a>
-                  <a href="/uploads/20150414_manhattan_project_presentation.pdf" class="card-link">
+                  <a href="/uploads/20150414_manhattan_project_presentation.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
                     {{ 'education.manhattan-project.presentation' | translate}}
                   </a>
                 </div>
@@ -97,7 +99,9 @@
       <!-- ******************* BACHELOR PROGRAM ******************* -->
       <div class="card my-3" [ngClass]="'bg-' + theme">
         <div class="card-body">
-          <h5 class="card-title">{{ 'education.institution.university' | translate }}</h5>
+          <h5 class="card-title">
+            {{ 'education.institution.university' | translate }}, {{ 'education.institution.faculty' | translate }}
+          </h5>
           <h6 class="card-subtitle mb-2 text-muted">{{ 'education.degree.bachelor.title' | translate }}</h6>
           <p class="card-text"><i>2011 - 2014</i></p>
           <p class="card-text" *ngFor="let par of ('education.degree.bachelor.abstract' | translate)">
@@ -123,10 +127,10 @@
                   <p class="card-text" *ngFor="let par of ('education.bachelor-thesis.abstract' | translate)">
                     {{ par }}
                   </p>
-                  <a href="/uploads/20140605_bachelor_thesis_final.pdf" class="card-link">
+                  <a href="/uploads/20140605_bachelor_thesis_final.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
                     {{ 'education.bachelor-thesis.file' | translate}}
                   </a>
-                  <a href="/uploads/20140513_bachelor_presentation.pdf" class="card-link">
+                  <a href="/uploads/20140513_bachelor_presentation.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
                     {{ 'education.bachelor-thesis.presentation' | translate}}
                   </a>
                 </div>
@@ -142,7 +146,7 @@
           <h6 class="card-subtitle mb-2 text-muted">{{ 'education.degree.high-school.title' | translate }}</h6>
           <p class="card-text"><i>2007 - 2011</i></p>
           <p class="card-text">{{ 'education.degree.high-school.abstract' | translate }}</p>
-          <a href="https://www.sgv.si/" class="card-link">{{ 'website.link' | translate }}</a>
+          <a href="https://www.sgv.si/" target="_blank" rel="noopener noreferrer" class="card-link">{{ 'website.link' | translate }}</a>
           <!-- ISKRE -->
           <div class="accordion accordion-flush" id="highSchoolProgram">
             <div class="card my-3" [ngClass]="['bg-' + theme]">
@@ -164,7 +168,7 @@
                   </p>
 
                   <div class="list-group mt-3">
-                    <a *ngFor="let item of publications" class="list-group-item list-group-item-action"
+                    <a *ngFor="let item of publications" target="_blank" class="list-group-item list-group-item-action"
                       [href]="'/uploads/' + item.id" [ngClass]="'bg-' + theme">
                       Iskre -
                       {{ 'education.iskre.issue' | translate }} {{ item.meta.issue }},

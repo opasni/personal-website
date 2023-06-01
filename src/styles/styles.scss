@@ -47,3 +47,27 @@
 	max-width: none !important;
 	min-height: calc(100vh - 6rem);
 }
+
+.card-header:first-child {
+  border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
+}
+
+.accordion-button {
+  padding: 0 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: var(--font-color);
+  &:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+  }
+  &::after {
+    background-image: var(--bs-accordion-btn-active-icon);
+  }
+}
+
+.list-group-item {
+  color: var(--font-color);
+  &:hover {
+    background-color: var(--light-background) !important;
+  }
+}

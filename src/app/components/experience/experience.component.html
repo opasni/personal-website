@@ -6,6 +6,252 @@
       </h1>
     </div>
     <div class="body">
+      <!-- ******************* ACHTZIG20 ******************* -->
+      <div class="card my-3" [ngClass]="['bg-' + theme]">
+        <div class="card-body">
+          <h5 class="card-title">{{ 'experience.institution.achtzig20' | translate }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ 'experience.achtzig20.title' | translate }}</h6>
+          <p class="card-text"><i>2018 - 2023</i></p>
+          <p class="card-text" *ngFor="let par of ('experience.achtzig20.abstract' | translate)">
+            <span [innerHTML]="par"></span>
+          </p>
+          <div class="accordion accordion-flush" id="achtzig20Job">
+            <!-- NOA -->
+            <div class="card my-3" [ngClass]="['bg-' + theme]">
+              <div class="card-header" id="headingNOA">
+                <h5 class="mb-0">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#collapseNOA" aria-expanded="false"
+                    aria-controls="collapseNOA">
+                    {{ 'experience.achtzig20.noa.type' | translate }}
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseNOA" class="accordion-collapse collapse"
+                aria-labelledby="headingNOA" data-bs-parent="#masterProgram">
+                <div class="card-body">
+                  <h5 class="card-title">{{ 'experience.achtzig20.noa.title' | translate }}</h5>
+                  <p class="card-text" *ngFor="let par of ('experience.achtzig20.noa.abstract' | translate)">
+                    {{ par }}
+                  </p>
+                  <a href="https://newonads.de/" target="_blank" rel="noopener noreferrer" class="card-link">{{ 'experience.achtzig20.noa.link' | translate }}</a>
+                </div>
+              </div>
+            </div>
+            <!-- GRID3 -->
+            <div class="card my-3" [ngClass]="['bg-' + theme]">
+              <div class="card-header" id="headingGrid3">
+                <h5 class="mb-0">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#collapseGrid3" aria-expanded="false"
+                    aria-controls="collapseGrid3">
+                    {{ 'experience.achtzig20.grid3.type' | translate }}
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseGrid3" class="accordion-collapse collapse"
+                aria-labelledby="headingGrid3" data-bs-parent="#masterProgram">
+                <div class="card-body">
+                  <h5 class="card-title">{{ 'experience.achtzig20.grid3.title' | translate }}</h5>
+                  <p class="card-text" *ngFor="let par of ('experience.achtzig20.grid3.abstract' | translate)">
+                    {{ par }}
+                  </p>
+                  <a href="https://grid3.io/" target="_blank" rel="noopener noreferrer" class="card-link">{{ 'experience.achtzig20.grid3.link' | translate }}</a>
+                </div>
+              </div>
+            </div>
+            <!-- ACHTZIG20 DOO -->
+            <div class="card my-3" [ngClass]="['bg-' + theme]">
+              <div class="card-header" id="headingAchtzig20">
+                <h5 class="mb-0">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#collapseAchtzig20" aria-expanded="false"
+                    aria-controls="collapseAchtzig20">
+                    {{ 'experience.achtzig20.achtzig20.type' | translate }}
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseAchtzig20" class="accordion-collapse collapse"
+                aria-labelledby="headingAchtzig20" data-bs-parent="#masterProgram">
+                <div class="card-body">
+                  <h5 class="card-title">{{ 'experience.achtzig20.achtzig20.title' | translate }}</h5>
+                  <p class="card-text" *ngFor="let par of ('experience.achtzig20.achtzig20.abstract' | translate)">
+                    {{ par }}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- DEVELOPMENT -->
+            <div class="card my-3" [ngClass]="['bg-' + theme]">
+              <div class="card-header" id="headingDevelopment">
+                <h5 class="mb-0">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#collapseDevelopment" aria-expanded="false"
+                    aria-controls="collapseDevelopment">
+                    {{ 'experience.achtzig20.development.type' | translate }}
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseDevelopment" class="accordion-collapse collapse"
+                aria-labelledby="headingDevelopment" data-bs-parent="#masterProgram">
+                <div class="card-body">
+                  <!-- ALICE -->
+                  <div class="list-group mb-3">
+                    <h5 class="card-title">{{ 'experience.achtzig20.development.alice.title' | translate }}</h5>
+                    <p class="card-text" *ngFor="let par of ('experience.achtzig20.development.alice.abstract' | translate)">
+                      {{ par }}
+                    </p>
+                  </div>
+                  <!-- NEW -->
+                  <div class="list-group mb-3">
+                    <h5 class="card-title">{{ 'experience.achtzig20.development.new.title' | translate }}</h5>
+                    <p class="card-text" *ngFor="let par of ('experience.achtzig20.development.new.abstract' | translate)">
+                      {{ par }}
+                    </p>
+                  </div>
+                  <!-- FAPOS -->
+                  <div class="list-group">
+                    <h5 class="card-title">{{ 'experience.achtzig20.development.fapos.title' | translate }}</h5>
+                    <p class="card-text" *ngFor="let par of ('experience.achtzig20.development.fapos.abstract' | translate)">
+                      {{ par }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TRAININGS -->
+            <div class="card my-3" [ngClass]="['bg-' + theme]">
+              <div class="card-header" id="headingTrainings">
+                <h5 class="mb-0">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTrainings" aria-expanded="false"
+                    aria-controls="collapseTrainings">
+                    {{ 'experience.achtzig20.trainings.type' | translate }}
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTrainings" class="accordion-collapse collapse"
+                aria-labelledby="headingTrainings" data-bs-parent="#masterProgram">
+                <div class="card-body">
+                  <h5 class="card-title">{{ 'experience.achtzig20.trainings.title' | translate }}</h5>
+                  <p class="card-text" *ngFor="let par of ('experience.achtzig20.trainings.abstract' | translate)">
+                    {{ par }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ******************* AKKA ******************* -->
+      <div class="card my-3" [ngClass]="['bg-' + theme]">
+        <div class="card-body">
+          <h5 class="card-title">{{ 'experience.institution.akka' | translate }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ 'experience.akka.title' | translate }}</h6>
+          <p class="card-text"><i>2018</i></p>
+          <p class="card-text" *ngFor="let par of ('experience.akka.abstract' | translate)">
+            <span [innerHTML]="par"></span>
+          </p>
+          <a href="/uploads/akka_certificate.pdf" class="card-link">{{ 'experience.akka.certificate' | translate }}</a>
+          <div class="accordion accordion-flush" id="akkaJob">
+            <!-- PROJECTS -->
+            <div class="card my-3" [ngClass]="['bg-' + theme]">
+              <div class="card-header" id="headingProjects">
+                <h5 class="mb-0">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#collapseProjects" aria-expanded="false"
+                    aria-controls="collapseProjects">
+                    {{ 'experience.akka.projects.type' | translate }}
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseProjects" class="accordion-collapse collapse"
+                aria-labelledby="headingProjects" data-bs-parent="#masterProgram">
+                <div class="card-body">
+                  <!-- CARSHIP -->
+                  <div class="list-group mb-3">
+                    <h5 class="card-title">{{ 'experience.akka.projects.carship.title' | translate }}</h5>
+                    <p class="card-text" *ngFor="let par of ('experience.akka.projects.carship.abstract' | translate)">
+                      {{ par }}
+                    </p>
+                    <a href="https://carship.online/" target="_blank" rel="noopener noreferrer" class="card-link">{{ 'experience.akka.projects.carship.link' | translate }}</a>
+                  </div>
+                  <!-- SECOND HAND PRICE -->
+                  <div class="list-group">
+                    <h5 class="card-title">{{ 'experience.akka.projects.second-hand.title' | translate }}</h5>
+                    <p class="card-text" *ngFor="let par of ('experience.akka.projects.second-hand.abstract' | translate)">
+                      {{ par }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- AKKADEMY -->
+            <div class="card my-3" [ngClass]="['bg-' + theme]">
+              <div class="card-header" id="headingAkkademy">
+                <h5 class="mb-0">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#collapseAkkademy" aria-expanded="false"
+                    aria-controls="collapseAkkademy">
+                    {{ 'experience.akka.akkademy.type' | translate }}
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseAkkademy" class="accordion-collapse collapse"
+                aria-labelledby="headingAkkademy" data-bs-parent="#masterProgram">
+                <div class="card-body">
+                  <h5 class="card-title">{{ 'experience.akka.akkademy.title' | translate }}</h5>
+                  <p class="card-text" *ngFor="let par of ('experience.akka.akkademy.abstract' | translate)">
+                    {{ par }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ******************* INSTITUTE JOZEF STEFAN ******************* -->
+      <div class="card my-3" [ngClass]="['bg-' + theme]">
+        <div class="card-body">
+          <h5 class="card-title">{{ 'experience.institution.institute-js' | translate }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ 'experience.institute-js.title' | translate }}</h6>
+          <p class="card-text"><i>2014 - 2017</i></p>
+          <p class="card-text" *ngFor="let par of ('experience.institute-js.abstract' | translate)">
+            <span [innerHTML]="par"></span>
+          </p>
+        </div>
+        <div class="card-footer text-body-secondary">
+          <p class="card-text">{{ 'experience.references' | translate }}</p>
+          <ul>
+            <li>
+              Prof. Dr. Simon Širca,
+              <i>{{ 'education.institution.university' | translate }}</i><br>
+              <a href="mailto:simon.sirca@fmf.uni-lj.si">simon.sirca@fmf.uni-lj.si</a>
+            </li>
+            <li>
+              Prof. Dr. Alexandre Deur,
+              <i>Jefferson Lab</i><br>
+              <a href="mailto:deurpam@jlab.org">deurpam@jlab.org</a>
+            </li>
+            <li>
+              Dr. Carlos Muñoz Camacho,
+              <i>Jefferson Lab</i><br>
+              <a href="mailto:munoz@jlab.org">munoz@jlab.org</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ******************* BIA SEPARATIONS ******************* -->
+      <div class="card my-3" [ngClass]="['bg-' + theme]">
+        <div class="card-body">
+          <h5 class="card-title">{{ 'experience.institution.bia-separation' | translate }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ 'experience.bia-separation.title' | translate }}</h6>
+          <p class="card-text"><i>2012</i></p>
+          <p class="card-text" *ngFor="let par of ('experience.bia-separation.abstract' | translate)">
+            <span [innerHTML]="par"></span>
+          </p>
+        </div>
+      </div>
     </div>
   </ng-container>
 </div>

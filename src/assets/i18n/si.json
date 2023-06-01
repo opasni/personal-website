@@ -6,19 +6,131 @@
         "menu-item": "O Meni",
         "title": "O Meni"
     },
-    "experience": {
-        "menu-item": "Izkušnje",
-        "title": "Izkušnje"
-    },
     "skills": {
         "menu-item": "Spretnosti",
         "title": "Spretnosti"
+    },
+    "experience": {
+        "menu-item": "Izkušnje",
+        "title": "Delovne izkušnje",
+        "references": "Reference",
+        "institution": {
+            "bia-separation": "BIA Separations d.o.o.",
+            "institute-js": "Inštitut Jožefa Štefana",
+            "akka": "AKKA GmbH",
+            "achtzig20": "Achtzig20 GmbH"
+        },
+        "achtzig20": {
+            "type": "Employee",
+            "title": "Management Consultant",
+            "abstract": [
+                ""
+            ],
+            "noa": {
+                "type": "CTO @ newonads GmbH",
+                "title": "newonads",
+                "link": "Website",
+                "abstract": [
+                    "Something"
+                ]
+            },
+            "grid3": {
+                "type": "CTO @ Studio3 GmbH",
+                "title": "Grid3 Platform",
+                "link": "Website",
+                "abstract": [
+                    "Something"
+                ]
+            },
+            "achtzig20": {
+                "type": "CEO @ achtzig20 d.o.o.",
+                "title": "Achtzig20 d.o.o.",
+                "abstract": [
+                    "Something"
+                ]
+            },
+            "development": {
+                "type": "Technical Lead, Software Development and Requirements engineering",
+                "alice": {
+                    "title": "ALICE",
+                    "abstract": [
+                        "Something"
+                    ]
+                },
+                "new": {
+                    "title": "NEW",
+                    "abstract": [
+                        "Something"
+                    ]
+                },
+                "fapos": {
+                    "title": "FAPOS",
+                    "abstract": [
+                        "Something"
+                    ]
+                }
+            },
+            "trainings": {
+                "type": "Trainings",
+                "title": "Data Analytics Training",
+                "abstract": [
+                    "Something"
+                ]
+            }
+        },
+        "akka": {
+            "type": "Zaposlen",
+            "title": "Diplomirani inženir",
+            "abstract": [
+                "Med mojim 8-mesečnim potovanjem z družbo AKKA sem imel/a priložnost obiskati 1-mesečni program v Akkademy v Ženevi in nato delati v Ingolstadtu. Kljub novosti programa in nekaterim začetnim izzivom sem izkoristil/a dragoceno priložnost ter vzpostavil/a pomembne stike, ki so mi omogočili prihodnje delo."
+            ],
+            "certificate": "Potrdilo",
+            "projects": {
+                "type": "Projekti",
+                "carship": {
+                    "title": "Carship",
+                    "link": "carship.online",
+                    "abstract": [
+                        "V vlogi glavnega razvijalca in oblikovalca arhitekture carship.online sem imel pomembno vlogo pri razvoju platforme. Odgovoren sem bil za implementacijo programske opreme in oblikovanje uporabniškega toka. S svojim delom sem prispeval k učinkovitemu delovanju platforme in zagotavljanju prijazne uporabniške izkušnje, ki zadovoljuje potrebe uporabnikov."
+                    ]
+                },
+                "second-hand": {
+                    "title": "Analiza vpliva dodatnih funkcij na ceno rabljenih vozil znamke AUDI",
+                    "abstract": [
+                        "V tem projektu smo izvedli celovito analizo odvisnosti cene rabljenih vozil, pri čemer smo se posebej osredotočili na vozila znamke AUDI. Naš glavni cilj je bil raziskati vlogo dodatnih funkcij pri vztrajnosti cene.",
+                        "Z obsežnim raziskovanjem in analizo podatkov smo preučili različne dodatne funkcije, ki so na voljo za vozila znamke AUDI, ter njihov vpliv na vrednost pri ponovni prodaji. Z analizo zgodovinskih podatkov o prodaji, trendov na trgu in željah kupcev smo si prizadevali ugotoviti, katere dodatne funkcije imajo pomemben vpliv na vzdrževanje cene AUDI vozil."
+                    ]
+                }
+            },
+            "akkademy": {
+                "type": "Vključevanje novih članov",
+                "title": "Akkademy",
+                "abstract": [
+                    "Akkademy je program za vključevanje novih članov, ki sem ga obiskoval med svojo zaposlitvijo pri podjetju AKKA GmbH. Ta program mi je omogočil pridobivanje novih znanj in veščin ter se poglobil v delovne procese in vrednote podjetja. S pomočjo Akkademyja sem pridobil dragocene izkušnje in se še bolj povezal z ostalimi sodelavci."
+                ]
+            }
+        },
+        "institute-js": {
+            "type": "Študentski raziskovalec",
+            "title": "Raziskovalec na Inštitutu Jožefa Štefana",
+            "abstract": [
+                "Med magistrskim študijem sem začel delati kot študentski raziskovalec na Inštitutu Jožefa Štefana. Moj mentor je bil prof. dr. Simon Sirca. V tem obdobju sem se naučil analizirati podatke, programirati v jeziku C++, izvajati simulacije, interpretirati in predstavljati podatke ter še mnogo drugega. Zadnjih šest mesecev sem opravljal prakso v Mainzu."
+            ]
+        },
+        "bia-separation": {
+            "type": "Študentski raziskovalec",
+            "title": "Raziskovalec pri podjetju BIA Separations d.o.o.",
+            "abstract": [
+                "Prvi večji projekt sem izvajal v podjetju BIA Separations v sodelovanju z Inštitutom Jožefa Štefana. Podjetje proizvaja posebne materiale, ki se uporabljajo za filtracijo virusov in proteinov v različnih kemijskih in farmacevtskih laboratorijih. Raziskavo sem izvajal v inštitutu in predstavil ugotovitve podjetju. To je zahtevalo samostojnost, odgovornost in natančnost."
+            ]
+        }
     },
     "education": {
         "menu-item": "Izobrazba",
         "title": "Izobrazba",
         "institution": {
-            "university": "Univerza v Ljubljani, Fakulteta za matematiko in fiziko",
+            "university": "Univerza v Ljubljani",
+            "faculty": "Fakulteta za matematiko in fiziko",
             "high-school": "Škofijska Gimnazija Vipava",
             "primary-school": "Osnovna šola Dornberk"
         },
@@ -61,7 +173,7 @@
             "title": "Program študijske izmenjave Erasmus+",
             "abstract": [
                 "V zadnjem semestru študija sem se pridružil programu študentske izmenjave Erasmus+. Kot pripravnik sem delal v Mikotronu v Mainzu (Nemčija). Med pripravništvom sem se udeležil tudi nekaj predavanj na lokalni univerzi (Johannes Guttenberg Universität). Poleg osnovnega znanja nemškega jezika sem spoznal veliko ljudi, razširil svoje obzorje in izboljšal socialne veščine. Med pripravništvom sem se naučil analizirati velike količine podatkov. Prav tako sem delal na projektu, ki je vključeval oblikovanje, konstrukcijo in testiranje nadgradnje detektorja."
-             ]
+            ]
         },
         "manhattan-project": {
             "type": "Seminar",
@@ -70,7 +182,7 @@
             "presentation": "Prezentacija",
             "abstract": [
                 "V tem seminarju je predstavljena fizika za Manhattanov projekt. Opisani so problemi, s katerimi so se fiziki srečevali pri sestavljanju jedrske bombe med drugo svetovno vojno, ter sprejete odločitve. To vključuje izbiro pravega fisilnega materiala, vrsto detonacije in druge vidike. Procesi v jedrskem središču bombe so predstavljeni z uporabo preprostih modelov in tehnik. Na koncu preizkusimo numerično simulacijo detonacije z uporabo pridobljenih rezultatov ter jih primerjamo z dejanskimi podatki."
-             ]
+            ]
         },
         "bachelor-thesis": {
             "type": "Dodiplomsko delo",
