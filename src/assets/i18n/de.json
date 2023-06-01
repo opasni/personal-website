@@ -17,7 +17,80 @@
     },
     "education": {
         "menu-item": "Ausbildung",
-        "title": "Ausbildung"
+        "title": "Ausbildung",
+        "institution": {
+            "university": "Universität von Ljubljana, Fakultät für Mathematik und Physik",
+            "high-school": "Vipava Diözesangymnasium",
+            "primary-school": "Grundschule Dornberk"
+        },
+        "degree": {
+            "master": {
+                "title": "Masterstudium der mathematischen Physik",
+                "abstract": [
+                    "Das Masterstudium war ein großer Schritt hin zu praktischen Fähigkeiten und hat viel über meine Wünsche für meine zukünftige Karriere offenbart.",
+                    "Mein Notendurchschnitt betrug 9.0, was einer Note A (USA) und 1,7 (Deutschland) entspricht."
+                ]
+            },
+            "bachelor": {
+                "title": "Bachelorstudium der allgemeinen Physik",
+                "abstract": [
+                    "Während des ersten Studienabschnitts wollte ich mich aufgrund meines Wunsches nach Breite nicht zu sehr spezialisieren. Daher habe ich bei der Auswahl der Fächer versucht, einen möglichst breiten Wissensbereich abzudecken. Neben allgemeinen Fächern wie Mathematik und klassischer sowie moderner Physik habe ich mich auch mit den Prinzipien der Astronomie, Geophysik, Elektronik und insbesondere der Modellphysik vertraut gemacht.",
+                    "Mein Notendurchschnitt betrug 8,3, was einer Note A (USA) und 2,3 (Deutschland) entspricht."
+                ]
+            },
+            "high-school": {
+                "title": "Allgemeines Gymnasialprogramm",
+                "abstract": "Das Gymnasialprogramm hat es mir ermöglicht, eine überdurchschnittliche Allgemeinbildung zu erlangen und betonte die Bedeutung des Mitmenschen, der Ethik und moralischer Fragen, wodurch ein besseres Verständnis von mir selbst und anderen ermöglicht wurde. Neben den allgemeinen Fächern habe ich auch Grundkenntnisse der italienischen und lateinischen Sprache erworben. Darüber hinaus erhielt ich das Zois-Stipendium für begabte Studenten."
+            },
+            "primary-school": {
+                "title": "Grundschulbildung",
+                "abstract": "Die frühzeitige Teilnahme an verschiedenen außerschulischen Aktivitäten wie musikalischer Ausbildung, Schachwettbewerben und Sport hat es mir ermöglicht, meinen Horizont zu erweitern."
+            }
+        },
+        "master-thesis": {
+            "type": "Masterarbeit",
+            "title": "Aufbau eines Experiments zur Messung des Axialen Formfaktors des Protons",
+            "file": "Dateidownload",
+            "code": "Source Code",
+            "abstract": [
+                "Ich diskutiere hier die Durchführbarkeit eines Experiments mit schwacher geladener Strömung unter Verwendung eines Elektronenstrahls niedriger Energie mit Energien unterhalb der Pionenschwelle (120 MeV). Das Ziel ist es, die Q&#178;-Abhängigkeit des axialen Vektor-Formfaktors GA zu messen. Dieser kann modellunabhängig und robust extrahiert werden, ähnlich wie bei elektromagnetischen Formfaktoren aus typischen Elektronenstreuungsexperimenten mit geringer Unsicherheit. Dies steht im Gegensatz zu den bisher verwendeten Methoden, um GA zugänglich zu machen, wie Neutrinomessungen und Pionenelektroproduktion.",
+                "Ein solches wegweisendes Experiment könnte auch den Zugang zu anderen Größen ermöglichen, darunter auch der magnetische Formfaktor des freien Neutrons. Obwohl dies für hadronische und nukleare Physik von fundamentaler Bedeutung ist, wurden bisher nur wenige Eigenschaften des freien Neutrons gemessen. Die Durchführbarkeit wurde mit dem Toolkit Geant4 getestet, dessen Zweck darin besteht, die Wechselwirkungen von Teilchen mit Materie zu simulieren."
+            ]
+        },
+        "student-exchange": {
+            "type": "Studierendenaustausch",
+            "title": "Erasmus+ Studentenaustauschprogramm",
+            "abstract": [
+                "Im letzten Semester meines Studiums habe ich am Erasmus+ Studentenaustauschprogramm teilgenommen. Ich habe als Praktikant im Mikrotron in Mainz (Deutschland) gearbeitet. Während meines Praktikums habe ich auch einige Kurse an der örtlichen Universität (Johannes Gutenberg-Universität) besucht. Neben den Grundkenntnissen der deutschen Sprache habe ich viele Menschen kennengelernt, meinen Horizont erweitert und meine sozialen Fähigkeiten verbessert. Während des Praktikums habe ich gelernt, große Datenmengen zu analysieren. Außerdem habe ich an einem Projekt gearbeitet, das Design, Konstruktion und Test einer Detektorerweiterung umfasste."
+             ]
+        },
+        "manhattan-project": {
+            "type": "Seminar",
+            "title": "Physik des Manhattan-Projekts",
+            "file": "Dateidownload",
+            "presentation": "Präsentation",
+            "abstract": [
+                "In diesem Seminar wird die Physik hinter dem Manhattan-Projekt vorgestellt. Es wird versucht, die Probleme zu beschreiben, mit denen die Physiker konfrontiert waren, als sie während des Zweiten Weltkriegs die Atombombe entwickelten, sowie die getroffenen Entscheidungen. Hierbei geht es um die Wahl des geeigneten spaltbaren Materials, die Art der Detonation und andere Aspekte. Die Prozesse im Inneren des Bombenkerns werden mithilfe einfacher Modelle und Techniken präsentiert. Am Ende testen wir eine numerische Simulation der Detonation anhand der gewonnenen Ergebnisse und vergleichen sie mit den tatsächlichen Daten."
+            ]
+        },
+        "bachelor-thesis": {
+            "type": "Bachelorarbeit",
+            "title": "Bariogenese über Leptogenese",
+            "file": "Dateidownload",
+            "presentation": "Präsentation",
+            "abstract": [
+                "Im Seminar wird ein möglicher Szenario der Baryogenese vorgestellt, das zur beobachteten kosmologischen Baryonasymmetrie führen könnte. Dieses Szenario wird als Baryogenese über Leptogenese bezeichnet und ist möglich, wenn eine Theorie gilt, die annimmt, dass alle Neutrinos Majorana-Fermionen sind. Zusätzlich zu den leichten linksdrehenden Neutrinos sagt die Theorie auch schwere rechtsdrehende Neutrinos mit einer Masse M voraus. Bei Temperaturen um T ∼ M erzeugen diese Neutrinos durch Zerfälle außerhalb des thermischen Gleichgewichts eine Leptonenasymmetrie, wodurch die Erhaltung der Leptonenzahl und die CP-Symmetrie gebrochen werden. Nicht-perturbative Prozesse der elektroschwachen Wechselwirkung im Standardmodell wandeln dann den Überschuss an Leptonen in eine Baryonasymmetrie um."
+            ]
+        },
+        "iskre": {
+            "type": "Technischer Redakteur",
+            "title": "Iskre",
+            "issue": "Jahrgang",
+            "number": "Nummer",
+            "abstract": [
+                "Während des Gymnasiumprogramms habe ich 4 Jahre lang als technischer Redakteur mitgearbeitet und bei der Erstellung des schulischen Newsletters namens Iskre mitgewirkt. Die Ergebnisse meiner Arbeit können Sie unter den folgenden Links überprüfen."
+            ]
+        }
     },
     "contact": {
         "menu-item": "Kontakt",
@@ -72,5 +145,8 @@
     "theme": {
         "light": "Lichtmodus",
         "dark": "Dunkelmodus"
+    },
+    "website": {
+        "link": "Webseite"
     }
 }
