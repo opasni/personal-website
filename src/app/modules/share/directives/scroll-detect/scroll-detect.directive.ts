@@ -15,7 +15,7 @@ export class ScrollDetectDirective implements AfterViewInit {
     ];
     private _isTop = true;
     private _isBottom = false;
-    private _defaultTouch = { x: 0, y: 0 };
+    private _defaultTouch = { x: 0, y: 0, position: 'none' };
 
     constructor(
         private host: ElementRef,
@@ -32,13 +32,26 @@ export class ScrollDetectDirective implements AfterViewInit {
         if (!this.host.nativeElement) {
             return;
         }
+        console.log(event);
         const touch = event.touches[0] || event.changedTouches[0];
         if (event.type === 'touchstart') {
             this._defaultTouch.y = touch.screenY;
+            this._defaultTouch.position = this.getPositions();
         } else if (event.type === 'touchend') {
             const deltaY = touch.screenY - this._defaultTouch.y;
-            this.checkAndNavigate(-deltaY * 10);
-            this.checkPositions();
+            if (this._defaultTouch.position === this.getPositions()) {
+                if (this._defaultTouch.position === 'both') {
+                    this._isTop = true;
+                    this._isBottom = true;
+                } else if (this._defaultTouch.position === 'top') {
+                    this._isTop = true;
+                } else if (this._defaultTouch.position === 'bottom') {
+                    this._isBottom = true;
+                } else {
+                    return;
+                }
+                this.checkAndNavigate(-deltaY * 10);
+            }
         }
     }
 
@@ -61,11 +74,27 @@ export class ScrollDetectDirective implements AfterViewInit {
         } else if (this._isTop === false && scroller.scrollTop === 0) {
             setTimeout(() => this._isTop = true, 600);
         }
+        console.log(scroller.scrollHeight, window.innerHeight, scroller.scrollTop, window.innerHeight + scroller.scrollTop);
         if (scroller.scrollHeight !== (window.innerHeight + scroller.scrollTop)) {
             this._isBottom = false;
         } else if (this._isBottom === false && scroller.scrollHeight === (window.innerHeight + scroller.scrollTop)) {
             setTimeout(() => this._isBottom = true, 600);
         }
+    }
+
+    private getPositions(): 'none' | 'top' | 'bottom' | 'both' {
+        const element = this.host.nativeElement as HTMLDivElement;
+        const scroller = element.parentElement?.parentElement;
+        const isTop = scroller && Math.abs(scroller.scrollTop) < 1;
+        const isBottom = scroller && Math.abs(scroller.scrollHeight - (window.innerHeight + scroller.scrollTop)) < 1;
+        if (isTop && isBottom) {
+            return 'both';
+        } else if (isTop) {
+            return 'top'
+        } else if (isBottom) {
+            return 'bottom';
+        }
+        return 'none';
     }
 
     private checkAndNavigate(deltaY: number) {

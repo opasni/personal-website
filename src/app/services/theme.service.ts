@@ -24,10 +24,20 @@ export class ThemeService {
 
     constructor() {
         this.selectedTheme.next(getTheme());
+        this.setBodyColor(getTheme());
     }
 
     setTheme(theme: Theme): void {
         this.selectedTheme.next(theme);
+        this.setBodyColor(theme);
         localStorage.setItem(StorageKeys.SELECTED_THEME, theme);
+    }
+
+    private setBodyColor(theme: Theme) {
+        if (theme === Theme.Dark) {
+            document.body.style.backgroundColor = '#1C1D22';
+        } else {
+            document.body.style.backgroundColor = '#f8f9fa'
+        }
     }
 }
