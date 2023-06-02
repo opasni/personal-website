@@ -46,7 +46,7 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
 			this._position = this.getPositions();
 		} else if (event.type === 'touchend' || event.type === 'touchmove') {
 			const deltaY = touch.screenY - this._defaultTouch.y;
-			this.updatePositions(-deltaY, 68, 18);
+			this.updatePositions(-deltaY, 12, 12);
 		}
 	}
 
