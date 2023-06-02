@@ -6,6 +6,9 @@
       </h1>
     </div>
     <div class="body">
+      <p *ngFor="let par of ('about.text' | translate)">
+        <span [innerHTML]="par"></span>
+      </p>
     </div>
   </ng-container>
 </div>

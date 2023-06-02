@@ -1,0 +1,21 @@
+@import "src/styles/variables";
+
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.circle {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  border: 1px solid var(--font-color);
+  box-shadow: 1px 1px 3px var(--pop-color);
+  position: relative;
+}
+
+.filled {
+  background-color: $primary-color;
+}

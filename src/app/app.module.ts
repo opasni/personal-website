@@ -15,6 +15,7 @@ import { HeaderModule } from './modules/header/header.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EmailService } from './services/email.service';
 import { AboutComponent } from './components/about/about.component';
+import { GaugeComponent } from './components/gauge/gauge.component';
 
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -25,7 +26,8 @@ export const setupLanguageFactory = (service: LanguageService) => service.initia
     declarations: [
         AppComponent,
         AboutComponent,
-        BackboneComponent
+        BackboneComponent,
+        GaugeComponent
     ],
     imports: [
         BrowserModule,
