@@ -1,0 +1,26 @@
+@import "src/styles/variables";
+
+.gauge-wrapper {
+  position: absolute;
+  right: 20px;
+  z-index: 2;
+
+  &.top {
+    top: 20px;
+  }
+
+  &.bottom {
+    bottom: 20px;
+  }
+
+  &.none {
+    display: none;
+  }
+}
+.progress-ring__circle {
+  transition: 0.35s stroke-dashoffset;
+  // axis compensation
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke: $primary-color;
+}

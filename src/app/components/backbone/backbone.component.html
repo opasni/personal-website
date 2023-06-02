@@ -1,4 +1,5 @@
 <div class="wrapper background-color" [ngClass]="(selectedTheme$ | async) + '-theme'">
+	<app-gauge></app-gauge>
 	<app-header> </app-header>
 
 	<div [@routeAnimations]="getRouteAnimation()"

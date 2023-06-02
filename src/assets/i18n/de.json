@@ -5,16 +5,63 @@
     },
     "about": {
         "menu-item": "Über mich",
-        "title": "Über mich"
+        "title": "Über mich",
+        "text": [
+            "Ich bin ein hochmotivierter und erfahrener Profi mit fundierten Kenntnissen in der Softwareentwicklung und im Projektmanagement. Als CEO von achtzig20 d.o.o. habe ich erfolgreich ein Team talentierter Mitarbeiter geleitet und die Gründung unserer Tochtergesellschaft überwacht. Mit Leidenschaft für Technologie und Innovation war ich an verschiedenen Projekten beteiligt, darunter die Entwicklung einer digitalen Werbeplattform und die Schaffung einer Community-Aufbau-Plattform. Meine Fähigkeiten in Führung, Problemlösung und strategischem Denken haben es mir ermöglicht, erfolgreiche Ergebnisse zu erzielen und Mehrwert für Kunden zu schaffen.",
+            "Neben meinen beruflichen Aktivitäten bin ich auch begeistert von Musik, Sport und Reisen. Diese Hobbys bringen Balance in mein Leben und inspirieren mich, neue Horizonte zu erkunden. Mit guten Kenntnissen der deutschen und englischen Sprache sowie einem mittleren Sprachniveau in Deutsch bin ich in der Lage, mit unterschiedlichen Zielgruppen zu kommunizieren und bedeutungsvolle Verbindungen aufzubauen. Ich bin leidenschaftlich daran interessiert, meine Fähigkeiten, mein Wissen und meine Erfahrungen einzusetzen, um einen positiven Einfluss in der digitalen Welt und darüber hinaus zu schaffen."
+        ]
     },
     "skills": {
         "menu-item": "Fähigkeiten",
-        "title": "Fähigkeiten"
+        "title": "Fähigkeiten",
+        "hard-skills": {
+            "title": "Fachkompetenzen",
+            "programming": "Frameworks und Programmiersprachen",
+            "databases": "Datenbanken",
+            "infrastructure": "Infrastruktur",
+            "tools": "Webanwendungen"
+        },
+        "soft-skills": {
+            "title": "Sozialkompetenzen",
+            "teamwork": "Teamarbeit",
+            "communication": "Kommunikation",
+            "responsibility": "Verantwortung",
+            "resourcefulness": "Einfallsreichtum",
+            "trainability": "Lernbereitschaft",
+            "problem-solving": "Problemlösung",
+            "leadership": "Führung",
+            "strategic-thinking": "Strategisches Denken",
+            "decision-making": "Entscheidungsfindung",
+            "adaptability": "Anpassungsfähigkeit",
+            "financial-acumen": "Finanzielles Geschick",
+            "emotional-intelligence": "Emotionale Intelligenz"
+        },
+        "languages": {
+            "title": "Sprache",
+            "slovenian": "Slowenisch",
+            "english": "Englisch",
+            "german": "Deutsch",
+            "italian": "Italienisch"
+        },
+        "hobbies": {
+            "title": "Hobbys",
+            "singing": "Singen",
+            "chess": "Schach",
+            "guitar-playing": "Gitarre spielen",
+            "running": "Laufen",
+            "climbing": "Klettern",
+            "basketball": "Basketball",
+            "traveling": "Reisen",
+            "gaming": "Gaming",
+            "reading": "Lesen"
+        }
     },
     "experience": {
         "menu-item": "Erfahrung",
         "title": "Berufserfahrung",
         "references": "Referenzen",
+        "skills": "Fähigkeiten",
+        "tech-stack": "Technologie-Stack",
         "institution": {
             "bia-separation": "BIA Separations d.o.o.",
             "institute-js": "Jožef Stefan Institut",
@@ -25,57 +72,111 @@
             "type": "Employee",
             "title": "Management Consultant",
             "abstract": [
-                ""
+                "In meiner Rolle bei Achtzig20 hatte ich das Privileg, mit einem dynamischen Team zusammenzuarbeiten und zum Wachstum und Erfolg des Unternehmens beizutragen. Angefangen bei meiner Erfahrung mit AKKA, wo ich wertvolle Fähigkeiten als Softwareentwickler und Architekt erworben habe, wechselte ich zu Achtzig20 und übernahm die Rolle eines Technischen Leiters. Mit einem starken Fokus auf Anforderungsmanagement, Softwareentwicklung, Softwarearchitektur und DevOps habe ich eine entscheidende Rolle bei der Bereitstellung qualitativ hochwertiger Lösungen für unsere Kunden gespielt.",
+                "Darüber hinaus ging meine Reise mit Achtzig20 über technische Expertise hinaus. Als CEO von Achtzig20 d.o.o. habe ich das Unternehmen in verschiedenen Wachstumsphasen geleitet. Von der Zusammenarbeit mit e-studentski servis und der Einrichtung eines wunderschönen Büros im Herzen von Ljubljana bis zur Gründung der Tochtergesellschaft Achtzig20 doo habe ich mich dem Aufbau einer starken und erfolgreichen Organisation gewidmet.",
+                "Im Laufe meiner Arbeit habe ich mit renommierten Kunden wie Audi, Porsche, BMW und DZ Bank zusammengearbeitet, Schulungen im Bereich Datenanalyse durchgeführt und meine Expertise genutzt, um wertvolle Erkenntnisse zu generieren. Darüber hinaus war ich an Projekten beteiligt, wie der Analyse der Abhängigkeit des Gebrauchtwagenpreises bei Audi-Fahrzeugen, bei der ich den Einfluss optionaler Ausstattungsmerkmale auf die Preisbeständigkeit untersucht habe.",
+                "Meine Erfahrung mit Achtzig20 war geprägt von kontinuierlichem Lernen, Problemlösung und Innovation. Es war eine bereichernde Reise, die es mir ermöglicht hat, zum Wachstum und Erfolg des Unternehmens beizutragen und starke Beziehungen zu Kunden und Partnern aufzubauen."
             ],
             "noa": {
                 "type": "CTO @ newonads GmbH",
                 "title": "newonads",
-                "link": "Website",
+                "link": "newonads.de",
                 "abstract": [
-                    "Something"
+                    "Newonads ist eine digitale Werbeplattform, die Marken und Unternehmen mit relevanter und verlässlicher Reichweite, emotionaler Ansprache und einer loyalen Community in einem definierten geografischen Gebiet verbindet. Alle Kampagnen können geplant, gemessen und direkt die gewünschte Zielgruppe erreichen.",
+                    "Wenn Sie nach einer digitalen Werbeplattform suchen, die Ihnen dabei helfen kann, Ihre Zielgruppe zu erreichen, die Markenbekanntheit zu steigern, Leads zu generieren und den Verkauf anzukurbeln, dann ist newonads eine großartige Option."
+                ],
+                "skills": [
+                    "Projektmanagement",
+                    "Teamführung",
+                    "Produktdesign",
+                    "Technische Leitung",
+                    "Anforderungsmanagement",
+                    "Softwareentwicklung",
+                    "Softwarearchitektur",
+                    "DevOps"
                 ]
             },
             "grid3": {
                 "type": "CTO @ Studio3 GmbH",
-                "title": "Grid3 Platform",
-                "link": "Website",
+                "title": "GRID3",
+                "link": "grid3.io",
                 "abstract": [
-                    "Something"
+                    "Grid3 ist eine Plattform, die Agenturen dabei unterstützt, digitale Communities aufzubauen und zu pflegen, indem sie die Vorteile des Web3-Bereichs nutzt, jedoch ohne die damit verbundenen Sicherheitsrisiken und Zusatzkosten.",
+                    "Sie bietet eine Vielzahl von Tools und Ressourcen, um Agenturen bei der Erstellung, Verwaltung und dem Wachstum ihrer Communities zu unterstützen. Diese Tools umfassen das Design und die Bereitstellung von Smart Contracts / NFT-Drops, API-Integrationen mit verschiedenen Online-Shops, Roadmap-Planung, Gamification von NFTs zur Steigerung der Kundenbindung usw."
+                ],
+                "skills": [
+                    "Project Management",
+                    "Team Leading",
+                    "Technical Lead",
+                    "Product design",
+                    "Requirements engineering",
+                    "Software Development",
+                    "Software Architecture",
+                    "DevOps"
                 ]
             },
             "achtzig20": {
-                "type": "CEO @ achtzig20 d.o.o.",
+                "type": "CEO @ Achtzig20 d.o.o.",
                 "title": "Achtzig20 d.o.o.",
                 "abstract": [
-                    "Something"
+                    "Als CEO von Achtzig20 d.o.o. spiele ich eine entscheidende Rolle im Wachstum und Erfolg des Unternehmens. Alles begann mit Studierenden, die über e-Študentski Servis für Achtzig20 GmbH tätig waren. Im Laufe der Zeit haben wir unser Team um Vollzeitmitarbeiter erweitert und ein wunderschönes Büro im Stadtzentrum von Ljubljana eingerichtet. Wir haben bedeutende Meilensteine erreicht, darunter die Gründung von Achtzig20 d.o.o. als Tochtergesellschaft. Gemeinsam haben wir eine starke und blühende Organisation aufgebaut, angetrieben von unserer Leidenschaft für Exzellenz und unserem Engagement für herausragende Dienstleistungen."
+                ],
+                "skills": [
+                    "Führung",
+                    "Strategisches Denken",
+                    "Kommunikation",
+                    "Entscheidungsfindung",
+                    "Anpassungsfähigkeit",
+                    "Finanzverständnis",
+                    "Emotionale Intelligenz"
                 ]
             },
             "development": {
-                "type": "Technical Lead, Software Development and Requirements engineering",
+                "type": "Projekte",
                 "alice": {
-                    "title": "ALICE",
+                    "title": "ALICE @ CARIAD",
                     "abstract": [
-                        "Something"
+                        "tatus-/Reifegradtracking für interdisziplinäre Projektteams (intern + externe Supplier) und das Management auf beliebigen Bedarfsebenen Vollständige Nachverfolgbarkeit entlang sämtlicher Entwicklungsprozess-Phasen inklusive der Freigaben auf verschiedenen Ebenen, Auswertung und Darstellung verschiedener KPIs wie Lastenheft, Bugs, Testing, Change Requests etc.",
+                        "Daten werden teilweise automatisch durch APIs verschiedener Plattformen (JIRA, BitBucket, Doors, cPlace, codeBeamer, etc.) automatisch in ALICE importiert, gemapped und importiert."
+                    ],
+                    "skills": [
+                        "Technische Leitung",
+                        "Anforderungsmanagement",
+                        "Softwareentwicklung",
+                        "Softwarearchitektur",
+                        "DevOps"
                     ]
                 },
                 "new": {
-                    "title": "NEW",
+                    "title": "NEW @ AUDI",
                     "abstract": [
-                        "Something"
+                        "Das Reportingtool ermöglicht das Verfolgen und Berichten des Entwicklungsfortschritts von Bauteilen. Es besteht aus den Bereichen Neuteiltracking, Aggregateverkabelung und Package. Teams können den Fortschritt besser verfolgen, Engpässe identifizieren und die Kommunikation verbessern."
+                    ],
+                    "skills": [
+                        "Technische Leitung",
+                        "Anforderungsmanagement",
+                        "Softwareentwicklung"
                     ]
                 },
                 "fapos": {
-                    "title": "FAPOS",
+                    "title": "FAPOS @ AUDI",
                     "abstract": [
-                        "Something"
+                        "Ein Tool, das die Buchung von Neuwagen für Tests durch Partner-Autohäuser von Audi erleichtert. Das Tool integriert GRP Single Sign-On und bietet einen umfassenden Workflow, einschließlich Administrator-Bestätigungen und E-Mail-Benachrichtigungen."
+                    ],
+                    "skills": [
+                        "Anforderungsmanagement",
+                        "Softwareentwicklung"
                     ]
                 }
             },
             "trainings": {
-                "type": "Trainings",
-                "title": "Data Analytics Training",
+                "type": "Coaching-Erfahrung",
+                "title": "Data Analytics Schulung",
                 "abstract": [
-                    "Something"
+                    "Ich habe Erfahrung in der Durchführung von Schulungen im Bereich Data Analytics, wo ich zwei Programme entwickelt habe. Das erste Training konzentriert sich darauf, einen Überblick über Data Analytics zu geben und den Teilnehmern das Konzept, die Herausforderungen und den Data-Analytics-Zyklus näherzubringen. Es behandelt auch Themen wie Lean Analytics und Growth Hacking.",
+                    "Das zweite Training baut auf den Grundlagen des ersten auf, indem es Python einführt und verschiedene Methoden und Machine-Learning-Algorithmen behandelt. Die Teilnehmer sammeln praktische Erfahrungen in der Programmierung mit Python und lernen, Datenanalysetechniken effektiv anzuwenden.",
+                    "Beide Schulungsprogramme wurden in Zusammenarbeit mit Kunden wie BMW und DZ Bank durchgeführt, was mir wertvolle Erfahrungen in der Arbeit mit etablierten Unternehmen ermöglicht hat. Dadurch konnte ich Einblicke in die Anwendung von Datenanalyse in realen Geschäftsszenarien gewinnen und meine Fähigkeiten in der Schulung auf diesem Gebiet verbessern.",
+                    "Durch diese Schulungen habe ich Kunden dabei geholfen, ihr Verständnis und ihre Nutzung der Datenanalyse zu verbessern und sie mit dem Wissen auszustatten, um Herausforderungen in diesem Bereich effektiv anzugehen."
                 ]
             }
         },
@@ -87,7 +188,7 @@
             ],
             "certificate": "Zertifikat",
             "projects": {
-                "type": "Projekti",
+                "type": "Projekte",
                 "carship": {
                     "title": "Carship",
                     "link": "carship.online",
@@ -115,7 +216,7 @@
             "type": "Studentischer Forscher",
             "title": "Forscher am Jožef Stefan Institut",
             "abstract": [
-                "Während meines Masterstudiums arbeitete ich als studentischer Forscher am Jožef Stefan Institut. Mein Mentor war Prof. Dr. Simon Sirca. In dieser Zeit lernte ich Datenanalyse, C++-Programmierung, Durchführung von Simulationen, Interpretation und Präsentation von Daten sowie vieles mehr. In den letzten sechs Monaten absolvierte ich mein Praktikum in Mainz."
+                "Während meines Masterstudiums arbeitete ich als studentischer Forscher am Jožef Stefan Institut. Mein Mentor war Prof. Dr. Simon Širca. In dieser Zeit lernte ich Datenanalyse, C++-Programmierung, Durchführung von Simulationen, Interpretation und Präsentation von Daten sowie vieles mehr. In den letzten sechs Monaten absolvierte ich mein Praktikum in Mainz."
             ]
         },
         "bia-separation": {

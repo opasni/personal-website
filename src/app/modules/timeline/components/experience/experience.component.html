@@ -15,6 +15,7 @@
           <p class="card-text" *ngFor="let par of ('experience.achtzig20.abstract' | translate)">
             <span [innerHTML]="par"></span>
           </p>
+          <a href="https://8020.eco/" target="_blank" rel="noopener noreferrer" class="card-link">{{ 'experience.achtzig20.link' | translate }}</a>
           <div class="accordion accordion-flush" id="achtzig20Job">
             <!-- NOA -->
             <div class="card my-3" [ngClass]="['bg-' + theme]">
@@ -34,6 +35,20 @@
                   <p class="card-text" *ngFor="let par of ('experience.achtzig20.noa.abstract' | translate)">
                     {{ par }}
                   </p>
+                  {{ 'experience.skills' | translate }}
+                  <ul>
+                    <li *ngFor="let par of ('experience.achtzig20.noa.skills' | translate)">
+                      {{ par }}
+                    </li>
+                  </ul>
+                  {{ 'experience.tech-stack' | translate }}
+                  <ul>
+                    <li>SQL Server</li>
+                    <li>MongoDB</li>
+                    <li>.NET (REST API)</li>
+                    <li>Angular</li>
+                    <li>CI/CD</li>
+                  </ul>
                   <a href="https://newonads.de/" target="_blank" rel="noopener noreferrer" class="card-link">{{ 'experience.achtzig20.noa.link' | translate }}</a>
                 </div>
               </div>
@@ -56,6 +71,20 @@
                   <p class="card-text" *ngFor="let par of ('experience.achtzig20.grid3.abstract' | translate)">
                     {{ par }}
                   </p>
+                  {{ 'experience.skills' | translate }}
+                  <ul>
+                    <li *ngFor="let par of ('experience.achtzig20.grid3.skills' | translate)">
+                      {{ par }}
+                    </li>
+                  </ul>
+                  {{ 'experience.tech-stack' | translate }}
+                  <ul>
+                    <li>SQL Server</li>
+                    <li>Solidity - Smart Contracts</li>
+                    <li>.NET (REST API)</li>
+                    <li>Angular</li>
+                    <li>CI/CD</li>
+                  </ul>
                   <a href="https://grid3.io/" target="_blank" rel="noopener noreferrer" class="card-link">{{ 'experience.achtzig20.grid3.link' | translate }}</a>
                 </div>
               </div>
@@ -78,6 +107,12 @@
                   <p class="card-text" *ngFor="let par of ('experience.achtzig20.achtzig20.abstract' | translate)">
                     {{ par }}
                   </p>
+                  {{ 'experience.skills' | translate }}
+                  <ul>
+                    <li *ngFor="let par of ('experience.achtzig20.achtzig20.skills' | translate)">
+                      {{ par }}
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -98,23 +133,63 @@
                   <!-- ALICE -->
                   <div class="list-group mb-3">
                     <h5 class="card-title">{{ 'experience.achtzig20.development.alice.title' | translate }}</h5>
+                    <p class="card-text"><i>2018 - 2023</i></p>
                     <p class="card-text" *ngFor="let par of ('experience.achtzig20.development.alice.abstract' | translate)">
                       {{ par }}
                     </p>
+                    {{ 'experience.skills' | translate }}
+                    <ul>
+                      <li *ngFor="let par of ('experience.achtzig20.development.alice.skills' | translate)">
+                        {{ par }}
+                      </li>
+                    </ul>
+                    {{ 'experience.tech-stack' | translate }}
+                    <ul>
+                      <li>Oracle Database</li>
+                      <li>.NET (REST API)</li>
+                      <li>Angular</li>
+                      <li>CI/CD</li>
+                    </ul>
                   </div>
                   <!-- NEW -->
                   <div class="list-group mb-3">
                     <h5 class="card-title">{{ 'experience.achtzig20.development.new.title' | translate }}</h5>
+                    <p class="card-text"><i>2020 - 2022</i></p>
                     <p class="card-text" *ngFor="let par of ('experience.achtzig20.development.new.abstract' | translate)">
                       {{ par }}
                     </p>
+                    {{ 'experience.skills' | translate }}
+                    <ul>
+                      <li *ngFor="let par of ('experience.achtzig20.development.new.skills' | translate)">
+                        {{ par }}
+                      </li>
+                    </ul>
+                    {{ 'experience.tech-stack' | translate }}
+                    <ul>
+                      <li>Oracle Database</li>
+                      <li>.NET (REST API)</li>
+                      <li>Angular</li>
+                    </ul>
                   </div>
                   <!-- FAPOS -->
                   <div class="list-group">
                     <h5 class="card-title">{{ 'experience.achtzig20.development.fapos.title' | translate }}</h5>
+                    <p class="card-text"><i>2019</i></p>
                     <p class="card-text" *ngFor="let par of ('experience.achtzig20.development.fapos.abstract' | translate)">
                       {{ par }}
                     </p>
+                    {{ 'experience.skills' | translate }}
+                    <ul>
+                      <li *ngFor="let par of ('experience.achtzig20.development.new.skills' | translate)">
+                        {{ par }}
+                      </li>
+                    </ul>
+                    {{ 'experience.tech-stack' | translate }}
+                    <ul>
+                      <li>SQL Server</li>
+                      <li>.NET (REST API)</li>
+                      <li>Angular</li>
+                    </ul>
                   </div>
                 </div>
               </div>

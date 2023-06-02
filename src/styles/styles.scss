@@ -27,18 +27,6 @@
   font-family: 'Inter';
 }
 
-html {
-  // overflow: hidden;
-  width: 100%;
-}
-
-body {
-  height: 100%;
-  position: fixed;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-}
-
 .text-primary {
   color: $primary-color !important;
 }
@@ -153,5 +141,46 @@ body {
         }
       }
     }
+  }
+}
+
+
+.gauge {
+  position: absolute;
+  right: 20px;
+  width: 62px;
+  height: 62px;
+  background-color: #bbb;
+  border-radius: 100%;
+  position: relative;
+  overflow: hidden;
+  border: 4px solid #eee;
+  box-sizing: border-box;
+  float: left;
+  margin: 20px;
+  box-shadow: 0px 0px 25px #bbb;
+
+  &.top {
+    top: 20px;
+  }
+
+  &.bottom {
+    bottom: 20px;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 400px 200px 400px;
+    border-color: transparent transparent #ddd transparent;
+    -webkit-transform: rotate(243deg);
+    -ms-transform: rotate(243deg);
+    transform: rotate(243deg);
+    position: relative;
+    top: -50px;
+    left: -214px;
   }
 }
