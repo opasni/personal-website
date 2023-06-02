@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ThemeComponent } from '../../share/abstracts/theme.component';
+import { ThemeComponent } from '../../modules/share/abstracts/theme.component';
 
 @Component({
   selector: 'app-about',

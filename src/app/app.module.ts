@@ -14,8 +14,7 @@ import { ShareModule } from './modules/share/share.module';
 import { HeaderModule } from './modules/header/header.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EmailService } from './services/email.service';
-import { EducationComponent } from './components/education/education.component';
-import { ExperienceComponent } from './components/experience/experience.component';
+import { AboutComponent } from './components/about/about.component';
 
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -25,9 +24,8 @@ export const setupLanguageFactory = (service: LanguageService) => service.initia
 @NgModule({
     declarations: [
         AppComponent,
-        BackboneComponent,
-        EducationComponent,
-        ExperienceComponent
+        AboutComponent,
+        BackboneComponent
     ],
     imports: [
         BrowserModule,

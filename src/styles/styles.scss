@@ -5,47 +5,62 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 
 @font-face {
-	font-family: 'Inter';
-	src: url('/assets/fonts/Inter-Regular.ttf');
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Regular.ttf');
 }
+
 @font-face {
-	font-family: 'Inter';
-	src: url('/assets/fonts/Inter-SemiBold.ttf');
-	font-weight: bold;
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-SemiBold.ttf');
+  font-weight: bold;
 }
+
 @font-face {
-	font-family: 'Inter';
-	src: url('/assets/fonts/Inter-Light.ttf');
-	font-weight: light;
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Light.ttf');
+  font-weight: light;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	font-family: 'Inter';
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+}
+
+html {
+  // overflow: hidden;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  position: fixed;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .text-primary {
-	color: $primary-color !important;
+  color: $primary-color !important;
 }
 
 .text-standard {
-    color: var(--font-color);
+  color: var(--font-color);
 }
 
 .background-color {
-    background-color: var(--background-color);
-		color: var(--font-color);
+  background-color: var(--background-color);
+  color: var(--font-color);
 }
 
-.form-control, .form-select {
-	color: var(--font-color) !important;
-	background-color: var(--light-background);
+.form-control,
+.form-select {
+  color: var(--font-color) !important;
+  background-color: var(--light-background);
 }
 
 .container {
-	max-width: none !important;
-	min-height: calc(100vh - 6rem);
+  max-width: none !important;
+  min-height: calc(100vh - 6rem);
 }
 
 .card-header:first-child {
@@ -57,9 +72,11 @@
   background-color: transparent !important;
   box-shadow: none !important;
   color: var(--font-color);
+
   &:not(.collapsed) {
     color: var(--bs-accordion-active-color);
   }
+
   &::after {
     background-image: var(--bs-accordion-btn-active-icon);
   }
@@ -67,7 +84,74 @@
 
 .list-group-item {
   color: var(--font-color);
+
   &:hover {
     background-color: var(--light-background) !important;
+  }
+}
+
+.sidebar {
+
+  .bottom-area {
+    margin-top: auto;
+  }
+
+  ul.components {
+    padding: 0;
+  }
+
+  ul {
+    height: 100%;
+
+    li {
+      margin-top: 0.1em;
+      white-space: nowrap;
+
+      &.active {
+        background: $primary-color;
+        border-radius: 30px;
+        background-color: $primary-color;
+
+        a {
+          color: white;
+        }
+
+        i {
+          color: white;
+        }
+      }
+
+      &>ul {
+        margin-left: 10px;
+      }
+
+      &:hover {
+        color: $primary-color;
+        background-color: var(--light-background);
+        border-radius: 30px;
+
+        a {
+          color: white;
+        }
+      }
+
+      i {
+        display: inline-block;
+        border-radius: 10px;
+        margin-left: 1em;
+        margin-right: 0.5em;
+      }
+
+      a {
+        padding: 10px 0;
+        display: block;
+        color: var(--font-color);
+
+        &:hover {
+          padding: 10px 0;
+          display: block;
+        }
+      }
+    }
   }
 }

@@ -31,10 +31,10 @@ export class HoverImageDirective {
     private toggleCoverImage(on: boolean) {
         if (on) {
             this.element.src = this.appHoverImage ?? this.staticSrc;
-            document.getElementById('sidebar')?.classList.add('activated');
+            document.getElementById('profile')?.classList.add('activated');
         } else {
             this.element.src = this.staticSrc;
-            document.getElementById('sidebar')?.classList.remove('activated');
+            document.getElementById('profile')?.classList.remove('activated');
         }
     }
 
