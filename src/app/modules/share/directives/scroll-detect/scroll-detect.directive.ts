@@ -1,5 +1,6 @@
 import { AfterViewInit, Directive, ElementRef, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
+import { Position } from '../../classes/position.class';
 
 @Directive({
     selector: '[appScrollDetect]'
@@ -9,13 +10,13 @@ export class ScrollDetectDirective implements AfterViewInit {
     private _orderedRoutes = [
         '/about',
         '/skills',
-        '/experience',
-        '/education',
+        '/timeline/experience',
+        '/timeline/education',
         '/contact'
     ];
-    private _isTop = true;
-    private _isBottom = false;
-    private _defaultTouch = { x: 0, y: 0, position: 'none' };
+
+    private _position = new Position();
+    private _defaultTouch = { x: 0, y: 0 };
 
     constructor(
         private host: ElementRef,
@@ -23,7 +24,7 @@ export class ScrollDetectDirective implements AfterViewInit {
     ) { }
 
     ngAfterViewInit(): void {
-        this.checkPositions();
+        this._position = this.getPositions();
     }
 
     @HostListener('touchstart', ['$event'])
@@ -32,24 +33,14 @@ export class ScrollDetectDirective implements AfterViewInit {
         if (!this.host.nativeElement) {
             return;
         }
-        console.log(event);
         const touch = event.touches[0] || event.changedTouches[0];
         if (event.type === 'touchstart') {
             this._defaultTouch.y = touch.screenY;
-            this._defaultTouch.position = this.getPositions();
+            this._position = this.getPositions();
         } else if (event.type === 'touchend') {
             const deltaY = touch.screenY - this._defaultTouch.y;
-            if (this._defaultTouch.position === this.getPositions()) {
-                if (this._defaultTouch.position === 'both') {
-                    this._isTop = true;
-                    this._isBottom = true;
-                } else if (this._defaultTouch.position === 'top') {
-                    this._isTop = true;
-                } else if (this._defaultTouch.position === 'bottom') {
-                    this._isBottom = true;
-                } else {
-                    return;
-                }
+            this._position.add(this.getPositions());
+            if (this._position.top > 1 || this._position.bottom > 1) {
                 this.checkAndNavigate(-deltaY * 10);
             }
         }
@@ -59,53 +50,31 @@ export class ScrollDetectDirective implements AfterViewInit {
         if (!this.host.nativeElement) {
             return;
         }
-        this.checkAndNavigate(event.deltaY);
-        this.checkPositions();
-    }
-
-    private checkPositions() {
-        const element = this.host.nativeElement as HTMLDivElement;
-        const scroller = element.parentElement?.parentElement;
-        if (!scroller) {
-            return;
-        }
-        if (scroller.scrollTop !== 0) {
-            this._isTop = false;
-        } else if (this._isTop === false && scroller.scrollTop === 0) {
-            setTimeout(() => this._isTop = true, 600);
-        }
-        console.log(scroller.scrollHeight, window.innerHeight, scroller.scrollTop, window.innerHeight + scroller.scrollTop);
-        if (scroller.scrollHeight !== (window.innerHeight + scroller.scrollTop)) {
-            this._isBottom = false;
-        } else if (this._isBottom === false && scroller.scrollHeight === (window.innerHeight + scroller.scrollTop)) {
-            setTimeout(() => this._isBottom = true, 600);
+        this._position.add(this.getPositions());
+        if (this._position.top > 36 || this._position.bottom > 18) {
+            this.checkAndNavigate(event.deltaY);
         }
     }
 
-    private getPositions(): 'none' | 'top' | 'bottom' | 'both' {
+    private getPositions(): Position {
         const element = this.host.nativeElement as HTMLDivElement;
         const scroller = element.parentElement?.parentElement;
-        const isTop = scroller && Math.abs(scroller.scrollTop) < 1;
-        const isBottom = scroller && Math.abs(scroller.scrollHeight - (window.innerHeight + scroller.scrollTop)) < 1;
-        if (isTop && isBottom) {
-            return 'both';
-        } else if (isTop) {
-            return 'top'
-        } else if (isBottom) {
-            return 'bottom';
-        }
-        return 'none';
+        const isTop = scroller != null && Math.abs(scroller.scrollTop) < 1;
+        const isBottom = scroller != null && Math.abs(scroller.scrollHeight - (window.innerHeight + scroller.scrollTop)) < 1;
+        return new Position(isTop, isBottom);
     }
 
     private checkAndNavigate(deltaY: number) {
-        if (this._isTop && deltaY < -20) {
+        if (this._position.top > 0 && deltaY < -20) {
             const index = this._orderedRoutes.indexOf(this.router.url);
             if (index > 0) {
+                this._position = new Position();
                 this.router.navigate([this._orderedRoutes[index - 1]]);
             }
-        } else if (this._isBottom && deltaY > 20) {
+        } else if (this._position.bottom > 0 && deltaY > 20) {
             const index = this._orderedRoutes.indexOf(this.router.url);
             if (index < 4) {
+                this._position = new Position();
                 this.router.navigate([this._orderedRoutes[index + 1]]);
             }
         }

@@ -1,0 +1,77 @@
+@import 'src/styles/variables';
+
+.settings-icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: 1em;
+  margin-right: 0.5em;
+
+  &.language {
+    margin-bottom: 3px;
+  }
+
+  &.theme {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $primary-color;
+    margin-bottom: -3px;
+  }
+}
+
+.profile {
+  min-width: 190px;
+
+  .profile-image-container {
+    width: 100px;
+    height: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+	&.activated {
+		.social-icon-color {
+			color: var(--pop-color) !important;
+			border: 2px solid $primary-color;
+			background-color: $primary-color;
+		}
+	}
+
+  .social-icons {
+    display: flex;
+    justify-content: left;
+
+    .social-icon {
+      cursor: pointer;
+      font-size: 1.1em;
+      color: $primary-color;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        color: var(--pop-color);
+        background-color: var(--light-background);
+      }
+
+      fa-icon {
+        padding-top: 2px;
+      }
+    }
+
+    a {
+      margin-right: 1em;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

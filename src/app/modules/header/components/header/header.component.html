@@ -24,13 +24,13 @@
 					</a>
 				</li>
 				<li [routerLinkActive]="['active']" class="nav-item">
-					<a class="nav-link" (click)="toggleMenu()" [routerLink]="['experience']">
+					<a class="nav-link" (click)="toggleMenu()" [routerLink]="['timeline', 'experience']">
 						<i class="bi bi-lightbulb-fill"></i>
 						{{ 'experience.menu-item' | translate }}
 					</a>
 				</li>
 				<li [routerLinkActive]="['active']" class="nav-item">
-					<a class="nav-link" (click)="toggleMenu()" [routerLink]="['education']">
+					<a class="nav-link" (click)="toggleMenu()" [routerLink]="['timeline', 'education']">
 						<i class="bi bi-mortarboard-fill"> </i>
 						{{ 'education.menu-item' | translate }}
 					</a>
@@ -43,52 +43,7 @@
 				</li>
 			</div>
 			<div class="bottom-area">
-				<!-- LANGUAGE SWITCHING -->
-
-				<li class="nav-item" *ngIf="selectedLanguage$ | async as selectedLanguage">
-					<a role="button" class="nav-link pe-auto" (click)="changeLanguage(selectedLanguage.id)">
-						<img class="settings-icon language" [src]="selectedLanguage.meta" [alt]="selectedLanguage.name + ' flag'" />
-						{{ 'header.switch-language' | translate }}
-					</a>
-				</li>
-				<!-- THEME SWITCHING -->
-
-				<li class="nav-item" *ngIf="selectedTheme$ | async as selectedTheme">
-					<a role="button" class="nav-link pe-auto" (click)="toggleTheme(selectedTheme.id)">
-						<div class="settings-icon theme" [style.backgroundColor]="selectedTheme.meta"></div>
-						{{ selectedTheme.name | translate }}
-					</a>
-				</li>
-				<!-- USER INFO -->
-				<a *ngIf="userData$ | async as userData" class="profile d-flex border border-secondary rounded p-2 mt-3 nav-link">
-					<div class="profile-image-container me-3">
-						<!-- TODO: fix userImagePath-->
-						<img appHoverImage="assets/images/profile_image_hover.jpeg" class="rounded"
-							src="assets/images/profile_image.jpg" />
-					</div>
-					<div class="w-100">
-						<div>
-							<h4 class="text-standard">{{ userData.firstName }} {{ userData.lastName }}</h4>
-							<div class="social-icons">
-								<a href="https://www.linkedin.com/in/%C4%8Drt-harej-1b704997/" target="_blank" rel="noopener noreferrer">
-									<div class="social-icon">
-										<i class="bi bi-linkedin"></i>
-									</div>
-								</a>
-								<a href="https://github.com/opasni" target="_blank" rel="noopener noreferrer">
-									<div class="social-icon social-icon-color">
-										<i class="bi bi-github"></i>
-									</div>
-								</a>
-								<a href="https://www.instagram.com/crtharej" target="_blank" rel="noopener noreferrer">
-									<div class="social-icon">
-										<i class="bi bi-instagram"></i>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</a>
+				<app-profile></app-profile>
 			</div>
 		</ul>
 	</div>
