@@ -21,7 +21,8 @@ import { HoverImageDirective } from './directives/hover-image/hover-image.direct
         ShareModule,
     ],
     exports: [
-        HeaderComponent
+        HeaderComponent,
+        ProfileComponent
     ]
 })
 export class HeaderModule { }

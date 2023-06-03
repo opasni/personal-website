@@ -5,9 +5,11 @@
     },
     "about": {
         "menu-item": "Über mich",
-        "title": "Über mich",
+        "hi-there": "Hallo",
+        "title": "Meine Name ist Črt Harej",
+        "subtitle": "Hier können Sie etwas über mich lesen",
         "text": [
-            "Ich bin ein hochmotivierter und erfahrener Profi mit fundierten Kenntnissen in der Softwareentwicklung und im Projektmanagement. Als CEO von achtzig20 d.o.o. habe ich erfolgreich ein Team talentierter Mitarbeiter geleitet und die Gründung unserer Tochtergesellschaft überwacht. Mit Leidenschaft für Technologie und Innovation war ich an verschiedenen Projekten beteiligt, darunter die Entwicklung einer digitalen Werbeplattform und die Schaffung einer Community-Aufbau-Plattform. Meine Fähigkeiten in Führung, Problemlösung und strategischem Denken haben es mir ermöglicht, erfolgreiche Ergebnisse zu erzielen und Mehrwert für Kunden zu schaffen.",
+            "Ich bin ein hochmotivierter und erfahrener Profi mit fundierten Kenntnissen in der Softwareentwicklung und im Projektmanagement. Als CEO von Achtzig20 d.o.o. leite ich erfolgreich ein Team talentierter Mitarbeiter und überwache die Gründung unserer Tochtergesellschaft. Mit Leidenschaft für Technologie und Innovation bin ich an verschiedenen Projekten beteiligt, darunter die Entwicklung einer digitalen Werbeplattform newonads und die Schaffung einer Community-Aufbau-Plattform GRID3. Meine Fähigkeiten in Führung, Problemlösung und strategischem Denken ermöglichen mir, erfolgreiche Ergebnisse zu erzielen und Mehrwert für Kunden zu schaffen.",
             "Neben meinen beruflichen Aktivitäten bin ich auch begeistert von Musik, Sport und Reisen. Diese Hobbys bringen Balance in mein Leben und inspirieren mich, neue Horizonte zu erkunden. Mit guten Kenntnissen der deutschen und englischen Sprache sowie einem mittleren Sprachniveau in Deutsch bin ich in der Lage, mit unterschiedlichen Zielgruppen zu kommunizieren und bedeutungsvolle Verbindungen aufzubauen. Ich bin leidenschaftlich daran interessiert, meine Fähigkeiten, mein Wissen und meine Erfahrungen einzusetzen, um einen positiven Einfluss in der digitalen Welt und darüber hinaus zu schaffen."
         ]
     },
@@ -62,6 +64,7 @@
         "references": "Referenzen",
         "skills": "Fähigkeiten",
         "tech-stack": "Technologie-Stack",
+        "present": "bis jetzt",
         "institution": {
             "bia-separation": "BIA Separations d.o.o.",
             "institute-js": "Jožef Stefan Institut",
@@ -72,10 +75,10 @@
             "type": "Employee",
             "title": "Management Consultant",
             "abstract": [
-                "In meiner Rolle bei Achtzig20 hatte ich das Privileg, mit einem dynamischen Team zusammenzuarbeiten und zum Wachstum und Erfolg des Unternehmens beizutragen. Angefangen bei meiner Erfahrung mit AKKA, wo ich wertvolle Fähigkeiten als Softwareentwickler und Architekt erworben habe, wechselte ich zu Achtzig20 und übernahm die Rolle eines Technischen Leiters. Mit einem starken Fokus auf Anforderungsmanagement, Softwareentwicklung, Softwarearchitektur und DevOps habe ich eine entscheidende Rolle bei der Bereitstellung qualitativ hochwertiger Lösungen für unsere Kunden gespielt.",
-                "Darüber hinaus ging meine Reise mit Achtzig20 über technische Expertise hinaus. Als CEO von Achtzig20 d.o.o. habe ich das Unternehmen in verschiedenen Wachstumsphasen geleitet. Von der Zusammenarbeit mit e-studentski servis und der Einrichtung eines wunderschönen Büros im Herzen von Ljubljana bis zur Gründung der Tochtergesellschaft Achtzig20 doo habe ich mich dem Aufbau einer starken und erfolgreichen Organisation gewidmet.",
-                "Im Laufe meiner Arbeit habe ich mit renommierten Kunden wie Audi, Porsche, BMW und DZ Bank zusammengearbeitet, Schulungen im Bereich Datenanalyse durchgeführt und meine Expertise genutzt, um wertvolle Erkenntnisse zu generieren. Darüber hinaus war ich an Projekten beteiligt, wie der Analyse der Abhängigkeit des Gebrauchtwagenpreises bei Audi-Fahrzeugen, bei der ich den Einfluss optionaler Ausstattungsmerkmale auf die Preisbeständigkeit untersucht habe.",
-                "Meine Erfahrung mit Achtzig20 war geprägt von kontinuierlichem Lernen, Problemlösung und Innovation. Es war eine bereichernde Reise, die es mir ermöglicht hat, zum Wachstum und Erfolg des Unternehmens beizutragen und starke Beziehungen zu Kunden und Partnern aufzubauen."
+                "In meiner Rolle bei Achtzig20 hatte ich das Privileg, mit einem dynamischen Team zusammenzuarbeiten und zum Wachstum und Erfolg des Unternehmens beizutragen. Ausgehend von meiner Erfahrung mit AKKA, wo ich wertvolle Fähigkeiten als Softwareentwickler und -architekt erworben habe, wechselte ich zu Achtzig20 und übernahm die Rolle eines technischen Leiters. Mit einem starken Fokus auf Anforderungsmanagement, Softwareentwicklung, Softwarearchitektur und DevOps spielte ich eine entscheidende Rolle bei der Bereitstellung hochwertiger Lösungen für unsere Kunden.",
+                "Darüber hinaus erstreckte sich meine Reise mit Achtzig20 über technische Expertise hinaus. Als CEO von Achtzig20 d.o.o. führe ich das Unternehmen durch verschiedene Wachstumsphasen. Vom Arbeiten mit e-Študentski Servis und der Einrichtung eines schönen Büros im Herzen von Ljubljana bis hin zur Gründung der Tochtergesellschaft Achtzig20 d.o.o. war es mein Ziel, eine starke und erfolgreiche Organisation aufzubauen.",
+                "In meiner Arbeit habe ich mit renommierten Kunden wie Audi, Porsche, BMW, DZ Bank und anderen zusammengearbeitet und Softwarelösungen auf Basis von Webclients oder Desktop-Tools entwickelt, schwierige interne technische Herausforderungen gelöst, Schulungen im Bereich Datenanalyse durchgeführt und mein Fachwissen genutzt, um wertvolle Erkenntnisse zu generieren.",
+                "Meine Erfahrung mit Achtzig20 war geprägt von kontinuierlichem Lernen, Problemlösung und Innovation. Es war eine bereichernde Reise, die es mir ermöglichte, zum Wachstum und Erfolg des Unternehmens beizutragen und starke Beziehungen zu Kunden und Partnern aufzubauen."
             ],
             "noa": {
                 "type": "CTO @ newonads GmbH",
@@ -329,8 +332,8 @@
             "label": "Warum möchten Sie Kontakt aufnehmen?",
             "placeholder": "Ich nehme Kontakt auf, weil... (bitte wählen Sie eine Option)",
             "option": {
-                "freelance": "Ich benötige eine Dienstleistung...",
-                "offering-position": "Sind Sie an einer Zusammenarbeit interessiert?",
+                "freelance": "Ich benötige eine Dienstleistung.",
+                "offering-position": "Ich möchte Ihnen einen Job anbieten.",
                 "technical-advice": "Ich benötige technische Beratung.",
                 "seeking-job": "Ich suche nach einer Stelle.",
                 "other": "Ich möchte nur plaudern."
