@@ -11,90 +11,64 @@
       </h3>
       <div class="card my-3" [ngClass]="['bg-' + theme]">
         <div class="card-body">
-          <div class="container">
-            <div class="row">
-              <h5 class="card-title">
-                {{ 'skills.hard-skills.programming' | translate }}
-              </h5>
-            </div>
-            <div class="row">
-              <div class="col-6 col-md-4">
-                <app-skill-measure [value]="5" name=".NET"></app-skill-measure>
-                <app-skill-measure [value]="5" name="Angular"></app-skill-measure>
-                <app-skill-measure [value]="3" name="NodeJS"></app-skill-measure>
-                <app-skill-measure [value]="2" name="Xamarin"></app-skill-measure>
-                <app-skill-measure [value]="4" name="Bootstrap"></app-skill-measure>
-              </div>
-              <div class="col-6 col-md-4">
-                <app-skill-measure [value]="5" name="TypeScript"></app-skill-measure>
-                <app-skill-measure [value]="5" name="C#"></app-skill-measure>
-                <app-skill-measure [value]="3" name="C++"></app-skill-measure>
-                <app-skill-measure [value]="4" name="C"></app-skill-measure>
-              </div>
-              <div class="col-6 col-md-4">
-                <app-skill-measure [value]="4" name="Python"></app-skill-measure>
-                <app-skill-measure [value]="3" name="bash"></app-skill-measure>
-                <app-skill-measure [value]="5" name="VBA"></app-skill-measure>
-                <app-skill-measure [value]="3" name="Pipelines (yml)"></app-skill-measure>
-              </div>
-            </div>
-            <div class="row mt-4">
-              <h5 class="card-title">
-                {{ 'skills.hard-skills.databases' | translate }}
-              </h5>
-            </div>
-            <div class="row">
-              <div class="col-6 col-md-4">
-                <app-skill-measure [value]="5" name="SQL Server"></app-skill-measure>
-              </div>
-              <div class="col-6 col-md-4">
-                <app-skill-measure [value]="4" name="Oracle"></app-skill-measure>
-              </div>
-              <div class="col-6 col-md-4">
-                <app-skill-measure [value]="4" name="mongoDB"></app-skill-measure>
-              </div>
-            </div>
-            <div class="row mt-4">
-              <h5 class="card-title">
-                {{ 'skills.hard-skills.infrastructure' | translate }}
-              </h5>
-            </div>
-            <div class="row">
-              <div class="col-6 col-md-4">
-                <app-skill-measure [value]="4" name="Windows (IIS)"></app-skill-measure>
-                <app-skill-measure [value]="4" name="Linux (nginx)"></app-skill-measure>
-              </div>
-              <div class="col-6 col-md-4">
-                <app-skill-measure [value]="5" name="AWS"></app-skill-measure>
-              </div>
-              <div class="col-6 col-md-4">
-                <app-skill-measure [value]="4" name="Azure"></app-skill-measure>
-              </div>
-            </div>
-            <div class="row mt-4">
-              <h5 class="card-title">
-                {{ 'skills.hard-skills.tools' | translate }}
-              </h5>
-            </div>
-            <div class="row">
-              <div class="col-6 col-md-4">
-                <app-skill-measure [value]="5" name="Jira"></app-skill-measure>
-                <app-skill-measure [value]="5" name="Bitbucket (pipelines)"></app-skill-measure>
-                <app-skill-measure [value]="4" name="Github (actions)"></app-skill-measure>
-                <app-skill-measure [value]="5" name="Git"></app-skill-measure>
-                <app-skill-measure [value]="3" name="Docker"></app-skill-measure>
-              </div>
-              <div class="col-6 col-md-4">
-                <app-skill-measure [value]="4" name="InDesign"></app-skill-measure>
-                <app-skill-measure [value]="2" name="AutoCad"></app-skill-measure>
-                <app-skill-measure [value]="3" name="Inventor"></app-skill-measure>
-              </div>
-              <div class="col-6 col-md-4">
-                <app-skill-measure [value]="5" name="Mathematica"></app-skill-measure>
-                <app-skill-measure [value]="5" name="Jupyther"></app-skill-measure>
-                <app-skill-measure [value]="3" name="R"></app-skill-measure>
-              </div>
-            </div>
+          <div class="row">
+            <h5 class="card-title">
+              {{ 'skills.hard-skills.programming' | translate }}
+            </h5>
+          </div>
+          <div class="section">
+            <app-skill-measure [value]="4" name=".NET"></app-skill-measure>
+            <app-skill-measure [value]="5" name="Angular"></app-skill-measure>
+            <app-skill-measure [value]="2" name="NodeJS"></app-skill-measure>
+            <app-skill-measure [value]="1" name="Xamarin"></app-skill-measure>
+            <app-skill-measure [value]="4" name="Bootstrap"></app-skill-measure>
+            <app-skill-measure [value]="5" name="TypeScript"></app-skill-measure>
+            <app-skill-measure [value]="4" name="C#"></app-skill-measure>
+            <app-skill-measure [value]="3" name="C++"></app-skill-measure>
+            <app-skill-measure [value]="4" name="C"></app-skill-measure>
+            <app-skill-measure [value]="4" name="Python"></app-skill-measure>
+            <app-skill-measure [value]="3" name="bash"></app-skill-measure>
+            <app-skill-measure [value]="5" name="VBA"></app-skill-measure>
+            <app-skill-measure [value]="3" name="Pipelines (yml)"></app-skill-measure>
+          </div>
+          <div class="row mt-4">
+            <h5 class="card-title">
+              {{ 'skills.hard-skills.databases' | translate }}
+            </h5>
+          </div>
+          <div class="section">
+            <app-skill-measure [value]="4" name="SQL Server"></app-skill-measure>
+            <app-skill-measure [value]="3" name="Oracle"></app-skill-measure>
+            <app-skill-measure [value]="2" name="mongoDB"></app-skill-measure>
+          </div>
+          <div class="w-100 mt-4">
+            <h5 class="card-title">
+              {{ 'skills.hard-skills.infrastructure' | translate }}
+            </h5>
+          </div>
+          <div class="section">
+            <app-skill-measure [value]="3" name="Windows (IIS)"></app-skill-measure>
+            <app-skill-measure [value]="4" name="Linux (nginx)"></app-skill-measure>
+            <app-skill-measure [value]="4" name="AWS"></app-skill-measure>
+            <app-skill-measure [value]="3" name="Azure"></app-skill-measure>
+          </div>
+          <div class="w-100 mt-4">
+            <h5 class="card-title">
+              {{ 'skills.hard-skills.tools' | translate }}
+            </h5>
+          </div>
+          <div class="section">
+            <app-skill-measure [value]="4" name="Jira"></app-skill-measure>
+            <app-skill-measure [value]="5" name="Bitbucket"></app-skill-measure>
+            <app-skill-measure [value]="4" name="Github"></app-skill-measure>
+            <app-skill-measure [value]="5" name="Git"></app-skill-measure>
+            <app-skill-measure [value]="2" name="Docker"></app-skill-measure>
+            <app-skill-measure [value]="3" name="InDesign"></app-skill-measure>
+            <app-skill-measure [value]="1" name="AutoCad"></app-skill-measure>
+            <app-skill-measure [value]="2" name="Inventor"></app-skill-measure>
+            <app-skill-measure [value]="4" name="Mathematica"></app-skill-measure>
+            <app-skill-measure [value]="5" name="Jupyther"></app-skill-measure>
+            <app-skill-measure [value]="3" name="R"></app-skill-measure>
           </div>
         </div>
       </div>
@@ -103,25 +77,25 @@
       </h3>
       <div class="card my-3" [ngClass]="['bg-' + theme]">
         <div class="card-body">
-          <div class="row">
-            <div class="col-6 col-md-4">
-              <app-skill-measure [value]="5" [name]="'skills.soft-skills.teamwork' | translate"></app-skill-measure>
-              <app-skill-measure [value]="5" [name]="'skills.soft-skills.communication' | translate"></app-skill-measure>
-              <app-skill-measure [value]="5" [name]="'skills.soft-skills.responsibility' | translate"></app-skill-measure>
-              <app-skill-measure [value]="5" [name]="'skills.soft-skills.resourcefulness' | translate"></app-skill-measure>
-            </div>
-            <div class="col-6 col-md-4">
-              <app-skill-measure [value]="5" [name]="'skills.soft-skills.trainability' | translate"></app-skill-measure>
-              <app-skill-measure [value]="5" [name]="'skills.soft-skills.problem-solving' | translate"></app-skill-measure>
-              <app-skill-measure [value]="5" [name]="'skills.soft-skills.leadership' | translate"></app-skill-measure>
-              <app-skill-measure [value]="5" [name]="'skills.soft-skills.strategic-thinking' | translate"></app-skill-measure>
-            </div>
-            <div class="col-6 col-md-4">
-              <app-skill-measure [value]="5" [name]="'skills.soft-skills.decision-making' | translate"></app-skill-measure>
-              <app-skill-measure [value]="5" [name]="'skills.soft-skills.adaptability' | translate"></app-skill-measure>
-              <app-skill-measure [value]="5" [name]="'skills.soft-skills.financial-acumen' | translate"></app-skill-measure>
-              <app-skill-measure [value]="5" [name]="'skills.soft-skills.emotional-intelligence' | translate"></app-skill-measure>
-            </div>
+          <div class="section">
+            <app-skill-measure [value]="4" [name]="'skills.soft-skills.teamwork' | translate"></app-skill-measure>
+            <app-skill-measure [value]="3" [name]="'skills.soft-skills.communication' | translate"></app-skill-measure>
+            <app-skill-measure [value]="3" [name]="'skills.soft-skills.responsibility' | translate"></app-skill-measure>
+            <app-skill-measure [value]="5"
+              [name]="'skills.soft-skills.resourcefulness' | translate"></app-skill-measure>
+            <app-skill-measure [value]="5" [name]="'skills.soft-skills.trainability' | translate"></app-skill-measure>
+            <app-skill-measure [value]="5"
+              [name]="'skills.soft-skills.problem-solving' | translate"></app-skill-measure>
+            <app-skill-measure [value]="3" [name]="'skills.soft-skills.leadership' | translate"></app-skill-measure>
+            <app-skill-measure [value]="3"
+              [name]="'skills.soft-skills.strategic-thinking' | translate"></app-skill-measure>
+            <app-skill-measure [value]="4"
+              [name]="'skills.soft-skills.decision-making' | translate"></app-skill-measure>
+            <app-skill-measure [value]="3" [name]="'skills.soft-skills.adaptability' | translate"></app-skill-measure>
+            <app-skill-measure [value]="2"
+              [name]="'skills.soft-skills.financial-acumen' | translate"></app-skill-measure>
+            <app-skill-measure [value]="4"
+              [name]="'skills.soft-skills.emotional-intelligence' | translate"></app-skill-measure>
           </div>
         </div>
       </div>
@@ -130,17 +104,11 @@
       </h3>
       <div class="card my-3" [ngClass]="['bg-' + theme]">
         <div class="card-body">
-          <div class="row">
-            <div class="col-6 col-md-4">
-              <app-skill-measure [value]="5" [name]="'skills.languages.slovenian' | translate"></app-skill-measure>
-              <app-skill-measure [value]="5" [name]="'skills.languages.english' | translate"></app-skill-measure>
-            </div>
-            <div class="col-6 col-md-4">
-              <app-skill-measure [value]="3" [name]="'skills.languages.german' | translate"></app-skill-measure>
-            </div>
-            <div class="col-6 col-md-4">
-              <app-skill-measure [value]="2" [name]="'skills.languages.italian' | translate"></app-skill-measure>
-            </div>
+          <div class="section">
+            <app-skill-measure [value]="5" [name]="'skills.languages.slovenian' | translate"></app-skill-measure>
+            <app-skill-measure [value]="5" [name]="'skills.languages.english' | translate"></app-skill-measure>
+            <app-skill-measure [value]="3" [name]="'skills.languages.german' | translate"></app-skill-measure>
+            <app-skill-measure [value]="2" [name]="'skills.languages.italian' | translate"></app-skill-measure>
           </div>
         </div>
       </div>

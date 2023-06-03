@@ -4,10 +4,12 @@
     },
     "about": {
         "menu-item": "O Meni",
-        "title": "O Meni",
+        "hi-there": "Pozdravljeni!",
+        "title": "Moje ime je Črt Harej",
+        "subtitle": "Tukaj si lahko preberete nekaj o meni",
         "text": [
-            "Sem zelo motiviran in izkušen strokovnjak z močnim ozadjem v razvoju programske opreme in projektovnem vodenju. Kot izvršni direktor (CEO) podjetja Achtzig20 d.o.o. sem uspešno vodil ekipo talentiranih posameznikov in nadziral ustanovitev naše podružnice. S strastjo do tehnologije in inovacij sem bil vključen v različne projekte, vključno z razvojem digitalne oglaševalske platforme in ustvarjanjem platforme za gradnjo skupnosti. Moje sposobnosti vodenja, reševanja problemov in strateškega razmišljanja so mi omogočile, da dosežem uspešne rezultate in zagotovim vrednost za stranke.",
-            "Poleg svojega profesionalnega dela sem tudi navdušen nad glasbo, športom in potovanji. Ti hobiji prinašajo ravnotežje v moje življenje in me navdihujejo, da raziskujem nove horizonte. S poznavanjem slovenskega in angleškega jezika ter srednjim znanjem nemščine sem opremljen za komunikacijo z različnimi občinstvi in ustvarjanje pomenljivih povezav. Z veseljem izkoriščam svoje sposobnosti, znanje in izkušnje, da bi ustvaril pozitiven vpliv v digitalnem svetu in širše."
+            "Sem zelo motiviran in izkušen strokovnjak z močnim ozadjem v razvoju programske opreme in projektovnem vodenju. Kot izvršni direktor (CEO) podjetja Achtzig20 d.o.o. uspešno vodim ekipo talentiranih posameznikov in usmerjam ustanovitev naše podružnice. S strastjo do tehnologije in inovacij sem vključen v različne projekte, med katere spadata tudi razvoj digitalne oglaševalske platforme newonads in ustvarjanjem platforme za gradnjo skupnosti GRID3. Moje sposobnosti vodenja, reševanja problemov in strateškega razmišljanja so mi omogočile, da dosežem uspešne rezultate in zagotovim da so stranke vedno zadovoljne.",
+            "Poleg svojega profesionalnega dela se navdušujem tudi nad glasbo, športom in potovanji. Ti hobiji prinašajo ravnotežje v moje življenje in me navdihujejo, da raziskujem nova obzorja. S poznavanjem slovenskega in angleškega jezika ter srednjim znanjem nemščine sem opremljen za komunikacijo z različnimi občinstvi in ustvarjanje pomenljivih povezav. Z veseljem izkoriščam svoje sposobnosti, znanje in izkušnje, da bi ustvaril pozitiven vpliv v digitalnem svetu in širše."
         ]
     },
     "skills": {
@@ -61,6 +63,7 @@
         "references": "Reference",
         "skills": "Veščine",
         "tech-stack": "Tehnologije",
+        "present": "do sedaj",
         "institution": {
             "bia-separation": "BIA Separations d.o.o.",
             "institute-js": "Inštitut Jožefa Štefana",
@@ -71,10 +74,10 @@
             "type": "Employee",
             "title": "Management Consultant",
             "abstract": [
-                "V moji vlogi pri Achtzig20 sem imel privilegij sodelovati z dinamično ekipo in prispevati k rasti in uspehu podjetja. Začenši s svojimi izkušnjami pri AKKA, kjer sem pridobil dragocene veščine kot razvijalec programske opreme in arhitekt, sem prešel k Achtzig20 in prevzel vlogo tehničnega vodje. Z močnim poudarkom na upravljanju zahtev, razvoju programske opreme, arhitekturi programske opreme in DevOps sem odigral ključno vlogo pri zagotavljanju visokokakovostnih rešitev za naše stranke.",
-                "Poleg tega se je moje sodelovanje z Achtzig20 razširilo prek tehničnih veščin. Kot izvršni direktor (CEO) podjetja Achtzig20 d.o.o. sem vodil podjetje skozi različne faze rasti. Od sodelovanja z e-studentskim servisom in vzpostavitve čudovite pisarne v središču Ljubljane do ustanovitve podružnice Achtzig20 doo sem se zavzel za gradnjo močne in uspešne organizacije.",
-                "Med svojim delom sem sodeloval s prestižnimi strankami, kot so Audi, Porsche, BMW in DZ Banka, izvajal usposabljanja na področju analitike podatkov in izkoristil svoje znanje za ustvarjanje dragocenih spoznanj. Prav tako sem bil vključen v projekte, kot je analiza odvisnosti cene rabljenih vozil Audi, kjer sem raziskoval vpliv izbirnih funkcij na obstojnost cene.",
-                "Moje izkušnje z Achtzig20 so bile zaznamovane z neprestanim učenjem, reševanjem problemov in inovacijami. Bila je nagrada polna pot, ki mi je omogočila prispevanje k rasti in uspehu podjetja ter vzpostavljanje močnih odnosov s strankami in partnerji."
+                "V svoji vlogi pri Achtzig20 sem imel privilegij sodelovati z dinamično ekipo in prispevati k rasti in uspehu podjetja. Začenši z izkušnjami pri podjetju AKKA, kjer sem pridobil dragocene veščine kot razvijalec programske opreme in arhitekt, me je pot vodila v Achtzig20, kjer sem postopoma prevzel vlogo tehničnega vodje. Z močnim poudarkom na zahtevah, razvoju programske opreme, arhitekturi programske opreme in DevOpsu sem odigral ključno vlogo pri zagotavljanju visokokakovostnih rešitev našim strankam.",
+                "Poleg tega se je moje sodelovanje z Achtzig20 razširilo preko tehničnega področja. Kot izvršni direktor (CEO) podjetja Achtzig20 d.o.o. vodim podjetje skozi različne faze rasti. Od sodelovanja z e-Študentskim Servisom in vzpostavitve čudovite pisarne v središču Ljubljane do ustanovitve podružnice Achtzig20 d.o.o., namen je bil vedno gradnja močne in uspešne organizacije.",
+                "Med svojim delom sem sodeloval s prestižnimi strankami, kot so Audi, Porsche, BMW, DZ Bank in drugimi, pri razvoju programske opreme na osnovi spletnih odjemalcev ali namiznih orodij, reševanju zahtevnih tehničnih izzivov, izvajanju usposabljanj na področju analitike podatkov ter izkoriščanju svojega znanja za ustvarjanje dragocenih vpogledov.",
+                "Moje izkušnje pri Achtzig20 so zaznamovane z nenehnim učenjem, reševanjem problemov in inovacijami. To je bila do sedaj nagrajujoča pot, ki mi je omogočila prispevanje k rasti in uspehu podjetja ter gradnjo močnih odnosov s strankami in partnerji."
             ],
             "noa": {
                 "type": "CTO @ newonads GmbH",
@@ -328,8 +331,8 @@
             "label": "Zakaj želite vzpostaviti stik?",
             "placeholder": "Vzpostavljam stik, ker... (prosim izberite eno možnost)",
             "option": {
-                "freelance": "Potrebujem nekaj storjenega...",
-                "offering-position": "Ste zainteresirani za sodelovanje z nami?",
+                "freelance": "Potrebujem nekaj storjenega.",
+                "offering-position": "Rad bi vam ponudil delo.",
                 "technical-advice": "Potrebujem tehnično svetovanje.",
                 "seeking-job": "Iščem zaposlitev.",
                 "other": "Želim samo klepetati."

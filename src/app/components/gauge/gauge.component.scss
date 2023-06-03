@@ -11,16 +11,29 @@
 
   &.bottom {
     bottom: 20px;
+
+    .progress-ring__arrow {
+      scale: -0.5;
+    }
   }
 
   &.none {
     display: none;
   }
 }
+
 .progress-ring__circle {
   transition: 0.35s stroke-dashoffset;
   // axis compensation
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
   stroke: $primary-color;
+}
+
+.progress-ring__arrow {
+  fill: var(--pop-color);
+  scale: 0.5;
+  translate: 4px 3px;
+  transform-origin: center;
+  transform-box: fill-box;
 }

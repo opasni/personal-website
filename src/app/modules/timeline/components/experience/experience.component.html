@@ -11,7 +11,7 @@
         <div class="card-body">
           <h5 class="card-title">{{ 'experience.institution.achtzig20' | translate }}</h5>
           <h6 class="card-subtitle mb-2 text-muted">{{ 'experience.achtzig20.title' | translate }}</h6>
-          <p class="card-text"><i>2018 - 2023</i></p>
+          <p class="card-text"><i>2018 - {{ 'experience.present' | translate }}</i></p>
           <p class="card-text" *ngFor="let par of ('experience.achtzig20.abstract' | translate)">
             <span [innerHTML]="par"></span>
           </p>
@@ -133,7 +133,7 @@
                   <!-- ALICE -->
                   <div class="list-group mb-3">
                     <h5 class="card-title">{{ 'experience.achtzig20.development.alice.title' | translate }}</h5>
-                    <p class="card-text"><i>2018 - 2023</i></p>
+                    <p class="card-text"><i>2018 - {{ 'experience.present' | translate }}</i></p>
                     <p class="card-text" *ngFor="let par of ('experience.achtzig20.development.alice.abstract' | translate)">
                       {{ par }}
                     </p>
