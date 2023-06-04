@@ -28,6 +28,7 @@
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
   stroke: $primary-color;
+  fill: var(--background-color);
 }
 
 .progress-ring__arrow {

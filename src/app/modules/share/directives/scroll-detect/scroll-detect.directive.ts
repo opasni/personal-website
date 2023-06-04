@@ -2,6 +2,7 @@ import { AfterViewInit, Directive, ElementRef, HostListener, OnDestroy } from '@
 import { Router } from '@angular/router';
 import { Position } from '../../classes/position.class';
 import { GaugeCounterService } from 'src/app/services/gauge-counter.service';
+import { Subject, takeUntil } from 'rxjs';
 
 @Directive({
 	selector: '[appScrollDetect]'
@@ -18,6 +19,7 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
 
 	private _position = new Position();
 	private _defaultTouch = { x: 0, y: 0 };
+	private unsubscribe$ = new Subject<void>();
 
 	constructor(
 		private host: ElementRef,
@@ -27,10 +29,15 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
 
 	ngAfterViewInit(): void {
 		this._position = this.getPositions();
+		this.counterService.ready
+			.pipe(takeUntil(this.unsubscribe$))
+			.subscribe(deltaY => this.checkAndNavigate(deltaY))
 	}
 
 	ngOnDestroy(): void {
 		this.counterService.clearGauge();
+		this.unsubscribe$.next();
+		this.unsubscribe$.complete();
 	}
 
 	@HostListener('touchstart', ['$event'])
@@ -93,6 +100,9 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
 	}
 
 	private checkAndNavigate(deltaY: number) {
+		if (this.counterService.percentage < 1) {
+			return;
+		}
 		if (this._position.top > 0 && deltaY < -1) {
 			const index = this._orderedRoutes.indexOf(this.router.url);
 			if (index > 0) {
