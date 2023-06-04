@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
+import { GaugePosition } from 'src/app/modules/share/types/gauge-position.type';
 import { GaugeCounterService } from 'src/app/services/gauge-counter.service';
 
 @Component({
@@ -11,10 +12,12 @@ export class GaugeComponent implements OnInit, AfterViewInit, OnDestroy {
 
   @ViewChild('circle') circle!: ElementRef;
 
-  public position: 'top' | 'bottom' | 'none' = 'none';
+  public get position(): GaugePosition {
+    return this.counterService.position;
+  }
 
-  private circumference = 0;
   private unsubscribe$ = new Subject<void>();
+  private _circumference = 0;
 
   constructor(
     private readonly counterService: GaugeCounterService
@@ -23,21 +26,15 @@ export class GaugeComponent implements OnInit, AfterViewInit, OnDestroy {
   ngOnInit(): void {
     this.counterService.update
       .pipe(takeUntil(this.unsubscribe$))
-      .subscribe(update => {
-        this.position = update.position;
-        if (update.value === 0) {
-          this.position = 'none';
-        }
-        this.setProgress(Math.min(update.value * 100, 100));
-      });
+      .subscribe(update => this.setProgress(update));
   }
 
   ngAfterViewInit(): void {
     const radius = this.circle.nativeElement.r.baseVal.value;
-    this.circumference = radius * 2 * Math.PI;
+    this._circumference = radius * 2 * Math.PI;
 
-    this.circle.nativeElement.style.strokeDasharray = `${this.circumference} ${this.circumference}`;
-    this.circle.nativeElement.style.strokeDashoffset = this.circumference;
+    this.circle.nativeElement.style.strokeDasharray = `${this._circumference} ${this._circumference}`;
+    this.circle.nativeElement.style.strokeDashoffset = this._circumference;
 
     this.setProgress(0);
   }
@@ -48,7 +45,7 @@ export class GaugeComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   private setProgress(percent: number) {
-    const offset = this.circumference - percent / 100 * this.circumference;
+    const offset = this._circumference - percent * this._circumference;
     this.circle.nativeElement.style.strokeDashoffset = offset;
   }
 }
