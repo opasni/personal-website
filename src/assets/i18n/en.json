@@ -12,6 +12,10 @@
             "Apart from my professional pursuits, I am also enthusiastic about music, sports and traveling. These hobbies bring balance to my life and inspire me to explore new horizons. With proficiency in Slovenian and English languages, and a medium level of German, I am equipped to engage with diverse audiences and foster meaningful connections. I am passionate about leveraging my skills, knowledge, and experiences to make a positive impact in the digital realm and beyond."
         ]
     },
+    "cv": {
+        "menu-item": "Generate CV",
+        "title": ""
+    },
     "skills": {
         "menu-item": "Skills",
         "title": "Skills",
