@@ -1,7 +1,6 @@
 {
     "header": {
-        "switch-language": "Change language",
-        "switch-theme": "Change theme"
+        "switch-language": "Change language"
     },
     "about": {
         "menu-item": "About Me",
@@ -9,7 +8,7 @@
         "title": "My name is Črt Harej",
         "subtitle": "Here is something about me",
         "text": [
-            "I am a highly motivated and experienced professional with a strong background in software development and project management. As a CEO of Achtzig20 d.o.o., I am successfully leading a team of talented individuals and oversee the establishment of our subsidiary. With a passion for technology and innovation, I am involved in various projects, including the development of a digital advertising platform newonads and the creation of a community-building platform GRID3. My skills in leadership, problem-solving, and strategic thinking have allowed me to drive successful outcomes and deliver value to clients.",
+            "I am a highly motivated and experienced professional with a strong background in software development and project management. As a CEO of <b>Achtzig20 d.o.o.</b>, I am successfully leading a team of talented individuals and oversee the establishment of our subsidiary. With a passion for technology and innovation, I am involved in various projects, including the development of a digital advertising platform <b>newonads</b> and the creation of a community-building platform <b>GRID3</b>. My skills in leadership, problem-solving, and strategic thinking have allowed me to drive successful outcomes and deliver value to clients.",
             "Apart from my professional pursuits, I am also enthusiastic about music, sports and traveling. These hobbies bring balance to my life and inspire me to explore new horizons. With proficiency in Slovenian and English languages, and a medium level of German, I am equipped to engage with diverse audiences and foster meaningful connections. I am passionate about leveraging my skills, knowledge, and experiences to make a positive impact in the digital realm and beyond."
         ]
     },
@@ -18,9 +17,8 @@
         "title": "Skills",
         "hard-skills": {
             "title": "Hard Skills",
-            "programming": "Frameworks & Programming Languages",
-            "databases": "Databases",
-            "infrastructure": "Infrastructure",
+            "programming": "Frameworks Programming Languages",
+            "databases": "Databases & Infrastructure",
             "tools": "Tools"
         },
         "soft-skills": {

@@ -17,9 +17,8 @@
         "title": "Spretnosti",
         "hard-skills": {
             "title": "Trde veščine",
-            "programming": "Ogrodja & Programski jeziki",
-            "databases": "Podatkovne baze",
-            "infrastructure": "Infrastruktura",
+            "programming": "Ogrodja in Programski jeziki",
+            "databases": "Podatkovne baze in Infrastruktura",
             "tools": "Orodja"
         },
         "soft-skills": {

@@ -6,13 +6,21 @@ import { TranslateModule } from '@ngx-translate/core';
 import { SkillsRoutingModule } from './skills-routing.module';
 import { SkillMeasureComponent } from './components/skill-measure/skill-measure.component';
 import { FormsModule } from '@angular/forms';
+import { HardSkillsComponent } from './components/hard-skills/hard-skills.component';
+import { SoftSkillsComponent } from './components/soft-skills/soft-skills.component';
+import { HobbiesComponent } from './components/hobbies/hobbies.component';
+import { LanguagesComponent } from './components/languages/languages.component';
 
 
 
 @NgModule({
   declarations: [
     SkillsComponent,
-    SkillMeasureComponent
+    SkillMeasureComponent,
+    HardSkillsComponent,
+    SoftSkillsComponent,
+    HobbiesComponent,
+    LanguagesComponent
   ],
   imports: [
     CommonModule,
@@ -20,6 +28,13 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     TranslateModule,
     SkillsRoutingModule
+  ],
+  exports: [
+    SkillsComponent,
+    HardSkillsComponent,
+    SoftSkillsComponent,
+    HobbiesComponent,
+    LanguagesComponent
   ]
 })
 export class SkillsModule { }

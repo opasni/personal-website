@@ -25,6 +25,7 @@ export class BackboneComponent extends ThemeComponent {
 	constructor(themeService: ThemeService, private contexts: ChildrenOutletContexts) {
 		super(themeService);
 		this.setParams();
+		document.body.style.overflowY = 'hidden';
 	}
 
 	getRouteAnimation() {

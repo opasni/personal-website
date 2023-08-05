@@ -1,3 +1,12 @@
+<!-- CV -->
+
+<li class="nav-item">
+  <a role="button" class="nav-link pe-auto" [routerLink]="['cv']" [queryParams]="{'lang': (selectedLanguage$ | async)?.id, 'theme': (selectedTheme$ | async)?.id}" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-file-earmark-person"> </i>
+    {{ 'cv.menu-item' | translate }}
+  </a>
+</li>
+
 <!-- LANGUAGE SWITCHING -->
 
 <li class="nav-item" *ngIf="selectedLanguage$ | async as selectedLanguage">
@@ -24,7 +33,7 @@
     <div>
       <h4 class="text-standard">{{ userData.firstName }} {{ userData.lastName }}</h4>
       <div class="social-icons">
-        <a href="https://www.linkedin.com/in/%C4%8Drt-harej-1b704997/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/crtharej" target="_blank" rel="noopener noreferrer">
           <div class="social-icon">
             <i class="bi bi-linkedin"></i>
           </div>

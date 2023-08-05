@@ -7,18 +7,21 @@
 @font-face {
   font-family: 'Inter';
   src: url('/assets/fonts/Inter-Regular.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
   src: url('/assets/fonts/Inter-SemiBold.ttf');
   font-weight: bold;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
   src: url('/assets/fonts/Inter-Light.ttf');
   font-weight: light;
+  font-display: swap;
 }
 
 * {
@@ -182,5 +185,17 @@
     position: relative;
     top: -50px;
     left: -214px;
+  }
+}
+
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  grid-gap: 1rem;
+  justify-content: space-between;
+
+  &.minified {
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-gap: 0;
   }
 }

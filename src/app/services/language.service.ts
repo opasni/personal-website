@@ -32,13 +32,13 @@ export const getLanguage = () => {
 })
 export class LanguageService implements OnDestroy {
 
-    selectedLanguage = new BehaviorSubject<Language>(Language.EN);
+    selectedLanguage$ = new BehaviorSubject<Language>(Language.EN);
 
     private unsubscribe$ = new Subject<void>();
 
     constructor(private translate: TranslateService) {
         // Get language from localStorage and update the service selectedLanguage var
-        this.selectedLanguage.next(
+        this.selectedLanguage$.next(
             getLanguage()
         );
     }
@@ -55,11 +55,11 @@ export class LanguageService implements OnDestroy {
     }
 
     getSelectedLanguage(): Observable<Language> {
-        return this.selectedLanguage;
+        return this.selectedLanguage$;
     }
 
     setSelectedLanguage(language: Language) {
-        this.selectedLanguage.next(language as Language);
+        this.selectedLanguage$.next(language as Language);
         this.translate.use(language)
             .pipe(
                 takeUntil(this.unsubscribe$),

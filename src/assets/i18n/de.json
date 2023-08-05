@@ -1,7 +1,6 @@
 {
     "header": {
-        "switch-language": "Sprache wechseln",
-        "switch-theme": "Thema wechseln"
+        "switch-language": "Sprache wechseln"
     },
     "about": {
         "menu-item": "Über mich",
@@ -19,8 +18,7 @@
         "hard-skills": {
             "title": "Fachkompetenzen",
             "programming": "Frameworks und Programmiersprachen",
-            "databases": "Datenbanken",
-            "infrastructure": "Infrastruktur",
+            "databases": "Datenbanken und Infrastruktur",
             "tools": "Webanwendungen"
         },
         "soft-skills": {
@@ -31,7 +29,7 @@
             "resourcefulness": "Einfallsreichtum",
             "trainability": "Lernbereitschaft",
             "problem-solving": "Problemlösung",
-            "leadership": "Führung",
+            "leadership": "Personalführung",
             "strategic-thinking": "Strategisches Denken",
             "decision-making": "Entscheidungsfindung",
             "adaptability": "Anpassungsfähigkeit",
