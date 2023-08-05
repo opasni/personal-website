@@ -1,11 +1,13 @@
 import { AfterViewInit, Directive, ElementRef, HostListener, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
-import { Position } from '../../classes/position.class';
-import { GaugeCounterService } from 'src/app/services/gauge-counter.service';
 import { Subject, takeUntil } from 'rxjs';
 
+import { Position } from 'src/app/classes/position.class';
+import { GaugeCounterService } from 'src/app/services/gauge-counter.service';
+
 @Directive({
-	selector: '[appScrollDetect]'
+	selector: '[appScrollDetect]',
+	standalone: true
 })
 export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
 

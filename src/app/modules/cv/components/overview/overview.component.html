@@ -5,26 +5,43 @@
         <img src="assets/images/profile_image_hover.jpeg" class="profile rounded-circle"
           src="assets/images/profile_image.jpg" />
       </div>
-      <div class="sidebar-content px-2 py-3">
-        <div class="mt-4 mx-2 label">
+      <div class="sidebar-content py-3">
+        <div class="px-3 user-header display-l text-center" *ngIf="userData$ | async as userData">
+          <h1 class="text-standard">{{ userData.firstName }} <b>{{ userData.lastName }}</b></h1>
+          <ul class="user-info">
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              {{ userData.address }}</li>
+            <li>
+              <i class="bi bi-telephone"></i>
+              {{ userData.phone }}</li>
+            <li>
+              <i class="bi bi-envelope-at-fill"></i>
+              <a class="header-link" [href]="'mailto:' + userData.email">{{ userData.email }}</a></li>
+            <li>
+              <i class="bi bi-globe"></i>
+              <a class="header-link" [href]="'https://' + userData.website">{{ userData.website }}</a></li>
+          </ul>
+        </div>
+        <div class="mt-4 mx-3 label">
           <h5>{{ 'skills.hard-skills.title' | translate | uppercase }}</h5>
         </div>
         <app-hard-skills [minified]="true"></app-hard-skills>
-        <div class="mt-4 mx-2 label">
+        <div class="mt-4 mx-3 label">
           <h5>{{ 'skills.soft-skills.title' | translate | uppercase }}</h5>
         </div>
         <app-soft-skills [minified]="true"></app-soft-skills>
-        <div class="mt-4 mx-2 label">
+        <div class="mt-4 mx-3 label">
           <h5>{{ 'skills.languages.title' | translate | uppercase }}</h5>
         </div>
-        <app-languages [minified]="true" [minValue]="3"></app-languages>
+        <app-languages [minified]="true" [minValue]="1"></app-languages>
       </div>
     </nav>
 
     <div class="content">
-      <div class="px-3 user-header background-color" *ngIf="userData$ | async as userData">
-        <h1 class="text-standard">{{ userData.firstName }} {{ userData.lastName }}</h1>
-        <p class="text-standard small"><em>{{ userData.address }} | {{ userData.phone }} | {{ userData.email }}</em></p>
+      <div class="px-3 user-header display-d" *ngIf="userData$ | async as userData">
+        <h1 class="text-standard">{{ userData.firstName }} <b>{{ userData.lastName }}</b></h1>
+        <p class="text-standard small"><em>{{ userData.address }} | {{ userData.phone }} | <a class="header-link" [href]="'mailto:' + userData.email">{{ userData.email }}</a> | <a class="header-link" [href]="'https://' + userData.website">{{ userData.website }}</a></em></p>
       </div>
       <div class="text px-4">
 
@@ -47,5 +64,9 @@
     </div>
   </div>
   <div class="sheet d-flex wrapper">
+    <nav class="side-content background-color">
+    </nav>
+    <div class="content">
+    </div>
   </div>
 </body>

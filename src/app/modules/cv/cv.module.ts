@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { CvRoutingModule } from './cv-routing.module';
 import { OverviewComponent } from './components/overview/overview.component';
-import { ShareModule } from '../share/share.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { SkillsModule } from '../skills/skills.module';
 
@@ -14,7 +13,6 @@ import { SkillsModule } from '../skills/skills.module';
   ],
   imports: [
     CommonModule,
-    ShareModule,
     CvRoutingModule,
     SkillsModule,
     TranslateModule,

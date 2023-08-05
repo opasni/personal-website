@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http'
 import { Injectable } from '@angular/core'
 import { Observable, catchError, map, of } from 'rxjs'
 import { environment } from 'src/environments/environment'
-import { Contact } from '../modules/share/classes/contact.class';
+import { Contact } from 'src/app/classes/contact.class';
 
 @Injectable({
   providedIn: 'root'

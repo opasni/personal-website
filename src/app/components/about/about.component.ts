@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
-import { ThemeComponent } from '../../modules/share/abstracts/theme.component';
-import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
+
+import { ThemeComponent } from '../../abstracts/theme.component';
+import { ScrollDetectDirective } from 'src/app/directives/scroll-detect/scroll-detect.directive';
 
 @Component({
   selector: 'app-about',
@@ -10,7 +12,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [
     CommonModule,
-    TranslateModule
+    TranslateModule,
+    ScrollDetectDirective
   ]
 })
 export class AboutComponent extends ThemeComponent {

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { ThemeComponent } from 'src/app/modules/share/abstracts/theme.component';
-import { Lookup } from 'src/app/modules/share/classes/lookup.class';
+
+import { ThemeComponent } from 'src/app/abstracts/theme.component';
+import { Lookup } from 'src/app/classes/lookup.class';
 
 @Component({
   selector: 'app-education',

@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, map, of } from 'rxjs';
-import { Lookup } from 'src/app/modules/share/classes/lookup.class';
-import { User } from 'src/app/modules/share/classes/user.class';
-import { SUPPORTED_LANGUAGES } from 'src/app/modules/share/consts/languages.const';
-import { SUPPORTED_THEMES } from 'src/app/modules/share/consts/themes.const';
-import { Language } from 'src/app/modules/share/enums/language.enum';
-import { Theme } from 'src/app/modules/share/enums/theme.enum';
+
+import { Lookup } from 'src/app/classes/lookup.class';
+import { User } from 'src/app/classes/user.class';
+import { SUPPORTED_LANGUAGES } from 'src/app/consts/languages.const';
+import { SUPPORTED_THEMES } from 'src/app/consts/themes.const';
+import { USER_DATA } from 'src/app/consts/user.const';
+import { Language } from 'src/app/enums/language.enum';
+import { Theme } from 'src/app/enums/theme.enum';
 import { LanguageService } from 'src/app/services/language.service';
 import { ThemeService } from 'src/app/services/theme.service';
 
@@ -33,7 +35,7 @@ export class ProfileComponent implements OnInit {
       .pipe(map(lang => SUPPORTED_LANGUAGES[lang]));
     this.selectedTheme$ = this.themeService.selectedTheme
       .pipe(map(theme => SUPPORTED_THEMES[theme]));
-    this.setUserObservable();
+      this.userData$ = of(USER_DATA);
   }
 
   changeLanguage(language: string) {
@@ -46,14 +48,5 @@ export class ProfileComponent implements OnInit {
     const index = this._supportedThemes.findIndex(i => i === theme) + 1;
     const next = this._supportedThemes[index % this._supportedThemes.length];
     this.themeService.setTheme(next as Theme);
-  }
-
-  private setUserObservable() {
-    this.userData$ = of(new User({
-      firstName: 'Črt',
-      lastName: 'Harej',
-      nickName: 'N9NYM0',
-      imagePath: ''
-    }));
   }
 }

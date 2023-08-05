@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, of } from 'rxjs';
-import { ThemeComponent } from 'src/app/modules/share/abstracts/theme.component';
-import { User } from 'src/app/modules/share/classes/user.class';
-import { Language } from 'src/app/modules/share/enums/language.enum';
-import { Theme } from 'src/app/modules/share/enums/theme.enum';
+
+import { User } from 'src/app/classes/user.class';
+import { USER_DATA } from 'src/app/consts/user.const';
+import { Language } from 'src/app/enums/language.enum';
+import { Theme } from 'src/app/enums/theme.enum';
 import { LanguageService, getLanguage } from 'src/app/services/language.service';
 import { ThemeService, getTheme } from 'src/app/services/theme.service';
 
@@ -36,7 +37,7 @@ export class OverviewComponent implements OnInit {
   ngOnInit(): void {
 		document.body.style.overflowY = 'scroll';
 		document.body.style.backgroundColor = this.backgroundColor;
-    this.setUserObservable();
+    this.userData$ = of(USER_DATA);
   }
 
   private checkTheme(themeService: ThemeService) {
@@ -53,15 +54,5 @@ export class OverviewComponent implements OnInit {
       languageService.setSelectedLanguage(localLang);
       this.lang = localLang;
     }
-  }
-
-  private setUserObservable() {
-    this.userData$ = of(new User({
-      firstName: 'Črt',
-      lastName: 'Harej',
-      address: 'Harderstr. 24a, 85049 Ingolstadt',
-      phone: '+386 31472195',
-      email: 'crtharej@gmail.com'
-    }));
   }
 }

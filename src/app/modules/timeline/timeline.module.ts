@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { TimelineRoutingModule } from './timeline-routing.module';
 import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
-import { ShareModule } from '../share/share.module';
-import { TranslateModule } from '@ngx-translate/core';
+import { ScrollDetectDirective } from 'src/app/directives/scroll-detect/scroll-detect.directive';
 
 
 @NgModule({
@@ -15,9 +15,9 @@ import { TranslateModule } from '@ngx-translate/core';
   ],
   imports: [
     CommonModule,
-    ShareModule,
     TranslateModule,
-    TimelineRoutingModule
+    TimelineRoutingModule,
+    ScrollDetectDirective
   ]
 })
 export class TimelineModule { }

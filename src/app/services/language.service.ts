@@ -8,9 +8,9 @@ import localeEn from '@angular/common/locales/en';
 import localeDeExtra from '@angular/common/locales/extra/de';
 import localeEnExtra from '@angular/common/locales/extra/en';
 
-import { Language } from '../modules/share/enums/language.enum';
-import { StorageKeys } from '../modules/share/enums/storage-keys.enum';
-import { SUPPORTED_LANGUAGES } from '../modules/share/consts/languages.const';
+import { Language } from 'src/app/enums/language.enum';
+import { StorageKeys } from 'src/app/enums/storage-keys.enum';
+import { SUPPORTED_LANGUAGES } from 'src/app/consts/languages.const';
 
 export const getLanguage = () => {
     const stored = localStorage.getItem(StorageKeys.SELECTED_LANGUAGE);

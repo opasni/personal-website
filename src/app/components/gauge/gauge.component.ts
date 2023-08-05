@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
-import { GaugePosition } from 'src/app/modules/share/types/gauge-position.type';
+
+import { GaugePosition } from 'src/app/types/gauge-position.type';
 import { GaugeCounterService } from 'src/app/services/gauge-counter.service';
 
 @Component({

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ThemeComponent } from 'src/app/modules/share/abstracts/theme.component';
+import { ThemeComponent } from 'src/app/abstracts/theme.component';
 
 @Component({
   selector: 'app-skills',

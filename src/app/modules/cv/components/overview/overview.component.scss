@@ -23,13 +23,18 @@ h5, .h5 {
   box-shadow: 0px 2px 4px var(--pop-color);
 
   .picture-container {
+    position: relative;
+    height: 10rem;
     margin-top: 2rem;
-    background-color: var(--pop-color);
 
     .profile {
-      margin: .5rem .5rem .5rem 2rem;
-      width: calc($side-width - 5rem);
-      height: calc($side-width - 5rem);
+      position: absolute;
+      top: -1rem;
+      left: -1rem;
+      margin: .5rem .5rem .5rem 2.5rem;
+      width: calc($side-width - 3rem);
+      height: calc($side-width - 3rem);
+      border: 3px solid;
     }
   }
 
@@ -53,6 +58,24 @@ h5, .h5 {
 }
 
 .light-theme {
+  .display-l {
+    display: block;
+  }
+  .display-d {
+    display: none;
+  }
+
+  .user-header {
+    .user-info {
+      list-style: none;
+      padding-left: 0;
+
+      .bi {
+        padding: 3px;
+      }
+    }
+  }
+
   .content {
     .text {
       color: $light-gray-font;
@@ -61,6 +84,13 @@ h5, .h5 {
 }
 
 .dark-theme {
+  .display-l {
+    display: none;
+  }
+  .display-d {
+    display: block;
+  }
+
   .side-content {
 
     .picture-container {
@@ -76,6 +106,10 @@ h5, .h5 {
 
     .user-header {
       background-color: $primary-color;
+
+      .header-link {
+        color: $light-gray-font;
+      }
     }
 
     .text {

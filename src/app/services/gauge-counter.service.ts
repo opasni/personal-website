@@ -1,5 +1,5 @@
 import { EventEmitter, Injectable, Output } from '@angular/core';
-import { GaugePosition } from '../modules/share/types/gauge-position.type';
+import { GaugePosition } from 'src/app/types/gauge-position.type';
 
 @Injectable({
   providedIn: 'root'

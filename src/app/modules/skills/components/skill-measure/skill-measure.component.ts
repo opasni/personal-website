@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewEncapsulation } from '@angular/core';
-import { BehaviorSubject, Observable, map } from 'rxjs';
-import { SUPPORTED_LANGUAGES } from 'src/app/modules/share/consts/languages.const';
-import { Language } from 'src/app/modules/share/enums/language.enum';
+import { Observable } from 'rxjs';
+
+import { Language } from 'src/app/enums/language.enum';
 import { LanguageService } from 'src/app/services/language.service';
 
 @Component({
