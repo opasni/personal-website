@@ -52,6 +52,7 @@ export class ProfileComponent implements OnInit {
     this.userData$ = of(new User({
       firstName: 'Črt',
       lastName: 'Harej',
+      nickName: 'N9NYM0',
       imagePath: ''
     }));
   }

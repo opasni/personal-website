@@ -21,6 +21,5 @@ export abstract class SectionComponent implements AfterViewInit {
         measure.hideComponent();
       }
     }
-    console.log(this.sections);
   }
 }

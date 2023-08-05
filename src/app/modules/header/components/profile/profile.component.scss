@@ -33,12 +33,22 @@
     }
   }
 
+  .dynamic {
+    display: none;
+  }
+
 	&.activated {
 		.social-icon-color {
 			color: var(--pop-color) !important;
 			border: 2px solid $primary-color;
 			background-color: $primary-color;
 		}
+    .static {
+      display: none;
+    }
+    .dynamic {
+      display: block;
+    }
 	}
 
   .social-icons {
