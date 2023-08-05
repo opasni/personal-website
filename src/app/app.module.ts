@@ -25,13 +25,13 @@ export const setupLanguageFactory = (service: LanguageService) => service.initia
 @NgModule({
     declarations: [
         AppComponent,
-        AboutComponent,
-        BackboneComponent,
-        GaugeComponent
+        BackboneComponent
     ],
     imports: [
+        AboutComponent,
         BrowserModule,
         BrowserAnimationsModule,
+        GaugeComponent,
         NgbModule,
         ShareModule,
         HeaderModule,
