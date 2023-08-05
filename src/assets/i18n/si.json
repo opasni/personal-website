@@ -12,14 +12,17 @@
             "Poleg svojega profesionalnega dela se navdušujem tudi nad glasbo, športom in potovanji. Ti hobiji prinašajo ravnotežje v moje življenje in me navdihujejo, da raziskujem nova obzorja. S poznavanjem slovenskega in angleškega jezika ter srednjim znanjem nemščine sem opremljen za komunikacijo z različnimi občinstvi in ustvarjanje pomenljivih povezav. Z veseljem izkoriščam svoje sposobnosti, znanje in izkušnje, da bi ustvaril pozitiven vpliv v digitalnem svetu in širše."
         ]
     },
+    "cv": {
+        "menu-item": "Ustvari življenjepis",
+        "title": ""
+    },
     "skills": {
         "menu-item": "Spretnosti",
         "title": "Spretnosti",
         "hard-skills": {
             "title": "Trde veščine",
-            "programming": "Ogrodja & Programski jeziki",
-            "databases": "Podatkovne baze",
-            "infrastructure": "Infrastruktura",
+            "programming": "Ogrodja in Programski jeziki",
+            "databases": "Podatkovne baze in Infrastruktura",
             "tools": "Orodja"
         },
         "soft-skills": {

@@ -1,8 +1,10 @@
-<div>{{ name }}</div>
-<div class="circles">
-  <div *ngFor="let circle of circles"
-    class="circle"
-    [ngStyle]="{ 'transition': 'background-color .4s ease ' + circle.index * .2 + 's'}"
-    [class.filled]="circle.filled">
+<ng-container *ngIf="visible">
+  <div [lang]="selectedLanguage$ | async" class="measure-name">{{ name }}</div>
+  <div class="circles" [class.minified]="minified">
+    <div *ngFor="let circle of circles"
+      class="circle"
+      [ngStyle]="{ 'transition': 'background-color .4s ease ' + circle.index * .2 + 's'}"
+      [class.filled]="circle.filled">
+    </div>
   </div>
-</div>
+</ng-container>

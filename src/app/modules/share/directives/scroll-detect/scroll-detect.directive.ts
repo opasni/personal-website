@@ -64,6 +64,18 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
 		this.updatePositions(event.deltaY, 68, 18);
 	}
 
+  @HostListener('document:keyup', ['$event'])
+	handleKeyboardEvent(event: KeyboardEvent) {
+		const navigate = event.key === 'ArrowDown' ? 1 : event.key === 'ArrowUp' ? -1 : 0;
+		if (navigate !== 0) {
+			const index = this._orderedRoutes.indexOf(this.router.url);
+			if ((navigate > 0 && index < 4) || (navigate < 0 && index > 0)) {
+				this.router.navigate([this._orderedRoutes[index + navigate]]);
+				this.counterService.clearGauge();
+			}
+		}
+  }
+
 	private getPositions(): Position {
 		const element = this.host.nativeElement as HTMLDivElement;
 		const scroller = element.parentElement?.parentElement;

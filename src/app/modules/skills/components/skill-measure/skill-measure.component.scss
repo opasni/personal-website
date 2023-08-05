@@ -1,26 +1,50 @@
 @import "src/styles/variables";
 
-:host {
+app-skill-measure {
   margin: 0.5rem 0.7rem;
-  min-width: 150px;
+  align-self: flex-end;
+
+  .measure-name {
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .circles {
+    display: flex;
+    flex-wrap: wrap;
+
+    .circle {
+      width: 0.8rem;
+      height: 0.8rem;
+      margin-right: 5px;
+      border-radius: 50%;
+      background-color: var(--background-color);
+      border: 1px solid var(--font-color);
+      box-shadow: 1px 1px 3px var(--pop-color);
+      position: relative;
+    }
+
+    .filled {
+      background-color: $primary-color;
+    }
+
+    &.minified {
+      .circle {
+        width: 0.6rem;
+        height: 0.6rem;
+      }
+    }
+  }
+
+
 }
 
-.circles {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.circle {
-  width: 1rem;
-  height: 1rem;
-  margin-right: 5px;
-  border-radius: 50%;
-  background-color: var(--background-color);
-  border: 1px solid var(--font-color);
-  box-shadow: 1px 1px 3px var(--pop-color);
-  position: relative;
-}
-
-.filled {
-  background-color: $primary-color;
+.dark-theme {
+  app-skill-measure {
+    .minified {
+      .filled {
+        background-color: var(--pop-color);
+      }
+    }
+  }
 }

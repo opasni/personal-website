@@ -1,9 +1,14 @@
-import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { BehaviorSubject, Observable, map } from 'rxjs';
+import { SUPPORTED_LANGUAGES } from 'src/app/modules/share/consts/languages.const';
+import { Language } from 'src/app/modules/share/enums/language.enum';
+import { LanguageService } from 'src/app/services/language.service';
 
 @Component({
   selector: 'app-skill-measure',
   templateUrl: './skill-measure.component.html',
-  styleUrls: ['./skill-measure.component.scss']
+  styleUrls: ['./skill-measure.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class SkillMeasureComponent implements OnInit, AfterViewInit {
 
@@ -11,9 +16,18 @@ export class SkillMeasureComponent implements OnInit, AfterViewInit {
   @Input() name: string = '';
   @Input() numberOfCircles: number = 5;
 
+  public minified = false;
+  public visible = true;
   public circles: { index: number; filled: boolean }[] = [];
 
-  constructor() { }
+  public readonly selectedLanguage$ = new Observable<Language>();
+
+  constructor(
+    private elRef: ElementRef,
+    private languageService: LanguageService
+  ) {
+    this.selectedLanguage$ = this.languageService.getSelectedLanguage();
+  }
 
   ngOnInit() {
     this.circles = Array(this.numberOfCircles).fill(0).map((_, i) => ({ index: i, filled: false }));
@@ -25,5 +39,10 @@ export class SkillMeasureComponent implements OnInit, AfterViewInit {
         circle.filled = circle.index < this.value
       }
     }, 600);
+  }
+
+  hideComponent() {
+    const element = this.elRef.nativeElement as HTMLElement;
+    element.style.display = 'none';
   }
 }

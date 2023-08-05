@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ThemeComponent } from 'src/app/modules/share/abstracts/theme.component';
 
 @Component({
@@ -7,5 +7,6 @@ import { ThemeComponent } from 'src/app/modules/share/abstracts/theme.component'
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent extends ThemeComponent {
+  @Input() minified = false;
 
 }

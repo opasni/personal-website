@@ -1,7 +1,6 @@
 {
     "header": {
-        "switch-language": "Sprache wechseln",
-        "switch-theme": "Thema wechseln"
+        "switch-language": "Sprache wechseln"
     },
     "about": {
         "menu-item": "Über mich",
@@ -13,14 +12,17 @@
             "Neben meinen beruflichen Aktivitäten bin ich auch begeistert von Musik, Sport und Reisen. Diese Hobbys bringen Balance in mein Leben und inspirieren mich, neue Horizonte zu erkunden. Mit guten Kenntnissen der deutschen und englischen Sprache sowie einem mittleren Sprachniveau in Deutsch bin ich in der Lage, mit unterschiedlichen Zielgruppen zu kommunizieren und bedeutungsvolle Verbindungen aufzubauen. Ich bin leidenschaftlich daran interessiert, meine Fähigkeiten, mein Wissen und meine Erfahrungen einzusetzen, um einen positiven Einfluss in der digitalen Welt und darüber hinaus zu schaffen."
         ]
     },
+    "cv": {
+        "menu-item": "Lebenslauf erstellen",
+        "title": ""
+    },
     "skills": {
         "menu-item": "Fähigkeiten",
         "title": "Fähigkeiten",
         "hard-skills": {
             "title": "Fachkompetenzen",
             "programming": "Frameworks und Programmiersprachen",
-            "databases": "Datenbanken",
-            "infrastructure": "Infrastruktur",
+            "databases": "Datenbanken und Infrastruktur",
             "tools": "Webanwendungen"
         },
         "soft-skills": {
@@ -31,7 +33,7 @@
             "resourcefulness": "Einfallsreichtum",
             "trainability": "Lernbereitschaft",
             "problem-solving": "Problemlösung",
-            "leadership": "Führung",
+            "leadership": "Personalführung",
             "strategic-thinking": "Strategisches Denken",
             "decision-making": "Entscheidungsfindung",
             "adaptability": "Anpassungsfähigkeit",

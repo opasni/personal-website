@@ -10,7 +10,7 @@ export abstract class ThemeComponent implements OnInit {
 
   public selectedTheme$: Observable<Theme> | undefined;
 
-  constructor(private themeService: ThemeService) { }
+  constructor(protected themeService: ThemeService) { }
 
   ngOnInit(): void {
       this.selectedTheme$ = this.themeService.selectedTheme;
