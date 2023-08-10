@@ -1,20 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import { Observable, of } from 'rxjs';
 
 import { User } from 'src/app/classes/user.class';
 import { USER_DATA } from 'src/app/consts/user.const';
 import { Language } from 'src/app/enums/language.enum';
 import { Theme } from 'src/app/enums/theme.enum';
+import { SkillsModule } from 'src/app/modules/skills/skills.module';
 import { LanguageService, getLanguage } from 'src/app/services/language.service';
 import { ThemeService, getTheme } from 'src/app/services/theme.service';
+import { ExperienceComponent } from '../experience/experience.component';
 
 @Component({
-  selector: 'app-overview',
-  templateUrl: './overview.component.html',
-  styleUrls: ['./overview.component.scss']
+  selector: 'app-cv',
+  templateUrl: './cv.component.html',
+  styleUrls: ['./cv.component.scss'],
+  encapsulation: ViewEncapsulation.None,
+  standalone: true,
+  imports: [
+    CommonModule,
+    ExperienceComponent,
+    SkillsModule,
+    TranslateModule,
+  ]
 })
-export class OverviewComponent implements OnInit {
+export class CVComponent implements OnInit {
 
   public userData$ = new Observable<User>();
   public theme: Theme;

@@ -14,7 +14,24 @@
     },
     "cv": {
         "menu-item": "Lebenslauf erstellen",
-        "title": ""
+        "about": "Ich bin ein erfahrener Softwareentwicklungsfachmann und CEO von Achtzig20 d.o.o. Mit einer Leidenschaft für Technologie und Innovation habe ich Projekte wie die digitale Werbeplattform newonads und die Community-Plattform GRID3 angeführt. Mit starken Führungsfähigkeiten und strategischem Denken liefere ich konsequent Wert für Kunden. Fließend in Slowenisch und Englisch, mit mittlerem Deutschkenntnissen, genieße ich Musik, Sport und Reisen und bin darauf bedacht, in der digitalen Welt einen positiven Einfluss zu nehmen.",
+        "experience": {
+            "achtzig20": {
+                "summary": [
+                    "Managementberater bei Achtzig20 GmbH, bietet technische Führung in den Bereichen Anforderungsingenieurwesen, Softwareentwicklung, Softwarearchitektur und DevOps.",
+                    "Geschäftsführer von Achtzig20 d.o.o., führt das Unternehmen durch verschiedene Wachstumsphasen, einschließlich der Gründung einer neuen Tochtergesellschaft und eines Büros in Ljubljana.",
+                    "CTO bei newonads GmbH, verantwortlich für die Verwaltung einer digitalen Werbeplattform, die sich auf die Verbesserung der Markenbekanntheit, Lead-Generierung und Verkäufe konzentriert.",
+                    "CTO bei Studio3 GmbH, hilft Agenturen beim Aufbau und der Pflege digitaler Gemeinschaften mit Hilfe von Web3-Technologien und minimiert Sicherheitsrisiken und Overhead.",
+                    "Arbeitete mit renommierten Kunden wie Audi, Porsche, BMW und DZ Bank an der Entwicklung von Softwarelösungen und Schulungen im Bereich Datenanalyse.",
+                    "Führte Projekte einschließlich ALICE bei CARIAD für das interdisziplinäre Projektteammanagement, NEW bei AUDI für die Nachverfolgung des Entwicklungsfortschritts und FAPOS bei AUDI für die Buchung von Testautos.",
+                    "Entwickelte und führte Schulungen im Bereich Datenanalyse durch und half Kunden, ihr Verständnis und ihre Nutzung von Datenanalysen zu verbessern."
+                ],
+                "skills": [
+                    "Projektmanagement, Teamführung, Technischer Leiter, Produktdesign, Anforderungsingenieurwesen, Softwareentwicklung, Softwarearchitektur, DevOps, Führung, strategisches Denken, Kommunikation, Entscheidungsfindung, Anpassungsfähigkeit, finanzielles Gespür, emotionale Intelligenz.",
+                    "SQL Server, MongoDB, Oracle Datenbank, .NET (REST API), Angular, CI/CD, Solidity - Smart Contracts."
+                ]
+            }
+        }
     },
     "skills": {
         "menu-item": "Fähigkeiten",

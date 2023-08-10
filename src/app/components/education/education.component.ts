@@ -1,12 +1,21 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
+import { ScrollDetectDirective } from 'src/app/directives/scroll-detect/scroll-detect.directive';
 import { ThemeComponent } from 'src/app/abstracts/theme.component';
 import { Lookup } from 'src/app/classes/lookup.class';
 
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
-  styleUrls: ['./education.component.scss']
+  styleUrls: ['./education.component.scss'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    TranslateModule,
+    ScrollDetectDirective
+  ]
 })
 export class EducationComponent extends ThemeComponent {
 

@@ -14,7 +14,24 @@
     },
     "cv": {
         "menu-item": "Ustvari življenjepis",
-        "title": ""
+        "about": "Sem izkušen strokovnjak za razvoj programske opreme in direktor podjetja Achtzig20 d.o.o. S strastjo do tehnologije in inovacij sem vodil projekte, kot sta digitalna oglaševalska platforma newonads in platforma za gradnjo skupnosti GRID3. Z močnimi vodstvenimi sposobnostmi in strateškim razmišljanjem konstantno prinašam vrednost strankam. Tekoče govorim slovenščino in angleščino, z osnovnim znanjem nemščine. Uživam v glasbi, športu in potovanjih ter sem predan ustvarjanju pozitivnega vpliva v digitalnem svetu.",
+        "experience": {
+            "achtzig20": {
+                "summary": [
+                    "Management svetovalec pri Achtzig20 GmbH, ki nudi tehnično vodstvo pri inženiringu zahtev, razvoju programske opreme, arhitekturi programske opreme in DevOps.",
+                    "Izvršni direktor podjetja Achtzig20 d.o.o., ki vodi podjetje skozi različne faze rasti, vključno z ustanovitvijo nove podružnice in pisarne v Ljubljani.",
+                    "CTO pri newonads GmbH, odgovoren za upravljanje digitalne oglaševalske platforme, osredotočene na izboljšanje prepoznavnosti blagovne znamke, pridobivanje vodil in prodajo.",
+                    "CTO pri Studio3 GmbH, ki agencijam pomaga pri izgradnji in vzdrževanju digitalnih skupnosti z uporabo tehnologij web3 ob minimalnih varnostnih tveganjih in dodatnih stroških.",
+                    "Delal s prestižnimi strankami, kot so Audi, Porsche, BMW in DZ Bank na razvoju programske opreme in usposabljanju iz področja analize podatkov.",
+                    "Vodil projekte, vključno z ALICE pri CARIAD za interdisciplinarno upravljanje projektnih skupin, NEW pri AUDI za sledenje napredku razvoja in FAPOS pri AUDI za rezervacijo testnih avtomobilov.",
+                    "Razvil in izvedel usposabljanje iz analize podatkov, pomagal strankam izboljšati razumevanje in uporabo analize podatkov."
+                ],
+                "skills": [
+                    "Upravljanje projektov, vodenje skupine, tehnično vodstvo, oblikovanje izdelka, inženiring zahtev, razvoj programske opreme, arhitektura programske opreme, DevOps, vodstvene sposobnosti, strateško razmišljanje, komunikacija, sprejemanje odločitev, prilagodljivost, finančna spretnost, čustvena inteligenca.",
+                    "SQL Server, MongoDB, Oracle baza podatkov, .NET (REST API), Angular, CI/CD, Solidity - Pametne pogodbe."
+                ]
+            }
+        }
     },
     "skills": {
         "menu-item": "Spretnosti",
@@ -75,7 +92,7 @@
         },
         "achtzig20": {
             "type": "Employee",
-            "title": "Management Consultant",
+            "title": "Vodja Programerskega oddelka",
             "abstract": [
                 "V svoji vlogi pri Achtzig20 sem imel privilegij sodelovati z dinamično ekipo in prispevati k rasti in uspehu podjetja. Začenši z izkušnjami pri podjetju AKKA, kjer sem pridobil dragocene veščine kot razvijalec programske opreme in arhitekt, me je pot vodila v Achtzig20, kjer sem postopoma prevzel vlogo tehničnega vodje. Z močnim poudarkom na zahtevah, razvoju programske opreme, arhitekturi programske opreme in DevOpsu sem odigral ključno vlogo pri zagotavljanju visokokakovostnih rešitev našim strankam.",
                 "Poleg tega se je moje sodelovanje z Achtzig20 razširilo preko tehničnega področja. Kot izvršni direktor (CEO) podjetja Achtzig20 d.o.o. vodim podjetje skozi različne faze rasti. Od sodelovanja z e-Študentskim Servisom in vzpostavitve čudovite pisarne v središču Ljubljane do ustanovitve podružnice Achtzig20 d.o.o., namen je bil vedno gradnja močne in uspešne organizacije.",

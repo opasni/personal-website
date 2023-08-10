@@ -14,8 +14,8 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
 	private _orderedRoutes = [
 		'/about',
 		'/skills',
-		'/timeline/experience',
-		'/timeline/education',
+		'/experience',
+		'/education',
 		'/contact'
 	];
 

@@ -11,6 +11,7 @@ import { SoftSkillsComponent } from './components/soft-skills/soft-skills.compon
 import { HobbiesComponent } from './components/hobbies/hobbies.component';
 import { LanguagesComponent } from './components/languages/languages.component';
 import { ScrollDetectDirective } from 'src/app/directives/scroll-detect/scroll-detect.directive';
+import { SkillsOverviewComponent } from './components/skills-overview/skills-overview.component';
 
 
 
@@ -21,7 +22,8 @@ import { ScrollDetectDirective } from 'src/app/directives/scroll-detect/scroll-d
     HardSkillsComponent,
     SoftSkillsComponent,
     HobbiesComponent,
-    LanguagesComponent
+    LanguagesComponent,
+    SkillsOverviewComponent
   ],
   imports: [
     CommonModule,
@@ -35,7 +37,8 @@ import { ScrollDetectDirective } from 'src/app/directives/scroll-detect/scroll-d
     HardSkillsComponent,
     SoftSkillsComponent,
     HobbiesComponent,
-    LanguagesComponent
+    LanguagesComponent,
+    SkillsOverviewComponent
   ]
 })
 export class SkillsModule { }
