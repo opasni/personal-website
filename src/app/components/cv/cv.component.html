@@ -9,13 +9,13 @@
         <div class="px-3 user-header text-center" *ngIf="userData$ | async as userData">
           <h1 class="text-standard">{{ userData.firstName }} <b>{{ userData.lastName }}</b></h1>
           <ul class="user-info">
-            <li>
+            <li *ngIf="userData.address">
               <i class="bi bi-geo-alt-fill"></i>
               {{ userData.address }}</li>
-            <li>
+            <li *ngIf="userData.phone">
               <i class="bi bi-telephone"></i>
               {{ userData.phone }}</li>
-            <li>
+            <li *ngIf="userData.email">
               <i class="bi bi-envelope-at-fill"></i>
               <a class="header-link" [href]="'mailto:' + userData.email">{{ userData.email }}</a></li>
             <li>
