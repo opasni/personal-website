@@ -1,7 +1,8 @@
 import { Component, HostListener } from '@angular/core';
 import { ChildrenOutletContexts } from '@angular/router';
-import { ThemeComponent } from 'src/app/modules/share/abstracts/theme.component';
-import { ROUTE_ANIMATION } from 'src/app/modules/share/consts/transitions.const';
+
+import { ROUTE_ANIMATION } from 'src/app/consts/transitions.const';
+import { ThemeComponent } from 'src/app/abstracts/theme.component';
 import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({

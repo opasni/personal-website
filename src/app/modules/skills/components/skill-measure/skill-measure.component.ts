@@ -1,8 +1,9 @@
-import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewEncapsulation } from '@angular/core';
-import { BehaviorSubject, Observable, map } from 'rxjs';
-import { SUPPORTED_LANGUAGES } from 'src/app/modules/share/consts/languages.const';
-import { Language } from 'src/app/modules/share/enums/language.enum';
+import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewEncapsulation, inject } from '@angular/core';
+import { Observable } from 'rxjs';
+
+import { Language } from 'src/app/enums/language.enum';
 import { LanguageService } from 'src/app/services/language.service';
+import { SkillsService } from '../../services/skills.service';
 
 @Component({
   selector: 'app-skill-measure',
@@ -13,14 +14,15 @@ import { LanguageService } from 'src/app/services/language.service';
 export class SkillMeasureComponent implements OnInit, AfterViewInit {
 
   @Input() value: number = 0;
+  @Input() minValue: number = 0;
   @Input() name: string = '';
-  @Input() numberOfCircles: number = 5;
+  @Input() numberOfCircles: number = 7;
 
-  public minified = false;
-  public visible = true;
   public circles: { index: number; filled: boolean }[] = [];
 
   public readonly selectedLanguage$ = new Observable<Language>();
+
+  private skills = inject(SkillsService);
 
   constructor(
     private elRef: ElementRef,
@@ -31,6 +33,11 @@ export class SkillMeasureComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.circles = Array(this.numberOfCircles).fill(0).map((_, i) => ({ index: i, filled: false }));
+    if (this.skills.minified) {
+      if (this.minValue && this.value < this.minValue) {
+        this.hideComponent();
+      }
+    }
   }
 
   ngAfterViewInit(): void {

@@ -5,6 +5,7 @@ export class User {
     public imagePath: string | null = null;
     public address: string | null = null;
     public phone: string | null = null;
+    public website: string | null = null;
     public email: string | null = null;
 
     constructor(shape: Partial<User>) {
@@ -26,6 +27,9 @@ export class User {
             }
             if (shape.phone != null) {
                 this.phone = shape.phone;
+            }
+            if (shape.website != null) {
+                this.website = shape.website;
             }
             if (shape.email != null) {
                 this.email = shape.email;

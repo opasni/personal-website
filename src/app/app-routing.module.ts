@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { BackboneComponent } from './components/backbone/backbone.component';
 import { AboutComponent } from './components/about/about.component';
+import { CVComponent } from './components/cv/cv.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education.component';
 
 const routes: Routes = [
 	{
@@ -20,8 +24,13 @@ const routes: Routes = [
 				path: 'skills',
 				loadChildren: () => import('./modules/skills/skills.module').then((m) => m.SkillsModule),
 			}, {
-				path: 'timeline',
-				loadChildren: () => import('./modules/timeline/timeline.module').then((m) => m.TimelineModule),
+				path: 'experience',
+				component: ExperienceComponent,
+				data: { animation: 2 }
+			}, {
+				path: 'education',
+				component: EducationComponent,
+				data: { animation: 3 }
 			}, {
 				path: 'contact',
 				loadChildren: () => import('./modules/contact/contact.module').then((m) => m.ContactModule),
@@ -29,7 +38,7 @@ const routes: Routes = [
 		]
 	}, {
 		path: 'cv',
-		loadChildren: () => import('./modules/cv/cv.module').then((m) => m.CvModule),
+		component: CVComponent,
 	}
 ];
 

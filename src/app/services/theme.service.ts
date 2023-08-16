@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { Theme } from '../modules/share/enums/theme.enum';
-import { StorageKeys } from '../modules/share/enums/storage-keys.enum';
+import { Theme } from 'src/app/enums/theme.enum';
+import { StorageKeys } from 'src/app/enums/storage-keys.enum';
 
 export const getTheme = () => {
     const stored = localStorage.getItem(StorageKeys.SELECTED_THEME);

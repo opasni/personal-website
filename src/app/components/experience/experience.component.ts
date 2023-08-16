@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { ThemeComponent } from '../../abstracts/theme.component';
 import { ScrollDetectDirective } from 'src/app/directives/scroll-detect/scroll-detect.directive';
+import { ThemeComponent } from 'src/app/abstracts/theme.component';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'],
+  selector: 'app-experience',
+  templateUrl: './experience.component.html',
+  styleUrls: ['./experience.component.scss'],
   standalone: true,
   imports: [
     CommonModule,
@@ -16,6 +16,6 @@ import { ScrollDetectDirective } from 'src/app/directives/scroll-detect/scroll-d
     ScrollDetectDirective
   ]
 })
-export class AboutComponent extends ThemeComponent {
+export class ExperienceComponent extends ThemeComponent {
 
 }
