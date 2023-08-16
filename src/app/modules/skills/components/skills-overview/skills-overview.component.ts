@@ -1,11 +1,12 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, inject } from '@angular/core';
 import { SkillsService } from '../../services/skills.service';
 
 @Component({
   selector: 'app-skills-overview',
   templateUrl: './skills-overview.component.html',
   styleUrls: ['./skills-overview.component.scss'],
-  providers: [SkillsService]
+  providers: [SkillsService],
+  encapsulation: ViewEncapsulation.None
 })
 export class SkillsOverviewComponent implements OnInit {
 

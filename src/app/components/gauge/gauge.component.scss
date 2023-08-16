@@ -2,8 +2,26 @@
 
 .gauge-wrapper {
   position: absolute;
+  cursor: pointer;
   right: 20px;
+  border-radius: 50%;
   z-index: 2;
+
+  &:hover {
+    box-shadow: 0 0 5px var(--pop-color);
+    background-color: var(--pop-color);
+    transition: background-color .5s ease-in-out;
+
+    .progress-ring__circle {
+      fill: var(--pop-color);
+      transition: fill .5s ease-in-out;
+    }
+
+    .progress-ring__arrow {
+      fill: var(--background-color);
+      transition: fill .5s ease-in-out;
+    }
+  }
 
   &.top {
     top: 20px;

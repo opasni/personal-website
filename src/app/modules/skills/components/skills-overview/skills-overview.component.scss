@@ -1,0 +1,28 @@
+@import "src/styles/variables";
+
+app-skill-measure {
+	margin: 0.2rem 0.7rem !important;
+	.measure-name {
+		font-size: .7rem;
+		font-weight: 500;
+	}
+
+	.circles {
+		.circle {
+			width: 0.3rem !important;
+			height: .8rem !important;
+		}
+	}
+}
+
+.dark-theme {
+  app-skill-measure {
+		.circle {
+			background-color: $gray-font;
+		}
+
+		.filled {
+			background-color: var(--pop-color);
+		}
+  }
+}

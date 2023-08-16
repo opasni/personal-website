@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { Observable, map, of } from 'rxjs';
 
+// Classes
 import { Lookup } from 'src/app/classes/lookup.class';
 import { User } from 'src/app/classes/user.class';
+// Constants
 import { SUPPORTED_LANGUAGES } from 'src/app/consts/languages.const';
 import { SUPPORTED_THEMES } from 'src/app/consts/themes.const';
-import { USER_DATA } from 'src/app/consts/user.const';
+// Enums
 import { Language } from 'src/app/enums/language.enum';
 import { Theme } from 'src/app/enums/theme.enum';
+// Services
 import { LanguageService } from 'src/app/services/language.service';
 import { ThemeService } from 'src/app/services/theme.service';
+import { UserApiService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-profile',
@@ -25,17 +29,16 @@ export class ProfileComponent implements OnInit {
   private _supportedLanguages = Object.keys(SUPPORTED_LANGUAGES);
   private _supportedThemes = Object.keys(SUPPORTED_THEMES);
 
-  constructor(
-    private languageService: LanguageService,
-    private readonly themeService: ThemeService
-  ) { }
+  private userService = inject(UserApiService);
+  private languageService = inject(LanguageService);
+  private themeService = inject(ThemeService);
 
   ngOnInit(): void {
     this.selectedLanguage$ = this.languageService.getSelectedLanguage()
       .pipe(map(lang => SUPPORTED_LANGUAGES[lang]));
     this.selectedTheme$ = this.themeService.selectedTheme
       .pipe(map(theme => SUPPORTED_THEMES[theme]));
-      this.userData$ = of(USER_DATA);
+      this.userData$ = this.userService.getUserData(null);
   }
 
   changeLanguage(language: string) {

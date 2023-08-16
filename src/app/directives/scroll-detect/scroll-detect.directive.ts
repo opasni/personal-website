@@ -30,10 +30,13 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
 	) { }
 
 	ngAfterViewInit(): void {
-		this._position = this.getPositions();
+	this._position = this.getPositions();
 		this.counterService.ready
 			.pipe(takeUntil(this.unsubscribe$))
-			.subscribe(deltaY => this.checkAndNavigate(deltaY))
+			.subscribe(deltaY => this.checkAndNavigate(deltaY));;
+		this.counterService.move
+			.pipe(takeUntil(this.unsubscribe$))
+			.subscribe(() => this.checkAndNavigate(this.getMaxDelta()));
 	}
 
 	ngOnDestroy(): void {
@@ -63,7 +66,7 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
 		if (!this.host.nativeElement) {
 			return;
 		}
-		this.updatePositions(event.deltaY, 68, 18);
+		this.updatePositions(event.deltaY, 12, 12);
 	}
 
   @HostListener('document:keyup', ['$event'])
@@ -84,6 +87,11 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
 		const isTop = scroller != null && Math.abs(scroller.scrollTop) < 1;
 		const isBottom = scroller != null && Math.abs(scroller.scrollHeight - (window.innerHeight + scroller.scrollTop)) < 1;
 		return new Position(isTop, isBottom);
+	}
+
+	private getMaxDelta(): number {
+		this.counterService.percentage = 1;
+		return (this.counterService.position === 'top' ? -1 : 1) * 100;
 	}
 
 	private updatePositions(deltaY: number, topBarrier: number, bottomBarrier: number) {

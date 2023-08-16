@@ -8,7 +8,7 @@ import { getLanguage } from './services/language.service';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-    title = 'Crt Harej';
+    title = 'Črt Harej';
 
     constructor(
         private translate: TranslateService

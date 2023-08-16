@@ -6,6 +6,6 @@ import { Component, ElementRef, Input, QueryList, ViewChildren } from '@angular/
 export abstract class SectionComponent {
 
   @ViewChildren('.skills-section') sections!: QueryList<ElementRef>;
-  @Input() minified = false;
+  @Input() summarized = false;
   @Input() minValue = 4;
 }

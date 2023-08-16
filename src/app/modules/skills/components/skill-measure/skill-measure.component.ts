@@ -18,7 +18,6 @@ export class SkillMeasureComponent implements OnInit, AfterViewInit {
   @Input() name: string = '';
   @Input() numberOfCircles: number = 7;
 
-  public minified = false;
   public circles: { index: number; filled: boolean }[] = [];
 
   public readonly selectedLanguage$ = new Observable<Language>();
@@ -35,7 +34,6 @@ export class SkillMeasureComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.circles = Array(this.numberOfCircles).fill(0).map((_, i) => ({ index: i, filled: false }));
     if (this.skills.minified) {
-      this.minified = true;
       if (this.minValue && this.value < this.minValue) {
         this.hideComponent();
       }

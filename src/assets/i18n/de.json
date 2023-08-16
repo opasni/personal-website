@@ -14,21 +14,61 @@
     },
     "cv": {
         "menu-item": "Lebenslauf erstellen",
-        "about": "Ich bin ein erfahrener Softwareentwicklungsfachmann und CEO von Achtzig20 d.o.o. Mit einer Leidenschaft für Technologie und Innovation habe ich Projekte wie die digitale Werbeplattform newonads und die Community-Plattform GRID3 angeführt. Mit starken Führungsfähigkeiten und strategischem Denken liefere ich konsequent Wert für Kunden. Fließend in Slowenisch und Englisch, mit mittlerem Deutschkenntnissen, genieße ich Musik, Sport und Reisen und bin darauf bedacht, in der digitalen Welt einen positiven Einfluss zu nehmen.",
+        "about": "Ich bin erfahrener <b>Softwareentwickler</b> und <b>CEO von Achtzig20 d.o.o.</b> Mit Leidenschaft für Technologie habe ich Projekte wie die Werbeplattform <b>newonads</b> und die Community-Plattform <b>GRID3</b> angeführt. Dank starker Führungsfähigkeiten und strategischem Denken liefere ich konstant Wert für Kunden. Fließend in Slowenisch und Englisch, mit mittleren Deutschkenntnissen, genieße ich Musik, Sport und Reisen und strebe nach positivem Einfluss in der digitalen Welt.",
         "experience": {
             "achtzig20": {
-                "summary": [
-                    "Managementberater bei Achtzig20 GmbH, bietet technische Führung in den Bereichen Anforderungsingenieurwesen, Softwareentwicklung, Softwarearchitektur und DevOps.",
-                    "Geschäftsführer von Achtzig20 d.o.o., führt das Unternehmen durch verschiedene Wachstumsphasen, einschließlich der Gründung einer neuen Tochtergesellschaft und eines Büros in Ljubljana.",
-                    "CTO bei newonads GmbH, verantwortlich für die Verwaltung einer digitalen Werbeplattform, die sich auf die Verbesserung der Markenbekanntheit, Lead-Generierung und Verkäufe konzentriert.",
-                    "CTO bei Studio3 GmbH, hilft Agenturen beim Aufbau und der Pflege digitaler Gemeinschaften mit Hilfe von Web3-Technologien und minimiert Sicherheitsrisiken und Overhead.",
+                "summary-long": [
+                    "<b>Managementberater bei Achtzig20 GmbH</b>, bietet technische Führung in den Bereichen Anforderungsingenieurwesen, Softwareentwicklung, Softwarearchitektur und DevOps.",
+                    "<b>Geschäftsführer von Achtzig20 d.o.o.</b>, führt das Unternehmen durch verschiedene Wachstumsphasen, einschließlich der Gründung einer neuen Tochtergesellschaft und eines Büros in Ljubljana.",
+                    "<b>CTO bei newonads GmbH</b>, verantwortlich für die Verwaltung einer digitalen Werbeplattform, die sich auf die Verbesserung der Markenbekanntheit, Lead-Generierung und Verkäufe konzentriert.",
+                    "<b>CTO bei Studio3 GmbH</b>, hilft Agenturen beim Aufbau und der Pflege digitaler Gemeinschaften mit Hilfe von Web3-Technologien und minimiert Sicherheitsrisiken und Overhead.",
                     "Arbeitete mit renommierten Kunden wie Audi, Porsche, BMW und DZ Bank an der Entwicklung von Softwarelösungen und Schulungen im Bereich Datenanalyse.",
                     "Führte Projekte einschließlich ALICE bei CARIAD für das interdisziplinäre Projektteammanagement, NEW bei AUDI für die Nachverfolgung des Entwicklungsfortschritts und FAPOS bei AUDI für die Buchung von Testautos.",
                     "Entwickelte und führte Schulungen im Bereich Datenanalyse durch und half Kunden, ihr Verständnis und ihre Nutzung von Datenanalysen zu verbessern."
                 ],
+                "summary": [
+                    "<b>Managementberater, Achtzig20 GmbH</b>: Technische Führung, Softwareentwicklung, Architektur, DevOps.",
+                    "<b>CEO, Achtzig20 d.o.o.</b>: Unternehmenswachstum, Gründung einer Tochtergesellschaft & Büroeröffnung in Ljubljana.",
+                    "<b>CTO, newonads GmbH</b>: Digitale Werbeplattform - Markenbewusstsein, Lead-Generierung, Verkauf.",
+                    "<b>CTO, Studio3 GmbH</b>: Digitale Gemeinschaften mit Web3, minimierte Sicherheitsrisiken.",
+                    "Kundenprojekte: Audi, Porsche, BMW, DZ Bank - Softwarelösungen & Schulungen in Datenanalyse.",
+                    "Schlüsselprojekte: ALICE bei CARIAD, NEW & FAPOS bei AUDI.",
+                    "Entwicklung & Durchführung von Schulungen in Datenanalyse."
+                ],
                 "skills": [
-                    "Projektmanagement, Teamführung, Technischer Leiter, Produktdesign, Anforderungsingenieurwesen, Softwareentwicklung, Softwarearchitektur, DevOps, Führung, strategisches Denken, Kommunikation, Entscheidungsfindung, Anpassungsfähigkeit, finanzielles Gespür, emotionale Intelligenz.",
-                    "SQL Server, MongoDB, Oracle Datenbank, .NET (REST API), Angular, CI/CD, Solidity - Smart Contracts."
+                    "<b>Rollen</b>: Projektmanagement, Teamleitung, Technischer Leiter, Produktdesign.",
+                    "<b>Fachwissen</b>: Anforderungsengineering, Softwareentwicklung, Architektur, DevOps, Führung, Strategisches Denken.",
+                    "<b>Technik</b>: SQL Server, MongoDB, Oracle, .NET, Angular, CI/CD, Solidity, Python."
+                ]
+            },
+            "akka": {
+                "summary": [
+                    "Entwicklung von carship.online mit Schwerpunkt auf Softwareentwicklung und Gestaltung des Benutzerflusses.",
+                    "Konzeption und Durchführung von Schulungen in den Bereichen Data Analytics und Blockchain.",
+                    "Analyse der Wiederverkaufspreise von AUDI-Fahrzeugen, mit Schwerpunkt auf dem Einfluss optionaler Ausstattungen."
+                ]
+            },
+            "institute-js": {
+                "summary": [
+                    "Erwerb von Fähigkeiten in Datenanalyse, C++ Programmierung, Durchführung von Simulationen und Dateninterpretation.",
+                    "Abschluss eines 6-monatigen Praktikums in Mainz Microtron."
+                ]
+            }
+        },
+        "education": {
+            "masters": {
+                "title": "MSc in Mathematischer Physik",
+                "summary": [
+                    "Notendurchschnitt: 9.0 (Entspricht A in den USA, 1.7 in Deutschland)",
+                    "Dissertation: \"Einrichtung eines Experiments zur Messung des axialen Formfaktors des Protons\""
+                ]
+            },
+            "bachelor": {
+                "title": "BSc in Allgemeiner Physik",
+                "summary": [
+                    "Notendurchschnitt: 8.3 (Entspricht A in den USA, 2.3 in Deutschland)",
+                    "Diverse Kursarbeit: Astronomie, Geophysik, Elektronik, Computationsphysik.",
+                    "Dissertation: \"Bariogenesis über Leptogenesis\""
                 ]
             }
         }
@@ -92,7 +132,7 @@
         },
         "achtzig20": {
             "type": "Employee",
-            "title": "Management Consultant",
+            "title": "Software-Teamleiter",
             "abstract": [
                 "In meiner Rolle bei Achtzig20 hatte ich das Privileg, mit einem dynamischen Team zusammenzuarbeiten und zum Wachstum und Erfolg des Unternehmens beizutragen. Ausgehend von meiner Erfahrung mit AKKA, wo ich wertvolle Fähigkeiten als Softwareentwickler und -architekt erworben habe, wechselte ich zu Achtzig20 und übernahm die Rolle eines technischen Leiters. Mit einem starken Fokus auf Anforderungsmanagement, Softwareentwicklung, Softwarearchitektur und DevOps spielte ich eine entscheidende Rolle bei der Bereitstellung hochwertiger Lösungen für unsere Kunden.",
                 "Darüber hinaus erstreckte sich meine Reise mit Achtzig20 über technische Expertise hinaus. Als CEO von Achtzig20 d.o.o. führe ich das Unternehmen durch verschiedene Wachstumsphasen. Vom Arbeiten mit e-Študentski Servis und der Einrichtung eines schönen Büros im Herzen von Ljubljana bis hin zur Gründung der Tochtergesellschaft Achtzig20 d.o.o. war es mein Ziel, eine starke und erfolgreiche Organisation aufzubauen.",
@@ -195,7 +235,7 @@
                 "type": "Coaching-Erfahrung",
                 "title": "Data Analytics Schulung",
                 "abstract": [
-                    "Ich habe Erfahrung in der Durchführung von Schulungen im Bereich Data Analytics, wo ich zwei Programme entwickelt habe. Das erste Training konzentriert sich darauf, einen Überblick über Data Analytics zu geben und den Teilnehmern das Konzept, die Herausforderungen und den Data-Analytics-Zyklus näherzubringen. Es behandelt auch Themen wie Lean Analytics und Growth Hacking.",
+                    "Ich habe Erfahrung in der Durchführung von Schulungen im Bereich Data Analytics und Blockchain, wo ich zwei Programme entwickelt habe. Das erste Training konzentriert sich darauf, einen Überblick über Data Analytics zu geben und den Teilnehmern das Konzept, die Herausforderungen und den Data-Analytics-Zyklus näherzubringen. Es behandelt auch Themen wie Lean Analytics und Growth Hacking.",
                     "Das zweite Training baut auf den Grundlagen des ersten auf, indem es Python einführt und verschiedene Methoden und Machine-Learning-Algorithmen behandelt. Die Teilnehmer sammeln praktische Erfahrungen in der Programmierung mit Python und lernen, Datenanalysetechniken effektiv anzuwenden.",
                     "Beide Schulungsprogramme wurden in Zusammenarbeit mit Kunden wie BMW und DZ Bank durchgeführt, was mir wertvolle Erfahrungen in der Arbeit mit etablierten Unternehmen ermöglicht hat. Dadurch konnte ich Einblicke in die Anwendung von Datenanalyse in realen Geschäftsszenarien gewinnen und meine Fähigkeiten in der Schulung auf diesem Gebiet verbessern.",
                     "Durch diese Schulungen habe ich Kunden dabei geholfen, ihr Verständnis und ihre Nutzung der Datenanalyse zu verbessern und sie mit dem Wissen auszustatten, um Herausforderungen in diesem Bereich effektiv anzugehen."
@@ -208,7 +248,7 @@
             "abstract": [
                 "Während meiner 8-monatigen Reise mit der Firma AKKA hatte ich die Möglichkeit, einen 1-monatigen Kurs bei Akkademy in Genf zu absolvieren und anschließend in Ingolstadt zu arbeiten. Obwohl das Programm neu war und der Prozess anfangs etwas chaotisch verlief, ergab sich für mich eine großartige Gelegenheit und ich knüpfte wertvolle Kontakte, die mir meine zukünftige Arbeit ermöglichten."
             ],
-            "certificate": "Zertifikat",
+            "certificate": "Arbeitszeugnis",
             "projects": {
                 "type": "Projekte",
                 "carship": {
@@ -383,5 +423,6 @@
     },
     "website": {
         "link": "Webseite"
-    }
+    },
+    "insert-password": "Passwort einfügen"
 }

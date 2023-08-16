@@ -31,7 +31,7 @@ $side-width: 14.5rem;
 
     .picture-container {
       position: relative;
-      height: 10rem;
+      height: 10.5rem;
       margin-top: 2rem;
 
       .profile {
@@ -56,7 +56,8 @@ $side-width: 14.5rem;
     }
 
     .label {
-      border-bottom: 1px solid $primary-color;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
     }
   }
 
@@ -67,15 +68,20 @@ $side-width: 14.5rem;
 
   /* LIGHT THEME SETUP */
   &.light-theme {
-    .display-l {
-      display: block;
-    }
-    .display-d {
-      display: none;
+
+    .side-content {
+      .label {
+        border-bottom-color: $primary-color;
+      }
     }
 
     .content {
-      .text {
+
+      .user-header {
+        margin-top: 2rem;
+      }
+
+      .user-header, .text {
         color: $light-gray-font;
       }
     }
@@ -83,12 +89,6 @@ $side-width: 14.5rem;
 
   /* DARK THEME SETUP */
   &.dark-theme {
-    .display-l {
-      display: none;
-    }
-    .display-d {
-      display: block;
-    }
 
     .side-content {
 
@@ -96,29 +96,43 @@ $side-width: 14.5rem;
         background-color: $primary-color;
       }
 
+      .header-link {
+        color: var(--pop-color);
+      }
+
       .label {
-        border-bottom: 1px solid var(--pop-color);
+        border-bottom-color: var(--pop-color);
       }
     }
 
     .content {
 
-      .user-header {
-        max-height: 10rem;
-        margin-top: 2rem;
-        // padding-top: 3rem;
-        padding-bottom: 3rem;
-        box-shadow: 5px 0px 4px var(--pop-color);
-        background-color: $primary-color;
-
-        .header-link {
-          color: $light-gray-font;
-        }
-      }
-
       .text {
         color: $gray-font
       }
+
+      .user-header {
+        height: 10.5rem;
+        margin-top: 2rem;
+        padding-top: 0.75rem;
+        background-color: $primary-color;
+        color: $light-background;
+      }
+    }
+  }
+}
+
+.download-wrapper {
+  position: relative;
+  .download-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    size: 40px;
+    border-radius: 50%;
+    button > i {
+      font-size: 1.2rem;
+      font-weight: 600;
     }
   }
 }

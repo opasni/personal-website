@@ -7,6 +7,7 @@ import { GaugePosition } from 'src/app/types/gauge-position.type';
 export class GaugeCounterService {
 
   @Output() update = new EventEmitter<number>();
+  @Output() move = new EventEmitter<void>();
   @Output() ready = new EventEmitter<number>();
 
   public position: GaugePosition = 'none';
@@ -15,13 +16,17 @@ export class GaugeCounterService {
   private _counter: number = 0;
   private _intervalId: NodeJS.Timer | undefined;
   private _timer: number = 0;
-  private MAX_COUNT = 45;
+  private MAX_COUNT = 30;
 
   updateGauge(position: GaugePosition, value: number) {
     const positionUpdate = value !== 0 ? position : 'none';
     this._counter = value;
     this.handlePositionUpdate(positionUpdate);
     this.sendUpdate();
+  }
+
+  clearInterval() {
+    clearInterval(this._intervalId);
   }
 
   clearGauge() {

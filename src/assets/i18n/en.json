@@ -14,31 +14,61 @@
     },
     "cv": {
         "menu-item": "Generate CV",
-        "about": "I am an experienced software development professional and CEO of Achtzig20 d.o.o. Passionate about technology and innovation, I've spearheaded projects like the newonads digital advertising platform and the GRID3 community platform. With strong leadership and strategic thinking skills, I consistently deliver value to clients. Fluent in Slovenian and English, with intermediate German, I enjoy music, sports, and travel, and am dedicated to making a positive impact in the digital world.",
+        "about": "I am an experienced <b>software development</b> professional and <b>CEO of Achtzig20 d.o.o.</b> Passionate about technology and innovation, I've spearheaded projects like the <b>newonads</b> digital advertising platform and the <b>GRID3</b> community platform. With strong leadership and strategic thinking skills, I consistently deliver value to clients. Fluent in Slovenian and English, with intermediate German, I enjoy music, sports, and travel, and am dedicated to making a positive impact in the digital world.",
         "experience": {
             "achtzig20": {
                 "summary-long": [
                     "Management Consultant at Achtzig20 GmbH, providing technical leadership in requirements engineering, software development, software architecture, and DevOps.",
-                    "CEO of Achtzig20 d.o.o., leading the company through various growth stages, including the establishment of a new subsidiary and office in Ljubljana.",
-                    "CTO at newonads GmbH, responsible for managing a digital advertising platform focused on improving brand awareness, lead generation, and sales.",
-                    "CTO at Studio3 GmbH, helping agencies build and maintain digital communities using web3 technologies while minimizing security risks and overhead.",
+                    "<b>CEO of Achtzig20 d.o.o., leading the company through various growth stages, including the establishment of a new subsidiary and office in Ljubljana.",
+                    "<b>CTO at newonads GmbH, responsible for managing a digital advertising platform focused on improving brand awareness, lead generation, and sales.",
+                    "<b>CTO at Studio3 GmbH, helping agencies build and maintain digital communities using web3 technologies while minimizing security risks and overhead.",
                     "Worked with prestigious clients including Audi, Porsche, BMW, and DZ Bank on software solution development and data analytics training.",
                     "Led projects including ALICE at CARIAD for interdisciplinary project team management, NEW at AUDI for development progress tracking, and FAPOS at AUDI for test car booking.",
                     "Developed and conducted data analytics training programs, helping clients improve their understanding and utilization of data analytics."
                 ],
                 "summary": [
-                    "Management Consultant, Achtzig20 GmbH: Technical leadership, software development, architecture, DevOps.",
-                    "CEO, Achtzig20 d.o.o.: Growth leadership, new subsidiary & Ljubljana office establishment.",
+                    "<b>Management Consultant, Achtzig20 GmbH</b>: Technical leadership, software development, architecture, DevOps.",
+                    "<b>CEO, Achtzig20 d.o.o.</b>: Growth leadership, new subsidiary & Ljubljana office establishment.",
+                    "<b>CTO, newonads GmbH</b>: Digital advertising platform - brand awareness, lead generation, sales.",
+                    "<b>CTO, Studio3 GmbH</b>: Digital communities via web3 tech, minimized security risks.",
                     "Client projects: Audi, Porsche, BMW, DZ Bank - software solutions & data analytics training.",
-                    "CTO, newonads GmbH: Digital advertising platform - brand awareness, lead generation, sales.",
-                    "CTO, Studio3 GmbH: Digital communities via web3 tech, minimized security risks.",
                     "Key projects: ALICE at CARIAD, NEW & FAPOS at AUDI.",
                     "Data analytics training program development & execution."
                 ],
                 "skills": [
-                    "Roles: Project Management, Team Leading, Technical Lead, Product Design.",
-                    "Expertise: Requirements Engineering, Software Development, Architecture, DevOps, Leadership, Strategic Thinking.",
-                    "Tech: SQL Server, MongoDB, Oracle, .NET, Angular, CI/CD, Solidity."
+                    "<b>Roles</b>: Project Management, Team Leading, Technical Lead, Product Design.",
+                    "<b>Expertise</b>: Requirements Engineering, Software Development, Architecture, DevOps, Leadership, Strategic Thinking.",
+                    "<b>Tech</b>: SQL Server, MongoDB, Oracle, .NET, Angular, CI/CD, Solidity, Python."
+                ]
+            },
+            "akka": {
+                "summary": [
+                    "Developed carship.online, focusing on software development and user flow design.",
+                    "Conception and implementation of training courses in the areas of data analytics and blockchain.",
+                    "Analyzed AUDI vehicles' resale prices, emphasizing the impact of optional features."
+                ]
+            },
+            "institute-js": {
+                "summary": [
+                    "Acquired skills in data analysis, C++ programming, running simulations, and data interpretation.",
+                    "Completed a 6-month internship in Mainz Microtron."
+                ]
+            }
+        },
+        "education": {
+            "masters": {
+                "title": "MSc in Mathematical Physics",
+                "summary": [
+                    "GPA: 9.0 (Equivalent to A in USA, 1.7 in Germany)",
+                    "Thesis: \"Establishment of an Experiment for Measuring the Axial Form Factor of the Proton\""
+                ]
+            },
+            "bachelor": {
+                "title": "BSc in General Physics",
+                "summary": [
+                    "GPA: 8.3 (Equivalent to A in USA, 2.3 in Germany)",
+                    "Diverse coursework: astronomy, geophysics, electronics, computational physics.",
+                    "Thesis: \"Bariogenesis via Leptogenesis\""
                 ]
             }
         }
@@ -102,7 +132,7 @@
         },
         "achtzig20": {
             "type": "Employee",
-            "title": "Software-Teamleiter",
+            "title": "Software Team Lead",
             "link": "8020.eco",
             "abstract": [
                 "In my role at Achtzig20, I have had the privilege of working with a dynamic team and contributing to the growth and success of the company. Starting from my experience with AKKA, where I gained valuable skills as a software developer and architect, I transitioned to Achtzig20 and took on the role of a Technical Lead. With a strong focus on requirements engineering, software development, software architecture, and DevOps, I have played a crucial role in delivering high-quality solutions to our clients.",
@@ -219,7 +249,7 @@
             "abstract": [
                 "During my 8-month journey with AKKA, I had the opportunity to attend a 1-month program at Akkademy in Geneva, followed by work in Ingolstadt. Despite the newness of the program and some initial challenges, I seized a valuable chance and established important contacts that paved the way for my future work."
             ],
-            "certificate": "Certificate",
+            "certificate": "Certificate of Employment",
             "projects": {
                 "type": "Projects",
                 "carship": {
@@ -394,5 +424,6 @@
     },
     "website": {
         "link": "Website"
-    }
+    },
+    "insert-password": "Insert Password"
 }

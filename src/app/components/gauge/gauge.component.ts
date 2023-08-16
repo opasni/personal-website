@@ -22,6 +22,7 @@ export class GaugeComponent implements OnInit, AfterViewInit, OnDestroy {
 
   private unsubscribe$ = new Subject<void>();
   private _circumference = 0;
+  private _currentOffset = 0;
 
   constructor(
     private readonly counterService: GaugeCounterService
@@ -48,7 +49,24 @@ export class GaugeComponent implements OnInit, AfterViewInit, OnDestroy {
     this.unsubscribe$.complete();
   }
 
+  movePosition() {
+    this.counterService.move.emit();
+  }
+
+  fillProgress() {
+    this._currentOffset = this.circle.nativeElement.style.strokeDashoffset;
+    this.circle.nativeElement.style.strokeDashoffset = 0;
+  }
+
+  resetProgress() {
+    this.circle.nativeElement.style.strokeDashoffset = this._currentOffset;
+    this._currentOffset = 0;
+  }
+
   private setProgress(percent: number) {
+    if (this._currentOffset) {
+      return;
+    }
     const offset = this._circumference - percent * this._circumference;
     this.circle.nativeElement.style.strokeDashoffset = offset;
   }
