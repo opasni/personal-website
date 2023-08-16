@@ -1,52 +1,53 @@
-<div class="row" *ngIf="!minified">
+<div class="row" *ngIf="!summarized">
   <h5 class="card-title">
     {{ 'skills.hard-skills.programming' | translate }}
   </h5>
 </div>
-<div class="skills-section" [class.minified]="minified">
-  <app-skill-measure [value]="5" name="Angular"></app-skill-measure>
-  <app-skill-measure [value]="4" name="TypeScript"></app-skill-measure>
-  <app-skill-measure [value]="4" name=".NET"></app-skill-measure>
-  <app-skill-measure [value]="4" name="Python"></app-skill-measure>
-  <app-skill-measure [value]="3" name="C#"></app-skill-measure>
-  <app-skill-measure [value]="3" name="Bootstrap"></app-skill-measure>
-  <app-skill-measure [value]="3" name="C++"></app-skill-measure>
-  <app-skill-measure [value]="3" name="C"></app-skill-measure>
-  <app-skill-measure [value]="3" name="bash"></app-skill-measure>
-  <app-skill-measure [value]="3" name="VBA"></app-skill-measure>
-  <app-skill-measure [value]="3" name="Pipelines (yml)"></app-skill-measure>
-  <app-skill-measure [value]="2" name="NodeJS"></app-skill-measure>
-  <app-skill-measure [value]="1" name="Xamarin"></app-skill-measure>
+<div class="skills-section" [class.minified]="summarized">
+  <app-skill-measure [value]="7" [minValue]="minValue" name="Angular"></app-skill-measure>
+  <app-skill-measure [value]="2" [minValue]="minValue" name="React"></app-skill-measure>
+  <app-skill-measure [value]="6" [minValue]="minValue" name="TypeScript"></app-skill-measure>
+  <app-skill-measure [value]="6" [minValue]="minValue" name=".NET"></app-skill-measure>
+  <app-skill-measure [value]="5" [minValue]="minValue" name="Python"></app-skill-measure>
+  <app-skill-measure [value]="5" [minValue]="minValue" name="C#"></app-skill-measure>
+  <app-skill-measure [value]="5" [minValue]="minValue" name="Bootstrap"></app-skill-measure>
+  <app-skill-measure [value]="3" [minValue]="minValue" name="C++"></app-skill-measure>
+  <app-skill-measure [value]="3" [minValue]="minValue" name="C"></app-skill-measure>
+  <app-skill-measure [value]="4" [minValue]="minValue" name="bash"></app-skill-measure>
+  <app-skill-measure [value]="4" [minValue]="minValue" name="VBA"></app-skill-measure>
+  <app-skill-measure [value]="3" [minValue]="minValue" name="Pipelines (yml)"></app-skill-measure>
+  <app-skill-measure [value]="3" [minValue]="minValue" name="NodeJS"></app-skill-measure>
+  <app-skill-measure [value]="1" [minValue]="minValue" name="Xamarin"></app-skill-measure>
 </div>
-<div class="row mt-4" *ngIf="!minified">
+<div class="row mt-4" *ngIf="!summarized">
   <h5 class="card-title">
     {{ 'skills.hard-skills.databases' | translate }}
   </h5>
 </div>
-<div class="skills-section" [class.minified]="minified">
-  <app-skill-measure [value]="4" name="SQL Server"></app-skill-measure>
-  <app-skill-measure [value]="3" name="Oracle"></app-skill-measure>
-  <app-skill-measure [value]="2" name="mongoDB"></app-skill-measure>
-  <app-skill-measure [value]="3" name="Windows (IIS)"></app-skill-measure>
-  <app-skill-measure [value]="3" name="Linux (nginx)"></app-skill-measure>
-  <app-skill-measure [value]="4" name="AWS"></app-skill-measure>
-  <app-skill-measure [value]="3" name="Azure"></app-skill-measure>
+<div class="skills-section" [class.minified]="summarized">
+  <app-skill-measure [value]="5" [minValue]="minValue" name="SQL Server"></app-skill-measure>
+  <app-skill-measure [value]="3" [minValue]="minValue" name="Oracle"></app-skill-measure>
+  <app-skill-measure [value]="2" [minValue]="minValue" name="mongoDB"></app-skill-measure>
+  <app-skill-measure [value]="3" [minValue]="minValue" name="Windows (IIS)"></app-skill-measure>
+  <app-skill-measure [value]="3" [minValue]="minValue" name="Linux (nginx)"></app-skill-measure>
+  <app-skill-measure [value]="5" [minValue]="minValue" name="AWS"></app-skill-measure>
+  <app-skill-measure [value]="3" [minValue]="minValue" name="Azure"></app-skill-measure>
 </div>
-<div class="w-100 mt-4" *ngIf="!minified">
+<div class="w-100 mt-4" *ngIf="!summarized">
   <h5 class="card-title">
     {{ 'skills.hard-skills.tools' | translate }}
   </h5>
 </div>
-<div class="skills-section" [class.minified]="minified">
-  <app-skill-measure [value]="5" name="Git"></app-skill-measure>
-  <app-skill-measure [value]="5" name="Bitbucket"></app-skill-measure>
-  <app-skill-measure [value]="4" name="Jira"></app-skill-measure>
-  <app-skill-measure [value]="3" name="Github"></app-skill-measure>
-  <app-skill-measure [value]="3" name="InDesign"></app-skill-measure>
-  <app-skill-measure [value]="3" name="Mathematica"></app-skill-measure>
-  <app-skill-measure [value]="3" name="Jupyther"></app-skill-measure>
-  <app-skill-measure [value]="3" name="R"></app-skill-measure>
-  <app-skill-measure [value]="2" name="Docker"></app-skill-measure>
-  <app-skill-measure [value]="2" name="Inventor"></app-skill-measure>
-  <app-skill-measure [value]="1" name="AutoCad"></app-skill-measure>
+<div class="skills-section" [class.minified]="summarized">
+  <app-skill-measure [value]="7" [minValue]="minValue" name="Git"></app-skill-measure>
+  <app-skill-measure [value]="6" [minValue]="minValue" name="Bitbucket"></app-skill-measure>
+  <app-skill-measure [value]="5" [minValue]="minValue" name="Jira"></app-skill-measure>
+  <app-skill-measure [value]="3" [minValue]="minValue" name="Github"></app-skill-measure>
+  <app-skill-measure [value]="3" [minValue]="minValue" name="InDesign"></app-skill-measure>
+  <app-skill-measure [value]="5" [minValue]="minValue" name="Mathematica"></app-skill-measure>
+  <app-skill-measure [value]="5" [minValue]="minValue" name="Jupyther"></app-skill-measure>
+  <app-skill-measure [value]="3" [minValue]="minValue" name="R"></app-skill-measure>
+  <app-skill-measure [value]="2" [minValue]="minValue" name="Docker"></app-skill-measure>
+  <app-skill-measure [value]="2" [minValue]="minValue" name="Inventor"></app-skill-measure>
+  <app-skill-measure [value]="1" [minValue]="minValue" name="AutoCad"></app-skill-measure>
 </div>

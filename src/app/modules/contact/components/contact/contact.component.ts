@@ -1,16 +1,17 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { TranslateService } from '@ngx-translate/core';
-import { Observable, catchError, finalize, map, of, tap } from 'rxjs';
-import { EmailService } from 'src/app/services/email.service';
-import { ThemeComponent } from '../../../share/abstracts/theme.component';
-import { ThemeService } from 'src/app/services/theme.service';
-import { Contact } from '../../../share/classes/contact.class';
-import { Language } from '../../../share/enums/language.enum';
-import { ContactPurpose } from '../../../share/enums/contact-purpose.enum';
-import { environment } from 'src/environments/environment';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Observable, catchError, finalize, map, of, tap } from 'rxjs';
 import { RecaptchaComponent } from 'ng-recaptcha';
+import { TranslateService } from '@ngx-translate/core';
+
+import { environment } from 'src/environments/environment';
+import { Contact } from 'src/app/classes/contact.class';
+import { Language } from 'src/app/enums/language.enum';
+import { ContactPurpose } from 'src/app/enums/contact-purpose.enum';
+import { ThemeComponent } from 'src/app/abstracts/theme.component';
+import { ThemeService } from 'src/app/services/theme.service';
+import { EmailService } from 'src/app/services/email.service';
 
 class FormGroupAccessor<T> extends FormGroup {
   getControl(key: keyof T): FormControl<any> {

@@ -14,7 +14,64 @@
     },
     "cv": {
         "menu-item": "Ustvari življenjepis",
-        "title": ""
+        "about": "Sem strokovnjak za <b>razvoj programske opreme</b> in <b>direktor podjetja Achtzig20 d.o.o.</b> S strastjo do tehnologije in inovacij vodim projekte, kot so digitalna oglaševalska platforma <b>newonads</b> in platforma za gradnjo skupnosti <b>GRID3</b>. Z močnimi vodstvenimi sposobnostmi in strateškim razmišljanjem konstantno prinašam vrednost strankam. Tekoče govorim slovenščino in angleščino, dobro pa tudi nemščino. Uživam v glasbi, športu in potovanjih ter sem predan ustvarjanju pozitivnega vpliva v digitalnem svetu.",
+        "experience": {
+            "achtzig20": {
+                "summary-long": [
+                    "<b>Management svetovalec pri Achtzig20 GmbH</b>, ki nudi tehnično vodstvo pri inženiringu zahtev, razvoju programske opreme, arhitekturi programske opreme in DevOps.",
+                    "<b>Izvršni direktor podjetja Achtzig20 d.o.o.</b>, ki vodi podjetje skozi različne faze rasti, vključno z ustanovitvijo nove podružnice in pisarne v Ljubljani.",
+                    "<b>CTO pri newonads GmbH</b>, odgovoren za upravljanje digitalne oglaševalske platforme, osredotočene na izboljšanje prepoznavnosti blagovne znamke, pridobivanje vodil in prodajo.",
+                    "<b>CTO pri Studio3 GmbH</b>, ki agencijam pomaga pri izgradnji in vzdrževanju digitalnih skupnosti z uporabo tehnologij web3 ob minimalnih varnostnih tveganjih in dodatnih stroških.",
+                    "Delal s prestižnimi strankami, kot so Audi, Porsche, BMW in DZ Bank na razvoju programske opreme in usposabljanju iz področja analize podatkov.",
+                    "Vodil projekte, vključno z ALICE pri CARIAD za interdisciplinarno upravljanje projektnih skupin, NEW pri AUDI za sledenje napredku razvoja in FAPOS pri AUDI za rezervacijo testnih avtomobilov.",
+                    "Razvil in izvedel usposabljanje iz analize podatkov, pomagal strankam izboljšati razumevanje in uporabo analize podatkov."
+                ],
+                "summary": [
+                    "<b>Management svetovalec, Achtzig20 GmbH</b>: Tehnično vodstvo, razvoj programske opreme, arhitektura, DevOps.",
+                    "<b>CEO, Achtzig20 d.o.o.</b>: Vodenje rasti podjetja, ustanovitev podružnice & odprtje pisarne v Ljubljani.",
+                    "<b>CTO, newonads GmbH</b>: Digitalna oglaševalska platforma - prepoznavnost blagovne znamke, generiranje vodil, prodaja.",
+                    "<b>CTO, Studio3 GmbH</b>: Digitalne skupnosti preko Web3, minimalna varnostna tveganja.",
+                    "Projekti za stranke: Audi, Porsche, BMW, DZ Bank - programske rešitve & usposabljanje iz analitike podatkov.",
+                    "Ključni projekti: ALICE pri CARIAD, NEW & FAPOS pri AUDI.",
+                    "Razvoj & izvedba programov za usposabljanje iz analitike podatkov."
+                ],
+                "skills": [
+                    "Vloge: Upravljanje projektov, Vodenje ekipe, Tehnični vodja, Oblikovanje izdelka.",
+                    "Strokovno znanje: Inženiring zahtev, Razvoj programske opreme, Arhitektura, DevOps, Vodenje, Strateško razmišljanje.",
+                    "Tehnologija: SQL Server, MongoDB, Oracle, .NET, Angular, CI/CD, Solidity, Python."
+                ]
+            },
+            "akka": {
+                "summary": [
+                    "Razvoj carship.online, s poudarkom na razvoju programske opreme in oblikovanju uporabniškega pretoka.",
+                    "Zasnova in izvedba izobraževanj s področja podatkovne analitike in blockchaina.",
+                    "Analiziral sem prodajne cene vozil AUDI, s poudarkom na vplivu dodatne opreme."
+                ]
+            },
+            "institute-js": {
+                "summary": [
+                    "Pridobil sem veščine na področju analize podatkov, programiranja v C++, izvajanja simulacij in interpretacije podatkov.",
+                    "Zaključil sem šestmesečno pripravništvo v Microtronu Mainz."
+                ]
+            }
+        },
+        "education": {
+            "masters": {
+                "title": "Magisterij iz matematične fizike",
+                "summary": [
+                    "Povprečna ocena: 9.0 (Ustreza A v ZDA, 1.7 v Nemčiji)",
+                    "Magistersko delo: \"Ustanovitev eksperimenta za merjenje aksialnega oblikovnega faktorja protona\""
+                ]
+            },
+            "bachelor": {
+                "title": "Dodiplomski študij splošne fizike",
+                "summary": [
+                    "Povprečna ocena: 8.3 (Ustreza A v ZDA, 2.3 v Nemčiji)",
+                    "Raznolik študijski program: astronomija, geofizika, elektronika, računalniška fizika.",
+                    "Diplomsko delo: \"Bariogeneza preko leptogeneze\""
+                ]
+            }
+        }
     },
     "skills": {
         "menu-item": "Spretnosti",
@@ -75,7 +132,7 @@
         },
         "achtzig20": {
             "type": "Employee",
-            "title": "Management Consultant",
+            "title": "Vodja Programerskega oddelka",
             "abstract": [
                 "V svoji vlogi pri Achtzig20 sem imel privilegij sodelovati z dinamično ekipo in prispevati k rasti in uspehu podjetja. Začenši z izkušnjami pri podjetju AKKA, kjer sem pridobil dragocene veščine kot razvijalec programske opreme in arhitekt, me je pot vodila v Achtzig20, kjer sem postopoma prevzel vlogo tehničnega vodje. Z močnim poudarkom na zahtevah, razvoju programske opreme, arhitekturi programske opreme in DevOpsu sem odigral ključno vlogo pri zagotavljanju visokokakovostnih rešitev našim strankam.",
                 "Poleg tega se je moje sodelovanje z Achtzig20 razširilo preko tehničnega področja. Kot izvršni direktor (CEO) podjetja Achtzig20 d.o.o. vodim podjetje skozi različne faze rasti. Od sodelovanja z e-Študentskim Servisom in vzpostavitve čudovite pisarne v središču Ljubljane do ustanovitve podružnice Achtzig20 d.o.o., namen je bil vedno gradnja močne in uspešne organizacije.",
@@ -191,7 +248,7 @@
             "abstract": [
                 "Med mojim 8-mesečnim potovanjem z družbo AKKA sem imel/a priložnost obiskati 1-mesečni program v Akkademy v Ženevi in nato delati v Ingolstadtu. Kljub novosti programa in nekaterim začetnim izzivom sem izkoristil/a dragoceno priložnost ter vzpostavil/a pomembne stike, ki so mi omogočili prihodnje delo."
             ],
-            "certificate": "Potrdilo",
+            "certificate": "Potrdilo o zaposlitvi",
             "projects": {
                 "type": "Projekti",
                 "carship": {
@@ -366,5 +423,6 @@
     },
     "website": {
         "link": "Spletna stran"
-    }
+    },
+    "insert-password": "Vnesite Geslo"
 }

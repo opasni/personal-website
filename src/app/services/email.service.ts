@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http'
-import { Injectable } from '@angular/core'
+import { Injectable, inject } from '@angular/core'
 import { Observable, catchError, map, of } from 'rxjs'
 import { environment } from 'src/environments/environment'
-import { Contact } from '../modules/share/classes/contact.class';
+import { Contact } from 'src/app/classes/contact.class';
 
 @Injectable({
   providedIn: 'root'
@@ -10,8 +10,7 @@ import { Contact } from '../modules/share/classes/contact.class';
 
 export class EmailService {
   private url = environment.api + '/contact';
-
-  constructor(private http: HttpClient) { }
+	private http = inject(HttpClient);
 
   sendEmail(input: Contact): Observable<Contact> {
     return this.http.post(this.url, input).pipe(

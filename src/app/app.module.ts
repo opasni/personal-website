@@ -10,7 +10,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from './services/language.service';
-import { ShareModule } from './modules/share/share.module';
 import { HeaderModule } from './modules/header/header.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EmailService } from './services/email.service';
@@ -33,7 +32,6 @@ export const setupLanguageFactory = (service: LanguageService) => service.initia
         BrowserAnimationsModule,
         GaugeComponent,
         NgbModule,
-        ShareModule,
         HeaderModule,
         HttpClientModule,
         AppRoutingModule,

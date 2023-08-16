@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ContactComponent } from './components/contact/contact.component';
-import { ShareModule } from '../share/share.module';
-import { ContactRoutingModule } from './contact-routing.module';
-import { TranslateModule } from '@ngx-translate/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FilterErrorPipe } from './pipes/filter-error/filter-error.pipe';
 import { RecaptchaModule } from 'ng-recaptcha';
+import { TranslateModule } from '@ngx-translate/core';
+
+import { ContactComponent } from './components/contact/contact.component';
+import { ContactRoutingModule } from './contact-routing.module';
+import { FilterErrorPipe } from './pipes/filter-error/filter-error.pipe';
 import { SuccessComponent } from './components/success/success.component';
+import { ScrollDetectDirective } from 'src/app/directives/scroll-detect/scroll-detect.directive';
 
 
 
@@ -19,11 +20,11 @@ import { SuccessComponent } from './components/success/success.component';
     ],
     imports: [
         CommonModule,
-        ShareModule,
         TranslateModule,
         ReactiveFormsModule,
         RecaptchaModule,
-        ContactRoutingModule
+        ContactRoutingModule,
+        ScrollDetectDirective
     ]
 })
 export class ContactModule { }

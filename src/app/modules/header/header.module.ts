@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { HeaderRoutingModule } from './header-routing.module';
 import { HeaderComponent } from './components/header/header.component';
-import { ShareModule } from '../share/share.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { ProfileComponent } from './components/profile/profile.component';
 import { HoverImageDirective } from './directives/hover-image/hover-image.directive';
@@ -17,8 +16,7 @@ import { HoverImageDirective } from './directives/hover-image/hover-image.direct
     imports: [
         CommonModule,
         HeaderRoutingModule,
-        TranslateModule,
-        ShareModule,
+        TranslateModule
     ],
     exports: [
         HeaderComponent,

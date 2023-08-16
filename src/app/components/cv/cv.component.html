@@ -1,0 +1,139 @@
+<body class="A4 cv" [style.backgroundColor]="backgroundColor" [ngClass]="theme + '-theme'">
+  <div #sheet class="sheet d-flex wrapper">
+    <nav class="side-content background-color">
+      <div class="d-block picture-container">
+        <img src="assets/images/profile_image_hover.jpeg" class="profile rounded-circle"
+          src="assets/images/profile_image.jpg" />
+      </div>
+      <div class="sidebar-content py-4">
+        <div class="px-3 user-header text-center" *ngIf="userData$ | async as userData">
+          <h1 class="text-standard">{{ userData.firstName }} <b>{{ userData.lastName }}</b></h1>
+          <ul class="user-info">
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              {{ userData.address }}</li>
+            <li>
+              <i class="bi bi-telephone"></i>
+              {{ userData.phone }}</li>
+            <li>
+              <i class="bi bi-envelope-at-fill"></i>
+              <a class="header-link" [href]="'mailto:' + userData.email">{{ userData.email }}</a></li>
+            <li>
+              <i class="bi bi-globe"></i>
+              <a class="header-link" [href]="'https://' + userData.website">{{ userData.website }}</a></li>
+          </ul>
+        </div>
+        <app-skills-overview></app-skills-overview>
+        <div class="mt-4 mx-3 label">
+          <h5>{{ 'skills.hobbies.title' | translate | uppercase }}</h5>
+        </div>
+        <div class="mx-3">
+          <div class="d-flex justify-content-between"><span>{{ 'skills.hobbies.chess' | translate }} ♟</span><span>🧳 {{ 'skills.hobbies.traveling' | translate }}</span></div>
+          <div class="d-flex justify-content-between"><span>{{ 'skills.hobbies.guitar-playing' | translate }} 🎸</span><span>🎙 {{ 'skills.hobbies.singing' | translate }}</span></div>
+          <div class="d-flex justify-content-between"><span>{{ 'skills.hobbies.climbing' | translate }} 🧗</span><span>🏃 {{ 'skills.hobbies.running' | translate }}</span></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="px-3 user-header">
+        <div class="label">
+          <h5>{{ 'about.menu-item' | translate | uppercase }}</h5>
+        </div>
+        <p [innerHTML]="'cv.about' | translate"></p>
+      </div>
+      <div class="text px-3">
+
+        <div class="pt-3 label">
+          <h5>{{ 'experience.menu-item' | translate | uppercase }}</h5>
+        </div>
+
+        <!-- ACHTZIG20 GMBH -->
+        <i>11/2018 - {{ 'experience.present' | translate | uppercase }}</i>
+        &nbsp;|&nbsp;
+        <h5 class="card-title d-inline-block">{{ 'experience.achtzig20.title' | translate }}</h5>
+        &nbsp;|&nbsp;
+        <h6 class="card-subtitle mb-2 text-muted d-inline-block">{{ 'experience.institution.achtzig20' | translate }}</h6>
+
+        <ul>
+          <li *ngFor="let par of ('cv.experience.achtzig20.summary' | translate); let index = index">
+            <span [innerHTML]="par"></span>
+          </li>
+        </ul>
+        <ul>
+          <li *ngFor="let par of ('cv.experience.achtzig20.skills' | translate); let index = index">
+            <span [innerHTML]="par"></span>
+          </li>
+        </ul>
+
+        <!-- AKKA -->
+        <i>02/2018 - 11/2018</i>
+        &nbsp;|&nbsp;
+        <h5 class="card-title d-inline-block">{{ 'experience.akka.title' | translate }}</h5>
+        &nbsp;|&nbsp;
+        <h6 class="card-subtitle mb-2 text-muted d-inline-block">{{ 'experience.institution.akka' | translate }}</h6>
+
+        <ul>
+          <li *ngFor="let par of ('cv.experience.akka.summary' | translate); let index = index">
+            <span [innerHTML]="par"></span>
+          </li>
+        </ul>
+
+        <!-- JOZEF STEFAN INSTITUTE -->
+        <i>07/2014 - 08/2017</i>
+        &nbsp;|&nbsp;
+        <h5 class="card-title d-inline-block">{{ 'experience.institute-js.type' | translate }}</h5>
+        &nbsp;|&nbsp;
+        <h6 class="card-subtitle mb-2 text-muted d-inline-block">{{ 'experience.institution.institute-js' | translate }}</h6>
+
+        <ul>
+          <li *ngFor="let par of ('cv.experience.institute-js.summary' | translate); let index = index">
+            <span [innerHTML]="par"></span>
+          </li>
+        </ul>
+
+        <div class="mt-4 pt-3 label">
+          <h5>{{ 'education.menu-item' | translate | uppercase }}</h5>
+        </div>
+
+        <!-- MASTER STUDIES -->
+        <i>2014 - 2017</i>
+        &nbsp;|&nbsp;
+        <h5 class="card-title d-inline-block">{{ 'cv.education.masters.title' | translate }}</h5>
+        &nbsp;|&nbsp;
+        <h6 class="card-subtitle mb-2 text-muted d-inline-block">{{ 'education.institution.university' | translate }}</h6>
+
+        <ul>
+          <li *ngFor="let par of ('cv.education.masters.summary' | translate); let index = index">
+            <span [innerHTML]="par"></span>
+          </li>
+        </ul>
+
+        <!-- BACHELOR STUDIES -->
+        <i>2011 - 2014</i>
+        &nbsp;|&nbsp;
+        <h5 class="card-title d-inline-block">{{ 'cv.education.bachelor.title' | translate }}</h5>
+        &nbsp;|&nbsp;
+        <h6 class="card-subtitle mb-2 text-muted d-inline-block">{{ 'education.institution.university' | translate }}</h6>
+
+        <ul>
+          <li *ngFor="let par of ('cv.education.bachelor.summary' | translate); let index = index">
+            <span [innerHTML]="par"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- <div #sheet class="sheet d-flex wrapper">
+    <nav class="side-content background-color">
+    </nav>
+    <div class="content">
+    </div>
+  </div> -->
+</body>
+
+<div class="download-wrapper">
+  <div class="download-button">
+    <button type="button" class="btn btn-primary" (click)="downloadAsPDF()"><i class="bi bi-download"></i></button>
+  </div>
+</div>
