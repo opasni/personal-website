@@ -14,11 +14,11 @@
     },
     "cv": {
         "menu-item": "Generate CV",
-        "about": "I am an experienced <b>software development</b> professional and <b>CEO of Achtzig20 d.o.o.</b> Passionate about technology and innovation, I've spearheaded projects like the <b>newonads</b> digital advertising platform and the <b>GRID3</b> community platform. With strong leadership and strategic thinking skills, I consistently deliver value to clients. Fluent in Slovenian and English, with intermediate German, I enjoy music, sports, and travel, and am dedicated to making a positive impact in the digital world.",
+        "about": "I am an experienced <b>software development</b> professional and <b>CEO of Achtzig20 d.o.o.</b> Passionate about technology and innovation, I've spearheaded projects like the <b>newonads</b> digital advertising platform, the <b>GRID3</b> community platform and <b>nito.ai</b> AI assistant. With strong leadership and strategic thinking skills, I consistently deliver value to clients. Fluent in Slovenian and English, with intermediate German, I enjoy music, sports, and travel, and am dedicated to making a positive impact in the digital world.",
         "experience": {
             "achtzig20": {
                 "summary-long": [
-                    "Management Consultant at Achtzig20 GmbH, providing technical leadership in requirements engineering, software development, software architecture, and DevOps.",
+                    "Technical Lead at Achtzig20 GmbH, providing technical leadership in requirements engineering, software development, software architecture, and DevOps.",
                     "<b>CEO of Achtzig20 d.o.o., leading the company through various growth stages, including the establishment of a new subsidiary and office in Ljubljana.",
                     "<b>CTO at newonads GmbH, responsible for managing a digital advertising platform focused on improving brand awareness, lead generation, and sales.",
                     "<b>CTO at Studio3 GmbH, helping agencies build and maintain digital communities using web3 technologies while minimizing security risks and overhead.",
@@ -27,7 +27,7 @@
                     "Developed and conducted data analytics training programs, helping clients improve their understanding and utilization of data analytics."
                 ],
                 "summary": [
-                    "<b>Management Consultant, Achtzig20 GmbH</b>: Technical leadership, software development, architecture, DevOps.",
+                    "<b>Technical Lead, Achtzig20 GmbH</b>: Technical leadership, software development, architecture, DevOps.",
                     "<b>CEO, Achtzig20 d.o.o.</b>: Growth leadership, new subsidiary & Ljubljana office establishment.",
                     "<b>CTO, newonads GmbH</b>: Digital advertising platform - brand awareness, lead generation, sales.",
                     "<b>CTO, Studio3 GmbH</b>: Digital communities via web3 tech, minimized security risks.",
@@ -419,6 +419,7 @@
         }
     },
     "theme": {
+        "white": "White Theme",
         "light": "Light Mode",
         "dark": "Dark Mode"
     },

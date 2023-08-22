@@ -1,5 +1,5 @@
 // Colors
-$primary-color: #d1081f;
+$primary-color: #D25036;
 $secondary-color: #08D1BA;
 
 // fonts
@@ -15,14 +15,21 @@ $light-dark-background: #d1081f40;
     --font-color: #e9e9ea;
     --background-color: #1C1D22;
     --pop-color: #f8f9fa;
-    --light-background: #d1081f40;
+    --light-background: #D2503640;
 }
 
 .light-theme {
     --font-color: #8E8E91;
     --background-color: #f8f9fa;
     --pop-color: #1C1D22;
-    --light-background: #d1081f40;
+    --light-background: #D2503640;
+}
+
+.white-theme {
+    --font-color: #000000;
+    --background-color: #ffffff;
+    --pop-color: #1C1D22;
+    --light-background: #D2503640;
 }
 
 $transparent-white: rgba(255,255,255,.25);
