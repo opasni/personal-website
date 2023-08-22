@@ -418,6 +418,7 @@
         }
     },
     "theme": {
+        "white": "Beli Nacin",
         "light": "Svetli Nacin",
         "dark": "Temni Nacin"
     },
