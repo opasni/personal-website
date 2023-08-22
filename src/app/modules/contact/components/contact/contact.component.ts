@@ -31,7 +31,7 @@ export class ContactComponent extends ThemeComponent implements OnInit {
   public emailForm = new FormGroupAccessor<Contact>({
     contactId: new FormControl<string | null>(null),
     name: new FormControl<string | null>(null, Validators.required),
-    _replyto: new FormControl<string | null>(null, [Validators.required, Validators.email]),
+    replyto: new FormControl<string | null>(null, [Validators.required, Validators.email]),
     message: new FormControl<string | null>(null, Validators.required),
     subject: new FormControl<ContactPurpose | null>(null, Validators.required),
     _honeypot: new FormControl<string | null>(null),
