@@ -27,10 +27,10 @@
         <div class="mt-4 mx-3 label">
           <h5>{{ 'skills.hobbies.title' | translate | uppercase }}</h5>
         </div>
-        <div class="mx-3">
-          <div class="d-flex justify-content-between"><span>{{ 'skills.hobbies.chess' | translate }} ♟</span><span>🧳 {{ 'skills.hobbies.traveling' | translate }}</span></div>
-          <div class="d-flex justify-content-between"><span>{{ 'skills.hobbies.guitar-playing' | translate }} 🎸</span><span>🎙 {{ 'skills.hobbies.singing' | translate }}</span></div>
-          <div class="d-flex justify-content-between"><span>{{ 'skills.hobbies.climbing' | translate }} 🧗</span><span>🏃 {{ 'skills.hobbies.running' | translate }}</span></div>
+        <div class="mx-3 pt-2 hobbies">
+          <div class="d-flex justify-content-end hobbies-row"><div>{{ 'skills.hobbies.chess' | translate }}</div> <div>{{ 'skills.hobbies.traveling' | translate }}</div></div>
+          <div class="d-flex justify-content-end hobbies-row"><div>{{ 'skills.hobbies.guitar-playing' | translate }}</div> <div>{{ 'skills.hobbies.singing' | translate }}</div></div>
+          <div class="d-flex justify-content-end hobbies-row"><div>{{ 'skills.hobbies.climbing' | translate }}</div> <div>{{ 'skills.hobbies.running' | translate }}</div></div>
         </div>
       </div>
     </nav>
@@ -49,11 +49,14 @@
         </div>
 
         <!-- ACHTZIG20 GMBH -->
-        <i>11/2018 - {{ 'experience.present' | translate | uppercase }}</i>
-        &nbsp;|&nbsp;
-        <h5 class="card-title d-inline-block">{{ 'experience.achtzig20.title' | translate }}</h5>
-        &nbsp;|&nbsp;
-        <h6 class="card-subtitle mb-2 text-muted d-inline-block">{{ 'experience.institution.achtzig20' | translate }}</h6>
+        <div class="experience">
+          <span>
+            <span>11/2018 - {{ 'experience.present' | translate | uppercase }}</span>
+            &nbsp;|&nbsp;
+            <b class="card-title d-inline-block">{{ 'experience.achtzig20.title' | translate }}</b>
+          </span>
+          <span class="card-subtitle mb-2 text-muted d-inline-block">{{ 'experience.institution.achtzig20' | translate }}</span>
+        </div>
 
         <ul>
           <li *ngFor="let par of ('cv.experience.achtzig20.summary' | translate); let index = index">
@@ -67,11 +70,14 @@
         </ul>
 
         <!-- AKKA -->
-        <i>02/2018 - 11/2018</i>
-        &nbsp;|&nbsp;
-        <h5 class="card-title d-inline-block">{{ 'experience.akka.title' | translate }}</h5>
-        &nbsp;|&nbsp;
-        <h6 class="card-subtitle mb-2 text-muted d-inline-block">{{ 'experience.institution.akka' | translate }}</h6>
+        <div class="experience">
+          <span>
+            <span>02/2018 - 11/2018</span>
+            &nbsp;|&nbsp;
+            <b class="card-title d-inline-block">{{ 'experience.akka.title' | translate }}</b>
+          </span>
+          <span class="card-subtitle mb-2 text-muted d-inline-block">{{ 'experience.institution.akka' | translate }}</span>
+        </div>
 
         <ul>
           <li *ngFor="let par of ('cv.experience.akka.summary' | translate); let index = index">
@@ -80,11 +86,14 @@
         </ul>
 
         <!-- JOZEF STEFAN INSTITUTE -->
-        <i>07/2014 - 08/2017</i>
-        &nbsp;|&nbsp;
-        <h5 class="card-title d-inline-block">{{ 'experience.institute-js.type' | translate }}</h5>
-        &nbsp;|&nbsp;
-        <h6 class="card-subtitle mb-2 text-muted d-inline-block">{{ 'experience.institution.institute-js' | translate }}</h6>
+        <div class="experience">
+          <span>
+            <span>07/2014 - 08/2017</span>
+            &nbsp;|&nbsp;
+            <b class="card-title d-inline-block">{{ 'experience.institute-js.type' | translate }}</b>
+          </span>
+          <span class="card-subtitle mb-2 text-muted d-inline-block">{{ 'experience.institution.institute-js' | translate }}</span>
+        </div>
 
         <ul>
           <li *ngFor="let par of ('cv.experience.institute-js.summary' | translate); let index = index">
@@ -97,11 +106,14 @@
         </div>
 
         <!-- MASTER STUDIES -->
-        <i>2014 - 2017</i>
-        &nbsp;|&nbsp;
-        <h5 class="card-title d-inline-block">{{ 'cv.education.masters.title' | translate }}</h5>
-        &nbsp;|&nbsp;
-        <h6 class="card-subtitle mb-2 text-muted d-inline-block">{{ 'education.institution.university' | translate }}</h6>
+        <div class="experience">
+          <span>
+            <span>2014 - 2017</span>
+            &nbsp;|&nbsp;
+            <b class="card-title d-inline-block">{{ 'cv.education.masters.title' | translate }}</b>
+          </span>
+          <span class="card-subtitle mb-2 text-muted d-inline-block">{{ 'education.institution.university' | translate }}</span>
+        </div>
 
         <ul>
           <li *ngFor="let par of ('cv.education.masters.summary' | translate); let index = index">
@@ -110,11 +122,14 @@
         </ul>
 
         <!-- BACHELOR STUDIES -->
-        <i>2011 - 2014</i>
-        &nbsp;|&nbsp;
-        <h5 class="card-title d-inline-block">{{ 'cv.education.bachelor.title' | translate }}</h5>
-        &nbsp;|&nbsp;
-        <h6 class="card-subtitle mb-2 text-muted d-inline-block">{{ 'education.institution.university' | translate }}</h6>
+        <div class="experience">
+          <span>
+            <span>2011 - 2014</span>
+            &nbsp;|&nbsp;
+            <b class="card-title d-inline-block">{{ 'cv.education.bachelor.title' | translate }}</b>
+          </span>
+          <span class="card-subtitle mb-2 text-muted d-inline-block">{{ 'education.institution.university' | translate }}</span>
+        </div>
 
         <ul>
           <li *ngFor="let par of ('cv.education.bachelor.summary' | translate); let index = index">

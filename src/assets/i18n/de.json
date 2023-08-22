@@ -8,17 +8,17 @@
         "title": "Meine Name ist Črt Harej",
         "subtitle": "Hier können Sie etwas über mich lesen",
         "text": [
-            "Ich bin ein hochmotivierter und erfahrener Profi mit fundierten Kenntnissen in der Softwareentwicklung und im Projektmanagement. Als CEO von Achtzig20 d.o.o. leite ich erfolgreich ein Team talentierter Mitarbeiter und überwache die Gründung unserer Tochtergesellschaft. Mit Leidenschaft für Technologie und Innovation bin ich an verschiedenen Projekten beteiligt, darunter die Entwicklung einer digitalen Werbeplattform newonads und die Schaffung einer Community-Aufbau-Plattform GRID3. Meine Fähigkeiten in Führung, Problemlösung und strategischem Denken ermöglichen mir, erfolgreiche Ergebnisse zu erzielen und Mehrwert für Kunden zu schaffen.",
+            "Ich bin ein hochmotivierter und erfahrener Profi mit fundierten Kenntnissen in der Softwareentwicklung und im Projektmanagement. Als CEO von Achtzig20 d.o.o. leite ich erfolgreich ein Team talentierter Mitarbeiter und überwache die Gründung unserer Tochtergesellschaft. Mit Leidenschaft für Technologie und Innovation bin ich an verschiedenen Projekten beteiligt, darunter die Entwicklung einer digitalen Werbeplattform newonads und die Schaffung einer Community-Aufbau-Plattform GRID3. Meine Fähigkeiten in Leitung, Problemlösung und strategischem Denken ermöglichen mir, erfolgreiche Ergebnisse zu erzielen und Mehrwert für Kunden zu schaffen.",
             "Neben meinen beruflichen Aktivitäten bin ich auch begeistert von Musik, Sport und Reisen. Diese Hobbys bringen Balance in mein Leben und inspirieren mich, neue Horizonte zu erkunden. Mit guten Kenntnissen der deutschen und englischen Sprache sowie einem mittleren Sprachniveau in Deutsch bin ich in der Lage, mit unterschiedlichen Zielgruppen zu kommunizieren und bedeutungsvolle Verbindungen aufzubauen. Ich bin leidenschaftlich daran interessiert, meine Fähigkeiten, mein Wissen und meine Erfahrungen einzusetzen, um einen positiven Einfluss in der digitalen Welt und darüber hinaus zu schaffen."
         ]
     },
     "cv": {
         "menu-item": "Lebenslauf erstellen",
-        "about": "Ich bin erfahrener <b>Softwareentwickler</b> und <b>CEO von Achtzig20 d.o.o.</b> Mit Leidenschaft für Technologie habe ich Projekte wie die Werbeplattform <b>newonads</b> und die Community-Plattform <b>GRID3</b> angeführt. Dank starker Führungsfähigkeiten und strategischem Denken liefere ich konstant Wert für Kunden. Fließend in Slowenisch und Englisch, mit mittleren Deutschkenntnissen, genieße ich Musik, Sport und Reisen und strebe nach positivem Einfluss in der digitalen Welt.",
+        "about": "Ich bin erfahrener <b>Softwareentwickler</b> und <b>CEO von Achtzig20 d.o.o.</b> Mit Leidenschaft für Technologie habe ich Projekte wie die Werbeplattform <b>newonads</b> und die Community-Plattform <b>GRID3</b> geleitet. Dank starker Führungsfähigkeiten und strategischem Denken liefere ich konstant Wert für Kunden. Fließend in Slowenisch und Englisch, mit mittleren Deutschkenntnissen, genieße ich Musik, Sport und Reisen und strebe nach positivem Einfluss in der digitalen Welt.",
         "experience": {
             "achtzig20": {
                 "summary-long": [
-                    "<b>Managementberater bei Achtzig20 GmbH</b>, bietet technische Führung in den Bereichen Anforderungsingenieurwesen, Softwareentwicklung, Softwarearchitektur und DevOps.",
+                    "<b>Technischer Leiter bei Achtzig20 GmbH</b>, bietet technische Leitung in den Bereichen Requirements-Ingenieurwesen, Softwareentwicklung, Softwarearchitektur und DevOps.",
                     "<b>Geschäftsführer von Achtzig20 d.o.o.</b>, führt das Unternehmen durch verschiedene Wachstumsphasen, einschließlich der Gründung einer neuen Tochtergesellschaft und eines Büros in Ljubljana.",
                     "<b>CTO bei newonads GmbH</b>, verantwortlich für die Verwaltung einer digitalen Werbeplattform, die sich auf die Verbesserung der Markenbekanntheit, Lead-Generierung und Verkäufe konzentriert.",
                     "<b>CTO bei Studio3 GmbH</b>, hilft Agenturen beim Aufbau und der Pflege digitaler Gemeinschaften mit Hilfe von Web3-Technologien und minimiert Sicherheitsrisiken und Overhead.",
@@ -27,7 +27,7 @@
                     "Entwickelte und führte Schulungen im Bereich Datenanalyse durch und half Kunden, ihr Verständnis und ihre Nutzung von Datenanalysen zu verbessern."
                 ],
                 "summary": [
-                    "<b>Managementberater, Achtzig20 GmbH</b>: Technische Führung, Softwareentwicklung, Architektur, DevOps.",
+                    "<b>Technischer Leiter, Achtzig20 GmbH</b>: Technische Leitung, Softwareentwicklung, Architektur, DevOps.",
                     "<b>CEO, Achtzig20 d.o.o.</b>: Unternehmenswachstum, Gründung einer Tochtergesellschaft & Büroeröffnung in Ljubljana.",
                     "<b>CTO, newonads GmbH</b>: Digitale Werbeplattform - Markenbewusstsein, Lead-Generierung, Verkauf.",
                     "<b>CTO, Studio3 GmbH</b>: Digitale Gemeinschaften mit Web3, minimierte Sicherheitsrisiken.",
@@ -37,7 +37,7 @@
                 ],
                 "skills": [
                     "<b>Rollen</b>: Projektmanagement, Teamleitung, Technischer Leiter, Produktdesign.",
-                    "<b>Fachwissen</b>: Anforderungsengineering, Softwareentwicklung, Architektur, DevOps, Führung, Strategisches Denken.",
+                    "<b>Fachwissen</b>: Requirements-Engineering, Softwareentwicklung, Architektur, DevOps, Leitung, Strategisches Denken.",
                     "<b>Technik</b>: SQL Server, MongoDB, Oracle, .NET, Angular, CI/CD, Solidity, Python."
                 ]
             },
@@ -90,7 +90,7 @@
             "resourcefulness": "Einfallsreichtum",
             "trainability": "Lernbereitschaft",
             "problem-solving": "Problemlösung",
-            "leadership": "Personalführung",
+            "leadership": "Personalleitung",
             "strategic-thinking": "Strategisches Denken",
             "decision-making": "Entscheidungsfindung",
             "adaptability": "Anpassungsfähigkeit",
@@ -123,7 +123,7 @@
         "references": "Referenzen",
         "skills": "Fähigkeiten",
         "tech-stack": "Technologie-Stack",
-        "present": "bis jetzt",
+        "present": "bis heute",
         "institution": {
             "bia-separation": "BIA Separations d.o.o.",
             "institute-js": "Jožef Stefan Institut",
@@ -134,7 +134,7 @@
             "type": "Employee",
             "title": "Software-Teamleiter",
             "abstract": [
-                "In meiner Rolle bei Achtzig20 hatte ich das Privileg, mit einem dynamischen Team zusammenzuarbeiten und zum Wachstum und Erfolg des Unternehmens beizutragen. Ausgehend von meiner Erfahrung mit AKKA, wo ich wertvolle Fähigkeiten als Softwareentwickler und -architekt erworben habe, wechselte ich zu Achtzig20 und übernahm die Rolle eines technischen Leiters. Mit einem starken Fokus auf Anforderungsmanagement, Softwareentwicklung, Softwarearchitektur und DevOps spielte ich eine entscheidende Rolle bei der Bereitstellung hochwertiger Lösungen für unsere Kunden.",
+                "In meiner Rolle bei Achtzig20 hatte ich das Privileg, mit einem dynamischen Team zusammenzuarbeiten und zum Wachstum und Erfolg des Unternehmens beizutragen. Ausgehend von meiner Erfahrung mit AKKA, wo ich wertvolle Fähigkeiten als Softwareentwickler und -architekt erworben habe, wechselte ich zu Achtzig20 und übernahm die Rolle eines technischen Leiters. Mit einem starken Fokus auf Requirements-Management, Softwareentwicklung, Softwarearchitektur und DevOps spielte ich eine entscheidende Rolle bei der Bereitstellung hochwertiger Lösungen für unsere Kunden.",
                 "Darüber hinaus erstreckte sich meine Reise mit Achtzig20 über technische Expertise hinaus. Als CEO von Achtzig20 d.o.o. führe ich das Unternehmen durch verschiedene Wachstumsphasen. Vom Arbeiten mit e-Študentski Servis und der Einrichtung eines schönen Büros im Herzen von Ljubljana bis hin zur Gründung der Tochtergesellschaft Achtzig20 d.o.o. war es mein Ziel, eine starke und erfolgreiche Organisation aufzubauen.",
                 "In meiner Arbeit habe ich mit renommierten Kunden wie Audi, Porsche, BMW, DZ Bank und anderen zusammengearbeitet und Softwarelösungen auf Basis von Webclients oder Desktop-Tools entwickelt, schwierige interne technische Herausforderungen gelöst, Schulungen im Bereich Datenanalyse durchgeführt und mein Fachwissen genutzt, um wertvolle Erkenntnisse zu generieren.",
                 "Meine Erfahrung mit Achtzig20 war geprägt von kontinuierlichem Lernen, Problemlösung und Innovation. Es war eine bereichernde Reise, die es mir ermöglichte, zum Wachstum und Erfolg des Unternehmens beizutragen und starke Beziehungen zu Kunden und Partnern aufzubauen."
@@ -149,10 +149,10 @@
                 ],
                 "skills": [
                     "Projektmanagement",
-                    "Teamführung",
+                    "Teamleitung",
                     "Produktdesign",
                     "Technische Leitung",
-                    "Anforderungsmanagement",
+                    "Requirements-Management",
                     "Softwareentwicklung",
                     "Softwarearchitektur",
                     "DevOps"
@@ -184,7 +184,7 @@
                     "Als CEO von Achtzig20 d.o.o. spiele ich eine entscheidende Rolle im Wachstum und Erfolg des Unternehmens. Alles begann mit Studierenden, die über e-Študentski Servis für Achtzig20 GmbH tätig waren. Im Laufe der Zeit haben wir unser Team um Vollzeitmitarbeiter erweitert und ein wunderschönes Büro im Stadtzentrum von Ljubljana eingerichtet. Wir haben bedeutende Meilensteine erreicht, darunter die Gründung von Achtzig20 d.o.o. als Tochtergesellschaft. Gemeinsam haben wir eine starke und blühende Organisation aufgebaut, angetrieben von unserer Leidenschaft für Exzellenz und unserem Engagement für herausragende Dienstleistungen."
                 ],
                 "skills": [
-                    "Führung",
+                    "Leitung",
                     "Strategisches Denken",
                     "Kommunikation",
                     "Entscheidungsfindung",
@@ -275,14 +275,14 @@
             }
         },
         "institute-js": {
-            "type": "Studentischer Forscher",
+            "type": "Wissenschaftlicher Mitarbeiter",
             "title": "Forscher am Jožef Stefan Institut",
             "abstract": [
-                "Während meines Masterstudiums arbeitete ich als studentischer Forscher am Jožef Stefan Institut. Mein Mentor war Prof. Dr. Simon Širca. In dieser Zeit lernte ich Datenanalyse, C++-Programmierung, Durchführung von Simulationen, Interpretation und Präsentation von Daten sowie vieles mehr. In den letzten sechs Monaten absolvierte ich mein Praktikum in Mainz."
+                "Während meines Masterstudiums arbeitete ich als wissenschaftlicher Mitarbeiter am Jožef Stefan Institut. Mein Mentor war Prof. Dr. Simon Širca. In dieser Zeit lernte ich Datenanalyse, C++-Programmierung, Durchführung von Simulationen, Interpretation und Präsentation von Daten sowie vieles mehr. In den letzten sechs Monaten absolvierte ich mein Praktikum in Mainz."
             ]
         },
         "bia-separation": {
-            "type": "Studentischer Forscher",
+            "type": "Wissenschaftlicher Mitarbeiter",
             "title": "Forscher bei BIA Separations d.o.o.",
             "abstract": [
                 "Das erste größere Projekt führte ich in Zusammenarbeit mit dem Unternehmen BIA Separations und dem Jožef Stefan Institut durch. Das Unternehmen stellt spezielle Materialien her, die in verschiedenen chemischen und pharmazeutischen Labors zur Filtration von Viren und Proteinen verwendet werden. Meine Forschung führte ich im Institut durch und präsentierte die Ergebnisse dem Unternehmen. Dies erforderte Selbstständigkeit, Verantwortungsbewusstsein und Genauigkeit."
@@ -418,6 +418,7 @@
         }
     },
     "theme": {
+        "white": "Weißmodus",
         "light": "Lichtmodus",
         "dark": "Dunkelmodus"
     },
