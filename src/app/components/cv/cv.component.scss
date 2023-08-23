@@ -192,12 +192,12 @@ $side-width: 14.6rem;
   }
 
   @media print {
-    .download-wrapper {
-      display: none;
-    }
-
     body.A4 {
       zoom: 212%;
+    }
+
+    .download-wrapper {
+      display: none;
     }
   }
 
