@@ -3,42 +3,33 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { SkillsRoutingModule } from './skills-routing.module';
-import { SkillsComponent } from './components/skills/skills.component';
 import { SkillMeasureComponent } from './components/skill-measure/skill-measure.component';
 import { HardSkillsComponent } from './components/hard-skills/hard-skills.component';
 import { SoftSkillsComponent } from './components/soft-skills/soft-skills.component';
 import { HobbiesComponent } from './components/hobbies/hobbies.component';
 import { LanguagesComponent } from './components/languages/languages.component';
-import { ScrollDetectDirective } from 'src/app/directives/scroll-detect/scroll-detect.directive';
-import { SkillsOverviewComponent } from './components/skills-overview/skills-overview.component';
-
+import { ScrollDetectDirective } from '@lib/directives/scroll-detect/scroll-detect.directive';
 
 
 @NgModule({
   declarations: [
-    SkillsComponent,
     SkillMeasureComponent,
     HardSkillsComponent,
     SoftSkillsComponent,
     HobbiesComponent,
-    LanguagesComponent,
-    SkillsOverviewComponent
+    LanguagesComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     TranslateModule,
-    SkillsRoutingModule,
     ScrollDetectDirective
   ],
   exports: [
-    SkillsComponent,
     HardSkillsComponent,
     SoftSkillsComponent,
     HobbiesComponent,
-    LanguagesComponent,
-    SkillsOverviewComponent
+    LanguagesComponent
   ]
 })
 export class SkillsModule { }

@@ -1,18 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { getLanguage } from './services/language.service';
+import { getLanguage } from './lib/services/language.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
+    standalone: true,
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss']
+    imports: [RouterModule]
 })
 export class AppComponent implements OnInit {
     title = 'Črt Harej';
 
-    constructor(
-        private translate: TranslateService
-    ) { }
+    private translate = inject(TranslateService);
 
     ngOnInit(): void {
         this.translate.setDefaultLang(getLanguage());

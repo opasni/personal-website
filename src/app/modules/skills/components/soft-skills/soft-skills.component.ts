@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SectionComponent } from '../../abstracts/section.component';
+import { SectionComponent } from '@lib/abstracts/section.component';
 
 @Component({
   selector: 'app-soft-skills',
