@@ -1,7 +1,7 @@
 <!-- CV -->
 
 <li class="nav-item">
-  <a role="button" class="nav-link pe-auto" [routerLink]="['cv']" [queryParams]="{'lang': (selectedLanguage$ | async)?.id, 'theme': (selectedTheme$ | async)?.id}" target="_blank" rel="noopener noreferrer">
+  <a role="button" class="nav-link pe-auto" [routerLink]="['export','cv']" [queryParams]="{'lang': (selectedLanguage$ | async)?.id, 'theme': (selectedTheme$ | async)?.id}" target="_blank" rel="noopener noreferrer">
     <i class="bi bi-file-earmark-person"> </i>
     {{ 'cv.menu-item' | translate }}
   </a>

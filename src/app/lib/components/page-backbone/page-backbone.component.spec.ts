@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OverviewComponent } from './cv.component';
+import { PageBackboneComponent } from './page-backbone.component';
 
-describe('OverviewComponent', () => {
-  let component: OverviewComponent;
-  let fixture: ComponentFixture<OverviewComponent>;
+describe('PageBackboneComponent', () => {
+  let component: PageBackboneComponent;
+  let fixture: ComponentFixture<PageBackboneComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ OverviewComponent ]
+      declarations: [ PageBackboneComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(OverviewComponent);
+    fixture = TestBed.createComponent(PageBackboneComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

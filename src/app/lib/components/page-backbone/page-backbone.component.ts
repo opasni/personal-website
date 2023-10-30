@@ -10,9 +10,9 @@ import { HeaderComponent } from '@lib/components/header/header.component';
 
 @Component({
 	standalone: true,
-	selector: 'app-backbone',
-	templateUrl: './backbone.component.html',
-	styleUrls: ['./backbone.component.scss'],
+	selector: 'app-page-backbone',
+	templateUrl: './page-backbone.component.html',
+	styleUrls: ['./page-backbone.component.scss'],
 	imports: [
 		CommonModule,
 		GaugeComponent,
@@ -23,7 +23,7 @@ import { HeaderComponent } from '@lib/components/header/header.component';
     ROUTE_ANIMATION
   ]
 })
-export class BackboneComponent extends ThemeComponent implements OnInit {
+export class PageBackboneComponent extends ThemeComponent implements OnInit {
 	public menuWidth = 280;
 	public paddingLeft = 3;
 

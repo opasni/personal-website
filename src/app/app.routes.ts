@@ -1,10 +1,11 @@
 import { Routes } from '@angular/router';
-import { BackboneComponent } from '@lib/components/backbone/backbone.component';
+import { PageBackboneComponent } from '@lib/components/page-backbone/page-backbone.component';
+import { ExportBackboneComponent } from '@lib/components/export-backbone/export-backbone.component';
 
 export const routes: Routes = [
 	{
 		path: '',
-		component: BackboneComponent,
+		component: PageBackboneComponent,
 		children: [
 			{
 				path: '',
@@ -36,8 +37,8 @@ export const routes: Routes = [
 			}
 		]
 	}, {
-		path: 'cv',
-		title: 'Črt Harej - CV',
-		loadComponent: async () => (await import('@pages/cv/cv.component')).CVComponent,
+		path: 'export',
+		component: ExportBackboneComponent,
+		loadChildren: async () => (await import('@pages/export')).routes,
 	}
 ];

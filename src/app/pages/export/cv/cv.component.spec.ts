@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BackboneComponent } from './backbone.component';
+import { CVComponent } from './cv.component';
 
-describe('BackboneComponent', () => {
-  let component: BackboneComponent;
-  let fixture: ComponentFixture<BackboneComponent>;
+describe('CVComponent', () => {
+  let component: CVComponent;
+  let fixture: ComponentFixture<CVComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BackboneComponent ]
+      declarations: [ CVComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BackboneComponent);
+    fixture = TestBed.createComponent(CVComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

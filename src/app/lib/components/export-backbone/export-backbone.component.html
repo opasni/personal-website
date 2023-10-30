@@ -1,0 +1,10 @@
+<body class="A4 cv" [style.backgroundColor]="backgroundColor" [ngClass]="theme + '-theme'">
+	<router-outlet></router-outlet>
+</body>
+
+<div class="download-wrapper">
+  <app-loading-spinner></app-loading-spinner>
+  <div class="download-button">
+    <button type="button" class="btn btn-primary" (click)="downloadAsPDF()"><i class="bi bi-download"></i></button>
+  </div>
+</div>
