@@ -1,4 +1,4 @@
-import { APP_INITIALIZER, ApplicationConfig, LOCALE_ID, importProvidersFrom } from '@angular/core';
+import { APP_INITIALIZER, ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { provideRouter, withComponentInputBinding, withInMemoryScrolling } from '@angular/router';
 import { routes } from './app.routes';
 import { HttpClient, HttpClientModule } from '@angular/common/http';

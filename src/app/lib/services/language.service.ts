@@ -54,12 +54,6 @@ export class LanguageService {
 		await this.registerLocale(language);
 	}
 
-	getLang(): Language {
-		const lang = this.selectedLanguage$.getValue();
-		console.log(lang);
-		return lang;
-	}
-
 	getSelectedLanguage(): Observable<Language> {
 		return this.selectedLanguage$;
 	}
