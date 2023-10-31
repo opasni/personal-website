@@ -17,5 +17,4 @@ import { ScrollDetectDirective } from '@lib/directives/scroll-detect/scroll-dete
   ]
 })
 export class AboutComponent extends ThemeComponent {
-
 }

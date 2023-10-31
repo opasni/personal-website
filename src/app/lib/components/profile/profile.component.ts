@@ -36,6 +36,7 @@ export class ProfileComponent implements OnInit {
   public selectedLanguage$ = new Observable<Lookup>();
   public selectedTheme$ = new Observable<Lookup>();
   public userData$ = new Observable<User>();
+  public date = new Date();
 
   private _supportedLanguages = Object.keys(SUPPORTED_LANGUAGES);
   private _supportedThemes = Object.keys(SUPPORTED_THEMES);

@@ -63,7 +63,6 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
 		}
 		const container = document.getElementById('scrollingContainer') as HTMLDivElement;
 		const smallerContent = container.getBoundingClientRect().height - this._host.nativeElement.getBoundingClientRect().height;
-		console.log(smallerContent > 0);
 		this.updatePositions(event.deltaY, 12, 12, smallerContent > 0);
 	}
 

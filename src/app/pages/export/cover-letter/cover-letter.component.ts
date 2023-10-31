@@ -13,10 +13,10 @@ import { CoverLetter } from '@lib/types/cover-leter.type';
   styleUrls: ['./cover-letter.component.scss']
 })
 export class CoverLetterComponent extends ExportComponent implements OnInit {
+  date = new Date();
+  coverLetter: CoverLetter = data ?? { recipient: {}, content: []};
   override ngOnInit(): void {
     super.ngOnInit();
     this.printService.fileName = 'CoverLetter';
   }
-  date = new Date();
-  coverLetter: CoverLetter = data ?? { recipient: {}, content: []};
 }

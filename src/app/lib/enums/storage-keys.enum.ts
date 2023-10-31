@@ -1,4 +1,5 @@
 export enum StorageKeys {
-    SELECTED_LANGUAGE = 'SELECTED_LANGUAGE',
-    SELECTED_THEME = 'SELECTED_THEME'
+    SELECTED_LANGUAGE = 'language',
+    SELECTED_THEME = 'theme',
+    ACCESS_KEY = 'accessKey'
 }
