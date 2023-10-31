@@ -1,5 +1,6 @@
 <!-- CV -->
 <ul class="nav d-flex flex-column flex-nowrap">
+  <li class="nav-item date">{{ date | date }}</li>
   <li class="nav-item">
     <a role="button" class="nav-link pe-auto" [routerLink]="['export','cv']" aria-label="Create CV"
       [queryParams]="{'lang': (selectedLanguage$ | async)?.id, 'theme': (selectedTheme$ | async)?.id}"

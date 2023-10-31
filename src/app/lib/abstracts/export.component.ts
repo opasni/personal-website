@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren, inject } from '@angular/core';
 import { User } from '@lib/classes/user.class';
 import { Language } from '@lib/enums/language.enum';
+import { StorageKeys } from '@lib/enums/storage-keys.enum';
 import { LanguageService } from '@lib/services/language.service';
 import { PrintService } from '@lib/services/print.service';
 import { UserApiService } from '@lib/services/user.service';
@@ -29,7 +30,7 @@ export abstract class ExportComponent implements OnInit, AfterViewInit {
 	}
 
 	private setUser() {
-		let password = localStorage.getItem('PASSWORD');
+		let password = localStorage.getItem(StorageKeys.ACCESS_KEY);
 		if (password == null || password === '') {
 			const message = this.lang === Language.DE ? "Passwort einfügen" : this.lang === Language.SI ? "Vnesite geslo" : "Insert Password";
 			password = prompt(message);
@@ -38,7 +39,7 @@ export abstract class ExportComponent implements OnInit, AfterViewInit {
 			.pipe(
 				tap(user => {
 					if (user.email != null) {
-						localStorage.setItem('PASSWORD', password ?? '');
+						localStorage.setItem(StorageKeys.ACCESS_KEY, password ?? '');
 					}
 				}),
 				catchError(() => of(new User()))
