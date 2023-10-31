@@ -1,49 +1,52 @@
 <!-- CV -->
+<ul class="nav d-flex flex-column flex-nowrap">
+  <li class="nav-item">
+    <a role="button" class="nav-link pe-auto" [routerLink]="['export','cv']" aria-label="Create CV"
+      [queryParams]="{'lang': (selectedLanguage$ | async)?.id, 'theme': (selectedTheme$ | async)?.id}"
+      target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-file-earmark-person"> </i>
+      {{ 'cv.menu-item' | translate }}
+    </a>
+  </li>
 
-<li class="nav-item">
-  <a role="button" class="nav-link pe-auto" [routerLink]="['export','cv']" [queryParams]="{'lang': (selectedLanguage$ | async)?.id, 'theme': (selectedTheme$ | async)?.id}" target="_blank" rel="noopener noreferrer">
-    <i class="bi bi-file-earmark-person"> </i>
-    {{ 'cv.menu-item' | translate }}
-  </a>
-</li>
+  <!-- LANGUAGE SWITCHING -->
 
-<!-- LANGUAGE SWITCHING -->
+  <li class="nav-item" *ngIf="selectedLanguage$ | async as selectedLanguage">
+    <a role="button" class="nav-link pe-auto" (click)="changeLanguage(selectedLanguage.id)" aria-label="Change language">
+      <img class="settings-icon language" [src]="selectedLanguage.meta" [alt]="selectedLanguage.name + ' flag'" />
+      {{ 'header.switch-language' | translate }}
+    </a>
+  </li>
+  <!-- THEME SWITCHING -->
 
-<li class="nav-item" *ngIf="selectedLanguage$ | async as selectedLanguage">
-  <a role="button" class="nav-link pe-auto" (click)="changeLanguage(selectedLanguage.id)">
-    <img class="settings-icon language" [src]="selectedLanguage.meta" [alt]="selectedLanguage.name + ' flag'" />
-    {{ 'header.switch-language' | translate }}
-  </a>
-</li>
-<!-- THEME SWITCHING -->
-
-<li class="nav-item" *ngIf="selectedTheme$ | async as selectedTheme">
-  <a role="button" class="nav-link pe-auto" (click)="toggleTheme(selectedTheme.id)">
-    <div class="settings-icon theme" [style.backgroundColor]="selectedTheme.meta"></div>
-    {{ selectedTheme.name | translate }}
-  </a>
-</li>
+  <li class="nav-item" *ngIf="selectedTheme$ | async as selectedTheme">
+    <a role="button" class="nav-link pe-auto" (click)="toggleTheme(selectedTheme.id)" aria-label="Change theme">
+      <div class="settings-icon theme" [style.backgroundColor]="selectedTheme.meta"></div>
+      {{ selectedTheme.name | translate }}
+    </a>
+  </li>
+</ul>
 <!-- USER INFO -->
-<a id="profile" *ngIf="userData$ | async as userData" class="profile d-flex border border-secondary rounded p-2 mt-3 nav-link">
+<div id="profile" *ngIf="userData$ | async as userData" class="profile d-flex border border-secondary rounded p-2 mt-3 nav-link">
   <div class="profile-image-container me-3">
     <img appHoverImage="assets/images/profile_image_hover.jpeg" class="rounded"
-      src="assets/images/profile_image.jpg" />
+      src="assets/images/profile_image.jpg" [alt]="'accessibility.images.profile' | translate" />
   </div>
   <div class="w-100">
     <div>
       <h4 class="text-standard"><span class="static">{{ userData.firstName }} {{ userData.lastName }}</span><span class="dynamic">{{ userData.nickName }}</span></h4>
       <div class="social-icons">
-        <a href="https://www.linkedin.com/in/crtharej" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/crtharej" aria-label="Got to my LinkedIn Profile" target="_blank" rel="noopener noreferrer">
           <div class="social-icon">
             <i class="bi bi-linkedin"></i>
           </div>
         </a>
-        <a href="https://github.com/opasni" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/opasni" aria-label="Got to my Github Profile" target="_blank" rel="noopener noreferrer">
           <div class="social-icon social-icon-color">
             <i class="bi bi-github"></i>
           </div>
         </a>
-        <a href="https://www.instagram.com/crtharej" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/crtharej" aria-label="Got to my Instagram Profile" target="_blank" rel="noopener noreferrer">
           <div class="social-icon">
             <i class="bi bi-instagram"></i>
           </div>
@@ -51,4 +54,4 @@
       </div>
     </div>
   </div>
-</a>
+</div>

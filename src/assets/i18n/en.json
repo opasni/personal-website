@@ -426,5 +426,17 @@
     "website": {
         "link": "Website"
     },
+    "accessibility": {
+        "buttons": {
+            "export-pdf": "Export to PDF",
+            "menu-open": "Open Menu",
+            "menu-close": "Close Menu",
+            "send-contact": "Send",
+            "expand-area": "Expand section"
+        },
+        "images": {
+            "profile": "Profile picture"
+        }
+    },
     "insert-password": "Insert Password"
 }

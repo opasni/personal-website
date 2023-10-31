@@ -1,7 +1,8 @@
 <div #sheet class="sheet d-flex wrapper">
   <nav class="side-content background-color">
     <div class="d-block picture-container">
-      <img src="assets/images/profile_image_hover.jpeg" class="profile rounded-circle"
+      <img class="profile rounded-circle"
+        [alt]="'accessibility.images.profile' | translate"
         src="assets/images/profile_image.jpg" />
     </div>
     <div class="sidebar-content py-4">
@@ -16,10 +17,10 @@
             {{ userData.phone }}</li>
           <li *ngIf="userData.email">
             <i class="bi bi-envelope-at-fill"></i>
-            <a class="header-link" [href]="'mailto:' + userData.email">{{ userData.email }}</a></li>
+            <a class="header-link" aria-label="Send me an Email" [href]="'mailto:' + userData.email">{{ userData.email }}</a></li>
           <li>
             <i class="bi bi-globe"></i>
-            <a class="header-link" [href]="'https://' + userData.website">{{ userData.website }}</a></li>
+            <a class="header-link" aria-label="Check out my website" [href]="'https://' + userData.website">{{ userData.website }}</a></li>
         </ul>
       </div>
       <app-skills-overview></app-skills-overview>
@@ -138,9 +139,3 @@
     </div>
   </div>
 </div>
-<!-- <div #sheet class="sheet d-flex wrapper">
-  <nav class="side-content background-color">
-  </nav>
-  <div class="content">
-  </div>
-</div> -->

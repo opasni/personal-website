@@ -119,7 +119,7 @@
         margin-left: 10px;
       }
 
-      &:hover {
+      &:not(:last-child):hover {
         color: $primary-color;
         background-color: var(--light-background);
         border-radius: 30px;
