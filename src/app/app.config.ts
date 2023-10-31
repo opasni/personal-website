@@ -11,7 +11,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
 	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
-export const setupLanguageFactory = (service: LanguageService) => service.initialize();
+export const setupLanguageFactory = async (service: LanguageService) => await service.initialize();
 
 export const appConfig: ApplicationConfig = {
 	providers: [

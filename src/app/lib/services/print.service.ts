@@ -1,11 +1,7 @@
 import { ElementRef, Injectable, QueryList, inject } from '@angular/core';
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
 import { LanguageService } from './language.service';
 
-@Injectable({
-	providedIn: 'root'
-})
+@Injectable()
 export class PrintService {
 	public sheetElements!: QueryList<ElementRef<HTMLBodyElement>>;
   private languageService = inject(LanguageService);
@@ -17,6 +13,8 @@ export class PrintService {
   private _fileName!: string;
 
 	public async printPdf() {
+    const html2canvas = await import('html2canvas');
+    const jsPDF = await import('jspdf').then(module => module.jsPDF);
     let pdf = new jsPDF('p', 'mm', 'a4', false);
 
     if (!this.sheetElements.first) {
@@ -26,7 +24,7 @@ export class PrintService {
     let pageCount = 0;
     for (const sheet of this.sheetElements) {
       pageCount++;
-      await html2canvas(sheet.nativeElement, {
+      await html2canvas.default(sheet.nativeElement, {
         scale: 6
       }).then((canvas) => {
         const FILE_URI = canvas.toDataURL('image/png', 1.0);

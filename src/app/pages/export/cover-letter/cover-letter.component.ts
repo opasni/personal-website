@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ExportComponent } from '@lib/abstracts/export.component';
-import { User } from '@lib/classes/user.class';
+import data from '@lib/data/cover-letter.template.json';
+import { CoverLetter } from '@lib/types/cover-leter.type';
 
 @Component({
   selector: 'app-cover-letter',
@@ -17,18 +18,5 @@ export class CoverLetterComponent extends ExportComponent implements OnInit {
     this.printService.fileName = 'CoverLetter';
   }
   date = new Date();
-
-  recipient = new User({
-    title: 'Mr.',
-    firstName: '',
-    lastName: '',
-    nickName: '',
-    street: '',
-    city: '',
-  });
-
-  text: string[] = [
-  ];
-
-  regards = '';
+  coverLetter: CoverLetter = data ?? { recipient: {}, content: []};
 }
