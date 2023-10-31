@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /export/
+Disallow: /contact
+Disallow: /contact/success
+
+Sitemap: https://crtharej.com/sitemap.xml
+

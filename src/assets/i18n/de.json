@@ -425,5 +425,17 @@
     "website": {
         "link": "Webseite"
     },
+    "accessibility": {
+        "buttons": {
+            "export-pdf": "Als PDF exportieren",
+            "menu-open": "Menü öffnen",
+            "menu-close": "Menü schließen",
+            "send-contact": "Senden",
+            "expand-area": "Bereich erweitern"
+        },
+        "images": {
+            "profile": "Profilbild"
+        }
+    },
     "insert-password": "Passwort einfügen"
 }
