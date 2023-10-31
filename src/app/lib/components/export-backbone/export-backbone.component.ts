@@ -15,7 +15,8 @@ import { LoaderService } from '@lib/services/loader.service';
   encapsulation: ViewEncapsulation.None,
   imports: [CommonModule, LoadingSpinnerComponent, RouterModule],
   templateUrl: './export-backbone.component.html',
-  styleUrls: ['./export-backbone.component.scss']
+  styleUrls: ['./export-backbone.component.scss'],
+  providers: [PrintService]
 })
 export class ExportBackboneComponent implements OnInit {
   @ViewChildren('sheet') sheetElements!: QueryList<ElementRef<HTMLBodyElement>>;
@@ -41,7 +42,6 @@ export class ExportBackboneComponent implements OnInit {
 		document.body.style.overflowY = 'scroll';
     document.body.style.backgroundColor = this.backgroundColor;
   }
-
 
   public async downloadAsPDF() {
     this.loaderService.setLoading(true);

@@ -14,7 +14,7 @@ export class GaugeCounterService {
   public percentage: number = 0;
 
   private _counter: number = 0;
-  private _intervalId: NodeJS.Timer | undefined;
+  private _intervalId!: NodeJS.Timeout;
   private _timer: number = 0;
   private MAX_COUNT = 30;
 

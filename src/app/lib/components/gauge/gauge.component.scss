@@ -9,16 +9,13 @@
 
   &:hover {
     box-shadow: 0 0 5px var(--pop-color);
-    background-color: var(--pop-color);
     transition: background-color .5s ease-in-out;
 
     .progress-ring__circle {
-      fill: var(--pop-color);
       transition: fill .5s ease-in-out;
     }
 
     .progress-ring__arrow {
-      fill: var(--background-color);
       transition: fill .5s ease-in-out;
     }
   }
