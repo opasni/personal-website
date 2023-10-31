@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild, inject } from '@angular/core';
-import { Subject, takeUntil } from 'rxjs';
+import { AfterViewInit, Component, DestroyRef, ElementRef, OnInit, ViewChild, inject } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 import { GaugePosition } from '@lib/types/gauge-position.type';
 import { GaugeCounterService } from '@lib/services/gauge-counter.service';
@@ -12,22 +12,22 @@ import { GaugeCounterService } from '@lib/services/gauge-counter.service';
   standalone: true,
   imports: [ CommonModule ]
 })
-export class GaugeComponent implements OnInit, AfterViewInit, OnDestroy {
+export class GaugeComponent implements OnInit, AfterViewInit {
 
   @ViewChild('circle') circle!: ElementRef;
 
   public get position(): GaugePosition {
-    return this.counterService.position;
+    return this._counterService.position;
   }
 
-  private unsubscribe$ = new Subject<void>();
   private _circumference = 0;
   private _currentOffset = 0;
-  private readonly counterService = inject(GaugeCounterService);
+  private _counterService = inject(GaugeCounterService);
+  private _destroyRef = inject(DestroyRef);
 
   ngOnInit(): void {
-    this.counterService.update
-      .pipe(takeUntil(this.unsubscribe$))
+    this._counterService.update
+      .pipe(takeUntilDestroyed(this._destroyRef))
       .subscribe(update => this.setProgress(update));
   }
 
@@ -41,13 +41,8 @@ export class GaugeComponent implements OnInit, AfterViewInit, OnDestroy {
     this.setProgress(0);
   }
 
-  ngOnDestroy(): void {
-    this.unsubscribe$.next();
-    this.unsubscribe$.complete();
-  }
-
   movePosition() {
-    this.counterService.move.emit();
+    this._counterService.move.emit();
   }
 
   fillProgress() {

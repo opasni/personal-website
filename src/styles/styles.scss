@@ -57,6 +57,9 @@
 .card-header:first-child {
   border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
 }
+.card-body {
+  color: var(--font-color);
+}
 
 .accordion-button {
   padding: 0 !important;

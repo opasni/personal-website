@@ -1,9 +1,9 @@
-import { AfterViewInit, Directive, ElementRef, HostListener, OnDestroy, inject } from '@angular/core';
+import { AfterViewInit, DestroyRef, Directive, ElementRef, HostListener, OnDestroy, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { Subject, takeUntil } from 'rxjs';
 
 import { Position } from '@lib/classes/position.class';
 import { GaugeCounterService } from '@lib/services/gauge-counter.service';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Directive({
 	selector: '[appScrollDetect]',
@@ -20,33 +20,31 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
 
 	private _position = new Position();
 	private _defaultTouch = { x: 0, y: 0 };
-	private unsubscribe$ = new Subject<void>();
 
-	private host = inject(ElementRef);
-	private router = inject(Router);
-	private counterService = inject(GaugeCounterService);
+	private _host = inject(ElementRef);
+	private _router = inject(Router);
+	private _counterService = inject(GaugeCounterService);
+	private _destroyRef = inject(DestroyRef);
 
 	ngAfterViewInit(): void {
 		this._position = this.getPositions();
-		this.counterService.ready
-			.pipe(takeUntil(this.unsubscribe$))
+		this._counterService.ready
+			.pipe(takeUntilDestroyed(this._destroyRef))
 			.subscribe(deltaY => this.checkAndNavigate(deltaY));;
-		this.counterService.move
-			.pipe(takeUntil(this.unsubscribe$))
+		this._counterService.move
+		.pipe(takeUntilDestroyed(this._destroyRef))
 			.subscribe(() => this.checkAndNavigate(this.getMaxDelta()));
 	}
 
 	ngOnDestroy(): void {
-		this.counterService.clearGauge();
-		this.unsubscribe$.next();
-		this.unsubscribe$.complete();
+		this._counterService.clearGauge();
 	}
 
 	@HostListener('touchstart', ['$event'])
 	@HostListener('touchmove', ['$event'])
 	@HostListener('touchend', ['$event'])
 	handleTouch(event: TouchEvent) {
-		if (!this.host.nativeElement) {
+		if (!this._host.nativeElement) {
 			return;
 		}
 		const touch = event.touches[0] || event.changedTouches[0];
@@ -60,26 +58,29 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
 	}
 
 	@HostListener('wheel', ['$event']) onMousewheel(event: WheelEvent) {
-		if (!this.host.nativeElement) {
+		if (!this._host.nativeElement) {
 			return;
 		}
-		this.updatePositions(event.deltaY, 12, 12);
+		const container = document.getElementById('scrollingContainer') as HTMLDivElement;
+		const smallerContent = container.getBoundingClientRect().height - this._host.nativeElement.getBoundingClientRect().height;
+		console.log(smallerContent > 0);
+		this.updatePositions(event.deltaY, 12, 12, smallerContent > 0);
 	}
 
 	@HostListener('document:keyup', ['$event'])
 	handleKeyboardEvent(event: KeyboardEvent) {
 		const navigate = event.key === 'ArrowDown' ? 1 : event.key === 'ArrowUp' ? -1 : 0;
 		if (navigate !== 0) {
-			const index = this._orderedRoutes.indexOf(this.router.url);
+			const index = this._orderedRoutes.indexOf(this._router.url);
 			if ((navigate > 0 && index < 4) || (navigate < 0 && index > 0)) {
-				this.router.navigate([this._orderedRoutes[index + navigate]]);
-				this.counterService.clearGauge();
+				this._router.navigate([this._orderedRoutes[index + navigate]]);
+				this._counterService.clearGauge();
 			}
 		}
 	}
 
 	private getPositions(): Position {
-		const element = this.host.nativeElement as HTMLDivElement;
+		const element = this._host.nativeElement as HTMLDivElement;
 		const scroller = element.parentElement?.parentElement;
 		const isTop = scroller != null && Math.abs(scroller.scrollTop) < 1;
 		const isBottom = scroller != null && Math.abs(scroller.scrollHeight - (window.innerHeight + scroller.scrollTop)) < 1;
@@ -87,54 +88,54 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
 	}
 
 	private getMaxDelta(): number {
-		this.counterService.percentage = 1;
-		return (this.counterService.position === 'top' ? -1 : 1) * 100;
+		this._counterService.percentage = 1;
+		return (this._counterService.position === 'top' ? -1 : 1) * 100;
 	}
 
-	private updatePositions(deltaY: number, topBarrier: number, bottomBarrier: number) {
+	private updatePositions(deltaY: number, topBarrier: number, bottomBarrier: number, contentSmaller = false) {
 		this._position.add(this.getPositions());
 		if (this._position.top > 0 && deltaY < 0) {
-			if (this._orderedRoutes.indexOf(this.router.url) === 0) {
-				this.counterService.clearGauge();
+			if (this._orderedRoutes.indexOf(this._router.url) === 0) {
+				this._counterService.clearGauge();
 				return;
 			}
 			const percentage = this._position.top / topBarrier;
-			this.counterService.updateGauge('top', percentage);
+			this._counterService.updateGauge('top', percentage);
 			if (percentage >= 1) {
 				this.checkAndNavigate(deltaY);
 			}
-		} else if (this._position.bottom >= 0 && deltaY > 0) {
-			if (this._orderedRoutes.indexOf(this.router.url) === 4) {
-				this.counterService.clearGauge();
+		} else if ((this._position.bottom > 0 || contentSmaller) && deltaY > 0) {
+			if (this._orderedRoutes.indexOf(this._router.url) === 4) {
+				this._counterService.clearGauge();
 				return;
 			}
 			const percentage = (this._position.bottom || bottomBarrier + 1) / bottomBarrier;
-			this.counterService.updateGauge('bottom', percentage);
+			this._counterService.updateGauge('bottom', percentage);
 			if (percentage >= 1) {
 				this.checkAndNavigate(deltaY);
 			}
 		} else {
-			this.counterService.clearGauge();
+			this._counterService.clearGauge();
 		}
 	}
 
 	private checkAndNavigate(deltaY: number) {
-		if (this.counterService.percentage < 0.99) {
+		if (this._counterService.percentage < 0.99) {
 			return;
 		}
 		if (this._position.top > 0 && deltaY < -1) {
-			const index = this._orderedRoutes.indexOf(this.router.url);
+			const index = this._orderedRoutes.indexOf(this._router.url);
 			if (index > 0) {
 				this._position = new Position();
-				this.router.navigate([this._orderedRoutes[index - 1]]);
-				this.counterService.clearGauge();
+				this._router.navigate([this._orderedRoutes[index - 1]]);
+				this._counterService.clearGauge();
 			}
 		} else if (this._position.bottom >= 0 && deltaY > 1) {
-			const index = this._orderedRoutes.indexOf(this.router.url);
+			const index = this._orderedRoutes.indexOf(this._router.url);
 			if (index < 4) {
 				this._position = new Position();
-				this.router.navigate([this._orderedRoutes[index + 1]]);
-				this.counterService.clearGauge();
+				this._router.navigate([this._orderedRoutes[index + 1]]);
+				this._counterService.clearGauge();
 			}
 		}
 	}
