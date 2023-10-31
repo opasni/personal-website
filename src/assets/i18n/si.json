@@ -425,5 +425,17 @@
     "website": {
         "link": "Spletna stran"
     },
+    "accessibility": {
+        "buttons": {
+            "export-pdf": "Izvozi v PDF",
+            "menu-open": "Odpri menu",
+            "menu-close": "Zapri menu",
+            "send-contact": "Pošlji",
+            "expand-area": "Razširi poglavje"
+        },
+        "images": {
+            "profile": "Profilna Slika"
+        }
+    },
     "insert-password": "Vnesite Geslo"
 }

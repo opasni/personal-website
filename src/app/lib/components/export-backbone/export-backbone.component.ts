@@ -8,12 +8,13 @@ import { ThemeService, getTheme } from '@lib/services/theme.service';
 import { PrintService } from '@lib/services/print.service';
 import { LoadingSpinnerComponent } from '../loading-spinner/loading-spinner.component';
 import { LoaderService } from '@lib/services/loader.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-export-backbone',
   standalone: true,
   encapsulation: ViewEncapsulation.None,
-  imports: [CommonModule, LoadingSpinnerComponent, RouterModule],
+  imports: [CommonModule, LoadingSpinnerComponent, RouterModule, TranslateModule],
   templateUrl: './export-backbone.component.html',
   styleUrls: ['./export-backbone.component.scss'],
   providers: [PrintService]

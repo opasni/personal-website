@@ -24,6 +24,7 @@
               <div class="card-header" id="headingMasterThesis">
                 <h5 class="mb-0">
                   <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('education.master-thesis.type' | translate)"
                     data-bs-target="#collapseMasterThesis" aria-expanded="false" aria-controls="collapseMasterThesis">
                     {{ 'education.master-thesis.type' | translate }}
                   </button>
@@ -36,10 +37,10 @@
                   <p class="card-text" *ngFor="let par of ('education.master-thesis.abstract' | translate)">
                     <span [innerHTML]="par"></span>
                   </p>
-                  <a href="/uploads/20171026_master_thesis_final.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
+                  <a href="/uploads/20171026_master_thesis_final.pdf" target="_blank" rel="noopener noreferrer" aria-label="Master Thesis" class="card-link">
                     {{ 'education.master-thesis.file' | translate}}
                   </a>
-                  <a href="https://github.com/opasni/GeantCode" target="_blank" rel="noopener noreferrer" class="card-link">
+                  <a href="https://github.com/opasni/GeantCode" target="_blank" rel="noopener noreferrer" aria-label="Master Thesis Code" class="card-link">
                     {{ 'education.master-thesis.code' | translate}}
                   </a>
                 </div>
@@ -50,6 +51,7 @@
               <div class="card-header" id="headingStudentExchange">
                 <h5 class="mb-0">
                   <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('education.student-exchange.type' | translate)"
                     data-bs-target="#collapseStudentExchange" aria-expanded="false"
                     aria-controls="collapseStudentExchange">
                     {{ 'education.student-exchange.type' | translate }}
@@ -71,6 +73,7 @@
               <div class="card-header" id="headingManhattanProject">
                 <h5 class="mb-0">
                   <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('education.manhattan-project.type' | translate)"
                     data-bs-target="#collapseManhattanProject" aria-expanded="false"
                     aria-controls="collapseManhattanProject">
                     {{ 'education.manhattan-project.type' | translate }}
@@ -84,10 +87,10 @@
                   <p class="card-text" *ngFor="let par of ('education.manhattan-project.abstract' | translate)">
                     {{ par }}
                   </p>
-                  <a href="/uploads/20150327_manhattan_project.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
+                  <a href="/uploads/20150327_manhattan_project.pdf" target="_blank" rel="noopener noreferrer" aria-label="Manhattan Project" class="card-link">
                     {{ 'education.manhattan-project.file' | translate}}
                   </a>
-                  <a href="/uploads/20150414_manhattan_project_presentation.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
+                  <a href="/uploads/20150414_manhattan_project_presentation.pdf" target="_blank" rel="noopener noreferrer" aria-label="Manhattan Project Presentation" class="card-link">
                     {{ 'education.manhattan-project.presentation' | translate}}
                   </a>
                 </div>
@@ -114,6 +117,7 @@
               <div class="card-header" id="headingBachelorThesis">
                 <h5 class="mb-0">
                   <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('education.bachelor-thesis.type' | translate)"
                     data-bs-target="#collapseBachelorThesis" aria-expanded="false"
                     aria-controls="collapseBachelorThesis">
                     {{ 'education.bachelor-thesis.type' | translate }}
@@ -127,10 +131,10 @@
                   <p class="card-text" *ngFor="let par of ('education.bachelor-thesis.abstract' | translate)">
                     {{ par }}
                   </p>
-                  <a href="/uploads/20140605_bachelor_thesis_final.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
+                  <a href="/uploads/20140605_bachelor_thesis_final.pdf" target="_blank" rel="noopener noreferrer" aria-label="Bachelor Thesis" class="card-link">
                     {{ 'education.bachelor-thesis.file' | translate}}
                   </a>
-                  <a href="/uploads/20140513_bachelor_presentation.pdf" target="_blank" rel="noopener noreferrer" class="card-link">
+                  <a href="/uploads/20140513_bachelor_presentation.pdf" target="_blank" rel="noopener noreferrer" aria-label="Bachelor Thesis Presentation" class="card-link">
                     {{ 'education.bachelor-thesis.presentation' | translate}}
                   </a>
                 </div>
@@ -146,13 +150,14 @@
           <h6 class="card-subtitle mb-2 text-muted">{{ 'education.degree.high-school.title' | translate }}</h6>
           <p class="card-text"><i>2007 - 2011</i></p>
           <p class="card-text">{{ 'education.degree.high-school.abstract' | translate }}</p>
-          <a href="https://www.sgv.si/" target="_blank" rel="noopener noreferrer" class="card-link">{{ 'website.link' | translate }}</a>
+          <a href="https://www.sgv.si/" target="_blank" rel="noopener noreferrer" aria-label="Iskre Repository" class="card-link">{{ 'website.link' | translate }}</a>
           <!-- ISKRE -->
           <div class="accordion accordion-flush" id="highSchoolProgram">
             <div class="card my-3" [ngClass]="['bg-' + theme]">
               <div class="card-header" id="headingIskre">
                 <h5 class="mb-0">
                   <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('education.iskre.type' | translate)"
                     data-bs-target="#collapseIskre" aria-expanded="false"
                     aria-controls="collapseIskre">
                     {{ 'education.iskre.type' | translate }}
@@ -168,7 +173,7 @@
                   </p>
 
                   <div class="list-group mt-3">
-                    <a *ngFor="let item of publications" target="_blank" class="list-group-item list-group-item-action"
+                    <a *ngFor="let item of publications" aria-label="Iskre Magazin" target="_blank" class="list-group-item list-group-item-action"
                       [href]="'/uploads/' + item.id" [ngClass]="'bg-' + theme">
                       Iskre -
                       {{ 'education.iskre.issue' | translate }} {{ item.meta.issue }},

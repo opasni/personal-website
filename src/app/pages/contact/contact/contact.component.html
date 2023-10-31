@@ -61,15 +61,12 @@
           </div>
         </div>
         <input type="hidden" name="_honeypot" formControlName="_honeypot">
-
-        <!-- <div class="form-check" *ngIf="'contact.checkout' | translate">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">{{ 'contact.checkout' | translate }}</label>
-        </div> -->
         <!-- recaptcha -->
         <div class="d-flex justify-content-end">
-          <button *ngIf="!submitter$; else submitting" type="submit" class="btn btn-primary">{{ 'contact.submit.label' |
-            translate }}</button>
+          <button *ngIf="!submitter$; else submitting" type="submit"
+            [title]="'accessibility.buttons.send-contact' | translate" class="btn btn-primary">
+            {{ 'contact.submit.label' | translate }}
+          </button>
           <ng-template #submitting>
             <p class="d-flex">
               <ng-container *ngIf="submitter$ | async; else submitFail">
@@ -83,8 +80,7 @@
               <ng-template #submitFail>
                 <ng-container *ngIf="fail">
                   {{ 'contact.submit.fail' | translate }}
-                  <a class="linkedin-icon" href="https://www.linkedin.com/in/crtharej"
-                    target="_blank">
+                  <a class="linkedin-icon" href="https://www.linkedin.com/in/crtharej" aria-label="Got to my LinkedIn Profile" target="_blank">
                     <div class="social-icon">
                       <i class="bi bi-linkedin"></i>
                     </div>
@@ -95,8 +91,8 @@
           </ng-template>
         </div>
         <div class="separator recaptcha">
-          <re-captcha class="contact-recaptcha" *ngIf="submitted && emailForm.valid && verify" [theme]="theme === 'white' ? 'light' : theme"
-            (resolved)="resolved($event)" [siteKey]="recaptchaKey">
+          <re-captcha class="contact-recaptcha" *ngIf="submitted && emailForm.valid && verify"
+            [theme]="theme === 'white' ? 'light' : theme" (resolved)="resolved($event)" [siteKey]="recaptchaKey">
           </re-captcha>
         </div>
       </form>
