@@ -3,8 +3,10 @@ import { TranslateService } from '@ngx-translate/core';
 import { Subject, finalize, takeUntil, Observable, BehaviorSubject } from 'rxjs';
 import { registerLocaleData } from '@angular/common';
 
+import localeSi from '@angular/common/locales/si';
 import localeDe from '@angular/common/locales/de';
 import localeEn from '@angular/common/locales/en';
+import localeSiExtra from '@angular/common/locales/extra/si';
 import localeDeExtra from '@angular/common/locales/extra/de';
 import localeEnExtra from '@angular/common/locales/extra/en';
 
@@ -69,6 +71,9 @@ export class LanguageService implements OnDestroy {
 
     private registerLocale(language: Language) {
         switch (language) {
+            case Language.SI:
+                registerLocaleData(localeSi, Language.SI, localeSiExtra);
+                break;
             case Language.DE:
                 registerLocaleData(localeDe, Language.DE, localeDeExtra);
                 break;

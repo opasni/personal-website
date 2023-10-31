@@ -8,7 +8,13 @@ import { LanguageService } from './language.service';
 })
 export class PrintService {
 	public sheetElements!: QueryList<ElementRef<HTMLBodyElement>>;
-	private languageService = inject(LanguageService);
+  private languageService = inject(LanguageService);
+
+  public set fileName(value: string) {
+    this._fileName = value
+  }
+
+  private _fileName!: string;
 
 	public async printPdf() {
     let pdf = new jsPDF('p', 'mm', 'a4', false);
@@ -28,6 +34,6 @@ export class PrintService {
       });
     }
 
-    pdf.save(`CV_CrtHarej_${this.languageService.selectedLanguage$.getValue().toUpperCase()}.pdf`);
+    pdf.save(`${this._fileName}_CrtHarej_${this.languageService.selectedLanguage$.getValue().toUpperCase()}.pdf`);
 	}
 }

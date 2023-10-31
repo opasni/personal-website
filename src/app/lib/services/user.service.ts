@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { User } from '@lib/classes/user.class';
 
@@ -16,6 +16,6 @@ export class UserApiService {
 		if (password != null) {
 			params.password = password;
 		}
-		return this.http.get<User>(this.url, { params });
+		return this.http.get<User>(this.url, { params }).pipe(map((data) => new User(data)));
 	}
 }

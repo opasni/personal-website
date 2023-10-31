@@ -1,1 +1,27 @@
-<p>cover-letter works!</p>
+<div #sheet class="sheet d-flex wrapper" *ngIf="userData$ | async as userData">
+	<div class="letter">
+		<header class="letter-header">
+			<p>{{ userData.firstName }} {{ userData.lastName }}</p>
+			<p>{{ userData.street }}</p>
+			<p>{{ userData.city }}</p>
+			<p>{{ userData.email }}</p>
+			<p>{{ userData.phone }}</p>
+		</header>
+		<section class="details">
+			<p>{{ date | date:'dd.MM.yyyy' }}</p>
+			<p>{{ recipient.title }} {{ recipient.firstName }} {{ recipient.lastName }}</p>
+			<p>{{ recipient.nickName }}</p>
+			<p>{{ recipient.street }}</p>
+			<p>{{ recipient.city }}</p>
+		</section>
+
+		<section class="content">
+			<p *ngFor="let line of text">{{ line }}</p>
+		</section>
+		<section class="signature">
+			<p>{{ regards }}</p>
+
+			<p>{{ userData.firstName }} {{ userData.lastName }}</p>
+		</section>
+	</div>
+</div>
