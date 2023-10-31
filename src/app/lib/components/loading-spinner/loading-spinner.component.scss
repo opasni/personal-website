@@ -1,0 +1,77 @@
+@import 'src/styles/variables';
+
+.cover-screen {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: #f5f5f566;
+}
+
+.spinner-wrapper {
+  width: 100px;
+  height: 100px;
+  animation: spinnerRotate 2.2s infinite linear;
+}
+
+.spinner {
+  position: relative;
+  width: 100px;
+  height: 100px;
+
+  .dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    top: 50%;
+    left: 50%;
+  }
+
+  // Using a loop to generate the positions for each dot
+  @for $i from 1 through 12 {
+    .dot:nth-child(#{$i}) {
+      transform: translate(-50%, -50%) rotate(#{30deg * ($i - 1)}) translateY(-50px) rotate(#{30deg * (1 - $i)});
+      animation: fade-#{$i} 1.8s infinite, pulse-#{$i} 1.5s infinite alternate;
+    }
+  }
+}
+
+@keyframes spinnerRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fade {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+// Keyframe generation for each dot
+@for $i from 1 through 12 {
+	@keyframes fade-#{$i} {
+		0%, 100% { opacity: 1; }
+		50% { opacity: 0.4 + (0.2 * ($i % 3)); }
+	}
+  @keyframes pulse-#{$i} {
+    0% {
+        transform: translate(-50%, -50%) rotate(#{30deg * ($i - 1)}) translateY(-50px - (2px * ($i % 3))) rotate(#{30deg * (1 - $i)});
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(#{30deg * ($i - 1)}) translateY(-25px - (10px * ($i % 3))) rotate(#{30deg * (1 - $i)});
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(#{30deg * ($i - 1)}) translateY(-50px - (2px * ($i % 3))) rotate(#{30deg * (1 - $i)});
+    }
+  }
+}
+
+
+
+
+

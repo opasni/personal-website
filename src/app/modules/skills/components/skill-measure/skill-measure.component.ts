@@ -1,9 +1,9 @@
 import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewEncapsulation, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { Language } from 'src/app/enums/language.enum';
-import { LanguageService } from 'src/app/services/language.service';
-import { SkillsService } from '../../services/skills.service';
+import { Language } from '@lib/enums/language.enum';
+import { LanguageService } from '@lib/services/language.service';
+import { SkillsService } from '@lib/services/skills.service';
 
 @Component({
   selector: 'app-skill-measure',
@@ -12,24 +12,16 @@ import { SkillsService } from '../../services/skills.service';
   encapsulation: ViewEncapsulation.None
 })
 export class SkillMeasureComponent implements OnInit, AfterViewInit {
-
   @Input() value: number = 0;
   @Input() minValue: number = 0;
   @Input() name: string = '';
   @Input() numberOfCircles: number = 7;
 
   public circles: { index: number; filled: boolean }[] = [];
-
-  public readonly selectedLanguage$ = new Observable<Language>();
+  public readonly selectedLanguage$ = inject(LanguageService).getSelectedLanguage();
 
   private skills = inject(SkillsService);
-
-  constructor(
-    private elRef: ElementRef,
-    private languageService: LanguageService
-  ) {
-    this.selectedLanguage$ = this.languageService.getSelectedLanguage();
-  }
+  private elRef = inject(ElementRef);
 
   ngOnInit() {
     this.circles = Array(this.numberOfCircles).fill(0).map((_, i) => ({ index: i, filled: false }));
