@@ -22,8 +22,8 @@ import { ExportComponent } from '@lib/abstracts/export.component';
   ]
 })
 export class CVComponent extends ExportComponent implements OnInit {
-  override ngOnInit(): void {
-    super.ngOnInit();
+  ngOnInit(): void {
+		this.setUser();
     this.printService.fileName = 'CV';
   }
 }
