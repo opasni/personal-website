@@ -32,13 +32,8 @@ export class ExportBackboneComponent implements OnInit {
   private themeService = inject(ThemeService);
 
   ngOnInit(): void {
-    this.theme = getTheme() ?? Theme.Light;
-    this.themeService.setTheme(this.theme);
-    this.checkTheme(this.themeService);
-
-    this.lang = getLanguage() ?? Language.EN;
-    this.languageService.setSelectedLanguage(this.lang);
-    this.checkLanguage(this.languageService);
+    this.checkTheme();
+    this.checkLanguage();
 
 		document.body.style.overflowY = 'scroll';
     document.body.style.backgroundColor = this.backgroundColor;
@@ -50,19 +45,21 @@ export class ExportBackboneComponent implements OnInit {
     this.loaderService.setLoading(false);
   }
 
-  private checkTheme(themeService: ThemeService) {
+  private checkTheme() {
+    this.theme = getTheme() ?? Theme.Light;
     const localTheme = this.route.snapshot.queryParamMap.get('theme') as Theme;
     if (localTheme && this.theme !== localTheme) {
-      themeService.setTheme(localTheme);
       this.theme = localTheme;
     }
+    this.themeService.setTheme(this.theme);
   }
 
-  private checkLanguage(languageService: LanguageService) {
+  private checkLanguage() {
+    this.lang = getLanguage() ?? Language.EN;
     const localLang = this.route.snapshot.queryParamMap.get('lang') as Language;
     if (localLang && this.lang !== localLang) {
-      languageService.setSelectedLanguage(localLang);
       this.lang = localLang;
+      this.languageService.setSelectedLanguage(localLang);
     }
   }
 }

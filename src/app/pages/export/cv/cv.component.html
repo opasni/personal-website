@@ -6,7 +6,7 @@
         src="assets/images/profile_image.jpg" />
     </div>
     <div class="sidebar-content py-4">
-      <div class="px-3 user-header text-center" *ngIf="userData$ | async as userData">
+      <div class="px-3 user-header text-center">
         <h1 class="text-standard">{{ userData.firstName }} <b>{{ userData.lastName }}</b></h1>
         <ul class="user-info">
           <li *ngIf="userData.address">
