@@ -93,7 +93,7 @@ export class ContactComponent extends ThemeComponent implements OnInit {
   }
 
 
-  resolved(e: string) {
+  resolved(e: string | null) {
     if (!e) {
       return;
     }
