@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable, catchError, finalize, map, of, tap } from 'rxjs';
+import { Observable, catchError, finalize, firstValueFrom, map, of, tap } from 'rxjs';
 import { RecaptchaComponent, RecaptchaModule } from 'ng-recaptcha-2';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
@@ -72,46 +72,30 @@ export class ContactComponent extends ThemeComponent implements OnInit {
       this.emailForm.markAllAsTouched();
       return;
     }
-    const contactData = new Contact(this.emailForm.value);
-    this.submitter$ = this.contactService.sendEmail(contactData)
-      .pipe(
-        map(data => {
-          if (data.contactId === null) {
-            this.submitted = false;
-            return false;
-          }
-          this.emailForm.getControl('contactId').setValue(data.contactId);
-          this.verify = true;
-          return true;
-        }),
-        catchError(() => {
-          this.submitted = false;
-          return of(false);
-        })
-      );
+    this.verify = true;
   }
 
 
-  resolved(e: string | null) {
+  async resolved(e: string | null) {
     if (!e) {
       return;
     }
-    const data = {
-      contactId: this.emailForm.getControl('contactId').value,
-      recaptcha: e
-    };
-    this.submitter$ = this.contactService.verifySender(data).pipe(
+    
+    const contactData = new Contact(this.emailForm.value);
+    contactData.recaptcha = e;
+
+    await firstValueFrom(this.contactService.sendEmail(contactData).pipe(
       tap(success => {
-        if (success) {
-          this.router.navigate(['success'], { relativeTo: this.route })
-        } else {
-          this.fail = true;
-          if (this.recaptcha) {
-            this.recaptcha.reset();
-          }
+        this.router.navigate(['success'], { relativeTo: this.route });
+      }),
+      catchError(() => {
+        this.fail = true;
+        if (this.recaptcha) {
+          this.recaptcha.reset();
         }
+        return of(null);
       }),
       finalize(() => this.verify = false)
-    );
+    ), { defaultValue: null });
   }
 }

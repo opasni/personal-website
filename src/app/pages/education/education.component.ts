@@ -5,16 +5,18 @@ import { TranslateModule } from '@ngx-translate/core';
 import { ScrollDetectDirective } from '@lib/directives/scroll-detect/scroll-detect.directive';
 import { ThemeComponent } from '@lib/abstracts/theme.component';
 import { Lookup } from '@lib/classes/lookup.class';
+import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-    selector: 'app-education',
-    templateUrl: './education.component.html',
-    styleUrls: ['./education.component.scss'],
-    imports: [
-        CommonModule,
-        TranslateModule,
-        ScrollDetectDirective
-    ]
+  selector: 'app-education',
+  templateUrl: './education.component.html',
+  styleUrls: ['./education.component.scss'],
+  imports: [
+    NgbAccordionModule,
+    CommonModule,
+    TranslateModule,
+    ScrollDetectDirective
+  ]
 })
 export class EducationComponent extends ThemeComponent {
 

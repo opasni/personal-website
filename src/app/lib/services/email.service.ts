@@ -11,23 +11,7 @@ export class EmailService {
   private url = environment.api + '/contact';
 	private http = inject(HttpClient);
 
-  sendEmail(input: Contact): Observable<Contact> {
-    return this.http.post(this.url, input).pipe(
-      map((data: Partial<Contact>) => {
-        input.contactId = data.contactId ?? null;
-        return input;
-      }),
-      catchError(error => {
-        console.error(error);
-        return of(input);
-      })
-    );
-  }
-
-  verifySender(input: { contactId: string, recaptcha: string }): Observable<boolean> {
-    return this.http.post(this.url + '/recaptcha', input).pipe(
-      map(() => true),
-      catchError(() => of(false))
-    );
+  sendEmail(input: Contact): Observable<void> {
+    return this.http.post<void>(this.url, input);
   }
 }

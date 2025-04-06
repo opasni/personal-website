@@ -18,22 +18,19 @@
             </p>
           }
           <a href="https://8020.eco/" target="_blank" rel="noopener noreferrer" aria-label="Achtzig20 Website" class="card-link">{{ 'experience.achtzig20.link' | translate }}</a>
-          <div class="accordion accordion-flush" id="achtzig20Job">
+          <div ngbAccordion>
             <!-- NOA -->
-            <div class="card my-3" [ngClass]="['bg-' + theme]">
-              <div class="card-header" id="headingNOA">
+            <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
+              <div ngbAccordionHeader class="card-header">
                 <h5 class="mb-0">
-                  <button class="accordion-button collapsed" data-bs-toggle="collapse"
-                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.achtzig20.noa.type' | translate)"
-                    data-bs-target="#collapseNOA" aria-expanded="false"
-                    aria-controls="collapseNOA">
+                  <button ngbAccordionButton
+                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.achtzig20.noa.type' | translate)">
                     {{ 'experience.achtzig20.noa.type' | translate }}
                   </button>
                 </h5>
               </div>
-              <div id="collapseNOA" class="accordion-collapse collapse"
-                aria-labelledby="headingNOA" data-bs-parent="#masterProgram">
-                <div class="card-body">
+              <div ngbAccordionCollapse>
+                <div ngbAccordionBody class="card-body">
                   <h5 class="card-title">{{ 'experience.achtzig20.noa.title' | translate }}</h5>
                   @for (par of ('experience.achtzig20.noa.abstract' | translate); track par) {
                     <p class="card-text">
@@ -61,20 +58,17 @@
               </div>
             </div>
             <!-- GRID3 -->
-            <div class="card my-3" [ngClass]="['bg-' + theme]">
-              <div class="card-header" id="headingGrid3">
+            <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
+              <div ngbAccordionHeader class="card-header">
                 <h5 class="mb-0">
-                  <button class="accordion-button collapsed" data-bs-toggle="collapse"
-                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.achtzig20.grid3.type' | translate)"
-                    data-bs-target="#collapseGrid3" aria-expanded="false"
-                    aria-controls="collapseGrid3">
+                  <button ngbAccordionButton
+                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.achtzig20.grid3.type' | translate)">
                     {{ 'experience.achtzig20.grid3.type' | translate }}
                   </button>
                 </h5>
               </div>
-              <div id="collapseGrid3" class="accordion-collapse collapse"
-                aria-labelledby="headingGrid3" data-bs-parent="#masterProgram">
-                <div class="card-body">
+              <div ngbAccordionCollapse>
+                <div ngbAccordionBody class="card-body">
                   <h5 class="card-title">{{ 'experience.achtzig20.grid3.title' | translate }}</h5>
                   @for (par of ('experience.achtzig20.grid3.abstract' | translate); track par) {
                     <p class="card-text">
@@ -102,20 +96,17 @@
               </div>
             </div>
             <!-- ACHTZIG20 DOO -->
-            <div class="card my-3" [ngClass]="['bg-' + theme]">
-              <div class="card-header" id="headingAchtzig20">
+            <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
+              <div ngbAccordionHeader class="card-header">
                 <h5 class="mb-0">
-                  <button class="accordion-button collapsed" data-bs-toggle="collapse"
-                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.achtzig20.achtzig20.type' | translate)"
-                    data-bs-target="#collapseAchtzig20" aria-expanded="false"
-                    aria-controls="collapseAchtzig20">
+                  <button ngbAccordionButton
+                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.achtzig20.achtzig20.type' | translate)">
                     {{ 'experience.achtzig20.achtzig20.type' | translate }}
                   </button>
                 </h5>
               </div>
-              <div id="collapseAchtzig20" class="accordion-collapse collapse"
-                aria-labelledby="headingAchtzig20" data-bs-parent="#masterProgram">
-                <div class="card-body">
+              <div ngbAccordionCollapse>
+                <div ngbAccordionBody class="card-body">
                   <h5 class="card-title">{{ 'experience.achtzig20.achtzig20.title' | translate }}</h5>
                   @for (par of ('experience.achtzig20.achtzig20.abstract' | translate); track par) {
                     <p class="card-text">
@@ -134,20 +125,17 @@
               </div>
             </div>
             <!-- DEVELOPMENT -->
-            <div class="card my-3" [ngClass]="['bg-' + theme]">
-              <div class="card-header" id="headingDevelopment">
+            <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
+              <div ngbAccordionHeader class="card-header">
                 <h5 class="mb-0">
-                  <button class="accordion-button collapsed" data-bs-toggle="collapse"
-                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.achtzig20.development.type' | translate)"
-                    data-bs-target="#collapseDevelopment" aria-expanded="false"
-                    aria-controls="collapseDevelopment">
+                  <button ngbAccordionButton
+                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.achtzig20.development.type' | translate)">
                     {{ 'experience.achtzig20.development.type' | translate }}
                   </button>
                 </h5>
               </div>
-              <div id="collapseDevelopment" class="accordion-collapse collapse"
-                aria-labelledby="headingDevelopment" data-bs-parent="#masterProgram">
-                <div class="card-body">
+              <div ngbAccordionCollapse>
+                <div ngbAccordionBody class="card-body">
                   <!-- ALICE -->
                   <div class="list-group mb-3">
                     <h5 class="card-title">{{ 'experience.achtzig20.development.alice.title' | translate }}</h5>
@@ -225,20 +213,17 @@
               </div>
             </div>
             <!-- TRAININGS -->
-            <div class="card my-3" [ngClass]="['bg-' + theme]">
-              <div class="card-header" id="headingTrainings">
+            <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
+              <div ngbAccordionHeader class="card-header">
                 <h5 class="mb-0">
-                  <button class="accordion-button collapsed" data-bs-toggle="collapse"
-                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.achtzig20.trainings.type' | translate)"
-                    data-bs-target="#collapseTrainings" aria-expanded="false"
-                    aria-controls="collapseTrainings">
+                  <button ngbAccordionButton
+                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.achtzig20.trainings.type' | translate)">
                     {{ 'experience.achtzig20.trainings.type' | translate }}
                   </button>
                 </h5>
               </div>
-              <div id="collapseTrainings" class="accordion-collapse collapse"
-                aria-labelledby="headingTrainings" data-bs-parent="#masterProgram">
-                <div class="card-body">
+              <div ngbAccordionCollapse>
+                <div ngbAccordionBody class="card-body">
                   <h5 class="card-title">{{ 'experience.achtzig20.trainings.title' | translate }}</h5>
                   @for (par of ('experience.achtzig20.trainings.abstract' | translate); track par) {
                     <p class="card-text">
@@ -263,22 +248,19 @@
             </p>
           }
           <a href="/uploads/Arbeitszeugnis_AKKA.pdf" target="_blank" rel="noopener noreferrer" aria-label="AKKA Work feedback" class="card-link">{{ 'experience.akka.certificate' | translate }}</a>
-          <div class="accordion accordion-flush" id="akkaJob">
+          <div ngbAccordion>
             <!-- PROJECTS -->
-            <div class="card my-3" [ngClass]="['bg-' + theme]">
-              <div class="card-header" id="headingProjects">
+            <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
+              <div ngbAccordionHeader class="card-header">
                 <h5 class="mb-0">
-                  <button class="accordion-button collapsed" data-bs-toggle="collapse"
-                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.akka.projects.type' | translate)"
-                    data-bs-target="#collapseProjects" aria-expanded="false"
-                    aria-controls="collapseProjects">
+                  <button ngbAccordionButton
+                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.akka.projects.type' | translate)">
                     {{ 'experience.akka.projects.type' | translate }}
                   </button>
                 </h5>
               </div>
-              <div id="collapseProjects" class="accordion-collapse collapse"
-                aria-labelledby="headingProjects" data-bs-parent="#masterProgram">
-                <div class="card-body">
+              <div ngbAccordionCollapse>
+                <div ngbAccordionBody class="card-body">
                   <!-- CARSHIP -->
                   <div class="list-group mb-3">
                     <h5 class="card-title">{{ 'experience.akka.projects.carship.title' | translate }}</h5>
@@ -302,20 +284,17 @@
               </div>
             </div>
             <!-- AKKADEMY -->
-            <div class="card my-3" [ngClass]="['bg-' + theme]">
-              <div class="card-header" id="headingAkkademy">
+            <div ngbAccordionItem class="card" [ngClass]="['bg-' + theme]">
+              <div ngbAccordionHeader class="card-header">
                 <h5 class="mb-0">
-                  <button class="accordion-button collapsed" data-bs-toggle="collapse"
-                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.akka.akkademy.type' | translate)"
-                    data-bs-target="#collapseAkkademy" aria-expanded="false"
-                    aria-controls="collapseAkkademy">
+                  <button ngbAccordionButton
+                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.akka.akkademy.type' | translate)">
                     {{ 'experience.akka.akkademy.type' | translate }}
                   </button>
                 </h5>
               </div>
-              <div id="collapseAkkademy" class="accordion-collapse collapse"
-                aria-labelledby="headingAkkademy" data-bs-parent="#masterProgram">
-                <div class="card-body">
+              <div ngbAccordionCollapse>
+                <div ngbAccordionBody class="card-body">
                   <h5 class="card-title">{{ 'experience.akka.akkademy.title' | translate }}</h5>
                   @for (par of ('experience.akka.akkademy.abstract' | translate); track par) {
                     <p class="card-text">

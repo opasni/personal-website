@@ -1,11 +1,16 @@
 /* You can change bootstrap global css classes to this file */
 @use 'variables';
+@use 'bootstrap/scss/bootstrap';
 
 $primary: variables.$primary-color;
 $danger: variables.$danger-color;
 $success: variables.$success-color;
 $bs-btn-active-color: white !important;
 $form-select-border-radius: variables.$border-radius !important;
+
+$bs-accordion-active-color: variables.$success-color;
+$link-color: $primary;
+
 
 .rounded {
 	border-radius: variables.$border-radius !important;

@@ -1,0 +1,7 @@
+.accordion-button:not(.collapsed) {
+    color: var(--pop-color);
+}
+
+.accordion-item:not(:first-of-type) {
+    border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}
