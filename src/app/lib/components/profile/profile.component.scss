@@ -1,4 +1,4 @@
-@import 'src/styles/variables';
+@use 'src/styles/variables';
 
 .settings-icon {
   width: 1em;
@@ -15,7 +15,7 @@
   &.theme {
     border-width: 1px;
     border-style: solid;
-    border-color: $primary-color;
+    border-color: variables.$primary-color;
     margin-bottom: -3px;
   }
 }
@@ -40,8 +40,8 @@
 	&.activated {
 		.social-icon-color {
 			color: var(--pop-color) !important;
-			border: 2px solid $primary-color;
-			background-color: $primary-color;
+			border: 2px solid variables.$primary-color;
+			background-color: variables.$primary-color;
 		}
     .static {
       display: none;
@@ -58,7 +58,7 @@
     .social-icon {
       cursor: pointer;
       font-size: 1.1em;
-      color: $primary-color;
+      color: variables.$primary-color;
       width: 28px;
       height: 28px;
       border-radius: 50%;

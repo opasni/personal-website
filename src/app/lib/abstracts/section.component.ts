@@ -1,7 +1,8 @@
 import { Component, ElementRef, Input, QueryList, ViewChildren } from '@angular/core';
 
 @Component({
-  template: ''
+    template: '',
+    standalone: false
 })
 export abstract class SectionComponent {
 

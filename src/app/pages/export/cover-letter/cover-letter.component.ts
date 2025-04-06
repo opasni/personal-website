@@ -5,12 +5,11 @@ import data from '@lib/data/cover-letter.template.json';
 import { CoverLetter } from '@lib/types/cover-leter.type';
 
 @Component({
-  selector: 'app-cover-letter',
-  standalone: true,
-  encapsulation: ViewEncapsulation.None,
-  imports: [CommonModule],
-  templateUrl: './cover-letter.component.html',
-  styleUrls: ['./cover-letter.component.scss']
+    selector: 'app-cover-letter',
+    encapsulation: ViewEncapsulation.None,
+    imports: [CommonModule],
+    templateUrl: './cover-letter.component.html',
+    styleUrls: ['./cover-letter.component.scss']
 })
 export class CoverLetterComponent extends ExportComponent implements OnInit {
   date = new Date();

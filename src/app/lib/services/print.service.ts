@@ -14,8 +14,13 @@ export class PrintService {
 
 	public async printPdf() {
     const html2canvas = await import('html2canvas');
-    const jsPDF = await import('jspdf').then(module => module.jsPDF);
-    let pdf = new jsPDF('p', 'mm', 'a4', false);
+    const jsPDF = await import('jspdf').then((value) => value.default);
+    let pdf = new jsPDF({
+      orientation: 'p',
+      unit: 'mm',
+      format: 'a4',
+      compress: false
+    });
 
     if (!this.sheetElements.first) {
       return;

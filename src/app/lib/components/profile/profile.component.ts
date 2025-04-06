@@ -20,16 +20,15 @@ import { CommonModule } from '@angular/common';
 import { HoverImageDirective } from '@lib/directives/hover-image/hover-image.directive';
 
 @Component({
-  standalone: true,
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss'],
-  imports: [
-    CommonModule,
-    HoverImageDirective,
-    RouterModule,
-    TranslateModule,
-  ]
+    selector: 'app-profile',
+    templateUrl: './profile.component.html',
+    styleUrls: ['./profile.component.scss'],
+    imports: [
+        CommonModule,
+        HoverImageDirective,
+        RouterModule,
+        TranslateModule,
+    ]
 })
 export class ProfileComponent implements OnInit {
 

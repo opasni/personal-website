@@ -9,7 +9,8 @@ import { UserApiService } from '@lib/services/user.service';
 import { catchError, of, tap } from 'rxjs';
 
 @Component({
-	template: ''
+    template: '',
+    standalone: false
 })
 export abstract class ExportComponent implements AfterViewInit {
 	@ViewChildren('sheet') sheetElements!: QueryList<ElementRef<HTMLBodyElement>>;

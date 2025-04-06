@@ -4,7 +4,8 @@ import { ThemeService } from '@lib/services/theme.service';
 import { Theme } from '@lib/enums/theme.enum';
 
 @Component({
-  template: ''
+    template: '',
+    standalone: false
 })
 export abstract class ThemeComponent {
   protected themeService = inject(ThemeService);

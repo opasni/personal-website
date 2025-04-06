@@ -11,13 +11,12 @@ import { LoaderService } from '@lib/services/loader.service';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-export-backbone',
-  standalone: true,
-  encapsulation: ViewEncapsulation.None,
-  imports: [CommonModule, LoadingSpinnerComponent, RouterModule, TranslateModule],
-  templateUrl: './export-backbone.component.html',
-  styleUrls: ['./export-backbone.component.scss'],
-  providers: [PrintService]
+    selector: 'app-export-backbone',
+    encapsulation: ViewEncapsulation.None,
+    imports: [CommonModule, LoadingSpinnerComponent, RouterModule, TranslateModule],
+    templateUrl: './export-backbone.component.html',
+    styleUrls: ['./export-backbone.component.scss'],
+    providers: [PrintService]
 })
 export class ExportBackboneComponent implements OnInit {
   @ViewChildren('sheet') sheetElements!: QueryList<ElementRef<HTMLBodyElement>>;

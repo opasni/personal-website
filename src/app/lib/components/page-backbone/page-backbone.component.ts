@@ -9,19 +9,18 @@ import { GaugeComponent } from '@lib/components/gauge/gauge.component';
 import { HeaderComponent } from '@lib/components/header/header.component';
 
 @Component({
-	standalone: true,
-	selector: 'app-page-backbone',
-	templateUrl: './page-backbone.component.html',
-	styleUrls: ['./page-backbone.component.scss'],
-	imports: [
-		CommonModule,
-		GaugeComponent,
-		HeaderComponent,
-		RouterModule,
-	],
-  animations: [
-    ROUTE_ANIMATION
-  ]
+    selector: 'app-page-backbone',
+    templateUrl: './page-backbone.component.html',
+    styleUrls: ['./page-backbone.component.scss'],
+    imports: [
+        CommonModule,
+        GaugeComponent,
+        HeaderComponent,
+        RouterModule,
+    ],
+    animations: [
+        ROUTE_ANIMATION
+    ]
 })
 export class PageBackboneComponent extends ThemeComponent implements OnInit {
 	public menuWidth = 280;

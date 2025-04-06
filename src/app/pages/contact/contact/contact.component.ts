@@ -22,18 +22,17 @@ class FormGroupAccessor<T> extends FormGroup {
 }
 
 @Component({
-  standalone: true,
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss'],
-  imports: [
-    CommonModule,
-    FilterErrorPipe,
-    ReactiveFormsModule,
-    RecaptchaModule,
-    ScrollDetectDirective,
-    TranslateModule
-  ]
+    selector: 'app-contact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.scss'],
+    imports: [
+        CommonModule,
+        FilterErrorPipe,
+        ReactiveFormsModule,
+        RecaptchaModule,
+        ScrollDetectDirective,
+        TranslateModule
+    ]
 })
 export class ContactComponent extends ThemeComponent implements OnInit {
 

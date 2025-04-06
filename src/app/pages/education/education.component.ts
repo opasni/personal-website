@@ -7,15 +7,14 @@ import { ThemeComponent } from '@lib/abstracts/theme.component';
 import { Lookup } from '@lib/classes/lookup.class';
 
 @Component({
-  selector: 'app-education',
-  templateUrl: './education.component.html',
-  styleUrls: ['./education.component.scss'],
-  standalone: true,
-  imports: [
-    CommonModule,
-    TranslateModule,
-    ScrollDetectDirective
-  ]
+    selector: 'app-education',
+    templateUrl: './education.component.html',
+    styleUrls: ['./education.component.scss'],
+    imports: [
+        CommonModule,
+        TranslateModule,
+        ScrollDetectDirective
+    ]
 })
 export class EducationComponent extends ThemeComponent {
 

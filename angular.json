@@ -35,14 +35,12 @@
                             "src/sitemap.xml"
                         ],
                         "styles": [
-                            "node_modules/bootstrap/scss/bootstrap.scss",
                             "node_modules/bootstrap-icons/font/bootstrap-icons.css",
                             "node_modules/bootstrap-print-css/css/bootstrap-print.css",
                             "node_modules/paper-css/paper.css",
                             "src/styles/styles.scss"
                         ],
                         "scripts": [
-                          "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
                         ],
                         "browser": "src/main.ts",
                         "stylePreprocessorOptions": {

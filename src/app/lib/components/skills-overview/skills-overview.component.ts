@@ -5,17 +5,16 @@ import { TranslateModule } from '@ngx-translate/core';
 import { SkillsModule } from 'src/app/modules/skills/skills.module';
 
 @Component({
-  standalone: true,
-  selector: 'app-skills-overview',
-  templateUrl: './skills-overview.component.html',
-  styleUrls: ['./skills-overview.component.scss'],
-  providers: [SkillsService],
-  encapsulation: ViewEncapsulation.None,
-  imports: [
-    CommonModule,
-    SkillsModule,
-    TranslateModule,
-  ]
+    selector: 'app-skills-overview',
+    templateUrl: './skills-overview.component.html',
+    styleUrls: ['./skills-overview.component.scss'],
+    providers: [SkillsService],
+    encapsulation: ViewEncapsulation.None,
+    imports: [
+        CommonModule,
+        SkillsModule,
+        TranslateModule,
+    ]
 })
 export class SkillsOverviewComponent implements OnInit {
 
