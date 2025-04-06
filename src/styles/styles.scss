@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'variables';
-@import 'bootstrap-styles';
-@import '~bootstrap-icons/font/bootstrap-icons.css';
-@import 'node_modules/bootstrap/scss/bootstrap';
+@use 'variables';
+@use 'bootstrap-styles';
+@use 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
 
 @font-face {
   font-family: 'Inter';
@@ -31,7 +31,7 @@
 }
 
 .text-primary {
-  color: $primary-color !important;
+  color: variables.$primary-color !important;
 }
 
 .text-standard {
@@ -102,9 +102,9 @@
       white-space: nowrap;
 
       &.active {
-        background: $primary-color;
+        background: variables.$primary-color;
         border-radius: 30px;
-        background-color: $primary-color;
+        background-color: variables.$primary-color;
 
         a {
           color: white;
@@ -120,7 +120,7 @@
       }
 
       &:not(:last-child):not(.date):hover {
-        color: $primary-color;
+        color: variables.$primary-color;
         background-color: var(--light-background);
         border-radius: 30px;
 

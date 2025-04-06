@@ -1,4 +1,4 @@
-@import 'src/styles/variables';
+@use 'src/styles/variables';
 
 .menu-icon {
 	color: var(--pop-color);
@@ -34,7 +34,7 @@
 	}
 }
 
-@media (min-width: $breakpoint-large) {
+@media (min-width: variables.$breakpoint-large) {
 	.sidebar-toggle-button {
 		display: none;
 	}
@@ -44,7 +44,7 @@
 	}
 
 	.sidebar {
-		width: $menu-width !important;
+		width: variables.$menu-width !important;
 		height: 100vh !important;
 		display: block !important;
 		position: sticky !important;
@@ -57,7 +57,7 @@
 	}
 }
 
-@media (max-width: $breakpoint-small) {
+@media (max-width: variables.$breakpoint-small) {
 	.menu-icon {
 		font-size: 1.4em;
 		z-index: 100;

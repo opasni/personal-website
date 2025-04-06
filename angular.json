@@ -15,14 +15,16 @@
             "prefix": "app",
             "architect": {
                 "build": {
-                    "builder": "@angular-devkit/build-angular:browser",
+                    "builder": "@angular-devkit/build-angular:application",
                     "options": {
-                        "outputPath": "dist/website",
+                        "outputPath": {
+                          "base": "dist/website"
+                        },
                         "index": "src/index.html",
-                        "main": "src/main.ts",
                         "polyfills": [
                             "src/zone-flags.ts",
-                            "zone.js"
+                            "zone.js",
+                            "@angular/localize/init"
                         ],
                         "tsConfig": "tsconfig.app.json",
                         "inlineStyleLanguage": "scss",
@@ -33,15 +35,19 @@
                             "src/sitemap.xml"
                         ],
                         "styles": [
-                            "node_modules/bootstrap/scss/bootstrap.scss",
                             "node_modules/bootstrap-icons/font/bootstrap-icons.css",
                             "node_modules/bootstrap-print-css/css/bootstrap-print.css",
                             "node_modules/paper-css/paper.css",
                             "src/styles/styles.scss"
                         ],
                         "scripts": [
-                          "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-                        ]
+                        ],
+                        "browser": "src/main.ts",
+                        "stylePreprocessorOptions": {
+                          "includePaths": [
+                            "."
+                          ]
+                        }
                     },
                     "configurations": {
                         "production": {
@@ -66,9 +72,7 @@
                             "outputHashing": "all"
                         },
                         "development": {
-                            "buildOptimizer": false,
-                            "optimization": false,
-                            "vendorChunk": true,
+                          "optimization": false,
                             "extractLicenses": false,
                             "sourceMap": true,
                             "namedChunks": true
@@ -80,10 +84,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "browserTarget": "website:build:production"
+                          "buildTarget": "website:build:production"
                         },
                         "development": {
-                            "browserTarget": "website:build:development"
+                          "buildTarget": "website:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -91,7 +95,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "website:build"
+                      "buildTarget": "website:build"
                     }
                 },
                 "test": {

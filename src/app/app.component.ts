@@ -4,7 +4,6 @@ import { getLanguage } from './lib/services/language.service';
 import { RouterModule } from '@angular/router';
 
 @Component({
-    standalone: true,
     selector: 'app-root',
     templateUrl: './app.component.html',
     imports: [RouterModule]

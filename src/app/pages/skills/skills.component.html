@@ -1,5 +1,5 @@
 <div appScrollDetect class="container">
-  <ng-container *ngIf="selectedTheme$ | async as theme">
+  @if (selectedTheme$ | async; as theme) {
     <div class="header">
       <h1>
         {{ 'skills.title' | translate }}
@@ -39,5 +39,5 @@
         </div>
       </div>
     </div>
-  </ng-container>
+  }
 </div>

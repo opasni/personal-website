@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable, catchError, finalize, map, of, tap } from 'rxjs';
-import { RecaptchaComponent, RecaptchaModule } from 'ng-recaptcha';
+import { RecaptchaComponent, RecaptchaModule } from 'ng-recaptcha-2';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 import { environment } from 'src/environments/environment';
@@ -22,18 +22,17 @@ class FormGroupAccessor<T> extends FormGroup {
 }
 
 @Component({
-  standalone: true,
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss'],
-  imports: [
-    CommonModule,
-    FilterErrorPipe,
-    ReactiveFormsModule,
-    RecaptchaModule,
-    ScrollDetectDirective,
-    TranslateModule
-  ]
+    selector: 'app-contact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.scss'],
+    imports: [
+        CommonModule,
+        FilterErrorPipe,
+        ReactiveFormsModule,
+        RecaptchaModule,
+        ScrollDetectDirective,
+        TranslateModule
+    ]
 })
 export class ContactComponent extends ThemeComponent implements OnInit {
 
@@ -93,7 +92,7 @@ export class ContactComponent extends ThemeComponent implements OnInit {
   }
 
 
-  resolved(e: string) {
+  resolved(e: string | null) {
     if (!e) {
       return;
     }

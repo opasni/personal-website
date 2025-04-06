@@ -1,5 +1,5 @@
 <div appScrollDetect class="container">
-  <ng-container *ngIf="selectedTheme$ | async as theme">
+  @if (selectedTheme$ | async; as theme) {
     <div class="header">
       <h1>
         {{ 'education.title' | translate }}
@@ -14,10 +14,11 @@
           </h5>
           <h6 class="card-subtitle mb-2 text-muted">{{ 'education.degree.master.title' | translate }}</h6>
           <p class="card-text"><i>2014 - 2017</i></p>
-          <p class="card-text" *ngFor="let par of ('education.degree.master.abstract' | translate)">
-            <span [innerHTML]="par"></span>
-          </p>
-
+          @for (par of ('education.degree.master.abstract' | translate); track par) {
+            <p class="card-text">
+              <span [innerHTML]="par"></span>
+            </p>
+          }
           <div class="accordion accordion-flush" id="masterProgram">
             <!-- MASTER THESIS -->
             <div class="card my-3" [ngClass]="['bg-' + theme]">
@@ -34,9 +35,11 @@
                 data-bs-parent="#masterProgram">
                 <div class="card-body">
                   <h5 class="card-title">{{ 'education.master-thesis.title' | translate }}</h5>
-                  <p class="card-text" *ngFor="let par of ('education.master-thesis.abstract' | translate)">
-                    <span [innerHTML]="par"></span>
-                  </p>
+                  @for (par of ('education.master-thesis.abstract' | translate); track par) {
+                    <p class="card-text">
+                      <span [innerHTML]="par"></span>
+                    </p>
+                  }
                   <a href="/uploads/20171026_master_thesis_final.pdf" target="_blank" rel="noopener noreferrer" aria-label="Master Thesis" class="card-link">
                     {{ 'education.master-thesis.file' | translate}}
                   </a>
@@ -62,9 +65,11 @@
                 aria-labelledby="headingStudentExchange" data-bs-parent="#masterProgram">
                 <div class="card-body">
                   <h5 class="card-title">{{ 'education.student-exchange.title' | translate }}</h5>
-                  <p class="card-text" *ngFor="let par of ('education.student-exchange.abstract' | translate)">
-                    {{ par }}
-                  </p>
+                  @for (par of ('education.student-exchange.abstract' | translate); track par) {
+                    <p class="card-text">
+                      {{ par }}
+                    </p>
+                  }
                 </div>
               </div>
             </div>
@@ -84,9 +89,11 @@
                 aria-labelledby="headingManhattanProject" data-bs-parent="#masterProgram">
                 <div class="card-body">
                   <h5 class="card-title">{{ 'education.manhattan-project.title' | translate }}</h5>
-                  <p class="card-text" *ngFor="let par of ('education.manhattan-project.abstract' | translate)">
-                    {{ par }}
-                  </p>
+                  @for (par of ('education.manhattan-project.abstract' | translate); track par) {
+                    <p class="card-text">
+                      {{ par }}
+                    </p>
+                  }
                   <a href="/uploads/20150327_manhattan_project.pdf" target="_blank" rel="noopener noreferrer" aria-label="Manhattan Project" class="card-link">
                     {{ 'education.manhattan-project.file' | translate}}
                   </a>
@@ -107,10 +114,11 @@
           </h5>
           <h6 class="card-subtitle mb-2 text-muted">{{ 'education.degree.bachelor.title' | translate }}</h6>
           <p class="card-text"><i>2011 - 2014</i></p>
-          <p class="card-text" *ngFor="let par of ('education.degree.bachelor.abstract' | translate)">
-            <span [innerHTML]="par"></span>
-          </p>
-
+          @for (par of ('education.degree.bachelor.abstract' | translate); track par) {
+            <p class="card-text">
+              <span [innerHTML]="par"></span>
+            </p>
+          }
           <div class="accordion accordion-flush" id="bachelorProgram">
             <!-- BACHELOR THESIS -->
             <div class="card my-3" [ngClass]="['bg-' + theme]">
@@ -128,9 +136,11 @@
                 aria-labelledby="headingBachelorThesis" data-bs-parent="#masterProgram">
                 <div class="card-body">
                   <h5 class="card-title">{{ 'education.bachelor-thesis.title' | translate }}</h5>
-                  <p class="card-text" *ngFor="let par of ('education.bachelor-thesis.abstract' | translate)">
-                    {{ par }}
-                  </p>
+                  @for (par of ('education.bachelor-thesis.abstract' | translate); track par) {
+                    <p class="card-text">
+                      {{ par }}
+                    </p>
+                  }
                   <a href="/uploads/20140605_bachelor_thesis_final.pdf" target="_blank" rel="noopener noreferrer" aria-label="Bachelor Thesis" class="card-link">
                     {{ 'education.bachelor-thesis.file' | translate}}
                   </a>
@@ -168,17 +178,20 @@
                 aria-labelledby="headingIskre" data-bs-parent="#masterProgram">
                 <div class="card-body">
                   <h5 class="card-title">{{ 'education.iskre.title' | translate }}</h5>
-                  <p class="card-text" *ngFor="let par of ('education.iskre.abstract' | translate)">
-                    {{ par }}
-                  </p>
-
+                  @for (par of ('education.iskre.abstract' | translate); track par) {
+                    <p class="card-text">
+                      {{ par }}
+                    </p>
+                  }
                   <div class="list-group mt-3">
-                    <a *ngFor="let item of publications" aria-label="Iskre Magazin" target="_blank" class="list-group-item list-group-item-action"
-                      [href]="'/uploads/' + item.id" [ngClass]="'bg-' + theme">
-                      Iskre -
-                      {{ 'education.iskre.issue' | translate }} {{ item.meta.issue }},
-                      {{ 'education.iskre.number' | translate }} {{ item.meta.nr }}
-                    </a>
+                    @for (item of publications; track item) {
+                      <a aria-label="Iskre Magazin" target="_blank" class="list-group-item list-group-item-action"
+                        [href]="'/uploads/' + item.id" [ngClass]="'bg-' + theme">
+                        Iskre -
+                        {{ 'education.iskre.issue' | translate }} {{ item.meta.issue }},
+                        {{ 'education.iskre.number' | translate }} {{ item.meta.nr }}
+                      </a>
+                    }
                   </div>
                 </div>
               </div>
@@ -196,5 +209,5 @@
         </div>
       </div>
     </div>
-  </ng-container>
+  }
 </div>

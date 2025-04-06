@@ -1,4 +1,4 @@
-@import "src/styles/variables";
+@use 'src/styles/variables';
 
 app-skill-measure {
 	margin: 0.2rem 0.7rem !important;
@@ -21,7 +21,7 @@ app-skill-measure {
 .dark-theme {
   app-skill-measure {
 		.circle {
-			background-color: $gray-font;
+			background-color: variables.$gray-font;
 		}
 
 		.filled {

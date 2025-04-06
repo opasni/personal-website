@@ -1,4 +1,4 @@
-@import "src/styles/variables";
+@use 'src/styles/variables';
 
 .gauge-wrapper {
   position: absolute;
@@ -42,7 +42,7 @@
   // axis compensation
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
-  stroke: $primary-color;
+  stroke: variables.$primary-color;
   fill: var(--background-color);
 }
 

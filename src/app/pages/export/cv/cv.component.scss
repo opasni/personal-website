@@ -1,4 +1,4 @@
-@import 'src/styles/variables';
+@use 'src/styles/variables';
 
 $side-width: 14.6rem;
 
@@ -91,7 +91,7 @@ $side-width: 14.6rem;
 
     .side-content {
       .label {
-        border-bottom-color: $primary-color;
+        border-bottom-color: variables.$primary-color;
       }
     }
 
@@ -99,7 +99,7 @@ $side-width: 14.6rem;
 
       .user-header,
       .text {
-        color: $light-gray-font;
+        color: variables.$light-gray-font;
       }
     }
   }
@@ -110,7 +110,7 @@ $side-width: 14.6rem;
     .side-content {
 
       .picture-container {
-        background-color: $primary-color;
+        background-color: variables.$primary-color;
       }
 
       .header-link {
@@ -125,14 +125,14 @@ $side-width: 14.6rem;
     .content {
 
       .text {
-        color: $gray-font;
+        color: variables.$gray-font;
       }
 
       .user-header {
         height: 10.5rem;
         padding-top: 0.75rem;
-        background-color: $primary-color;
-        color: $light-background;
+        background-color: variables.$primary-color;
+        color: variables.$light-background;
       }
     }
   }

@@ -6,10 +6,11 @@ import { LanguageService } from '@lib/services/language.service';
 import { SkillsService } from '@lib/services/skills.service';
 
 @Component({
-  selector: 'app-skill-measure',
-  templateUrl: './skill-measure.component.html',
-  styleUrls: ['./skill-measure.component.scss'],
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-skill-measure',
+    templateUrl: './skill-measure.component.html',
+    styleUrls: ['./skill-measure.component.scss'],
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class SkillMeasureComponent implements OnInit, AfterViewInit {
   @Input() value: number = 0;

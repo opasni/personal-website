@@ -6,11 +6,10 @@ import { GaugePosition } from '@lib/types/gauge-position.type';
 import { GaugeCounterService } from '@lib/services/gauge-counter.service';
 
 @Component({
-  selector: 'app-gauge',
-  templateUrl: './gauge.component.html',
-  styleUrls: ['./gauge.component.scss'],
-  standalone: true,
-  imports: [ CommonModule ]
+    selector: 'app-gauge',
+    templateUrl: './gauge.component.html',
+    styleUrls: ['./gauge.component.scss'],
+    imports: [CommonModule]
 })
 export class GaugeComponent implements OnInit, AfterViewInit {
 
