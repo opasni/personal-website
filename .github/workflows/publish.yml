@@ -31,4 +31,6 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync dist/website/ s3://${{ vars.S3_BUCKET_NAME }} --delete
+          aws s3 sync dist/website/browser/ s3://${{ vars.S3_BUCKET_NAME }} \
+            --exclude "uploads/*" \
+            --delete
