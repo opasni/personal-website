@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 import { LoaderService } from '@lib/services/loader.service';
 
@@ -6,7 +6,7 @@ import { LoaderService } from '@lib/services/loader.service';
 @Component({
 	selector: 'app-loading-spinner',
 	standalone: true,
-	imports: [CommonModule],
+	imports: [],
 	styleUrls: ['./loading-spinner.component.scss'],
 	templateUrl: './loading-spinner.component.html',
 })

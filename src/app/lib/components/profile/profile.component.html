@@ -12,47 +12,53 @@
 
   <!-- LANGUAGE SWITCHING -->
 
-  <li class="nav-item" *ngIf="selectedLanguage$ | async as selectedLanguage">
-    <a role="button" class="nav-link pe-auto" (click)="changeLanguage(selectedLanguage.id)" aria-label="Change language">
-      <img class="settings-icon language" [src]="selectedLanguage.meta" [alt]="selectedLanguage.name + ' flag'" />
-      {{ 'header.switch-language' | translate }}
-    </a>
-  </li>
+  @if (selectedLanguage$ | async; as selectedLanguage) {
+    <li class="nav-item">
+      <a role="button" class="nav-link pe-auto" (click)="changeLanguage(selectedLanguage.id)" aria-label="Change language">
+        <img class="settings-icon language" [src]="selectedLanguage.meta" [alt]="selectedLanguage.name + ' flag'" />
+        {{ 'header.switch-language' | translate }}
+      </a>
+    </li>
+  }
   <!-- THEME SWITCHING -->
 
-  <li class="nav-item" *ngIf="selectedTheme$ | async as selectedTheme">
-    <a role="button" class="nav-link pe-auto" (click)="toggleTheme(selectedTheme.id)" aria-label="Change theme">
-      <div class="settings-icon theme" [style.backgroundColor]="selectedTheme.meta"></div>
-      {{ selectedTheme.name | translate }}
-    </a>
-  </li>
+  @if (selectedTheme$ | async; as selectedTheme) {
+    <li class="nav-item">
+      <a role="button" class="nav-link pe-auto" (click)="toggleTheme(selectedTheme.id)" aria-label="Change theme">
+        <div class="settings-icon theme" [style.backgroundColor]="selectedTheme.meta"></div>
+        {{ selectedTheme.name | translate }}
+      </a>
+    </li>
+  }
 </ul>
 <!-- USER INFO -->
-<div id="profile" *ngIf="userData$ | async as userData" class="profile d-flex border border-secondary rounded p-2 mt-3 nav-link">
-  <div class="profile-image-container me-3">
-    <img appHoverImage="assets/images/profile_image_hover.jpeg" class="rounded"
-      src="assets/images/profile_image.jpg" [alt]="'accessibility.images.profile' | translate" />
-  </div>
-  <div class="w-100">
-    <div>
-      <h4 class="text-standard"><span class="static">{{ userData.firstName }} {{ userData.lastName }}</span><span class="dynamic">{{ userData.nickName }}</span></h4>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/crtharej" aria-label="Got to my LinkedIn Profile" target="_blank" rel="noopener noreferrer">
-          <div class="social-icon">
-            <i class="bi bi-linkedin"></i>
+@if (userData$ | async; as userData) {
+  <div id="profile" class="profile d-flex border border-secondary rounded p-2 mt-3 nav-link">
+    <div class="profile-image-container me-3">
+      <img appHoverImage="assets/images/profile_image_hover.jpeg" class="rounded"
+        src="assets/images/profile_image.jpg" [alt]="'accessibility.images.profile' | translate" />
+      </div>
+      <div class="w-100">
+        <div>
+          <h4 class="text-standard"><span class="static">{{ userData.firstName }} {{ userData.lastName }}</span><span class="dynamic">{{ userData.nickName }}</span></h4>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/crtharej" aria-label="Got to my LinkedIn Profile" target="_blank" rel="noopener noreferrer">
+              <div class="social-icon">
+                <i class="bi bi-linkedin"></i>
+              </div>
+            </a>
+            <a href="https://github.com/opasni" aria-label="Got to my Github Profile" target="_blank" rel="noopener noreferrer">
+              <div class="social-icon social-icon-color">
+                <i class="bi bi-github"></i>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/crtharej" aria-label="Got to my Instagram Profile" target="_blank" rel="noopener noreferrer">
+              <div class="social-icon">
+                <i class="bi bi-instagram"></i>
+              </div>
+            </a>
           </div>
-        </a>
-        <a href="https://github.com/opasni" aria-label="Got to my Github Profile" target="_blank" rel="noopener noreferrer">
-          <div class="social-icon social-icon-color">
-            <i class="bi bi-github"></i>
-          </div>
-        </a>
-        <a href="https://www.instagram.com/crtharej" aria-label="Got to my Instagram Profile" target="_blank" rel="noopener noreferrer">
-          <div class="social-icon">
-            <i class="bi bi-instagram"></i>
-          </div>
-        </a>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  }

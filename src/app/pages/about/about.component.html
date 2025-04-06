@@ -1,26 +1,28 @@
 <div appScrollDetect class="container">
-  <ng-container *ngIf="selectedTheme$ | async as theme">
+  @if (selectedTheme$ | async; as theme) {
     <div class="header">
       <div class="greeting d-flex">
         <div class="d-block">
           <img class="rounded" src="assets/images/profile_image.jpg"
             [alt]="'accessibility.images.profile' | translate" />
+          </div>
+          <h1>
+            {{ 'about.hi-there' | translate }}
+          </h1>
         </div>
         <h1>
-          {{ 'about.hi-there' | translate }}
+          {{ 'about.title' | translate }}
         </h1>
+        <h2>
+          {{ 'about.subtitle' | translate }}
+        </h2>
       </div>
-      <h1>
-        {{ 'about.title' | translate }}
-      </h1>
-      <h2>
-        {{ 'about.subtitle' | translate }}
-      </h2>
-    </div>
-    <div class="body">
-      <p *ngFor="let par of ('about.text' | translate)">
-        <span [innerHTML]="par"></span>
-      </p>
-    </div>
-  </ng-container>
-</div>
+      <div class="body">
+        @for (par of ('about.text' | translate); track par) {
+          <p>
+            <span [innerHTML]="par"></span>
+          </p>
+        }
+      </div>
+    }
+  </div>
