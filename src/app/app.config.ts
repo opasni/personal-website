@@ -1,7 +1,7 @@
 import { APP_INITIALIZER, ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { provideRouter, withComponentInputBinding, withInMemoryScrolling } from '@angular/router';
 import { routes } from './app.routes';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -22,12 +22,12 @@ export const appConfig: ApplicationConfig = {
 				withComponentInputBinding(),
 				withInMemoryScrolling({ scrollPositionRestoration: 'top', anchorScrolling: 'enabled' }),
 		),
+		provideHttpClient(),
 		{ provide: APP_INITIALIZER, deps: [LanguageService], useFactory: initConfig, multi: true },
 		LOCALE_PROVIDER,
 		importProvidersFrom(
 			BrowserAnimationsModule,
 			NgbModule,
-			HttpClientModule,
 			TranslateModule.forRoot({
 					loader: {
 							provide: TranslateLoader,

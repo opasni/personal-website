@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable, catchError, finalize, map, of, tap } from 'rxjs';
-import { RecaptchaComponent, RecaptchaModule } from 'ng-recaptcha';
+import { RecaptchaComponent, RecaptchaModule } from 'ng-recaptcha-2';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 import { environment } from 'src/environments/environment';
