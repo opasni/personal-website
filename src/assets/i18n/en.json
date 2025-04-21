@@ -215,21 +215,14 @@
                     "abstract": [
                         "The reporting tool allows for tracking and reporting the development progress of components. It consists of the areas of New Part Tracking, Aggregate Wiring, and Package. Teams can better track progress, identify bottlenecks, and improve communication."
                     ],
-                    "skills": [
-                        "Technical Lead",
-                        "Requirements engineering",
-                        "Software Development"
-                    ]
+                    "skills": ["Technical Lead", "Requirements engineering", "Software Development"]
                 },
                 "fapos": {
                     "title": "FAPOS @ AUDI",
                     "abstract": [
                         "A tool that facilitates the booking of new cars for testing by partner car shops of Audi. The tool incorporated GRP single sign-on and provided a comprehensive workflow, including admin confirmations and email notifications."
                     ],
-                    "skills": [
-                        "Requirements engineering",
-                        "Software Development"
-                    ]
+                    "skills": ["Requirements engineering", "Software Development"]
                 }
             },
             "trainings": {

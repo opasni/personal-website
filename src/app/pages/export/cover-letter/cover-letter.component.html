@@ -1,29 +1,32 @@
 <div #sheet class="sheet d-flex wrapper">
-  <div class="letter">
-    <header class="letter-header">
-      <p>{{ userData.firstName }} {{ userData.lastName }}</p>
-      <p>{{ userData.street }}</p>
-      <p>{{ userData.city }}</p>
-      <p>{{ userData.email }}</p>
-      <p>{{ userData.phone }}</p>
-    </header>
-    <section class="details">
-      <p>{{ date | date }}</p>
-      <p>{{ coverLetter.recipient.title }} {{ coverLetter.recipient.firstName }} {{ coverLetter.recipient.lastName }}</p>
-      <p>{{ coverLetter.recipient.nickName }}</p>
-      <p>{{ coverLetter.recipient.street }}</p>
-      <p>{{ coverLetter.recipient.city }}</p>
-    </section>
+    <div class="letter">
+        <header class="letter-header">
+            <p>{{ userData.firstName }} {{ userData.lastName }}</p>
+            <p>{{ userData.street }}</p>
+            <p>{{ userData.city }}</p>
+            <p>{{ userData.email }}</p>
+            <p>{{ userData.phone }}</p>
+        </header>
+        <section class="details">
+            <p>{{ date | date }}</p>
+            <p>
+                {{ coverLetter.recipient.title }} {{ coverLetter.recipient.firstName }}
+                {{ coverLetter.recipient.lastName }}
+            </p>
+            <p>{{ coverLetter.recipient.nickName }}</p>
+            <p>{{ coverLetter.recipient.street }}</p>
+            <p>{{ coverLetter.recipient.city }}</p>
+        </section>
 
-    <section class="content">
-      @for (line of coverLetter.content; track line) {
-        <p>{{ line }}</p>
-      }
-    </section>
-    <section class="signature">
-      <p>{{ coverLetter.regards }}</p>
+        <section class="content">
+            @for (line of coverLetter.content; track line) {
+                <p>{{ line }}</p>
+            }
+        </section>
+        <section class="signature">
+            <p>{{ coverLetter.regards }}</p>
 
-      <p>{{ userData.firstName }} {{ userData.lastName }}</p>
-    </section>
-  </div>
+            <p>{{ userData.firstName }} {{ userData.lastName }}</p>
+        </section>
+    </div>
 </div>

@@ -1,29 +1,29 @@
 @use 'src/styles/variables';
 
 app-skill-measure {
-  margin: 0.5rem 0.7rem 0.2rem;
-  align-self: flex-end;
+    margin: 0.5rem 0.7rem 0.2rem;
+    align-self: flex-end;
 
-  .measure-name {
-    word-wrap: break-word;
-    hyphens: auto;
-  }
-
-  .circles {
-    display: flex;
-    flex-wrap: wrap;
-
-    .circle {
-      width: 0.5rem;
-      height: 1.2rem;
-      margin-right: 5px;
-      border-radius: 8px;
-      background-color: var(--font-color);
-      position: relative;
+    .measure-name {
+        word-wrap: break-word;
+        hyphens: auto;
     }
 
-    .filled {
-      background-color: variables.$primary-color;
+    .circles {
+        display: flex;
+        flex-wrap: wrap;
+
+        .circle {
+            width: 0.5rem;
+            height: 1.2rem;
+            margin-right: 5px;
+            border-radius: 8px;
+            background-color: var(--font-color);
+            position: relative;
+        }
+
+        .filled {
+            background-color: variables.$primary-color;
+        }
     }
-  }
 }

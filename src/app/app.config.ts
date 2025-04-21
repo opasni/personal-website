@@ -9,35 +9,33 @@ import { LOCALE_PROVIDER, LanguageService } from '@lib/services/language.service
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
-	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
-export function initConfig(configService: LanguageService) {
-	return () => configService.initialize();
+export function initConfig(configService: LanguageService): ()=> Promise<void> {
+    return () => configService.initialize();
 }
 
 export const appConfig: ApplicationConfig = {
-	providers: [
-		provideRouter(
-			routes,
-			withComponentInputBinding(),
-			withInMemoryScrolling({ scrollPositionRestoration: 'top', anchorScrolling: 'enabled' }),
-		),
-		provideAnimations(),
-		provideHttpClient(),
-		provideTranslateService({
-			loader: {
-				provide: TranslateLoader,
-				useFactory: (createTranslateLoader),
-				deps: [HttpClient]
-			}
-		}),
-		provideAppInitializer(() => {
-			const initializerFn = (initConfig)(inject(LanguageService));
-			return initializerFn();
-		}),
-		LOCALE_PROVIDER,
-		importProvidersFrom(
-			NgbModule,
-		),
-	]
+    providers: [
+        provideRouter(
+            routes,
+            withComponentInputBinding(),
+            withInMemoryScrolling({ scrollPositionRestoration: 'top', anchorScrolling: 'enabled' }),
+        ),
+        provideAnimations(),
+        provideHttpClient(),
+        provideTranslateService({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: createTranslateLoader,
+                deps: [HttpClient],
+            },
+        }),
+        provideAppInitializer(() => {
+            const initializerFn = initConfig(inject(LanguageService));
+            return initializerFn();
+        }),
+        LOCALE_PROVIDER,
+        importProvidersFrom(NgbModule),
+    ],
 };

@@ -5,8 +5,5 @@ import { SectionComponent } from '@lib/abstracts/section.component';
     selector: 'app-languages',
     templateUrl: './languages.component.html',
     styleUrls: ['./languages.component.scss'],
-    standalone: false
 })
-export class LanguagesComponent extends SectionComponent {
-
-}
+export class LanguagesComponent extends SectionComponent {}

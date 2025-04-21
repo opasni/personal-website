@@ -10,18 +10,12 @@ import { SkillsModule } from 'src/app/modules/skills/skills.module';
     styleUrls: ['./skills-overview.component.scss'],
     providers: [SkillsService],
     encapsulation: ViewEncapsulation.None,
-    imports: [
-        CommonModule,
-        SkillsModule,
-        TranslateModule,
-    ]
+    imports: [CommonModule, SkillsModule, TranslateModule],
 })
 export class SkillsOverviewComponent implements OnInit {
+    private skills = inject(SkillsService);
 
-  private skills = inject(SkillsService);
-
-  ngOnInit(): void {
-    this.skills.minified = true;
-  }
-
+    ngOnInit(): void {
+        this.skills.minified = true;
+    }
 }

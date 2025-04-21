@@ -10,26 +10,15 @@ import { HobbiesComponent } from './components/hobbies/hobbies.component';
 import { LanguagesComponent } from './components/languages/languages.component';
 import { ScrollDetectDirective } from '@lib/directives/scroll-detect/scroll-detect.directive';
 
-
 @NgModule({
-  declarations: [
-    SkillMeasureComponent,
-    HardSkillsComponent,
-    SoftSkillsComponent,
-    HobbiesComponent,
-    LanguagesComponent
-  ],
-  imports: [
-    CommonModule,
-    FormsModule,
-    TranslateModule,
-    ScrollDetectDirective
-  ],
-  exports: [
-    HardSkillsComponent,
-    SoftSkillsComponent,
-    HobbiesComponent,
-    LanguagesComponent
-  ]
+    declarations: [
+        SkillMeasureComponent,
+        HardSkillsComponent,
+        SoftSkillsComponent,
+        HobbiesComponent,
+        LanguagesComponent,
+    ],
+    imports: [CommonModule, FormsModule, TranslateModule, ScrollDetectDirective],
+    exports: [HardSkillsComponent, SoftSkillsComponent, HobbiesComponent, LanguagesComponent],
 })
-export class SkillsModule { }
+export class SkillsModule {}

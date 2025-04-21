@@ -10,18 +10,13 @@ import { ScrollDetectDirective } from '@lib/directives/scroll-detect/scroll-dete
     selector: 'app-skills',
     templateUrl: './skills.component.html',
     styleUrls: ['./skills.component.scss'],
-    imports: [
-        CommonModule,
-        SkillsModule,
-        TranslateModule,
-        ScrollDetectDirective
-    ],
-    providers: [SkillsService]
+    imports: [CommonModule, SkillsModule, TranslateModule, ScrollDetectDirective],
+    providers: [SkillsService],
 })
 export class SkillsComponent extends ThemeComponent implements OnInit {
-  private skills = inject(SkillsService);
+    private skills = inject(SkillsService);
 
-  ngOnInit(): void {
-    this.skills.minified = false;
-  }
+    ngOnInit(): void {
+        this.skills.minified = false;
+    }
 }

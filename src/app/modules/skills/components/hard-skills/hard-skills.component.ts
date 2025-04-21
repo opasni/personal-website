@@ -5,8 +5,5 @@ import { SectionComponent } from '@lib/abstracts/section.component';
     selector: 'app-hard-skills',
     templateUrl: './hard-skills.component.html',
     styleUrls: ['./hard-skills.component.scss'],
-    standalone: false
 })
-export class HardSkillsComponent extends SectionComponent {
-
-}
+export class HardSkillsComponent extends SectionComponent {}

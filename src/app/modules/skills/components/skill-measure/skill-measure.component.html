@@ -1,10 +1,10 @@
 <div [lang]="selectedLanguage$ | async" class="measure-name">{{ name }}</div>
 <div class="circles">
-  @for (circle of circles; track circle) {
-    <div
-      class="circle"
-      [ngStyle]="{ 'transition': 'background-color .4s ease ' + circle.index * .2 + 's'}"
-      [class.filled]="circle.filled">
-    </div>
-  }
+    @for (circle of circles; track circle) {
+        <div
+            class="circle"
+            [ngStyle]="{ transition: 'background-color .4s ease ' + circle.index * 0.2 + 's' }"
+            [class.filled]="circle.filled"
+        ></div>
+    }
 </div>

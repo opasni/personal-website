@@ -23,44 +23,38 @@ import { HoverImageDirective } from '@lib/directives/hover-image/hover-image.dir
     selector: 'app-profile',
     templateUrl: './profile.component.html',
     styleUrls: ['./profile.component.scss'],
-    imports: [
-        CommonModule,
-        HoverImageDirective,
-        RouterModule,
-        TranslateModule,
-    ]
+    imports: [CommonModule, HoverImageDirective, RouterModule, TranslateModule],
 })
 export class ProfileComponent implements OnInit {
+    public selectedLanguage$ = new Observable<Lookup>();
+    public selectedTheme$ = new Observable<Lookup>();
+    public userData$ = new Observable<User>();
+    public date = new Date();
 
-  public selectedLanguage$ = new Observable<Lookup>();
-  public selectedTheme$ = new Observable<Lookup>();
-  public userData$ = new Observable<User>();
-  public date = new Date();
+    private _supportedLanguages = Object.keys(SUPPORTED_LANGUAGES);
+    private _supportedThemes = Object.keys(SUPPORTED_THEMES);
 
-  private _supportedLanguages = Object.keys(SUPPORTED_LANGUAGES);
-  private _supportedThemes = Object.keys(SUPPORTED_THEMES);
+    private userService = inject(UserApiService);
+    private languageService = inject(LanguageService);
+    private themeService = inject(ThemeService);
 
-  private userService = inject(UserApiService);
-  private languageService = inject(LanguageService);
-  private themeService = inject(ThemeService);
+    ngOnInit(): void {
+        this.selectedLanguage$ = this.languageService
+            .getSelectedLanguage()
+            .pipe(map((lang) => SUPPORTED_LANGUAGES[lang]));
+        this.selectedTheme$ = this.themeService.selectedTheme.pipe(map((theme) => SUPPORTED_THEMES[theme]));
+        this.userData$ = this.userService.getUserData(null);
+    }
 
-  ngOnInit(): void {
-    this.selectedLanguage$ = this.languageService.getSelectedLanguage()
-      .pipe(map(lang => SUPPORTED_LANGUAGES[lang]));
-    this.selectedTheme$ = this.themeService.selectedTheme
-      .pipe(map(theme => SUPPORTED_THEMES[theme]));
-      this.userData$ = this.userService.getUserData(null);
-  }
+    changeLanguage(language: string): void {
+        const index = this._supportedLanguages.findIndex((i) => i === language) + 1;
+        const next = this._supportedLanguages[index % this._supportedLanguages.length];
+        this.languageService.setSelectedLanguage(next as Language);
+    }
 
-  changeLanguage(language: string) {
-    const index = this._supportedLanguages.findIndex(i => i === language) + 1;
-    const next = this._supportedLanguages[index % this._supportedLanguages.length];
-    this.languageService.setSelectedLanguage(next as Language);
-  }
-
-  toggleTheme(theme: string) {
-    const index = this._supportedThemes.findIndex(i => i === theme) + 1;
-    const next = this._supportedThemes[index % this._supportedThemes.length];
-    this.themeService.setTheme(next as Theme);
-  }
+    toggleTheme(theme: string): void {
+        const index = this._supportedThemes.findIndex((i) => i === theme) + 1;
+        const next = this._supportedThemes[index % this._supportedThemes.length];
+        this.themeService.setTheme(next as Theme);
+    }
 }

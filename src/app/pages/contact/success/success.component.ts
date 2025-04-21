@@ -7,11 +7,6 @@ import { TranslateModule } from '@ngx-translate/core';
     selector: 'app-success',
     templateUrl: './success.component.html',
     styleUrls: ['./success.component.scss'],
-    imports: [
-        CommonModule,
-        TranslateModule
-    ]
+    imports: [CommonModule, TranslateModule],
 })
-export class SuccessComponent extends ThemeComponent {
-
-}
+export class SuccessComponent extends ThemeComponent {}

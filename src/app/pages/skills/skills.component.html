@@ -1,43 +1,43 @@
 <div appScrollDetect class="container">
-  @if (selectedTheme$ | async; as theme) {
-    <div class="header">
-      <h1>
-        {{ 'skills.title' | translate }}
-      </h1>
-    </div>
-    <div class="body">
-      <h3 class="card-title">
-        {{ 'skills.hard-skills.title' | translate }}
-      </h3>
-      <div class="card my-3" [ngClass]="['bg-' + theme]">
-        <div class="card-body">
-          <app-hard-skills></app-hard-skills>
+    @if (selectedTheme$ | async; as theme) {
+        <div class="header">
+            <h1>
+                {{ 'skills.title' | translate }}
+            </h1>
         </div>
-      </div>
-      <h3 class="card-title">
-        {{ 'skills.soft-skills.title' | translate }}
-      </h3>
-      <div class="card my-3" [ngClass]="['bg-' + theme]">
-        <div class="card-body">
-          <app-soft-skills></app-soft-skills>
+        <div class="body">
+            <h3 class="card-title">
+                {{ 'skills.hard-skills.title' | translate }}
+            </h3>
+            <div class="card my-3" [ngClass]="['bg-' + theme]">
+                <div class="card-body">
+                    <app-hard-skills></app-hard-skills>
+                </div>
+            </div>
+            <h3 class="card-title">
+                {{ 'skills.soft-skills.title' | translate }}
+            </h3>
+            <div class="card my-3" [ngClass]="['bg-' + theme]">
+                <div class="card-body">
+                    <app-soft-skills></app-soft-skills>
+                </div>
+            </div>
+            <h3 class="card-title">
+                {{ 'skills.languages.title' | translate }}
+            </h3>
+            <div class="card my-3" [ngClass]="['bg-' + theme]">
+                <div class="card-body">
+                    <app-languages></app-languages>
+                </div>
+            </div>
+            <h3 class="card-title">
+                {{ 'skills.hobbies.title' | translate }}
+            </h3>
+            <div class="card my-3" [ngClass]="['bg-' + theme]">
+                <div class="card-body">
+                    <app-hobbies></app-hobbies>
+                </div>
+            </div>
         </div>
-      </div>
-      <h3 class="card-title">
-        {{ 'skills.languages.title' | translate }}
-      </h3>
-      <div class="card my-3" [ngClass]="['bg-' + theme]">
-        <div class="card-body">
-          <app-languages></app-languages>
-        </div>
-      </div>
-      <h3 class="card-title">
-        {{ 'skills.hobbies.title' | translate }}
-      </h3>
-      <div class="card my-3" [ngClass]="['bg-' + theme]">
-        <div class="card-body">
-          <app-hobbies></app-hobbies>
-        </div>
-      </div>
-    </div>
-  }
+    }
 </div>

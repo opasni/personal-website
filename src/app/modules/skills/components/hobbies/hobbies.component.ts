@@ -4,8 +4,5 @@ import { Component } from '@angular/core';
     selector: 'app-hobbies',
     templateUrl: './hobbies.component.html',
     styleUrls: ['./hobbies.component.scss'],
-    standalone: false
 })
-export class HobbiesComponent {
-
-}
+export class HobbiesComponent {}

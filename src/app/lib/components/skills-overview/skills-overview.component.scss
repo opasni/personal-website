@@ -1,31 +1,31 @@
 @use 'src/styles/variables';
 
 app-skill-measure {
-	margin: 0.2rem 0.7rem !important;
-	.measure-name {
-		text-align: right;
-		font-size: .7rem;
-		font-weight: 500;
-	}
+    margin: 0.2rem 0.7rem !important;
+    .measure-name {
+        text-align: right;
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
 
-	.circles {
-		justify-content: right;
+    .circles {
+        justify-content: right;
 
-		.circle {
-			width: 0.3rem !important;
-			height: .8rem !important;
-		}
-	}
+        .circle {
+            width: 0.3rem !important;
+            height: 0.8rem !important;
+        }
+    }
 }
 
 .dark-theme {
-  app-skill-measure {
-		.circle {
-			background-color: variables.$gray-font;
-		}
+    app-skill-measure {
+        .circle {
+            background-color: variables.$gray-font;
+        }
 
-		.filled {
-			background-color: var(--pop-color);
-		}
-  }
+        .filled {
+            background-color: var(--pop-color);
+        }
+    }
 }

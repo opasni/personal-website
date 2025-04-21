@@ -5,8 +5,5 @@ import { SectionComponent } from '@lib/abstracts/section.component';
     selector: 'app-soft-skills',
     templateUrl: './soft-skills.component.html',
     styleUrls: ['./soft-skills.component.scss'],
-    standalone: false
 })
-export class SoftSkillsComponent extends SectionComponent {
-
-}
+export class SoftSkillsComponent extends SectionComponent {}

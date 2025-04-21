@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    imports: [RouterModule]
+    imports: [RouterModule],
 })
 export class AppComponent implements OnInit {
     title = 'Črt Harej';
