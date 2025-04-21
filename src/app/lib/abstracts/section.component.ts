@@ -2,7 +2,6 @@ import { Component, ElementRef, Input, QueryList, ViewChildren } from '@angular/
 
 @Component({
     template: '',
-    standalone: true,
 })
 export abstract class SectionComponent {
     @ViewChildren('.skills-section') sections!: QueryList<ElementRef>;

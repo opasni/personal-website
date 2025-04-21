@@ -7,33 +7,33 @@ import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 export class HoverImageDirective {
     @Input() appHoverImage: string | undefined;
 
-    private readonly element: HTMLImageElement;
-    private readonly staticSrc: string = '';
+    private readonly _element: HTMLImageElement;
+    private readonly _staticSrc: string = '';
 
     constructor(el: ElementRef) {
-        this.element = el.nativeElement;
-        if (this.element) {
-            this.staticSrc = this.element.src;
+        this._element = el.nativeElement;
+        if (this._element) {
+            this._staticSrc = this._element.src;
         }
     }
 
     @HostListener('mouseover') onIn(): void {
         if (this.appHoverImage) {
-            this.toggleCoverImage(true);
+            this._toggleCoverImage(true);
         }
     }
     @HostListener('mouseout') onOut(): void {
         if (this.appHoverImage) {
-            this.toggleCoverImage(false);
+            this._toggleCoverImage(false);
         }
     }
 
-    private toggleCoverImage(on: boolean): void {
+    private _toggleCoverImage(on: boolean): void {
         if (on) {
-            this.element.src = this.appHoverImage ?? this.staticSrc;
+            this._element.src = this.appHoverImage ?? this._staticSrc;
             document.getElementById('profile')?.classList.add('activated');
         } else {
-            this.element.src = this.staticSrc;
+            this._element.src = this._staticSrc;
             document.getElementById('profile')?.classList.remove('activated');
         }
     }

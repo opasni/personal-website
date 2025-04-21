@@ -55,13 +55,13 @@ export class ContactComponent extends ThemeComponent implements OnInit {
     public verify = false;
     public fail = false;
 
-    private contactService = inject(EmailService);
-    private translateService = inject(TranslateService);
-    private router = inject(Router);
-    private route = inject(ActivatedRoute);
+    private _contactService = inject(EmailService);
+    private _translateService = inject(TranslateService);
+    private _router = inject(Router);
+    private _route = inject(ActivatedRoute);
 
     ngOnInit(): void {
-        this.emailForm.getControl('languageId').setValue(this.translateService.currentLang);
+        this.emailForm.getControl('languageId').setValue(this._translateService.currentLang);
     }
 
     onSubmit(): void {
@@ -83,9 +83,9 @@ export class ContactComponent extends ThemeComponent implements OnInit {
         contactData.recaptcha = e;
 
         await firstValueFrom(
-            this.contactService.sendEmail(contactData).pipe(
+            this._contactService.sendEmail(contactData).pipe(
                 tap(() => {
-                    this.router.navigate(['success'], { relativeTo: this.route });
+                    this._router.navigate(['success'], { relativeTo: this._route });
                 }),
                 catchError(() => {
                     this.fail = true;

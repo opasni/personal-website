@@ -11,7 +11,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
-export function initConfig(configService: LanguageService): ()=> Promise<void> {
+export function initConfig(configService: LanguageService): () => Promise<void> {
     return () => configService.initialize();
 }
 

@@ -18,21 +18,21 @@ export class PageBackboneComponent extends ThemeComponent implements OnInit {
     public menuWidth = 280;
     public paddingLeft = 3;
 
-    private contexts = inject(ChildrenOutletContexts);
+    private _contexts = inject(ChildrenOutletContexts);
 
     @HostListener('window:resize', ['$event'])
     onResize(): void {
-        this.setParams();
+        this._setParams();
     }
 
     ngOnInit(): void {
-        this.setParams();
+        this._setParams();
         document.body.style.overflowY = 'hidden';
     }
 
     getRouteAnimation(): { value: string; params: { menuWidth: number; paddingLeft: number } } {
         return {
-            value: this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'],
+            value: this._contexts.getContext('primary')?.route?.snapshot?.data?.['animation'],
             params: {
                 menuWidth: this.menuWidth,
                 paddingLeft: this.paddingLeft,
@@ -40,7 +40,7 @@ export class PageBackboneComponent extends ThemeComponent implements OnInit {
         };
     }
 
-    private setParams() {
+    private _setParams() {
         if (window.innerWidth < 576) {
             this.menuWidth = 0;
             this.paddingLeft = 0;

@@ -24,41 +24,41 @@ export class ExportBackboneComponent implements OnInit {
     public lang!: Language;
     public backgroundColor = '#727272';
 
-    private languageService = inject(LanguageService);
-    private loaderService = inject(LoaderService);
-    private printService = inject(PrintService);
-    private route = inject(ActivatedRoute);
-    private themeService = inject(ThemeService);
+    private _languageService = inject(LanguageService);
+    private _loaderService = inject(LoaderService);
+    private _printService = inject(PrintService);
+    private _route = inject(ActivatedRoute);
+    private _themeService = inject(ThemeService);
 
     ngOnInit(): void {
-        this.checkTheme();
-        this.checkLanguage();
+        this._checkTheme();
+        this._checkLanguage();
 
         document.body.style.overflowY = 'scroll';
         document.body.style.backgroundColor = this.backgroundColor;
     }
 
     public async downloadAsPDF(): Promise<void> {
-        this.loaderService.setLoading(true);
-        await this.printService.printPdf();
-        this.loaderService.setLoading(false);
+        this._loaderService.setLoading(true);
+        await this._printService.printPdf();
+        this._loaderService.setLoading(false);
     }
 
-    private checkTheme() {
+    private _checkTheme() {
         this.theme = getTheme() ?? Theme.Light;
-        const localTheme = this.route.snapshot.queryParamMap.get('theme') as Theme;
+        const localTheme = this._route.snapshot.queryParamMap.get('theme') as Theme;
         if (localTheme && this.theme !== localTheme) {
             this.theme = localTheme;
         }
-        this.themeService.setTheme(this.theme);
+        this._themeService.setTheme(this.theme);
     }
 
-    private checkLanguage() {
+    private _checkLanguage() {
         this.lang = getLanguage() ?? Language.EN;
-        const localLang = this.route.snapshot.queryParamMap.get('lang') as Language;
+        const localLang = this._route.snapshot.queryParamMap.get('lang') as Language;
         if (localLang && this.lang !== localLang) {
             this.lang = localLang;
-            this.languageService.setSelectedLanguage(localLang);
+            this._languageService.setSelectedLanguage(localLang);
         }
     }
 }

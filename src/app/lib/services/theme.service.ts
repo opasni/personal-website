@@ -22,16 +22,16 @@ export class ThemeService {
     public readonly selectedTheme = new BehaviorSubject<Theme>(getTheme());
 
     constructor() {
-        this.setBodyColor(getTheme());
+        this._setBodyColor(getTheme());
     }
 
     setTheme(theme: Theme): void {
         this.selectedTheme.next(theme);
-        this.setBodyColor(theme);
+        this._setBodyColor(theme);
         localStorage.setItem(StorageKeys.SELECTED_THEME, theme);
     }
 
-    private setBodyColor(theme: Theme) {
+    private _setBodyColor(theme: Theme) {
         if (theme === Theme.Dark) {
             document.body.style.backgroundColor = '#1C1D22';
         } else {

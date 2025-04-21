@@ -39,7 +39,7 @@ export class LanguageService {
 
     async initialize(): Promise<void> {
         const language = getLanguage();
-        await this.registerLocale(language);
+        await this._registerLocale(language);
     }
 
     getSelectedLanguage(): Observable<Language> {
@@ -51,20 +51,20 @@ export class LanguageService {
         this._translate
             .use(language)
             .pipe(
-                switchMap(() => from(this.setLocale(language as Language))),
+                switchMap(() => from(this._setLocale(language as Language))),
                 takeUntilDestroyed(this._destroyRef),
             )
             .subscribe();
     }
 
-    private async setLocale(language: Language): Promise<void> {
+    private async _setLocale(language: Language): Promise<void> {
         localStorage.removeItem(StorageKeys.SELECTED_LANGUAGE);
         localStorage.setItem(StorageKeys.SELECTED_LANGUAGE, language);
-        await this.registerLocale(language);
+        await this._registerLocale(language);
         await this._refreshApplicationLocaleId();
     }
 
-    private async registerLocale(language: Language) {
+    private async _registerLocale(language: Language) {
         switch (language) {
             case Language.SI: {
                 const localeSI = await import('@angular/common/locales/sl');

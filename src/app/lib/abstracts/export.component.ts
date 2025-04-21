@@ -1,12 +1,12 @@
 import { AfterViewInit, Component, DestroyRef, ElementRef, QueryList, ViewChildren, inject } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { catchError, of, tap } from 'rxjs';
 import { User } from '@lib/classes/user.class';
-import { Language } from '@lib/enums/language.enum';
 import { StorageKeys } from '@lib/enums/storage-keys.enum';
-import { LanguageService } from '@lib/services/language.service';
 import { PrintService } from '@lib/services/print.service';
 import { UserApiService } from '@lib/services/user.service';
-import { catchError, of, tap } from 'rxjs';
+import { TranslateService } from '@ngx-translate/core';
+import { EncryptionService } from '@lib/services/encryption.service';
 
 @Component({
     template: '',
@@ -18,24 +18,19 @@ export abstract class ExportComponent implements AfterViewInit {
 
     protected printService = inject(PrintService);
     private _destroyRef = inject(DestroyRef);
+    private _encrypt = inject(EncryptionService);
     private _userService = inject(UserApiService);
-    private _languageService = inject(LanguageService);
-
-    public lang = this._languageService.selectedLanguage$.getValue();
+    private _translateService = inject(TranslateService);
 
     ngAfterViewInit(): void {
         this.printService.sheetElements = this.sheetElements;
     }
 
     protected setUser(): void {
-        let password = localStorage.getItem(StorageKeys.ACCESS_KEY);
+        const storedEncryptedPassword = localStorage.getItem(StorageKeys.ACCESS_KEY);
+        let password = storedEncryptedPassword ? this._encrypt.decrypt(storedEncryptedPassword) : null;
         if (password == null || password === '') {
-            const message =
-                this.lang === Language.DE
-                    ? 'Passwort einfügen'
-                    : this.lang === Language.SI
-                        ? 'Vnesite geslo'
-                        : 'Insert Password';
+            const message = this._translateService.instant('insert-password');
             password = prompt(message);
         }
         this._userService
@@ -43,7 +38,8 @@ export abstract class ExportComponent implements AfterViewInit {
             .pipe(
                 tap((user) => {
                     if (user.email != null) {
-                        localStorage.setItem(StorageKeys.ACCESS_KEY, password ?? '');
+                        const encryptedPassword = this._encrypt.encrypt(password ?? '');
+                        localStorage.setItem(StorageKeys.ACCESS_KEY, encryptedPassword);
                     }
                     this.userData = user;
                 }),

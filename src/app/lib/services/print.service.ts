@@ -4,7 +4,7 @@ import { LanguageService } from './language.service';
 @Injectable()
 export class PrintService {
     public sheetElements!: QueryList<ElementRef<HTMLBodyElement>>;
-    private languageService = inject(LanguageService);
+    private _languageService = inject(LanguageService);
 
     public set fileName(value: string) {
         this._fileName = value;
@@ -39,6 +39,6 @@ export class PrintService {
                 });
         }
 
-        pdf.save(`${this._fileName}_CrtHarej_${this.languageService.selectedLanguage$.getValue().toUpperCase()}.pdf`);
+        pdf.save(`${this._fileName}_CrtHarej_${this._languageService.selectedLanguage$.getValue().toUpperCase()}.pdf`);
     }
 }

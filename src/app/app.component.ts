@@ -11,9 +11,9 @@ import { RouterModule } from '@angular/router';
 export class AppComponent implements OnInit {
     title = 'Črt Harej';
 
-    private translate = inject(TranslateService);
+    private _translate = inject(TranslateService);
 
     ngOnInit(): void {
-        this.translate.setDefaultLang(getLanguage());
+        this._translate.setDefaultLang(getLanguage());
     }
 }

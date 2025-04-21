@@ -26,7 +26,7 @@ export class GaugeComponent implements OnInit, AfterViewInit {
     ngOnInit(): void {
         this._counterService.update
             .pipe(takeUntilDestroyed(this._destroyRef))
-            .subscribe((update) => this.setProgress(update));
+            .subscribe((update) => this._setProgress(update));
     }
 
     ngAfterViewInit(): void {
@@ -36,7 +36,7 @@ export class GaugeComponent implements OnInit, AfterViewInit {
         this.circle.nativeElement.style.strokeDasharray = `${this._circumference} ${this._circumference}`;
         this.circle.nativeElement.style.strokeDashoffset = this._circumference;
 
-        this.setProgress(0);
+        this._setProgress(0);
     }
 
     movePosition(): void {
@@ -53,7 +53,7 @@ export class GaugeComponent implements OnInit, AfterViewInit {
         this._currentOffset = 0;
     }
 
-    private setProgress(percent: number) {
+    private _setProgress(percent: number) {
         if (this._currentOffset) {
             return;
         }

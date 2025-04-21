@@ -21,13 +21,13 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
     private _destroyRef = inject(DestroyRef);
 
     ngAfterViewInit(): void {
-        this._position = this.getPositions();
+        this._position = this._getPositions();
         this._counterService.ready
             .pipe(takeUntilDestroyed(this._destroyRef))
-            .subscribe((deltaY) => this.checkAndNavigate(deltaY));
+            .subscribe((deltaY) => this._checkAndNavigate(deltaY));
         this._counterService.move
             .pipe(takeUntilDestroyed(this._destroyRef))
-            .subscribe(() => this.checkAndNavigate(this.getMaxDelta()));
+            .subscribe(() => this._checkAndNavigate(this._getMaxDelta()));
     }
 
     ngOnDestroy(): void {
@@ -44,10 +44,10 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
         const touch = event.touches[0] || event.changedTouches[0];
         if (event.type === 'touchstart') {
             this._defaultTouch.y = touch.screenY;
-            this._position = this.getPositions();
+            this._position = this._getPositions();
         } else if (event.type === 'touchend' || event.type === 'touchmove') {
             const deltaY = touch.screenY - this._defaultTouch.y;
-            this.updatePositions(-deltaY, 12, 12);
+            this._updatePositions(-deltaY, 12, 12);
         }
     }
 
@@ -58,7 +58,7 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
         const container = document.getElementById('scrollingContainer') as HTMLDivElement;
         const smallerContent =
             container.getBoundingClientRect().height - this._host.nativeElement.getBoundingClientRect().height;
-        this.updatePositions(event.deltaY, 12, 12, smallerContent > 0);
+        this._updatePositions(event.deltaY, 12, 12, smallerContent > 0);
     }
 
     @HostListener('document:keyup', ['$event'])
@@ -73,7 +73,7 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
         }
     }
 
-    private getPositions(): Position {
+    private _getPositions(): Position {
         const element = this._host.nativeElement as HTMLDivElement;
         const scroller = element.parentElement?.parentElement;
         const isTop = scroller != null && Math.abs(scroller.scrollTop) < 1;
@@ -82,13 +82,13 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
         return new Position(isTop, isBottom);
     }
 
-    private getMaxDelta(): number {
+    private _getMaxDelta(): number {
         this._counterService.percentage = 1;
         return (this._counterService.position === 'top' ? -1 : 1) * 100;
     }
 
-    private updatePositions(deltaY: number, topBarrier: number, bottomBarrier: number, contentSmaller = false) {
-        this._position.add(this.getPositions());
+    private _updatePositions(deltaY: number, topBarrier: number, bottomBarrier: number, contentSmaller = false) {
+        this._position.add(this._getPositions());
         if (this._position.top > 0 && deltaY < 0) {
             if (this._orderedRoutes.indexOf(this._router.url) === 0) {
                 this._counterService.clearGauge();
@@ -97,7 +97,7 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
             const percentage = this._position.top / topBarrier;
             this._counterService.updateGauge('top', percentage);
             if (percentage >= 1) {
-                this.checkAndNavigate(deltaY);
+                this._checkAndNavigate(deltaY);
             }
         } else if ((this._position.bottom > 0 || contentSmaller) && deltaY > 0) {
             if (this._orderedRoutes.indexOf(this._router.url) === 4) {
@@ -107,14 +107,14 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
             const percentage = (this._position.bottom || bottomBarrier + 1) / bottomBarrier;
             this._counterService.updateGauge('bottom', percentage);
             if (percentage >= 1) {
-                this.checkAndNavigate(deltaY);
+                this._checkAndNavigate(deltaY);
             }
         } else {
             this._counterService.clearGauge();
         }
     }
 
-    private checkAndNavigate(deltaY: number) {
+    private _checkAndNavigate(deltaY: number) {
         if (this._counterService.percentage < 0.99) {
             return;
         }

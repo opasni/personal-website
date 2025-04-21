@@ -130,6 +130,12 @@ export default defineConfig([
                     leadingUnderscore: 'allow',
                     trailingUnderscore: 'forbid',
                 },
+                {
+                    selector: 'memberLike',
+                    modifiers: ['private'],
+                    format: ['camelCase'],
+                    leadingUnderscore: 'require',
+                },
             ],
 
             '@typescript-eslint/no-empty-function': 'off',

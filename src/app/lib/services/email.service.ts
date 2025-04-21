@@ -8,10 +8,10 @@ import { Contact } from '@lib/classes/contact.class';
     providedIn: 'root',
 })
 export class EmailService {
-    private url = environment.api + '/contact';
-    private http = inject(HttpClient);
+    private _url = environment.api + '/contact';
+    private _http = inject(HttpClient);
 
     sendEmail(input: Contact): Observable<void> {
-        return this.http.post<void>(this.url, input);
+        return this._http.post<void>(this._url, input);
     }
 }

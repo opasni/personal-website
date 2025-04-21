@@ -15,13 +15,13 @@ export class GaugeCounterService {
     private _counter = 0;
     private _intervalId!: NodeJS.Timeout;
     private _timer = 0;
-    private MAX_COUNT = 30;
+    private _maxCount = 30;
 
     updateGauge(position: GaugePosition, value: number): void {
         const positionUpdate = value !== 0 ? position : 'none';
         this._counter = value;
-        this.handlePositionUpdate(positionUpdate);
-        this.sendUpdate();
+        this._handlePositionUpdate(positionUpdate);
+        this._sendUpdate();
     }
 
     clearInterval(): void {
@@ -30,11 +30,11 @@ export class GaugeCounterService {
 
     clearGauge(): void {
         this.percentage = 0;
-        this.handlePositionUpdate('none');
+        this._handlePositionUpdate('none');
         this.update.emit(this.percentage);
     }
 
-    private handlePositionUpdate(position: GaugePosition): void {
+    private _handlePositionUpdate(position: GaugePosition): void {
         // If the same, nothing to do here.
         if (this.position === position) {
             return;
@@ -47,8 +47,8 @@ export class GaugeCounterService {
         if (position !== 'none') {
             this._intervalId = setInterval(() => {
                 this._timer = this._timer + 1;
-                this.sendUpdate();
-                if (this._timer === this.MAX_COUNT) {
+                this._sendUpdate();
+                if (this._timer === this._maxCount) {
                     clearInterval(this._intervalId);
                 }
             }, 40);
@@ -56,8 +56,8 @@ export class GaugeCounterService {
         this.position = position;
     }
 
-    private sendUpdate(): void {
-        this.percentage = Math.min(this._counter, this._timer / this.MAX_COUNT, 1);
+    private _sendUpdate(): void {
+        this.percentage = Math.min(this._counter, this._timer / this._maxCount, 1);
         this.update.emit(this.percentage);
         if (this.percentage === 1) {
             const delta = this.position === 'top' ? -2 : 2;

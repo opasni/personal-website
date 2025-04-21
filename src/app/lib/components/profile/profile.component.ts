@@ -34,27 +34,27 @@ export class ProfileComponent implements OnInit {
     private _supportedLanguages = Object.keys(SUPPORTED_LANGUAGES);
     private _supportedThemes = Object.keys(SUPPORTED_THEMES);
 
-    private userService = inject(UserApiService);
-    private languageService = inject(LanguageService);
-    private themeService = inject(ThemeService);
+    private _userService = inject(UserApiService);
+    private _languageService = inject(LanguageService);
+    private _themeService = inject(ThemeService);
 
     ngOnInit(): void {
-        this.selectedLanguage$ = this.languageService
+        this.selectedLanguage$ = this._languageService
             .getSelectedLanguage()
             .pipe(map((lang) => SUPPORTED_LANGUAGES[lang]));
-        this.selectedTheme$ = this.themeService.selectedTheme.pipe(map((theme) => SUPPORTED_THEMES[theme]));
-        this.userData$ = this.userService.getUserData(null);
+        this.selectedTheme$ = this._themeService.selectedTheme.pipe(map((theme) => SUPPORTED_THEMES[theme]));
+        this.userData$ = this._userService.getUserData(null);
     }
 
     changeLanguage(language: string): void {
         const index = this._supportedLanguages.findIndex((i) => i === language) + 1;
         const next = this._supportedLanguages[index % this._supportedLanguages.length];
-        this.languageService.setSelectedLanguage(next as Language);
+        this._languageService.setSelectedLanguage(next as Language);
     }
 
     toggleTheme(theme: string): void {
         const index = this._supportedThemes.findIndex((i) => i === theme) + 1;
         const next = this._supportedThemes[index % this._supportedThemes.length];
-        this.themeService.setTheme(next as Theme);
+        this._themeService.setTheme(next as Theme);
     }
 }

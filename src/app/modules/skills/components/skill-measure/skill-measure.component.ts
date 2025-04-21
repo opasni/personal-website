@@ -1,3 +1,4 @@
+import { AsyncPipe, NgStyle } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewEncapsulation, inject } from '@angular/core';
 
 import { LanguageService } from '@lib/services/language.service';
@@ -8,6 +9,7 @@ import { SkillsService } from '@lib/services/skills.service';
     templateUrl: './skill-measure.component.html',
     styleUrls: ['./skill-measure.component.scss'],
     encapsulation: ViewEncapsulation.None,
+    imports: [AsyncPipe, NgStyle],
 })
 export class SkillMeasureComponent implements OnInit, AfterViewInit {
     @Input() value = 0;
@@ -18,14 +20,14 @@ export class SkillMeasureComponent implements OnInit, AfterViewInit {
     public circles: { index: number; filled: boolean }[] = [];
     public readonly selectedLanguage$ = inject(LanguageService).getSelectedLanguage();
 
-    private skills = inject(SkillsService);
-    private elRef = inject(ElementRef);
+    private _skills = inject(SkillsService);
+    private _elRef = inject(ElementRef);
 
     ngOnInit(): void {
         this.circles = Array(this.numberOfCircles)
             .fill(0)
             .map((_, i) => ({ index: i, filled: false }));
-        if (this.skills.minified) {
+        if (this._skills.minified) {
             if (this.minValue && this.value < this.minValue) {
                 this.hideComponent();
             }
@@ -41,7 +43,7 @@ export class SkillMeasureComponent implements OnInit, AfterViewInit {
     }
 
     hideComponent(): void {
-        const element = this.elRef.nativeElement as HTMLElement;
+        const element = this._elRef.nativeElement as HTMLElement;
         element.style.display = 'none';
     }
 }
