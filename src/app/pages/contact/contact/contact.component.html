@@ -1,121 +1,171 @@
 <div appScrollDetect class="container">
-  @if (selectedTheme$ | async; as theme) {
-    <div class="header">
-      <h1>
-        {{ 'contact.title' | translate }}
-      </h1>
-    </div>
-    <div class="body">
-      <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
-        <div class="form-group mt-1 mb-3">
-          <label for="inputName">{{ 'contact.full-name.label' | translate }}</label>
-          <input type="text" name="name" formControlName="name" class="form-control"
-            [ngClass]="{ 'bg-light': theme === 'light' || theme === 'white', 'bg-dark': theme === 'dark', 'is-invalid': submitted && emailForm.getControl('name').invalid }"
-            aria-describedby="nameHelp" [placeholder]="'contact.full-name.placeholder' | translate">
-            @if (submitted && emailForm.getControl('name').invalid) {
-              <div class="invalid-feedback">
-                @if (emailForm.getControl('name') | filterError:'required') {
-                  <p>{{ 'contact.full-name.error.required' |
-                  translate }}</p>
-                }
-              </div>
-            }
-          </div>
-          <div class="form-group mt-1 mb-3">
-            <label for="inputEmail">{{ 'contact.email.label' | translate }}</label>
-            <input type="email" name="replyto" formControlName="replyto" class="form-control"
-              [ngClass]="{ 'bg-light': theme === 'light' || theme === 'white', 'bg-dark': theme === 'dark', 'is-invalid': submitted && emailForm.getControl('replyto').invalid }"
-              aria-describedby="emailHelp" [placeholder]="'contact.email.placeholder' | translate">
-              <small id="emailHelp" class="form-text text-muted">{{ 'contact.email.hint' | translate }}</small>
-              @if (submitted && emailForm.getControl('replyto').invalid) {
-                <div class="invalid-feedback">
-                  @if (emailForm.getControl('replyto') | filterError:'required') {
-                    <p>{{ 'contact.email.error.required' |
-                    translate }}</p>
-                  }
-                  @if (emailForm.getControl('replyto') | filterError:'email') {
-                    <p>{{ 'contact.email.error.email' | translate
-                    }}</p>
-                  }
-                </div>
-              }
-            </div>
-            <div class="form-group mt-1 mb-3">
-              <label for="inputSubject">{{ 'contact.subject.label' | translate }}</label>
-              <select name="subject" formControlName="subject" class="form-select"
-                [ngClass]="{ 'bg-light': theme === 'light' || theme === 'white', 'bg-dark': theme === 'dark', 'is-invalid': submitted && emailForm.getControl('subject').invalid }"
-                aria-label="Select purpose of contact.">
-                <option [value]="null" disabled="disabled">{{ 'contact.subject.placeholder' | translate }}</option>
-                <option [value]="Purpose.Freelance">{{ 'contact.subject.option.freelance' | translate }}</option>
-                <option [value]="Purpose.OfferingPosition">{{ 'contact.subject.option.offering-position' | translate }}
-                </option>
-                <option [value]="Purpose.TechnicalAdvice">{{ 'contact.subject.option.technical-advice' | translate }}
-                </option>
-                <option [value]="Purpose.SeekingJob">{{ 'contact.subject.option.seeking-job' | translate }}</option>
-                <option [value]="Purpose.Other">{{ 'contact.subject.option.other' | translate }}</option>
-              </select>
-              @if (submitted && emailForm.getControl('subject').invalid) {
-                <div class="invalid-feedback">
-                  @if (emailForm.getControl('subject') | filterError:'required') {
-                    <p>{{ 'contact.subject.error.required' |
-                    translate }}</p>
-                  }
-                </div>
-              }
-            </div>
-            <div class="form-group mt-1 mb-3">
-              <label for="inputMessage">{{ 'contact.message.label' | translate }}</label>
-              <textarea class="form-control"
-                [ngClass]="{ 'bg-light': theme === 'light' || theme === 'white', 'bg-dark': theme === 'dark', 'is-invalid': submitted && emailForm.getControl('message').invalid }"
-                name="message" formControlName="message" rows="9" [placeholder]="'contact.message.placeholder' | translate">
-              </textarea>
-              @if (submitted && emailForm.getControl('message').invalid) {
-                <div class="invalid-feedback">
-                  @if (emailForm.getControl('message') | filterError:'required') {
-                    <p>{{ 'contact.message.error.required' |
-                    translate }}</p>
-                  }
-                </div>
-              }
-            </div>
-            <input type="hidden" name="_honeypot" formControlName="_honeypot">
-            <!-- recaptcha -->
-            <div class="d-flex justify-content-end">
-              @if (!submitter$) {
-                <button type="submit"
-                  [title]="'accessibility.buttons.send-contact' | translate" class="btn btn-primary">
-                  {{ 'contact.submit.label' | translate }}
-                </button>
-              } @else {
-                <p class="d-flex">
-                  @if (submitter$ | async) {
-                    @if (verify) {
-                      {{ 'contact.submit.one-last-thing' | translate }}
-                    }
-                    @if (!verify) {
-                      {{ 'contact.submit.success' | translate }}
-                    }
-                  } @else {
-                    @if (fail) {
-                      {{ 'contact.submit.fail' | translate }}
-                      <a class="linkedin-icon" href="https://www.linkedin.com/in/crtharej" aria-label="Got to my LinkedIn Profile" target="_blank">
-                        <div class="social-icon">
-                          <i class="bi bi-linkedin"></i>
-                        </div>
-                      </a>
-                    }
-                  }
-                </p>
-              }
-            </div>
-            <div class="separator recaptcha">
-              @if (submitted && emailForm.valid && verify) {
-                <re-captcha class="contact-recaptcha"
-                  [theme]="theme === 'white' ? 'light' : theme" (resolved)="resolved($event)" [siteKey]="recaptchaKey">
-                </re-captcha>
-              }
-            </div>
-          </form>
+    @if (selectedTheme$ | async; as theme) {
+        <div class="header">
+            <h1>
+                {{ 'contact.title' | translate }}
+            </h1>
         </div>
-      }
-    </div>
+        <div class="body">
+            <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+                <div class="form-group mt-1 mb-3">
+                    <label for="inputName">{{ 'contact.full-name.label' | translate }}</label>
+                    <input
+                        type="text"
+                        name="name"
+                        formControlName="name"
+                        class="form-control"
+                        [ngClass]="{
+                            'bg-light': theme === 'light' || theme === 'white',
+                            'bg-dark': theme === 'dark',
+                            'is-invalid': submitted && emailForm.getControl('name').invalid,
+                        }"
+                        aria-describedby="nameHelp"
+                        [placeholder]="'contact.full-name.placeholder' | translate"
+                    />
+                    @if (submitted && emailForm.getControl('name').invalid) {
+                        <div class="invalid-feedback">
+                            @if (emailForm.getControl('name') | filterError: 'required') {
+                                <p>{{ 'contact.full-name.error.required' | translate }}</p>
+                            }
+                        </div>
+                    }
+                </div>
+                <div class="form-group mt-1 mb-3">
+                    <label for="inputEmail">{{ 'contact.email.label' | translate }}</label>
+                    <input
+                        type="email"
+                        name="replyto"
+                        formControlName="replyto"
+                        class="form-control"
+                        [ngClass]="{
+                            'bg-light': theme === 'light' || theme === 'white',
+                            'bg-dark': theme === 'dark',
+                            'is-invalid': submitted && emailForm.getControl('replyto').invalid,
+                        }"
+                        aria-describedby="emailHelp"
+                        [placeholder]="'contact.email.placeholder' | translate"
+                    />
+                    <small id="emailHelp" class="form-text text-muted">{{ 'contact.email.hint' | translate }}</small>
+                    @if (submitted && emailForm.getControl('replyto').invalid) {
+                        <div class="invalid-feedback">
+                            @if (emailForm.getControl('replyto') | filterError: 'required') {
+                                <p>{{ 'contact.email.error.required' | translate }}</p>
+                            }
+                            @if (emailForm.getControl('replyto') | filterError: 'email') {
+                                <p>{{ 'contact.email.error.email' | translate }}</p>
+                            }
+                        </div>
+                    }
+                </div>
+                <div class="form-group mt-1 mb-3">
+                    <label for="inputSubject">{{ 'contact.subject.label' | translate }}</label>
+                    <select
+                        name="subject"
+                        formControlName="subject"
+                        class="form-select"
+                        [ngClass]="{
+                            'bg-light': theme === 'light' || theme === 'white',
+                            'bg-dark': theme === 'dark',
+                            'is-invalid': submitted && emailForm.getControl('subject').invalid,
+                        }"
+                        aria-label="Select purpose of contact."
+                    >
+                        <option [value]="null" disabled="disabled">
+                            {{ 'contact.subject.placeholder' | translate }}
+                        </option>
+                        <option [value]="Purpose.Freelance">
+                            {{ 'contact.subject.option.freelance' | translate }}
+                        </option>
+                        <option [value]="Purpose.OfferingPosition">
+                            {{ 'contact.subject.option.offering-position' | translate }}
+                        </option>
+                        <option [value]="Purpose.TechnicalAdvice">
+                            {{ 'contact.subject.option.technical-advice' | translate }}
+                        </option>
+                        <option [value]="Purpose.SeekingJob">
+                            {{ 'contact.subject.option.seeking-job' | translate }}
+                        </option>
+                        <option [value]="Purpose.Other">{{ 'contact.subject.option.other' | translate }}</option>
+                    </select>
+                    @if (submitted && emailForm.getControl('subject').invalid) {
+                        <div class="invalid-feedback">
+                            @if (emailForm.getControl('subject') | filterError: 'required') {
+                                <p>{{ 'contact.subject.error.required' | translate }}</p>
+                            }
+                        </div>
+                    }
+                </div>
+                <div class="form-group mt-1 mb-3">
+                    <label for="inputMessage">{{ 'contact.message.label' | translate }}</label>
+                    <textarea
+                        class="form-control"
+                        [ngClass]="{
+                            'bg-light': theme === 'light' || theme === 'white',
+                            'bg-dark': theme === 'dark',
+                            'is-invalid': submitted && emailForm.getControl('message').invalid,
+                        }"
+                        name="message"
+                        formControlName="message"
+                        rows="9"
+                        [placeholder]="'contact.message.placeholder' | translate"
+                    ></textarea>
+                    @if (submitted && emailForm.getControl('message').invalid) {
+                        <div class="invalid-feedback">
+                            @if (emailForm.getControl('message') | filterError: 'required') {
+                                <p>{{ 'contact.message.error.required' | translate }}</p>
+                            }
+                        </div>
+                    }
+                </div>
+                <input type="hidden" name="_honeypot" formControlName="_honeypot" />
+                <!-- recaptcha -->
+                <div class="d-flex justify-content-end">
+                    @if (!submitter$) {
+                        <button
+                            type="submit"
+                            [title]="'accessibility.buttons.send-contact' | translate"
+                            class="btn btn-primary"
+                        >
+                            {{ 'contact.submit.label' | translate }}
+                        </button>
+                    } @else {
+                        <p class="d-flex">
+                            @if (submitter$ | async) {
+                                @if (verify) {
+                                    {{ 'contact.submit.one-last-thing' | translate }}
+                                }
+                                @if (!verify) {
+                                    {{ 'contact.submit.success' | translate }}
+                                }
+                            } @else {
+                                @if (fail) {
+                                    {{ 'contact.submit.fail' | translate }}
+                                    <a
+                                        class="linkedin-icon"
+                                        href="https://www.linkedin.com/in/crtharej"
+                                        aria-label="Got to my LinkedIn Profile"
+                                        target="_blank"
+                                    >
+                                        <div class="social-icon">
+                                            <i class="bi bi-linkedin"></i>
+                                        </div>
+                                    </a>
+                                }
+                            }
+                        </p>
+                    }
+                </div>
+                <div class="separator recaptcha">
+                    @if (submitted && emailForm.valid && verify) {
+                        <re-captcha
+                            class="contact-recaptcha"
+                            [theme]="theme === 'white' ? 'light' : theme"
+                            (resolved)="resolved($event)"
+                            [siteKey]="recaptchaKey"
+                        ></re-captcha>
+                    }
+                </div>
+            </form>
+        </div>
+    }
+</div>

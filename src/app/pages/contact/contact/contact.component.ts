@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable, catchError, finalize, firstValueFrom, map, of, tap } from 'rxjs';
+import { Observable, catchError, finalize, firstValueFrom, of, tap } from 'rxjs';
 import { RecaptchaComponent, RecaptchaModule } from 'ng-recaptcha-2';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
@@ -16,9 +16,9 @@ import { FilterErrorPipe } from '@lib/pipes/filter-error/filter-error.pipe';
 import { ScrollDetectDirective } from '@lib/directives/scroll-detect/scroll-detect.directive';
 
 class FormGroupAccessor<T> extends FormGroup {
-  getControl(key: keyof T): FormControl<any> {
-    return this.get(key as string) as FormControl<any>;
-  }
+    getControl(key: keyof T): FormControl<any> {
+        return this.get(key as string) as FormControl<any>;
+    }
 }
 
 @Component({
@@ -31,71 +31,72 @@ class FormGroupAccessor<T> extends FormGroup {
         ReactiveFormsModule,
         RecaptchaModule,
         ScrollDetectDirective,
-        TranslateModule
-    ]
+        TranslateModule,
+    ],
 })
 export class ContactComponent extends ThemeComponent implements OnInit {
+    @ViewChild(RecaptchaComponent) recaptcha!: RecaptchaComponent;
 
-  @ViewChild(RecaptchaComponent) recaptcha!: RecaptchaComponent;
+    public emailForm = new FormGroupAccessor<Contact>({
+        contactId: new FormControl<string | null>(null),
+        name: new FormControl<string | null>(null, Validators.required),
+        replyto: new FormControl<string | null>(null, [Validators.required, Validators.email]),
+        message: new FormControl<string | null>(null, Validators.required),
+        subject: new FormControl<ContactPurpose | null>(null, Validators.required),
+        _honeypot: new FormControl<string | null>(null),
+        languageId: new FormControl<Language>(Language.EN),
+    });
 
-  public emailForm = new FormGroupAccessor<Contact>({
-    contactId: new FormControl<string | null>(null),
-    name: new FormControl<string | null>(null, Validators.required),
-    replyto: new FormControl<string | null>(null, [Validators.required, Validators.email]),
-    message: new FormControl<string | null>(null, Validators.required),
-    subject: new FormControl<ContactPurpose | null>(null, Validators.required),
-    _honeypot: new FormControl<string | null>(null),
-    languageId: new FormControl<Language>(Language.EN),
-  });
+    Purpose: typeof ContactPurpose = ContactPurpose;
+    recaptchaKey = environment.recaptcha;
 
-  Purpose: typeof ContactPurpose = ContactPurpose;
-  recaptchaKey = environment.recaptcha;
+    public submitter$!: Observable<boolean>;
+    public submitted = false;
+    public verify = false;
+    public fail = false;
 
-  public submitter$!: Observable<boolean>;
-  public submitted = false;
-  public verify = false;
-  public fail = false;
+    private _contactService = inject(EmailService);
+    private _translateService = inject(TranslateService);
+    private _router = inject(Router);
+    private _route = inject(ActivatedRoute);
 
-  private contactService = inject(EmailService);
-  private translateService = inject(TranslateService);
-  private router = inject(Router);
-  private route = inject(ActivatedRoute);
-
-  ngOnInit(): void {
-    this.emailForm.getControl('languageId').setValue(this.translateService.currentLang);
-  }
-
-  onSubmit() {
-    this.submitted = true;
-    this.fail = false;
-    if (!this.emailForm.valid) {
-      this.emailForm.markAllAsTouched();
-      return;
+    ngOnInit(): void {
+        this.emailForm.getControl('languageId').setValue(this._translateService.currentLang);
     }
-    this.verify = true;
-  }
 
-
-  async resolved(e: string | null) {
-    if (!e) {
-      return;
-    }
-    
-    const contactData = new Contact(this.emailForm.value);
-    contactData.recaptcha = e;
-
-    await firstValueFrom(this.contactService.sendEmail(contactData).pipe(
-      tap(success => {
-        this.router.navigate(['success'], { relativeTo: this.route });
-      }),
-      catchError(() => {
-        this.fail = true;
-        if (this.recaptcha) {
-          this.recaptcha.reset();
+    onSubmit(): void {
+        this.submitted = true;
+        this.fail = false;
+        if (!this.emailForm.valid) {
+            this.emailForm.markAllAsTouched();
+            return;
         }
-        return of(null);
-      }),
-      finalize(() => this.verify = false)
-    ), { defaultValue: null });
-  }
+        this.verify = true;
+    }
+
+    async resolved(e: string | null): Promise<void> {
+        if (!e) {
+            return;
+        }
+
+        const contactData = new Contact(this.emailForm.value);
+        contactData.recaptcha = e;
+
+        await firstValueFrom(
+            this._contactService.sendEmail(contactData).pipe(
+                tap(() => {
+                    this._router.navigate(['success'], { relativeTo: this._route });
+                }),
+                catchError(() => {
+                    this.fail = true;
+                    if (this.recaptcha) {
+                        this.recaptcha.reset();
+                    }
+                    return of(null);
+                }),
+                finalize(() => (this.verify = false)),
+            ),
+            { defaultValue: null },
+        );
+    }
 }

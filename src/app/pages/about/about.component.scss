@@ -1,13 +1,12 @@
 .header {
-  .greeting {
-    img {
-      width: 145px;
-      height: 145px;
-      margin-right: 1rem;
+    .greeting {
+        img {
+            width: 145px;
+            height: 145px;
+            margin-right: 1rem;
+        }
+        h1 {
+            line-height: 145px;
+        }
     }
-    h1 {
-      line-height: 145px;
-
-    }
-  }
 }

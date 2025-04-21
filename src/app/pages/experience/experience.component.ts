@@ -10,13 +10,6 @@ import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
     selector: 'app-experience',
     templateUrl: './experience.component.html',
     styleUrls: ['./experience.component.scss'],
-    imports: [
-        CommonModule,
-        NgbAccordionModule,
-        TranslateModule,
-        ScrollDetectDirective
-    ]
+    imports: [CommonModule, NgbAccordionModule, TranslateModule, ScrollDetectDirective],
 })
-export class ExperienceComponent extends ThemeComponent {
-
-}
+export class ExperienceComponent extends ThemeComponent {}

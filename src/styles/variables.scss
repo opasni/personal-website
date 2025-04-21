@@ -1,52 +1,49 @@
 // Colors
-$primary-color: #D25036;
-$secondary-color: #08D1BA;
+$primary-color: #d25036;
+$secondary-color: #08d1ba;
 
 // fonts
-$gray-font: #8E8E91;
+$gray-font: #8e8e91;
 $light-gray-font: #e9e9ea;
 
 // shaders
 $light-background: #f8f9fa;
-$dark-background: #1C1D22;
+$dark-background: #1c1d22;
 $light-dark-background: #d1081f40;
 
 .dark-theme {
-	--font-color: #e9e9ea;
-	--background-color: #1C1D22;
-	--pop-color: #f8f9fa;
-	--light-background: #D2503640;
+    --font-color: #e9e9ea;
+    --background-color: #1c1d22;
+    --pop-color: #f8f9fa;
+    --light-background: #d2503640;
 }
 
 .light-theme {
-	--font-color: #000000;
-	--background-color: #f8f9fa;
-	--pop-color: #1C1D22;
-	--light-background: #D2503640;
+    --font-color: #000000;
+    --background-color: #f8f9fa;
+    --pop-color: #1c1d22;
+    --light-background: #d2503640;
 }
 
 .white-theme {
-	--font-color: #000000;
-	--background-color: #ffffff;
-	--pop-color: #1C1D22;
-	--light-background: #D2503640;
+    --font-color: #000000;
+    --background-color: #ffffff;
+    --pop-color: #1c1d22;
+    --light-background: #d2503640;
 }
 
-$transparent-white: rgba(255, 255, 255, .25);
-$transparent-dark: rgba(70, 70, 70, .10);
-
+$transparent-white: rgba(255, 255, 255, 0.25);
+$transparent-dark: rgba(70, 70, 70, 0.1);
 
 // Alert Colors
-$alert-font-color: #4B6172;
-$danger-color: #D1081F;
-$success-color: #1FD108;
-$info-color: #081FD1;
-$warning-color: #F61630;
-
+$alert-font-color: #4b6172;
+$danger-color: #d1081f;
+$success-color: #1fd108;
+$info-color: #081fd1;
+$warning-color: #f61630;
 
 // Measurements
 $border-radius: 20px;
-
 
 // Break Points
 $breakpoint-x-small: 340px;

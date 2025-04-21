@@ -5,17 +5,17 @@ import { environment } from 'src/environments/environment';
 import { User } from '@lib/classes/user.class';
 
 @Injectable({
-	providedIn: 'root'
+    providedIn: 'root',
 })
 export class UserApiService {
-	private url = environment.api + '/user';
-	private http = inject(HttpClient);
+    private _url = environment.api + '/user';
+    private _http = inject(HttpClient);
 
-	getUserData(password: string | null): Observable<User> {
-		const params: Partial<{ password: string }> = {};
-		if (password != null) {
-			params.password = password;
-		}
-		return this.http.get<User>(this.url, { params }).pipe(map((data) => new User(data)));
-	}
+    getUserData(password: string | null): Observable<User> {
+        const params: Partial<{ password: string }> = {};
+        if (password != null) {
+            params.password = password;
+        }
+        return this._http.get<User>(this._url, { params }).pipe(map((data) => new User(data)));
+    }
 }

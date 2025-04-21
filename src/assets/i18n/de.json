@@ -214,21 +214,14 @@
                     "abstract": [
                         "Das Reportingtool ermöglicht das Verfolgen und Berichten des Entwicklungsfortschritts von Bauteilen. Es besteht aus den Bereichen Neuteiltracking, Aggregateverkabelung und Package. Teams können den Fortschritt besser verfolgen, Engpässe identifizieren und die Kommunikation verbessern."
                     ],
-                    "skills": [
-                        "Technische Leitung",
-                        "Anforderungsmanagement",
-                        "Softwareentwicklung"
-                    ]
+                    "skills": ["Technische Leitung", "Anforderungsmanagement", "Softwareentwicklung"]
                 },
                 "fapos": {
                     "title": "FAPOS @ AUDI",
                     "abstract": [
                         "Ein Tool, das die Buchung von Neuwagen für Tests durch Partner-Autohäuser von Audi erleichtert. Das Tool integriert GRP Single Sign-On und bietet einen umfassenden Workflow, einschließlich Administrator-Bestätigungen und E-Mail-Benachrichtigungen."
                     ],
-                    "skills": [
-                        "Anforderungsmanagement",
-                        "Softwareentwicklung"
-                    ]
+                    "skills": ["Anforderungsmanagement", "Softwareentwicklung"]
                 }
             },
             "trainings": {

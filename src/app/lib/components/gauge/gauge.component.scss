@@ -1,55 +1,55 @@
 @use 'src/styles/variables';
 
 .gauge-wrapper {
-  position: absolute;
-  cursor: pointer;
-  right: 20px;
-  border-radius: 50%;
-  z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    border-radius: 50%;
+    z-index: 2;
 
-  &:hover {
-    box-shadow: 0 0 5px var(--pop-color);
-    transition: background-color .5s ease-in-out;
+    &:hover {
+        box-shadow: 0 0 5px var(--pop-color);
+        transition: background-color 0.5s ease-in-out;
 
-    .progress-ring__circle {
-      transition: fill .5s ease-in-out;
+        .progress-ring__circle {
+            transition: fill 0.5s ease-in-out;
+        }
+
+        .progress-ring__arrow {
+            transition: fill 0.5s ease-in-out;
+        }
     }
 
-    .progress-ring__arrow {
-      transition: fill .5s ease-in-out;
+    &.top {
+        top: 20px;
     }
-  }
 
-  &.top {
-    top: 20px;
-  }
+    &.bottom {
+        bottom: 20px;
 
-  &.bottom {
-    bottom: 20px;
-
-    .progress-ring__arrow {
-      scale: -0.5;
+        .progress-ring__arrow {
+            scale: -0.5;
+        }
     }
-  }
 
-  &.none {
-    display: none;
-  }
+    &.none {
+        display: none;
+    }
 }
 
 .progress-ring__circle {
-  transition: 0.35s stroke-dashoffset;
-  // axis compensation
-  transform: rotate(-90deg);
-  transform-origin: 50% 50%;
-  stroke: variables.$primary-color;
-  fill: var(--background-color);
+    transition: 0.35s stroke-dashoffset;
+    // axis compensation
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke: variables.$primary-color;
+    fill: var(--background-color);
 }
 
 .progress-ring__arrow {
-  fill: var(--pop-color);
-  scale: 0.5;
-  translate: 4px 3px;
-  transform-origin: center;
-  transform-box: fill-box;
+    fill: var(--pop-color);
+    scale: 0.5;
+    translate: 4px 3px;
+    transform-origin: center;
+    transform-box: fill-box;
 }

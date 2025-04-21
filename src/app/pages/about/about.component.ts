@@ -9,11 +9,6 @@ import { ScrollDetectDirective } from '@lib/directives/scroll-detect/scroll-dete
     selector: 'app-about',
     templateUrl: './about.component.html',
     styleUrls: ['./about.component.scss'],
-    imports: [
-        CommonModule,
-        TranslateModule,
-        ScrollDetectDirective
-    ]
+    imports: [CommonModule, TranslateModule, ScrollDetectDirective],
 })
-export class AboutComponent extends ThemeComponent {
-}
+export class AboutComponent extends ThemeComponent {}

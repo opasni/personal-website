@@ -1,5 +1,5 @@
 export enum Language {
     EN = 'en',
     DE = 'de',
-    SI = 'si'
+    SI = 'si',
 }

@@ -9,13 +9,13 @@ import { CoverLetter } from '@lib/types/cover-leter.type';
     encapsulation: ViewEncapsulation.None,
     imports: [CommonModule],
     templateUrl: './cover-letter.component.html',
-    styleUrls: ['./cover-letter.component.scss']
+    styleUrls: ['./cover-letter.component.scss'],
 })
 export class CoverLetterComponent extends ExportComponent implements OnInit {
-  date = new Date();
-  coverLetter: CoverLetter = data ?? { recipient: {}, content: []};
-  ngOnInit(): void {
-		this.setUser();
-    this.printService.fileName = 'CoverLetter';
-  }
+    date = new Date();
+    coverLetter: CoverLetter = data ?? { recipient: {}, content: [] };
+    ngOnInit(): void {
+        this.setUser();
+        this.printService.fileName = 'CoverLetter';
+    }
 }

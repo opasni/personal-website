@@ -8,17 +8,12 @@ import { ProfileComponent } from '@lib/components/profile/profile.component';
     selector: 'app-header',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.scss'],
-    imports: [
-        CommonModule,
-        ProfileComponent,
-        RouterModule,
-        TranslateModule,
-    ]
+    imports: [CommonModule, ProfileComponent, RouterModule, TranslateModule],
 })
 export class HeaderComponent {
-	public isMenuOpen = false;
+    public isMenuOpen = false;
 
-	toggleMenu() {
-		this.isMenuOpen = !this.isMenuOpen;
-	}
+    toggleMenu(): void {
+        this.isMenuOpen = !this.isMenuOpen;
+    }
 }

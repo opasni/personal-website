@@ -214,21 +214,14 @@
                     "abstract": [
                         "Orodje za poročanje omogoča sledenje in poročanje o razvoju komponent. Sestavlja ga področja sledenja novih delov, agregatna ožičenja in paket. Skupine lahko bolje spremljajo napredek, identificirajo ovire in izboljšajo komunikacijo."
                     ],
-                    "skills": [
-                        "Tehnično vodenje",
-                        "Inženiring zahtev",
-                        "Razvoj programske opreme"
-                    ]
+                    "skills": ["Tehnično vodenje", "Inženiring zahtev", "Razvoj programske opreme"]
                 },
                 "fapos": {
                     "title": "FAPOS @ AUDI",
                     "abstract": [
                         "Orodje, ki olajšuje rezervacijo novih avtomobilov za preizkuse s strani partnerjev avtomobilskih trgovin Audi. Orodje vključuje GRP enotno prijavo in zagotavlja celovit delovni postopek, vključno s potrditvami administratorja in obvestili po elektronski pošti."
                     ],
-                    "skills": [
-                        "Inženiring zahtev",
-                        "Razvoj programske opreme"
-                    ]
+                    "skills": ["Inženiring zahtev", "Razvoj programske opreme"]
                 }
             },
             "trainings": {

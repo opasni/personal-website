@@ -12,15 +12,11 @@ import { ExportComponent } from '@lib/abstracts/export.component';
     encapsulation: ViewEncapsulation.None,
     templateUrl: './cv.component.html',
     styleUrls: ['./cv.component.scss'],
-    imports: [
-        CommonModule,
-        SkillsOverviewComponent,
-        TranslateModule,
-    ]
+    imports: [CommonModule, SkillsOverviewComponent, TranslateModule],
 })
 export class CVComponent extends ExportComponent implements OnInit {
-  ngOnInit(): void {
-		this.setUser();
-    this.printService.fileName = 'CV';
-  }
+    ngOnInit(): void {
+        this.setUser();
+        this.printService.fileName = 'CV';
+    }
 }

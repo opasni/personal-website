@@ -1,63 +1,63 @@
 @use 'src/styles/variables';
 
 .download-button {
-	position: fixed;
-	right: 10px;
-	bottom: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
 
 @media print {
-  body.A4 {
-    zoom: 212%;
-  }
+    body.A4 {
+        zoom: 212%;
+    }
 
-  .download-wrapper {
-    display: none;
-  }
+    .download-wrapper {
+        display: none;
+    }
 }
 
 @media (max-width: variables.$breakpoint-medium) {
-  .download-wrapper .download-button {
-    button>i {
-      font-size: 1.4rem;
+    .download-wrapper .download-button {
+        button > i {
+            font-size: 1.4rem;
+        }
     }
-  }
 }
 
 @media (max-width: variables.$breakpoint-small) {
-  .download-wrapper .download-button {
-    border-radius: 2rem;
+    .download-wrapper .download-button {
+        border-radius: 2rem;
 
-    button>i {
-      font-size: 2rem;
+        button > i {
+            font-size: 2rem;
+        }
     }
-  }
 }
 
 @media (max-width: 440px) {
-  .download-wrapper .download-button {
-    border-radius: 87px;
+    .download-wrapper .download-button {
+        border-radius: 87px;
 
-    button {
-      width: 87px;
+        button {
+            width: 87px;
 
-      i {
-        font-size: 3rem;
-      }
+            i {
+                font-size: 3rem;
+            }
+        }
     }
-  }
 }
 
 @media (max-width: variables.$breakpoint-x-small) {
-  .download-wrapper .download-button {
-    border-radius: 110px;
+    .download-wrapper .download-button {
+        border-radius: 110px;
 
-    button {
-      width: 110px;
+        button {
+            width: 110px;
 
-      i {
-        font-size: 4rem;
-      }
+            i {
+                font-size: 4rem;
+            }
+        }
     }
-  }
 }

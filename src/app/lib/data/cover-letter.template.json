@@ -1,18 +1,12 @@
 {
-	"recipient": {
-    "title": ".",
-    "firstName": "",
-    "lastName": "",
-    "nickName": "",
-    "street": "",
-    "city": ""
-  },
-	"content": [
-    "",
-    "",
-    "",
-    "",
-    ""
-  ],
-  "regards": ""
+    "recipient": {
+        "title": "",
+        "firstName": "",
+        "lastName": "",
+        "nickName": "",
+        "street": "",
+        "city": ""
+    },
+    "content": ["", "", "", "", ""],
+    "regards": ""
 }

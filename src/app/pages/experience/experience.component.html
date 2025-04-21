@@ -1,358 +1,481 @@
 <div appScrollDetect class="container">
-  @if (selectedTheme$ | async; as theme) {
-    <div class="header">
-      <h1>
-        {{ 'experience.title' | translate }}
-      </h1>
-    </div>
-    <div class="body">
-      <!-- ******************* ACHTZIG20 ******************* -->
-      <div class="card my-3" [ngClass]="['bg-' + theme]">
-        <div class="card-body">
-          <h5 class="card-title">{{ 'experience.institution.achtzig20' | translate }}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{{ 'experience.achtzig20.title' | translate }}</h6>
-          <p class="card-text"><i>2018 - {{ 'experience.present' | translate }}</i></p>
-          @for (par of ('experience.achtzig20.abstract' | translate); track par) {
-            <p class="card-text">
-              <span [innerHTML]="par"></span>
-            </p>
-          }
-          <a href="https://8020.eco/" target="_blank" rel="noopener noreferrer" aria-label="Achtzig20 Website" class="card-link">{{ 'experience.achtzig20.link' | translate }}</a>
-          <div ngbAccordion>
-            <!-- NOA -->
-            <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
-              <div ngbAccordionHeader class="card-header">
-                <h5 class="mb-0">
-                  <button ngbAccordionButton
-                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.achtzig20.noa.type' | translate)">
-                    {{ 'experience.achtzig20.noa.type' | translate }}
-                  </button>
-                </h5>
-              </div>
-              <div ngbAccordionCollapse>
-                <div ngbAccordionBody class="card-body">
-                  <h5 class="card-title">{{ 'experience.achtzig20.noa.title' | translate }}</h5>
-                  @for (par of ('experience.achtzig20.noa.abstract' | translate); track par) {
+    @if (selectedTheme$ | async; as theme) {
+        <div class="header">
+            <h1>
+                {{ 'experience.title' | translate }}
+            </h1>
+        </div>
+        <div class="body">
+            <!-- ******************* ACHTZIG20 ******************* -->
+            <div class="card my-3" [ngClass]="['bg-' + theme]">
+                <div class="card-body">
+                    <h5 class="card-title">{{ 'experience.institution.achtzig20' | translate }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ 'experience.achtzig20.title' | translate }}</h6>
                     <p class="card-text">
-                      {{ par }}
+                        <i>2018 - {{ 'experience.present' | translate }}</i>
                     </p>
-                  }
-                  {{ 'experience.skills' | translate }}
-                  <ul>
-                    @for (par of ('experience.achtzig20.noa.skills' | translate); track par) {
-                      <li>
-                        {{ par }}
-                      </li>
+                    @for (par of 'experience.achtzig20.abstract' | translate; track par) {
+                        <p class="card-text">
+                            <span [innerHTML]="par"></span>
+                        </p>
                     }
-                  </ul>
-                  {{ 'experience.tech-stack' | translate }}
-                  <ul>
-                    <li>SQL Server</li>
-                    <li>MongoDB</li>
-                    <li>.NET (REST API)</li>
-                    <li>Angular</li>
-                    <li>CI/CD</li>
-                  </ul>
-                  <a href="https://newonads.de/" target="_blank" rel="noopener noreferrer" aria-label="newonads Website" class="card-link">{{ 'experience.achtzig20.noa.link' | translate }}</a>
+                    <a
+                        href="https://8020.eco/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Achtzig20 Website"
+                        class="card-link"
+                    >
+                        {{ 'experience.achtzig20.link' | translate }}
+                    </a>
+                    <div ngbAccordion>
+                        <!-- NOA -->
+                        <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
+                            <div ngbAccordionHeader class="card-header">
+                                <h5 class="mb-0">
+                                    <button
+                                        ngbAccordionButton
+                                        [title]="
+                                            ('accessibility.buttons.expand-area' | translate) +
+                                            ' - ' +
+                                            ('experience.achtzig20.noa.type' | translate)
+                                        "
+                                    >
+                                        {{ 'experience.achtzig20.noa.type' | translate }}
+                                    </button>
+                                </h5>
+                            </div>
+                            <div ngbAccordionCollapse>
+                                <div ngbAccordionBody class="card-body">
+                                    <h5 class="card-title">{{ 'experience.achtzig20.noa.title' | translate }}</h5>
+                                    @for (par of 'experience.achtzig20.noa.abstract' | translate; track par) {
+                                        <p class="card-text">
+                                            {{ par }}
+                                        </p>
+                                    }
+                                    {{ 'experience.skills' | translate }}
+                                    <ul>
+                                        @for (par of 'experience.achtzig20.noa.skills' | translate; track par) {
+                                            <li>
+                                                {{ par }}
+                                            </li>
+                                        }
+                                    </ul>
+                                    {{ 'experience.tech-stack' | translate }}
+                                    <ul>
+                                        <li>SQL Server</li>
+                                        <li>MongoDB</li>
+                                        <li>.NET (REST API)</li>
+                                        <li>Angular</li>
+                                        <li>CI/CD</li>
+                                    </ul>
+                                    <a
+                                        href="https://newonads.de/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="newonads Website"
+                                        class="card-link"
+                                    >
+                                        {{ 'experience.achtzig20.noa.link' | translate }}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- GRID3 -->
+                        <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
+                            <div ngbAccordionHeader class="card-header">
+                                <h5 class="mb-0">
+                                    <button
+                                        ngbAccordionButton
+                                        [title]="
+                                            ('accessibility.buttons.expand-area' | translate) +
+                                            ' - ' +
+                                            ('experience.achtzig20.grid3.type' | translate)
+                                        "
+                                    >
+                                        {{ 'experience.achtzig20.grid3.type' | translate }}
+                                    </button>
+                                </h5>
+                            </div>
+                            <div ngbAccordionCollapse>
+                                <div ngbAccordionBody class="card-body">
+                                    <h5 class="card-title">{{ 'experience.achtzig20.grid3.title' | translate }}</h5>
+                                    @for (par of 'experience.achtzig20.grid3.abstract' | translate; track par) {
+                                        <p class="card-text">
+                                            {{ par }}
+                                        </p>
+                                    }
+                                    {{ 'experience.skills' | translate }}
+                                    <ul>
+                                        @for (par of 'experience.achtzig20.grid3.skills' | translate; track par) {
+                                            <li>
+                                                {{ par }}
+                                            </li>
+                                        }
+                                    </ul>
+                                    {{ 'experience.tech-stack' | translate }}
+                                    <ul>
+                                        <li>SQL Server</li>
+                                        <li>Solidity - Smart Contracts</li>
+                                        <li>.NET (REST API)</li>
+                                        <li>Angular</li>
+                                        <li>CI/CD</li>
+                                    </ul>
+                                    <a
+                                        href="https://grid3.io/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="GRID3 Website"
+                                        class="card-link"
+                                    >
+                                        {{ 'experience.achtzig20.grid3.link' | translate }}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ACHTZIG20 DOO -->
+                        <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
+                            <div ngbAccordionHeader class="card-header">
+                                <h5 class="mb-0">
+                                    <button
+                                        ngbAccordionButton
+                                        [title]="
+                                            ('accessibility.buttons.expand-area' | translate) +
+                                            ' - ' +
+                                            ('experience.achtzig20.achtzig20.type' | translate)
+                                        "
+                                    >
+                                        {{ 'experience.achtzig20.achtzig20.type' | translate }}
+                                    </button>
+                                </h5>
+                            </div>
+                            <div ngbAccordionCollapse>
+                                <div ngbAccordionBody class="card-body">
+                                    <h5 class="card-title">{{ 'experience.achtzig20.achtzig20.title' | translate }}</h5>
+                                    @for (par of 'experience.achtzig20.achtzig20.abstract' | translate; track par) {
+                                        <p class="card-text">
+                                            {{ par }}
+                                        </p>
+                                    }
+                                    {{ 'experience.skills' | translate }}
+                                    <ul>
+                                        @for (par of 'experience.achtzig20.achtzig20.skills' | translate; track par) {
+                                            <li>
+                                                {{ par }}
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- DEVELOPMENT -->
+                        <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
+                            <div ngbAccordionHeader class="card-header">
+                                <h5 class="mb-0">
+                                    <button
+                                        ngbAccordionButton
+                                        [title]="
+                                            ('accessibility.buttons.expand-area' | translate) +
+                                            ' - ' +
+                                            ('experience.achtzig20.development.type' | translate)
+                                        "
+                                    >
+                                        {{ 'experience.achtzig20.development.type' | translate }}
+                                    </button>
+                                </h5>
+                            </div>
+                            <div ngbAccordionCollapse>
+                                <div ngbAccordionBody class="card-body">
+                                    <!-- ALICE -->
+                                    <div class="list-group mb-3">
+                                        <h5 class="card-title">
+                                            {{ 'experience.achtzig20.development.alice.title' | translate }}
+                                        </h5>
+                                        <p class="card-text">
+                                            <i>2018 - {{ 'experience.present' | translate }}</i>
+                                        </p>
+                                        @for (
+                                            par of 'experience.achtzig20.development.alice.abstract' | translate;
+                                            track par
+                                        ) {
+                                            <p class="card-text">
+                                                {{ par }}
+                                            </p>
+                                        }
+                                        {{ 'experience.skills' | translate }}
+                                        <ul>
+                                            @for (
+                                                par of 'experience.achtzig20.development.alice.skills' | translate;
+                                                track par
+                                            ) {
+                                                <li>
+                                                    {{ par }}
+                                                </li>
+                                            }
+                                        </ul>
+                                        {{ 'experience.tech-stack' | translate }}
+                                        <ul>
+                                            <li>Oracle Database</li>
+                                            <li>.NET (REST API)</li>
+                                            <li>Angular</li>
+                                            <li>CI/CD</li>
+                                        </ul>
+                                    </div>
+                                    <!-- NEW -->
+                                    <div class="list-group mb-3">
+                                        <h5 class="card-title">
+                                            {{ 'experience.achtzig20.development.new.title' | translate }}
+                                        </h5>
+                                        <p class="card-text"><i>2020 - 2022</i></p>
+                                        @for (
+                                            par of 'experience.achtzig20.development.new.abstract' | translate;
+                                            track par
+                                        ) {
+                                            <p class="card-text">
+                                                {{ par }}
+                                            </p>
+                                        }
+                                        {{ 'experience.skills' | translate }}
+                                        <ul>
+                                            @for (
+                                                par of 'experience.achtzig20.development.new.skills' | translate;
+                                                track par
+                                            ) {
+                                                <li>
+                                                    {{ par }}
+                                                </li>
+                                            }
+                                        </ul>
+                                        {{ 'experience.tech-stack' | translate }}
+                                        <ul>
+                                            <li>Oracle Database</li>
+                                            <li>.NET (REST API)</li>
+                                            <li>Angular</li>
+                                        </ul>
+                                    </div>
+                                    <!-- FAPOS -->
+                                    <div class="list-group">
+                                        <h5 class="card-title">
+                                            {{ 'experience.achtzig20.development.fapos.title' | translate }}
+                                        </h5>
+                                        <p class="card-text"><i>2019</i></p>
+                                        @for (
+                                            par of 'experience.achtzig20.development.fapos.abstract' | translate;
+                                            track par
+                                        ) {
+                                            <p class="card-text">
+                                                {{ par }}
+                                            </p>
+                                        }
+                                        {{ 'experience.skills' | translate }}
+                                        <ul>
+                                            @for (
+                                                par of 'experience.achtzig20.development.new.skills' | translate;
+                                                track par
+                                            ) {
+                                                <li>
+                                                    {{ par }}
+                                                </li>
+                                            }
+                                        </ul>
+                                        {{ 'experience.tech-stack' | translate }}
+                                        <ul>
+                                            <li>SQL Server</li>
+                                            <li>.NET (REST API)</li>
+                                            <li>Angular</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- TRAININGS -->
+                        <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
+                            <div ngbAccordionHeader class="card-header">
+                                <h5 class="mb-0">
+                                    <button
+                                        ngbAccordionButton
+                                        [title]="
+                                            ('accessibility.buttons.expand-area' | translate) +
+                                            ' - ' +
+                                            ('experience.achtzig20.trainings.type' | translate)
+                                        "
+                                    >
+                                        {{ 'experience.achtzig20.trainings.type' | translate }}
+                                    </button>
+                                </h5>
+                            </div>
+                            <div ngbAccordionCollapse>
+                                <div ngbAccordionBody class="card-body">
+                                    <h5 class="card-title">{{ 'experience.achtzig20.trainings.title' | translate }}</h5>
+                                    @for (par of 'experience.achtzig20.trainings.abstract' | translate; track par) {
+                                        <p class="card-text">
+                                            {{ par }}
+                                        </p>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <!-- GRID3 -->
-            <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
-              <div ngbAccordionHeader class="card-header">
-                <h5 class="mb-0">
-                  <button ngbAccordionButton
-                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.achtzig20.grid3.type' | translate)">
-                    {{ 'experience.achtzig20.grid3.type' | translate }}
-                  </button>
-                </h5>
-              </div>
-              <div ngbAccordionCollapse>
-                <div ngbAccordionBody class="card-body">
-                  <h5 class="card-title">{{ 'experience.achtzig20.grid3.title' | translate }}</h5>
-                  @for (par of ('experience.achtzig20.grid3.abstract' | translate); track par) {
-                    <p class="card-text">
-                      {{ par }}
-                    </p>
-                  }
-                  {{ 'experience.skills' | translate }}
-                  <ul>
-                    @for (par of ('experience.achtzig20.grid3.skills' | translate); track par) {
-                      <li>
-                        {{ par }}
-                      </li>
+            <!-- ******************* AKKA ******************* -->
+            <div class="card my-3" [ngClass]="['bg-' + theme]">
+                <div class="card-body">
+                    <h5 class="card-title">{{ 'experience.institution.akka' | translate }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ 'experience.akka.title' | translate }}</h6>
+                    <p class="card-text"><i>2018</i></p>
+                    @for (par of 'experience.akka.abstract' | translate; track par) {
+                        <p class="card-text">
+                            <span [innerHTML]="par"></span>
+                        </p>
                     }
-                  </ul>
-                  {{ 'experience.tech-stack' | translate }}
-                  <ul>
-                    <li>SQL Server</li>
-                    <li>Solidity - Smart Contracts</li>
-                    <li>.NET (REST API)</li>
-                    <li>Angular</li>
-                    <li>CI/CD</li>
-                  </ul>
-                  <a href="https://grid3.io/" target="_blank" rel="noopener noreferrer" aria-label="GRID3 Website" class="card-link">{{ 'experience.achtzig20.grid3.link' | translate }}</a>
+                    <a
+                        href="/uploads/Arbeitszeugnis_AKKA.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="AKKA Work feedback"
+                        class="card-link"
+                    >
+                        {{ 'experience.akka.certificate' | translate }}
+                    </a>
+                    <div ngbAccordion>
+                        <!-- PROJECTS -->
+                        <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
+                            <div ngbAccordionHeader class="card-header">
+                                <h5 class="mb-0">
+                                    <button
+                                        ngbAccordionButton
+                                        [title]="
+                                            ('accessibility.buttons.expand-area' | translate) +
+                                            ' - ' +
+                                            ('experience.akka.projects.type' | translate)
+                                        "
+                                    >
+                                        {{ 'experience.akka.projects.type' | translate }}
+                                    </button>
+                                </h5>
+                            </div>
+                            <div ngbAccordionCollapse>
+                                <div ngbAccordionBody class="card-body">
+                                    <!-- CARSHIP -->
+                                    <div class="list-group mb-3">
+                                        <h5 class="card-title">
+                                            {{ 'experience.akka.projects.carship.title' | translate }}
+                                        </h5>
+                                        @for (
+                                            par of 'experience.akka.projects.carship.abstract' | translate;
+                                            track par
+                                        ) {
+                                            <p class="card-text">
+                                                {{ par }}
+                                            </p>
+                                        }
+                                        <a
+                                            href="https://carship.online/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="carship Website"
+                                            class="card-link"
+                                        >
+                                            {{ 'experience.akka.projects.carship.link' | translate }}
+                                        </a>
+                                    </div>
+                                    <!-- SECOND HAND PRICE -->
+                                    <div class="list-group">
+                                        <h5 class="card-title">
+                                            {{ 'experience.akka.projects.second-hand.title' | translate }}
+                                        </h5>
+                                        @for (
+                                            par of 'experience.akka.projects.second-hand.abstract' | translate;
+                                            track par
+                                        ) {
+                                            <p class="card-text">
+                                                {{ par }}
+                                            </p>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- AKKADEMY -->
+                        <div ngbAccordionItem class="card" [ngClass]="['bg-' + theme]">
+                            <div ngbAccordionHeader class="card-header">
+                                <h5 class="mb-0">
+                                    <button
+                                        ngbAccordionButton
+                                        [title]="
+                                            ('accessibility.buttons.expand-area' | translate) +
+                                            ' - ' +
+                                            ('experience.akka.akkademy.type' | translate)
+                                        "
+                                    >
+                                        {{ 'experience.akka.akkademy.type' | translate }}
+                                    </button>
+                                </h5>
+                            </div>
+                            <div ngbAccordionCollapse>
+                                <div ngbAccordionBody class="card-body">
+                                    <h5 class="card-title">{{ 'experience.akka.akkademy.title' | translate }}</h5>
+                                    @for (par of 'experience.akka.akkademy.abstract' | translate; track par) {
+                                        <p class="card-text">
+                                            {{ par }}
+                                        </p>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <!-- ACHTZIG20 DOO -->
-            <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
-              <div ngbAccordionHeader class="card-header">
-                <h5 class="mb-0">
-                  <button ngbAccordionButton
-                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.achtzig20.achtzig20.type' | translate)">
-                    {{ 'experience.achtzig20.achtzig20.type' | translate }}
-                  </button>
-                </h5>
-              </div>
-              <div ngbAccordionCollapse>
-                <div ngbAccordionBody class="card-body">
-                  <h5 class="card-title">{{ 'experience.achtzig20.achtzig20.title' | translate }}</h5>
-                  @for (par of ('experience.achtzig20.achtzig20.abstract' | translate); track par) {
-                    <p class="card-text">
-                      {{ par }}
-                    </p>
-                  }
-                  {{ 'experience.skills' | translate }}
-                  <ul>
-                    @for (par of ('experience.achtzig20.achtzig20.skills' | translate); track par) {
-                      <li>
-                        {{ par }}
-                      </li>
+            <!-- ******************* INSTITUTE JOZEF STEFAN ******************* -->
+            <div class="card my-3" [ngClass]="['bg-' + theme]">
+                <div class="card-body">
+                    <h5 class="card-title">{{ 'experience.institution.institute-js' | translate }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ 'experience.institute-js.title' | translate }}</h6>
+                    <p class="card-text"><i>2014 - 2017</i></p>
+                    @for (par of 'experience.institute-js.abstract' | translate; track par) {
+                        <p class="card-text">
+                            <span [innerHTML]="par"></span>
+                        </p>
                     }
-                  </ul>
                 </div>
-              </div>
-            </div>
-            <!-- DEVELOPMENT -->
-            <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
-              <div ngbAccordionHeader class="card-header">
-                <h5 class="mb-0">
-                  <button ngbAccordionButton
-                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.achtzig20.development.type' | translate)">
-                    {{ 'experience.achtzig20.development.type' | translate }}
-                  </button>
-                </h5>
-              </div>
-              <div ngbAccordionCollapse>
-                <div ngbAccordionBody class="card-body">
-                  <!-- ALICE -->
-                  <div class="list-group mb-3">
-                    <h5 class="card-title">{{ 'experience.achtzig20.development.alice.title' | translate }}</h5>
-                    <p class="card-text"><i>2018 - {{ 'experience.present' | translate }}</i></p>
-                    @for (par of ('experience.achtzig20.development.alice.abstract' | translate); track par) {
-                      <p class="card-text">
-                        {{ par }}
-                      </p>
-                    }
-                    {{ 'experience.skills' | translate }}
+                <div class="card-footer text-body-secondary">
+                    <p class="card-text">{{ 'experience.references' | translate }}</p>
                     <ul>
-                      @for (par of ('experience.achtzig20.development.alice.skills' | translate); track par) {
                         <li>
-                          {{ par }}
+                            Prof. Dr. Simon Širca,
+                            <i>{{ 'education.institution.university' | translate }}</i>
+                            <br />
+                            <a href="mailto:simon.sirca@fmf.uni-lj.si">simon.sirca&#64;fmf.uni-lj.si</a>
                         </li>
-                      }
-                    </ul>
-                    {{ 'experience.tech-stack' | translate }}
-                    <ul>
-                      <li>Oracle Database</li>
-                      <li>.NET (REST API)</li>
-                      <li>Angular</li>
-                      <li>CI/CD</li>
-                    </ul>
-                  </div>
-                  <!-- NEW -->
-                  <div class="list-group mb-3">
-                    <h5 class="card-title">{{ 'experience.achtzig20.development.new.title' | translate }}</h5>
-                    <p class="card-text"><i>2020 - 2022</i></p>
-                    @for (par of ('experience.achtzig20.development.new.abstract' | translate); track par) {
-                      <p class="card-text">
-                        {{ par }}
-                      </p>
-                    }
-                    {{ 'experience.skills' | translate }}
-                    <ul>
-                      @for (par of ('experience.achtzig20.development.new.skills' | translate); track par) {
                         <li>
-                          {{ par }}
+                            Prof. Dr. Alexandre Deur,
+                            <i>Jefferson Lab</i>
+                            <br />
+                            <a href="mailto:deurpam@jlab.org">deurpam&#64;jlab.org</a>
                         </li>
-                      }
-                    </ul>
-                    {{ 'experience.tech-stack' | translate }}
-                    <ul>
-                      <li>Oracle Database</li>
-                      <li>.NET (REST API)</li>
-                      <li>Angular</li>
-                    </ul>
-                  </div>
-                  <!-- FAPOS -->
-                  <div class="list-group">
-                    <h5 class="card-title">{{ 'experience.achtzig20.development.fapos.title' | translate }}</h5>
-                    <p class="card-text"><i>2019</i></p>
-                    @for (par of ('experience.achtzig20.development.fapos.abstract' | translate); track par) {
-                      <p class="card-text">
-                        {{ par }}
-                      </p>
-                    }
-                    {{ 'experience.skills' | translate }}
-                    <ul>
-                      @for (par of ('experience.achtzig20.development.new.skills' | translate); track par) {
                         <li>
-                          {{ par }}
+                            Dr. Carlos Muñoz Camacho,
+                            <i>Jefferson Lab</i>
+                            <br />
+                            <a href="mailto:munoz@jlab.org">munoz&#64;jlab.org</a>
                         </li>
-                      }
                     </ul>
-                    {{ 'experience.tech-stack' | translate }}
-                    <ul>
-                      <li>SQL Server</li>
-                      <li>.NET (REST API)</li>
-                      <li>Angular</li>
-                    </ul>
-                  </div>
                 </div>
-              </div>
             </div>
-            <!-- TRAININGS -->
-            <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
-              <div ngbAccordionHeader class="card-header">
-                <h5 class="mb-0">
-                  <button ngbAccordionButton
-                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.achtzig20.trainings.type' | translate)">
-                    {{ 'experience.achtzig20.trainings.type' | translate }}
-                  </button>
-                </h5>
-              </div>
-              <div ngbAccordionCollapse>
-                <div ngbAccordionBody class="card-body">
-                  <h5 class="card-title">{{ 'experience.achtzig20.trainings.title' | translate }}</h5>
-                  @for (par of ('experience.achtzig20.trainings.abstract' | translate); track par) {
-                    <p class="card-text">
-                      {{ par }}
-                    </p>
-                  }
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ******************* AKKA ******************* -->
-      <div class="card my-3" [ngClass]="['bg-' + theme]">
-        <div class="card-body">
-          <h5 class="card-title">{{ 'experience.institution.akka' | translate }}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{{ 'experience.akka.title' | translate }}</h6>
-          <p class="card-text"><i>2018</i></p>
-          @for (par of ('experience.akka.abstract' | translate); track par) {
-            <p class="card-text">
-              <span [innerHTML]="par"></span>
-            </p>
-          }
-          <a href="/uploads/Arbeitszeugnis_AKKA.pdf" target="_blank" rel="noopener noreferrer" aria-label="AKKA Work feedback" class="card-link">{{ 'experience.akka.certificate' | translate }}</a>
-          <div ngbAccordion>
-            <!-- PROJECTS -->
-            <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
-              <div ngbAccordionHeader class="card-header">
-                <h5 class="mb-0">
-                  <button ngbAccordionButton
-                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.akka.projects.type' | translate)">
-                    {{ 'experience.akka.projects.type' | translate }}
-                  </button>
-                </h5>
-              </div>
-              <div ngbAccordionCollapse>
-                <div ngbAccordionBody class="card-body">
-                  <!-- CARSHIP -->
-                  <div class="list-group mb-3">
-                    <h5 class="card-title">{{ 'experience.akka.projects.carship.title' | translate }}</h5>
-                    @for (par of ('experience.akka.projects.carship.abstract' | translate); track par) {
-                      <p class="card-text">
-                        {{ par }}
-                      </p>
+            <!-- ******************* BIA SEPARATIONS ******************* -->
+            <div class="card my-3" [ngClass]="['bg-' + theme]">
+                <div class="card-body">
+                    <h5 class="card-title">{{ 'experience.institution.bia-separation' | translate }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ 'experience.bia-separation.title' | translate }}</h6>
+                    <p class="card-text"><i>2012</i></p>
+                    @for (par of 'experience.bia-separation.abstract' | translate; track par) {
+                        <p class="card-text">
+                            <span [innerHTML]="par"></span>
+                        </p>
                     }
-                    <a href="https://carship.online/" target="_blank" rel="noopener noreferrer" aria-label="carship Website" class="card-link">{{ 'experience.akka.projects.carship.link' | translate }}</a>
-                  </div>
-                  <!-- SECOND HAND PRICE -->
-                  <div class="list-group">
-                    <h5 class="card-title">{{ 'experience.akka.projects.second-hand.title' | translate }}</h5>
-                    @for (par of ('experience.akka.projects.second-hand.abstract' | translate); track par) {
-                      <p class="card-text">
-                        {{ par }}
-                      </p>
-                    }
-                  </div>
                 </div>
-              </div>
             </div>
-            <!-- AKKADEMY -->
-            <div ngbAccordionItem class="card" [ngClass]="['bg-' + theme]">
-              <div ngbAccordionHeader class="card-header">
-                <h5 class="mb-0">
-                  <button ngbAccordionButton
-                    [title]="('accessibility.buttons.expand-area' | translate) + ' - ' + ('experience.akka.akkademy.type' | translate)">
-                    {{ 'experience.akka.akkademy.type' | translate }}
-                  </button>
-                </h5>
-              </div>
-              <div ngbAccordionCollapse>
-                <div ngbAccordionBody class="card-body">
-                  <h5 class="card-title">{{ 'experience.akka.akkademy.title' | translate }}</h5>
-                  @for (par of ('experience.akka.akkademy.abstract' | translate); track par) {
-                    <p class="card-text">
-                      {{ par }}
-                    </p>
-                  }
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- ******************* INSTITUTE JOZEF STEFAN ******************* -->
-      <div class="card my-3" [ngClass]="['bg-' + theme]">
-        <div class="card-body">
-          <h5 class="card-title">{{ 'experience.institution.institute-js' | translate }}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{{ 'experience.institute-js.title' | translate }}</h6>
-          <p class="card-text"><i>2014 - 2017</i></p>
-          @for (par of ('experience.institute-js.abstract' | translate); track par) {
-            <p class="card-text">
-              <span [innerHTML]="par"></span>
-            </p>
-          }
-        </div>
-        <div class="card-footer text-body-secondary">
-          <p class="card-text">{{ 'experience.references' | translate }}</p>
-          <ul>
-            <li>
-              Prof. Dr. Simon Širca,
-              <i>{{ 'education.institution.university' | translate }}</i><br>
-              <a href="mailto:simon.sirca@fmf.uni-lj.si">simon.sirca&#64;fmf.uni-lj.si</a>
-            </li>
-            <li>
-              Prof. Dr. Alexandre Deur,
-              <i>Jefferson Lab</i><br>
-              <a href="mailto:deurpam@jlab.org">deurpam&#64;jlab.org</a>
-            </li>
-            <li>
-              Dr. Carlos Muñoz Camacho,
-              <i>Jefferson Lab</i><br>
-              <a href="mailto:munoz@jlab.org">munoz&#64;jlab.org</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- ******************* BIA SEPARATIONS ******************* -->
-      <div class="card my-3" [ngClass]="['bg-' + theme]">
-        <div class="card-body">
-          <h5 class="card-title">{{ 'experience.institution.bia-separation' | translate }}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{{ 'experience.bia-separation.title' | translate }}</h6>
-          <p class="card-text"><i>2012</i></p>
-          @for (par of ('experience.bia-separation.abstract' | translate); track par) {
-            <p class="card-text">
-              <span [innerHTML]="par"></span>
-            </p>
-          }
-        </div>
-      </div>
-    </div>
-  }
+    }
 </div>

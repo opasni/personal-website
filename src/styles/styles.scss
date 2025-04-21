@@ -4,204 +4,202 @@
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/assets/fonts/Inter-Regular.ttf');
-  font-display: swap;
+    font-family: 'Inter';
+    src: url('/assets/fonts/Inter-Regular.ttf');
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/assets/fonts/Inter-SemiBold.ttf');
-  font-weight: bold;
-  font-display: swap;
+    font-family: 'Inter';
+    src: url('/assets/fonts/Inter-SemiBold.ttf');
+    font-weight: bold;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/assets/fonts/Inter-Light.ttf');
-  font-weight: light;
-  font-display: swap;
+    font-family: 'Inter';
+    src: url('/assets/fonts/Inter-Light.ttf');
+    font-weight: light;
+    font-display: swap;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
 }
 
 a {
-  color: variables.$primary-color;
+    color: variables.$primary-color;
 }
 
 .text-primary {
-  color: variables.$primary-color !important;
+    color: variables.$primary-color !important;
 }
 
 .text-standard {
-  color: var(--font-color);
+    color: var(--font-color);
 }
 
 .background-color {
-  background-color: var(--background-color);
-  color: var(--font-color);
+    background-color: var(--background-color);
+    color: var(--font-color);
 }
 
 .form-control,
 .form-select {
-  color: var(--font-color) !important;
-  background-color: var(--light-background);
+    color: var(--font-color) !important;
+    background-color: var(--light-background);
 }
 
 .container {
-  max-width: none !important;
-  min-height: calc(100vh - 6rem);
+    max-width: none !important;
+    min-height: calc(100vh - 6rem);
 }
 
 .card-header:first-child {
-  border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
+    border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
 }
 .card-body {
-  color: var(--font-color);
+    color: var(--font-color);
 }
 
 .accordion-button {
-  padding: 0 !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
-  color: var(--font-color);
+    padding: 0 !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: var(--font-color);
 
-  &:not(.collapsed) {
-    color: var(--bs-accordion-active-color);
-  }
+    &:not(.collapsed) {
+        color: var(--bs-accordion-active-color);
+    }
 
-  &::after {
-    background-image: var(--bs-accordion-btn-active-icon);
-  }
+    &::after {
+        background-image: var(--bs-accordion-btn-active-icon);
+    }
 }
 
 .list-group-item {
-  color: var(--font-color);
+    color: var(--font-color);
 
-  &:hover {
-    background-color: var(--light-background) !important;
-  }
+    &:hover {
+        background-color: var(--light-background) !important;
+    }
 }
 
 .sidebar {
-
-  .bottom-area {
-    margin-top: auto;
-  }
-
-  ul.components {
-    padding: 0;
-  }
-
-  ul {
-    height: 100%;
-
-    li {
-      margin-top: 0.1em;
-      white-space: nowrap;
-
-      &.active {
-        background: variables.$primary-color;
-        border-radius: 30px;
-        background-color: variables.$primary-color;
-
-        a {
-          color: white;
-        }
-
-        i {
-          color: white;
-        }
-      }
-
-      &>ul {
-        margin-left: 10px;
-      }
-
-      &:not(:last-child):not(.date):hover {
-        color: variables.$primary-color;
-        background-color: var(--light-background);
-        border-radius: 30px;
-
-        a {
-          color: white;
-        }
-      }
-
-      i {
-        display: inline-block;
-        border-radius: 10px;
-        margin-left: 1em;
-        margin-right: 0.5em;
-      }
-
-      a {
-        padding: 10px 0;
-        display: block;
-        color: var(--font-color);
-
-        &:hover {
-          padding: 10px 0;
-          display: block;
-        }
-      }
+    .bottom-area {
+        margin-top: auto;
     }
-  }
+
+    ul.components {
+        padding: 0;
+    }
+
+    ul {
+        height: 100%;
+
+        li {
+            margin-top: 0.1em;
+            white-space: nowrap;
+
+            &.active {
+                background: variables.$primary-color;
+                border-radius: 30px;
+                background-color: variables.$primary-color;
+
+                a {
+                    color: white;
+                }
+
+                i {
+                    color: white;
+                }
+            }
+
+            & > ul {
+                margin-left: 10px;
+            }
+
+            &:not(:last-child):not(.date):hover {
+                color: variables.$primary-color;
+                background-color: var(--light-background);
+                border-radius: 30px;
+
+                a {
+                    color: white;
+                }
+            }
+
+            i {
+                display: inline-block;
+                border-radius: 10px;
+                margin-left: 1em;
+                margin-right: 0.5em;
+            }
+
+            a {
+                padding: 10px 0;
+                display: block;
+                color: var(--font-color);
+
+                &:hover {
+                    padding: 10px 0;
+                    display: block;
+                }
+            }
+        }
+    }
 }
 
-
 .gauge {
-  position: absolute;
-  right: 20px;
-  width: 62px;
-  height: 62px;
-  background-color: #bbb;
-  border-radius: 100%;
-  position: relative;
-  overflow: hidden;
-  border: 4px solid #eee;
-  box-sizing: border-box;
-  float: left;
-  margin: 20px;
-  box-shadow: 0px 0px 25px #bbb;
-
-  &.top {
-    top: 20px;
-  }
-
-  &.bottom {
-    bottom: 20px;
-  }
-
-  &:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 400px 200px 400px;
-    border-color: transparent transparent #ddd transparent;
-    -webkit-transform: rotate(243deg);
-    -ms-transform: rotate(243deg);
-    transform: rotate(243deg);
+    position: absolute;
+    right: 20px;
+    width: 62px;
+    height: 62px;
+    background-color: #bbb;
+    border-radius: 100%;
     position: relative;
-    top: -50px;
-    left: -214px;
-  }
+    overflow: hidden;
+    border: 4px solid #eee;
+    box-sizing: border-box;
+    float: left;
+    margin: 20px;
+    box-shadow: 0px 0px 25px #bbb;
+
+    &.top {
+        top: 20px;
+    }
+
+    &.bottom {
+        bottom: 20px;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 400px 200px 400px;
+        border-color: transparent transparent #ddd transparent;
+        -webkit-transform: rotate(243deg);
+        -ms-transform: rotate(243deg);
+        transform: rotate(243deg);
+        position: relative;
+        top: -50px;
+        left: -214px;
+    }
 }
 
 .skills-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 150px);
-  grid-gap: 1rem;
-  justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    grid-gap: 1rem;
+    justify-content: space-between;
 
-  &.minified {
-    grid-template-columns: repeat(auto-fill, 112px);
-    grid-gap: 0;
-  }
+    &.minified {
+        grid-template-columns: repeat(auto-fill, 112px);
+        grid-gap: 0;
+    }
 }
