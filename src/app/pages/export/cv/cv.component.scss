@@ -90,14 +90,24 @@ $side-width: 14.6rem;
     &.light-theme {
         .side-content {
             .label {
-                border-bottom-color: variables.$primary-color;
+                border-bottom-color: variables.$light-gray-font;
             }
         }
 
         .content {
+            &.de {
+                font-size: 0.75rem;
+            }
+
             .user-header,
             .text {
                 color: variables.$light-gray-font;
+            }
+
+            .experience {
+                .card-subtitle {
+                    color: variables.$light-gray-font !important;
+                }
             }
         }
     }
@@ -119,12 +129,22 @@ $side-width: 14.6rem;
         }
 
         .content {
+            &.de {
+                .text {
+                    font-size: 0.75rem;
+                }
+
+                .user-header {
+                    height: 14rem !important;
+                }
+            }
+
             .text {
                 color: variables.$gray-font;
             }
 
             .user-header {
-                height: 10.5rem;
+                height: 12.7rem;
                 padding-top: 0.75rem;
                 background-color: variables.$primary-color;
                 color: variables.$light-background;
@@ -149,12 +169,14 @@ $side-width: 14.6rem;
             }
 
             .label {
-                border-bottom: none;
+                border: none;
             }
         }
 
         .content {
-            font-size: 0.75rem;
+            &.de {
+                font-size: 0.75rem;
+            }
             background-color: transparent;
 
             .user-header {

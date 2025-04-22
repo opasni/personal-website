@@ -1,21 +1,27 @@
 import { AsyncPipe, NgStyle } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewEncapsulation, inject } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 import { LanguageService } from '@lib/services/language.service';
 import { SkillsService } from '@lib/services/skills.service';
+import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
     selector: 'app-skill-measure',
     templateUrl: './skill-measure.component.html',
     styleUrls: ['./skill-measure.component.scss'],
     encapsulation: ViewEncapsulation.None,
-    imports: [AsyncPipe, NgStyle],
+    imports: [AsyncPipe, NgStyle, FontAwesomeModule, NgbTooltipModule],
 })
 export class SkillMeasureComponent implements OnInit, AfterViewInit {
     @Input() value = 0;
     @Input() minValue = 0;
     @Input() name = '';
     @Input() numberOfCircles = 7;
+    @Input() infoText: string | null = null;
+
+    faInfoCircle = faInfoCircle;
 
     public circles: { index: number; filled: boolean }[] = [];
     public readonly selectedLanguage$ = inject(LanguageService).getSelectedLanguage();

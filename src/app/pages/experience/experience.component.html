@@ -29,6 +29,196 @@
                         {{ 'experience.achtzig20.link' | translate }}
                     </a>
                     <div ngbAccordion>
+                        <!-- ACHTZIG20 DOO -->
+                        <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
+                            <div ngbAccordionHeader class="card-header">
+                                <h5 class="mb-0">
+                                    <button
+                                        ngbAccordionButton
+                                        [title]="
+                                            ('accessibility.buttons.expand-area' | translate) +
+                                            ' - ' +
+                                            ('experience.achtzig20.achtzig20.type' | translate)
+                                        "
+                                    >
+                                        {{ 'experience.achtzig20.achtzig20.type' | translate }}
+                                    </button>
+                                </h5>
+                            </div>
+                            <div ngbAccordionCollapse>
+                                <div ngbAccordionBody class="card-body">
+                                    <h5 class="card-title">{{ 'experience.achtzig20.achtzig20.title' | translate }}</h5>
+                                    @for (par of 'experience.achtzig20.achtzig20.abstract' | translate; track par) {
+                                        <p class="card-text">
+                                            {{ par }}
+                                        </p>
+                                    }
+                                    {{ 'experience.skills' | translate }}
+                                    <ul>
+                                        @for (par of 'experience.achtzig20.achtzig20.skills' | translate; track par) {
+                                            <li>
+                                                {{ par }}
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- DEVELOPMENT -->
+                        <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
+                            <div ngbAccordionHeader class="card-header">
+                                <h5 class="mb-0">
+                                    <button
+                                        ngbAccordionButton
+                                        [title]="
+                                            ('accessibility.buttons.expand-area' | translate) +
+                                            ' - ' +
+                                            ('experience.achtzig20.development.type' | translate)
+                                        "
+                                    >
+                                        {{ 'experience.achtzig20.development.type' | translate }}
+                                    </button>
+                                </h5>
+                            </div>
+                            <div ngbAccordionCollapse>
+                                <div ngbAccordionBody class="card-body">
+                                    <!-- JobCar -->
+                                    <div class="list-group mb-3">
+                                        <h5 class="card-title">
+                                            {{ 'experience.achtzig20.development.job-car.title' | translate }}
+                                        </h5>
+                                        <p class="card-text">
+                                            <i>2023 - {{ 'experience.present' | translate }}</i>
+                                        </p>
+                                        @for (
+                                            par of 'experience.achtzig20.development.job-car.abstract' | translate;
+                                            track par
+                                        ) {
+                                            <p class="card-text">
+                                                {{ par }}
+                                            </p>
+                                        }
+                                        {{ 'experience.skills' | translate }}
+                                        <ul>
+                                            @for (
+                                                par of 'experience.achtzig20.development.job-car.skills' | translate;
+                                                track par
+                                            ) {
+                                                <li>
+                                                    {{ par }}
+                                                </li>
+                                            }
+                                        </ul>
+                                        {{ 'experience.tech-stack' | translate }}
+                                        <ul>
+                                            <li>PostgreSQL</li>
+                                            <li>NodeJS (Express & Prisma)</li>
+                                            <li>Angular</li>
+                                            <li>CI/CD</li>
+                                        </ul>
+                                    </div>
+                                    <!-- ALICE -->
+                                    <div class="list-group mb-3">
+                                        <h5 class="card-title">
+                                            {{ 'experience.achtzig20.development.alice.title' | translate }}
+                                        </h5>
+                                        <p class="card-text">
+                                            <i>2018 - 2024</i>
+                                        </p>
+                                        @for (
+                                            par of 'experience.achtzig20.development.alice.abstract' | translate;
+                                            track par
+                                        ) {
+                                            <p class="card-text">
+                                                {{ par }}
+                                            </p>
+                                        }
+                                        {{ 'experience.skills' | translate }}
+                                        <ul>
+                                            @for (
+                                                par of 'experience.achtzig20.development.alice.skills' | translate;
+                                                track par
+                                            ) {
+                                                <li>
+                                                    {{ par }}
+                                                </li>
+                                            }
+                                        </ul>
+                                        {{ 'experience.tech-stack' | translate }}
+                                        <ul>
+                                            <li>Oracle Database</li>
+                                            <li>.NET (REST API)</li>
+                                            <li>Angular</li>
+                                            <li>CI/CD</li>
+                                        </ul>
+                                    </div>
+                                    <!-- NEW -->
+                                    <div class="list-group mb-3">
+                                        <h5 class="card-title">
+                                            {{ 'experience.achtzig20.development.new.title' | translate }}
+                                        </h5>
+                                        <p class="card-text"><i>2020 - 2022</i></p>
+                                        @for (
+                                            par of 'experience.achtzig20.development.new.abstract' | translate;
+                                            track par
+                                        ) {
+                                            <p class="card-text">
+                                                {{ par }}
+                                            </p>
+                                        }
+                                        {{ 'experience.skills' | translate }}
+                                        <ul>
+                                            @for (
+                                                par of 'experience.achtzig20.development.new.skills' | translate;
+                                                track par
+                                            ) {
+                                                <li>
+                                                    {{ par }}
+                                                </li>
+                                            }
+                                        </ul>
+                                        {{ 'experience.tech-stack' | translate }}
+                                        <ul>
+                                            <li>Oracle Database</li>
+                                            <li>.NET (REST API)</li>
+                                            <li>Angular</li>
+                                        </ul>
+                                    </div>
+                                    <!-- FAPOS -->
+                                    <div class="list-group">
+                                        <h5 class="card-title">
+                                            {{ 'experience.achtzig20.development.fapos.title' | translate }}
+                                        </h5>
+                                        <p class="card-text"><i>2019</i></p>
+                                        @for (
+                                            par of 'experience.achtzig20.development.fapos.abstract' | translate;
+                                            track par
+                                        ) {
+                                            <p class="card-text">
+                                                {{ par }}
+                                            </p>
+                                        }
+                                        {{ 'experience.skills' | translate }}
+                                        <ul>
+                                            @for (
+                                                par of 'experience.achtzig20.development.new.skills' | translate;
+                                                track par
+                                            ) {
+                                                <li>
+                                                    {{ par }}
+                                                </li>
+                                            }
+                                        </ul>
+                                        {{ 'experience.tech-stack' | translate }}
+                                        <ul>
+                                            <li>SQL Server</li>
+                                            <li>.NET (REST API)</li>
+                                            <li>Angular</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- NOA -->
                         <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
                             <div ngbAccordionHeader class="card-header">
@@ -130,161 +320,6 @@
                                     >
                                         {{ 'experience.achtzig20.grid3.link' | translate }}
                                     </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ACHTZIG20 DOO -->
-                        <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
-                            <div ngbAccordionHeader class="card-header">
-                                <h5 class="mb-0">
-                                    <button
-                                        ngbAccordionButton
-                                        [title]="
-                                            ('accessibility.buttons.expand-area' | translate) +
-                                            ' - ' +
-                                            ('experience.achtzig20.achtzig20.type' | translate)
-                                        "
-                                    >
-                                        {{ 'experience.achtzig20.achtzig20.type' | translate }}
-                                    </button>
-                                </h5>
-                            </div>
-                            <div ngbAccordionCollapse>
-                                <div ngbAccordionBody class="card-body">
-                                    <h5 class="card-title">{{ 'experience.achtzig20.achtzig20.title' | translate }}</h5>
-                                    @for (par of 'experience.achtzig20.achtzig20.abstract' | translate; track par) {
-                                        <p class="card-text">
-                                            {{ par }}
-                                        </p>
-                                    }
-                                    {{ 'experience.skills' | translate }}
-                                    <ul>
-                                        @for (par of 'experience.achtzig20.achtzig20.skills' | translate; track par) {
-                                            <li>
-                                                {{ par }}
-                                            </li>
-                                        }
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- DEVELOPMENT -->
-                        <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
-                            <div ngbAccordionHeader class="card-header">
-                                <h5 class="mb-0">
-                                    <button
-                                        ngbAccordionButton
-                                        [title]="
-                                            ('accessibility.buttons.expand-area' | translate) +
-                                            ' - ' +
-                                            ('experience.achtzig20.development.type' | translate)
-                                        "
-                                    >
-                                        {{ 'experience.achtzig20.development.type' | translate }}
-                                    </button>
-                                </h5>
-                            </div>
-                            <div ngbAccordionCollapse>
-                                <div ngbAccordionBody class="card-body">
-                                    <!-- ALICE -->
-                                    <div class="list-group mb-3">
-                                        <h5 class="card-title">
-                                            {{ 'experience.achtzig20.development.alice.title' | translate }}
-                                        </h5>
-                                        <p class="card-text">
-                                            <i>2018 - {{ 'experience.present' | translate }}</i>
-                                        </p>
-                                        @for (
-                                            par of 'experience.achtzig20.development.alice.abstract' | translate;
-                                            track par
-                                        ) {
-                                            <p class="card-text">
-                                                {{ par }}
-                                            </p>
-                                        }
-                                        {{ 'experience.skills' | translate }}
-                                        <ul>
-                                            @for (
-                                                par of 'experience.achtzig20.development.alice.skills' | translate;
-                                                track par
-                                            ) {
-                                                <li>
-                                                    {{ par }}
-                                                </li>
-                                            }
-                                        </ul>
-                                        {{ 'experience.tech-stack' | translate }}
-                                        <ul>
-                                            <li>Oracle Database</li>
-                                            <li>.NET (REST API)</li>
-                                            <li>Angular</li>
-                                            <li>CI/CD</li>
-                                        </ul>
-                                    </div>
-                                    <!-- NEW -->
-                                    <div class="list-group mb-3">
-                                        <h5 class="card-title">
-                                            {{ 'experience.achtzig20.development.new.title' | translate }}
-                                        </h5>
-                                        <p class="card-text"><i>2020 - 2022</i></p>
-                                        @for (
-                                            par of 'experience.achtzig20.development.new.abstract' | translate;
-                                            track par
-                                        ) {
-                                            <p class="card-text">
-                                                {{ par }}
-                                            </p>
-                                        }
-                                        {{ 'experience.skills' | translate }}
-                                        <ul>
-                                            @for (
-                                                par of 'experience.achtzig20.development.new.skills' | translate;
-                                                track par
-                                            ) {
-                                                <li>
-                                                    {{ par }}
-                                                </li>
-                                            }
-                                        </ul>
-                                        {{ 'experience.tech-stack' | translate }}
-                                        <ul>
-                                            <li>Oracle Database</li>
-                                            <li>.NET (REST API)</li>
-                                            <li>Angular</li>
-                                        </ul>
-                                    </div>
-                                    <!-- FAPOS -->
-                                    <div class="list-group">
-                                        <h5 class="card-title">
-                                            {{ 'experience.achtzig20.development.fapos.title' | translate }}
-                                        </h5>
-                                        <p class="card-text"><i>2019</i></p>
-                                        @for (
-                                            par of 'experience.achtzig20.development.fapos.abstract' | translate;
-                                            track par
-                                        ) {
-                                            <p class="card-text">
-                                                {{ par }}
-                                            </p>
-                                        }
-                                        {{ 'experience.skills' | translate }}
-                                        <ul>
-                                            @for (
-                                                par of 'experience.achtzig20.development.new.skills' | translate;
-                                                track par
-                                            ) {
-                                                <li>
-                                                    {{ par }}
-                                                </li>
-                                            }
-                                        </ul>
-                                        {{ 'experience.tech-stack' | translate }}
-                                        <ul>
-                                            <li>SQL Server</li>
-                                            <li>.NET (REST API)</li>
-                                            <li>Angular</li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
