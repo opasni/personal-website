@@ -9,7 +9,8 @@
         "watch": "ng build --watch --configuration development",
         "analyze": "ng build --stats-json && webpack-bundle-analyzer dist/website/stats.json",
         "test": "ng test",
-        "lint": "npx eslint ./"
+        "lint": "ng lint",
+        "lint:fix": "ng lint --fix"
     },
     "private": true,
     "dependencies": {
@@ -32,7 +33,6 @@
         "bootstrap": "^5.3.3",
         "bootstrap-icons": "^1.10.5",
         "bootstrap-print-css": "^1.0.1",
-        "crypto-js": "^4.2.0",
         "jspdf": "^3.0.1",
         "ng-recaptcha-2": "^15.0.0",
         "ngx-cookie-service": "^19.0.0",

@@ -8,37 +8,35 @@
         "title": "Moje ime je Črt Harej",
         "subtitle": "Tukaj si lahko preberete nekaj o meni",
         "text": [
-            "Sem zelo motiviran in izkušen strokovnjak z močnim ozadjem v razvoju programske opreme in projektovnem vodenju. Kot izvršni direktor (CEO) podjetja Achtzig20 d.o.o. uspešno vodim ekipo talentiranih posameznikov in usmerjam ustanovitev naše podružnice. S strastjo do tehnologije in inovacij sem vključen v različne projekte, med katere spadata tudi razvoj digitalne oglaševalske platforme newonads in ustvarjanjem platforme za gradnjo skupnosti GRID3. Moje sposobnosti vodenja, reševanja problemov in strateškega razmišljanja so mi omogočile, da dosežem uspešne rezultate in zagotovim da so stranke vedno zadovoljne.",
-            "Poleg svojega profesionalnega dela se navdušujem tudi nad glasbo, športom in potovanji. Ti hobiji prinašajo ravnotežje v moje življenje in me navdihujejo, da raziskujem nova obzorja. S poznavanjem slovenskega in angleškega jezika ter srednjim znanjem nemščine sem opremljen za komunikacijo z različnimi občinstvi in ustvarjanje pomenljivih povezav. Z veseljem izkoriščam svoje sposobnosti, znanje in izkušnje, da bi ustvaril pozitiven vpliv v digitalnem svetu in širše."
+            "Sem motiviran in izkušen strokovnjak z obsežnim znanjem na področjih razvoja programske opreme, projektnega vodenja in strateškega poslovnega upravljanja. Kot direktor podjetja Achtzig20 d.o.o. in partner matične družbe 8020 Consulting GmbH vodim predane ekipe, upravljam strateške pobude ter uspešno spodbujam rast in inovacije v podjetju. Moje vodstvene sposobnosti, reševanje problemov in strateško razmišljanje stalno prispevajo k uspešnim rezultatom naših projektov ter ustvarjanju dodane vrednosti za naše ekipe in stranke.",
+            "Poleg poklicnih aktivnosti se v prostem času navdušujem nad glasbo, športom in potovanji, saj mi ti hobiji omogočajo ravnovesje, spodbujajo ustvarjalnost ter me napolnjujejo s svežo energijo in navdihom. Tekoče govorim slovensko in angleško, prav tako pa imam srednjo raven znanja nemščine, kar mi omogoča učinkovito povezovanje in komuniciranje z mednarodnimi partnerji. Z znanjem, izkušnjami in svojimi veščinami želim še naprej ustvarjati pozitiven učinek v digitalnem okolju in širše."
         ]
     },
     "cv": {
         "menu-item": "Ustvari življenjepis",
-        "about": "Sem strokovnjak za <b>razvoj programske opreme</b> in <b>direktor podjetja Achtzig20 d.o.o.</b> S strastjo do tehnologije in inovacij vodim projekte, kot so digitalna oglaševalska platforma <b>newonads</b> in platforma za gradnjo skupnosti <b>GRID3</b>. Z močnimi vodstvenimi sposobnostmi in strateškim razmišljanjem konstantno prinašam vrednost strankam. Tekoče govorim slovenščino in angleščino, dobro pa tudi nemščino. Uživam v glasbi, športu in potovanjih ter sem predan ustvarjanju pozitivnega vpliva v digitalnem svetu.",
+        "about": "Sem izkušen strokovnjak s področja <b>razvoja programske opreme</b>, <b>direktor podjetja Achtzig20 d.o.o.</b> in <b>partner v podjetju 8020 Consulting GmbH</b>. Z veliko strastjo do tehnologije in inovacij sem uspešno vodil različne strateške projekte in iniciative, med drugim razvoj inteligentnega AI asistenta <b>nito.ai</b>. S svojimi vodstvenimi sposobnostmi in strateškim razmišljanjem dosledno ustvarjam visoko vrednost za stranke in partnerje. Govorim tekoče slovensko in angleško ter nemško na srednji ravni. Zavzet sem za ustvarjanje pozitivnega vpliva v digitalnem svetu, v prostem času pa me navdihujejo glasba, šport in potovanja.",
         "experience": {
             "achtzig20": {
                 "summary-long": [
-                    "<b>Management svetovalec pri Achtzig20 GmbH</b>, ki nudi tehnično vodstvo pri inženiringu zahtev, razvoju programske opreme, arhitekturi programske opreme in DevOps.",
-                    "<b>Izvršni direktor podjetja Achtzig20 d.o.o.</b>, ki vodi podjetje skozi različne faze rasti, vključno z ustanovitvijo nove podružnice in pisarne v Ljubljani.",
-                    "<b>CTO pri newonads GmbH</b>, odgovoren za upravljanje digitalne oglaševalske platforme, osredotočene na izboljšanje prepoznavnosti blagovne znamke, pridobivanje vodil in prodajo.",
-                    "<b>CTO pri Studio3 GmbH</b>, ki agencijam pomaga pri izgradnji in vzdrževanju digitalnih skupnosti z uporabo tehnologij web3 ob minimalnih varnostnih tveganjih in dodatnih stroških.",
-                    "Delal s prestižnimi strankami, kot so Audi, Porsche, BMW in DZ Bank na razvoju programske opreme in usposabljanju iz področja analize podatkov.",
-                    "Vodil projekte, vključno z ALICE pri CARIAD za interdisciplinarno upravljanje projektnih skupin, NEW pri AUDI za sledenje napredku razvoja in FAPOS pri AUDI za rezervacijo testnih avtomobilov.",
-                    "Razvil in izvedel usposabljanje iz analize podatkov, pomagal strankam izboljšati razumevanje in uporabo analize podatkov."
+                    "<b>Partner v podjetju 8020 Consulting GmbH</b>, aktivno vključen v dolgoročno strateško usmeritev podjetja, upravljanje iniciativ in podporo uspešnemu sodelovanju s strankami.",
+                    "<b>Direktor podjetja Achtzig20 d.o.o.</b>, uspešno ustanovil in vodil podružnico v Ljubljani skozi različne faze rasti in strateških partnerstev.",
+                    "<b>Tehnični vodja pri 8020 Consulting GmbH (prej Achtzig20 GmbH)</b>, zagotavljal tehnično in strateško vodenje na področju inženirstva zahtev, razvoja programske opreme, arhitekture in DevOps metodologij.",
+                    "Tesno sodelovanje z uveljavljenimi strankami, kot so Audi, Porsche, BMW in DZ Bank pri razvoju programske opreme po meri in izvedbi specializiranih izobraževanj za področje podatkovne analitike.",
+                    "Vodil pomembne projekte, kot so ALICE pri CARIAD (upravljanje interdisciplinarnih projektnih ekip), NEW pri AUDI (nadzor napredka razvoja) in FAPOS pri AUDI (platforma za rezervacijo testnih vozil).",
+                    "Oblikoval in izvajal prilagojene programe usposabljanja s področja analitike podatkov, s čimer sem pomembno prispeval k izboljšanju internih kompetenc naših strank."
                 ],
                 "summary": [
-                    "<b>Management svetovalec, Achtzig20 GmbH</b>: Tehnično vodstvo, razvoj programske opreme, arhitektura, DevOps.",
-                    "<b>CEO, Achtzig20 d.o.o.</b>: Vodenje rasti podjetja, ustanovitev podružnice & odprtje pisarne v Ljubljani.",
-                    "<b>CTO, newonads GmbH</b>: Digitalna oglaševalska platforma - prepoznavnost blagovne znamke, generiranje vodil, prodaja.",
-                    "<b>CTO, Studio3 GmbH</b>: Digitalne skupnosti preko Web3, minimalna varnostna tveganja.",
-                    "Projekti za stranke: Audi, Porsche, BMW, DZ Bank - programske rešitve & usposabljanje iz analitike podatkov.",
-                    "Ključni projekti: ALICE pri CARIAD, NEW & FAPOS pri AUDI.",
-                    "Razvoj & izvedba programov za usposabljanje iz analitike podatkov."
+                    "<b>Partner, 8020 Consulting GmbH</b>: Strateško vodenje, rast podjetja, odnosi s strankami.",
+                    "<b>Direktor, Achtzig20 d.o.o.</b>: Upravljanje rasti, ustanovitev podružnice, strateška partnerstva v Ljubljani.",
+                    "<b>Tehnični vodja, 8020 Consulting GmbH (prej Achtzig20 GmbH)</b>: Tehnično vodenje, razvoj programske opreme, arhitektura, DevOps.",
+                    "Projekti za stranke: Audi, Porsche, BMW, DZ Bank – razvoj rešitev programske opreme in usposabljanja s področja podatkovne analitike.",
+                    "Ključni projekti: ALICE za CARIAD, NEW in FAPOS za AUDI.",
+                    "Oblikovanje in izvedba prilagojenih izobraževalnih programov analitike podatkov."
                 ],
                 "skills": [
-                    "Vloge: Upravljanje projektov, Vodenje ekipe, Tehnični vodja, Oblikovanje izdelka.",
-                    "Strokovno znanje: Inženiring zahtev, Razvoj programske opreme, Arhitektura, DevOps, Vodenje, Strateško razmišljanje.",
-                    "Tehnologija: SQL Server, MongoDB, Oracle, .NET, Angular, CI/CD, Solidity, Python."
+                    "<b>Vloge</b>: Upravljanje projektov, Vodenje ekipe, Tehnično vodenje, Oblikovanje izdelkov.",
+                    "<b>Strokovna znanja</b>: Inženirstvo zahtev, Razvoj programske opreme, Arhitektura programske opreme, DevOps, Vodstvene kompetence, Strateško razmišljanje.",
+                    "<b>Tehnologije</b>: SQL Server, MongoDB, Oracle, .NET, Angular, CI/CD, Solidity, Python."
                 ]
             },
             "akka": {
@@ -128,17 +126,33 @@
             "bia-separation": "BIA Separations d.o.o.",
             "institute-js": "Inštitut Jožefa Štefana",
             "akka": "AKKA GmbH",
-            "achtzig20": "Achtzig20 GmbH"
+            "achtzig20": "8020 Consulting GmbH"
         },
         "achtzig20": {
             "type": "Employee",
-            "title": "Vodja Programerskega oddelka",
+            "title": "Partner",
             "abstract": [
-                "V svoji vlogi pri Achtzig20 sem imel privilegij sodelovati z dinamično ekipo in prispevati k rasti in uspehu podjetja. Začenši z izkušnjami pri podjetju AKKA, kjer sem pridobil dragocene veščine kot razvijalec programske opreme in arhitekt, me je pot vodila v Achtzig20, kjer sem postopoma prevzel vlogo tehničnega vodje. Z močnim poudarkom na zahtevah, razvoju programske opreme, arhitekturi programske opreme in DevOpsu sem odigral ključno vlogo pri zagotavljanju visokokakovostnih rešitev našim strankam.",
-                "Poleg tega se je moje sodelovanje z Achtzig20 razširilo preko tehničnega področja. Kot izvršni direktor (CEO) podjetja Achtzig20 d.o.o. vodim podjetje skozi različne faze rasti. Od sodelovanja z e-Študentskim Servisom in vzpostavitve čudovite pisarne v središču Ljubljane do ustanovitve podružnice Achtzig20 d.o.o., namen je bil vedno gradnja močne in uspešne organizacije.",
-                "Med svojim delom sem sodeloval s prestižnimi strankami, kot so Audi, Porsche, BMW, DZ Bank in drugimi, pri razvoju programske opreme na osnovi spletnih odjemalcev ali namiznih orodij, reševanju zahtevnih tehničnih izzivov, izvajanju usposabljanj na področju analitike podatkov ter izkoriščanju svojega znanja za ustvarjanje dragocenih vpogledov.",
-                "Moje izkušnje pri Achtzig20 so zaznamovane z nenehnim učenjem, reševanjem problemov in inovacijami. To je bila do sedaj nagrajujoča pot, ki mi je omogočila prispevanje k rasti in uspehu podjetja ter gradnjo močnih odnosov s strankami in partnerji."
+                "V okviru mojega dela v podjetju 8020 Consulting GmbH (prej poznano kot Achtzig20) sem imel privilegij sodelovati z dinamično ekipo, ter pomembno prispevati k rasti in uspehu podjetja. Karierno pot sem začel pri podjetju AKKA, kjer sem pridobil številne dragocene izkušnje kot razvijalec programske opreme in arhitekt sistemov, nato pa sem svojo pot nadaljeval v vlogi tehničnega vodje (Technical Lead). Z močnim znanjem s področij analize zahtev (Requirements Engineering), razvoja programske opreme, arhitekture sistemov in pristopov DevOps sem uspešno zagotavljal inovativne in kakovostne rešitve po meri naših naročnikov.",
+                "Poleg tehničnih nalog sem svojo poklicno pot razširil tudi na poslovno vodenje organizacije. Kot direktor hčerinske družbe Achtzig20 d.o.o. v Ljubljani sem podjetje uspešno vodil skozi različne faze rasti – od vzpostavitve strateških partnerstev, kot je bilo sodelovanje z družbo e-Študentski Servis, pa vse do odprtja sodobne pisarne v samem središču Ljubljane. Danes kot partner v podjetju 8020 Consulting GmbH aktivno sodelujem pri strateškem vodenju podjetja, kjer razvijam pozitivno, inovativno in trajnostno usmerjeno korporativno kulturo.",
+                "V okviru svoje dosedanje kariere sem sodeloval s priznanimi naročniki, kot so Audi, Porsche, BMW in DZ Bank, pri razvoju kompleksnih programskih rešitev – od spletnih aplikacij do specializiranih namiznih orodij. Uspešno sem se soočal z zahtevnimi internimi tehničnimi izzivi, izvajal izobraževanja s področja podatkovne analitike in s svojim strokovnim znanjem ustvarjal vredne ter praktične rešitve za naše naročnike.",
+                "Mojo pot v družbi 8020 Consulting GmbH zaznamujejo nenehna rast, reševanje izzivov in inovacije. Gre za izjemno bogato in navdihujočo izkušnjo, ki mi omogoča pomembno prispevati k rasti podjetja ter graditi in negovati dolgoročne odnose z naročniki in partnerji."
             ],
+            "achtzig20": {
+                "type": "Poslovodja @ Achtzig20 d.o.o.",
+                "title": "Achtzig20 d.o.o.",
+                "abstract": [
+                    "Kot direktor Achtzig20 d.o.o. sem igral ključno vlogo pri rasti in uspehu podjetja. Vse se je začelo z delovnimi študenti preko e-Študentski Servisa, ki so začeli delati za Achtzig20 GmbH. S časom smo razširili ekipo z redno zaposlenimi in vzpostavili prekrasen pisarniški prostor v središču Ljubljane. Dosegli smo pomembne mejnike, med drugim ustanovitev podružnice Achtzig20 d.o.o. Skupaj smo zgradili močno in uspešno organizacijo, ki jo poganja naša strast do odličnosti in predanost zagotavljanju izjemnih storitev."
+                ],
+                "skills": [
+                    "Vodstvo",
+                    "Strateško razmišljanje",
+                    "Komunikacija",
+                    "Odločanje",
+                    "Prilagodljivost",
+                    "Finančno razumevanje",
+                    "Čustvena inteligentnost"
+                ]
+            },
             "noa": {
                 "type": "CTO @ newonads GmbH",
                 "title": "newonads",
@@ -177,24 +191,25 @@
                     "DevOps"
                 ]
             },
-            "achtzig20": {
-                "type": "Poslovodja @ Achtzig20 d.o.o.",
-                "title": "Achtzig20 d.o.o.",
-                "abstract": [
-                    "Kot direktor Achtzig20 d.o.o. sem igral ključno vlogo pri rasti in uspehu podjetja. Vse se je začelo z delovnimi študenti preko e-Študentski Servisa, ki so začeli delati za Achtzig20 GmbH. S časom smo razširili ekipo z redno zaposlenimi in vzpostavili prekrasen pisarniški prostor v središču Ljubljane. Dosegli smo pomembne mejnike, med drugim ustanovitev podružnice Achtzig20 d.o.o. Skupaj smo zgradili močno in uspešno organizacijo, ki jo poganja naša strast do odličnosti in predanost zagotavljanju izjemnih storitev."
-                ],
-                "skills": [
-                    "Vodstvo",
-                    "Strateško razmišljanje",
-                    "Komunikacija",
-                    "Odločanje",
-                    "Prilagodljivost",
-                    "Finančno razumevanje",
-                    "Čustvena inteligentnost"
-                ]
-            },
             "development": {
                 "type": "Projekti",
+                "job-car": {
+                    "title": "JobCar @ Graf Hardenberg",
+                    "link": "jobcar-flotteeins.de/",
+                    "abstract": [
+                        "JobCar ponuja inovativen model lizinga vozil, ki ga lahko delodajalci svojim zaposlenim zagotovijo preko preoblikovanja bruto plače. Zaposleni hitro in enostavno izberejo ter naročijo želeno vozilo prek spletne platforme ter s tem pridobijo dostop do ugodnih pogojev »Full-Service-Leasing«, izboljšano osebno likvidnost ter uporabo storitvene kartice za brezgotovinsko poslovanje. Delodajalci s tem krepijo motivacijo zaposlenih, povečujejo privlačnost lastne znamke delodajalca, znižujejo stroške prek boljših nabavnih pogojev vozil in si zagotovijo celovito upravljanje voznega parka. Model JobCar posebej spodbuja elektromobilnost, ki omogoča znatne davčne ugodnosti ter skladno podpira trajnostne cilje podjetja."
+                    ],
+                    "skills": [
+                        "Upravljanje projektov",
+                        "Vodenje ekipe",
+                        "Tehnični vodja",
+                        "Oblikovanje izdelka",
+                        "Inženirstvo zahtev / Analiza zahtev",
+                        "Razvoj programske opreme",
+                        "Arhitektura programske opreme",
+                        "DevOps"
+                    ]
+                },
                 "alice": {
                     "title": "ALICE @ CARIAD",
                     "abstract": [

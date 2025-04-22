@@ -1,11 +1,8 @@
 <div #sheet class="sheet d-flex wrapper">
     <nav class="side-content background-color">
         <div class="d-block picture-container">
-            <img
-                class="profile rounded-circle"
-                [alt]="'accessibility.images.profile' | translate"
-                src="assets/images/profile_image.jpg"
-            />
+            <img class="profile rounded-circle" [alt]="'accessibility.images.profile' | translate"
+                src="assets/images/profile_image.jpg" />
         </div>
         <div class="sidebar-content py-4">
             <div class="px-3 user-header text-center">
@@ -15,24 +12,24 @@
                 </h1>
                 <ul class="user-info">
                     @if (userData.address) {
-                        <li>
-                            <i class="bi bi-geo-alt-fill"></i>
-                            {{ userData.address }}
-                        </li>
+                    <li>
+                        <i class="bi bi-geo-alt-fill"></i>
+                        {{ userData.address }}
+                    </li>
                     }
                     @if (userData.phone) {
-                        <li>
-                            <i class="bi bi-telephone"></i>
-                            {{ userData.phone }}
-                        </li>
+                    <li>
+                        <i class="bi bi-telephone"></i>
+                        {{ userData.phone }}
+                    </li>
                     }
                     @if (userData.email) {
-                        <li>
-                            <i class="bi bi-envelope-at-fill"></i>
-                            <a class="header-link" aria-label="Send me an Email" [href]="'mailto:' + userData.email">
-                                {{ userData.email }}
-                            </a>
-                        </li>
+                    <li>
+                        <i class="bi bi-envelope-at-fill"></i>
+                        <a class="header-link" aria-label="Send me an Email" [href]="'mailto:' + userData.email">
+                            {{ userData.email }}
+                        </a>
+                    </li>
                     }
                     <li>
                         <i class="bi bi-globe"></i>
@@ -63,7 +60,7 @@
         </div>
     </nav>
 
-    <div class="content">
+    <div class="content" [ngClass]="language$ | async">
         <div class="px-3 user-header">
             <div class="label">
                 <h5>{{ 'about.menu-item' | translate | uppercase }}</h5>
@@ -89,16 +86,16 @@
 
             <ul>
                 @for (par of 'cv.experience.achtzig20.summary' | translate; track par; let index = $index) {
-                    <li>
-                        <span [innerHTML]="par"></span>
-                    </li>
+                <li>
+                    <span [innerHTML]="par"></span>
+                </li>
                 }
             </ul>
             <ul>
                 @for (par of 'cv.experience.achtzig20.skills' | translate; track par; let index = $index) {
-                    <li>
-                        <span [innerHTML]="par"></span>
-                    </li>
+                <li>
+                    <span [innerHTML]="par"></span>
+                </li>
                 }
             </ul>
 
@@ -116,9 +113,9 @@
 
             <ul>
                 @for (par of 'cv.experience.akka.summary' | translate; track par; let index = $index) {
-                    <li>
-                        <span [innerHTML]="par"></span>
-                    </li>
+                <li>
+                    <span [innerHTML]="par"></span>
+                </li>
                 }
             </ul>
 
@@ -136,9 +133,9 @@
 
             <ul>
                 @for (par of 'cv.experience.institute-js.summary' | translate; track par; let index = $index) {
-                    <li>
-                        <span [innerHTML]="par"></span>
-                    </li>
+                <li>
+                    <span [innerHTML]="par"></span>
+                </li>
                 }
             </ul>
 
@@ -160,9 +157,9 @@
 
             <ul>
                 @for (par of 'cv.education.masters.summary' | translate; track par; let index = $index) {
-                    <li>
-                        <span [innerHTML]="par"></span>
-                    </li>
+                <li>
+                    <span [innerHTML]="par"></span>
+                </li>
                 }
             </ul>
 
@@ -180,9 +177,9 @@
 
             <ul>
                 @for (par of 'cv.education.bachelor.summary' | translate; track par; let index = $index) {
-                    <li>
-                        <span [innerHTML]="par"></span>
-                    </li>
+                <li>
+                    <span [innerHTML]="par"></span>
+                </li>
                 }
             </ul>
         </div>

@@ -1,4 +1,9 @@
-<div [lang]="selectedLanguage$ | async" class="measure-name">{{ name }}</div>
+<div [lang]="selectedLanguage$ | async" class="measure-name">
+    {{ name }}
+    @if (infoText) {
+        <fa-icon placement="top" [ngbTooltip]="infoText" [icon]="faInfoCircle"></fa-icon>
+    }
+</div>
 <div class="circles">
     @for (circle of circles; track circle) {
         <div

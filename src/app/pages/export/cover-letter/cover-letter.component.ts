@@ -14,8 +14,8 @@ import { CoverLetter } from '@lib/types/cover-leter.type';
 export class CoverLetterComponent extends ExportComponent implements OnInit {
     date = new Date();
     coverLetter: CoverLetter = data ?? { recipient: {}, content: [] };
-    ngOnInit(): void {
-        this.setUser();
+    async ngOnInit(): Promise<void> {
+        await this.setUser();
         this.printService.fileName = 'CoverLetter';
     }
 }

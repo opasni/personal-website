@@ -15,8 +15,8 @@ import { ExportComponent } from '@lib/abstracts/export.component';
     imports: [CommonModule, SkillsOverviewComponent, TranslateModule],
 })
 export class CVComponent extends ExportComponent implements OnInit {
-    ngOnInit(): void {
-        this.setUser();
+    async ngOnInit(): Promise<void> {
+        await this.setUser();
         this.printService.fileName = 'CV';
     }
 }
