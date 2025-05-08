@@ -36,7 +36,7 @@
                 "skills": [
                     "<b>Rollen</b>: Projektmanagement, Teamführung, Technische Leitung, Produktgestaltung.",
                     "<b>Fachkompetenzen</b>: Anforderungsmanagement, Softwareentwicklung, Softwarearchitektur, DevOps, Führungskompetenz, Strategisches Denken.",
-                    "<b>Technologien</b>: SQL Server, MongoDB, Oracle, .NET, Angular, CI/CD, Solidity, Python."
+                    "<b>Technologien</b>: SQL (mssql, postgresql, oracle), MongoDB, .NET, NodeJS, Python, Angular, React, CI/CD, Solidity."
                 ]
             },
             "akka": {

@@ -36,7 +36,7 @@
                 "skills": [
                     "<b>Roles</b>: Project Management, Team Leading, Technical Lead, Product Design.",
                     "<b>Expertise</b>: Requirements Engineering, Software Development, Software Architecture, DevOps, Leadership, Strategic Thinking.",
-                    "<b>Tech Stack</b>: SQL Server, MongoDB, Oracle, .NET, Angular, CI/CD, Solidity, Python."
+                    "<b>Tech Stack</b>: SQL (mssql, postgresql, oracle), MongoDB, .NET, NodeJS, Python, Angular, React, CI/CD, Solidity."
                 ]
             },
             "akka": {

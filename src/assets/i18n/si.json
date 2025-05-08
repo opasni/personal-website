@@ -36,7 +36,7 @@
                 "skills": [
                     "<b>Vloge</b>: Upravljanje projektov, Vodenje ekipe, Tehnično vodenje, Oblikovanje izdelkov.",
                     "<b>Strokovna znanja</b>: Inženirstvo zahtev, Razvoj programske opreme, Arhitektura programske opreme, DevOps, Vodstvene kompetence, Strateško razmišljanje.",
-                    "<b>Tehnologije</b>: SQL Server, MongoDB, Oracle, .NET, Angular, CI/CD, Solidity, Python."
+                    "<b>Tehnologije</b>: SQL (mssql, postgresql, oracle), MongoDB, .NET, NodeJS, Python, Angular, React, CI/CD, Solidity."
                 ]
             },
             "akka": {
