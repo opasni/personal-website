@@ -197,9 +197,15 @@ a {
     grid-template-columns: repeat(auto-fill, 150px);
     grid-gap: 1rem;
     justify-content: space-between;
-
+    &.languages {
+        grid-template-columns: repeat(auto-fill, 60px);
+        grid-gap: 0 !important;
+    }
     &.minified {
-        grid-template-columns: repeat(auto-fill, 112px);
+        grid-template-columns: none;
         grid-gap: 0;
+        ul {
+            list-style-type: none;
+        }
     }
 }

@@ -5,8 +5,11 @@ export class User {
     public nickName: string | null = null;
     public imagePath: string | null = null;
     public address: string | null = null;
+    public address_de: string | null = null;
     public street!: string;
+    public street_de!: string;
     public city!: string;
+    public city_de!: string;
     public phone: string | null = null;
     public website: string | null = null;
     public email: string | null = null;
@@ -35,11 +38,24 @@ export class User {
                     this.city = shape.address.split(', ')[1];
                 }
             }
+            if (shape.address_de != null) {
+                this.address_de = shape.address_de;
+                if (shape.address_de.split(', ').length > 1) {
+                    this.street_de = shape.address_de.split(', ')[0];
+                    this.city_de = shape.address_de.split(', ')[1];
+                }
+            }
             if (shape.street != null) {
                 this.street = shape.street;
             }
             if (shape.city != null) {
                 this.city = shape.city;
+            }
+            if (shape.street_de != null) {
+                this.street_de = shape.street_de;
+            }
+            if (shape.city_de != null) {
+                this.city_de = shape.city_de;
             }
             if (shape.phone != null) {
                 this.phone = shape.phone;

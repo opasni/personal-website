@@ -32,13 +32,14 @@ export abstract class ExportComponent implements AfterViewInit {
     protected async setUser(): Promise<void> {
         const storedEncryptedPassword = localStorage.getItem(StorageKeys.ACCESS_KEY);
         let password = null;
+        const language = this._translateService.currentLang;
         if (storedEncryptedPassword == null || storedEncryptedPassword === '') {
             const message = this._translateService.instant('insert-password');
             password = await this._encrypt.encrypt(prompt(message) ?? '');
         }
 
         this._userService
-            .getUserData(password)
+            .getUserData(password, language)
             .pipe(
                 tap((user) => {
                     if (user.email != null && password != null) {

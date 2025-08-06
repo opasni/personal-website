@@ -12,6 +12,10 @@ $side-width: 14.6rem;
         font-weight: 600;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     .sidebar-content {
         h5 {
             text-align: right;
@@ -31,16 +35,12 @@ $side-width: 14.6rem;
         box-shadow: 0px 0px 4px var(--pop-color);
 
         .picture-container {
-            position: relative;
-            height: 10.5rem;
+            height: 5rem;
             margin-top: 2rem;
 
             .profile {
-                position: absolute;
-                top: -0.5rem;
-                left: 1.5rem;
-                width: calc($side-width - 3rem);
-                height: calc($side-width - 3rem);
+                width: calc($side-width - 8.5rem);
+                height: calc($side-width - 8.5rem);
                 border: 3px solid;
             }
         }
@@ -76,13 +76,33 @@ $side-width: 14.6rem;
         width: calc(100% - $side-width) !important;
 
         .user-header {
-            margin-top: 2rem;
+            height: 13.6rem;
+            padding-top: 0.75rem;
         }
 
         .experience {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            &-item {
+                i {
+                    font-size: x-small;
+                }
+            }
+        }
+
+        .section {
+            .skill-title {
+                margin: 0;
+                font-weight: 600;
+                font-size: 0.6rem;
+                text-transform: uppercase;
+            }
+            .separator {
+                margin: 0 0 0.25rem 0;
+                border-top: 1px solid var(--pop-color);
+                box-shadow: 0px 0px 4px var(--pop-color);
+            }
         }
     }
 
@@ -109,16 +129,18 @@ $side-width: 14.6rem;
                     color: variables.$light-gray-font !important;
                 }
             }
+            .section {
+                .separator {
+                    border-top-color: variables.$light-gray-font;
+                    box-shadow: 0px 0px 4px variables.$light-gray-font;
+                }
+            }
         }
     }
 
     /* DARK THEME SETUP */
     &.dark-theme {
         .side-content {
-            .picture-container {
-                background-color: variables.$primary-color;
-            }
-
             .header-link {
                 color: var(--pop-color);
             }
@@ -140,14 +162,17 @@ $side-width: 14.6rem;
             }
 
             .text {
-                color: variables.$gray-font;
+                color: variables.$dark-background;
             }
 
             .user-header {
-                height: 12.7rem;
-                padding-top: 0.75rem;
-                background-color: variables.$primary-color;
-                color: variables.$light-background;
+                height: 13.6rem;
+            }
+            .section {
+                .separator {
+                    border-top-color: variables.$dark-background;
+                    box-shadow: 0px 0px 4px variables.$dark-background;
+                }
             }
         }
     }

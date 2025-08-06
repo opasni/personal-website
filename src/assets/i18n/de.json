@@ -77,11 +77,22 @@
         "hard-skills": {
             "title": "Fachkompetenzen",
             "programming": "Frameworks und Programmiersprachen",
-            "databases": "Datenbanken und Infrastruktur",
+            "architecture": "Architektur und Cloud",
+            "databases": "Datenbanken und Speicher",
+            "devops": "DevOps und CI/CD",
+            "analytics": "Analytics und Data Science",
             "tools": "Webanwendungen"
         },
         "soft-skills": {
             "title": "Sozialkompetenzen",
+            "cv": {
+                "leadership": "Leadership & Management",
+                "strategic-thinking": "Strategisches Denken & Entscheidungsfindung",
+                "problem-solving": "Problem-Lösung & Analytisches Denken",
+                "resourcefulness": "Einfallsreichtum & Anpassungsfähigkeit",
+                "communication": "Kommunikation & Stakeholder-Management",
+                "trainability": "Lernbereitschaft & Trainierbarkeit"
+            },
             "teamwork": "Teamarbeit",
             "communication": "Kommunikation",
             "responsibility": "Verantwortung",

@@ -14,29 +14,39 @@
     },
     "cv": {
         "menu-item": "Generate CV",
-        "about": "I am an experienced <b>software development</b> professional, <b>CEO of Achtzig20 d.o.o.</b>, and <b>Partner at 8020 Consulting GmbH</b>. Passionate about technology and innovation, I've spearheaded and delivered various strategic software projects and initiatives, such as the <b>nito.ai</b> AI assistant. Utilizing strong leadership capabilities and strategic thinking skills, I consistently deliver added value to clients and partners. Fluent in Slovenian and English, with intermediate proficiency in German, I am dedicated to making a positive impact in the digital world and beyond. Outside of professional pursuits, I enjoy music, sports, and travel.",
+        "about": "I am an experienced <b>software development</b> professional, <b>CEO of Achtzig20 d.o.o.</b>, and <b>Partner at 8020 Consulting GmbH</b>. Passionate about technology and innovation, I've spearheaded and delivered various strategic software projects and initiatives, such as the <b>8020 AI Agent</b> AI assistant. Utilizing strong leadership capabilities and strategic thinking skills, I consistently deliver added value to clients and partners. Fluent in Slovenian and English, with intermediate proficiency in German, I am dedicated to making a positive impact in the digital world and beyond. Outside of professional pursuits, I enjoy music, sports, and travel.",
+        "about-tech": "My name is <b>Črt</b> (pronounced “Chert”). I'm a skilled <b>Software Architect</b> and <b>Technical Lead</b> with a difficult name and extensive experience designing and implementing robust, scalable software solutions. As a <b>Partner at 8020 Consulting GmbH</b> and <b>CEO of Achtzig20 d.o.o.</b>, I've architected and led the technical execution of complex SaaS and digital platforms—including projects like the AI-driven 8020 Agent. Passionate about technology, architecture, and innovation, I leverage deep technical expertise, combined with clear communication and leadership skills, to deliver high-quality, impactful software solutions. Fluent in Slovenian and English, and proficient in German, I continuously strive to bridge the gap between business needs and technical excellence.",
+        "about-lead": "My name is <b>Črt</b> (pronounced “Chert”). I am a seasoned <b>technology executive</b>, <b>Partner at 8020 Consulting GmbH</b>, and <b>CEO of Achtzig20 d.o.o.</b>, with a difficult name and with extensive experience driving high-impact initiatives and fostering innovation-driven growth. I've founded and scaled businesses, managed cross-functional teams, and delivered transformative solutions such as the digital assistant <b>8020 AI Agent</b>. Known for my problem-solving capabilities, decisive leadership, and effective stakeholder management, I consistently align technological excellence with organizational objectives to produce measurable results. Fluent in Slovenian and English, and proficient in German, I'm committed to leveraging technology to create lasting business value.",
         "experience": {
-            "achtzig20": {
-                "summary-long": [
-                    "<b>Partner at 8020 Consulting GmbH</b>, actively involved in the long-term strategic direction of the company, management initiatives, and client success stories.",
-                    "<b>CEO of Achtzig20 d.o.o.</b>, successfully established our subsidiary and a vibrant office in Ljubljana, guiding the organization through various growth phases and strategic partnerships.",
-                    "<b>Technical Lead at 8020 Consulting GmbH (formerly Achtzig20 GmbH)</b>, providing strategic technical guidance with expertise in requirements engineering, software development, software architecture, and DevOps methodologies.",
-                    "Worked closely with prestigious clients including Audi, Porsche, BMW, and DZ Bank, developing custom software solutions and providing specialized data analytics training.",
-                    "Led significant projects such as ALICE at CARIAD (interdisciplinary project team management), NEW at AUDI (development progress tracking), and FAPOS at AUDI (test-car booking platform).",
-                    "Designed and delivered tailor-made data analytics trainings to clients, enhancing their internal competencies and effective usage of analytics."
-                ],
+            "8020": {
                 "summary": [
-                    "<b>Partner, 8020 Consulting GmbH</b>: Strategic leadership, company growth, client relationship management.",
-                    "<b>CEO, Achtzig20 d.o.o.</b>: Growth management, subsidiary establishment, strategic partnerships in Ljubljana.",
-                    "<b>Technical Lead, 8020 Consulting GmbH (formerly Achtzig20 GmbH)</b>: Technical oversight, software development, architecture, DevOps.",
-                    "Client Projects: Audi, Porsche, BMW, DZ Bank – delivered high-quality software solutions & data analytics trainings.",
-                    "Key Projects: ALICE at CARIAD, NEW & FAPOS at AUDI, JobCar & Caroline at Graf Hardenberg.",
-                    "Custom training program design and execution in data analytics."
+                    "Visionary leadership driving company growth and consulting strategy, skilled in making difficult decisions to optimize costs while maintaining open, empathetic communication and strong relationships with clients and teams.",
+                    "Leading transformative projects: <b>CatenaX, Bloomfilter Integrations, JobCar & Caroline (Graf Hardenberg), AI-Guided Automation solutions, 8020 AI Agent</b>."
+                ]
+            },
+            "achtzig20si": {
+                "summary": [
+                    "Establishment and operational management of Slovenian subsidiary.",
+                    "Driving growth initiatives and establishing local partnerships."
+                ]
+            },
+            "achtzig20": {
+                "summary": [
+                    "Technical oversight of software architecture, development processes, and DevOps practices, managing end-to-end software solutions—from requirements engineering to deployment across diverse platforms. <i>(Linux, Windows, Mobile, Cloud)</i>",
+                    "Delivered strategic projects for leading clients such as <b>DZ Bank</b>, <b>BMW</b>, and several <b>VW Group</b> brands (Audi, Porsche, CARIAD), with a focus on enterprise software solutions, architectural design, and tailored data analytics training.",
+                    "Key projects: <i>ALICE (CARIAD)</i>, <i>NEW & FAPOS (AUDI)</i>."
                 ],
-                "skills": [
-                    "<b>Roles</b>: Project Management, Team Leading, Technical Lead, Product Design.",
-                    "<b>Expertise</b>: Requirements Engineering, Software Development, Software Architecture, DevOps, Leadership, Strategic Thinking.",
-                    "<b>Tech Stack</b>: SQL (mssql, postgresql, oracle), MongoDB, .NET, NodeJS, Python, Angular, React, CI/CD, Solidity."
+                "intern-roles": [
+                    {
+                        "role": "CTO @ newonads GmbH",
+                        "duration": "11/2021 – 10/2022",
+                        "description": "Led the architecture and development of a SaaS digital advertising platform, focusing on brand engagement, lead generation, and revenue growth."
+                    },
+                    {
+                        "role": "CTO @ Studio3 GmbH",
+                        "duration": "10/2022 – 09/2023",
+                        "description": "Developed a web3-based community management platform, enhancing agency-client interactions while minimizing security risks."
+                    }
                 ]
             },
             "akka": {
@@ -48,8 +58,7 @@
             },
             "institute-js": {
                 "summary": [
-                    "Acquired skills in data analysis, C++ programming, running simulations, and data interpretation.",
-                    "Completed a 6-month internship in Mainz Microtron."
+                    "Acquired skills in data analysis, C++ programming, running simulations, and data interpretation and completed a 6-month internship in Mainz Microtron."
                 ]
             }
         },
@@ -76,12 +85,23 @@
         "title": "Skills",
         "hard-skills": {
             "title": "Hard Skills",
-            "programming": "Frameworks Programming Languages",
-            "databases": "Databases & Infrastructure",
+            "programming": "Programming & Development",
+            "architecture": "Architecture & Cloud",
+            "databases": "Databases & Storage",
+            "devops": "DevOps & CI/CD",
+            "analytics": "Analytics & Data Science",
             "tools": "Tools"
         },
         "soft-skills": {
-            "title": "Soft Skills",
+            "title": "Professional Strengths",
+            "cv": {
+                "leadership": "Leadership & Team Management",
+                "strategic-thinking": "Strategic Thinking & Decision-Making",
+                "problem-solving": "Problem-Solving & Analytical Thinking",
+                "resourcefulness": "Resourcefulness & Adaptability",
+                "communication": "Communication & Stakeholder Management",
+                "trainability": "Continuous Learning & Trainability"
+            },
             "teamwork": "Teamwork",
             "communication": "Communication",
             "responsibility": "Responsibility",
@@ -124,16 +144,53 @@
         "present": "present",
         "institution": {
             "bia-separation": "BIA Separations d.o.o.",
-            "institute-js": "Jozef Stefan Institute",
-            "akka": "AKKA GmbH",
-            "achtzig20": "8020 Consulting GmbH"
+            "institute-js": "Jozef Stefan Institute, Ljubljana, Slovenia",
+            "akka": "AKKA GmbH, Ingolstadt, Germany",
+            "achtzig20": "Achtzig20 GmbH, Ingolstadt, Germany",
+            "achtzig20si": "Achtzig20 d.o.o., Ljubljana, Slovenia",
+            "8020": "8020 Consulting GmbH, Munich, Germany"
         },
-        "achtzig20": {
+        "8020": {
             "type": "Employee",
             "title": "Partner",
             "link": "8020.eco",
             "abstract": [
-                "In my role at 8020 Consulting GmbH (previously known as Achtzig20 GmbH), I've had the privilege of collaborating with a dynamic team, contributing significantly to the company's ongoing growth and success. Beginning my career at AKKA, I built a solid foundation as a software developer and architect before transitioning into my technical leadership role. Leveraging deep expertise in areas such as requirements engineering, software development, software architecture, and DevOps, I've consistently delivered innovative, high-quality solutions tailored to our clients' needs.",
+                "As a Partner at 8020 Consulting GmbH, I play a crucial role in shaping the company's strategic direction and driving its growth. My responsibilities include managing key client relationships, overseeing project delivery, and ensuring the alignment of our services with market demands. I leverage my extensive experience in software development, project management, and technical leadership to guide our teams in delivering high-quality solutions that meet our clients' needs.",
+                "My journey at 8020 Consulting GmbH has been marked by continuous learning and innovation. I have had the opportunity to work on diverse projects across various industries, collaborating with talented professionals to create impactful solutions. My commitment to excellence and passion for technology drive me to continuously seek new challenges and opportunities for growth."
+            ],
+            "skills": [
+                "Leadership",
+                "Strategic Thinking",
+                "Communication",
+                "Decision Making",
+                "Adaptability",
+                "Financial Acumen",
+                "Emotional Intelligence"
+            ]
+        },
+        "achtzig20si": {
+            "type": "Employee",
+            "title": "CEO",
+            "link": "achtzig20.si",
+            "abstract": [
+                "As the CEO of Achtzig20 d.o.o., I have played a pivotal role in the growth and success of the company. It all began with working students from e-Študentski Servis who started working for Achtzig20 GmbH. Over time, we expanded our team with full-time employees and established a beautiful office in the city center of Ljubljana. We have achieved significant milestones, including the establishment of Achtzig20 d.o.o. as a subsidiary. Together, we have built a strong and thriving organization, driven by our passion for excellence and dedication to providing exceptional services."
+            ],
+            "skills": [
+                "Leadership",
+                "Strategic Thinking",
+                "Communication",
+                "Decision Making",
+                "Adaptability",
+                "Financial Acumen",
+                "Emotional Intelligence"
+            ]
+        },
+        "achtzig20": {
+            "type": "Employee",
+            "title": "Technical Lead",
+            "link": "8020.eco",
+            "abstract": [
+                "In my role at Achtzig20 GmbH, I've had the privilege of collaborating with a dynamic team, contributing significantly to the company's ongoing growth and success. Beginning my career at AKKA, I built a solid foundation as a software developer and architect before transitioning into my technical leadership role. Leveraging deep expertise in areas such as requirements engineering, software development, software architecture, and DevOps, I've consistently delivered innovative, high-quality solutions tailored to our clients' needs.",
                 "Beyond technical responsibilities, my journey expanded into organizational leadership. As CEO of our subsidiary Achtzig20 d.o.o. in Ljubljana, I've successfully navigated multiple phases of growth—from strategic partnerships like the one with e-Študentski Servis to establishing our vibrant office in the heart of Ljubljana. Today, as a Partner at 8020 Consulting GmbH, I actively shape the company's strategic direction, continuously fostering a positive, innovative, and effective organizational culture.",
                 "Throughout my professional career, I have had the opportunity to collaborate with prestigious clients—including Audi, Porsche, BMW, and DZ Bank—to develop sophisticated software solutions ranging from web-based applications to specialized desktop tools. I have tackled complex internal challenges, conducted training sessions in data analytics, and leveraged my expertise to create insightful solutions that provide tangible value to our clients' businesses.",
                 "My journey at 8020 Consulting GmbH has been marked by continuous learning, effective problem-solving, and sustained innovation. It has been immensely rewarding and fulfilling, enabling me not only to contribute significantly to the company's growth but also to nurture lasting relationships with our clients and industry partners alike."

@@ -14,17 +14,19 @@ export class UserApiService {
 
     userData$: Observable<User> | null = null;
 
-    getUserData(password: string | null): Observable<User> {
+    getUserData(password: string | null, language: string = 'en'): Observable<User> {
         if (!this.userData$) {
             const encryptedPassword = password ?? localStorage.getItem(StorageKeys.ACCESS_KEY);
             const headers = {
                 Authorization: `Basic ${encryptedPassword}`,
             };
-            this.userData$ = this._http.get<User>(this._url, { headers })
-                .pipe(
-                    map((data) => new User(data)),
-                    shareReplay(1),
-                );
+            const params = {
+                lang: language,
+            };
+            this.userData$ = this._http.get<User>(this._url, { headers, params }).pipe(
+                map((data) => new User(data)),
+                shareReplay(1),
+            );
         }
         return this.userData$;
     }

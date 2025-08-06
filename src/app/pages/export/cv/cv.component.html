@@ -1,35 +1,41 @@
 <div #sheet class="sheet d-flex wrapper">
     <nav class="side-content background-color">
-        <div class="d-block picture-container">
-            <img class="profile rounded-circle" [alt]="'accessibility.images.profile' | translate"
-                src="assets/images/profile_image.jpg" />
+        <div class="d-flex flex-row align-items-center picture-container">
+            <div class="d-block ms-3 me-2">
+                <img
+                    class="profile rounded-circle"
+                    [alt]="'accessibility.images.profile' | translate"
+                    src="assets/images/profile_image.jpg"
+                />
+            </div>
+
+            <h1 class="text-standard mt-3" style="font-size: 34.63px">
+                {{ userData.firstName }}
+                <b>{{ userData.lastName }}</b>
+            </h1>
         </div>
-        <div class="sidebar-content py-4">
-            <div class="px-3 user-header text-center">
-                <h1 class="text-standard">
-                    {{ userData.firstName }}
-                    <b>{{ userData.lastName }}</b>
-                </h1>
+        <div class="sidebar-content my-5">
+            <div class="px-3 my-3 user-header text-center">
                 <ul class="user-info">
                     @if (userData.address) {
-                    <li>
-                        <i class="bi bi-geo-alt-fill"></i>
-                        {{ userData.address }}
-                    </li>
+                        <li>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            {{ (language$ | async) ? userData.address_de : userData.address }}
+                        </li>
                     }
                     @if (userData.phone) {
-                    <li>
-                        <i class="bi bi-telephone"></i>
-                        {{ userData.phone }}
-                    </li>
+                        <li>
+                            <i class="bi bi-telephone"></i>
+                            {{ userData.phone }}
+                        </li>
                     }
                     @if (userData.email) {
-                    <li>
-                        <i class="bi bi-envelope-at-fill"></i>
-                        <a class="header-link" aria-label="Send me an Email" [href]="'mailto:' + userData.email">
-                            {{ userData.email }}
-                        </a>
-                    </li>
+                        <li>
+                            <i class="bi bi-envelope-at-fill"></i>
+                            <a class="header-link" aria-label="Send me an Email" [href]="'mailto:' + userData.email">
+                                {{ userData.email }}
+                            </a>
+                        </li>
                     }
                     <li>
                         <i class="bi bi-globe"></i>
@@ -39,23 +45,8 @@
                     </li>
                 </ul>
             </div>
-            <app-skills-overview></app-skills-overview>
-            <div class="mt-4 mx-3 label">
-                <h5>{{ 'skills.hobbies.title' | translate | uppercase }}</h5>
-            </div>
-            <div class="mx-3 pt-2 hobbies">
-                <div class="d-flex justify-content-end hobbies-row">
-                    <div>{{ 'skills.hobbies.chess' | translate }}</div>
-                    <div>{{ 'skills.hobbies.traveling' | translate }}</div>
-                </div>
-                <div class="d-flex justify-content-end hobbies-row">
-                    <div>{{ 'skills.hobbies.guitar-playing' | translate }}</div>
-                    <div>{{ 'skills.hobbies.singing' | translate }}</div>
-                </div>
-                <div class="d-flex justify-content-end hobbies-row">
-                    <div>{{ 'skills.hobbies.climbing' | translate }}</div>
-                    <div>{{ 'skills.hobbies.running' | translate }}</div>
-                </div>
+            <div class="my-3">
+                <app-skills-overview></app-skills-overview>
             </div>
         </div>
     </nav>
@@ -65,17 +56,64 @@
             <div class="label">
                 <h5>{{ 'about.menu-item' | translate | uppercase }}</h5>
             </div>
-            <p [innerHTML]="'cv.about' | translate"></p>
+            <!-- <p [innerHTML]="'cv.about-tech' | translate"></p> -->
+            <p [innerHTML]="'cv.about-lead' | translate"></p>
         </div>
         <div class="text px-3">
-            <div class="pt-3 label">
-                <h5>{{ 'experience.menu-item' | translate | uppercase }}</h5>
+            <div class="section mt-2">
+                <div class="skill-title">
+                    {{ 'experience.menu-item' | translate | uppercase }}
+                </div>
+                <div class="separator"></div>
             </div>
+            <!-- <div class="pt-3 label">
+                <h5>{{ 'experience.menu-item' | translate | uppercase }}</h5>
+            </div> -->
+
+            <!-- 8020 Consulting GMBH -->
+            <div class="experience">
+                <span>
+                    <span>09/2024 - {{ 'experience.present' | translate | uppercase }}</span>
+                    &nbsp;|&nbsp;
+                    <b class="card-title d-inline-block">{{ 'experience.8020.title' | translate }}</b>
+                </span>
+                <span class="card-subtitle mb-2 text-muted d-inline-block">
+                    {{ 'experience.institution.8020' | translate }}
+                </span>
+            </div>
+
+            <ul class="mb-1">
+                @for (par of 'cv.experience.8020.summary' | translate; track par; let index = $index) {
+                    <li class="experience-item">
+                        <span [innerHTML]="par"></span>
+                    </li>
+                }
+            </ul>
+
+            <!-- ACHTZIG20 DOO -->
+            <div class="experience">
+                <span>
+                    <span>01/2023 - {{ 'experience.present' | translate | uppercase }}</span>
+                    &nbsp;|&nbsp;
+                    <b class="card-title d-inline-block">{{ 'experience.achtzig20si.title' | translate }}</b>
+                </span>
+                <span class="card-subtitle mb-2 text-muted d-inline-block">
+                    {{ 'experience.institution.achtzig20si' | translate }}
+                </span>
+            </div>
+
+            <ul class="mb-1">
+                @for (par of 'cv.experience.achtzig20si.summary' | translate; track par; let index = $index) {
+                    <li class="experience-item">
+                        <span [innerHTML]="par"></span>
+                    </li>
+                }
+            </ul>
 
             <!-- ACHTZIG20 GMBH -->
             <div class="experience">
                 <span>
-                    <span>11/2018 - {{ 'experience.present' | translate | uppercase }}</span>
+                    <span>11/2018 - 09/2024</span>
                     &nbsp;|&nbsp;
                     <b class="card-title d-inline-block">{{ 'experience.achtzig20.title' | translate }}</b>
                 </span>
@@ -84,18 +122,20 @@
                 </span>
             </div>
 
-            <ul>
+            <ul class="mb-1">
                 @for (par of 'cv.experience.achtzig20.summary' | translate; track par; let index = $index) {
-                <li>
-                    <span [innerHTML]="par"></span>
-                </li>
+                    <li class="experience-item">
+                        <span [innerHTML]="par"></span>
+                    </li>
                 }
-            </ul>
-            <ul>
-                @for (par of 'cv.experience.achtzig20.skills' | translate; track par; let index = $index) {
-                <li>
-                    <span [innerHTML]="par"></span>
-                </li>
+                @for (par of 'cv.experience.achtzig20.intern-roles' | translate; track par; let index = $index) {
+                    <li class="experience-item">
+                        <b class="card-title d-inline-block">{{ $any(par)['role'] }}</b>
+                        &nbsp;|&nbsp;
+                        <span>{{ $any(par)['duration'] }}</span>
+                        &nbsp;|&nbsp;
+                        <span [innerHTML]="$any(par)['description']"></span>
+                    </li>
                 }
             </ul>
 
@@ -111,11 +151,11 @@
                 </span>
             </div>
 
-            <ul>
+            <ul class="mb-1">
                 @for (par of 'cv.experience.akka.summary' | translate; track par; let index = $index) {
-                <li>
-                    <span [innerHTML]="par"></span>
-                </li>
+                    <li class="experience-item">
+                        <span [innerHTML]="par"></span>
+                    </li>
                 }
             </ul>
 
@@ -131,17 +171,23 @@
                 </span>
             </div>
 
-            <ul>
+            <ul class="mb-1">
                 @for (par of 'cv.experience.institute-js.summary' | translate; track par; let index = $index) {
-                <li>
-                    <span [innerHTML]="par"></span>
-                </li>
+                    <li class="experience-item">
+                        <span [innerHTML]="par"></span>
+                    </li>
                 }
             </ul>
 
-            <div class="mt-4 pt-3 label">
-                <h5>{{ 'education.menu-item' | translate | uppercase }}</h5>
+            <div class="section mt-3">
+                <div class="skill-title">
+                    {{ 'education.menu-item' | translate | uppercase }}
+                </div>
+                <div class="separator"></div>
             </div>
+            <!-- <div class="mt-4 pt-3 label">
+                <h5>{{ 'education.menu-item' | translate | uppercase }}</h5>
+            </div> -->
 
             <!-- MASTER STUDIES -->
             <div class="experience">
@@ -155,11 +201,11 @@
                 </span>
             </div>
 
-            <ul>
+            <ul class="mb-1">
                 @for (par of 'cv.education.masters.summary' | translate; track par; let index = $index) {
-                <li>
-                    <span [innerHTML]="par"></span>
-                </li>
+                    <li class="experience-item">
+                        <span [innerHTML]="par"></span>
+                    </li>
                 }
             </ul>
 
@@ -175,11 +221,11 @@
                 </span>
             </div>
 
-            <ul>
+            <ul class="mb-1">
                 @for (par of 'cv.education.bachelor.summary' | translate; track par; let index = $index) {
-                <li>
-                    <span [innerHTML]="par"></span>
-                </li>
+                    <li class="experience-item">
+                        <span [innerHTML]="par"></span>
+                    </li>
                 }
             </ul>
         </div>

@@ -4,12 +4,14 @@
         <fa-icon placement="top" [ngbTooltip]="infoText" [icon]="faInfoCircle"></fa-icon>
     }
 </div>
-<div class="circles">
-    @for (circle of circles; track circle) {
-        <div
-            class="circle"
-            [ngStyle]="{ transition: 'background-color .4s ease ' + circle.index * 0.2 + 's' }"
-            [class.filled]="circle.filled"
-        ></div>
-    }
-</div>
+@if (displayLevel) {
+    <div class="circles">
+        @for (circle of circles; track circle) {
+            <div
+                class="circle"
+                [ngStyle]="{ transition: 'background-color .4s ease ' + circle.index * 0.2 + 's' }"
+                [class.filled]="circle.filled"
+            ></div>
+        }
+    </div>
+}

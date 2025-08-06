@@ -77,11 +77,22 @@
         "hard-skills": {
             "title": "Trde veščine",
             "programming": "Ogrodja in Programski jeziki",
-            "databases": "Podatkovne baze in Infrastruktura",
+            "architecture": "Arhitektura in Cloud",
+            "databases": "Podatkovne baze in Shranjevanje",
+            "devops": "DevOps in CI/CD",
+            "analytics": "Analitika in Podatkovna znanost",
             "tools": "Orodja"
         },
         "soft-skills": {
-            "title": "Mehke veščine",
+            "title": "Profesionalne moči",
+            "cv": {
+                "leadership": "Vodenje & Management",
+                "strategic-thinking": "Strateško razmišljanje & Odločanje",
+                "problem-solving": "Reševanje problemov & Analitično razmišljanje",
+                "resourcefulness": "Iznajdljivost & Prilagodljivost",
+                "communication": "Komunikacija & Upravljanje s deležniki",
+                "trainability": "Učljivost & Pripravljenost na učenje"
+            },
             "teamwork": "Skupinsko delo",
             "communication": "Komunikacija",
             "responsibility": "Odgovornost",

@@ -8,21 +8,37 @@
 <div class="skills-section" [class.minified]="summarized">
     <app-skill-measure [value]="7" [minValue]="minValue" name="Angular"></app-skill-measure>
     <app-skill-measure [value]="6" [minValue]="minValue" name="RxJS"></app-skill-measure>
-    <app-skill-measure [value]="7" [minValue]="minValue" name=".NET"></app-skill-measure>
+    <app-skill-measure [value]="6" [minValue]="minValue" name="React"></app-skill-measure>
     <app-skill-measure [value]="6" [minValue]="minValue" name="NodeJS"></app-skill-measure>
-    <app-skill-measure [value]="4" [minValue]="minValue" name="React"></app-skill-measure>
     <app-skill-measure [value]="6" [minValue]="minValue" name="TypeScript"></app-skill-measure>
+    <app-skill-measure [value]="6" [minValue]="minValue" name="JavaScript"></app-skill-measure>
+    <app-skill-measure [value]="7" [minValue]="minValue" name=".NET (C#)"></app-skill-measure>
     <app-skill-measure [value]="5" [minValue]="minValue" name="Python"></app-skill-measure>
-    <app-skill-measure [value]="5" [minValue]="minValue" name="C#"></app-skill-measure>
-    <app-skill-measure [value]="5" [minValue]="minValue" name="Bootstrap"></app-skill-measure>
-    <app-skill-measure [value]="4" [minValue]="minValue" name="C++"></app-skill-measure>
-    <app-skill-measure [value]="3" [minValue]="minValue" name="C"></app-skill-measure>
+    <app-skill-measure [value]="4" [minValue]="minValue" name="C/C++"></app-skill-measure>
     <app-skill-measure [value]="4" [minValue]="minValue" name="bash"></app-skill-measure>
-    <app-skill-measure [value]="4" [minValue]="minValue" name="VBA"></app-skill-measure>
-    <app-skill-measure [value]="6" [minValue]="minValue" name="Pipelines (yml)"></app-skill-measure>
     <app-skill-measure [value]="5" [minValue]="minValue" name="REST API Design"></app-skill-measure>
     <app-skill-measure [value]="4" [minValue]="minValue" name="GraphQL"></app-skill-measure>
-    <app-skill-measure [value]="1" [minValue]="minValue" name="Xamarin"></app-skill-measure>
+</div>
+@if (!summarized) {
+    <div class="row mt-4">
+        <h5 class="card-title">
+            {{ 'skills.hard-skills.architecture' | translate }}
+        </h5>
+    </div>
+}
+<div class="skills-section" [class.minified]="summarized">
+    <app-skill-measure [value]="7" [minValue]="minValue" name="Solution Architecture"></app-skill-measure>
+    <app-skill-measure [value]="6" [minValue]="minValue" name="Microservices"></app-skill-measure>
+    <app-skill-measure [value]="5" [minValue]="minValue" name="Event-Driven Architecture"></app-skill-measure>
+    <app-skill-measure [value]="4" [minValue]="minValue" name="Domain-Driven Design (DDD)"></app-skill-measure>
+    <app-skill-measure [value]="6" [minValue]="minValue" name="RESTful Services"></app-skill-measure>
+    <app-skill-measure [value]="6" [minValue]="minValue" name="AWS"></app-skill-measure>
+    <app-skill-measure [value]="6" [minValue]="minValue" name="Azure"></app-skill-measure>
+    <app-skill-measure [value]="6" [minValue]="minValue" name="Docker"></app-skill-measure>
+    <app-skill-measure [value]="6" [minValue]="minValue" name="Kubernetes"></app-skill-measure>
+    <app-skill-measure [value]="6" [minValue]="minValue" name="Terraform"></app-skill-measure>
+    <app-skill-measure [value]="6" [minValue]="minValue" name="Infrastructure as Code (IaC)"></app-skill-measure>
+    <app-skill-measure [value]="6" [minValue]="minValue" name="Pipelines (yml)"></app-skill-measure>
 </div>
 @if (!summarized) {
     <div class="row mt-4">
@@ -34,13 +50,33 @@
 <div class="skills-section" [class.minified]="summarized">
     <app-skill-measure [value]="7" [minValue]="minValue" name="PostgreSQL"></app-skill-measure>
     <app-skill-measure [value]="6" [minValue]="minValue" name="SQL Server"></app-skill-measure>
-    <app-skill-measure [value]="3" [minValue]="minValue" name="Oracle"></app-skill-measure>
+    <app-skill-measure [value]="6" [minValue]="minValue" name="Oracle"></app-skill-measure>
     <app-skill-measure [value]="5" [minValue]="minValue" name="mongoDB"></app-skill-measure>
-    <app-skill-measure [value]="4" [minValue]="minValue" name="Entity Framework"></app-skill-measure>
-    <app-skill-measure [value]="3" [minValue]="minValue" name="Windows (IIS)"></app-skill-measure>
-    <app-skill-measure [value]="5" [minValue]="minValue" infoText="apache, nginx" name="Linux"></app-skill-measure>
-    <app-skill-measure [value]="6" [minValue]="minValue" name="AWS"></app-skill-measure>
-    <app-skill-measure [value]="5" [minValue]="minValue" name="Azure"></app-skill-measure>
+    <app-skill-measure [value]="6" [minValue]="minValue" name="Entity Framework"></app-skill-measure>
+    <app-skill-measure [value]="6" [minValue]="minValue" name="Prisma"></app-skill-measure>
+</div>
+@if (!summarized) {
+    <div class="w-100 mt-4">
+        <h5 class="card-title">
+            {{ 'skills.hard-skills.devops' | translate }}
+        </h5>
+    </div>
+}
+<div class="skills-section" [class.minified]="summarized">
+    <app-skill-measure [value]="7" [minValue]="minValue" name="PostgreSQL"></app-skill-measure>
+    <app-skill-measure
+        [value]="6"
+        [minValue]="minValue"
+        infoText="GitHub Actions, Azure Pipelines, Bitbucket Pipelines"
+        name="Actions / Pipelines (yml)"
+    ></app-skill-measure>
+    <app-skill-measure [value]="6" [minValue]="minValue" name="Grafana, Prometheus, Loki"></app-skill-measure>
+    <app-skill-measure
+        [value]="6"
+        [minValue]="minValue"
+        infoText="(Mocha, xUnit, MSTest, Playwright, Cypress)"
+        name="Automated Testing"
+    ></app-skill-measure>
 </div>
 @if (!summarized) {
     <div class="w-100 mt-4">
