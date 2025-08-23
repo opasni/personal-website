@@ -14,9 +14,9 @@
                 <b>{{ userData.lastName }}</b>
             </h1>
         </div>
-        <div class="sidebar-content my-5">
-            <div class="px-3 my-3 user-header text-center">
-                <ul class="user-info">
+        <div class="sidebar-content">
+            <div class="px-3 user-header text-center">
+                <ul class="user-info mb-0">
                     @if (userData.address) {
                         <li>
                             <i class="bi bi-geo-alt-fill"></i>
@@ -45,7 +45,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="my-3">
+            <div class="">
                 <app-skills-overview></app-skills-overview>
             </div>
         </div>
@@ -179,7 +179,7 @@
                 }
             </ul>
 
-            <div class="section mt-3">
+            <div class="section mt-1">
                 <div class="skill-title">
                     {{ 'education.menu-item' | translate | uppercase }}
                 </div>
