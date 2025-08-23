@@ -14,59 +14,68 @@
     },
     "cv": {
         "menu-item": "Lebenslauf erstellen",
-        "about": "Ich bin erfahrener Fachmann im Bereich <b>Softwareentwicklung</b>, <b>Geschäftsführer der Achtzig20 d.o.o.</b> und <b>Partner bei der 8020 Consulting GmbH</b>. Mit Leidenschaft für Technologie und Innovation habe ich zahlreiche strategische Softwareprojekte und Initiativen erfolgreich geleitet, unter anderem den KI-Assistenten <b>nito.ai</b>. Dank starker Führungskompetenzen und strategisch-analytischem Denken liefere ich kontinuierlich hohen Mehrwert für Kunden und Partner. Ich spreche fließend Slowenisch und Englisch sowie Deutsch auf mittlerem Niveau und engagiere mich mit Begeisterung, einen positiven Einfluss auf die digitale Welt auszuüben. Privat interessiere ich mich für Musik, Sport und Reisen.",
+        "about": "Ich bin ein erfahrener <b>Softwareentwicklungs</b>-Profi, <b>CEO von Achtzig20 d.o.o.</b> und <b>Partner bei der 8020 Consulting GmbH</b>. Mit Leidenschaft für Technologie und Innovation habe ich verschiedene strategische Softwareprojekte und -initiativen geleitet und umgesetzt, wie z. B. den <b>8020 AI Agent</b>. Durch ausgeprägte Führungsqualitäten und strategisches Denken schaffe ich für Kunden und Partner kontinuierlich Mehrwert. Fließend in Slowenisch und Englisch, mit mittleren Deutschkenntnissen, setze ich mich dafür ein, in der digitalen Welt und darüber hinaus einen positiven Beitrag zu leisten. Abseits der beruflichen Tätigkeit interessiere ich mich für Musik, Sport und Reisen.",
+        "about-tech": "Mein Name ist <b>Črt</b> (ausgesprochen „Chert“). Ich bin ein erfahrener <b>Softwarearchitekt</b> und <b>Technical Lead</b> mit einem schwierigen Namen und umfassender Erfahrung in der Konzeption und Umsetzung robuster, skalierbarer Softwarelösungen. Als <b>Partner bei der 8020 Consulting GmbH</b> und <b>CEO von Achtzig20 d.o.o.</b> habe ich die Architektur entworfen und die technische Umsetzung komplexer SaaS- und Digitalplattformen geleitet – darunter Projekte wie den KI-gestützten 8020 Agent. Mit Leidenschaft für Technologie, Architektur und Innovation nutze ich tiefgehendes technisches Know-how in Kombination mit klarer Kommunikation und Führungskompetenz, um qualitativ hochwertige, wirkungsvolle Softwarelösungen zu liefern. Fließend in Slowenisch und Englisch sowie versiert in Deutsch strebe ich kontinuierlich danach, die Lücke zwischen geschäftlichen Anforderungen und technischer Exzellenz zu schließen.",
+        "about-lead": "Mein Name ist <b>Črt</b> (ausgesprochen „Chert“). Ich bin ein erfahrener <b>Technologie-Manager</b>, <b>Partner bei der 8020 Consulting GmbH</b> und <b>CEO von Achtzig20 d.o.o.</b>, mit einem schwierigen Namen und umfassender Erfahrung in der Umsetzung wirkungsvoller Initiativen und der Förderung innovationsgetriebener Wachstumsstrategien. Ich habe Unternehmen gegründet und skaliert, funktionsübergreifende Teams geleitet und transformative Lösungen wie den digitalen Assistenten <b>8020 AI Agent</b> umgesetzt. Bekannt für meine Problemlösungsfähigkeiten, entschlossene Führung und effektives Stakeholder-Management, verbinde ich technologische Exzellenz konsequent mit Unternehmenszielen, um messbare Ergebnisse zu erzielen. Fließend in Slowenisch und Englisch sowie versiert in Deutsch setze ich mich dafür ein, Technologie zu nutzen, um nachhaltigen Geschäftswert zu schaffen.",
         "experience": {
-            "achtzig20": {
-                "summary-long": [
-                    "<b>Partner bei der 8020 Consulting GmbH</b>, aktiv beteiligt an der langfristigen strategischen Unternehmensausrichtung, Management-Initiativen und Unterstützung im erfolgreichen Kundengeschäft.",
-                    "<b>Geschäftsführer der Achtzig20 d.o.o.</b>, erfolgreicher Aufbau der Tochtergesellschaft und des Büros in Ljubljana sowie strategische Führung durch unterschiedliche Wachstumsphasen und Partnerschaften.",
-                    "<b>Technischer Leiter bei der 8020 Consulting GmbH (ehemals Achtzig20 GmbH)</b>, verantwortlich für strategisch-technische Führung bei Anforderungsanalyse, Softwareentwicklung, Softwarearchitektur und DevOps-Methoden.",
-                    "Enge Zusammenarbeit mit renommierten Kunden wie Audi, Porsche, BMW und DZ Bank bei der Erstellung individueller Softwarelösungen und spezialisierter Schulungen im Bereich Datenanalyse.",
-                    "Leitung bedeutender Projekte, wie ALICE bei CARIAD (interdisziplinäres Projektteammanagement), NEW bei AUDI (Entwicklungsfortschritt-Tracking) und FAPOS bei AUDI (Plattform zur Testfahrzeugbuchung).",
-                    "Konzeption und Durchführung maßgeschneiderter Schulungsprogramme in Datenanalyse zur Erweiterung interner Kompetenzen unserer Kunden."
-                ],
+            "8020": {
                 "summary": [
-                    "<b>Partner, 8020 Consulting GmbH</b>: Strategische Führung, Unternehmenswachstum, Kundenbeziehungen.",
-                    "<b>Geschäftsführer, Achtzig20 d.o.o.</b>: Unternehmenswachstum, Aufbau Tochtergesellschaft, strategische Partnerschaften in Ljubljana.",
-                    "<b>Technischer Leiter, 8020 Consulting GmbH (ehemals Achtzig20 GmbH)</b>: Technische Gesamtleitung, Softwareentwicklung, Architektur, DevOps.",
-                    "Kundenprojekte: Audi, Porsche, BMW, DZ Bank – Entwicklung hochwertiger Softwarelösungen und Schulungen im Bereich Datenanalyse.",
-                    "Wichtigste Projekte: ALICE bei CARIAD, NEW & FAPOS bei AUDI, JobCar & Caroline bei Graf Hardenberg.",
-                    "Entwicklung und Durchführung individueller Schulungsprogramme zu Datenanalyse."
+                    "Visionäre Führung zur Förderung des Unternehmenswachstums und der Beratungsstrategie, kompetent in der Entscheidungsfindung zur Kostenoptimierung bei gleichzeitig offener, empathischer Kommunikation und starken Beziehungen zu Kunden und Teams.",
+                    "Leitung transformativer Projekte: <b>CatenaX, Bloomfilter-Integrationen, JobCar & Caroline (Graf Hardenberg), KI-gestützte Automatisierungslösungen, 8020 AI Agent</b>."
+                ]
+            },
+            "achtzig20si": {
+                "summary": [
+                    "Gründung und operative Leitung der slowenischen Tochtergesellschaft.",
+                    "Förderung von Wachstumsinitiativen und Aufbau lokaler Partnerschaften."
+                ]
+            },
+            "achtzig20": {
+                "summary": [
+                    "Technische Aufsicht über Softwarearchitektur, Entwicklungsprozesse und DevOps-Praktiken, Verwaltung von End-to-End-Softwarelösungen – von der Anforderungsanalyse bis zur Bereitstellung auf verschiedenen Plattformen. <i>(Linux, Windows, Mobile, Cloud)</i>",
+                    "Umsetzung strategischer Projekte für führende Kunden wie <b>DZ Bank</b>, <b>BMW</b> und mehrere Marken des <b>VW-Konzerns</b> (Audi, Porsche, CARIAD), mit Fokus auf Unternehmenssoftwarelösungen, Architekturdesign und maßgeschneiderte Schulungen in Datenanalyse.",
+                    "Wichtige Projekte: <i>ALICE (CARIAD)</i>, <i>NEW & FAPOS (AUDI)</i>."
                 ],
-                "skills": [
-                    "<b>Rollen</b>: Projektmanagement, Teamführung, Technische Leitung, Produktgestaltung.",
-                    "<b>Fachkompetenzen</b>: Anforderungsmanagement, Softwareentwicklung, Softwarearchitektur, DevOps, Führungskompetenz, Strategisches Denken.",
-                    "<b>Technologien</b>: SQL (mssql, postgresql, oracle), MongoDB, .NET, NodeJS, Python, Angular, React, CI/CD, Solidity."
+                "intern-roles": [
+                    {
+                        "role": "CTO @ newonads GmbH",
+                        "duration": "11/2021 – 10/2022",
+                        "description": "Leitung der Architektur und Entwicklung einer SaaS-Digitalwerbeplattform mit Schwerpunkt auf Markenbindung, Leadgenerierung und Umsatzsteigerung."
+                    },
+                    {
+                        "role": "CTO @ Studio3 GmbH",
+                        "duration": "10/2022 – 09/2023",
+                        "description": "Entwicklung einer Web3-basierten Community-Management-Plattform zur Verbesserung der Agentur-Kunden-Interaktionen bei gleichzeitiger Minimierung von Sicherheitsrisiken."
+                    }
                 ]
             },
             "akka": {
                 "summary": [
-                    "Entwicklung von carship.online mit Schwerpunkt auf Softwareentwicklung und Gestaltung des Benutzerflusses.",
-                    "Konzeption und Durchführung von Schulungen in den Bereichen Data Analytics und Blockchain.",
-                    "Analyse der Wiederverkaufspreise von AUDI-Fahrzeugen, mit Schwerpunkt auf dem Einfluss optionaler Ausstattungen."
+                    "Entwicklung von carship.online mit Schwerpunkt auf Softwareentwicklung und Gestaltung des Nutzerflusses.",
+                    "Konzeption und Durchführung von Schulungen in den Bereichen Datenanalyse und Blockchain.",
+                    "Analyse der Wiederverkaufspreise von AUDI-Fahrzeugen mit Fokus auf die Auswirkungen von Sonderausstattungen."
                 ]
             },
             "institute-js": {
                 "summary": [
-                    "Erwerb von Fähigkeiten in Datenanalyse, C++ Programmierung, Durchführung von Simulationen und Dateninterpretation.",
-                    "Abschluss eines 6-monatigen Praktikums in Mainz Microtron."
+                    "Erworbenes Wissen in Datenanalyse, C++-Programmierung, Durchführung von Simulationen und Dateninterpretation sowie Abschluss eines 6-monatigen Praktikums im Mainz Microtron."
                 ]
             }
         },
         "education": {
             "masters": {
-                "title": "MSc in Mathematischer Physik",
+                "title": "M.Sc. in Mathematischer Physik",
                 "summary": [
-                    "Notendurchschnitt: 9.0 (Entspricht A in den USA, 1.7 in Deutschland)",
-                    "Dissertation: \"Einrichtung eines Experiments zur Messung des axialen Formfaktors des Protons\""
+                    "Notendurchschnitt: 9,0 (entspricht A in den USA, 1,7 in Deutschland)",
+                    "Masterarbeit: „Aufbau eines Experiments zur Messung des axialen Formfaktors des Protons“"
                 ]
             },
             "bachelor": {
-                "title": "BSc in Allgemeiner Physik",
+                "title": "B.Sc. in Allgemeiner Physik",
                 "summary": [
-                    "Notendurchschnitt: 8.3 (Entspricht A in den USA, 2.3 in Deutschland)",
-                    "Diverse Kursarbeit: Astronomie, Geophysik, Elektronik, Computationsphysik.",
-                    "Dissertation: \"Bariogenesis über Leptogenesis\""
+                    "Notendurchschnitt: 8,3 (entspricht A in den USA, 2,3 in Deutschland)",
+                    "Vielfältige Kurse: Astronomie, Geophysik, Elektronik, Rechnergestützte Physik.",
+                    "Bachelorarbeit: „Baryogenese durch Leptogenese“"
                 ]
             }
         }
@@ -75,39 +84,39 @@
         "menu-item": "Fähigkeiten",
         "title": "Fähigkeiten",
         "hard-skills": {
-            "title": "Fachkompetenzen",
-            "programming": "Frameworks und Programmiersprachen",
-            "architecture": "Architektur und Cloud",
-            "databases": "Datenbanken und Speicher",
-            "devops": "DevOps und CI/CD",
-            "analytics": "Analytics und Data Science",
-            "tools": "Webanwendungen"
+            "title": "Fachliche Kompetenzen",
+            "programming": "Programmierung & Entwicklung",
+            "architecture": "Architektur & Cloud",
+            "databases": "Datenbanken & Speicher",
+            "devops": "DevOps & CI/CD",
+            "analytics": "Analytik & Data Science",
+            "tools": "Werkzeuge"
         },
         "soft-skills": {
-            "title": "Sozialkompetenzen",
+            "title": "Persönliche Stärken",
             "cv": {
-                "leadership": "Leadership & Management",
+                "leadership": "Führung & Teamleitung",
                 "strategic-thinking": "Strategisches Denken & Entscheidungsfindung",
-                "problem-solving": "Problem-Lösung & Analytisches Denken",
+                "problem-solving": "Problemlösung & Analytisches Denken",
                 "resourcefulness": "Einfallsreichtum & Anpassungsfähigkeit",
                 "communication": "Kommunikation & Stakeholder-Management",
-                "trainability": "Lernbereitschaft & Trainierbarkeit"
+                "trainability": "Kontinuierliches Lernen & Lernfähigkeit"
             },
             "teamwork": "Teamarbeit",
             "communication": "Kommunikation",
-            "responsibility": "Verantwortung",
+            "responsibility": "Verantwortungsbewusstsein",
             "resourcefulness": "Einfallsreichtum",
-            "trainability": "Lernbereitschaft",
+            "trainability": "Lernfähigkeit",
             "problem-solving": "Problemlösung",
-            "leadership": "Personalleitung",
+            "leadership": "Führungskompetenz",
             "strategic-thinking": "Strategisches Denken",
             "decision-making": "Entscheidungsfindung",
             "adaptability": "Anpassungsfähigkeit",
-            "financial-acumen": "Finanzielles Geschick",
+            "financial-acumen": "Finanzielles Verständnis",
             "emotional-intelligence": "Emotionale Intelligenz"
         },
         "languages": {
-            "title": "Sprache",
+            "title": "Sprachen",
             "slovenian": "Slowenisch",
             "english": "Englisch",
             "german": "Deutsch",

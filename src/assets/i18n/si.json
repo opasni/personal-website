@@ -14,59 +14,68 @@
     },
     "cv": {
         "menu-item": "Ustvari življenjepis",
-        "about": "Sem izkušen strokovnjak s področja <b>razvoja programske opreme</b>, <b>direktor podjetja Achtzig20 d.o.o.</b> in <b>partner v podjetju 8020 Consulting GmbH</b>. Z veliko strastjo do tehnologije in inovacij sem uspešno vodil različne strateške projekte in iniciative, med drugim razvoj inteligentnega AI asistenta <b>nito.ai</b>. S svojimi vodstvenimi sposobnostmi in strateškim razmišljanjem dosledno ustvarjam visoko vrednost za stranke in partnerje. Govorim tekoče slovensko in angleško ter nemško na srednji ravni. Zavzet sem za ustvarjanje pozitivnega vpliva v digitalnem svetu, v prostem času pa me navdihujejo glasba, šport in potovanja.",
+        "about": "Sem izkušen strokovnjak za <b>razvoj programske opreme</b>, <b>direktor podjetja Achtzig20 d.o.o.</b> in <b>partner v podjetju 8020 Consulting GmbH</b>. Strasten glede tehnologije in inovacij sem vodil in uspešno izvedel različne strateške projekte in pobude, kot je npr. <b>8020 AI Agent</b> – AI asistent. Z močnimi vodstvenimi sposobnostmi in strateškim razmišljanjem strankam in partnerjem dosledno zagotavljam dodano vrednost. Tekoče govorim slovensko in angleško, nemško pa na srednji ravni. Predan sem ustvarjanju pozitivnega vpliva v digitalnem svetu in širše. V prostem času me veselijo glasba, šport in potovanja.",
+        "about-tech": "Moje ime je <b>Črt</b>. Sem izkušen <b>arhitekt programske opreme</b> in <b>tehnični vodja</b> z obsežnimi izkušnjami pri zasnovi in implementaciji robustnih, razširljivih programskih rešitev. Kot <b>partner v podjetju 8020 Consulting GmbH</b> in <b>direktor podjetja Achtzig20 d.o.o.</b> sem zasnoval arhitekturo in vodil tehnično izvedbo kompleksnih SaaS in digitalnih platform – med drugim projektov, kot je AI-podprt 8020 Agent. Strasten glede tehnologije, arhitekture in inovacij združujem poglobljeno tehnično znanje s jasno komunikacijo in vodstvenimi sposobnostmi za zagotavljanje kakovostnih in vplivnih programskih rešitev. Tekoče govorim slovensko in angleško ter dobro obvladam nemščino. Nenehno si prizadevam premostiti vrzel med poslovnimi potrebami in tehnično odličnostjo.",
+        "about-lead": "Moje ime je <b>Črt</b>. Sem izkušen <b>tehnološki direktor</b>, <b>partner v podjetju 8020 Consulting GmbH</b> in <b>direktor podjetja Achtzig20 d.o.o.</b> z bogatimi izkušnjami pri vodenju projektov z visokim vplivom ter spodbujanju inovacijsko usmerjene rasti. Ustanovil in širil sem podjetja, vodil večdisciplinarne ekipe ter dostavil prelomne rešitve, kot je digitalni asistent <b>8020 AI Agent</b>. Znano je, da odlikujejo moje sposobnosti reševanja problemov, odločno vodenje in učinkovito upravljanje deležnikov. Vedno povezujem tehnološko odličnost s poslovnimi cilji za dosego merljivih rezultatov. Tekoče govorim slovensko in angleško ter dobro obvladam nemščino. Zavezan sem uporabi tehnologije za ustvarjanje trajne poslovne vrednosti.",
         "experience": {
-            "achtzig20": {
-                "summary-long": [
-                    "<b>Partner v podjetju 8020 Consulting GmbH</b>, aktivno vključen v dolgoročno strateško usmeritev podjetja, upravljanje iniciativ in podporo uspešnemu sodelovanju s strankami.",
-                    "<b>Direktor podjetja Achtzig20 d.o.o.</b>, uspešno ustanovil in vodil podružnico v Ljubljani skozi različne faze rasti in strateških partnerstev.",
-                    "<b>Tehnični vodja pri 8020 Consulting GmbH (prej Achtzig20 GmbH)</b>, zagotavljal tehnično in strateško vodenje na področju inženirstva zahtev, razvoja programske opreme, arhitekture in DevOps metodologij.",
-                    "Tesno sodelovanje z uveljavljenimi strankami, kot so Audi, Porsche, BMW in DZ Bank pri razvoju programske opreme po meri in izvedbi specializiranih izobraževanj za področje podatkovne analitike.",
-                    "Vodil pomembne projekte, kot so ALICE pri CARIAD (upravljanje interdisciplinarnih projektnih ekip), NEW pri AUDI (nadzor napredka razvoja) in FAPOS pri AUDI (platforma za rezervacijo testnih vozil).",
-                    "Oblikoval in izvajal prilagojene programe usposabljanja s področja analitike podatkov, s čimer sem pomembno prispeval k izboljšanju internih kompetenc naših strank."
-                ],
+            "8020": {
                 "summary": [
-                    "<b>Partner, 8020 Consulting GmbH</b>: Strateško vodenje, rast podjetja, odnosi s strankami.",
-                    "<b>Direktor, Achtzig20 d.o.o.</b>: Upravljanje rasti, ustanovitev podružnice, strateška partnerstva v Ljubljani.",
-                    "<b>Tehnični vodja, 8020 Consulting GmbH (prej Achtzig20 GmbH)</b>: Tehnično vodenje, razvoj programske opreme, arhitektura, DevOps.",
-                    "Projekti za stranke: Audi, Porsche, BMW, DZ Bank – razvoj rešitev programske opreme in usposabljanja s področja podatkovne analitike.",
-                    "Ključni projekti: ALICE za CARIAD, NEW in FAPOS za AUDI, JobCar & Caroline za Graf Hardenberg.",
-                    "Oblikovanje in izvedba prilagojenih izobraževalnih programov analitike podatkov."
+                    "Vizionarsko vodenje pri spodbujanju rasti podjetja in svetovalne strategije, sposobnost sprejemanja težkih odločitev za optimizacijo stroškov ob odprti in empatični komunikaciji ter ohranjanju močnih odnosov s strankami in ekipami.",
+                    "Vodenje transformativnih projektov: <b>CatenaX, Bloomfilter integracije, JobCar & Caroline (Graf Hardenberg), rešitve za avtomatizacijo, ki jih poganja umetna inteligenca, 8020 AI Agent</b>."
+                ]
+            },
+            "achtzig20si": {
+                "summary": [
+                    "Ustanovitev in operativno vodenje slovenske podružnice.",
+                    "Spodbujanje pobud za rast in vzpostavljanje lokalnih partnerstev."
+                ]
+            },
+            "achtzig20": {
+                "summary": [
+                    "Tehnični nadzor nad arhitekturo programske opreme, razvojnimi procesi in praksami DevOps, vodenje celovitih programskih rešitev – od zbiranja zahtev do namestitve na različnih platformah. <i>(Linux, Windows, Mobilno, Oblak)</i>",
+                    "Izvedba strateških projektov za vodilne naročnike, kot so <b>DZ Bank</b>, <b>BMW</b> in več znamk <b>VW Skupine</b> (Audi, Porsche, CARIAD), s poudarkom na poslovnih programskih rešitvah, zasnovi arhitekture in prilagojenem usposabljanju za analitiko podatkov.",
+                    "Ključni projekti: <i>ALICE (CARIAD)</i>, <i>NEW & FAPOS (AUDI)</i>."
                 ],
-                "skills": [
-                    "<b>Vloge</b>: Upravljanje projektov, Vodenje ekipe, Tehnično vodenje, Oblikovanje izdelkov.",
-                    "<b>Strokovna znanja</b>: Inženirstvo zahtev, Razvoj programske opreme, Arhitektura programske opreme, DevOps, Vodstvene kompetence, Strateško razmišljanje.",
-                    "<b>Tehnologije</b>: SQL (mssql, postgresql, oracle), MongoDB, .NET, NodeJS, Python, Angular, React, CI/CD, Solidity."
+                "intern-roles": [
+                    {
+                        "role": "CTO @ newonads GmbH",
+                        "duration": "11/2021 – 10/2022",
+                        "description": "Vodil arhitekturo in razvoj SaaS digitalne oglaševalske platforme s poudarkom na angažiranosti blagovnih znamk, pridobivanju potencialnih strank in rasti prihodkov."
+                    },
+                    {
+                        "role": "CTO @ Studio3 GmbH",
+                        "duration": "10/2022 – 09/2023",
+                        "description": "Razvil platformo za upravljanje skupnosti na osnovi Web3, ki izboljšuje interakcijo med agencijami in strankami ter hkrati zmanjšuje varnostna tveganja."
+                    }
                 ]
             },
             "akka": {
                 "summary": [
-                    "Razvoj carship.online, s poudarkom na razvoju programske opreme in oblikovanju uporabniškega pretoka.",
-                    "Zasnova in izvedba izobraževanj s področja podatkovne analitike in blockchaina.",
-                    "Analiziral sem prodajne cene vozil AUDI, s poudarkom na vplivu dodatne opreme."
+                    "Razvoj carship.online s poudarkom na programskem razvoju in oblikovanju uporabniškega toka.",
+                    "Zasnova in izvedba izobraževanj na področju analitike podatkov in blockchain tehnologije.",
+                    "Analiza preprodajnih cen vozil AUDI s poudarkom na vplivu dodatne opreme."
                 ]
             },
             "institute-js": {
                 "summary": [
-                    "Pridobil sem veščine na področju analize podatkov, programiranja v C++, izvajanja simulacij in interpretacije podatkov.",
-                    "Zaključil sem šestmesečno pripravništvo v Microtronu Mainz."
+                    "Pridobljeno znanje iz analize podatkov, programiranja v C++, izvajanja simulacij in interpretacije podatkov ter zaključeno 6-mesečno prakso v pospeševalniku Mainz Microtron."
                 ]
             }
         },
         "education": {
             "masters": {
-                "title": "Magisterij iz matematične fizike",
+                "title": "Mag. matematične fizike",
                 "summary": [
-                    "Povprečna ocena: 9.0 (Ustreza A v ZDA, 1.7 v Nemčiji)",
-                    "Magistersko delo: \"Ustanovitev eksperimenta za merjenje aksialnega oblikovnega faktorja protona\""
+                    "Povprečna ocena: 9,0 (enakovredno oceni A v ZDA, 1,7 v Nemčiji)",
+                    "Magistrska naloga: »Vzpostavitev eksperimenta za merjenje aksialnega formnega faktorja protona«"
                 ]
             },
             "bachelor": {
-                "title": "Dodiplomski študij splošne fizike",
+                "title": "Univ. dipl. splošne fizike",
                 "summary": [
-                    "Povprečna ocena: 8.3 (Ustreza A v ZDA, 2.3 v Nemčiji)",
-                    "Raznolik študijski program: astronomija, geofizika, elektronika, računalniška fizika.",
-                    "Diplomsko delo: \"Bariogeneza preko leptogeneze\""
+                    "Povprečna ocena: 8,3 (enakovredno oceni A v ZDA, 2,3 v Nemčiji)",
+                    "Raznolik študij: astronomija, geofizika, elektronika, računalniška fizika.",
+                    "Diplomska naloga: »Bariogeneza prek leptogeneze«"
                 ]
             }
         }
@@ -75,36 +84,36 @@
         "menu-item": "Spretnosti",
         "title": "Spretnosti",
         "hard-skills": {
-            "title": "Trde veščine",
-            "programming": "Ogrodja in Programski jeziki",
-            "architecture": "Arhitektura in Cloud",
-            "databases": "Podatkovne baze in Shranjevanje",
+            "title": "Tehnične spretnosti",
+            "programming": "Programiranje in razvoj",
+            "architecture": "Arhitektura in oblak",
+            "databases": "Podatkovne baze in shranjevanje",
             "devops": "DevOps in CI/CD",
-            "analytics": "Analitika in Podatkovna znanost",
+            "analytics": "Analitika in podatkovna znanost",
             "tools": "Orodja"
         },
         "soft-skills": {
-            "title": "Profesionalne moči",
+            "title": "Osebne prednosti",
             "cv": {
-                "leadership": "Vodenje & Management",
-                "strategic-thinking": "Strateško razmišljanje & Odločanje",
-                "problem-solving": "Reševanje problemov & Analitično razmišljanje",
-                "resourcefulness": "Iznajdljivost & Prilagodljivost",
-                "communication": "Komunikacija & Upravljanje s deležniki",
-                "trainability": "Učljivost & Pripravljenost na učenje"
+                "leadership": "Vodenje in upravljanje ekip",
+                "strategic-thinking": "Strateško razmišljanje in odločanje",
+                "problem-solving": "Reševanje problemov in analitično razmišljanje",
+                "resourcefulness": "Iznajdljivost in prilagodljivost",
+                "communication": "Komunikacija in upravljanje deležnikov",
+                "trainability": "Nenehno učenje in učljivost"
             },
-            "teamwork": "Skupinsko delo",
+            "teamwork": "Sodelovanje v ekipi",
             "communication": "Komunikacija",
             "responsibility": "Odgovornost",
             "resourcefulness": "Iznajdljivost",
             "trainability": "Učljivost",
-            "problem-solving": "Obvladovanje izzivov",
-            "leadership": "Vodenje",
+            "problem-solving": "Reševanje problemov",
+            "leadership": "Vodstvene sposobnosti",
             "strategic-thinking": "Strateško razmišljanje",
             "decision-making": "Odločanje",
             "adaptability": "Prilagodljivost",
-            "financial-acumen": "Finančna spretnost",
-            "emotional-intelligence": "Čustvena inteligentnost"
+            "financial-acumen": "Finančna pismenost",
+            "emotional-intelligence": "Čustvena inteligenca"
         },
         "languages": {
             "title": "Jeziki",
@@ -121,8 +130,8 @@
             "running": "Tek",
             "climbing": "Plezanje",
             "basketball": "Košarka",
-            "traveling": "Potovanje",
-            "gaming": "Igranje videoiger",
+            "traveling": "Potovanja",
+            "gaming": "Igranje iger",
             "reading": "Branje"
         }
     },
