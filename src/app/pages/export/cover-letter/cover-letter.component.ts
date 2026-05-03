@@ -1,10 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ExportComponent } from '@lib/abstracts/export.component';
-// import data from '@lib/data/cover-letter.template.json';
-// import data from '@lib/data/cover-letters/simens/20250508-cover-letter.en.json';
-// import data from '@lib/data/cover-letters/kpmg/20250509-cover-letter.en.json';
-import data from '@lib/data/cover-letters/google/20250815-cover-letter.en.json';
+import data from '@lib/data/cover-letter.template.json';
 import { CoverLetter } from '@lib/types/cover-leter.type';
 
 @Component({
