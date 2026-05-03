@@ -6,35 +6,36 @@
         "menu-item": "About Me",
         "hi-there": "Hi there!",
         "title": "My name is Črt Harej",
-        "subtitle": "Here is something about me",
+        "subtitle": "Technology executive, cloud platform engineer, and solution architect",
         "text": [
-            "I am a motivated and experienced professional with extensive knowledge in software development, project management, and strategic business leadership. As CEO of <b>Achtzig20 d.o.o.</b> and Partner at its parent company <b>8020 Consulting GmbH</b>, I lead dedicated teams, manage strategic initiatives, and drive company growth and innovation. My strengths in leadership, problem-solving, and strategic thinking have consistently allowed me to deliver successful outcomes for our teams and clients.",
-            "Outside of professional life, I enjoy music, sports, and traveling—activities that provide balance, inspire creativity, and keep me energized. Fluent in Slovenian and English, with intermediate proficiency in German, I effectively build meaningful connections and communicate comfortably with international partners. I'm passionate about leveraging my experience and skills to create significant positive impacts in both the digital landscape and beyond."
+            "I build and operate business-critical software platforms across cloud infrastructure, distributed systems, data, AI tooling, and product delivery. Over the last 10+ years I have worked hands-on as an engineer and architect while also leading teams, client relationships, and company growth as <b>Partner at 8020 Consulting GmbH</b> and <b>CEO of Achtzig20 d.o.o.</b>.",
+            "My sweet spot is where pragmatic architecture meets delivery responsibility: microservices, APIs, event-driven integrations, AWS/Azure platforms, DevOps, observability, automated testing, analytics, and stakeholder alignment. I like turning ambiguous business problems into systems that are understandable, maintainable, and useful in production.",
+            "I communicate fluently in Slovenian, English, and German, and I enjoy working with international teams where technical depth, clear decisions, and trust matter. Outside work, music, sport, chess, climbing, and travel keep me balanced and curious."
         ]
     },
     "cv": {
         "menu-item": "Generate CV",
-        "about": "I am an experienced <b>software development</b> professional, <b>CEO of Achtzig20 d.o.o.</b>, and <b>Partner at 8020 Consulting GmbH</b>. Passionate about technology and innovation, I've spearheaded and delivered various strategic software projects and initiatives, such as the <b>8020 AI Agent</b> AI assistant. Utilizing strong leadership capabilities and strategic thinking skills, I consistently deliver added value to clients and partners. Fluent in Slovenian and English, with intermediate proficiency in German, I am dedicated to making a positive impact in the digital world and beyond. Outside of professional pursuits, I enjoy music, sports, and travel.",
-        "about-tech": "My name is <b>Črt</b> (pronounced “Chert”). I'm a skilled <b>Software Architect</b> and <b>Technical Lead</b> with a difficult name and extensive experience designing and implementing robust, scalable software solutions. As a <b>Partner at 8020 Consulting GmbH</b> and <b>CEO of Achtzig20 d.o.o.</b>, I've architected and led the technical execution of complex SaaS and digital platforms—including projects like the AI-driven 8020 Agent. Passionate about technology, architecture, and innovation, I leverage deep technical expertise, combined with clear communication and leadership skills, to deliver high-quality, impactful software solutions. Fluent in Slovenian and English, and proficient in German, I continuously strive to bridge the gap between business needs and technical excellence.",
-        "about-lead": "My name is <b>Črt</b> (pronounced “Chert”). I am a seasoned <b>technology executive</b>, <b>Partner at 8020 Consulting GmbH</b>, and <b>CEO of Achtzig20 d.o.o.</b>, with a difficult name and extensive experience driving high-impact initiatives and fostering innovation-driven growth. I've founded and scaled businesses, managed cross-functional teams, and delivered transformative solutions such as the digital assistant <b>8020 AI Agent</b>. Known for my problem-solving capabilities, decisive leadership, and effective stakeholder management, I consistently align technological excellence with organizational objectives to produce measurable results. Fluent in Slovenian and English, and proficient in German, I'm committed to leveraging technology to create lasting business value.",
+        "about": "I am a <b>technology executive</b>, <b>cloud and platform engineer</b>, and <b>solution architect</b> with 10+ years of experience across software engineering, DevOps, analytics, AI tooling, and delivery leadership. As <b>Partner at 8020 Consulting GmbH</b> and <b>CEO of Achtzig20 d.o.o.</b>, I combine hands-on technical depth with commercial responsibility, team leadership, and stakeholder management.",
+        "about-tech": "My name is <b>Črt</b> (pronounced “Chert”). I design, build, and operate scalable software platforms across <b>AWS, Azure, microservices, APIs, event-driven integrations, data pipelines, and AI-supported systems</b>. I move comfortably between architecture, implementation, DevOps, testing, observability, and consulting, with a strong bias toward production-ready systems that are clear to maintain.",
+        "about-lead": "My name is <b>Črt</b> (pronounced “Chert”). I am a <b>technology executive</b>, <b>cloud/platform engineer</b>, and <b>solution architect</b> with 10+ years of experience delivering business-critical software for consulting, automotive, SaaS, e-commerce, logistics, and data-driven environments. As <b>Partner at 8020 Consulting GmbH</b> and <b>CEO of Achtzig20 d.o.o.</b>, I connect hands-on architecture and engineering with delivery leadership, stakeholder trust, and company growth.",
         "experience": {
             "8020": {
                 "summary": [
-                    "Visionary leadership driving company growth and consulting strategy, skilled in making difficult decisions to optimize costs while maintaining open, empathetic communication and strong relationships with clients and teams.",
-                    "Leading transformative projects: <b>CatenaX, Bloomfilter Integrations, JobCar & Caroline (Graf Hardenberg), AI-Guided Automation solutions, 8020 AI Agent</b>."
+                    "Drive company growth, consulting strategy, delivery quality, capability building, and executive decision-making across client work and internal initiatives.",
+                    "Lead and shape transformative projects including <b>Catena-X, Bloomfilter integrations, JobCar & Caroline, AI-guided automation, cloud platforms, and the 8020 AI Agent</b>."
                 ]
             },
             "achtzig20si": {
                 "summary": [
-                    "Establishment and operational management of Slovenian subsidiary.",
-                    "Driving growth initiatives and establishing local partnerships."
+                    "Established and operationally manage the Slovenian subsidiary, including recruitment, team development, local partnerships, and delivery alignment.",
+                    "Built the foundation for a reliable engineering organization connected to the wider 8020 group strategy."
                 ]
             },
             "achtzig20": {
                 "summary": [
-                    "Technical oversight of software architecture, development processes, and DevOps practices, managing end-to-end software solutions—from requirements engineering to deployment across diverse platforms. <i>(Linux, Windows, Mobile, Cloud)</i>",
-                    "Delivered strategic projects for leading clients such as <b>DZ Bank</b>, <b>BMW</b>, and several <b>VW Group</b> brands (Audi, Porsche, CARIAD), with a focus on enterprise software solutions, architectural design, and tailored data analytics training.",
-                    "Key projects: <i>ALICE (CARIAD)</i>, <i>NEW & FAPOS (AUDI)</i>."
+                    "Led software architecture, development processes, DevOps, and production delivery across web, desktop, mobile, cloud, and data-heavy systems.",
+                    "Delivered strategic work for <b>VW Group brands, CARIAD, Audi, Porsche, BMW, DZ Bank, Graf Hardenberg, DAK Coffee Roasters, Scania, and internal 8020 platforms</b>.",
+                    "Key themes: <i>microservices, cloud platforms, API integrations, AI tools, process mining, analytics, automated testing, and observability</i>."
                 ],
                 "intern-roles": [
                     {
@@ -84,7 +85,9 @@
         "menu-item": "Skills",
         "title": "Skills",
         "hard-skills": {
-            "title": "Hard Skills",
+            "title": "Technical Capabilities",
+            "cloud-platform": "Cloud & Platform Engineering",
+            "backend-fullstack": "Backend & Full-Stack Engineering",
             "programming": "Programming & Development",
             "architecture": "Architecture & Cloud",
             "databases": "Databases & Storage",
@@ -120,7 +123,11 @@
             "slovenian": "Slovenian",
             "english": "English",
             "german": "German",
-            "italian": "Italian"
+            "italian": "Italian",
+            "slovenian-level": "Slovenian · native",
+            "english-level": "English · fluent",
+            "german-level": "German · fluent",
+            "italian-level": "Italian · basic"
         },
         "hobbies": {
             "title": "Hobbies",
@@ -155,8 +162,8 @@
             "title": "Partner",
             "link": "8020.eco",
             "abstract": [
-                "As a Partner at 8020 Consulting GmbH, I play a crucial role in shaping the company's strategic direction and driving its growth. My responsibilities include managing key client relationships, overseeing project delivery, and ensuring the alignment of our services with market demands. I leverage my extensive experience in software development, project management, and technical leadership to guide our teams in delivering high-quality solutions that meet our clients' needs.",
-                "My journey at 8020 Consulting GmbH has been marked by continuous learning and innovation. I have had the opportunity to work on diverse projects across various industries, collaborating with talented professionals to create impactful solutions. My commitment to excellence and passion for technology drive me to continuously seek new challenges and opportunities for growth."
+                "I shape consulting strategy, capability building, delivery quality, and business development while staying close to the technical substance of our projects. My work connects executive decisions with practical engineering realities: team setup, client communication, commercial prioritization, and architecture direction.",
+                "Recent initiatives span Catena-X data integration, Bloomfilter integrations, JobCar and Caroline for Graf Hardenberg, AI-guided automation tools, cloud hosting, and the 8020 AI Agent. Across these topics I focus on stable delivery, clear ownership, and technology choices that hold up in production."
             ],
             "skills": [
                 "Leadership",
@@ -173,7 +180,8 @@
             "title": "CEO",
             "link": "achtzig20.si",
             "abstract": [
-                "As the CEO of Achtzig20 d.o.o., I have played a pivotal role in the growth and success of the company. It all began with working students from e-Študentski Servis who started working for Achtzig20 GmbH. Over time, we expanded our team with full-time employees and established a beautiful office in the city center of Ljubljana. We have achieved significant milestones, including the establishment of Achtzig20 d.o.o. as a subsidiary. Together, we have built a strong and thriving organization, driven by our passion for excellence and dedication to providing exceptional services."
+                "I established and manage the Slovenian subsidiary of the 8020 group, building the local delivery foundation from student collaboration into a full company setup with office presence, recruitment, employee development, and operational structure.",
+                "The role combines people leadership, local partnerships, delivery alignment with the German parent company, and day-to-day responsibility for a healthy, reliable engineering organization."
             ],
             "skills": [
                 "Leadership",
@@ -190,10 +198,9 @@
             "title": "Technical Lead",
             "link": "8020.eco",
             "abstract": [
-                "In my role at Achtzig20 GmbH, I've had the privilege of collaborating with a dynamic team, contributing significantly to the company's ongoing growth and success. Beginning my career at AKKA, I built a solid foundation as a software developer and architect before transitioning into my technical leadership role. Leveraging deep expertise in areas such as requirements engineering, software development, software architecture, and DevOps, I've consistently delivered innovative, high-quality solutions tailored to our clients' needs.",
-                "Beyond technical responsibilities, my journey expanded into organizational leadership. As CEO of our subsidiary Achtzig20 d.o.o. in Ljubljana, I've successfully navigated multiple phases of growth—from strategic partnerships like the one with e-Študentski Servis to establishing our vibrant office in the heart of Ljubljana. Today, as a Partner at 8020 Consulting GmbH, I actively shape the company's strategic direction, continuously fostering a positive, innovative, and effective organizational culture.",
-                "Throughout my professional career, I have had the opportunity to collaborate with prestigious clients—including Audi, Porsche, BMW, and DZ Bank—to develop sophisticated software solutions ranging from web-based applications to specialized desktop tools. I have tackled complex internal challenges, conducted training sessions in data analytics, and leveraged my expertise to create insightful solutions that provide tangible value to our clients' businesses.",
-                "My journey at 8020 Consulting GmbH has been marked by continuous learning, effective problem-solving, and sustained innovation. It has been immensely rewarding and fulfilling, enabling me not only to contribute significantly to the company's growth but also to nurture lasting relationships with our clients and industry partners alike."
+                "As Technical Lead I owned architecture, implementation direction, DevOps practices, and technical stakeholder communication for enterprise software across web, desktop, mobile, cloud, and data-heavy environments.",
+                "I delivered and guided solutions for clients including Audi, Porsche, BMW, DZ Bank, Volkswagen Logistics, CARIAD, Graf Hardenberg, DAK Coffee Roasters, and Scania. The work ranged from requirements platforms and reporting systems to cloud-hosted SaaS, e-commerce automation, AI-assisted tools, process mining, and data analytics training.",
+                "The role was deliberately hands-on: backend and frontend engineering, API and database design, CI/CD, containerized deployments, monitoring, testing, production support, and mentoring engineers through complex delivery situations."
             ],
             "achtzig20": {
                 "type": "CEO @ Achtzig20 d.o.o.",
@@ -255,7 +262,7 @@
                     "title": "JobCar @ Graf Hardenberg",
                     "link": "jobcar-flotteeins.de/",
                     "abstract": [
-                        "JobCar provides an innovative vehicle leasing model that employers can offer to their employees through salary conversion. Employees can conveniently select and order their desired vehicle online, receiving access to attractive full-service leasing conditions, improved liquidity, and comprehensive management through a dedicated service card. Employers benefit from increased employee motivation, stronger employer branding, cost efficiency through optimized purchasing conditions, and comprehensive fleet management service. JobCar particularly promotes electromobility, enabling significant tax advantages while supporting sustainability objectives."
+                        "Architecture, UX concept, full-stack implementation, cloud operation, monitoring, and E2E test strategy for a B2B/B2C vehicle leasing platform. The platform integrates Fleetscape, Microsoft Graph, AWS S3/CloudFront, Node.js/Express, Prisma, PostgreSQL, Angular, Playwright, Docker, AWS, NGINX, and Grafana."
                     ],
                     "skills": [
                         "Project Management",
@@ -268,11 +275,73 @@
                         "DevOps"
                     ]
                 },
+                "catena-x": {
+                    "title": "Puriss @ Catena-X",
+                    "abstract": [
+                        "Developed and integrated interoperable services for quality and supply-chain data in the Catena-X network, including APIs, event workflows, validation, monitoring, governance support, and technical integration documentation."
+                    ],
+                    "skills": ["Java / Spring Boot", "Microservices", "API Design", "Docker", "Keycloak", "CI/CD"]
+                },
+                "caroline": {
+                    "title": "Caroline @ Graf Hardenberg",
+                    "abstract": [
+                        "Architected and implemented a three-layer mobility and leasing platform with separate web and mobile clients, external service integrations, approval flows, document handling, status workflows, DevOps, hosting, and stakeholder-facing requirements engineering."
+                    ],
+                    "skills": ["Node.js", "Angular", "Mobile Development", "PostgreSQL", "Docker", "AWS"]
+                },
+                "audi-frequency": {
+                    "title": "Audi Frequency Analysis App @ AUDI",
+                    "abstract": [
+                        "Developed a cross-platform mobile app for acoustic frequency analysis and vehicle-data access, including audio capture, FFT signal processing, OTP/WLAN module integration, telemetry extraction, offline functionality, and technician-focused UI/UX."
+                    ],
+                    "skills": ["React Native", "TypeScript", "Signal Processing", "Mobile APIs", "iOS / Android", "Figma"]
+                },
+                "dak": {
+                    "title": "Wholesale & Retail E-Commerce @ DAK Coffee Roasters",
+                    "abstract": [
+                        "Built and operated wholesale and retail commerce systems with Node.js, Angular, WordPress/WooCommerce, Mollie payments, Monday.com production workflows, DHL shipping automation, PostgreSQL, Redis, Docker, AWS, NGINX, and performance-focused hosting."
+                    ],
+                    "skills": ["E-Commerce", "API Integration", "AWS", "WooCommerce", "Payments", "Fulfillment Automation"]
+                },
+                "scania": {
+                    "title": "Celonis Order-to-Delivery Analysis @ Scania",
+                    "abstract": [
+                        "Created Celonis-based process mining views for order-to-delivery analysis by harmonizing data from distributed source systems, modeling event logs and KPIs, identifying bottlenecks, and deriving optimization measures for truck distribution."
+                    ],
+                    "skills": ["Celonis EMS", "PQL", "SQL", "Python", "ETL", "Process Mining"]
+                },
+                "squadcheck": {
+                    "title": "Squadcheck @ 8020 Consulting",
+                    "abstract": [
+                        "Designed and built an internal enterprise platform for project planning, capacity steering, budgets, time tracking, invoicing, role management, Microsoft SSO, Personio integration, and E2E-tested three-tier architecture."
+                    ],
+                    "skills": [".NET 10", "C#", "MS SQL Server", "Angular", "REST APIs", "Playwright"]
+                },
+                "vw-ai": {
+                    "title": "AI Logistics Tools @ Volkswagen",
+                    "abstract": [
+                        "Built AI-supported tools for logistics data and document automation, including smart Excel mapping, heterogeneous report transformation, dynamic tutorial generation from screenshots, and Python/FastAPI backend services."
+                    ],
+                    "skills": ["Python", "FastAPI", "AI / NLP", "pandas", "Docker", "Next.js"]
+                },
+                "felicia": {
+                    "title": "FELICIA @ CARIAD Quality Management",
+                    "abstract": [
+                        "Implemented an AI platform for bug-ticket analysis, Jira and KPM import, topic prediction, duplicate detection, similarity scoring, and web-based review workflows for quality management."
+                    ],
+                    "skills": ["Python", "FastAPI", "NLP", "Jira API", "Docker", "Next.js"]
+                },
+                "wordpress": {
+                    "title": "Custom WordPress Extensions @ THW Kiel / Hannover 96",
+                    "abstract": [
+                        "Developed custom WordPress and WooCommerce plugins for jersey configuration, live ticket synchronization, API-driven product and ticket feeds, cron-based background jobs, caching, and hosting optimization."
+                    ],
+                    "skills": ["PHP", "WordPress", "WooCommerce", "REST APIs", "MySQL / MariaDB", "NGINX"]
+                },
                 "alice": {
                     "title": "ALICE @ CARIAD",
                     "abstract": [
-                        "Status and maturity tracking for interdisciplinary project teams (internal + external suppliers) and management at various levels of demand. Complete traceability across all development process phases, including approvals at different levels. Evaluation and presentation of various KPIs such as requirements specification, bugs, testing, change requests, etc.",
-                        "Data is partially imported, mapped, and updated in ALICE through APIs of various platforms (JIRA, BitBucket, Doors, cPlace, codeBeamer, etc.)."
+                        "Designed and evolved a central status and maturity tracking system for automotive development, with configurable approvals, role-based dashboards, KPI reporting, Oracle-to-PostgreSQL migration, and integrations with JIRA, BitBucket, Doors, cPlace, and codeBeamer."
                     ],
                     "skills": [
                         "Technical Lead",
@@ -292,9 +361,23 @@
                 "fapos": {
                     "title": "FAPOS @ AUDI",
                     "abstract": [
-                        "A tool that facilitates the booking of new cars for testing by partner car shops of Audi. The tool incorporated GRP single sign-on and provided a comprehensive workflow, including admin confirmations and email notifications."
+                        "Built a test-vehicle booking portal for Audi partner dealerships with SSO, role-based permissions, administrative workflows, transactional email notifications, backend stability work, and process digitization."
                     ],
                     "skills": ["Requirements engineering", "Software Development"]
+                },
+                "pak": {
+                    "title": "PAK @ AUDI",
+                    "abstract": [
+                        "Migrated a manual Excel-based product requirements process into a configurable enterprise application with imports, interpretation logic, consolidation, administration, reporting, and a three-tier .NET Core / Oracle / Angular architecture."
+                    ],
+                    "skills": [".NET", "Angular", "Oracle", "Requirements Management", "System Integration"]
+                },
+                "crashtool": {
+                    "title": "Audi Crashtool",
+                    "abstract": [
+                        "Developed a C# WinForms application for crash-test analysis and planning, including historical data imports, milestone modeling, regression-based forecast modules, and decision support for future crash-test plans."
+                    ],
+                    "skills": ["C#", ".NET Framework", "WinForms", "Oracle", "SQL", "Regression Models"]
                 }
             },
             "trainings": {

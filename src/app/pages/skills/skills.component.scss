@@ -1,0 +1,18 @@
+.body {
+    display: grid;
+    gap: 2rem;
+}
+
+.skills-panel {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--font-color) 16%, transparent);
+
+    .card-title {
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    &.compact {
+        padding-bottom: 0.75rem;
+    }
+}

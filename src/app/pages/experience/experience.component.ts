@@ -12,4 +12,21 @@ import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
     styleUrls: ['./experience.component.scss'],
     imports: [CommonModule, NgbAccordionModule, TranslateModule, ScrollDetectDirective],
 })
-export class ExperienceComponent extends ThemeComponent {}
+export class ExperienceComponent extends ThemeComponent {
+    readonly highlightedProjects = [
+        'job-car',
+        'caroline',
+        'catena-x',
+        'audi-frequency',
+        'dak',
+        'scania',
+        'squadcheck',
+        'vw-ai',
+        'felicia',
+        'wordpress',
+        'alice',
+        'fapos',
+        'pak',
+        'crashtool',
+    ];
+}

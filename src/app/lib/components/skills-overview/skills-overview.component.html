@@ -3,11 +3,11 @@
         <ul class="ps-3 mb-0">
             <li class="mb-2 mt-3">
                 <div class="skill-title">
-                    {{ 'skills.hard-skills.programming' | translate | uppercase }}
+                    {{ 'skills.hard-skills.backend-fullstack' | translate | uppercase }}
                 </div>
                 <div class="separator"></div>
             </li>
-            <li><app-skill-measure [value]="7" [minValue]="5" name="Angular, RxJS, React"></app-skill-measure></li>
+            <li><app-skill-measure [value]="7" [minValue]="5" name="Angular, RxJS, React, Next.js"></app-skill-measure></li>
             <li>
                 <app-skill-measure
                     [value]="6"
@@ -16,7 +16,7 @@
                 ></app-skill-measure>
             </li>
             <li>
-                <app-skill-measure [value]="6" [minValue]="5" name=".NET (C#), Python, C/C++, Bash"></app-skill-measure>
+                <app-skill-measure [value]="6" [minValue]="5" name=".NET (C#), Java/Spring Boot, Python/FastAPI"></app-skill-measure>
             </li>
             <li><app-skill-measure [value]="6" [minValue]="5" name="REST APIs, GraphQL"></app-skill-measure></li>
             <li class="mb-2 mt-3">
@@ -29,17 +29,17 @@
                 <app-skill-measure
                     [value]="6"
                     [minValue]="5"
-                    name="Solution Architecture, Microservices"
+                    name="Solution Architecture, Microservices, DDD"
                 ></app-skill-measure>
             </li>
             <li>
-                <app-skill-measure [value]="6" [minValue]="5" name="AWS, Azure, Docker, Kubernetes"></app-skill-measure>
+                <app-skill-measure [value]="6" [minValue]="5" name="AWS, Azure, Docker, Kubernetes, Linux"></app-skill-measure>
             </li>
             <li>
                 <app-skill-measure
                     [value]="7"
                     [minValue]="5"
-                    name="Terraform, Infrastructure as Code (IaC)"
+                    name="Terraform, IaC, Kafka, RabbitMQ, SNS/SQS"
                 ></app-skill-measure>
             </li>
             <li class="mb-2 mt-3">
@@ -52,7 +52,7 @@
                 <app-skill-measure
                     [value]="6"
                     [minValue]="5"
-                    name="PostgreSQL, SQL Server, Oracle, MongoDB, Redis"
+                    name="PostgreSQL, SQL Server, Oracle, MySQL/MariaDB, MongoDB, Redis"
                 ></app-skill-measure>
             </li>
             <li>
@@ -72,7 +72,7 @@
                 <app-skill-measure
                     [value]="6"
                     [minValue]="5"
-                    name="Git, GitHub Actions, Azure Pipelines, Bitbucket Pipelines"
+                    name="Git, GitHub Actions, GitLab CI, Azure Pipelines, Bitbucket Pipelines"
                 ></app-skill-measure>
             </li>
             <li>
@@ -86,7 +86,7 @@
                 <app-skill-measure
                     [value]="6"
                     [minValue]="5"
-                    name="Automated Testing (Mocha, xUnit, MSTest, Playwright, Cypress)"
+                    name="Automated Testing: Playwright, Cypress, xUnit, MSTest, Mocha"
                 ></app-skill-measure>
             </li>
             <li class="mb-2 mt-3">
@@ -99,14 +99,14 @@
                 <app-skill-measure
                     [value]="6"
                     [minValue]="5"
-                    name="Python (pandas, TensorFlow, PyTorch)"
+                    name="Celonis EMS/PQL, Process Mining, KPI modeling"
                 ></app-skill-measure>
             </li>
             <li>
                 <app-skill-measure
                     [value]="6"
                     [minValue]="5"
-                    name="Mathematica, Jupyter Notebooks, R"
+                    name="Python: pandas, NumPy, TensorFlow, PyTorch; Jupyter, R"
                 ></app-skill-measure>
             </li>
             <li class="mb-2 mt-3">
@@ -171,20 +171,17 @@
                 <app-skill-measure
                     [value]="7"
                     [minValue]="0"
-                    [displayLevel]="true"
-                    [name]="'skills.languages.english' | translate"
+                    [name]="'skills.languages.english-level' | translate"
                 ></app-skill-measure>
                 <app-skill-measure
                     [value]="7"
                     [minValue]="0"
-                    [displayLevel]="true"
-                    [name]="'skills.languages.slovenian' | translate"
+                    [name]="'skills.languages.slovenian-level' | translate"
                 ></app-skill-measure>
                 <app-skill-measure
                     [value]="5"
                     [minValue]="0"
-                    [displayLevel]="true"
-                    [name]="'skills.languages.german' | translate"
+                    [name]="'skills.languages.german-level' | translate"
                 ></app-skill-measure>
                 <!-- <app-skill-measure
                     [value]="2"

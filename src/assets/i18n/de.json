@@ -5,36 +5,37 @@
     "about": {
         "menu-item": "Über mich",
         "hi-there": "Hallo",
-        "title": "Meine Name ist Črt Harej",
-        "subtitle": "Hier können Sie etwas über mich lesen",
+        "title": "Mein Name ist Črt Harej",
+        "subtitle": "Technology Executive, Cloud Platform Engineer und Solution Architect",
         "text": [
-            "Ich bin eine motivierte und erfahrene Führungskraft mit umfangreichen Kenntnissen in Softwareentwicklung, Projektmanagement und strategischer Unternehmensführung. Als Geschäftsführer der <b>Achtzig20 d.o.o.</b> und Partner bei der Muttergesellschaft <b>8020 Consulting GmbH</b> führe ich engagierte Teams, leite strategische Initiativen und unterstütze Wachstum und Innovation unseres Unternehmens. Meine Stärken in Führung, Problemlösungskompetenz und strategischem Denken haben stets zum erfolgreichen Abschluss unserer Projekte geführt und Mehrwert für Teams und Kunden geschaffen.",
-            "Neben meiner beruflichen Tätigkeit begeistere ich mich für Musik, Sport und Reisen – Aktivitäten, die Ausgleich schaffen, Kreativität fördern und Inspiration und frische Energie bringen. Ich spreche fließend Slowenisch und Englisch sowie Deutsch auf mittlerem Niveau und baue so erfolgreich bedeutungsvolle Verbindungen zu internationalen Partnern auf. Ich möchte meine Fähigkeiten und Erfahrungen weiterhin einsetzen, um einen nachhaltigen positiven Mehrwert in der digitalen Welt und darüber hinaus zu schaffen."
+            "Ich entwickle und betreibe geschäftskritische Softwareplattformen in den Bereichen Cloud-Infrastruktur, verteilte Systeme, Daten, AI-gestützte Werkzeuge und Produktdelivery. In mehr als 10 Jahren habe ich hands-on als Engineer und Architekt gearbeitet und gleichzeitig Teams, Kundenbeziehungen und Unternehmenswachstum als <b>Partner bei 8020 Consulting GmbH</b> und <b>CEO der Achtzig20 d.o.o.</b> geführt.",
+            "Mein Schwerpunkt liegt dort, wo pragmatische Architektur auf Lieferverantwortung trifft: Microservices, APIs, event-getriebene Integrationen, AWS/Azure-Plattformen, DevOps, Observability, automatisiertes Testing, Analytics und Stakeholder-Alignment. Ich übersetze gerne unklare Geschäftsprobleme in Systeme, die verständlich, wartbar und im Betrieb nützlich sind.",
+            "Ich kommuniziere fließend auf Slowenisch, Englisch und Deutsch und arbeite gerne in internationalen Teams, in denen technische Tiefe, klare Entscheidungen und Vertrauen zählen. Musik, Sport, Schach, Klettern und Reisen halten mich neugierig und ausgeglichen."
         ]
     },
     "cv": {
         "menu-item": "Lebenslauf erstellen",
-        "about": "Ich bin ein erfahrener <b>Softwareentwicklungs</b>-Profi, <b>CEO von Achtzig20 d.o.o.</b> und <b>Partner bei der 8020 Consulting GmbH</b>. Mit Leidenschaft für Technologie und Innovation habe ich verschiedene strategische Softwareprojekte und -initiativen geleitet und umgesetzt, wie z. B. den <b>8020 AI Agent</b>. Durch ausgeprägte Führungsqualitäten und strategisches Denken schaffe ich für Kunden und Partner kontinuierlich Mehrwert. Fließend in Slowenisch und Englisch, mit mittleren Deutschkenntnissen, setze ich mich dafür ein, in der digitalen Welt und darüber hinaus einen positiven Beitrag zu leisten. Abseits der beruflichen Tätigkeit interessiere ich mich für Musik, Sport und Reisen.",
-        "about-tech": "Mein Name ist <b>Črt</b> (ausgesprochen „Chert“). Ich bin ein erfahrener <b>Softwarearchitekt</b> und <b>Technical Lead</b> mit einem schwierigen Namen und umfassender Erfahrung in der Konzeption und Umsetzung robuster, skalierbarer Softwarelösungen. Als <b>Partner bei der 8020 Consulting GmbH</b> und <b>CEO von Achtzig20 d.o.o.</b> habe ich die Architektur entworfen und die technische Umsetzung komplexer SaaS- und Digitalplattformen geleitet – darunter Projekte wie den KI-gestützten 8020 Agent. Mit Leidenschaft für Technologie, Architektur und Innovation nutze ich tiefgehendes technisches Know-how in Kombination mit klarer Kommunikation und Führungskompetenz, um qualitativ hochwertige, wirkungsvolle Softwarelösungen zu liefern. Fließend in Slowenisch und Englisch sowie versiert in Deutsch strebe ich kontinuierlich danach, die Lücke zwischen geschäftlichen Anforderungen und technischer Exzellenz zu schließen.",
-        "about-lead": "Mein Name ist <b>Črt</b> (ausgesprochen „Chert“). Ich bin ein erfahrener <b>Technologie-Manager</b>, <b>Partner bei der 8020 Consulting GmbH</b> und <b>CEO von Achtzig20 d.o.o.</b>, mit einem schwierigen Namen und umfassender Erfahrung in der Umsetzung wirkungsvoller Initiativen und der Förderung innovationsgetriebener Wachstumsstrategien. Ich habe Unternehmen gegründet und skaliert, funktionsübergreifende Teams geleitet und transformative Lösungen wie den digitalen Assistenten <b>8020 AI Agent</b> umgesetzt. Bekannt für meine Problemlösungsfähigkeiten, entschlossene Führung und effektives Stakeholder-Management, verbinde ich technologische Exzellenz konsequent mit Unternehmenszielen, um messbare Ergebnisse zu erzielen. Fließend in Slowenisch und Englisch sowie versiert in Deutsch setze ich mich dafür ein, Technologie zu nutzen, um nachhaltigen Geschäftswert zu schaffen.",
+        "about": "Ich bin <b>Technology Executive</b>, <b>Cloud- und Platform Engineer</b> sowie <b>Solution Architect</b> mit über 10 Jahren Erfahrung in Software Engineering, DevOps, Analytics, AI-gestützten Tools und Delivery Leadership. Als <b>Partner bei 8020 Consulting GmbH</b> und <b>CEO der Achtzig20 d.o.o.</b> verbinde ich technische Tiefe mit kommerzieller Verantwortung, Teamführung und Stakeholder-Management.",
+        "about-tech": "Mein Name ist <b>Črt</b> (ausgesprochen „Chert“). Ich konzipiere, entwickle und betreibe skalierbare Softwareplattformen auf Basis von <b>AWS, Azure, Microservices, APIs, event-getriebenen Integrationen, Datenpipelines und AI-gestützten Systemen</b>. Ich bewege mich sicher zwischen Architektur, Implementierung, DevOps, Testing, Observability und Beratung.",
+        "about-lead": "Mein Name ist <b>Črt</b> (ausgesprochen „Chert“). Ich bin <b>Technology Executive</b>, <b>Cloud/Platform Engineer</b> und <b>Solution Architect</b> mit über 10 Jahren Erfahrung in geschäftskritischer Software für Consulting, Automotive, SaaS, E-Commerce, Logistik und datengetriebene Umfelder. Als <b>Partner bei 8020 Consulting GmbH</b> und <b>CEO der Achtzig20 d.o.o.</b> verbinde ich hands-on Architektur und Engineering mit Delivery Leadership, Stakeholder-Vertrauen und Unternehmenswachstum.",
         "experience": {
             "8020": {
                 "summary": [
-                    "Visionäre Führung zur Förderung von Unternehmenswachstum und Beratungsstrategie, kompetent in Entscheidungsfindung zur Kostenoptimierung bei gleichzeitig offener, empathischer Kommunikation und starken Beziehungen zu Kunden und Teams.",
-                    "Leitung transformativer Projekte: <b>CatenaX, Bloomfilter-Integrationen, JobCar & Caroline (Graf Hardenberg), KI-gestützte Automatisierungslösungen, 8020 AI Agent</b>."
+                    "Verantwortung für Unternehmenswachstum, Beratungsstrategie, Delivery-Qualität, Kompetenzaufbau und Executive-Entscheidungen in Kundenprojekten und internen Initiativen.",
+                    "Leitung und Gestaltung transformativer Projekte wie <b>Catena-X, Bloomfilter-Integrationen, JobCar & Caroline, AI-gestützte Automatisierung, Cloud-Plattformen und 8020 AI Agent</b>."
                 ]
             },
             "achtzig20si": {
                 "summary": [
-                    "Gründung und operative Leitung der slowenischen Tochtergesellschaft.",
-                    "Förderung von Wachstumsinitiativen und Aufbau lokaler Partnerschaften."
+                    "Gründung und operative Leitung der slowenischen Tochtergesellschaft inklusive Recruiting, Teamentwicklung, lokaler Partnerschaften und Delivery-Alignment.",
+                    "Aufbau der Grundlage für eine zuverlässige Engineering-Organisation innerhalb der 8020-Gruppe."
                 ]
             },
             "achtzig20": {
                 "summary": [
-                    "Technische Aufsicht über Softwarearchitektur, Entwicklungsprozesse und DevOps-Praktiken, Verwaltung von End-to-End-Softwarelösungen – von der Anforderungsanalyse bis zur Bereitstellung auf verschiedenen Plattformen. <i>(Linux, Windows, Mobile, Cloud)</i>",
-                    "Umsetzung strategischer Projekte für führende Kunden wie DZ Bank, BMW und mehrere Marken des VW-Konzerns (Audi, Porsche, CARIAD), mit Fokus auf Architekturdesign, Datenanalyse-Schulungen und maßgeschneiderte Softwarelösungen für Unternehmen.",
-                    "Wichtige Projekte: <i>ALICE (CARIAD)</i>, <i>NEW & FAPOS (AUDI)</i>."
+                    "Technische Leitung für Softwarearchitektur, Entwicklungsprozesse, DevOps und Produktionsbetrieb über Web-, Desktop-, Mobile-, Cloud- und datenintensive Systeme hinweg.",
+                    "Umsetzung strategischer Arbeit für <b>VW-Konzernmarken, CARIAD, Audi, Porsche, BMW, DZ Bank, Graf Hardenberg, DAK Coffee Roasters, Scania und interne 8020-Plattformen</b>.",
+                    "Schwerpunkte: <i>Microservices, Cloud-Plattformen, API-Integrationen, AI-Tools, Process Mining, Analytics, automatisiertes Testing und Observability</i>."
                 ],
                 "intern-roles": [
                     {
@@ -84,7 +85,9 @@
         "menu-item": "Fähigkeiten",
         "title": "Fähigkeiten",
         "hard-skills": {
-            "title": "Fachliche Kompetenzen",
+            "title": "Technische Kompetenzen",
+            "cloud-platform": "Cloud & Platform Engineering",
+            "backend-fullstack": "Backend & Full-Stack Engineering",
             "programming": "Programmierung & Entwicklung",
             "architecture": "Architektur & Cloud",
             "databases": "Datenbanken & Speicher",
@@ -120,7 +123,11 @@
             "slovenian": "Slowenisch",
             "english": "Englisch",
             "german": "Deutsch",
-            "italian": "Italienisch"
+            "italian": "Italienisch",
+            "slovenian-level": "Slowenisch · Muttersprache",
+            "english-level": "Englisch · fließend",
+            "german-level": "Deutsch · fließend",
+            "italian-level": "Italienisch · Grundkenntnisse"
         },
         "hobbies": {
             "title": "Hobbys",
@@ -255,7 +262,7 @@
                     "title": "JobCar @ Graf Hardenberg",
                     "link": "jobcar-flotteeins.de/",
                     "abstract": [
-                        "JobCar bietet ein innovatives Fahrzeug-Leasingmodell, das Arbeitgeber ihren Mitarbeitern über Gehaltsumwandlung anbieten können. Mitarbeiter können ihr Wunschfahrzeug bequem online auswählen und bestellen und erhalten Zugang zu attraktiven Full-Service-Leasingkonditionen, verbesserter Liquidität und umfassendem Management über eine spezielle Servicekarte. Arbeitgeber profitieren von höherer Mitarbeitermotivation, stärkerem Employer Branding, Kosteneffizienz durch optimierte Einkaufsbedingungen und umfassendem Fuhrparkmanagement-Service. JobCar fördert insbesondere die Elektromobilität, ermöglicht erhebliche Steuervorteile und unterstützt gleichzeitig Nachhaltigkeitsziele."
+                        "Architektur, UX-Konzept, Full-Stack-Umsetzung, Cloud-Betrieb, Monitoring und E2E-Teststrategie für eine B2B/B2C-Fahrzeugleasingplattform mit Fleetscape, Microsoft Graph, AWS, Node.js/Express, Prisma, PostgreSQL, Angular, Playwright, Docker, NGINX und Grafana."
                     ],
                     "skills": [
                         "Projektmanagement",
@@ -267,6 +274,69 @@
                         "Softwarearchitektur",
                         "DevOps"
                     ]
+                },
+                "catena-x": {
+                    "title": "Puriss @ Catena-X",
+                    "abstract": [
+                        "Entwicklung interoperabler Services für Qualitäts- und Lieferkettendaten im Catena-X-Netzwerk, inklusive APIs, Event-Workflows, Validierung, Monitoring, Governance-Unterstützung und technischer Integrationsdokumentation."
+                    ],
+                    "skills": ["Java / Spring Boot", "Microservices", "API-Design", "Docker", "Keycloak", "CI/CD"]
+                },
+                "caroline": {
+                    "title": "Caroline @ Graf Hardenberg",
+                    "abstract": [
+                        "Architektur und Umsetzung einer dreischichtigen Mobilitäts- und Leasingplattform mit getrennten Web- und Mobile-Clients, externen Integrationen, Genehmigungsflows, Dokumentenhandling, Statusprozessen, DevOps, Hosting und Requirements Engineering."
+                    ],
+                    "skills": ["Node.js", "Angular", "Mobile Development", "PostgreSQL", "Docker", "AWS"]
+                },
+                "audi-frequency": {
+                    "title": "Audi Frequency Analysis App @ AUDI",
+                    "abstract": [
+                        "Entwicklung einer Cross-Platform-Mobile-App für akustische Frequenzanalyse und Fahrzeugdatenzugriff, inklusive Audioaufnahme, FFT-Signalverarbeitung, OTP/WLAN-Modulintegration, Telemetrieaufbereitung, Offline-Funktionalität und UI/UX für Techniker und Ingenieure."
+                    ],
+                    "skills": ["React Native", "TypeScript", "Signalverarbeitung", "Mobile APIs", "iOS / Android", "Figma"]
+                },
+                "dak": {
+                    "title": "Wholesale & Retail E-Commerce @ DAK Coffee Roasters",
+                    "abstract": [
+                        "Aufbau und Betrieb von Wholesale- und Retail-Commerce-Systemen mit Node.js, Angular, WordPress/WooCommerce, Mollie Payments, Monday.com-Workflows, DHL-Versandautomatisierung, PostgreSQL, Redis, Docker, AWS, NGINX und performanceorientiertem Hosting."
+                    ],
+                    "skills": ["E-Commerce", "API-Integration", "AWS", "WooCommerce", "Payments", "Fulfillment-Automation"]
+                },
+                "scania": {
+                    "title": "Celonis Order-to-Delivery Analyse @ Scania",
+                    "abstract": [
+                        "Aufbau von Celonis-basierten Process-Mining-Analysen für Order-to-Delivery-Prozesse durch Harmonisierung verteilter Datenquellen, Event-Log- und KPI-Modellierung, Bottleneck-Analysen und Optimierungsmaßnahmen für Truck-Distribution."
+                    ],
+                    "skills": ["Celonis EMS", "PQL", "SQL", "Python", "ETL", "Process Mining"]
+                },
+                "squadcheck": {
+                    "title": "Squadcheck @ 8020 Consulting",
+                    "abstract": [
+                        "Konzeption und Entwicklung einer internen Enterprise-Plattform für Projektplanung, Kapazitätssteuerung, Budgets, Zeiterfassung, Abrechnung, Rollenmanagement, Microsoft SSO, Personio-Integration und E2E-getestete Drei-Schichten-Architektur."
+                    ],
+                    "skills": [".NET 10", "C#", "MS SQL Server", "Angular", "REST APIs", "Playwright"]
+                },
+                "vw-ai": {
+                    "title": "AI Logistics Tools @ Volkswagen",
+                    "abstract": [
+                        "Entwicklung AI-gestützter Tools für logistische Daten- und Dokumentenautomatisierung, darunter Smart Excel Mapping, Transformation heterogener Reports, dynamische Tutorial-Erstellung aus Screenshots und Python/FastAPI-Backendservices."
+                    ],
+                    "skills": ["Python", "FastAPI", "AI / NLP", "pandas", "Docker", "Next.js"]
+                },
+                "felicia": {
+                    "title": "FELICIA @ CARIAD Qualitätsmanagement",
+                    "abstract": [
+                        "Umsetzung einer AI-Plattform zur Analyse von Bug-Tickets mit Jira- und KPM-Import, Topic Prediction, Duplikaterkennung, Ähnlichkeitsbewertung und webbasierten Review-Workflows für das Qualitätsmanagement."
+                    ],
+                    "skills": ["Python", "FastAPI", "NLP", "Jira API", "Docker", "Next.js"]
+                },
+                "wordpress": {
+                    "title": "Custom WordPress Extensions @ THW Kiel / Hannover 96",
+                    "abstract": [
+                        "Entwicklung maßgeschneiderter WordPress- und WooCommerce-Plugins für Trikotkonfiguration, Live-Ticket-Synchronisation, API-basierte Produkt- und Ticketfeeds, Cron-Jobs, Caching und Hosting-Optimierung."
+                    ],
+                    "skills": ["PHP", "WordPress", "WooCommerce", "REST APIs", "MySQL / MariaDB", "NGINX"]
                 },
                 "alice": {
                     "title": "ALICE @ CARIAD",
@@ -295,6 +365,20 @@
                         "Ein Tool, das die Buchung neuer Fahrzeuge für Tests durch Partner-Autohäuser von Audi erleichtert. Das Tool beinhaltete GRP-Single-Sign-On und bot einen umfassenden Workflow, einschließlich Admin-Bestätigungen und E-Mail-Benachrichtigungen."
                     ],
                     "skills": ["Anforderungsmanagement", "Softwareentwicklung"]
+                },
+                "pak": {
+                    "title": "PAK @ AUDI",
+                    "abstract": [
+                        "Migration eines manuellen Excel-basierten Produktanforderungsprozesses in eine konfigurierbare Enterprise-Anwendung mit Importen, Interpretationslogik, Konsolidierung, Administration, Reporting und .NET Core / Oracle / Angular-Architektur."
+                    ],
+                    "skills": [".NET", "Angular", "Oracle", "Anforderungsmanagement", "Systemintegration"]
+                },
+                "crashtool": {
+                    "title": "Audi Crashtool",
+                    "abstract": [
+                        "Entwicklung einer C#-WinForms-Anwendung für Crash-Test-Analyse und Planung mit historischen Datenimporten, Meilensteinmodellierung, regressionsbasierten Prognosemodulen und Entscheidungsunterstützung."
+                    ],
+                    "skills": ["C#", ".NET Framework", "WinForms", "Oracle", "SQL", "Regressionsmodelle"]
                 }
             },
             "trainings": {
