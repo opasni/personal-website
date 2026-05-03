@@ -5,68 +5,78 @@
     "about": {
         "menu-item": "Über mich",
         "hi-there": "Hallo",
-        "title": "Meine Name ist Črt Harej",
-        "subtitle": "Hier können Sie etwas über mich lesen",
+        "title": "Mein Name ist Črt Harej",
+        "subtitle": "Technology Executive, Cloud Platform Engineer und Solution Architect",
         "text": [
-            "Ich bin eine motivierte und erfahrene Führungskraft mit umfangreichen Kenntnissen in Softwareentwicklung, Projektmanagement und strategischer Unternehmensführung. Als Geschäftsführer der <b>Achtzig20 d.o.o.</b> und Partner bei der Muttergesellschaft <b>8020 Consulting GmbH</b> führe ich engagierte Teams, leite strategische Initiativen und unterstütze Wachstum und Innovation unseres Unternehmens. Meine Stärken in Führung, Problemlösungskompetenz und strategischem Denken haben stets zum erfolgreichen Abschluss unserer Projekte geführt und Mehrwert für Teams und Kunden geschaffen.",
-            "Neben meiner beruflichen Tätigkeit begeistere ich mich für Musik, Sport und Reisen – Aktivitäten, die Ausgleich schaffen, Kreativität fördern und Inspiration und frische Energie bringen. Ich spreche fließend Slowenisch und Englisch sowie Deutsch auf mittlerem Niveau und baue so erfolgreich bedeutungsvolle Verbindungen zu internationalen Partnern auf. Ich möchte meine Fähigkeiten und Erfahrungen weiterhin einsetzen, um einen nachhaltigen positiven Mehrwert in der digitalen Welt und darüber hinaus zu schaffen."
+            "Ich entwickle und betreibe geschäftskritische Softwareplattformen in den Bereichen Cloud-Infrastruktur, verteilte Systeme, Daten, AI-gestützte Werkzeuge und Produktdelivery. In mehr als 10 Jahren habe ich hands-on als Engineer und Architekt gearbeitet und gleichzeitig Teams, Kundenbeziehungen und Unternehmenswachstum als <b>Partner bei 8020 Consulting GmbH</b> und <b>CEO der Achtzig20 d.o.o.</b> geführt.",
+            "Mein Schwerpunkt liegt dort, wo pragmatische Architektur auf Lieferverantwortung trifft: Microservices, APIs, event-getriebene Integrationen, AWS/Azure-Plattformen, DevOps, Observability, automatisiertes Testing, Analytics und Stakeholder-Alignment. Ich übersetze gerne unklare Geschäftsprobleme in Systeme, die verständlich, wartbar und im Betrieb nützlich sind.",
+            "Ich kommuniziere fließend auf Slowenisch, Englisch und Deutsch und arbeite gerne in internationalen Teams, in denen technische Tiefe, klare Entscheidungen und Vertrauen zählen. Musik, Sport, Schach, Klettern und Reisen halten mich neugierig und ausgeglichen."
         ]
     },
     "cv": {
         "menu-item": "Lebenslauf erstellen",
-        "about": "Ich bin erfahrener Fachmann im Bereich <b>Softwareentwicklung</b>, <b>Geschäftsführer der Achtzig20 d.o.o.</b> und <b>Partner bei der 8020 Consulting GmbH</b>. Mit Leidenschaft für Technologie und Innovation habe ich zahlreiche strategische Softwareprojekte und Initiativen erfolgreich geleitet, unter anderem den KI-Assistenten <b>nito.ai</b>. Dank starker Führungskompetenzen und strategisch-analytischem Denken liefere ich kontinuierlich hohen Mehrwert für Kunden und Partner. Ich spreche fließend Slowenisch und Englisch sowie Deutsch auf mittlerem Niveau und engagiere mich mit Begeisterung, einen positiven Einfluss auf die digitale Welt auszuüben. Privat interessiere ich mich für Musik, Sport und Reisen.",
+        "about": "Ich bin <b>Technology Executive</b>, <b>Cloud- und Platform Engineer</b> sowie <b>Solution Architect</b> mit über 10 Jahren Erfahrung in Software Engineering, DevOps, Analytics, AI-gestützten Tools und Delivery Leadership. Als <b>Partner bei 8020 Consulting GmbH</b> und <b>CEO der Achtzig20 d.o.o.</b> verbinde ich technische Tiefe mit kommerzieller Verantwortung, Teamführung und Stakeholder-Management.",
+        "about-tech": "Mein Name ist <b>Črt</b> (ausgesprochen „Chert“). Ich konzipiere, entwickle und betreibe skalierbare Softwareplattformen auf Basis von <b>AWS, Azure, Microservices, APIs, event-getriebenen Integrationen, Datenpipelines und AI-gestützten Systemen</b>. Ich bewege mich sicher zwischen Architektur, Implementierung, DevOps, Testing, Observability und Beratung.",
+        "about-lead": "Mein Name ist <b>Črt</b> (ausgesprochen „Chert“). Ich bin <b>Technology Executive</b>, <b>Cloud/Platform Engineer</b> und <b>Solution Architect</b> mit über 10 Jahren Erfahrung in geschäftskritischer Software für Consulting, Automotive, SaaS, E-Commerce, Logistik und datengetriebene Umfelder. Als <b>Partner bei 8020 Consulting GmbH</b> und <b>CEO der Achtzig20 d.o.o.</b> verbinde ich hands-on Architektur und Engineering mit Delivery Leadership, Stakeholder-Vertrauen und Unternehmenswachstum.",
         "experience": {
-            "achtzig20": {
-                "summary-long": [
-                    "<b>Partner bei der 8020 Consulting GmbH</b>, aktiv beteiligt an der langfristigen strategischen Unternehmensausrichtung, Management-Initiativen und Unterstützung im erfolgreichen Kundengeschäft.",
-                    "<b>Geschäftsführer der Achtzig20 d.o.o.</b>, erfolgreicher Aufbau der Tochtergesellschaft und des Büros in Ljubljana sowie strategische Führung durch unterschiedliche Wachstumsphasen und Partnerschaften.",
-                    "<b>Technischer Leiter bei der 8020 Consulting GmbH (ehemals Achtzig20 GmbH)</b>, verantwortlich für strategisch-technische Führung bei Anforderungsanalyse, Softwareentwicklung, Softwarearchitektur und DevOps-Methoden.",
-                    "Enge Zusammenarbeit mit renommierten Kunden wie Audi, Porsche, BMW und DZ Bank bei der Erstellung individueller Softwarelösungen und spezialisierter Schulungen im Bereich Datenanalyse.",
-                    "Leitung bedeutender Projekte, wie ALICE bei CARIAD (interdisziplinäres Projektteammanagement), NEW bei AUDI (Entwicklungsfortschritt-Tracking) und FAPOS bei AUDI (Plattform zur Testfahrzeugbuchung).",
-                    "Konzeption und Durchführung maßgeschneiderter Schulungsprogramme in Datenanalyse zur Erweiterung interner Kompetenzen unserer Kunden."
-                ],
+            "8020": {
                 "summary": [
-                    "<b>Partner, 8020 Consulting GmbH</b>: Strategische Führung, Unternehmenswachstum, Kundenbeziehungen.",
-                    "<b>Geschäftsführer, Achtzig20 d.o.o.</b>: Unternehmenswachstum, Aufbau Tochtergesellschaft, strategische Partnerschaften in Ljubljana.",
-                    "<b>Technischer Leiter, 8020 Consulting GmbH (ehemals Achtzig20 GmbH)</b>: Technische Gesamtleitung, Softwareentwicklung, Architektur, DevOps.",
-                    "Kundenprojekte: Audi, Porsche, BMW, DZ Bank – Entwicklung hochwertiger Softwarelösungen und Schulungen im Bereich Datenanalyse.",
-                    "Wichtigste Projekte: ALICE bei CARIAD, NEW & FAPOS bei AUDI, JobCar & Caroline bei Graf Hardenberg.",
-                    "Entwicklung und Durchführung individueller Schulungsprogramme zu Datenanalyse."
+                    "Verantwortung für Unternehmenswachstum, Beratungsstrategie, Delivery-Qualität, Kompetenzaufbau und Executive-Entscheidungen in Kundenprojekten und internen Initiativen.",
+                    "Leitung und Gestaltung transformativer Projekte wie <b>Catena-X, Bloomfilter-Integrationen, JobCar & Caroline, AI-gestützte Automatisierung, Cloud-Plattformen und 8020 AI Agent</b>."
+                ]
+            },
+            "achtzig20si": {
+                "summary": [
+                    "Gründung und operative Leitung der slowenischen Tochtergesellschaft inklusive Recruiting, Teamentwicklung, lokaler Partnerschaften und Delivery-Alignment.",
+                    "Aufbau der Grundlage für eine zuverlässige Engineering-Organisation innerhalb der 8020-Gruppe."
+                ]
+            },
+            "achtzig20": {
+                "summary": [
+                    "Technische Leitung für Softwarearchitektur, Entwicklungsprozesse, DevOps und Produktionsbetrieb über Web-, Desktop-, Mobile-, Cloud- und datenintensive Systeme hinweg.",
+                    "Umsetzung strategischer Arbeit für <b>VW-Konzernmarken, CARIAD, Audi, Porsche, BMW, DZ Bank, Graf Hardenberg, DAK Coffee Roasters, Scania und interne 8020-Plattformen</b>.",
+                    "Schwerpunkte: <i>Microservices, Cloud-Plattformen, API-Integrationen, AI-Tools, Process Mining, Analytics, automatisiertes Testing und Observability</i>."
                 ],
-                "skills": [
-                    "<b>Rollen</b>: Projektmanagement, Teamführung, Technische Leitung, Produktgestaltung.",
-                    "<b>Fachkompetenzen</b>: Anforderungsmanagement, Softwareentwicklung, Softwarearchitektur, DevOps, Führungskompetenz, Strategisches Denken.",
-                    "<b>Technologien</b>: SQL Server, MongoDB, Oracle, .NET, Angular, CI/CD, Solidity, Python."
+                "intern-roles": [
+                    {
+                        "role": "CTO @ newonads GmbH",
+                        "duration": "11/2021 – 10/2022",
+                        "description": "Leitung der Architektur und Entwicklung einer SaaS-Digitalwerbeplattform mit Schwerpunkt auf Markenbindung, Leadgenerierung und Umsatzsteigerung."
+                    },
+                    {
+                        "role": "CTO @ Studio3 GmbH",
+                        "duration": "10/2022 – 09/2023",
+                        "description": "Entwicklung einer Web3-basierten Community-Management-Plattform zur Verbesserung der Agentur-Kunden-Interaktionen bei gleichzeitiger Minimierung von Sicherheitsrisiken."
+                    }
                 ]
             },
             "akka": {
                 "summary": [
-                    "Entwicklung von carship.online mit Schwerpunkt auf Softwareentwicklung und Gestaltung des Benutzerflusses.",
-                    "Konzeption und Durchführung von Schulungen in den Bereichen Data Analytics und Blockchain.",
-                    "Analyse der Wiederverkaufspreise von AUDI-Fahrzeugen, mit Schwerpunkt auf dem Einfluss optionaler Ausstattungen."
+                    "Entwicklung von carship.online mit Schwerpunkt auf Softwareentwicklung und Gestaltung des Nutzerflusses.",
+                    "Konzeption und Durchführung von Schulungen in den Bereichen Datenanalyse und Blockchain.",
+                    "Analyse der Wiederverkaufspreise von AUDI-Fahrzeugen mit Fokus auf die Auswirkungen von Sonderausstattungen."
                 ]
             },
             "institute-js": {
                 "summary": [
-                    "Erwerb von Fähigkeiten in Datenanalyse, C++ Programmierung, Durchführung von Simulationen und Dateninterpretation.",
-                    "Abschluss eines 6-monatigen Praktikums in Mainz Microtron."
+                    "Erworbenes Wissen in Datenanalyse, C++-Programmierung, Durchführung von Simulationen und Dateninterpretation sowie Abschluss eines 6-monatigen Praktikums im Mainz Microtron."
                 ]
             }
         },
         "education": {
             "masters": {
-                "title": "MSc in Mathematischer Physik",
+                "title": "M.Sc. in Mathematischer Physik",
                 "summary": [
-                    "Notendurchschnitt: 9.0 (Entspricht A in den USA, 1.7 in Deutschland)",
-                    "Dissertation: \"Einrichtung eines Experiments zur Messung des axialen Formfaktors des Protons\""
+                    "Notendurchschnitt: 9,0 (entspricht A in den USA, 1,7 in Deutschland)",
+                    "Masterarbeit: <i>„Aufbau eines Experiments zur Messung des axialen Formfaktors des Protons“</i>"
                 ]
             },
             "bachelor": {
-                "title": "BSc in Allgemeiner Physik",
+                "title": "B.Sc. in Allgemeiner Physik",
                 "summary": [
-                    "Notendurchschnitt: 8.3 (Entspricht A in den USA, 2.3 in Deutschland)",
-                    "Diverse Kursarbeit: Astronomie, Geophysik, Elektronik, Computationsphysik.",
-                    "Dissertation: \"Bariogenesis über Leptogenesis\""
+                    "Notendurchschnitt: 8,3 (entspricht A in den USA, 2,3 in Deutschland)",
+                    "Vielfältige Kurse: Astronomie, Geophysik, Elektronik, Rechnergestützte Physik.",
+                    "Bachelorarbeit: „Baryogenese durch Leptogenese“"
                 ]
             }
         }
@@ -75,32 +85,49 @@
         "menu-item": "Fähigkeiten",
         "title": "Fähigkeiten",
         "hard-skills": {
-            "title": "Fachkompetenzen",
-            "programming": "Frameworks und Programmiersprachen",
-            "databases": "Datenbanken und Infrastruktur",
-            "tools": "Webanwendungen"
+            "title": "Technische Kompetenzen",
+            "cloud-platform": "Cloud & Platform Engineering",
+            "backend-fullstack": "Backend & Full-Stack Engineering",
+            "programming": "Programmierung & Entwicklung",
+            "architecture": "Architektur & Cloud",
+            "databases": "Datenbanken & Speicher",
+            "devops": "DevOps & CI/CD",
+            "analytics": "Analytik & Data Science",
+            "tools": "Werkzeuge"
         },
         "soft-skills": {
-            "title": "Sozialkompetenzen",
+            "title": "Persönliche Stärken",
+            "cv": {
+                "leadership": "Führung & Teamleitung",
+                "strategic-thinking": "Strategisches Denken & Entscheidungsfindung",
+                "problem-solving": "Problemlösung & Analytisches Denken",
+                "resourcefulness": "Einfallsreichtum & Anpassungsfähigkeit",
+                "communication": "Kommunikation & Stakeholder-Management",
+                "trainability": "Kontinuierliches Lernen & Lernfähigkeit"
+            },
             "teamwork": "Teamarbeit",
             "communication": "Kommunikation",
-            "responsibility": "Verantwortung",
+            "responsibility": "Verantwortungsbewusstsein",
             "resourcefulness": "Einfallsreichtum",
-            "trainability": "Lernbereitschaft",
+            "trainability": "Lernfähigkeit",
             "problem-solving": "Problemlösung",
-            "leadership": "Personalleitung",
+            "leadership": "Führungskompetenz",
             "strategic-thinking": "Strategisches Denken",
             "decision-making": "Entscheidungsfindung",
             "adaptability": "Anpassungsfähigkeit",
-            "financial-acumen": "Finanzielles Geschick",
+            "financial-acumen": "Finanzielles Verständnis",
             "emotional-intelligence": "Emotionale Intelligenz"
         },
         "languages": {
-            "title": "Sprache",
+            "title": "Sprachen",
             "slovenian": "Slowenisch",
             "english": "Englisch",
             "german": "Deutsch",
-            "italian": "Italienisch"
+            "italian": "Italienisch",
+            "slovenian-level": "Slowenisch · Muttersprache",
+            "english-level": "Englisch · fließend",
+            "german-level": "Deutsch · fließend",
+            "italian-level": "Italienisch · Grundkenntnisse"
         },
         "hobbies": {
             "title": "Hobbys",
@@ -126,30 +153,68 @@
             "bia-separation": "BIA Separations d.o.o.",
             "institute-js": "Jožef Stefan Institut",
             "akka": "AKKA GmbH",
-            "achtzig20": "8020 Consulting GmbH"
+            "achtzig20": "Achtzig20 GmbH, Ingolstadt, Deutschland",
+            "achtzig20si": "Achtzig20 d.o.o., Ljubljana, Slowenien",
+            "8020": "8020 Consulting GmbH, München, Deutschland"
+        },
+        "8020": {
+            "type": "Mitarbeiter",
+            "title": "Partner",
+            "link": "8020.eco",
+            "abstract": [
+                "Als Partner bei der 8020 Consulting GmbH spiele ich eine entscheidende Rolle bei der Gestaltung der strategischen Ausrichtung des Unternehmens und beim Vorantreiben seines Wachstums. Zu meinen Aufgaben gehören das Management wichtiger Kundenbeziehungen, die Überwachung der Projektdurchführung und die Sicherstellung der Ausrichtung unserer Dienstleistungen an den Marktanforderungen. Ich nutze meine umfangreiche Erfahrung in Softwareentwicklung, Projektmanagement und technischer Leitung, um unsere Teams bei der Bereitstellung hochwertiger Lösungen zu unterstützen, die den Bedürfnissen unserer Kunden entsprechen.",
+                "Mein Weg bei der 8020 Consulting GmbH war geprägt von kontinuierlichem Lernen und Innovation. Ich hatte die Gelegenheit, an vielfältigen Projekten in verschiedenen Branchen zu arbeiten und mit talentierten Fachleuten zusammenzuarbeiten, um wirkungsvolle Lösungen zu schaffen. Mein Engagement für Exzellenz und meine Leidenschaft für Technologie treiben mich an, kontinuierlich nach neuen Herausforderungen und Wachstumschancen zu suchen."
+            ],
+            "skills": [
+                "Führung",
+                "Strategisches Denken",
+                "Kommunikation",
+                "Entscheidungsfindung",
+                "Anpassungsfähigkeit",
+                "Finanzkompetenz",
+                "Emotionale Intelligenz"
+            ]
+        },
+        "achtzig20si": {
+            "type": "Mitarbeiter",
+            "title": "CEO",
+            "link": "achtzig20.si",
+            "abstract": [
+                "Als CEO der Achtzig20 d.o.o. habe ich eine entscheidende Rolle beim Wachstum und Erfolg des Unternehmens gespielt. Alles begann mit Werkstudenten vom e-Študentski Servis, die für die Achtzig20 GmbH tätig wurden. Im Laufe der Zeit erweiterten wir unser Team um Vollzeitmitarbeiter und eröffneten ein schönes Büro im Stadtzentrum von Ljubljana. Wir haben bedeutende Meilensteine erreicht, darunter die Gründung der Achtzig20 d.o.o. als Tochtergesellschaft. Gemeinsam haben wir eine starke und florierende Organisation aufgebaut, angetrieben von unserer Leidenschaft für Exzellenz und unserem Engagement, außergewöhnliche Dienstleistungen zu erbringen."
+            ],
+            "skills": [
+                "Führung",
+                "Strategisches Denken",
+                "Kommunikation",
+                "Entscheidungsfindung",
+                "Anpassungsfähigkeit",
+                "Finanzkompetenz",
+                "Emotionale Intelligenz"
+            ]
         },
         "achtzig20": {
-            "type": "Employee",
-            "title": "Partner",
+            "type": "Mitarbeiter",
+            "title": "Technischer Leiter",
+            "link": "8020.eco",
             "abstract": [
-                "In meiner Rolle bei der 8020 Consulting GmbH (vormals Achtzig20) hatte ich das Privileg, mit einem dynamischen Team zusammenzuarbeiten sowie das Wachstum und den Erfolg des Unternehmens maßgeblich mitzugestalten. Nachdem ich zu Beginn meiner Laufbahn bei AKKA umfangreiche Erfahrungen als Software Developer und Software Architect sammeln konnte, wechselte ich in die Rolle eines Technical Leads. Dabei konnte ich meine Expertise im Bereich Requirements Engineering, Softwareentwicklung, Softwarearchitektur und DevOps einsetzen, um unseren Kunden stets innovative und hochwertige Lösungen zu bieten.",
-                "Meine berufliche Entwicklung führte mich über technische Aufgaben hinaus in eine leitende Position. Als Geschäftsführer unserer Tochtergesellschaft Achtzig20 d.o.o. in Ljubljana habe ich den Aufbau und die Expansion unserer Unternehmensaktivitäten erfolgreich begleitet — von strategischen Partnerschaften, wie der mit e-Študentski Servis, bis hin zur Etablierung unseres modernen Büros im Herzen von Ljubljana. Heute gestalte ich als Partner bei der 8020 Consulting GmbH aktiv die strategische Ausrichtung des Unternehmens mit und fördere eine positive, innovative und nachhaltige Unternehmenskultur.",
-                "Im Laufe meiner beruflichen Tätigkeit konnte ich mit namhaften Kunden zusammenarbeiten, darunter Audi, Porsche, BMW und DZ Bank. Dabei habe ich komplexe Softwarelösungen entwickelt – von webbasierten Anwendungen bis hin zu spezialisierten Desktop-Tools –, interne technische Herausforderungen gemeistert, Schulungen im Bereich der Datenanalyse durchgeführt und mein Expertenwissen angewandt, um für unsere Kunden wertvolle und praxisorientierte Lösungen zu schaffen.",
-                "Meine Zeit bei der 8020 Consulting GmbH zeichnet sich durch kontinuierliches Lernen, effektives Problemlösen und stetige Innovation aus. Diese spannende und bereichernde Tätigkeit ermöglicht es mir, entscheidend zum Unternehmenserfolg beizutragen sowie vertrauensvolle Beziehungen zu Kunden und Partnern aufzubauen und weiter zu stärken."
+                "In meiner Rolle bei der Achtzig20 GmbH hatte ich das Privileg, mit einem dynamischen Team zusammenzuarbeiten und wesentlich zum anhaltenden Wachstum und Erfolg des Unternehmens beizutragen. Meine Karriere begann bei AKKA, wo ich mir eine solide Basis als Softwareentwickler und -architekt aufbaute, bevor ich in meine Rolle als technischer Leiter wechselte. Mit fundierter Expertise in Bereichen wie Anforderungsmanagement, Softwareentwicklung, Softwarearchitektur und DevOps habe ich stets innovative, hochwertige Lösungen geliefert, die auf die Bedürfnisse unserer Kunden zugeschnitten sind.",
+                "Über die technischen Verantwortlichkeiten hinaus weitete sich mein Weg auf organisatorische Führung aus. Als CEO unserer Tochtergesellschaft Achtzig20 d.o.o. in Ljubljana habe ich erfolgreich mehrere Wachstumsphasen gemeistert – von strategischen Partnerschaften wie der mit e-Študentski Servis bis hin zur Eröffnung unseres lebendigen Büros im Herzen von Ljubljana. Heute gestalte ich als Partner bei der 8020 Consulting GmbH aktiv die strategische Ausrichtung des Unternehmens und fördere kontinuierlich eine positive, innovative und effiziente Unternehmenskultur.",
+                "Während meiner beruflichen Laufbahn hatte ich die Gelegenheit, mit renommierten Kunden – darunter Audi, Porsche, BMW und DZ Bank – zusammenzuarbeiten und anspruchsvolle Softwarelösungen zu entwickeln, von webbasierten Anwendungen bis hin zu spezialisierten Desktop-Tools. Ich habe komplexe interne Herausforderungen bewältigt, Schulungen in Datenanalyse durchgeführt und mein Fachwissen genutzt, um fundierte Lösungen zu schaffen, die unseren Kunden einen greifbaren Mehrwert bieten.",
+                "Mein Weg bei der 8020 Consulting GmbH war geprägt von kontinuierlichem Lernen, effektivem Problemlösen und nachhaltiger Innovation. Es war äußerst lohnend und erfüllend, da ich nicht nur erheblich zum Wachstum des Unternehmens beitragen konnte, sondern auch dauerhafte Beziehungen zu unseren Kunden und Branchenpartnern aufgebaut habe."
             ],
             "achtzig20": {
                 "type": "CEO @ Achtzig20 d.o.o.",
                 "title": "Achtzig20 d.o.o.",
                 "abstract": [
-                    "Als CEO von Achtzig20 d.o.o. spiele ich eine entscheidende Rolle im Wachstum und Erfolg des Unternehmens. Alles begann mit Studierenden, die über e-Študentski Servis für Achtzig20 GmbH tätig waren. Im Laufe der Zeit haben wir unser Team um Vollzeitmitarbeiter erweitert und ein wunderschönes Büro im Stadtzentrum von Ljubljana eingerichtet. Wir haben bedeutende Meilensteine erreicht, darunter die Gründung von Achtzig20 d.o.o. als Tochtergesellschaft. Gemeinsam haben wir eine starke und blühende Organisation aufgebaut, angetrieben von unserer Leidenschaft für Exzellenz und unserem Engagement für herausragende Dienstleistungen."
+                    "Als CEO der Achtzig20 d.o.o. habe ich eine entscheidende Rolle beim Wachstum und Erfolg des Unternehmens gespielt. Alles begann mit Werkstudenten vom e-Študentski Servis, die für die Achtzig20 GmbH tätig wurden. Im Laufe der Zeit erweiterten wir unser Team um Vollzeitmitarbeiter und eröffneten ein schönes Büro im Stadtzentrum von Ljubljana. Wir haben bedeutende Meilensteine erreicht, darunter die Gründung der Achtzig20 d.o.o. als Tochtergesellschaft. Gemeinsam haben wir eine starke und florierende Organisation aufgebaut, angetrieben von unserer Leidenschaft für Exzellenz und unserem Engagement, außergewöhnliche Dienstleistungen zu erbringen."
                 ],
                 "skills": [
-                    "Leitung",
+                    "Führung",
                     "Strategisches Denken",
                     "Kommunikation",
                     "Entscheidungsfindung",
                     "Anpassungsfähigkeit",
-                    "Finanzverständnis",
+                    "Finanzkompetenz",
                     "Emotionale Intelligenz"
                 ]
             },
@@ -158,15 +223,15 @@
                 "title": "newonads",
                 "link": "newonads.de",
                 "abstract": [
-                    "Newonads ist eine digitale Werbeplattform, die Marken und Unternehmen mit relevanter und verlässlicher Reichweite, emotionaler Ansprache und einer loyalen Community in einem definierten geografischen Gebiet verbindet. Alle Kampagnen können geplant, gemessen und direkt die gewünschte Zielgruppe erreichen.",
-                    "Wenn Sie nach einer digitalen Werbeplattform suchen, die Ihnen dabei helfen kann, Ihre Zielgruppe zu erreichen, die Markenbekanntheit zu steigern, Leads zu generieren und den Verkauf anzukurbeln, dann ist newonads eine großartige Option."
+                    "Newonads ist eine digitale Werbeplattform, die Marken und Unternehmen mit relevanter und verlässlicher Reichweite, emotionaler Ansprache und einer loyalen Community in einem definierten geografischen Gebiet verbindet. Alle Kampagnen können geplant, gemessen und die gewünschte Zielgruppe direkt erreicht werden.",
+                    "Wenn Sie eine digitale Werbeplattform suchen, die Ihnen hilft, Ihre Zielgruppe zu erreichen, die Markenbekanntheit zu steigern, Leads zu generieren und den Umsatz zu fördern, ist newonads eine hervorragende Option."
                 ],
                 "skills": [
                     "Projektmanagement",
-                    "Teamleitung",
-                    "Produktdesign",
+                    "Teamführung",
                     "Technische Leitung",
-                    "Requirements-Management",
+                    "Produktdesign",
+                    "Anforderungsmanagement",
                     "Softwareentwicklung",
                     "Softwarearchitektur",
                     "DevOps"
@@ -177,17 +242,17 @@
                 "title": "GRID3",
                 "link": "grid3.io",
                 "abstract": [
-                    "Grid3 ist eine Plattform, die Agenturen dabei unterstützt, digitale Communities aufzubauen und zu pflegen, indem sie die Vorteile des Web3-Bereichs nutzt, jedoch ohne die damit verbundenen Sicherheitsrisiken und Zusatzkosten.",
-                    "Sie bietet eine Vielzahl von Tools und Ressourcen, um Agenturen bei der Erstellung, Verwaltung und dem Wachstum ihrer Communities zu unterstützen. Diese Tools umfassen das Design und die Bereitstellung von Smart Contracts / NFT-Drops, API-Integrationen mit verschiedenen Online-Shops, Roadmap-Planung, Gamification von NFTs zur Steigerung der Kundenbindung usw."
+                    "Grid3 ist eine Plattform, die Agenturen dabei unterstützt, digitale Communities aufzubauen und zu betreuen – unter Nutzung der Vorteile des Web3-Bereichs, jedoch ohne die damit verbundenen Sicherheitsrisiken und den organisatorischen Aufwand.",
+                    "Sie bietet eine Vielzahl an Werkzeugen und Ressourcen, die Agenturen helfen, ihre Communities zu erstellen, zu managen und weiterzuentwickeln. Dazu gehören Design und Bereitstellung von Smart Contracts / NFT-Drops, API-Integrationen mit verschiedenen Online-Shops, Roadmap-Planung, Gamification von NFTs zur Stärkung der Kundenbindung usw."
                 ],
                 "skills": [
-                    "Project Management",
-                    "Team Leading",
-                    "Technical Lead",
-                    "Product design",
-                    "Requirements engineering",
-                    "Software Development",
-                    "Software Architecture",
+                    "Projektmanagement",
+                    "Teamführung",
+                    "Technische Leitung",
+                    "Produktdesign",
+                    "Anforderungsmanagement",
+                    "Softwareentwicklung",
+                    "Softwarearchitektur",
                     "DevOps"
                 ]
             },
@@ -197,24 +262,87 @@
                     "title": "JobCar @ Graf Hardenberg",
                     "link": "jobcar-flotteeins.de/",
                     "abstract": [
-                        "JobCar bietet ein innovatives Fahrzeugleasingmodell, das Unternehmen ihren Mitarbeitern im Rahmen einer Bruttoentgeltumwandlung zur Verfügung stellen können. Arbeitnehmer wählen und bestellen ihr Wunschfahrzeug einfach online und profitieren von attraktiven Full-Service-Leasing-Konditionen, erhöhter privater Liquidität sowie bargeldloser Abwicklung über eine Service Card. Arbeitgeber profitieren von erhöhter Mitarbeitermotivation, einem stärkeren Unternehmensimage, Kostenvorteilen durch optimierte Einkaufskonditionen und einer umfassenden Fuhrparkverwaltung. Das JobCar-Modell fördert insbesondere Elektromobilität und ermöglicht dadurch nennenswerte steuerliche Vorteile bei gleichzeitiger Unterstützung nachhaltiger Unternehmensziele."
+                        "Architektur, UX-Konzept, Full-Stack-Umsetzung, Cloud-Betrieb, Monitoring und E2E-Teststrategie für eine B2B/B2C-Fahrzeugleasingplattform mit Fleetscape, Microsoft Graph, AWS, Node.js/Express, Prisma, PostgreSQL, Angular, Playwright, Docker, NGINX und Grafana."
                     ],
                     "skills": [
                         "Projektmanagement",
                         "Teamführung",
-                        "Technischer Leiter",
-                        "Produktgestaltung",
-                        "Anforderungsmanagement / Anforderungsanalyse",
+                        "Technische Leitung",
+                        "Produktdesign",
+                        "Anforderungsmanagement",
                         "Softwareentwicklung",
                         "Softwarearchitektur",
                         "DevOps"
                     ]
                 },
+                "catena-x": {
+                    "title": "Puriss @ Catena-X",
+                    "abstract": [
+                        "Entwicklung interoperabler Services für Qualitäts- und Lieferkettendaten im Catena-X-Netzwerk, inklusive APIs, Event-Workflows, Validierung, Monitoring, Governance-Unterstützung und technischer Integrationsdokumentation."
+                    ],
+                    "skills": ["Java / Spring Boot", "Microservices", "API-Design", "Docker", "Keycloak", "CI/CD"]
+                },
+                "caroline": {
+                    "title": "Caroline @ Graf Hardenberg",
+                    "abstract": [
+                        "Architektur und Umsetzung einer dreischichtigen Mobilitäts- und Leasingplattform mit getrennten Web- und Mobile-Clients, externen Integrationen, Genehmigungsflows, Dokumentenhandling, Statusprozessen, DevOps, Hosting und Requirements Engineering."
+                    ],
+                    "skills": ["Node.js", "Angular", "Mobile Development", "PostgreSQL", "Docker", "AWS"]
+                },
+                "audi-frequency": {
+                    "title": "Audi Frequency Analysis App @ AUDI",
+                    "abstract": [
+                        "Entwicklung einer Cross-Platform-Mobile-App für akustische Frequenzanalyse und Fahrzeugdatenzugriff, inklusive Audioaufnahme, FFT-Signalverarbeitung, OTP/WLAN-Modulintegration, Telemetrieaufbereitung, Offline-Funktionalität und UI/UX für Techniker und Ingenieure."
+                    ],
+                    "skills": ["React Native", "TypeScript", "Signalverarbeitung", "Mobile APIs", "iOS / Android", "Figma"]
+                },
+                "dak": {
+                    "title": "Wholesale & Retail E-Commerce @ DAK Coffee Roasters",
+                    "abstract": [
+                        "Aufbau und Betrieb von Wholesale- und Retail-Commerce-Systemen mit Node.js, Angular, WordPress/WooCommerce, Mollie Payments, Monday.com-Workflows, DHL-Versandautomatisierung, PostgreSQL, Redis, Docker, AWS, NGINX und performanceorientiertem Hosting."
+                    ],
+                    "skills": ["E-Commerce", "API-Integration", "AWS", "WooCommerce", "Payments", "Fulfillment-Automation"]
+                },
+                "scania": {
+                    "title": "Celonis Order-to-Delivery Analyse @ Scania",
+                    "abstract": [
+                        "Aufbau von Celonis-basierten Process-Mining-Analysen für Order-to-Delivery-Prozesse durch Harmonisierung verteilter Datenquellen, Event-Log- und KPI-Modellierung, Bottleneck-Analysen und Optimierungsmaßnahmen für Truck-Distribution."
+                    ],
+                    "skills": ["Celonis EMS", "PQL", "SQL", "Python", "ETL", "Process Mining"]
+                },
+                "squadcheck": {
+                    "title": "Squadcheck @ 8020 Consulting",
+                    "abstract": [
+                        "Konzeption und Entwicklung einer internen Enterprise-Plattform für Projektplanung, Kapazitätssteuerung, Budgets, Zeiterfassung, Abrechnung, Rollenmanagement, Microsoft SSO, Personio-Integration und E2E-getestete Drei-Schichten-Architektur."
+                    ],
+                    "skills": [".NET 10", "C#", "MS SQL Server", "Angular", "REST APIs", "Playwright"]
+                },
+                "vw-ai": {
+                    "title": "AI Logistics Tools @ Volkswagen",
+                    "abstract": [
+                        "Entwicklung AI-gestützter Tools für logistische Daten- und Dokumentenautomatisierung, darunter Smart Excel Mapping, Transformation heterogener Reports, dynamische Tutorial-Erstellung aus Screenshots und Python/FastAPI-Backendservices."
+                    ],
+                    "skills": ["Python", "FastAPI", "AI / NLP", "pandas", "Docker", "Next.js"]
+                },
+                "felicia": {
+                    "title": "FELICIA @ CARIAD Qualitätsmanagement",
+                    "abstract": [
+                        "Umsetzung einer AI-Plattform zur Analyse von Bug-Tickets mit Jira- und KPM-Import, Topic Prediction, Duplikaterkennung, Ähnlichkeitsbewertung und webbasierten Review-Workflows für das Qualitätsmanagement."
+                    ],
+                    "skills": ["Python", "FastAPI", "NLP", "Jira API", "Docker", "Next.js"]
+                },
+                "wordpress": {
+                    "title": "Custom WordPress Extensions @ THW Kiel / Hannover 96",
+                    "abstract": [
+                        "Entwicklung maßgeschneiderter WordPress- und WooCommerce-Plugins für Trikotkonfiguration, Live-Ticket-Synchronisation, API-basierte Produkt- und Ticketfeeds, Cron-Jobs, Caching und Hosting-Optimierung."
+                    ],
+                    "skills": ["PHP", "WordPress", "WooCommerce", "REST APIs", "MySQL / MariaDB", "NGINX"]
+                },
                 "alice": {
                     "title": "ALICE @ CARIAD",
                     "abstract": [
-                        "tatus-/Reifegradtracking für interdisziplinäre Projektteams (intern + externe Supplier) und das Management auf beliebigen Bedarfsebenen Vollständige Nachverfolgbarkeit entlang sämtlicher Entwicklungsprozess-Phasen inklusive der Freigaben auf verschiedenen Ebenen, Auswertung und Darstellung verschiedener KPIs wie Lastenheft, Bugs, Testing, Change Requests etc.",
-                        "Daten werden teilweise automatisch durch APIs verschiedener Plattformen (JIRA, BitBucket, Doors, cPlace, codeBeamer, etc.) automatisch in ALICE importiert, gemapped und importiert."
+                        "Status- und Reifegradverfolgung für interdisziplinäre Projektteams (intern + externe Zulieferer) sowie Management auf verschiedenen Anforderungsebenen. Vollständige Nachverfolgbarkeit über alle Phasen des Entwicklungsprozesses hinweg, einschließlich Freigaben auf unterschiedlichen Ebenen. Auswertung und Darstellung verschiedener KPIs wie Anforderungsspezifikationen, Bugs, Tests, Änderungsanforderungen usw.",
+                        "Daten werden teilweise über APIs verschiedener Plattformen (JIRA, BitBucket, Doors, cPlace, codeBeamer usw.) in ALICE importiert, abgebildet und aktualisiert."
                     ],
                     "skills": [
                         "Technische Leitung",
@@ -227,26 +355,40 @@
                 "new": {
                     "title": "NEW @ AUDI",
                     "abstract": [
-                        "Das Reportingtool ermöglicht das Verfolgen und Berichten des Entwicklungsfortschritts von Bauteilen. Es besteht aus den Bereichen Neuteiltracking, Aggregateverkabelung und Package. Teams können den Fortschritt besser verfolgen, Engpässe identifizieren und die Kommunikation verbessern."
+                        "Das Reporting-Tool ermöglicht die Nachverfolgung und Berichterstattung des Entwicklungsfortschritts von Komponenten. Es umfasst die Bereiche New Part Tracking, Aggregate Wiring und Package. Teams können den Fortschritt besser überwachen, Engpässe identifizieren und die Kommunikation verbessern."
                     ],
                     "skills": ["Technische Leitung", "Anforderungsmanagement", "Softwareentwicklung"]
                 },
                 "fapos": {
                     "title": "FAPOS @ AUDI",
                     "abstract": [
-                        "Ein Tool, das die Buchung von Neuwagen für Tests durch Partner-Autohäuser von Audi erleichtert. Das Tool integriert GRP Single Sign-On und bietet einen umfassenden Workflow, einschließlich Administrator-Bestätigungen und E-Mail-Benachrichtigungen."
+                        "Ein Tool, das die Buchung neuer Fahrzeuge für Tests durch Partner-Autohäuser von Audi erleichtert. Das Tool beinhaltete GRP-Single-Sign-On und bot einen umfassenden Workflow, einschließlich Admin-Bestätigungen und E-Mail-Benachrichtigungen."
                     ],
                     "skills": ["Anforderungsmanagement", "Softwareentwicklung"]
+                },
+                "pak": {
+                    "title": "PAK @ AUDI",
+                    "abstract": [
+                        "Migration eines manuellen Excel-basierten Produktanforderungsprozesses in eine konfigurierbare Enterprise-Anwendung mit Importen, Interpretationslogik, Konsolidierung, Administration, Reporting und .NET Core / Oracle / Angular-Architektur."
+                    ],
+                    "skills": [".NET", "Angular", "Oracle", "Anforderungsmanagement", "Systemintegration"]
+                },
+                "crashtool": {
+                    "title": "Audi Crashtool",
+                    "abstract": [
+                        "Entwicklung einer C#-WinForms-Anwendung für Crash-Test-Analyse und Planung mit historischen Datenimporten, Meilensteinmodellierung, regressionsbasierten Prognosemodulen und Entscheidungsunterstützung."
+                    ],
+                    "skills": ["C#", ".NET Framework", "WinForms", "Oracle", "SQL", "Regressionsmodelle"]
                 }
             },
             "trainings": {
                 "type": "Coaching-Erfahrung",
-                "title": "Data Analytics Schulung",
+                "title": "Datenanalyse-Schulung",
                 "abstract": [
-                    "Ich habe Erfahrung in der Durchführung von Schulungen im Bereich Data Analytics und Blockchain, wo ich zwei Programme entwickelt habe. Das erste Training konzentriert sich darauf, einen Überblick über Data Analytics zu geben und den Teilnehmern das Konzept, die Herausforderungen und den Data-Analytics-Zyklus näherzubringen. Es behandelt auch Themen wie Lean Analytics und Growth Hacking.",
-                    "Das zweite Training baut auf den Grundlagen des ersten auf, indem es Python einführt und verschiedene Methoden und Machine-Learning-Algorithmen behandelt. Die Teilnehmer sammeln praktische Erfahrungen in der Programmierung mit Python und lernen, Datenanalysetechniken effektiv anzuwenden.",
-                    "Beide Schulungsprogramme wurden in Zusammenarbeit mit Kunden wie BMW und DZ Bank durchgeführt, was mir wertvolle Erfahrungen in der Arbeit mit etablierten Unternehmen ermöglicht hat. Dadurch konnte ich Einblicke in die Anwendung von Datenanalyse in realen Geschäftsszenarien gewinnen und meine Fähigkeiten in der Schulung auf diesem Gebiet verbessern.",
-                    "Durch diese Schulungen habe ich Kunden dabei geholfen, ihr Verständnis und ihre Nutzung der Datenanalyse zu verbessern und sie mit dem Wissen auszustatten, um Herausforderungen in diesem Bereich effektiv anzugehen."
+                    "Ich habe Erfahrung in der Durchführung von Schulungen im Bereich Datenanalyse, für die ich zwei Programme entwickelt habe. Die erste Schulung vermittelt einen Überblick über Datenanalyse, führt die Teilnehmer in das Konzept, die Herausforderungen und den Datenanalysezyklus ein. Sie behandelt außerdem Themen wie Lean Analytics und Growth Hacking.",
+                    "Die zweite Schulung baut auf den Grundlagen der ersten auf, führt Python ein und vertieft verschiedene Methoden und Machine-Learning-Algorithmen. Die Teilnehmer sammeln praktische Erfahrungen mit der Python-Programmierung und lernen, wie sie Datenanalysetechniken effektiv anwenden können.",
+                    "Beide Schulungsprogramme wurden in Zusammenarbeit mit Kunden wie BMW und DZ Bank durchgeführt, was mir wertvolle Erfahrungen in der Arbeit mit etablierten Unternehmen verschaffte. Dadurch konnte ich Einblicke in die Anwendung von Datenanalyse in realen Geschäftsszenarien gewinnen und meine Fähigkeiten in der Schulungsdurchführung in diesem Bereich weiterentwickeln.",
+                    "Durch diese Schulungen habe ich Kunden geholfen, ihr Verständnis und ihre Nutzung von Datenanalyse zu verbessern und sie mit dem Wissen ausgestattet, Herausforderungen in diesem Bereich effektiv zu bewältigen."
                 ]
             }
         },

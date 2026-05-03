@@ -6,38 +6,30 @@
             </h1>
         </div>
         <div class="body">
-            <h3 class="card-title">
-                {{ 'skills.hard-skills.title' | translate }}
-            </h3>
-            <div class="card my-3" [ngClass]="['bg-' + theme]">
-                <div class="card-body">
-                    <app-hard-skills></app-hard-skills>
-                </div>
-            </div>
-            <h3 class="card-title">
-                {{ 'skills.soft-skills.title' | translate }}
-            </h3>
-            <div class="card my-3" [ngClass]="['bg-' + theme]">
-                <div class="card-body">
-                    <app-soft-skills></app-soft-skills>
-                </div>
-            </div>
-            <h3 class="card-title">
-                {{ 'skills.languages.title' | translate }}
-            </h3>
-            <div class="card my-3" [ngClass]="['bg-' + theme]">
-                <div class="card-body">
-                    <app-languages></app-languages>
-                </div>
-            </div>
-            <h3 class="card-title">
-                {{ 'skills.hobbies.title' | translate }}
-            </h3>
-            <div class="card my-3" [ngClass]="['bg-' + theme]">
-                <div class="card-body">
-                    <app-hobbies></app-hobbies>
-                </div>
-            </div>
+            <section class="skills-panel">
+                <h3 class="card-title">
+                    {{ 'skills.hard-skills.title' | translate }}
+                </h3>
+                <app-hard-skills></app-hard-skills>
+            </section>
+            <section class="skills-panel">
+                <h3 class="card-title">
+                    {{ 'skills.soft-skills.title' | translate }}
+                </h3>
+                <app-soft-skills></app-soft-skills>
+            </section>
+            <section class="skills-panel compact">
+                <h3 class="card-title">
+                    {{ 'skills.languages.title' | translate }}
+                </h3>
+                <app-languages></app-languages>
+            </section>
+            <section class="skills-panel compact">
+                <h3 class="card-title">
+                    {{ 'skills.hobbies.title' | translate }}
+                </h3>
+                <app-hobbies></app-hobbies>
+            </section>
         </div>
     }
 </div>

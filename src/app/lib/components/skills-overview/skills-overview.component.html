@@ -1,18 +1,219 @@
-<div class="mt-4 mx-3 label">
-    <h5>{{ 'skills.hard-skills.title' | translate | uppercase }}</h5>
-</div>
-<div class="mx-1">
-    <app-hard-skills [summarized]="true" [minValue]="5"></app-hard-skills>
-</div>
-<div class="mt-4 mx-3 label">
-    <h5>{{ 'skills.soft-skills.title' | translate | uppercase }}</h5>
-</div>
-<div class="mx-1">
-    <app-soft-skills [summarized]="true" [minValue]="5"></app-soft-skills>
-</div>
-<div class="mt-4 mx-3 label">
-    <h5>{{ 'skills.languages.title' | translate | uppercase }}</h5>
-</div>
-<div class="mx-1">
-    <app-languages [summarized]="true" [minValue]="1"></app-languages>
+<div class="ms-0 me-2">
+    <div class="skills-section" [class.minified]="true">
+        <ul class="ps-3 mb-0">
+            <li class="mb-2 mt-3">
+                <div class="skill-title">
+                    {{ 'skills.hard-skills.backend-fullstack' | translate | uppercase }}
+                </div>
+                <div class="separator"></div>
+            </li>
+            <li><app-skill-measure [value]="7" [minValue]="5" name="Angular, RxJS, React, Next.js"></app-skill-measure></li>
+            <li>
+                <app-skill-measure
+                    [value]="6"
+                    [minValue]="5"
+                    name="Node.js, TypeScript, JavaScript"
+                ></app-skill-measure>
+            </li>
+            <li>
+                <app-skill-measure [value]="6" [minValue]="5" name=".NET (C#), Java/Spring Boot, Python/FastAPI"></app-skill-measure>
+            </li>
+            <li><app-skill-measure [value]="6" [minValue]="5" name="REST APIs, GraphQL"></app-skill-measure></li>
+            <li class="mb-2 mt-3">
+                <div class="skill-title">
+                    {{ 'skills.hard-skills.architecture' | translate | uppercase }}
+                </div>
+                <div class="separator"></div>
+            </li>
+            <li>
+                <app-skill-measure
+                    [value]="6"
+                    [minValue]="5"
+                    name="Solution Architecture, Microservices, DDD"
+                ></app-skill-measure>
+            </li>
+            <li>
+                <app-skill-measure [value]="6" [minValue]="5" name="AWS, Azure, Docker, Kubernetes, Linux"></app-skill-measure>
+            </li>
+            <li>
+                <app-skill-measure
+                    [value]="7"
+                    [minValue]="5"
+                    name="Terraform, IaC, Kafka, RabbitMQ, SNS/SQS"
+                ></app-skill-measure>
+            </li>
+            <li class="mb-2 mt-3">
+                <div class="skill-title">
+                    {{ 'skills.hard-skills.databases' | translate | uppercase }}
+                </div>
+                <div class="separator"></div>
+            </li>
+            <li>
+                <app-skill-measure
+                    [value]="6"
+                    [minValue]="5"
+                    name="PostgreSQL, SQL Server, Oracle, MySQL/MariaDB, MongoDB, Redis"
+                ></app-skill-measure>
+            </li>
+            <li>
+                <app-skill-measure
+                    [value]="6"
+                    [minValue]="5"
+                    name="Entity Framework, Prisma, ORM&nbsp;solutions"
+                ></app-skill-measure>
+            </li>
+            <li class="mb-2 mt-3">
+                <div class="skill-title">
+                    {{ 'skills.hard-skills.devops' | translate | uppercase }}
+                </div>
+                <div class="separator"></div>
+            </li>
+            <li>
+                <app-skill-measure
+                    [value]="6"
+                    [minValue]="5"
+                    name="Git, GitHub Actions, GitLab CI, Azure Pipelines, Bitbucket Pipelines"
+                ></app-skill-measure>
+            </li>
+            <li>
+                <app-skill-measure
+                    [value]="5"
+                    [minValue]="5"
+                    name="Monitoring: Grafana, Prometheus, Loki"
+                ></app-skill-measure>
+            </li>
+            <li>
+                <app-skill-measure
+                    [value]="6"
+                    [minValue]="5"
+                    name="Automated Testing: Playwright, Cypress, xUnit, MSTest, Mocha"
+                ></app-skill-measure>
+            </li>
+            <li class="mb-2 mt-3">
+                <div class="skill-title">
+                    {{ 'skills.hard-skills.analytics' | translate | uppercase }}
+                </div>
+                <div class="separator"></div>
+            </li>
+            <li>
+                <app-skill-measure
+                    [value]="6"
+                    [minValue]="5"
+                    name="Celonis EMS/PQL, Process Mining, KPI modeling"
+                ></app-skill-measure>
+            </li>
+            <li>
+                <app-skill-measure
+                    [value]="6"
+                    [minValue]="5"
+                    name="Python: pandas, NumPy, TensorFlow, PyTorch; Jupyter, R"
+                ></app-skill-measure>
+            </li>
+            <li class="mb-2 mt-3">
+                <div class="skill-title">
+                    {{ 'skills.soft-skills.title' | translate | uppercase }}
+                </div>
+                <div class="separator"></div>
+            </li>
+            <li>
+                <app-skill-measure
+                    [value]="7"
+                    [minValue]="5"
+                    [name]="'skills.soft-skills.cv.leadership' | translate"
+                ></app-skill-measure>
+            </li>
+            <li>
+                <app-skill-measure
+                    [value]="6"
+                    [minValue]="5"
+                    [name]="'skills.soft-skills.cv.strategic-thinking' | translate"
+                ></app-skill-measure>
+            </li>
+            <li>
+                <app-skill-measure
+                    [value]="6"
+                    [minValue]="5"
+                    [name]="'skills.soft-skills.cv.problem-solving' | translate"
+                ></app-skill-measure>
+            </li>
+            <li>
+                <app-skill-measure
+                    [value]="6"
+                    [minValue]="5"
+                    [name]="'skills.soft-skills.cv.resourcefulness' | translate"
+                ></app-skill-measure>
+            </li>
+            <li>
+                <app-skill-measure
+                    [value]="6"
+                    [minValue]="5"
+                    [name]="'skills.soft-skills.cv.communication' | translate"
+                ></app-skill-measure>
+            </li>
+            <li>
+                <app-skill-measure
+                    [value]="6"
+                    [minValue]="5"
+                    [name]="'skills.soft-skills.cv.trainability' | translate"
+                ></app-skill-measure>
+            </li>
+        </ul>
+    </div>
+    <div class="skills-section w-100" [class.minified]="true">
+        <ul class="row ms-0 mb-0 ps-3 pe-0 w-100">
+            <li class="mb-2 mt-3 px-0">
+                <div class="skill-title">
+                    {{ 'skills.languages.title' | translate | uppercase }}
+                </div>
+                <div class="separator"></div>
+            </li>
+            <div class="d-flex justify-content-around px-0">
+                <app-skill-measure
+                    [value]="7"
+                    [minValue]="0"
+                    [name]="'skills.languages.english-level' | translate"
+                ></app-skill-measure>
+                <app-skill-measure
+                    [value]="7"
+                    [minValue]="0"
+                    [name]="'skills.languages.slovenian-level' | translate"
+                ></app-skill-measure>
+                <app-skill-measure
+                    [value]="5"
+                    [minValue]="0"
+                    [name]="'skills.languages.german-level' | translate"
+                ></app-skill-measure>
+                <!-- <app-skill-measure
+                    [value]="2"
+                    [minValue]="0"
+                    [displayLevel]="true"
+                    [name]="'skills.languages.italian' | translate"
+                ></app-skill-measure> -->
+            </div>
+        </ul>
+    </div>
+    <div class="skills-section w-100" [class.minified]="true">
+        <ul class="row ms-0 ps-3 pe-0 w-100">
+            <li class="mb-2 mt-3 px-0">
+                <div class="skill-title">
+                    {{ 'skills.hobbies.title' | translate | uppercase }}
+                </div>
+                <div class="separator"></div>
+            </li>
+            <li class="px-0">
+                <div class="d-flex justify-content-end hobbies-row">
+                    <div>{{ 'skills.hobbies.chess' | translate }}</div>
+                    <div class="pe-1">{{ 'skills.hobbies.traveling' | translate }}</div>
+                </div>
+                <div class="d-flex justify-content-end hobbies-row">
+                    <div>{{ 'skills.hobbies.guitar-playing' | translate }}</div>
+                    <div class="pe-1">{{ 'skills.hobbies.singing' | translate }}</div>
+                </div>
+                <div class="d-flex justify-content-end hobbies-row">
+                    <div>{{ 'skills.hobbies.climbing' | translate }}</div>
+                    <div class="pe-1">{{ 'skills.hobbies.running' | translate }}</div>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>

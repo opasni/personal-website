@@ -1,85 +1,83 @@
-@if (!summarized) {
-    <div class="row">
-        <h5 class="card-title">
-            {{ 'skills.hard-skills.programming' | translate }}
-        </h5>
-    </div>
-}
-<div class="skills-section" [class.minified]="summarized">
-    <app-skill-measure [value]="7" [minValue]="minValue" name="Angular"></app-skill-measure>
-    <app-skill-measure [value]="6" [minValue]="minValue" name="RxJS"></app-skill-measure>
-    <app-skill-measure [value]="7" [minValue]="minValue" name=".NET"></app-skill-measure>
-    <app-skill-measure [value]="6" [minValue]="minValue" name="NodeJS"></app-skill-measure>
-    <app-skill-measure [value]="4" [minValue]="minValue" name="React"></app-skill-measure>
-    <app-skill-measure [value]="6" [minValue]="minValue" name="TypeScript"></app-skill-measure>
-    <app-skill-measure [value]="5" [minValue]="minValue" name="Python"></app-skill-measure>
-    <app-skill-measure [value]="5" [minValue]="minValue" name="C#"></app-skill-measure>
-    <app-skill-measure [value]="5" [minValue]="minValue" name="Bootstrap"></app-skill-measure>
-    <app-skill-measure [value]="4" [minValue]="minValue" name="C++"></app-skill-measure>
-    <app-skill-measure [value]="3" [minValue]="minValue" name="C"></app-skill-measure>
-    <app-skill-measure [value]="4" [minValue]="minValue" name="bash"></app-skill-measure>
-    <app-skill-measure [value]="4" [minValue]="minValue" name="VBA"></app-skill-measure>
-    <app-skill-measure [value]="6" [minValue]="minValue" name="Pipelines (yml)"></app-skill-measure>
-    <app-skill-measure [value]="5" [minValue]="minValue" name="REST API Design"></app-skill-measure>
-    <app-skill-measure [value]="4" [minValue]="minValue" name="GraphQL"></app-skill-measure>
-    <app-skill-measure [value]="1" [minValue]="minValue" name="Xamarin"></app-skill-measure>
-</div>
-@if (!summarized) {
-    <div class="row mt-4">
-        <h5 class="card-title">
-            {{ 'skills.hard-skills.databases' | translate }}
-        </h5>
-    </div>
-}
-<div class="skills-section" [class.minified]="summarized">
-    <app-skill-measure [value]="7" [minValue]="minValue" name="PostgreSQL"></app-skill-measure>
-    <app-skill-measure [value]="6" [minValue]="minValue" name="SQL Server"></app-skill-measure>
-    <app-skill-measure [value]="3" [minValue]="minValue" name="Oracle"></app-skill-measure>
-    <app-skill-measure [value]="5" [minValue]="minValue" name="mongoDB"></app-skill-measure>
-    <app-skill-measure [value]="4" [minValue]="minValue" name="Entity Framework"></app-skill-measure>
-    <app-skill-measure [value]="3" [minValue]="minValue" name="Windows (IIS)"></app-skill-measure>
-    <app-skill-measure [value]="5" [minValue]="minValue" infoText="apache, nginx" name="Linux"></app-skill-measure>
-    <app-skill-measure [value]="6" [minValue]="minValue" name="AWS"></app-skill-measure>
-    <app-skill-measure [value]="5" [minValue]="minValue" name="Azure"></app-skill-measure>
-</div>
-@if (!summarized) {
-    <div class="w-100 mt-4">
-        <h5 class="card-title">
-            {{ 'skills.hard-skills.tools' | translate }}
-        </h5>
-    </div>
-}
-<div class="skills-section" [class.minified]="summarized">
-    <app-skill-measure [value]="7" [minValue]="minValue" name="Git"></app-skill-measure>
-    <app-skill-measure [value]="6" [minValue]="minValue" name="Docker"></app-skill-measure>
-    <app-skill-measure [value]="5" [minValue]="minValue" name="Kubernetes"></app-skill-measure>
-    <app-skill-measure [value]="4" [minValue]="minValue" name="Terraform"></app-skill-measure>
-    <app-skill-measure
-        [value]="6"
-        [minValue]="minValue"
-        infoText="Bitbucket Pipelines, GitHub Actions, Azure Pipelines"
-        name="CI/CD"
-    ></app-skill-measure>
-    <app-skill-measure [value]="5" [minValue]="minValue" name="Jira"></app-skill-measure>
-    <app-skill-measure [value]="4" [minValue]="minValue" name="OAuth2 / JWT"></app-skill-measure>
-    <app-skill-measure [value]="4" [minValue]="minValue" name="Swagger / API Docs"></app-skill-measure>
-    <app-skill-measure
-        [value]="4"
-        [minValue]="minValue"
-        infoText="Mocha, xUnit, MSTest"
-        name="Unit Testing"
-    ></app-skill-measure>
-    <app-skill-measure [value]="3" [minValue]="minValue" name="Playwright / Cypress"></app-skill-measure>
-    <app-skill-measure
-        [value]="4"
-        [minValue]="minValue"
-        infoText="Grafana, Prometheus, Loki"
-        name="Monitoring"
-    ></app-skill-measure>
-    <app-skill-measure [value]="3" [minValue]="minValue" name="InDesign"></app-skill-measure>
-    <app-skill-measure [value]="5" [minValue]="minValue" name="Mathematica"></app-skill-measure>
-    <app-skill-measure [value]="4" [minValue]="minValue" name="Jupyter"></app-skill-measure>
-    <app-skill-measure [value]="3" [minValue]="minValue" name="R"></app-skill-measure>
-    <app-skill-measure [value]="2" [minValue]="minValue" name="Inventor"></app-skill-measure>
-    <app-skill-measure [value]="1" [minValue]="minValue" name="AutoCad"></app-skill-measure>
+<div class="capability-grid" [class.minified]="summarized">
+    <section class="capability-group">
+        <h5>{{ 'skills.hard-skills.cloud-platform' | translate }}</h5>
+        <div class="skill-tags">
+            <span>AWS</span>
+            <span>Azure</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>Terraform / IaC</span>
+            <span>NGINX / Traefik</span>
+            <span>Linux operations</span>
+        </div>
+    </section>
+
+    <section class="capability-group">
+        <h5>{{ 'skills.hard-skills.architecture' | translate }}</h5>
+        <div class="skill-tags">
+            <span>Solution Architecture</span>
+            <span>Microservices</span>
+            <span>Domain-Driven Design</span>
+            <span>Event-driven systems</span>
+            <span>REST / OpenAPI</span>
+            <span>GraphQL</span>
+            <span>OAuth2 / Keycloak</span>
+        </div>
+    </section>
+
+    <section class="capability-group">
+        <h5>{{ 'skills.hard-skills.backend-fullstack' | translate }}</h5>
+        <div class="skill-tags">
+            <span>Node.js / Express</span>
+            <span>TypeScript</span>
+            <span>.NET / C#</span>
+            <span>Java / Spring Boot</span>
+            <span>Python / FastAPI</span>
+            <span>Angular / RxJS</span>
+            <span>React / Next.js</span>
+            <span>React Native</span>
+            <span>PHP / WordPress</span>
+        </div>
+    </section>
+
+    <section class="capability-group">
+        <h5>{{ 'skills.hard-skills.analytics' | translate }}</h5>
+        <div class="skill-tags">
+            <span>Celonis EMS / PQL</span>
+            <span>Process Mining</span>
+            <span>Python / pandas / NumPy</span>
+            <span>TensorFlow / PyTorch</span>
+            <span>NLP / AI tools</span>
+            <span>KPI modeling</span>
+            <span>Regression models</span>
+        </div>
+    </section>
+
+    <section class="capability-group">
+        <h5>{{ 'skills.hard-skills.devops' | translate }}</h5>
+        <div class="skill-tags">
+            <span>GitHub Actions</span>
+            <span>Azure Pipelines</span>
+            <span>GitLab CI</span>
+            <span>Bitbucket Pipelines</span>
+            <span>Playwright / Cypress</span>
+            <span>xUnit / MSTest / Mocha</span>
+            <span>Prometheus / Grafana / Loki</span>
+            <span>ELK</span>
+        </div>
+    </section>
+
+    <section class="capability-group">
+        <h5>{{ 'skills.hard-skills.databases' | translate }}</h5>
+        <div class="skill-tags">
+            <span>PostgreSQL</span>
+            <span>SQL Server</span>
+            <span>Oracle</span>
+            <span>MySQL / MariaDB</span>
+            <span>MongoDB</span>
+            <span>Redis</span>
+            <span>Prisma</span>
+            <span>Entity Framework</span>
+        </div>
+    </section>
 </div>

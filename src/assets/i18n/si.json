@@ -6,67 +6,77 @@
         "menu-item": "O Meni",
         "hi-there": "Pozdravljeni!",
         "title": "Moje ime je Črt Harej",
-        "subtitle": "Tukaj si lahko preberete nekaj o meni",
+        "subtitle": "Tehnološki vodja, cloud platform engineer in arhitekt rešitev",
         "text": [
-            "Sem motiviran in izkušen strokovnjak z obsežnim znanjem na področjih razvoja programske opreme, projektnega vodenja in strateškega poslovnega upravljanja. Kot direktor podjetja Achtzig20 d.o.o. in partner matične družbe 8020 Consulting GmbH vodim predane ekipe, upravljam strateške pobude ter uspešno spodbujam rast in inovacije v podjetju. Moje vodstvene sposobnosti, reševanje problemov in strateško razmišljanje stalno prispevajo k uspešnim rezultatom naših projektov ter ustvarjanju dodane vrednosti za naše ekipe in stranke.",
-            "Poleg poklicnih aktivnosti se v prostem času navdušujem nad glasbo, športom in potovanji, saj mi ti hobiji omogočajo ravnovesje, spodbujajo ustvarjalnost ter me napolnjujejo s svežo energijo in navdihom. Tekoče govorim slovensko in angleško, prav tako pa imam srednjo raven znanja nemščine, kar mi omogoča učinkovito povezovanje in komuniciranje z mednarodnimi partnerji. Z znanjem, izkušnjami in svojimi veščinami želim še naprej ustvarjati pozitiven učinek v digitalnem okolju in širše."
+            "Razvijam in upravljam poslovno kritične programske platforme na področju oblaka, distribuiranih sistemov, podatkov, AI-podprtih orodij in produktne izvedbe. V več kot 10 letih sem delal praktično kot inženir in arhitekt ter hkrati vodil ekipe, odnose z naročniki in rast podjetja kot <b>partner v 8020 Consulting GmbH</b> in <b>direktor Achtzig20 d.o.o.</b>.",
+            "Najbolj doma sem tam, kjer se pragmatična arhitektura sreča z odgovornostjo za izvedbo: mikrostoritve, API-ji, event-driven integracije, AWS/Azure platforme, DevOps, observability, avtomatizirano testiranje, analitika in usklajevanje deležnikov. Nejasne poslovne probleme rad pretvorim v sisteme, ki so razumljivi, vzdržljivi in uporabni v produkciji.",
+            "Tekoče komuniciram v slovenščini, angleščini in nemščini ter rad delam v mednarodnih ekipah, kjer štejejo tehnična globina, jasne odločitve in zaupanje. Glasba, šport, šah, plezanje in potovanja skrbijo za ravnovesje in radovednost."
         ]
     },
     "cv": {
         "menu-item": "Ustvari življenjepis",
-        "about": "Sem izkušen strokovnjak s področja <b>razvoja programske opreme</b>, <b>direktor podjetja Achtzig20 d.o.o.</b> in <b>partner v podjetju 8020 Consulting GmbH</b>. Z veliko strastjo do tehnologije in inovacij sem uspešno vodil različne strateške projekte in iniciative, med drugim razvoj inteligentnega AI asistenta <b>nito.ai</b>. S svojimi vodstvenimi sposobnostmi in strateškim razmišljanjem dosledno ustvarjam visoko vrednost za stranke in partnerje. Govorim tekoče slovensko in angleško ter nemško na srednji ravni. Zavzet sem za ustvarjanje pozitivnega vpliva v digitalnem svetu, v prostem času pa me navdihujejo glasba, šport in potovanja.",
+        "about": "Sem <b>tehnološki vodja</b>, <b>cloud in platform engineer</b> ter <b>arhitekt rešitev</b> z več kot 10 leti izkušenj na področjih razvoja programske opreme, DevOps, analitike, AI-podprtih orodij in vodenja izvedbe. Kot <b>partner v 8020 Consulting GmbH</b> in <b>direktor Achtzig20 d.o.o.</b> povezujem tehnično globino s poslovno odgovornostjo, vodenjem ekip in upravljanjem deležnikov.",
+        "about-tech": "Moje ime je <b>Črt</b>. Načrtujem, razvijam in upravljam razširljive programske platforme na osnovi <b>AWS, Azure, mikrostoritev, API-jev, event-driven integracij, podatkovnih tokov in AI-podprtih sistemov</b>. Dobro se znajdem med arhitekturo, implementacijo, DevOps, testiranjem, observability in svetovanjem.",
+        "about-lead": "Moje ime je <b>Črt</b>. Sem <b>tehnološki vodja</b>, <b>cloud/platform engineer</b> in <b>arhitekt rešitev</b> z več kot 10 leti izkušenj pri izvedbi poslovno kritične programske opreme za consulting, avtomobilsko industrijo, SaaS, e-commerce, logistiko in podatkovno vodena okolja. Kot <b>partner v 8020 Consulting GmbH</b> in <b>direktor Achtzig20 d.o.o.</b> povezujem praktično arhitekturo in inženiring z vodenjem izvedbe, zaupanjem deležnikov in rastjo podjetja.",
         "experience": {
-            "achtzig20": {
-                "summary-long": [
-                    "<b>Partner v podjetju 8020 Consulting GmbH</b>, aktivno vključen v dolgoročno strateško usmeritev podjetja, upravljanje iniciativ in podporo uspešnemu sodelovanju s strankami.",
-                    "<b>Direktor podjetja Achtzig20 d.o.o.</b>, uspešno ustanovil in vodil podružnico v Ljubljani skozi različne faze rasti in strateških partnerstev.",
-                    "<b>Tehnični vodja pri 8020 Consulting GmbH (prej Achtzig20 GmbH)</b>, zagotavljal tehnično in strateško vodenje na področju inženirstva zahtev, razvoja programske opreme, arhitekture in DevOps metodologij.",
-                    "Tesno sodelovanje z uveljavljenimi strankami, kot so Audi, Porsche, BMW in DZ Bank pri razvoju programske opreme po meri in izvedbi specializiranih izobraževanj za področje podatkovne analitike.",
-                    "Vodil pomembne projekte, kot so ALICE pri CARIAD (upravljanje interdisciplinarnih projektnih ekip), NEW pri AUDI (nadzor napredka razvoja) in FAPOS pri AUDI (platforma za rezervacijo testnih vozil).",
-                    "Oblikoval in izvajal prilagojene programe usposabljanja s področja analitike podatkov, s čimer sem pomembno prispeval k izboljšanju internih kompetenc naših strank."
-                ],
+            "8020": {
                 "summary": [
-                    "<b>Partner, 8020 Consulting GmbH</b>: Strateško vodenje, rast podjetja, odnosi s strankami.",
-                    "<b>Direktor, Achtzig20 d.o.o.</b>: Upravljanje rasti, ustanovitev podružnice, strateška partnerstva v Ljubljani.",
-                    "<b>Tehnični vodja, 8020 Consulting GmbH (prej Achtzig20 GmbH)</b>: Tehnično vodenje, razvoj programske opreme, arhitektura, DevOps.",
-                    "Projekti za stranke: Audi, Porsche, BMW, DZ Bank – razvoj rešitev programske opreme in usposabljanja s področja podatkovne analitike.",
-                    "Ključni projekti: ALICE za CARIAD, NEW in FAPOS za AUDI, JobCar & Caroline za Graf Hardenberg.",
-                    "Oblikovanje in izvedba prilagojenih izobraževalnih programov analitike podatkov."
+                    "Vodenje rasti podjetja, svetovalne strategije, kakovosti izvedbe, razvoja kompetenc in ključnih odločitev v projektih za naročnike ter internih pobudah.",
+                    "Vodenje in oblikovanje transformativnih projektov, kot so <b>Catena-X, Bloomfilter integracije, JobCar & Caroline, AI-podprta avtomatizacija, cloud platforme in 8020 AI Agent</b>."
+                ]
+            },
+            "achtzig20si": {
+                "summary": [
+                    "Ustanovitev in operativno vodenje slovenske hčerinske družbe, vključno z zaposlovanjem, razvojem ekipe, lokalnimi partnerstvi in usklajevanjem izvedbe.",
+                    "Vzpostavitev temeljev za zanesljivo inženirsko organizacijo znotraj skupine 8020."
+                ]
+            },
+            "achtzig20": {
+                "summary": [
+                    "Tehnično vodenje arhitekture, razvojnih procesov, DevOps in produkcijske izvedbe za web, desktop, mobile, cloud in podatkovno intenzivne sisteme.",
+                    "Izvedba strateškega dela za <b>znamke skupine VW, CARIAD, Audi, Porsche, BMW, DZ Bank, Graf Hardenberg, DAK Coffee Roasters, Scania in interne 8020 platforme</b>.",
+                    "Ključne teme: <i>mikrostoritve, cloud platforme, API integracije, AI orodja, process mining, analitika, avtomatizirano testiranje in observability</i>."
                 ],
-                "skills": [
-                    "<b>Vloge</b>: Upravljanje projektov, Vodenje ekipe, Tehnično vodenje, Oblikovanje izdelkov.",
-                    "<b>Strokovna znanja</b>: Inženirstvo zahtev, Razvoj programske opreme, Arhitektura programske opreme, DevOps, Vodstvene kompetence, Strateško razmišljanje.",
-                    "<b>Tehnologije</b>: SQL Server, MongoDB, Oracle, .NET, Angular, CI/CD, Solidity, Python."
+                "intern-roles": [
+                    {
+                        "role": "CTO @ newonads GmbH",
+                        "duration": "11/2021 – 10/2022",
+                        "description": "Vodil arhitekturo in razvoj SaaS digitalne oglaševalske platforme s poudarkom na angažiranosti blagovnih znamk, pridobivanju potencialnih strank in rasti prihodkov."
+                    },
+                    {
+                        "role": "CTO @ Studio3 GmbH",
+                        "duration": "10/2022 – 09/2023",
+                        "description": "Razvil platformo za upravljanje skupnosti na osnovi Web3, ki izboljšuje interakcijo med agencijami in strankami ter hkrati zmanjšuje varnostna tveganja."
+                    }
                 ]
             },
             "akka": {
                 "summary": [
-                    "Razvoj carship.online, s poudarkom na razvoju programske opreme in oblikovanju uporabniškega pretoka.",
-                    "Zasnova in izvedba izobraževanj s področja podatkovne analitike in blockchaina.",
-                    "Analiziral sem prodajne cene vozil AUDI, s poudarkom na vplivu dodatne opreme."
+                    "Razvoj carship.online s poudarkom na programskem razvoju in oblikovanju uporabniškega toka.",
+                    "Zasnova in izvedba izobraževanj na področju analitike podatkov in blockchain tehnologije.",
+                    "Analiza preprodajnih cen vozil AUDI s poudarkom na vplivu dodatne opreme."
                 ]
             },
             "institute-js": {
                 "summary": [
-                    "Pridobil sem veščine na področju analize podatkov, programiranja v C++, izvajanja simulacij in interpretacije podatkov.",
-                    "Zaključil sem šestmesečno pripravništvo v Microtronu Mainz."
+                    "Pridobljeno znanje iz analize podatkov, programiranja v C++, izvajanja simulacij in interpretacije podatkov ter zaključeno 6-mesečno prakso v pospeševalniku Mainz Microtron."
                 ]
             }
         },
         "education": {
             "masters": {
-                "title": "Magisterij iz matematične fizike",
+                "title": "Mag. matematične fizike",
                 "summary": [
-                    "Povprečna ocena: 9.0 (Ustreza A v ZDA, 1.7 v Nemčiji)",
-                    "Magistersko delo: \"Ustanovitev eksperimenta za merjenje aksialnega oblikovnega faktorja protona\""
+                    "Povprečna ocena: 9,0 (enakovredno oceni A v ZDA, 1,7 v Nemčiji)",
+                    "Magistrska naloga: »Vzpostavitev eksperimenta za merjenje aksialnega formnega faktorja protona«"
                 ]
             },
             "bachelor": {
-                "title": "Dodiplomski študij splošne fizike",
+                "title": "Univ. dipl. splošne fizike",
                 "summary": [
-                    "Povprečna ocena: 8.3 (Ustreza A v ZDA, 2.3 v Nemčiji)",
-                    "Raznolik študijski program: astronomija, geofizika, elektronika, računalniška fizika.",
-                    "Diplomsko delo: \"Bariogeneza preko leptogeneze\""
+                    "Povprečna ocena: 8,3 (enakovredno oceni A v ZDA, 2,3 v Nemčiji)",
+                    "Raznolik študij: astronomija, geofizika, elektronika, računalniška fizika.",
+                    "Diplomska naloga: »Bariogeneza prek leptogeneze«"
                 ]
             }
         }
@@ -75,32 +85,49 @@
         "menu-item": "Spretnosti",
         "title": "Spretnosti",
         "hard-skills": {
-            "title": "Trde veščine",
-            "programming": "Ogrodja in Programski jeziki",
-            "databases": "Podatkovne baze in Infrastruktura",
+            "title": "Tehnične kompetence",
+            "cloud-platform": "Cloud in platform engineering",
+            "backend-fullstack": "Backend in full-stack razvoj",
+            "programming": "Programiranje in razvoj",
+            "architecture": "Arhitektura in oblak",
+            "databases": "Podatkovne baze in shranjevanje",
+            "devops": "DevOps in CI/CD",
+            "analytics": "Analitika in podatkovna znanost",
             "tools": "Orodja"
         },
         "soft-skills": {
-            "title": "Mehke veščine",
-            "teamwork": "Skupinsko delo",
+            "title": "Osebne prednosti",
+            "cv": {
+                "leadership": "Vodenje in upravljanje ekip",
+                "strategic-thinking": "Strateško razmišljanje in odločanje",
+                "problem-solving": "Reševanje problemov in analitično razmišljanje",
+                "resourcefulness": "Iznajdljivost in prilagodljivost",
+                "communication": "Komunikacija in upravljanje deležnikov",
+                "trainability": "Nenehno učenje in učljivost"
+            },
+            "teamwork": "Sodelovanje v ekipi",
             "communication": "Komunikacija",
             "responsibility": "Odgovornost",
             "resourcefulness": "Iznajdljivost",
             "trainability": "Učljivost",
-            "problem-solving": "Obvladovanje izzivov",
-            "leadership": "Vodenje",
+            "problem-solving": "Reševanje problemov",
+            "leadership": "Vodstvene sposobnosti",
             "strategic-thinking": "Strateško razmišljanje",
             "decision-making": "Odločanje",
             "adaptability": "Prilagodljivost",
-            "financial-acumen": "Finančna spretnost",
-            "emotional-intelligence": "Čustvena inteligentnost"
+            "financial-acumen": "Finančna pismenost",
+            "emotional-intelligence": "Čustvena inteligenca"
         },
         "languages": {
             "title": "Jeziki",
             "slovenian": "Slovenščina",
             "english": "Angleščina",
             "german": "Nemščina",
-            "italian": "Italijanščina"
+            "italian": "Italijanščina",
+            "slovenian-level": "Slovenščina · materni jezik",
+            "english-level": "Angleščina · tekoče",
+            "german-level": "Nemščina · tekoče",
+            "italian-level": "Italijanščina · osnovno"
         },
         "hobbies": {
             "title": "Hobiji",
@@ -110,8 +137,8 @@
             "running": "Tek",
             "climbing": "Plezanje",
             "basketball": "Košarka",
-            "traveling": "Potovanje",
-            "gaming": "Igranje videoiger",
+            "traveling": "Potovanja",
+            "gaming": "Igranje iger",
             "reading": "Branje"
         }
     },
@@ -126,11 +153,48 @@
             "bia-separation": "BIA Separations d.o.o.",
             "institute-js": "Inštitut Jožefa Štefana",
             "akka": "AKKA GmbH",
-            "achtzig20": "8020 Consulting GmbH"
+            "achtzig20": "Achtzig20 GmbH, Ingolstadt, Nemčija",
+            "achtzig20si": "Achtzig20 d.o.o., Ljubljana, Slovenija",
+            "8020": "8020 Consulting GmbH, München, Nemčija"
+        },
+        "8020": {
+            "type": "Zaposlen",
+            "title": "Partner",
+            "link": "8020.eco",
+            "abstract": [
+                "Kot partner v 8020 Consulting GmbH sooblikujem svetovalno strategijo, rast podjetja, kakovost izvedbe in razvoj kompetenc. Moje delo povezuje vodstvene odločitve s praktično inženirsko realnostjo: sestavo ekip, komunikacijo z naročniki, prioritete in arhitekturno smer.",
+                "Novejše pobude vključujejo Catena-X, Bloomfilter integracije, JobCar in Caroline za Graf Hardenberg, AI-podprta orodja, cloud hosting in 8020 AI Agent."
+            ],
+            "skills": [
+                "Vodenje",
+                "Strateško razmišljanje",
+                "Komunikacija",
+                "Odločanje",
+                "Prilagodljivost",
+                "Finančno razumevanje",
+                "Upravljanje deležnikov"
+            ]
+        },
+        "achtzig20si": {
+            "type": "Zaposlen",
+            "title": "CEO",
+            "link": "achtzig20.si",
+            "abstract": [
+                "Vzpostavil in vodim slovensko hčerinsko družbo skupine 8020: od študentskega sodelovanja do podjetja z lokalno prisotnostjo, zaposlovanjem, razvojem ekipe in operativno strukturo.",
+                "Vloga združuje vodenje ljudi, lokalna partnerstva, usklajevanje izvedbe z nemško matično družbo in odgovornost za zdravo in zanesljivo inženirsko organizacijo."
+            ],
+            "skills": [
+                "Vodenje",
+                "Rast podjetja",
+                "Operativno vodenje",
+                "Partnerstva",
+                "Razvoj ekipe"
+            ]
         },
         "achtzig20": {
-            "type": "Employee",
-            "title": "Partner",
+            "type": "Zaposlen",
+            "title": "Technical Lead",
+            "link": "8020.eco",
             "abstract": [
                 "V okviru mojega dela v podjetju 8020 Consulting GmbH (prej poznano kot Achtzig20) sem imel privilegij sodelovati z dinamično ekipo, ter pomembno prispevati k rasti in uspehu podjetja. Karierno pot sem začel pri podjetju AKKA, kjer sem pridobil številne dragocene izkušnje kot razvijalec programske opreme in arhitekt sistemov, nato pa sem svojo pot nadaljeval v vlogi tehničnega vodje (Technical Lead). Z močnim znanjem s področij analize zahtev (Requirements Engineering), razvoja programske opreme, arhitekture sistemov in pristopov DevOps sem uspešno zagotavljal inovativne in kakovostne rešitve po meri naših naročnikov.",
                 "Poleg tehničnih nalog sem svojo poklicno pot razširil tudi na poslovno vodenje organizacije. Kot direktor hčerinske družbe Achtzig20 d.o.o. v Ljubljani sem podjetje uspešno vodil skozi različne faze rasti – od vzpostavitve strateških partnerstev, kot je bilo sodelovanje z družbo e-Študentski Servis, pa vse do odprtja sodobne pisarne v samem središču Ljubljane. Danes kot partner v podjetju 8020 Consulting GmbH aktivno sodelujem pri strateškem vodenju podjetja, kjer razvijam pozitivno, inovativno in trajnostno usmerjeno korporativno kulturo.",
@@ -197,7 +261,7 @@
                     "title": "JobCar @ Graf Hardenberg",
                     "link": "jobcar-flotteeins.de/",
                     "abstract": [
-                        "JobCar ponuja inovativen model lizinga vozil, ki ga lahko delodajalci svojim zaposlenim zagotovijo preko preoblikovanja bruto plače. Zaposleni hitro in enostavno izberejo ter naročijo želeno vozilo prek spletne platforme ter s tem pridobijo dostop do ugodnih pogojev »Full-Service-Leasing«, izboljšano osebno likvidnost ter uporabo storitvene kartice za brezgotovinsko poslovanje. Delodajalci s tem krepijo motivacijo zaposlenih, povečujejo privlačnost lastne znamke delodajalca, znižujejo stroške prek boljših nabavnih pogojev vozil in si zagotovijo celovito upravljanje voznega parka. Model JobCar posebej spodbuja elektromobilnost, ki omogoča znatne davčne ugodnosti ter skladno podpira trajnostne cilje podjetja."
+                        "Arhitektura, UX-koncept, full-stack izvedba, cloud obratovanje, monitoring in E2E-testna strategija za B2B/B2C platformo za lizing vozil z integracijami Fleetscape, Microsoft Graph, AWS, Node.js/Express, Prisma, PostgreSQL, Angular, Playwright, Docker, NGINX in Grafana."
                     ],
                     "skills": [
                         "Upravljanje projektov",
@@ -209,6 +273,69 @@
                         "Arhitektura programske opreme",
                         "DevOps"
                     ]
+                },
+                "catena-x": {
+                    "title": "Puriss @ Catena-X",
+                    "abstract": [
+                        "Razvoj interoperabilnih storitev za kakovostne podatke in podatke dobavne verige v omrežju Catena-X, vključno z API-ji, event workflowi, validacijo, monitoringom, podporo governance in tehnično integracijsko dokumentacijo."
+                    ],
+                    "skills": ["Java / Spring Boot", "Mikrostoritve", "API design", "Docker", "Keycloak", "CI/CD"]
+                },
+                "caroline": {
+                    "title": "Caroline @ Graf Hardenberg",
+                    "abstract": [
+                        "Arhitektura in izvedba troslojne mobilnostne in leasing platforme z ločenimi web in mobile klienti, zunanjimi integracijami, potrditvenimi tokovi, dokumentnim handlingom, statusnimi procesi, DevOps, hostingom in analizo zahtev."
+                    ],
+                    "skills": ["Node.js", "Angular", "Mobile development", "PostgreSQL", "Docker", "AWS"]
+                },
+                "audi-frequency": {
+                    "title": "Audi Frequency Analysis App @ AUDI",
+                    "abstract": [
+                        "Razvoj cross-platform mobilne aplikacije za akustično frekvenčno analizo in dostop do podatkov vozila, vključno z zajemom zvoka, FFT obdelavo signalov, OTP/WLAN integracijo, obdelavo telemetrije, offline delovanjem in UI/UX za tehnike in inženirje."
+                    ],
+                    "skills": ["React Native", "TypeScript", "Obdelava signalov", "Mobile APIs", "iOS / Android", "Figma"]
+                },
+                "dak": {
+                    "title": "Wholesale & Retail E-Commerce @ DAK Coffee Roasters",
+                    "abstract": [
+                        "Razvoj in obratovanje wholesale in retail commerce sistemov z Node.js, Angular, WordPress/WooCommerce, Mollie plačili, Monday.com workflowi, DHL avtomatizacijo pošiljk, PostgreSQL, Redis, Docker, AWS, NGINX in optimiziranim hostingom."
+                    ],
+                    "skills": ["E-Commerce", "API integracije", "AWS", "WooCommerce", "Plačila", "Fulfillment avtomatizacija"]
+                },
+                "scania": {
+                    "title": "Celonis Order-to-Delivery analiza @ Scania",
+                    "abstract": [
+                        "Vzpostavitev Celonis process-mining pogledov za order-to-delivery analizo z usklajevanjem porazdeljenih virov podatkov, modeliranjem event logov in KPI-jev, iskanjem ozkih grl ter predlogi optimizacij za distribucijo tovornjakov."
+                    ],
+                    "skills": ["Celonis EMS", "PQL", "SQL", "Python", "ETL", "Process Mining"]
+                },
+                "squadcheck": {
+                    "title": "Squadcheck @ 8020 Consulting",
+                    "abstract": [
+                        "Zasnova in razvoj interne enterprise platforme za projektno planiranje, upravljanje kapacitet, budžete, evidentiranje časa, obračun, vloge, Microsoft SSO, Personio integracijo in E2E-testirano troslojno arhitekturo."
+                    ],
+                    "skills": [".NET 10", "C#", "MS SQL Server", "Angular", "REST APIs", "Playwright"]
+                },
+                "vw-ai": {
+                    "title": "AI Logistics Tools @ Volkswagen",
+                    "abstract": [
+                        "Razvoj AI-podprtih orodij za logistične podatke in dokumentno avtomatizacijo: smart Excel mapping, transformacija heterogenih reportov, dinamično ustvarjanje navodil iz screenshotov in Python/FastAPI backend storitve."
+                    ],
+                    "skills": ["Python", "FastAPI", "AI / NLP", "pandas", "Docker", "Next.js"]
+                },
+                "felicia": {
+                    "title": "FELICIA @ CARIAD Quality Management",
+                    "abstract": [
+                        "Implementacija AI-platforme za analizo bug ticketov z uvozom iz Jira in KPM, napovedjo tem, zaznavanjem duplikatov, oceno podobnosti in web workflowi za pregled v kakovostnem managementu."
+                    ],
+                    "skills": ["Python", "FastAPI", "NLP", "Jira API", "Docker", "Next.js"]
+                },
+                "wordpress": {
+                    "title": "Custom WordPress Extensions @ THW Kiel / Hannover 96",
+                    "abstract": [
+                        "Razvoj prilagojenih WordPress in WooCommerce pluginov za konfigurator dresov, live ticket sinhronizacijo, API produktne in ticket feede, cron procese, caching in optimizacijo hostinga."
+                    ],
+                    "skills": ["PHP", "WordPress", "WooCommerce", "REST APIs", "MySQL / MariaDB", "NGINX"]
                 },
                 "alice": {
                     "title": "ALICE @ CARIAD",
@@ -237,6 +364,20 @@
                         "Orodje, ki olajšuje rezervacijo novih avtomobilov za preizkuse s strani partnerjev avtomobilskih trgovin Audi. Orodje vključuje GRP enotno prijavo in zagotavlja celovit delovni postopek, vključno s potrditvami administratorja in obvestili po elektronski pošti."
                     ],
                     "skills": ["Inženiring zahtev", "Razvoj programske opreme"]
+                },
+                "pak": {
+                    "title": "PAK @ AUDI",
+                    "abstract": [
+                        "Migracija ročnega Excel procesa za produktne zahteve v konfigurabilno enterprise aplikacijo z uvozi, interpretacijsko logiko, konsolidacijo, administracijo, reportingom in .NET Core / Oracle / Angular arhitekturo."
+                    ],
+                    "skills": [".NET", "Angular", "Oracle", "Upravljanje zahtev", "Sistemska integracija"]
+                },
+                "crashtool": {
+                    "title": "Audi Crashtool",
+                    "abstract": [
+                        "Razvoj C# WinForms aplikacije za analizo in planiranje crash testov z uvozom zgodovinskih podatkov, modeliranjem mejnikov, regresijskimi napovednimi moduli in podporo odločanju."
+                    ],
+                    "skills": ["C#", ".NET Framework", "WinForms", "Oracle", "SQL", "Regresijski modeli"]
                 }
             },
             "trainings": {

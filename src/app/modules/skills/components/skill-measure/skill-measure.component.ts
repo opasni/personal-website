@@ -19,6 +19,7 @@ export class SkillMeasureComponent implements OnInit, AfterViewInit {
     @Input() minValue = 0;
     @Input() name = '';
     @Input() numberOfCircles = 7;
+    @Input() displayLevel = false;
     @Input() infoText: string | null = null;
 
     faInfoCircle = faInfoCircle;

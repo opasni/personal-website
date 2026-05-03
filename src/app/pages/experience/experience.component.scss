@@ -5,3 +5,64 @@
 .accordion-item:not(:first-of-type) {
     border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
 }
+.body > .card {
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 0.35rem 1.1rem rgba(0, 0, 0, 0.08);
+}
+
+.card {
+    border-radius: 8px;
+}
+
+.card-body {
+    line-height: 1.6;
+}
+
+.role-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.role-tags {
+    max-width: none;
+    margin: 1rem 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    border-left: 3px solid var(--font-color);
+    padding: 0.25rem 0 0.25rem 1rem;
+
+    .card-title {
+        margin-bottom: 0.6rem;
+    }
+
+    .card-text {
+        margin-bottom: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .role-heading {
+        display: block;
+    }
+}
+
+.project-tags {
+    gap: 0.35rem;
+
+    span {
+        min-height: 1.65rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.85rem;
+    }
+}
