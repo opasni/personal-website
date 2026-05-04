@@ -1,5 +1,9 @@
 @use 'src/styles/variables';
 
+.nav-link {
+    min-height: 19px;
+}
+
 .settings-icon {
     width: 1em;
     height: 1em;
@@ -52,9 +56,6 @@
     }
 
     .social-icons {
-        display: flex;
-        justify-content: left;
-
         .social-icon {
             cursor: pointer;
             font-size: 1.1em;
@@ -62,9 +63,6 @@
             width: 28px;
             height: 28px;
             border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
             &:hover {
                 color: var(--pop-color);

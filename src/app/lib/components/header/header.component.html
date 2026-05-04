@@ -7,7 +7,11 @@
 >
     <i class="bi bi-list"></i>
 </button>
-<nav id="sidebar" [ngClass]="{ 'mobile-sidebar-open': isMenuOpen }" class="sidebar language-icon">
+<nav
+    id="sidebar"
+    [ngClass]="{ 'mobile-sidebar-open': isMenuOpen, 'sidebar-expanded': isSidebarExpanded }"
+    class="sidebar language-icon"
+>
     <!-- CLOSE MOBILE MENU BUTTON-->
     <button
         class="btn menu-icon close-mobile-menu-button"
@@ -16,50 +20,73 @@
     >
         <i class="bi bi-chevron-left"></i>
     </button>
+    <!-- DESKTOP EXPAND/COLLAPSE BUTTON -->
+    <button
+        class="btn sidebar-expand-button d-none d-lg-flex justify-content-center align-items-center position-absolute"
+        [title]="isSidebarExpanded ? 'Collapse sidebar' : 'Expand sidebar'"
+        (click)="toggleSidebar()"
+    >
+        <i class="bi" [ngClass]="isSidebarExpanded ? 'bi-chevron-left' : 'bi-chevron-right'"></i>
+    </button>
     <div class="sidebar-content">
-        <ul class="nav d-flex flex-column flex-nowrap">
+        <ul class="nav flex-column flex-nowrap h-100">
             <!-- NAVI -->
             <li [routerLinkActive]="['active']" class="nav-item">
-                <a class="nav-link" (click)="toggleMenu()" [routerLink]="['about']" aria-label="Go to About Me Section">
+                <a
+                    class="nav-link d-flex align-items-center"
+                    (click)="toggleMenu()"
+                    [routerLink]="['about']"
+                    aria-label="Go to About Me Section"
+                >
                     <i class="bi bi-person-circle"></i>
-                    {{ 'about.menu-item' | translate }}
-                </a>
-            </li>
-            <li [routerLinkActive]="['active']" class="nav-item">
-                <a class="nav-link" (click)="toggleMenu()" [routerLink]="['skills']" aria-label="Go to Skills Section">
-                    <i class="bi bi-person-fill-gear"></i>
-                    {{ 'skills.menu-item' | translate }}
+                    <span class="nav-label ms-2">{{ 'about.menu-item' | translate }}</span>
                 </a>
             </li>
             <li [routerLinkActive]="['active']" class="nav-item">
                 <a
-                    class="nav-link"
+                    class="nav-link d-flex align-items-center"
+                    (click)="toggleMenu()"
+                    [routerLink]="['skills']"
+                    aria-label="Go to Skills Section"
+                >
+                    <i class="bi bi-person-fill-gear"></i>
+                    <span class="nav-label ms-2">{{ 'skills.menu-item' | translate }}</span>
+                </a>
+            </li>
+            <li [routerLinkActive]="['active']" class="nav-item">
+                <a
+                    class="nav-link d-flex align-items-center"
                     (click)="toggleMenu()"
                     [routerLink]="['experience']"
                     aria-label="Go to Experience Section"
                 >
                     <i class="bi bi-lightbulb-fill"></i>
-                    {{ 'experience.menu-item' | translate }}
+                    <span class="nav-label ms-2">{{ 'experience.menu-item' | translate }}</span>
                 </a>
             </li>
             <li [routerLinkActive]="['active']" class="nav-item">
                 <a
-                    class="nav-link"
+                    class="nav-link d-flex align-items-center"
                     (click)="toggleMenu()"
                     [routerLink]="['education']"
                     aria-label="Go to Education Section"
                 >
                     <i class="bi bi-mortarboard-fill"></i>
-                    {{ 'education.menu-item' | translate }}
+                    <span class="nav-label ms-2">{{ 'education.menu-item' | translate }}</span>
                 </a>
             </li>
             <li [routerLinkActive]="['active']" class="nav-item">
-                <a class="nav-link" (click)="toggleMenu()" [routerLink]="['contact']" aria-label="Go to Contact">
+                <a
+                    class="nav-link d-flex align-items-center"
+                    (click)="toggleMenu()"
+                    [routerLink]="['contact']"
+                    aria-label="Go to Contact"
+                >
                     <i class="bi bi-send-fill"></i>
-                    {{ 'contact.menu-item' | translate }}
+                    <span class="nav-label ms-2">{{ 'contact.menu-item' | translate }}</span>
                 </a>
             </li>
-            <li class="bottom-area">
+            <li class="bottom-area mt-auto">
                 <div>
                     <app-profile></app-profile>
                 </div>

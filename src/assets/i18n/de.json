@@ -5,7 +5,7 @@
     "about": {
         "menu-item": "Über mich",
         "hi-there": "Hallo",
-        "title": "Mein Name ist Črt Harej",
+        "title": "Mein Name ist Črt (Charles) Harej",
         "subtitle": "Technology Executive, Cloud Platform Engineer und Solution Architect",
         "text": [
             "Ich entwickle und betreibe geschäftskritische Softwareplattformen in den Bereichen Cloud-Infrastruktur, verteilte Systeme, Daten, AI-gestützte Werkzeuge und Produktdelivery. In mehr als 10 Jahren habe ich hands-on als Engineer und Architekt gearbeitet und gleichzeitig Teams, Kundenbeziehungen und Unternehmenswachstum als <b>Partner bei 8020 Consulting GmbH</b> und <b>CEO der Achtzig20 d.o.o.</b> geführt.",
@@ -294,14 +294,28 @@
                     "abstract": [
                         "Entwicklung einer Cross-Platform-Mobile-App für akustische Frequenzanalyse und Fahrzeugdatenzugriff, inklusive Audioaufnahme, FFT-Signalverarbeitung, OTP/WLAN-Modulintegration, Telemetrieaufbereitung, Offline-Funktionalität und UI/UX für Techniker und Ingenieure."
                     ],
-                    "skills": ["React Native", "TypeScript", "Signalverarbeitung", "Mobile APIs", "iOS / Android", "Figma"]
+                    "skills": [
+                        "React Native",
+                        "TypeScript",
+                        "Signalverarbeitung",
+                        "Mobile APIs",
+                        "iOS / Android",
+                        "Figma"
+                    ]
                 },
                 "dak": {
                     "title": "Wholesale & Retail E-Commerce @ DAK Coffee Roasters",
                     "abstract": [
                         "Aufbau und Betrieb von Wholesale- und Retail-Commerce-Systemen mit Node.js, Angular, WordPress/WooCommerce, Mollie Payments, Monday.com-Workflows, DHL-Versandautomatisierung, PostgreSQL, Redis, Docker, AWS, NGINX und performanceorientiertem Hosting."
                     ],
-                    "skills": ["E-Commerce", "API-Integration", "AWS", "WooCommerce", "Payments", "Fulfillment-Automation"]
+                    "skills": [
+                        "E-Commerce",
+                        "API-Integration",
+                        "AWS",
+                        "WooCommerce",
+                        "Payments",
+                        "Fulfillment-Automation"
+                    ]
                 },
                 "scania": {
                     "title": "Celonis Order-to-Delivery Analyse @ Scania",

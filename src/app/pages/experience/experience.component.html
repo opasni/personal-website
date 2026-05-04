@@ -46,7 +46,9 @@
                     <div class="role-heading">
                         <div>
                             <h5 class="card-title">{{ 'experience.institution.achtzig20si' | translate }}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">{{ 'experience.achtzig20si.title' | translate }}</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                {{ 'experience.achtzig20si.title' | translate }}
+                            </h6>
                         </div>
                         <p class="card-text mb-0">
                             <i>01/2023 - {{ 'experience.present' | translate }}</i>
@@ -117,8 +119,9 @@
                                                         }}
                                                     </h5>
                                                     @for (
-                                                        par of 'experience.achtzig20.development.' + project + '.abstract'
-                                                            | translate;
+                                                        par of 'experience.achtzig20.development.' +
+                                                            project +
+                                                            '.abstract' | translate;
                                                         track par
                                                     ) {
                                                         <p class="card-text">
@@ -127,9 +130,9 @@
                                                     }
                                                     <div class="skill-tags project-tags">
                                                         @for (
-                                                            skill of
-                                                                'experience.achtzig20.development.' + project + '.skills'
-                                                                | translate;
+                                                            skill of 'experience.achtzig20.development.' +
+                                                                project +
+                                                                '.skills' | translate;
                                                             track skill
                                                         ) {
                                                             <span>{{ skill }}</span>
@@ -396,29 +399,46 @@
                             <span [innerHTML]="par"></span>
                         </p>
                     }
-                </div>
-                <div class="card-footer text-body-secondary">
-                    <p class="card-text">{{ 'experience.references' | translate }}</p>
-                    <ul>
-                        <li>
-                            Prof. Dr. Simon Širca,
-                            <i>{{ 'education.institution.university' | translate }}</i>
-                            <br />
-                            <a href="mailto:simon.sirca@fmf.uni-lj.si">simon.sirca&#64;fmf.uni-lj.si</a>
-                        </li>
-                        <li>
-                            Prof. Dr. Alexandre Deur,
-                            <i>Jefferson Lab</i>
-                            <br />
-                            <a href="mailto:deurpam@jlab.org">deurpam&#64;jlab.org</a>
-                        </li>
-                        <li>
-                            Dr. Carlos Muñoz Camacho,
-                            <i>Jefferson Lab</i>
-                            <br />
-                            <a href="mailto:munoz@jlab.org">munoz&#64;jlab.org</a>
-                        </li>
-                    </ul>
+                    <div ngbAccordion>
+                        <!-- REFERENCES -->
+                        <div ngbAccordionItem class="card my-3" [ngClass]="['bg-' + theme]">
+                            <div ngbAccordionHeader class="card-header">
+                                <h5 class="mb-0">
+                                    <button ngbAccordionButton [title]="'experience.references' | translate">
+                                        {{ 'experience.references' | translate }}
+                                    </button>
+                                </h5>
+                            </div>
+                            <div ngbAccordionCollapse>
+                                <div ngbAccordionBody class="card-body">
+                                    <div class="card-footer text-body-secondary">
+                                        <ul>
+                                            <li>
+                                                Prof. Dr. Simon Širca,
+                                                <i>{{ 'education.institution.university' | translate }}</i>
+                                                <br />
+                                                <a href="mailto:simon.sirca@fmf.uni-lj.si">
+                                                    simon.sirca&#64;fmf.uni-lj.si
+                                                </a>
+                                            </li>
+                                            <li>
+                                                Prof. Dr. Alexandre Deur,
+                                                <i>Jefferson Lab</i>
+                                                <br />
+                                                <a href="mailto:deurpam@jlab.org">deurpam&#64;jlab.org</a>
+                                            </li>
+                                            <li>
+                                                Dr. Carlos Muñoz Camacho,
+                                                <i>Jefferson Lab</i>
+                                                <br />
+                                                <a href="mailto:munoz@jlab.org">munoz&#64;jlab.org</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- ******************* BIA SEPARATIONS ******************* -->
