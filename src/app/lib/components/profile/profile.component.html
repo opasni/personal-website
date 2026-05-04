@@ -43,7 +43,7 @@
         <li class="nav-item">
             <a
                 role="button"
-                class="nav-link pe-auto"
+                class="nav-link align-items-baseline pe-auto"
                 (click)="toggleTheme(selectedTheme.id)"
                 (keypress.enter)="toggleTheme(selectedTheme.id)"
                 aria-label="Change theme"
@@ -69,17 +69,20 @@
         <div class="w-100">
             <div>
                 <h4 class="text-standard">
-                    <span class="static">{{ userData.firstName }} {{ userData.lastName }}</span>
+                    <span class="static">
+                        {{ userData.firstName }}
+                        {{ userData.lastName }}
+                    </span>
                     <span class="dynamic">{{ userData.nickName }}</span>
                 </h4>
-                <div class="social-icons">
+                <div class="social-icons d-flex justify-content-start align-items-center">
                     <a
                         href="https://www.linkedin.com/in/crtharej"
                         aria-label="Got to my LinkedIn Profile"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <div class="social-icon">
+                        <div class="social-icon d-flex justify-content-center align-items-center">
                             <i class="bi bi-linkedin"></i>
                         </div>
                     </a>
@@ -89,7 +92,7 @@
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <div class="social-icon social-icon-color">
+                        <div class="social-icon social-icon-color d-flex justify-content-center align-items-center">
                             <i class="bi bi-github"></i>
                         </div>
                     </a>
@@ -99,7 +102,7 @@
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <div class="social-icon">
+                        <div class="social-icon d-flex justify-content-center align-items-center">
                             <i class="bi bi-instagram"></i>
                         </div>
                     </a>

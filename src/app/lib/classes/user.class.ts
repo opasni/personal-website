@@ -1,6 +1,7 @@
 export class User {
     public title!: string;
     public firstName: string | null = null;
+    public preferredName: string | null = null;
     public lastName: string | null = null;
     public nickName: string | null = null;
     public imagePath: string | null = null;
@@ -21,6 +22,9 @@ export class User {
             }
             if (shape.firstName != null) {
                 this.firstName = shape.firstName;
+            }
+            if (shape.preferredName != null) {
+                this.preferredName = shape.preferredName;
             }
             if (shape.lastName != null) {
                 this.lastName = shape.lastName;

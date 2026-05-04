@@ -15,12 +15,13 @@ import { HeaderComponent } from '@lib/components/header/header.component';
     animations: [ROUTE_ANIMATION],
 })
 export class PageBackboneComponent extends ThemeComponent implements OnInit {
-    public menuWidth = 280;
+    public menuWidth = 60;
     public paddingLeft = 3;
+    public isSidebarExpanded = false;
 
     private _contexts = inject(ChildrenOutletContexts);
 
-    @HostListener('window:resize', ['$event'])
+    @HostListener('window:resize')
     onResize(): void {
         this._setParams();
     }
@@ -28,6 +29,11 @@ export class PageBackboneComponent extends ThemeComponent implements OnInit {
     ngOnInit(): void {
         this._setParams();
         document.body.style.overflowY = 'hidden';
+    }
+
+    onSidebarExpandedChange(isExpanded: boolean): void {
+        this.isSidebarExpanded = isExpanded;
+        this._setParams();
     }
 
     getRouteAnimation(): { value: string; params: { menuWidth: number; paddingLeft: number } } {
@@ -48,7 +54,7 @@ export class PageBackboneComponent extends ThemeComponent implements OnInit {
             this.menuWidth = 0;
             this.paddingLeft = 3;
         } else {
-            this.menuWidth = 280;
+            this.menuWidth = this.isSidebarExpanded ? 280 : 60;
             this.paddingLeft = 3;
         }
     }

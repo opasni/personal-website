@@ -121,7 +121,7 @@ a {
                 margin-left: 10px;
             }
 
-            &:not(:last-child):not(.date):hover {
+            &:not(.bottom-area):not(.date):hover {
                 color: variables.$primary-color;
                 background-color: var(--light-background);
                 border-radius: 30px;
@@ -134,8 +134,6 @@ a {
             i {
                 display: inline-block;
                 border-radius: 10px;
-                margin-left: 1em;
-                margin-right: 0.5em;
             }
 
             a {
@@ -148,6 +146,292 @@ a {
                     display: block;
                 }
             }
+        }
+    }
+
+    &.sidebar-expanded {
+        .nav-item {
+            i {
+                margin-left: 1em;
+                margin-right: 0.5em;
+            }
+        }
+    }
+}
+
+app-header {
+    .menu-icon {
+        color: var(--pop-color);
+        font-size: 1.8em;
+    }
+
+    .mobile-sidebar-open {
+        width: 100% !important;
+    }
+
+    .button-hidden {
+        display: none;
+    }
+
+    .sidebar-expand-button {
+        display: none;
+    }
+
+    .sidebar {
+        height: 100% !important;
+        width: 0;
+        position: fixed !important;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        overflow-x: hidden;
+        transition: width 0.2s;
+        font-size: 0.9em;
+        box-shadow: none;
+        background-color: var(--background-color);
+
+        .sidebar-content {
+            height: calc(100vh - 67px);
+            width: 100%;
+            padding: 0 2em 2em 2em;
+        }
+    }
+}
+
+@media (max-width: variables.$breakpoint-large) {
+    app-header {
+        .sidebar {
+            .nav-item {
+                i {
+                    margin-left: 1em;
+                    margin-right: 0.5em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: variables.$breakpoint-large) {
+    app-header {
+        .sidebar-toggle-button {
+            display: none;
+        }
+
+        .close-mobile-menu-button {
+            display: none;
+        }
+
+        .sidebar-expand-button {
+            width: 24px;
+            height: 24px;
+            top: 14px;
+            right: -15px;
+            color: var(--pop-color);
+            font-size: 1em;
+            padding: 0;
+            border-radius: 50%;
+            background-color: var(--background-color);
+            box-shadow: 0px 1px 4px var(--pop-color);
+            z-index: 20;
+            transition:
+                background-color 0.2s ease,
+                color 0.2s ease,
+                border-color 0.2s ease;
+
+            &:hover,
+            &:focus-visible {
+                background-color: var(--pop-color);
+                color: var(--background-color);
+                border-color: var(--pop-color);
+                opacity: 1;
+            }
+
+            i {
+                color: inherit;
+            }
+        }
+
+        .sidebar {
+            width: variables.$header-menu-width-collapsed !important;
+            height: 100vh !important;
+            display: block !important;
+            position: sticky !important;
+            overflow: visible;
+            box-shadow: 0px 2px 4px var(--pop-color);
+
+            .sidebar-content {
+                padding-top: 3.2em;
+                height: 100vh;
+                padding: 2em 0 2em 0;
+            }
+
+            .nav {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .nav-item {
+                display: flex;
+                margin: 0.4em;
+                justify-content: center;
+            }
+
+            .nav-link {
+                width: 100%;
+                justify-content: center;
+                padding: 0.4em 0;
+                white-space: nowrap;
+
+                &:hover {
+                    padding: 0.4em 0;
+                }
+                &:focus:not(:hover) {
+                    color: var(--font-color) !important;
+                }
+            }
+
+            .nav-label {
+                display: none;
+            }
+
+            .bottom-area {
+                display: list-item;
+
+                app-profile > ul .date {
+                    display: none;
+                }
+
+                app-profile > ul .nav-item {
+                    padding: 0.4em 0;
+                }
+
+                app-profile > ul .nav-link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 0;
+                }
+
+                app-profile > ul .nav-link i {
+                    margin: 0;
+                    font-size: 1.1rem;
+                }
+
+                app-profile > ul .nav-link .settings-icon {
+                    display: inline-block;
+                    width: 1rem;
+                    height: 1rem;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+
+                app-profile .profile {
+                    min-width: auto;
+                    border: none !important;
+                    padding: 0 !important;
+                    margin-top: 0.8rem !important;
+                    justify-content: center;
+                }
+
+                app-profile .profile .profile-image-container {
+                    width: 42px;
+                }
+
+                app-profile .profile .profile-image-container.me-3 {
+                    margin-right: 0 !important;
+                }
+
+                app-profile .profile .w-100 {
+                    display: none;
+                }
+            }
+
+            &.sidebar-expanded {
+                width: variables.$menu-width !important;
+
+                .sidebar-content {
+                    padding: 2em;
+                }
+
+                .nav-item {
+                    width: 100%;
+                    margin: 0.4em 0;
+                    justify-content: flex-start;
+                }
+
+                .nav-link {
+                    justify-content: flex-start;
+                    gap: 0.5em;
+                }
+
+                .nav-label {
+                    display: inline;
+                }
+
+                .bottom-area {
+                    display: list-item;
+
+                    app-profile > ul .date {
+                        display: list-item;
+                    }
+
+                    app-profile > ul .nav-item {
+                        padding: 0;
+                    }
+
+                    app-profile > ul .nav-link {
+                        display: block;
+                        font-size: inherit;
+                    }
+
+                    app-profile > ul .nav-link i {
+                        margin-left: 1em;
+                        margin-right: 0.5em;
+                        padding: 0;
+                        font-size: inherit;
+                    }
+
+                    app-profile > ul .nav-link .settings-icon {
+                        margin-left: 1em;
+                        margin-right: 0.5em;
+                    }
+
+                    app-profile .profile {
+                        min-width: 190px;
+                        border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+                        padding: 0.5rem !important;
+                        margin-top: 1rem !important;
+                        justify-content: flex-start;
+                    }
+
+                    app-profile .profile .profile-image-container {
+                        width: 100px;
+                    }
+
+                    app-profile .profile .profile-image-container.me-3 {
+                        margin-right: 1rem !important;
+                    }
+
+                    app-profile .profile .w-100 {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: variables.$breakpoint-small) {
+    app-header {
+        .menu-icon {
+            font-size: 1.4em;
+            z-index: 100;
+            background-color: var(--background-color);
+        }
+
+        .sidebar-content {
+            padding-top: 2em;
         }
     }
 }
