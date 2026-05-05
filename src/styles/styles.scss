@@ -178,7 +178,7 @@ app-header {
     }
 
     .sidebar {
-        height: 100% !important;
+        height: 100dvh !important;
         width: 0;
         position: fixed !important;
         z-index: 10;
@@ -253,7 +253,7 @@ app-header {
 
         .sidebar {
             width: variables.$header-menu-width-collapsed !important;
-            height: 100vh !important;
+            height: 100dvh !important;
             display: block !important;
             position: sticky !important;
             overflow: visible;
