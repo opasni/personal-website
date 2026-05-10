@@ -10,7 +10,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
     standalone: true,
 })
 export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
-    private _orderedRoutes = ['/about', '/skills', '/experience', '/education', '/contact'];
+    private _orderedRoutes = ['/about', '/skills', '/experience', '/education', '/linkedin', '/contact'];
 
     private _position = new Position();
     private _defaultTouch = { x: 0, y: 0 };
@@ -47,7 +47,7 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
             this._position = this._getPositions();
         } else if (event.type === 'touchend' || event.type === 'touchmove') {
             const deltaY = touch.screenY - this._defaultTouch.y;
-            this._updatePositions(-deltaY, 12, 12);
+            this._updatePositions(-deltaY, 22, 22);
         }
     }
 
@@ -58,15 +58,18 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
         const container = document.getElementById('scrollingContainer') as HTMLDivElement;
         const smallerContent =
             container.getBoundingClientRect().height - this._host.nativeElement.getBoundingClientRect().height;
-        this._updatePositions(event.deltaY, 12, 12, smallerContent > 0);
+        this._updatePositions(event.deltaY, 22, 22, smallerContent > 0);
     }
 
     @HostListener('document:keyup', ['$event'])
     handleKeyboardEvent(event: KeyboardEvent): void {
         const navigate = event.key === 'ArrowDown' ? 1 : event.key === 'ArrowUp' ? -1 : 0;
+        const index = this._getRouteIndex();
         if (navigate !== 0) {
-            const index = this._orderedRoutes.indexOf(this._router.url);
-            if ((navigate > 0 && index < 4) || (navigate < 0 && index > 0)) {
+            if (index < 0) {
+                return;
+            }
+            if ((navigate > 0 && index < this._orderedRoutes.length - 1) || (navigate < 0 && index > 0)) {
                 this._router.navigate([this._orderedRoutes[index + navigate]]);
                 this._counterService.clearGauge();
             }
@@ -78,8 +81,12 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
         const scroller = element.parentElement?.parentElement;
         const isTop = scroller != null && Math.abs(scroller.scrollTop) < 1;
         const isBottom =
-            scroller != null && Math.abs(scroller.scrollHeight - (window.innerHeight + scroller.scrollTop)) < 1;
+            scroller != null && Math.abs(scroller.scrollHeight - (scroller.clientHeight + scroller.scrollTop)) < 1;
         return new Position(isTop, isBottom);
+    }
+
+    private _getRouteIndex(): number {
+        return this._orderedRoutes.indexOf(this._router.url);
     }
 
     private _getMaxDelta(): number {
@@ -88,9 +95,15 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
     }
 
     private _updatePositions(deltaY: number, topBarrier: number, bottomBarrier: number, contentSmaller = false) {
+        const routeIndex = this._getRouteIndex();
+        if (routeIndex < 0) {
+            this._counterService.clearGauge();
+            return;
+        }
+
         this._position.add(this._getPositions());
         if (this._position.top > 0 && deltaY < 0) {
-            if (this._orderedRoutes.indexOf(this._router.url) === 0) {
+            if (routeIndex === 0) {
                 this._counterService.clearGauge();
                 return;
             }
@@ -100,7 +113,7 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
                 this._checkAndNavigate(deltaY);
             }
         } else if ((this._position.bottom > 0 || contentSmaller) && deltaY > 0) {
-            if (this._orderedRoutes.indexOf(this._router.url) === 4) {
+            if (routeIndex === this._orderedRoutes.length - 1) {
                 this._counterService.clearGauge();
                 return;
             }
@@ -118,16 +131,19 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
         if (this._counterService.percentage < 0.99) {
             return;
         }
+        const index = this._getRouteIndex();
+        if (index < 0) {
+            this._counterService.clearGauge();
+            return;
+        }
         if (this._position.top > 0 && deltaY < -1) {
-            const index = this._orderedRoutes.indexOf(this._router.url);
             if (index > 0) {
                 this._position = new Position();
                 this._router.navigate([this._orderedRoutes[index - 1]]);
                 this._counterService.clearGauge();
             }
         } else if (this._position.bottom >= 0 && deltaY > 1) {
-            const index = this._orderedRoutes.indexOf(this._router.url);
-            if (index < 4) {
+            if (index < this._orderedRoutes.length - 1) {
                 this._position = new Position();
                 this._router.navigate([this._orderedRoutes[index + 1]]);
                 this._counterService.clearGauge();

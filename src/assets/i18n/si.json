@@ -516,6 +516,15 @@
             ]
         }
     },
+    "linkedin": {
+        "menu-item": "LinkedIn",
+        "title": "LinkedIn objave",
+        "intro": "Kuratiran izbor LinkedIn objav, ki jih želim izpostaviti.",
+        "empty": {
+            "title": "Ni še dodanih objav",
+            "hint": "Dodaj vnose v src/app/pages/linkedin/linkedin-posts.const.ts za prikaz prvega embeda."
+        }
+    },
     "contact": {
         "menu-item": "Stik",
         "title": "Želite stopiti v stik?",

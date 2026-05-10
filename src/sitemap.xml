@@ -36,6 +36,13 @@
         <priority>0.8</priority>
     </url>
 
+    <!-- LinkedIn Page -->
+    <url>
+        <loc>https://crtharej.com/linkedin</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
     <!-- Contact Page -->
     <url>
         <loc>https://crtharej.com/contact</loc>

@@ -531,6 +531,15 @@
             ]
         }
     },
+    "linkedin": {
+        "menu-item": "LinkedIn",
+        "title": "LinkedIn-Beiträge",
+        "intro": "Eine kuratierte Auswahl von LinkedIn-Beiträgen, die ich hervorheben möchte.",
+        "empty": {
+            "title": "Noch keine Beiträge",
+            "hint": "Füge Einträge in src/app/pages/linkedin/linkedin-posts.const.ts hinzu, um den ersten Embed anzuzeigen."
+        }
+    },
     "contact": {
         "menu-item": "Kontakt",
         "title": "Möchten Sie Kontakt aufnehmen?",

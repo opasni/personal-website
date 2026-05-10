@@ -1,0 +1,33 @@
+<div appScrollDetect class="container">
+    @if (selectedTheme$ | async; as theme) {
+        <div class="header">
+            <h1>{{ 'linkedin.title' | translate }}</h1>
+            <p>{{ 'linkedin.intro' | translate }}</p>
+        </div>
+
+        @if (posts.length === 0) {
+            <div class="card" [ngClass]="['bg-' + theme]">
+                <div class="card-body">
+                    <h5 class="card-title">{{ 'linkedin.empty.title' | translate }}</h5>
+                    <p class="card-text">{{ 'linkedin.empty.hint' | translate }}</p>
+                </div>
+            </div>
+        }
+
+        @for (post of posts; track post) {
+            <article class="card my-3" [ngClass]="['bg-' + theme]">
+                <div class="card-body">
+                    <div class="embed-wrapper">
+                        <iframe
+                            [src]="post"
+                            title="LinkedIn post"
+                            loading="lazy"
+                            frameborder="0"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </article>
+        }
+    }
+</div>
