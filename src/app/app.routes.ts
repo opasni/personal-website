@@ -37,6 +37,12 @@ export const routes: Routes = [
                 data: { animation: 3 },
             },
             {
+                path: 'linkedin',
+                title: 'Črt Harej - LinkedIn Posts',
+                loadComponent: async () => (await import('@pages/linkedin/linkedin.component')).LinkedinComponent,
+                data: { animation: 4 },
+            },
+            {
                 path: 'contact',
                 loadChildren: async () => (await import('@pages/contact')).routes,
             },

@@ -15,7 +15,7 @@ export class GaugeCounterService {
     private _counter = 0;
     private _intervalId!: NodeJS.Timeout;
     private _timer = 0;
-    private _maxCount = 30;
+    private _maxCount = 45;
 
     updateGauge(position: GaugePosition, value: number): void {
         const positionUpdate = value !== 0 ? position : 'none';

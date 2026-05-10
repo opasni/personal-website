@@ -79,6 +79,17 @@
                 <a
                     class="nav-link d-flex align-items-center"
                     (click)="toggleMenu()"
+                    [routerLink]="['linkedin']"
+                    aria-label="Go to LinkedIn Posts"
+                >
+                    <i class="bi bi-linkedin"></i>
+                    <span class="nav-label ms-2">{{ 'linkedin.menu-item' | translate }}</span>
+                </a>
+            </li>
+            <li [routerLinkActive]="['active']" class="nav-item">
+                <a
+                    class="nav-link d-flex align-items-center"
+                    (click)="toggleMenu()"
                     [routerLink]="['contact']"
                     aria-label="Go to Contact"
                 >

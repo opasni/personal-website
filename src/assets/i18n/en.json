@@ -530,6 +530,15 @@
             ]
         }
     },
+    "linkedin": {
+        "menu-item": "LinkedIn",
+        "title": "LinkedIn Posts",
+        "intro": "A curated feed of selected LinkedIn posts I want to highlight.",
+        "empty": {
+            "title": "No posts yet",
+            "hint": "Add entries to src/app/pages/linkedin/linkedin-posts.const.ts to display your first embed."
+        }
+    },
     "contact": {
         "menu-item": "Contact",
         "title": "Want to get in touch?",

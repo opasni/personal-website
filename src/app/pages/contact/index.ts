@@ -5,7 +5,7 @@ export const routes: Routes = [
         path: '',
         title: 'Črt Harej - Contact',
         loadComponent: async () => (await import('./contact/contact.component')).ContactComponent,
-        data: { animation: 4 },
+        data: { animation: 5 },
     },
     {
         path: 'success',
