@@ -1,14 +1,15 @@
 import { CommonModule } from '@angular/common';
-import { Component, output, signal } from '@angular/core';
+import { Component, output, signal, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { ProfileComponent } from '@lib/components/profile/profile.component';
 
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.scss'],
-    imports: [CommonModule, ProfileComponent, RouterModule, TranslateModule],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    imports: [CommonModule, ProfileComponent, RouterModule, TranslatePipe],
 })
 export class HeaderComponent {
     public readonly sidebarExpandedChange = output<boolean>();

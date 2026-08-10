@@ -1,19 +1,15 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { getLanguage } from './lib/services/language.service';
 import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [RouterModule],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
     title = 'Črt Harej';
 
     private _translate = inject(TranslateService);
-
-    ngOnInit(): void {
-        this._translate.setDefaultLang(getLanguage());
-    }
 }

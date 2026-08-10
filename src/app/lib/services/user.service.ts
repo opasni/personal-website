@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Observable, map, shareReplay } from 'rxjs';
-import { environment } from 'src/environments/environment';
+import { environment } from '@env/environment';
 import { User } from '@lib/classes/user.class';
 import { StorageKeys } from '@lib/enums/storage-keys.enum';
 

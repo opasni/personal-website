@@ -1,4 +1,4 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component, computed, inject, ChangeDetectionStrategy } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 
 // Classes
@@ -13,7 +13,7 @@ import { Theme } from '@lib/enums/theme.enum';
 import { LanguageService } from '@lib/services/language.service';
 import { ThemeService } from '@lib/services/theme.service';
 import { UserApiService } from '@lib/services/user.service';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HoverImageDirective } from '@lib/directives/hover-image/hover-image.directive';
@@ -22,7 +22,8 @@ import { HoverImageDirective } from '@lib/directives/hover-image/hover-image.dir
     selector: 'app-profile',
     templateUrl: './profile.component.html',
     styleUrls: ['./profile.component.scss'],
-    imports: [CommonModule, HoverImageDirective, RouterModule, TranslateModule],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    imports: [CommonModule, HoverImageDirective, RouterModule, TranslatePipe],
 })
 export class ProfileComponent {
     public date = new Date();

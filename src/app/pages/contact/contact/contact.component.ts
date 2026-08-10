@@ -1,9 +1,10 @@
-import { Component, OnInit, ViewChild, inject, signal } from '@angular/core';
+import { Component, OnInit, ViewChild, inject, signal, ChangeDetectionStrategy } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { catchError, finalize, firstValueFrom, of, tap } from 'rxjs';
 import { RecaptchaComponent, RecaptchaModule } from 'ng-recaptcha-2';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 import { environment } from '@env/environment';
 import { Contact } from '@lib/classes/contact.class';
@@ -11,7 +12,6 @@ import { Language } from '@lib/enums/language.enum';
 import { ContactPurpose } from '@lib/enums/contact-purpose.enum';
 import { ThemeComponent } from '@lib/abstracts/theme.component';
 import { EmailService } from '@lib/services/email.service';
-import { CommonModule } from '@angular/common';
 import { FilterErrorPipe } from '@lib/pipes/filter-error/filter-error.pipe';
 import { ScrollDetectDirective } from '@lib/directives/scroll-detect/scroll-detect.directive';
 
@@ -25,13 +25,14 @@ class FormGroupAccessor<T> extends FormGroup {
     selector: 'app-contact',
     templateUrl: './contact.component.html',
     styleUrls: ['./contact.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         CommonModule,
         FilterErrorPipe,
         ReactiveFormsModule,
         RecaptchaModule,
         ScrollDetectDirective,
-        TranslateModule,
+        TranslatePipe,
     ],
 })
 export class ContactComponent extends ThemeComponent implements OnInit {

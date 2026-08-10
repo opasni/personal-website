@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component, computed, inject } from '@angular/core';
+import { Component, computed, inject, ChangeDetectionStrategy } from '@angular/core';
 import { GaugeCounterService } from '@lib/services/gauge-counter.service';
 
 @Component({
     selector: 'app-gauge',
     templateUrl: './gauge.component.html',
     styleUrls: ['./gauge.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [CommonModule],
 })
 export class GaugeComponent {

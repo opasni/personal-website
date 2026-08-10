@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 // Components
 import { SkillsOverviewComponent } from '@lib/components/skills-overview/skills-overview.component';
@@ -12,7 +12,8 @@ import { ExportComponent } from '@lib/abstracts/export.component';
     encapsulation: ViewEncapsulation.None,
     templateUrl: './cv.component.html',
     styleUrls: ['./cv.component.scss'],
-    imports: [CommonModule, SkillsOverviewComponent, TranslateModule],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    imports: [CommonModule, SkillsOverviewComponent, TranslatePipe],
 })
 export class CVComponent extends ExportComponent implements OnInit {
     async ngOnInit(): Promise<void> {

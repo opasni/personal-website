@@ -1,5 +1,15 @@
 import { NgStyle } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewEncapsulation, inject, signal } from '@angular/core';
+import {
+    AfterViewInit,
+    Component,
+    ElementRef,
+    Input,
+    OnInit,
+    ViewEncapsulation,
+    inject,
+    signal,
+    ChangeDetectionStrategy,
+} from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
@@ -12,6 +22,7 @@ import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
     templateUrl: './skill-measure.component.html',
     styleUrls: ['./skill-measure.component.scss'],
     encapsulation: ViewEncapsulation.None,
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [NgStyle, FontAwesomeModule, NgbTooltipModule],
 })
 export class SkillMeasureComponent implements OnInit, AfterViewInit {

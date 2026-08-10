@@ -7,6 +7,7 @@ import {
     ViewChildren,
     inject,
     signal,
+    ChangeDetectionStrategy,
 } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { catchError, of, tap } from 'rxjs';
@@ -19,6 +20,7 @@ import { EncryptionService } from '@lib/services/encryption.service';
 import { LanguageService } from '@lib/services/language.service';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: '',
 })
 export abstract class ExportComponent implements AfterViewInit {
@@ -40,7 +42,7 @@ export abstract class ExportComponent implements AfterViewInit {
     protected async setUser(): Promise<void> {
         const storedEncryptedPassword = localStorage.getItem(StorageKeys.ACCESS_KEY);
         let password = null;
-        const language = this._translateService.currentLang;
+        const language = this._translateService.currentLang() as string;
         if (storedEncryptedPassword == null || storedEncryptedPassword === '') {
             const message = this._translateService.instant('insert-password');
             password = await this._encrypt.encrypt(prompt(message) ?? '');

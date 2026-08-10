@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { ThemeComponent } from '@lib/abstracts/theme.component';
@@ -10,6 +10,7 @@ import { HeaderComponent } from '@lib/components/header/header.component';
     selector: 'app-page-backbone',
     templateUrl: './page-backbone.component.html',
     styleUrls: ['./page-backbone.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [CommonModule, GaugeComponent, HeaderComponent, RouterModule],
 })
 export class PageBackboneComponent extends ThemeComponent implements OnInit {
