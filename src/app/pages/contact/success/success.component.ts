@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ThemeComponent } from '@lib/abstracts/theme.component';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-success',
     templateUrl: './success.component.html',
     styleUrls: ['./success.component.scss'],
-    imports: [CommonModule, TranslateModule],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    imports: [CommonModule, TranslatePipe],
 })
 export class SuccessComponent extends ThemeComponent {}

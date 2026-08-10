@@ -24,7 +24,7 @@ export class EncryptionService {
                 iv,
             },
             key,
-            data
+            data,
         );
 
         // Convert the encrypted data and IV to base64 strings for easy transmission/storage.
@@ -49,7 +49,7 @@ export class EncryptionService {
             keyData,
             { name: 'AES-GCM' },
             false, // set to false to make the key non-extractable for security
-            ['encrypt']
+            ['encrypt'],
         );
     }
 }

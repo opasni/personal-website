@@ -1,5 +1,5 @@
-<div class="container">
-    @if (selectedTheme$ | async; as theme) {
+<div class="container" [animate.enter]="routeTransition.enterClass()" [animate.leave]="routeTransition.leaveClass()">
+    @if (selectedTheme(); as theme) {
         <div class="header">
             <h1>
                 {{ 'contact.title-success' | translate }}

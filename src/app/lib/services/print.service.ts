@@ -39,6 +39,6 @@ export class PrintService {
                 });
         }
 
-        pdf.save(`${this._fileName}_CrtHarej_${this._languageService.selectedLanguage$.getValue().toUpperCase()}.pdf`);
+        pdf.save(`${this._fileName}_CrtHarej_${this._languageService.selectedLanguage().toUpperCase()}.pdf`);
     }
 }

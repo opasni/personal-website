@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 import { ThemeComponent } from '@lib/abstracts/theme.component';
 import { ScrollDetectDirective } from '@lib/directives/scroll-detect/scroll-detect.directive';
@@ -9,6 +9,7 @@ import { ScrollDetectDirective } from '@lib/directives/scroll-detect/scroll-dete
     selector: 'app-about',
     templateUrl: './about.component.html',
     styleUrls: ['./about.component.scss'],
-    imports: [CommonModule, TranslateModule, ScrollDetectDirective],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    imports: [CommonModule, TranslatePipe, ScrollDetectDirective],
 })
 export class AboutComponent extends ThemeComponent {}

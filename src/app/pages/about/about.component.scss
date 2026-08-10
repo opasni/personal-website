@@ -1,3 +1,5 @@
+@use 'src/styles/variables';
+
 .header {
     margin-bottom: 2rem;
 
@@ -33,6 +35,47 @@
     }
 }
 
+.credentials {
+    max-width: 900px;
+}
+
+.credential {
+    background: color-mix(in srgb, var(--font-color) 4%, transparent);
+
+    &--primary {
+        border-color: variables.$aws-color !important;
+        background: color-mix(in srgb, variables.$aws-color 12%, var(--background-color));
+    }
+}
+
+.credential-mark {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+
+    &--celonis {
+        color: variables.$secondary-color;
+        font-size: 1.55rem;
+    }
+}
+
+.credential-copy {
+    min-width: 0;
+    line-height: 1.3;
+
+    strong {
+        font-size: 1.05rem;
+    }
+}
+
+.credential-eyebrow {
+    margin-bottom: 0.18rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.11em;
+    opacity: 0.65;
+}
+
 .body {
     max-width: 980px;
 
@@ -59,5 +102,10 @@
         h1 {
             max-width: none;
         }
+    }
+
+    .credential-mark {
+        width: 3.25rem;
+        height: 3.25rem;
     }
 }

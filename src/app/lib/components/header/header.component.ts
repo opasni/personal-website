@@ -1,27 +1,28 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, output, signal, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { ProfileComponent } from '@lib/components/profile/profile.component';
 
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.scss'],
-    imports: [CommonModule, ProfileComponent, RouterModule, TranslateModule],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    imports: [CommonModule, ProfileComponent, RouterModule, TranslatePipe],
 })
 export class HeaderComponent {
-    @Output() public sidebarExpandedChange = new EventEmitter<boolean>();
+    public readonly sidebarExpandedChange = output<boolean>();
 
-    public isMenuOpen = false;
-    public isSidebarExpanded = false;
+    public readonly isMenuOpen = signal(false);
+    public readonly isSidebarExpanded = signal(false);
 
     toggleMenu(): void {
-        this.isMenuOpen = !this.isMenuOpen;
+        this.isMenuOpen.update((isOpen) => !isOpen);
     }
 
     toggleSidebar(): void {
-        this.isSidebarExpanded = !this.isSidebarExpanded;
-        this.sidebarExpandedChange.emit(this.isSidebarExpanded);
+        this.isSidebarExpanded.update((isExpanded) => !isExpanded);
+        this.sidebarExpandedChange.emit(this.isSidebarExpanded());
     }
 }

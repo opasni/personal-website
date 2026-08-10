@@ -7,7 +7,7 @@
             class="nav-link pe-auto"
             [routerLink]="['export', 'cv']"
             aria-label="Create CV"
-            [queryParams]="{ lang: (selectedLanguage$ | async)?.id, theme: (selectedTheme$ | async)?.id }"
+            [queryParams]="{ lang: selectedLanguage().id, theme: selectedTheme().id }"
             target="_blank"
             rel="noopener noreferrer"
         >
@@ -18,7 +18,7 @@
 
     <!-- LANGUAGE SWITCHING -->
 
-    @if (selectedLanguage$ | async; as selectedLanguage) {
+    @if (selectedLanguage(); as selectedLanguage) {
         <li class="nav-item">
             <a
                 role="button"
@@ -39,7 +39,7 @@
     }
     <!-- THEME SWITCHING -->
 
-    @if (selectedTheme$ | async; as selectedTheme) {
+    @if (selectedTheme(); as selectedTheme) {
         <li class="nav-item">
             <a
                 role="button"
@@ -56,13 +56,13 @@
     }
 </ul>
 <!-- USER INFO -->
-@if (userData$ | async; as userData) {
+@if (userData(); as userData) {
     <div id="profile" class="profile d-flex border border-secondary rounded p-2 mt-3 nav-link">
         <div class="profile-image-container me-3">
             <img
-                appHoverImage="assets/images/profile_image_hover.jpeg"
+                appHoverImage="assets/images/profile_image_hover.png"
                 class="rounded"
-                src="assets/images/profile_image.jpg"
+                src="assets/images/profile_image.png"
                 [alt]="'accessibility.images.profile' | translate"
             />
         </div>

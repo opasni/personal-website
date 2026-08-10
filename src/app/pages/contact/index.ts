@@ -11,5 +11,6 @@ export const routes: Routes = [
         path: 'success',
         title: 'Črt Harej - Contact Successful',
         loadComponent: async () => (await import('./success/success.component')).SuccessComponent,
+        data: { animation: 5 },
     },
 ];

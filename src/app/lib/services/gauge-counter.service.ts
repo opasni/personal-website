@@ -1,19 +1,17 @@
-import { EventEmitter, Injectable, Output } from '@angular/core';
+import { EventEmitter, Injectable, signal } from '@angular/core';
 import { GaugePosition } from '@lib/types/gauge-position.type';
 
 @Injectable({
     providedIn: 'root',
 })
 export class GaugeCounterService {
-    @Output() update = new EventEmitter<number>();
-    @Output() move = new EventEmitter<void>();
-    @Output() ready = new EventEmitter<number>();
-
-    public position: GaugePosition = 'none';
-    public percentage = 0;
+    readonly move = new EventEmitter<void>();
+    readonly ready = new EventEmitter<number>();
+    readonly position = signal<GaugePosition>('none');
+    readonly percentage = signal(0);
 
     private _counter = 0;
-    private _intervalId!: NodeJS.Timeout;
+    private _intervalId!: ReturnType<typeof setInterval>;
     private _timer = 0;
     private _maxCount = 45;
 
@@ -29,18 +27,17 @@ export class GaugeCounterService {
     }
 
     clearGauge(): void {
-        this.percentage = 0;
+        this.percentage.set(0);
         this._handlePositionUpdate('none');
-        this.update.emit(this.percentage);
     }
 
     private _handlePositionUpdate(position: GaugePosition): void {
         // If the same, nothing to do here.
-        if (this.position === position) {
+        if (this.position() === position) {
             return;
         }
         // If position change, reset the timer first.
-        if (this.position !== position) {
+        if (this.position() !== position) {
             this._timer = 0;
             clearInterval(this._intervalId);
         }
@@ -53,14 +50,14 @@ export class GaugeCounterService {
                 }
             }, 40);
         }
-        this.position = position;
+        this.position.set(position);
     }
 
     private _sendUpdate(): void {
-        this.percentage = Math.min(this._counter, this._timer / this._maxCount, 1);
-        this.update.emit(this.percentage);
-        if (this.percentage === 1) {
-            const delta = this.position === 'top' ? -2 : 2;
+        const percentage = Math.min(this._counter, this._timer / this._maxCount, 1);
+        this.percentage.set(percentage);
+        if (percentage === 1) {
+            const delta = this.position() === 'top' ? -2 : 2;
             this.ready.emit(delta);
         }
     }

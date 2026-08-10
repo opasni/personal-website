@@ -1,4 +1,4 @@
-<div [lang]="selectedLanguage$ | async" class="measure-name">
+<div [lang]="selectedLanguage()" class="measure-name">
     {{ name }}
     @if (infoText) {
         <fa-icon placement="top" [ngbTooltip]="infoText" [icon]="faInfoCircle"></fa-icon>
@@ -6,7 +6,7 @@
 </div>
 @if (displayLevel) {
     <div class="circles">
-        @for (circle of circles; track circle) {
+        @for (circle of circles(); track circle.index) {
             <div
                 class="circle"
                 [ngStyle]="{ transition: 'background-color .4s ease ' + circle.index * 0.2 + 's' }"

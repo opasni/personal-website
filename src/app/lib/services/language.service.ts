@@ -1,14 +1,14 @@
-import { DestroyRef, Injectable, inject } from '@angular/core';
+import { DestroyRef, Injectable, Provider, inject, signal } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { Observable, BehaviorSubject, switchMap, from, noop } from 'rxjs';
+import { switchMap, from, noop } from 'rxjs';
 import { registerLocaleData } from '@angular/common';
 
 import { Language } from '@lib/enums/language.enum';
 import { StorageKeys } from '@lib/enums/storage-keys.enum';
 import { SUPPORTED_LANGUAGES } from '@lib/consts/languages.const';
 import { Router, RouteReuseStrategy } from '@angular/router';
-import { LOCALE_ID, Provider } from '@angular/core';
+import { LOCALE_ID } from '@angular/core';
 
 export const getLanguage = (): Language => {
     const stored = localStorage.getItem(StorageKeys.SELECTED_LANGUAGE);
@@ -29,8 +29,8 @@ export const getLanguage = (): Language => {
     providedIn: 'root',
 })
 export class LanguageService {
-    // Get language from localStorage and update the service selectedLanguage var
-    selectedLanguage$ = new BehaviorSubject<Language>(getLanguage());
+    private readonly _selectedLanguage = signal<Language>(getLanguage());
+    readonly selectedLanguage = this._selectedLanguage.asReadonly();
 
     private _router = inject(Router);
     private _routeReuseStrategy = inject(RouteReuseStrategy);
@@ -42,12 +42,8 @@ export class LanguageService {
         await this._registerLocale(language);
     }
 
-    getSelectedLanguage(): Observable<Language> {
-        return this.selectedLanguage$;
-    }
-
     setSelectedLanguage(language: Language): void {
-        this.selectedLanguage$.next(language as Language);
+        this._selectedLanguage.set(language);
         this._translate
             .use(language)
             .pipe(
@@ -101,7 +97,7 @@ export class LocaleId extends String {
     private _languageService = inject(LanguageService);
 
     override toString(): string {
-        return this._languageService.selectedLanguage$.getValue();
+        return this._languageService.selectedLanguage();
     }
 
     override valueOf(): string {

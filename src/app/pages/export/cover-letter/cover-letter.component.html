@@ -1,11 +1,11 @@
 <div #sheet class="sheet d-flex wrapper">
     <div class="letter">
         <header class="letter-header">
-            <p>{{ userData.firstName }} {{ userData.lastName }}</p>
-            <p>{{ userData.street }}</p>
-            <p>{{ userData.city }}</p>
-            <p>{{ userData.email }}</p>
-            <p>{{ userData.phone }}</p>
+            <p>{{ userData().firstName }} {{ userData().lastName }}</p>
+            <p>{{ userData().street }}</p>
+            <p>{{ userData().city }}</p>
+            <p>{{ userData().email }}</p>
+            <p>{{ userData().phone }}</p>
         </header>
         <section class="details">
             <p>{{ date | date }}</p>
@@ -26,7 +26,7 @@
         <section class="signature">
             <p>{{ coverLetter.regards }}</p>
 
-            <p>{{ userData.firstName }} {{ userData.lastName }}</p>
+            <p>{{ userData().firstName }} {{ userData().lastName }}</p>
         </section>
     </div>
 </div>
