@@ -1,4 +1,9 @@
-<div appScrollDetect class="container">
+<div
+    appScrollDetect
+    class="container"
+    [animate.enter]="routeTransition.enterClass()"
+    [animate.leave]="routeTransition.leaveClass()"
+>
     @if (selectedTheme$ | async; as theme) {
         <div class="header">
             <h1>

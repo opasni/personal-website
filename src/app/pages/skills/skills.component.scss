@@ -21,8 +21,8 @@
 
 .certification {
     &--featured {
-        border-color: variables.$primary-color !important;
-        background: color-mix(in srgb, variables.$primary-color 9%, transparent);
+        border-color: variables.$aws-color !important;
+        background: color-mix(in srgb, variables.$aws-color 9%, transparent);
     }
 }
 

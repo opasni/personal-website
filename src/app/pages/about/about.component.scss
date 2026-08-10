@@ -43,8 +43,8 @@
     background: color-mix(in srgb, var(--font-color) 4%, transparent);
 
     &--primary {
-        border-color: variables.$primary-color !important;
-        background: color-mix(in srgb, variables.$primary-color 12%, var(--background-color));
+        border-color: variables.$aws-color !important;
+        background: color-mix(in srgb, variables.$aws-color 12%, var(--background-color));
     }
 }
 

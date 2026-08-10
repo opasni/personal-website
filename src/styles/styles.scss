@@ -57,6 +57,90 @@ a {
     min-height: calc(100vh - 6rem);
 }
 
+:is(.route-enter-forward, .route-enter-backward, .route-leave-forward, .route-leave-backward) {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    width: calc(100% - 6rem);
+}
+
+.route-enter-forward {
+    animation: route-enter-from-bottom 0.8s ease-out;
+}
+
+.route-leave-forward {
+    animation: route-leave-to-top 0.8s ease-out;
+}
+
+.route-enter-backward {
+    animation: route-enter-from-top 0.8s ease-out;
+}
+
+.route-leave-backward {
+    animation: route-leave-to-bottom 0.8s ease-out;
+}
+
+@keyframes route-enter-from-bottom {
+    from {
+        transform: translateY(100%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes route-leave-to-top {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes route-enter-from-top {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes route-leave-to-bottom {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+@media (max-width: variables.$breakpoint-small) {
+    :is(.route-enter-forward, .route-enter-backward, .route-leave-forward, .route-leave-backward) {
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :is(.route-enter-forward, .route-enter-backward, .route-leave-forward, .route-leave-backward) {
+        animation-duration: 1ms;
+    }
+}
+
 .card-header:first-child {
     border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
 }

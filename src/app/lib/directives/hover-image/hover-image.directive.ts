@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostListener, Input } from '@angular/core';
+import { Directive, ElementRef, HostListener, Input, inject } from '@angular/core';
 
 @Directive({
     standalone: true,
@@ -7,15 +7,8 @@ import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 export class HoverImageDirective {
     @Input() appHoverImage: string | undefined;
 
-    private readonly _element: HTMLImageElement;
-    private readonly _staticSrc: string = '';
-
-    constructor(el: ElementRef) {
-        this._element = el.nativeElement;
-        if (this._element) {
-            this._staticSrc = this._element.src;
-        }
-    }
+    private readonly _element = inject<ElementRef<HTMLImageElement>>(ElementRef).nativeElement;
+    private readonly _staticSrc = this._element.src;
 
     @HostListener('mouseover') onIn(): void {
         if (this.appHoverImage) {
