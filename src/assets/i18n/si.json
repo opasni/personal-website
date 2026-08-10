@@ -7,6 +7,15 @@
         "hi-there": "Pozdravljeni!",
         "title": "Moje ime je Črt Harej",
         "subtitle": "Tehnološki vodja, cloud platform engineer in arhitekt rešitev",
+        "credentials": {
+            "label": "Strokovni certifikati",
+            "certified": "Certificiran",
+            "recently-certified": "Nedavno certificiran",
+            "aws": "AWS Certified Solutions Architect",
+            "aws-level": "Professional",
+            "celonis": "Celonis Technical Expert",
+            "celonis-level": "Strokovni certifikat"
+        },
         "text": [
             "Razvijam in upravljam poslovno kritične programske platforme na področju oblaka, distribuiranih sistemov, podatkov, AI-podprtih orodij in produktne izvedbe. V več kot 10 letih sem delal praktično kot inženir in arhitekt ter hkrati vodil ekipe, odnose z naročniki in rast podjetja kot <b>partner v 8020 Consulting GmbH</b> in <b>direktor Achtzig20 d.o.o.</b>.",
             "Najbolj doma sem tam, kjer se pragmatična arhitektura sreča z odgovornostjo za izvedbo: mikrostoritve, API-ji, event-driven integracije, AWS/Azure platforme, DevOps, observability, avtomatizirano testiranje, analitika in usklajevanje deležnikov. Nejasne poslovne probleme rad pretvorim v sisteme, ki so razumljivi, vzdržljivi in uporabni v produkciji.",
@@ -15,9 +24,34 @@
     },
     "cv": {
         "menu-item": "Ustvari življenjepis",
+        "profile-label": "Izvršni profil",
+        "positioning": "Technology Executive | Cloud & Platform Engineer | Solution Architect",
         "about": "Sem <b>tehnološki vodja</b>, <b>cloud in platform engineer</b> ter <b>arhitekt rešitev</b> z več kot 10 leti izkušenj na področjih razvoja programske opreme, DevOps, analitike, AI-podprtih orodij in vodenja izvedbe. Kot <b>partner v 8020 Consulting GmbH</b> in <b>direktor Achtzig20 d.o.o.</b> povezujem tehnično globino s poslovno odgovornostjo, vodenjem ekip in upravljanjem deležnikov.",
         "about-tech": "Moje ime je <b>Črt</b>. Načrtujem, razvijam in upravljam razširljive programske platforme na osnovi <b>AWS, Azure, mikrostoritev, API-jev, event-driven integracij, podatkovnih tokov in AI-podprtih sistemov</b>. Dobro se znajdem med arhitekturo, implementacijo, DevOps, testiranjem, observability in svetovanjem.",
-        "about-lead": "Moje ime je <b>Črt</b>. Sem <b>tehnološki vodja</b>, <b>cloud/platform engineer</b> in <b>arhitekt rešitev</b> z več kot 10 leti izkušenj pri izvedbi poslovno kritične programske opreme za consulting, avtomobilsko industrijo, SaaS, e-commerce, logistiko in podatkovno vodena okolja. Kot <b>partner v 8020 Consulting GmbH</b> in <b>direktor Achtzig20 d.o.o.</b> povezujem praktično arhitekturo in inženiring z vodenjem izvedbe, zaupanjem deležnikov in rastjo podjetja.",
+        "about-lead": "Tehnološki vodja, <b>AWS Certified Solutions Architect – Professional</b> in praktično usmerjen cloud/platform engineer z več kot 10 leti izkušenj pri izvedbi poslovno kritičnih sistemov. Kot <b>partner v 8020 Consulting GmbH</b> in <b>direktor Achtzig20 d.o.o.</b> povezujem arhitekturno in inženirsko globino z vodenjem izvedbe, zaupanjem deležnikov in rastjo podjetja.",
+        "selected-impact": {
+            "title": "Izbrani dosežki",
+            "items": [
+                "Vodenje tehnološke strategije, kakovosti izvedbe, razvoja kompetenc in ključnih odločitev v svetovalnih projektih ter internih produktih.",
+                "Načrtovanje in upravljanje cloud platform, distribuiranih sistemov, API-jev in event-driven integracij na AWS in Azure.",
+                "Implementacija <b>MCP-integracije</b>, ki internega Copilot agenta povezuje s platformo Squadcheck za organizacijsko in projektno planiranje."
+            ]
+        },
+        "focus": {
+            "title": "Ključni profil",
+            "executive": {
+                "title": "Technology Executive",
+                "details": "Strategija, vodenje izvedbe, ekipe in rast"
+            },
+            "cloud": {
+                "title": "Cloud & Platform Engineer",
+                "details": "AWS, Azure, Kubernetes, IaC in DevOps"
+            },
+            "architecture": {
+                "title": "Solution Architect",
+                "details": "Distribuirani sistemi, API-ji in integracije"
+            }
+        },
         "experience": {
             "8020": {
                 "summary": [
@@ -84,6 +118,9 @@
     "skills": {
         "menu-item": "Spretnosti",
         "title": "Spretnosti",
+        "certifications": {
+            "title": "Strokovni certifikati"
+        },
         "hard-skills": {
             "title": "Tehnične kompetence",
             "cloud-platform": "Cloud in platform engineering",
@@ -312,9 +349,19 @@
                 "squadcheck": {
                     "title": "Squadcheck @ 8020 Consulting",
                     "abstract": [
-                        "Zasnova in razvoj interne enterprise platforme za projektno planiranje, upravljanje kapacitet, budžete, evidentiranje časa, obračun, vloge, Microsoft SSO, Personio integracijo in E2E-testirano troslojno arhitekturo."
+                        "Zasnova in razvoj interne enterprise platforme za organizacijsko in projektno planiranje, upravljanje kapacitet, budžete, evidentiranje časa, obračun, vloge, Microsoft SSO, Personio integracijo in E2E-testirano troslojno arhitekturo.",
+                        "Implementacija integracije Model Context Protocol (MCP), ki našega internega Copilot agenta neposredno povezuje s platformo ter mu omogoča strukturiran dostop do funkcij za organizacijsko in projektno planiranje."
                     ],
-                    "skills": [".NET 10", "C#", "MS SQL Server", "Angular", "REST APIs", "Playwright"]
+                    "skills": [
+                        ".NET 10",
+                        "C#",
+                        "MS SQL Server",
+                        "Angular",
+                        "REST APIs",
+                        "Model Context Protocol (MCP)",
+                        "Copilot integracija",
+                        "Playwright"
+                    ]
                 },
                 "vw-ai": {
                     "title": "AI Logistics Tools @ Volkswagen",

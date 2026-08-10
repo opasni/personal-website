@@ -1,3 +1,5 @@
+@use 'src/styles/variables';
+
 .body {
     display: grid;
     gap: 2rem;
@@ -14,5 +16,23 @@
 
     &.compact {
         padding-bottom: 0.75rem;
+    }
+}
+
+.certification {
+    &--featured {
+        border-color: variables.$primary-color !important;
+        background: color-mix(in srgb, variables.$primary-color 9%, transparent);
+    }
+}
+
+.certification-provider {
+    width: 4.25rem;
+    min-height: 2.75rem;
+    font-size: 0.9rem;
+
+    &--celonis {
+        color: variables.$secondary-color;
+        font-size: 0.78rem;
     }
 }
