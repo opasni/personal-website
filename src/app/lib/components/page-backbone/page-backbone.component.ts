@@ -17,4 +17,8 @@ export class PageBackboneComponent extends ThemeComponent implements OnInit {
     ngOnInit(): void {
         document.body.style.overflowY = 'hidden';
     }
+
+    scrollToTop(container: HTMLElement): void {
+        container.scrollTo({ top: 0, left: 0 });
+    }
 }
