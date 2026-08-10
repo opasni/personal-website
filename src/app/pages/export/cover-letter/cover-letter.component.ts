@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ExportComponent } from '@lib/abstracts/export.component';
 import data from '@lib/data/cover-letter.template.json';
@@ -9,6 +9,7 @@ import { CoverLetter } from '@lib/types/cover-leter.type';
     encapsulation: ViewEncapsulation.None,
     imports: [CommonModule],
     templateUrl: './cover-letter.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./cover-letter.component.scss'],
 })
 export class CoverLetterComponent extends ExportComponent implements OnInit {

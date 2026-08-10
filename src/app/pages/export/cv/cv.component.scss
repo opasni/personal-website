@@ -1,216 +1,120 @@
 @use 'src/styles/variables';
 
-$side-width: 14.6rem;
+$side-width: 15rem;
 
 .cv {
-    --bs-body-font-size: 0.8rem;
-
-    /* GENERAL SETUP */
-    h5,
-    .h5 {
-        font-size: 1rem;
-        font-weight: 600;
-    }
-
     a {
         text-decoration: none;
     }
 
-    .sidebar-content {
-        h5 {
-            text-align: right;
-        }
-    }
-
     .wrapper {
-        align-items: stretch;
         min-height: 100vh;
+        align-items: stretch;
     }
 
     .side-content {
         width: $side-width;
-        max-width: $side-width;
         min-width: $side-width;
-        display: block !important;
-        box-shadow: 0px 0px 4px var(--pop-color);
+        box-shadow: 0 0 4px var(--pop-color);
 
-        .picture-container {
-            height: 5rem;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+        .profile {
+            width: 6.1rem;
+            height: 6.1rem;
+            border: 3px solid variables.$primary-color;
+            object-fit: cover;
+        }
 
-            .profile {
-                width: calc($side-width - 8.5rem);
-                height: calc($side-width - 8.5rem);
-                border: 3px solid;
-            }
+        h1 {
+            font-size: 1.65rem;
+            line-height: 1.05;
         }
 
         .user-header {
-            .user-info {
-                list-style: none;
-                padding-left: 0;
-
-                .bi {
-                    padding: 3px;
-                }
-            }
+            font-size: 0.68rem;
+            font-style: normal;
+            line-height: 1.6;
         }
 
-        .label {
-            border-bottom-width: 1px;
-            border-bottom-style: solid;
-        }
-
-        .hobbies {
-            &-row {
-                div {
-                    width: 95px;
-                    text-align: right;
-                }
-            }
+        .header-link {
+            color: inherit;
         }
     }
 
     .content {
-        background-color: var(--pop-color);
         width: calc(100% - $side-width) !important;
+        background-color: var(--pop-color);
+        color: var(--background-color);
+    }
 
-        .user-header {
-            height: 13.6rem;
-            padding-top: 0.75rem;
-        }
+    .executive-header {
+        padding-bottom: 1rem;
+        border-bottom: 2px solid variables.$primary-color;
+    }
 
-        .experience {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            &-item {
-                i {
-                    font-size: x-small;
-                }
-            }
-        }
+    .section-label,
+    .section-heading h3 {
+        font-size: 0.64rem;
+        letter-spacing: 0.1em;
+    }
 
-        .section {
-            .skill-title {
-                margin: 0;
-                font-weight: 600;
-                font-size: 0.6rem;
-                text-transform: uppercase;
-            }
-            .separator {
-                margin: 0 0 0.25rem 0;
-                border-top: 1px solid var(--pop-color);
-                box-shadow: 0px 0px 4px var(--pop-color);
-            }
+    .section-label {
+        color: variables.$primary-color;
+    }
+
+    .positioning {
+        max-width: 28rem;
+        font-size: 1.35rem;
+        font-weight: 700;
+        line-height: 1.18;
+    }
+
+    .profile-copy {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
+    .separator {
+        border-top: 1px solid currentColor;
+        opacity: 0.35;
+    }
+
+    .impact-list,
+    .role ul {
+        font-size: 0.74rem;
+        line-height: 1.38;
+    }
+
+    .role-heading,
+    .education-list {
+        line-height: 1.25;
+
+        strong {
+            font-size: 0.8rem;
         }
     }
 
-    /* LIGHT THEME SETUP */
-    &.light-theme {
-        .side-content {
-            .label {
-                border-bottom-color: variables.$light-gray-font;
-            }
-        }
-
-        .content {
-            &.de {
-                font-size: 0.75rem;
-            }
-
-            .user-header,
-            .text {
-                color: variables.$light-gray-font;
-            }
-
-            .experience {
-                .card-subtitle {
-                    color: variables.$light-gray-font !important;
-                }
-            }
-            .section {
-                .separator {
-                    border-top-color: variables.$light-gray-font;
-                    box-shadow: 0px 0px 4px variables.$light-gray-font;
-                }
-            }
-        }
+    .company,
+    .period {
+        font-size: 0.67rem;
+        opacity: 0.72;
     }
 
-    /* DARK THEME SETUP */
-    &.dark-theme {
-        .side-content {
-            .header-link {
-                color: var(--pop-color);
-            }
-
-            .label {
-                border-bottom-color: var(--pop-color);
-            }
-        }
-
-        .content {
-            &.de {
-                .text {
-                    font-size: 0.75rem;
-                }
-
-                .user-header {
-                    height: 14rem !important;
-                }
-            }
-
-            .text {
-                color: variables.$dark-background;
-            }
-
-            .user-header {
-                height: 13.6rem;
-            }
-            .section {
-                .separator {
-                    border-top-color: variables.$dark-background;
-                    box-shadow: 0px 0px 4px variables.$dark-background;
-                }
-            }
-        }
-    }
-
-    /* WHITE THEME SETUP */
     &.white-theme {
-        .sheet {
+        .sheet,
+        .side-content,
+        .content {
             background-color: #fff;
-        }
-
-        .side-content {
-            background-color: #fff;
-            // border-right: 1px solid #000;
-
-            .picture-container {
-                .profile {
-                    border: none;
-                }
-            }
-
-            .label {
-                border: none;
-            }
         }
 
         .content {
-            &.de {
-                font-size: 0.75rem;
-            }
-            background-color: transparent;
+            color: variables.$dark-background;
+        }
 
-            .user-header {
-                color: #000;
-            }
+        .side-content {
+            box-shadow: none;
 
-            .text {
-                color: #000;
+            .profile {
+                border-width: 2px;
             }
         }
     }
@@ -220,8 +124,8 @@ $side-width: 14.6rem;
 
         .download-button {
             position: fixed;
-            bottom: 20px;
             right: 20px;
+            bottom: 20px;
             border-radius: 50%;
 
             button > i {

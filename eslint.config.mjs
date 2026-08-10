@@ -1,38 +1,25 @@
 import { defineConfig, globalIgnores } from 'eslint/config';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import js from '@eslint/js';
-import tseslint from '@typescript-eslint/eslint-plugin';
-import angular from '@angular-eslint/eslint-plugin';
-import stylisticTs from '@stylistic/eslint-plugin-ts';
-import { FlatCompat } from '@eslint/eslintrc';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    recommendedConfig: js.configs.recommended,
-    allConfig: js.configs.all,
-});
+import tseslint from 'typescript-eslint';
+import angular from 'angular-eslint';
+import stylistic from '@stylistic/eslint-plugin';
+import prettier from 'eslint-config-prettier';
 
 export default defineConfig([
     globalIgnores(['projects/**/*', 'e2e/**/*']),
     {
         files: ['**/*.ts'],
+        extends: [
+            js.configs.recommended,
+            ...tseslint.configs.recommended,
+            ...tseslint.configs.stylistic,
+            ...angular.configs.tsRecommended,
+            prettier,
+        ],
+        processor: angular.processInlineTemplates,
         plugins: {
-            '@typescript-eslint': tseslint,
-            '@angular-eslint': angular,
-            '@stylistic/ts': stylisticTs,
+            '@stylistic': stylistic,
         },
-
-        extends: compat.extends(
-            'eslint:recommended',
-            'plugin:@typescript-eslint/recommended',
-            'plugin:@typescript-eslint/stylistic',
-            'plugin:@angular-eslint/recommended',
-            'plugin:@angular-eslint/template/process-inline-templates',
-            'prettier',
-        ),
 
         rules: {
             '@angular-eslint/directive-selector': [
@@ -56,13 +43,13 @@ export default defineConfig([
             '@angular-eslint/component-class-suffix': 'error',
             '@angular-eslint/contextual-lifecycle': 'error',
             '@angular-eslint/directive-class-suffix': 'error',
-            '@angular-eslint/no-conflicting-lifecycle': 'error',
             '@angular-eslint/no-input-rename': 'error',
             '@angular-eslint/no-inputs-metadata-property': 'error',
             '@angular-eslint/no-output-native': 'error',
             '@angular-eslint/no-output-on-prefix': 'error',
             '@angular-eslint/no-output-rename': 'error',
             '@angular-eslint/no-outputs-metadata-property': 'error',
+            '@angular-eslint/prefer-on-push-component-change-detection': 'off',
             '@angular-eslint/use-lifecycle-interface': 'error',
             '@angular-eslint/use-pipe-transform-interface': 'error',
             '@typescript-eslint/adjacent-overload-signatures': 'error',
@@ -92,7 +79,7 @@ export default defineConfig([
                 },
             ],
 
-            '@stylistic/ts/member-delimiter-style': [
+            '@stylistic/member-delimiter-style': [
                 'error',
                 {
                     multiline: {
@@ -106,14 +93,14 @@ export default defineConfig([
                     },
                 },
             ],
-            '@stylistic/ts/type-annotation-spacing': [
+            '@stylistic/type-annotation-spacing': [
                 'error',
                 {
                     before: false,
                     after: true,
                 },
             ],
-            '@stylistic/ts/indent': ['error', 4],
+            '@stylistic/indent': ['error', 4],
 
             '@typescript-eslint/member-ordering': [
                 'error',
@@ -152,7 +139,6 @@ export default defineConfig([
             '@typescript-eslint/no-misused-new': 'error',
             '@typescript-eslint/no-namespace': 'error',
             '@typescript-eslint/no-non-null-assertion': 'error',
-            '@typescript-eslint/no-parameter-properties': 'off',
 
             '@typescript-eslint/no-shadow': [
                 'error',
@@ -176,8 +162,8 @@ export default defineConfig([
             '@typescript-eslint/prefer-for-of': 'warn',
             '@typescript-eslint/prefer-function-type': 'error',
             '@typescript-eslint/prefer-namespace-keyword': 'error',
-            '@/quotes': ['error', 'single'],
-            '@/semi': ['error', 'always'],
+            '@stylistic/quotes': ['error', 'single'],
+            '@stylistic/semi': ['error', 'always'],
 
             '@typescript-eslint/triple-slash-reference': [
                 'error',
@@ -304,8 +290,8 @@ export default defineConfig([
     {
         files: ['**/*.html'],
         extends: [
-            ...compat.extends('plugin:@angular-eslint/template/recommended'),
-            ...compat.extends('plugin:@angular-eslint/template/accessibility'),
+            ...angular.configs.templateRecommended,
+            ...angular.configs.templateAccessibility,
         ],
 
         rules: {

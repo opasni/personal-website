@@ -3,13 +3,13 @@
     class="sidebar-toggle-button btn menu-icon position-absolute"
     [title]="'accessibility.buttons.menu-open' | translate"
     (click)="toggleMenu()"
-    [ngClass]="{ 'button-hidden': isMenuOpen }"
+    [ngClass]="{ 'button-hidden': isMenuOpen() }"
 >
     <i class="bi bi-list"></i>
 </button>
 <nav
     id="sidebar"
-    [ngClass]="{ 'mobile-sidebar-open': isMenuOpen, 'sidebar-expanded': isSidebarExpanded }"
+    [ngClass]="{ 'mobile-sidebar-open': isMenuOpen(), 'sidebar-expanded': isSidebarExpanded() }"
     class="sidebar language-icon"
 >
     <!-- CLOSE MOBILE MENU BUTTON-->
@@ -23,10 +23,10 @@
     <!-- DESKTOP EXPAND/COLLAPSE BUTTON -->
     <button
         class="btn sidebar-expand-button d-none d-lg-flex justify-content-center align-items-center position-absolute"
-        [title]="isSidebarExpanded ? 'Collapse sidebar' : 'Expand sidebar'"
+        [title]="isSidebarExpanded() ? 'Collapse sidebar' : 'Expand sidebar'"
         (click)="toggleSidebar()"
     >
-        <i class="bi" [ngClass]="isSidebarExpanded ? 'bi-chevron-left' : 'bi-chevron-right'"></i>
+        <i class="bi" [ngClass]="isSidebarExpanded() ? 'bi-chevron-left' : 'bi-chevron-right'"></i>
     </button>
     <div class="sidebar-content">
         <ul class="nav flex-column flex-nowrap h-100">

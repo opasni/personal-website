@@ -10,7 +10,9 @@
     background: color-mix(in srgb, var(--background-color) 85%, transparent);
     border-color: color-mix(in srgb, var(--font-color) 20%, transparent) !important;
     backdrop-filter: blur(6px);
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
 
     &.top {
         top: 0.75rem;

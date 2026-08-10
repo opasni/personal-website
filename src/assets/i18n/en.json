@@ -7,6 +7,15 @@
         "hi-there": "Hi there!",
         "title": "My name is Črt (Charles) Harej",
         "subtitle": "Technology executive, cloud platform engineer, and solution architect",
+        "credentials": {
+            "label": "Professional certifications",
+            "certified": "Certified",
+            "recently-certified": "Recently certified",
+            "aws": "AWS Certified Solutions Architect",
+            "aws-level": "Professional",
+            "celonis": "Celonis Technical Expert",
+            "celonis-level": "Professional certification"
+        },
         "text": [
             "I build and operate business-critical software platforms across cloud infrastructure, distributed systems, data, AI tooling, and product delivery. Over the last 10+ years I have worked hands-on as an engineer and architect while also leading teams, client relationships, and company growth as <b>Partner at 8020 Consulting GmbH</b> and <b>CEO of Achtzig20 d.o.o.</b>.",
             "My sweet spot is where pragmatic architecture meets delivery responsibility: microservices, APIs, event-driven integrations, AWS/Azure platforms, DevOps, observability, automated testing, analytics, and stakeholder alignment. I like turning ambiguous business problems into systems that are understandable, maintainable, and useful in production.",
@@ -15,9 +24,34 @@
     },
     "cv": {
         "menu-item": "Generate CV",
+        "profile-label": "Executive Profile",
+        "positioning": "Technology Executive | Cloud & Platform Engineer | Solution Architect",
         "about": "I am a <b>technology executive</b>, <b>cloud and platform engineer</b>, and <b>solution architect</b> with 10+ years of experience across software engineering, DevOps, analytics, AI tooling, and delivery leadership. As <b>Partner at 8020 Consulting GmbH</b> and <b>CEO of Achtzig20 d.o.o.</b>, I combine hands-on technical depth with commercial responsibility, team leadership, and stakeholder management.",
         "about-tech": "My name is <b>Črt</b> (pronounced “Chert”). I design, build, and operate scalable software platforms across <b>AWS, Azure, microservices, APIs, event-driven integrations, data pipelines, and AI-supported systems</b>. I move comfortably between architecture, implementation, DevOps, testing, observability, and consulting, with a strong bias toward production-ready systems that are clear to maintain.",
-        "about-lead": "My name is <b>Črt</b> (pronounced “Chert”). I am a <b>technology executive</b>, <b>cloud/platform engineer</b>, and <b>solution architect</b> with 10+ years of experience delivering business-critical software for consulting, automotive, SaaS, e-commerce, logistics, and data-driven environments. As <b>Partner at 8020 Consulting GmbH</b> and <b>CEO of Achtzig20 d.o.o.</b>, I connect hands-on architecture and engineering with delivery leadership, stakeholder trust, and company growth.",
+        "about-lead": "Technology executive, <b>AWS Certified Solutions Architect – Professional</b>, and hands-on cloud/platform engineer with 10+ years of experience delivering business-critical systems. As <b>Partner at 8020 Consulting GmbH</b> and <b>CEO of Achtzig20 d.o.o.</b>, I connect architecture and engineering depth with delivery leadership, stakeholder trust, and company growth.",
+        "selected-impact": {
+            "title": "Selected Impact",
+            "items": [
+                "Lead technology strategy, delivery quality, capability building, and executive decision-making across consulting engagements and internal products.",
+                "Design and operate cloud platforms, distributed systems, APIs, and event-driven integrations across AWS and Azure.",
+                "Implemented an <b>MCP integration</b> connecting an internal Copilot agent to the Squadcheck organizational and project-planning platform."
+            ]
+        },
+        "focus": {
+            "title": "Core Profile",
+            "executive": {
+                "title": "Technology Executive",
+                "details": "Strategy, delivery leadership, teams & growth"
+            },
+            "cloud": {
+                "title": "Cloud & Platform Engineer",
+                "details": "AWS, Azure, Kubernetes, IaC & DevOps"
+            },
+            "architecture": {
+                "title": "Solution Architect",
+                "details": "Distributed systems, APIs & integrations"
+            }
+        },
         "experience": {
             "8020": {
                 "summary": [
@@ -84,6 +118,9 @@
     "skills": {
         "menu-item": "Skills",
         "title": "Skills",
+        "certifications": {
+            "title": "Professional Certifications"
+        },
         "hard-skills": {
             "title": "Technical Capabilities",
             "cloud-platform": "Cloud & Platform Engineering",
@@ -327,9 +364,19 @@
                 "squadcheck": {
                     "title": "Squadcheck @ 8020 Consulting",
                     "abstract": [
-                        "Designed and built an internal enterprise platform for project planning, capacity steering, budgets, time tracking, invoicing, role management, Microsoft SSO, Personio integration, and E2E-tested three-tier architecture."
+                        "Designed and built an internal enterprise platform for organizational and project planning, capacity steering, budgets, time tracking, invoicing, role management, Microsoft SSO, Personio integration, and E2E-tested three-tier architecture.",
+                        "Implemented a Model Context Protocol (MCP) integration that connects our internal Copilot agent directly to the platform, giving the agent structured access to organizational and project-planning capabilities."
                     ],
-                    "skills": [".NET 10", "C#", "MS SQL Server", "Angular", "REST APIs", "Playwright"]
+                    "skills": [
+                        ".NET 10",
+                        "C#",
+                        "MS SQL Server",
+                        "Angular",
+                        "REST APIs",
+                        "Model Context Protocol (MCP)",
+                        "Copilot Integration",
+                        "Playwright"
+                    ]
                 },
                 "vw-ai": {
                     "title": "AI Logistics Tools @ Volkswagen",

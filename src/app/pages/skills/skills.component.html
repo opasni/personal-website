@@ -1,11 +1,57 @@
-<div appScrollDetect class="container">
-    @if (selectedTheme$ | async; as theme) {
+<div
+    appScrollDetect
+    class="container"
+    [animate.enter]="routeTransition.enterClass()"
+    [animate.leave]="routeTransition.leaveClass()"
+>
+    @if (selectedTheme(); as theme) {
         <div class="header">
             <h1>
                 {{ 'skills.title' | translate }}
             </h1>
         </div>
         <div class="body">
+            <section class="skills-panel certification-panel">
+                <h3 class="card-title">
+                    {{ 'skills.certifications.title' | translate }}
+                </h3>
+                <div class="row g-3">
+                    <article class="col-md-6">
+                        <div class="certification certification--featured card h-100 border-primary">
+                            <div class="card-body d-flex align-items-center gap-3 p-3">
+                                <span
+                                    class="certification-provider d-flex flex-shrink-0 align-items-center justify-content-center rounded bg-dark text-primary fw-bold"
+                                >
+                                    AWS
+                                </span>
+                                <div class="d-flex flex-column">
+                                    <strong>{{ 'about.credentials.aws' | translate }}</strong>
+                                    <span class="small opacity-75">
+                                        {{ 'about.credentials.aws-level' | translate }}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-6">
+                        <div class="certification card h-100 bg-transparent">
+                            <div class="card-body d-flex align-items-center gap-3 p-3">
+                                <span
+                                    class="certification-provider certification-provider--celonis d-flex flex-shrink-0 align-items-center justify-content-center rounded bg-dark fw-bold"
+                                >
+                                    Celonis
+                                </span>
+                                <div class="d-flex flex-column">
+                                    <strong>{{ 'about.credentials.celonis' | translate }}</strong>
+                                    <span class="small opacity-75">
+                                        {{ 'about.credentials.celonis-level' | translate }}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
             <section class="skills-panel">
                 <h3 class="card-title">
                     {{ 'skills.hard-skills.title' | translate }}

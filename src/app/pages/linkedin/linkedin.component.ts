@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 import { ThemeComponent } from '@lib/abstracts/theme.component';
 import { ScrollDetectDirective } from '@lib/directives/scroll-detect/scroll-detect.directive';
@@ -12,7 +12,8 @@ import { LINKEDIN_POSTS } from './linkedin-posts.const';
     selector: 'app-linkedin',
     templateUrl: './linkedin.component.html',
     styleUrls: ['./linkedin.component.scss'],
-    imports: [CommonModule, TranslateModule, ScrollDetectDirective],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    imports: [CommonModule, TranslatePipe, ScrollDetectDirective],
 })
 export class LinkedinComponent extends ThemeComponent {
     private _sanitizer = inject(DomSanitizer);

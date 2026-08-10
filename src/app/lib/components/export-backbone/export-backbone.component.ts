@@ -1,4 +1,13 @@
-import { Component, ElementRef, OnInit, QueryList, ViewChildren, ViewEncapsulation, inject } from '@angular/core';
+import {
+    Component,
+    ElementRef,
+    OnInit,
+    QueryList,
+    ViewChildren,
+    ViewEncapsulation,
+    inject,
+    ChangeDetectionStrategy,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { Language } from '@lib/enums/language.enum';
@@ -8,14 +17,15 @@ import { ThemeService, getTheme } from '@lib/services/theme.service';
 import { PrintService } from '@lib/services/print.service';
 import { LoadingSpinnerComponent } from '../loading-spinner/loading-spinner.component';
 import { LoaderService } from '@lib/services/loader.service';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-export-backbone',
     encapsulation: ViewEncapsulation.None,
-    imports: [CommonModule, LoadingSpinnerComponent, RouterModule, TranslateModule],
+    imports: [CommonModule, LoadingSpinnerComponent, RouterModule, TranslatePipe],
     templateUrl: './export-backbone.component.html',
     styleUrls: ['./export-backbone.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     providers: [PrintService],
 })
 export class ExportBackboneComponent implements OnInit {

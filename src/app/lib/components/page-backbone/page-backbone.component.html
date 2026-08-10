@@ -1,10 +1,9 @@
-<div class="d-flex w-100 wrapper background-color" [ngClass]="(selectedTheme$ | async) + '-theme'">
+<div class="d-flex w-100 wrapper background-color" [ngClass]="selectedTheme() + '-theme'">
     <app-gauge></app-gauge>
-    <app-header (sidebarExpandedChange)="onSidebarExpandedChange($event)"></app-header>
+    <app-header></app-header>
 
     <div
         id="scrollingContainer"
-        [@routeAnimations]="getRouteAnimation()"
         class="w-100 p-sm-5 pt-5"
         style="overflow-x: hidden; overflow-y: scroll; max-height: 100vh"
     >
