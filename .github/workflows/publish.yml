@@ -2,7 +2,7 @@ name: CI
 
 on:
     push:
-        branches: ['main']
+        branches: ["main"]
     workflow_dispatch:
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
             - name: Setup Node
               uses: actions/setup-node@v1
               with:
-                  node-version: '22.14'
+                  node-version: "24.19"
 
             - name: npm install, build and test
               run: |
@@ -34,3 +34,10 @@ jobs:
                   aws s3 sync dist/website/browser/ s3://${{ vars.S3_BUCKET_NAME }} \
                     --exclude "uploads/*" \
                     --delete
+
+            - name: Invalidate CloudFront
+              run: |
+                  echo "INVALIDATE CloudFront ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} /admin/index.html /admin/assets/i18n/manifest.json"
+                  aws cloudfront create-invalidation \
+                    --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" \
+                    --paths "/index.html" "/assets/i18n/manifest.json"
