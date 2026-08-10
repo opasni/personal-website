@@ -1,8 +1,4 @@
-<div
-    class="container"
-    [animate.enter]="routeTransition.enterClass()"
-    [animate.leave]="routeTransition.leaveClass()"
->
+<div class="container" [animate.enter]="routeTransition.enterClass()" [animate.leave]="routeTransition.leaveClass()">
     @if (selectedTheme(); as theme) {
         <div class="header">
             <h1>

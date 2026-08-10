@@ -1,4 +1,13 @@
-import { AfterViewInit, Component, DestroyRef, ElementRef, QueryList, ViewChildren, inject, signal } from '@angular/core';
+import {
+    AfterViewInit,
+    Component,
+    DestroyRef,
+    ElementRef,
+    QueryList,
+    ViewChildren,
+    inject,
+    signal,
+} from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { catchError, of, tap } from 'rxjs';
 import { User } from '@lib/classes/user.class';

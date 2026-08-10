@@ -30,11 +30,7 @@
                     @if (userData().email) {
                         <li>
                             <i class="bi bi-envelope-at-fill me-1"></i>
-                            <a
-                                class="header-link"
-                                aria-label="Send me an Email"
-                                [href]="'mailto:' + userData().email"
-                            >
+                            <a class="header-link" aria-label="Send me an Email" [href]="'mailto:' + userData().email">
                                 {{ userData().email }}
                             </a>
                         </li>

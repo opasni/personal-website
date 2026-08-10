@@ -220,13 +220,7 @@
                 "Vzpostavil in vodim slovensko hčerinsko družbo skupine 8020: od študentskega sodelovanja do podjetja z lokalno prisotnostjo, zaposlovanjem, razvojem ekipe in operativno strukturo.",
                 "Vloga združuje vodenje ljudi, lokalna partnerstva, usklajevanje izvedbe z nemško matično družbo in odgovornost za zdravo in zanesljivo inženirsko organizacijo."
             ],
-            "skills": [
-                "Vodenje",
-                "Rast podjetja",
-                "Operativno vodenje",
-                "Partnerstva",
-                "Razvoj ekipe"
-            ]
+            "skills": ["Vodenje", "Rast podjetja", "Operativno vodenje", "Partnerstva", "Razvoj ekipe"]
         },
         "achtzig20": {
             "type": "Zaposlen",
@@ -330,14 +324,28 @@
                     "abstract": [
                         "Razvoj cross-platform mobilne aplikacije za akustično frekvenčno analizo in dostop do podatkov vozila, vključno z zajemom zvoka, FFT obdelavo signalov, OTP/WLAN integracijo, obdelavo telemetrije, offline delovanjem in UI/UX za tehnike in inženirje."
                     ],
-                    "skills": ["React Native", "TypeScript", "Obdelava signalov", "Mobile APIs", "iOS / Android", "Figma"]
+                    "skills": [
+                        "React Native",
+                        "TypeScript",
+                        "Obdelava signalov",
+                        "Mobile APIs",
+                        "iOS / Android",
+                        "Figma"
+                    ]
                 },
                 "dak": {
                     "title": "Wholesale & Retail E-Commerce @ DAK Coffee Roasters",
                     "abstract": [
                         "Razvoj in obratovanje wholesale in retail commerce sistemov z Node.js, Angular, WordPress/WooCommerce, Mollie plačili, Monday.com workflowi, DHL avtomatizacijo pošiljk, PostgreSQL, Redis, Docker, AWS, NGINX in optimiziranim hostingom."
                     ],
-                    "skills": ["E-Commerce", "API integracije", "AWS", "WooCommerce", "Plačila", "Fulfillment avtomatizacija"]
+                    "skills": [
+                        "E-Commerce",
+                        "API integracije",
+                        "AWS",
+                        "WooCommerce",
+                        "Plačila",
+                        "Fulfillment avtomatizacija"
+                    ]
                 },
                 "scania": {
                     "title": "Celonis Order-to-Delivery analiza @ Scania",
