@@ -4,7 +4,7 @@
     [animate.enter]="routeTransition.enterClass()"
     [animate.leave]="routeTransition.leaveClass()"
 >
-    @if (selectedTheme$ | async; as theme) {
+    @if (selectedTheme(); as theme) {
         <div class="header">
             <h1>
                 {{ 'contact.title' | translate }}
@@ -22,12 +22,12 @@
                         [ngClass]="{
                             'bg-light': theme === 'light' || theme === 'white',
                             'bg-dark': theme === 'dark',
-                            'is-invalid': submitted && emailForm.getControl('name').invalid,
+                            'is-invalid': submitted() && emailForm.getControl('name').invalid,
                         }"
                         aria-describedby="nameHelp"
                         [placeholder]="'contact.full-name.placeholder' | translate"
                     />
-                    @if (submitted && emailForm.getControl('name').invalid) {
+                    @if (submitted() && emailForm.getControl('name').invalid) {
                         <div class="invalid-feedback">
                             @if (emailForm.getControl('name') | filterError: 'required') {
                                 <p>{{ 'contact.full-name.error.required' | translate }}</p>
@@ -45,13 +45,13 @@
                         [ngClass]="{
                             'bg-light': theme === 'light' || theme === 'white',
                             'bg-dark': theme === 'dark',
-                            'is-invalid': submitted && emailForm.getControl('replyto').invalid,
+                            'is-invalid': submitted() && emailForm.getControl('replyto').invalid,
                         }"
                         aria-describedby="emailHelp"
                         [placeholder]="'contact.email.placeholder' | translate"
                     />
                     <small id="emailHelp" class="form-text text-muted">{{ 'contact.email.hint' | translate }}</small>
-                    @if (submitted && emailForm.getControl('replyto').invalid) {
+                    @if (submitted() && emailForm.getControl('replyto').invalid) {
                         <div class="invalid-feedback">
                             @if (emailForm.getControl('replyto') | filterError: 'required') {
                                 <p>{{ 'contact.email.error.required' | translate }}</p>
@@ -71,7 +71,7 @@
                         [ngClass]="{
                             'bg-light': theme === 'light' || theme === 'white',
                             'bg-dark': theme === 'dark',
-                            'is-invalid': submitted && emailForm.getControl('subject').invalid,
+                            'is-invalid': submitted() && emailForm.getControl('subject').invalid,
                         }"
                         aria-label="Select purpose of contact."
                     >
@@ -92,7 +92,7 @@
                         </option>
                         <option [value]="Purpose.Other">{{ 'contact.subject.option.other' | translate }}</option>
                     </select>
-                    @if (submitted && emailForm.getControl('subject').invalid) {
+                    @if (submitted() && emailForm.getControl('subject').invalid) {
                         <div class="invalid-feedback">
                             @if (emailForm.getControl('subject') | filterError: 'required') {
                                 <p>{{ 'contact.subject.error.required' | translate }}</p>
@@ -107,14 +107,14 @@
                         [ngClass]="{
                             'bg-light': theme === 'light' || theme === 'white',
                             'bg-dark': theme === 'dark',
-                            'is-invalid': submitted && emailForm.getControl('message').invalid,
+                            'is-invalid': submitted() && emailForm.getControl('message').invalid,
                         }"
                         name="message"
                         formControlName="message"
                         rows="9"
                         [placeholder]="'contact.message.placeholder' | translate"
                     ></textarea>
-                    @if (submitted && emailForm.getControl('message').invalid) {
+                    @if (submitted() && emailForm.getControl('message').invalid) {
                         <div class="invalid-feedback">
                             @if (emailForm.getControl('message') | filterError: 'required') {
                                 <p>{{ 'contact.message.error.required' | translate }}</p>
@@ -125,7 +125,7 @@
                 <input type="hidden" name="_honeypot" formControlName="_honeypot" />
                 <!-- recaptcha -->
                 <div class="d-flex justify-content-end">
-                    @if (!submitter$) {
+                    @if (!verify() && !fail()) {
                         <button
                             type="submit"
                             [title]="'accessibility.buttons.send-contact' | translate"
@@ -133,35 +133,29 @@
                         >
                             {{ 'contact.submit.label' | translate }}
                         </button>
+                    } @else if (verify()) {
+                        <p class="d-flex">
+                            {{ 'contact.submit.one-last-thing' | translate }}
+                        </p>
                     } @else {
                         <p class="d-flex">
-                            @if (submitter$ | async) {
-                                @if (verify) {
-                                    {{ 'contact.submit.one-last-thing' | translate }}
-                                }
-                                @if (!verify) {
-                                    {{ 'contact.submit.success' | translate }}
-                                }
-                            } @else {
-                                @if (fail) {
-                                    {{ 'contact.submit.fail' | translate }}
-                                    <a
-                                        class="linkedin-icon"
-                                        href="https://www.linkedin.com/in/crtharej"
-                                        aria-label="Got to my LinkedIn Profile"
-                                        target="_blank"
-                                    >
-                                        <div class="social-icon">
-                                            <i class="bi bi-linkedin"></i>
-                                        </div>
-                                    </a>
-                                }
-                            }
+                            {{ 'contact.submit.fail' | translate }}
+                            <a
+                                class="linkedin-icon"
+                                href="https://www.linkedin.com/in/crtharej"
+                                aria-label="Got to my LinkedIn Profile"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div class="social-icon">
+                                    <i class="bi bi-linkedin"></i>
+                                </div>
+                            </a>
                         </p>
                     }
                 </div>
                 <div class="separator recaptcha">
-                    @if (submitted && emailForm.valid && verify) {
+                    @if (submitted() && emailForm.valid && verify()) {
                         <re-captcha
                             class="contact-recaptcha"
                             [theme]="theme === 'white' ? 'light' : theme"

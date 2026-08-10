@@ -1,9 +1,8 @@
-import { Component, OnInit, inject } from '@angular/core';
-import { Observable, map } from 'rxjs';
+import { Component, computed, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 // Classes
 import { Lookup } from '@lib/classes/lookup.class';
-import { User } from '@lib/classes/user.class';
 // Constants
 import { SUPPORTED_LANGUAGES } from '@lib/consts/languages.const';
 import { SUPPORTED_THEMES } from '@lib/consts/themes.const';
@@ -25,10 +24,7 @@ import { HoverImageDirective } from '@lib/directives/hover-image/hover-image.dir
     styleUrls: ['./profile.component.scss'],
     imports: [CommonModule, HoverImageDirective, RouterModule, TranslateModule],
 })
-export class ProfileComponent implements OnInit {
-    public selectedLanguage$ = new Observable<Lookup>();
-    public selectedTheme$ = new Observable<Lookup>();
-    public userData$ = new Observable<User>();
+export class ProfileComponent {
     public date = new Date();
 
     private _supportedLanguages = Object.keys(SUPPORTED_LANGUAGES);
@@ -38,13 +34,11 @@ export class ProfileComponent implements OnInit {
     private _languageService = inject(LanguageService);
     private _themeService = inject(ThemeService);
 
-    ngOnInit(): void {
-        this.selectedLanguage$ = this._languageService
-            .getSelectedLanguage()
-            .pipe(map((lang) => SUPPORTED_LANGUAGES[lang]));
-        this.selectedTheme$ = this._themeService.selectedTheme.pipe(map((theme) => SUPPORTED_THEMES[theme]));
-        this.userData$ = this._userService.getUserData(null);
-    }
+    public readonly userData = toSignal(this._userService.getUserData(null));
+    public readonly selectedLanguage = computed<Lookup>(
+        () => SUPPORTED_LANGUAGES[this._languageService.selectedLanguage()],
+    );
+    public readonly selectedTheme = computed<Lookup>(() => SUPPORTED_THEMES[this._themeService.selectedTheme()]);
 
     changeLanguage(language: string): void {
         const index = this._supportedLanguages.findIndex((i) => i === language) + 1;

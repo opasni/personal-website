@@ -1,11 +1,11 @@
-import { Component, OnInit, ViewChild, inject } from '@angular/core';
+import { Component, OnInit, ViewChild, inject, signal } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable, catchError, finalize, firstValueFrom, of, tap } from 'rxjs';
+import { catchError, finalize, firstValueFrom, of, tap } from 'rxjs';
 import { RecaptchaComponent, RecaptchaModule } from 'ng-recaptcha-2';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
-import { environment } from 'src/environments/environment';
+import { environment } from '@env/environment';
 import { Contact } from '@lib/classes/contact.class';
 import { Language } from '@lib/enums/language.enum';
 import { ContactPurpose } from '@lib/enums/contact-purpose.enum';
@@ -50,10 +50,9 @@ export class ContactComponent extends ThemeComponent implements OnInit {
     Purpose: typeof ContactPurpose = ContactPurpose;
     recaptchaKey = environment.recaptcha;
 
-    public submitter$!: Observable<boolean>;
-    public submitted = false;
-    public verify = false;
-    public fail = false;
+    public readonly submitted = signal(false);
+    public readonly verify = signal(false);
+    public readonly fail = signal(false);
 
     private _contactService = inject(EmailService);
     private _translateService = inject(TranslateService);
@@ -65,13 +64,13 @@ export class ContactComponent extends ThemeComponent implements OnInit {
     }
 
     onSubmit(): void {
-        this.submitted = true;
-        this.fail = false;
+        this.submitted.set(true);
+        this.fail.set(false);
         if (!this.emailForm.valid) {
             this.emailForm.markAllAsTouched();
             return;
         }
-        this.verify = true;
+        this.verify.set(true);
     }
 
     async resolved(e: string | null): Promise<void> {
@@ -88,13 +87,13 @@ export class ContactComponent extends ThemeComponent implements OnInit {
                     this._router.navigate(['success'], { relativeTo: this._route });
                 }),
                 catchError(() => {
-                    this.fail = true;
+                    this.fail.set(true);
                     if (this.recaptcha) {
                         this.recaptcha.reset();
                     }
                     return of(null);
                 }),
-                finalize(() => (this.verify = false)),
+                finalize(() => this.verify.set(false)),
             ),
             { defaultValue: null },
         );

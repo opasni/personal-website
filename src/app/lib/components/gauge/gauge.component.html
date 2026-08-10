@@ -1,26 +1,26 @@
 <div
     class="pull-zone border rounded-4 shadow-sm px-3 pt-2 pb-2"
-    [ngClass]="position"
+    [ngClass]="position()"
     (click)="movePosition()"
     (keypress.enter)="movePosition()"
     role="button"
-    [attr.aria-label]="position === 'top' ? 'Pull to previous page' : 'Pull to next page'"
+    [attr.aria-label]="position() === 'top' ? 'Pull to previous page' : 'Pull to next page'"
     tabindex="0"
 >
     <div class="d-flex align-items-center gap-2">
-        <span class="pull-zone__arrow fw-bold fs-5" [ngClass]="{ down: position === 'bottom' }">&#8593;</span>
+        <span class="pull-zone__arrow fw-bold fs-5" [ngClass]="{ down: position() === 'bottom' }">&#8593;</span>
         <span class="small text-uppercase opacity-75">
-            {{ position === 'top' ? 'Pull for previous page' : 'Pull for next page' }}
+            {{ position() === 'top' ? 'Pull for previous page' : 'Pull for next page' }}
         </span>
-        <span class="pull-zone__countdown badge rounded-pill ms-auto">{{ countdownLabel }}</span>
+        <span class="pull-zone__countdown badge rounded-pill ms-auto">{{ countdownLabel() }}</span>
     </div>
     <div
         class="pull-zone__progress progress mt-2"
         role="progressbar"
-        [attr.aria-valuenow]="progress * 100"
+        [attr.aria-valuenow]="progress() * 100"
         aria-valuemin="0"
         aria-valuemax="100"
     >
-        <div class="pull-zone__progress-bar progress-bar" [style.width.%]="progress * 100"></div>
+        <div class="pull-zone__progress-bar progress-bar" [style.width.%]="progress() * 100"></div>
     </div>
 </div>

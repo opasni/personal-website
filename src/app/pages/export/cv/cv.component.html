@@ -7,38 +7,46 @@
                 src="assets/images/profile_image.png"
             />
             <h1 class="text-standard mt-3 mb-1">
-                {{ userData.firstName }}
-                <b>{{ userData.lastName }}</b>
+                {{ userData().firstName }}
+                <b>{{ userData().lastName }}</b>
             </h1>
         </div>
 
         <div class="sidebar-content mt-2">
             <address class="user-header px-3 mb-0 text-center">
                 <ul class="user-info list-unstyled mb-0">
-                    @if (userData.address) {
+                    @if (userData().address) {
                         <li>
                             <i class="bi bi-geo-alt-fill me-1"></i>
-                            {{ (language$ | async) === 'de' ? userData.address_de : userData.address }}
+                            {{ language() === 'de' ? userData().address_de : userData().address }}
                         </li>
                     }
-                    @if (userData.phone) {
+                    @if (userData().phone) {
                         <li>
                             <i class="bi bi-telephone me-1"></i>
-                            {{ userData.phone }}
+                            {{ userData().phone }}
                         </li>
                     }
-                    @if (userData.email) {
+                    @if (userData().email) {
                         <li>
                             <i class="bi bi-envelope-at-fill me-1"></i>
-                            <a class="header-link" aria-label="Send me an Email" [href]="'mailto:' + userData.email">
-                                {{ userData.email }}
+                            <a
+                                class="header-link"
+                                aria-label="Send me an Email"
+                                [href]="'mailto:' + userData().email"
+                            >
+                                {{ userData().email }}
                             </a>
                         </li>
                     }
                     <li>
                         <i class="bi bi-globe me-1"></i>
-                        <a class="header-link" aria-label="Check out my website" [href]="'https://' + userData.website">
-                            {{ userData.website }}
+                        <a
+                            class="header-link"
+                            aria-label="Check out my website"
+                            [href]="'https://' + userData().website"
+                        >
+                            {{ userData().website }}
                         </a>
                     </li>
                 </ul>
@@ -48,7 +56,7 @@
         </div>
     </aside>
 
-    <main class="content px-4 py-4" [ngClass]="language$ | async">
+    <main class="content px-4 py-4" [ngClass]="language()">
         <header class="executive-header">
             <div class="section-label text-uppercase fw-semibold">{{ 'cv.profile-label' | translate }}</div>
             <h2 class="positioning mt-1 mb-3">{{ 'cv.positioning' | translate }}</h2>

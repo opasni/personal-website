@@ -21,7 +21,7 @@
                             "base": "dist/website"
                         },
                         "index": "src/index.html",
-                        "polyfills": ["src/zone-flags.ts", "zone.js", "@angular/localize/init"],
+                        "polyfills": ["@angular/localize/init"],
                         "tsConfig": "tsconfig.app.json",
                         "inlineStyleLanguage": "scss",
                         "assets": ["src/favicon.ico", "src/assets", "src/robots.txt", "src/sitemap.xml"],
@@ -89,12 +89,15 @@
                 "test": {
                     "builder": "@angular/build:karma",
                     "options": {
-                        "polyfills": ["zone.js", "zone.js/testing"],
+                        "polyfills": ["@angular/localize/init"],
                         "tsConfig": "tsconfig.spec.json",
                         "inlineStyleLanguage": "scss",
                         "assets": ["src/favicon.ico", "src/assets"],
-                        "styles": ["src/styles.scss"],
-                        "scripts": []
+                        "styles": ["src/styles/styles.scss"],
+                        "scripts": [],
+                        "stylePreprocessorOptions": {
+                            "includePaths": ["."]
+                        }
                     }
                 },
                 "lint": {

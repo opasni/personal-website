@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, output, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { ProfileComponent } from '@lib/components/profile/profile.component';
@@ -11,17 +11,17 @@ import { ProfileComponent } from '@lib/components/profile/profile.component';
     imports: [CommonModule, ProfileComponent, RouterModule, TranslateModule],
 })
 export class HeaderComponent {
-    @Output() public sidebarExpandedChange = new EventEmitter<boolean>();
+    public readonly sidebarExpandedChange = output<boolean>();
 
-    public isMenuOpen = false;
-    public isSidebarExpanded = false;
+    public readonly isMenuOpen = signal(false);
+    public readonly isSidebarExpanded = signal(false);
 
     toggleMenu(): void {
-        this.isMenuOpen = !this.isMenuOpen;
+        this.isMenuOpen.update((isOpen) => !isOpen);
     }
 
     toggleSidebar(): void {
-        this.isSidebarExpanded = !this.isSidebarExpanded;
-        this.sidebarExpandedChange.emit(this.isSidebarExpanded);
+        this.isSidebarExpanded.update((isExpanded) => !isExpanded);
+        this.sidebarExpandedChange.emit(this.isSidebarExpanded());
     }
 }

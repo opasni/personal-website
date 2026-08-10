@@ -1,5 +1,4 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { Injectable, signal } from '@angular/core';
 import { Theme } from '@lib/enums/theme.enum';
 import { StorageKeys } from '@lib/enums/storage-keys.enum';
 
@@ -19,14 +18,15 @@ export const getTheme = (): Theme => {
     providedIn: 'root',
 })
 export class ThemeService {
-    public readonly selectedTheme = new BehaviorSubject<Theme>(getTheme());
+    private readonly _selectedTheme = signal<Theme>(getTheme());
+    readonly selectedTheme = this._selectedTheme.asReadonly();
 
     constructor() {
-        this._setBodyColor(getTheme());
+        this._setBodyColor(this.selectedTheme());
     }
 
     setTheme(theme: Theme): void {
-        this.selectedTheme.next(theme);
+        this._selectedTheme.set(theme);
         this._setBodyColor(theme);
         localStorage.setItem(StorageKeys.SELECTED_THEME, theme);
     }

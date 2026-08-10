@@ -90,8 +90,8 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
     }
 
     private _getMaxDelta(): number {
-        this._counterService.percentage = 1;
-        return (this._counterService.position === 'top' ? -1 : 1) * 100;
+        this._counterService.percentage.set(1);
+        return (this._counterService.position() === 'top' ? -1 : 1) * 100;
     }
 
     private _updatePositions(deltaY: number, topBarrier: number, bottomBarrier: number, contentSmaller = false) {
@@ -128,7 +128,7 @@ export class ScrollDetectDirective implements AfterViewInit, OnDestroy {
     }
 
     private _checkAndNavigate(deltaY: number) {
-        if (this._counterService.percentage < 0.99) {
+        if (this._counterService.percentage() < 0.99) {
             return;
         }
         const index = this._getRouteIndex();

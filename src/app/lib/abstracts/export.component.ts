@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, DestroyRef, ElementRef, QueryList, ViewChildren, inject } from '@angular/core';
+import { AfterViewInit, Component, DestroyRef, ElementRef, QueryList, ViewChildren, inject, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { catchError, of, tap } from 'rxjs';
 import { User } from '@lib/classes/user.class';
@@ -15,15 +15,14 @@ import { LanguageService } from '@lib/services/language.service';
 export abstract class ExportComponent implements AfterViewInit {
     @ViewChildren('sheet') sheetElements!: QueryList<ElementRef<HTMLBodyElement>>;
 
-    public userData = new User();
+    public readonly userData = signal(new User());
+    public readonly language = inject(LanguageService).selectedLanguage;
 
     protected printService = inject(PrintService);
     private _destroyRef = inject(DestroyRef);
     private _encrypt = inject(EncryptionService);
     private _userService = inject(UserApiService);
     private _translateService = inject(TranslateService);
-
-    public language$ = inject(LanguageService).selectedLanguage$;
 
     ngAfterViewInit(): void {
         this.printService.sheetElements = this.sheetElements;
@@ -45,7 +44,7 @@ export abstract class ExportComponent implements AfterViewInit {
                     if (user.email != null && password != null) {
                         localStorage.setItem(StorageKeys.ACCESS_KEY, password);
                     }
-                    this.userData = user;
+                    this.userData.set(user);
                 }),
                 catchError(() => of(new User())),
                 takeUntilDestroyed(this._destroyRef),
