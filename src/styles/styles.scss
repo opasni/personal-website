@@ -148,18 +148,11 @@ a {
     color: var(--font-color);
 }
 
-.accordion-button {
-    padding: 0 !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    color: var(--font-color);
-
-    &:not(.collapsed) {
-        color: var(--bs-accordion-active-color);
-    }
-
-    &::after {
-        background-image: var(--bs-accordion-btn-active-icon);
+.accordion {
+    .accordion-button {
+        padding: 0 !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
     }
 }
 
