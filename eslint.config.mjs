@@ -100,10 +100,7 @@ export default defineConfig([
                     after: true,
                 },
             ],
-            '@stylistic/arrow-spacing': [
-                'error',
-                { before: true, after: true },
-            ],
+            '@stylistic/arrow-spacing': ['error', { before: true, after: true }],
             '@stylistic/indent': ['error', 4],
 
             '@typescript-eslint/member-ordering': [
@@ -293,10 +290,7 @@ export default defineConfig([
     },
     {
         files: ['**/*.html'],
-        extends: [
-            ...angular.configs.templateRecommended,
-            ...angular.configs.templateAccessibility,
-        ],
+        extends: [...angular.configs.templateRecommended, ...angular.configs.templateAccessibility],
 
         rules: {
             '@angular-eslint/template/eqeqeq': [

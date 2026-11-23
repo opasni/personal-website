@@ -1,0 +1,81 @@
+name: Deploy Contact API
+
+on:
+    workflow_dispatch:
+
+concurrency:
+    group: deploy-contact-api
+    cancel-in-progress: false
+
+permissions:
+    id-token: write
+    contents: read
+
+jobs:
+    deploy:
+        name: Build and deploy contact API
+        runs-on: ubuntu-latest
+        environment: production
+        steps:
+            - uses: actions/checkout@v5
+
+            - uses: aws-actions/configure-aws-credentials@v6
+              with:
+                  role-to-assume: arn:aws:iam::${{ vars.AWS_ACCOUNT_ID }}:role/${{ vars.AWS_OIDC_ROLE_NAME }}
+                  aws-region: ${{ vars.AWS_DEFAULT_REGION }}
+
+            - uses: aws-actions/setup-sam@v3
+
+            - uses: actions/setup-node@v5
+              with:
+                  node-version: 24
+
+            - name: Check deployment configuration
+              env:
+                  CONTACT_TO_EMAIL: ${{ vars.CONTACT_TO_EMAIL }}
+                  SES_FROM_EMAIL: ${{ vars.SES_FROM_EMAIL }}
+                  CONTACT_ALLOWED_ORIGIN: ${{ vars.CONTACT_ALLOWED_ORIGIN }}
+                  TURNSTILE_SECRET_KEY: ${{ secrets.TURNSTILE_SECRET_KEY }}
+              run: |
+                  for name in CONTACT_TO_EMAIL SES_FROM_EMAIL CONTACT_ALLOWED_ORIGIN TURNSTILE_SECRET_KEY; do
+                    if [ -z "${!name}" ]; then
+                      echo "::error::Missing GitHub production configuration: $name"
+                      exit 1
+                    fi
+                  done
+                  case "$CONTACT_ALLOWED_ORIGIN" in
+                    https://*) ;;
+                    *) echo "::error::CONTACT_ALLOWED_ORIGIN must be the exact HTTPS site origin, without a trailing slash"; exit 1 ;;
+                  esac
+                  if [[ "$CONTACT_ALLOWED_ORIGIN" == */ ]]; then
+                    echo "::error::CONTACT_ALLOWED_ORIGIN must not end with a slash"
+                    exit 1
+                  fi
+
+            - name: Build Lambda package
+              run: sam build --template-file backend/contact/template.yaml
+
+            - name: Deploy API stack
+              env:
+                  CONTACT_TO_EMAIL: ${{ vars.CONTACT_TO_EMAIL }}
+                  SES_FROM_EMAIL: ${{ vars.SES_FROM_EMAIL }}
+                  CONTACT_ALLOWED_ORIGIN: ${{ vars.CONTACT_ALLOWED_ORIGIN }}
+                  TURNSTILE_SECRET_KEY: ${{ secrets.TURNSTILE_SECRET_KEY }}
+              run: |
+                  sam deploy \
+                    --stack-name personal-website-contact \
+                    --resolve-s3 \
+                    --capabilities CAPABILITY_IAM \
+                    --no-confirm-changeset \
+                    --no-fail-on-empty-changeset \
+                    --parameter-overrides \
+                      AllowedOrigin="$CONTACT_ALLOWED_ORIGIN" \
+                      ContactToEmail="$CONTACT_TO_EMAIL" \
+                      SesFromEmail="$SES_FROM_EMAIL" \
+                      TurnstileSecretKey="$TURNSTILE_SECRET_KEY"
+                  api_url="$(aws cloudformation describe-stacks \
+                    --stack-name personal-website-contact \
+                    --query "Stacks[0].Outputs[?OutputKey=='ContactApiUrl'].OutputValue | [0]" \
+                    --output text)"
+                  echo "Contact API URL: $api_url" >> "$GITHUB_STEP_SUMMARY"
+                  echo "Set the GitHub production variable CONTACT_API_URL to this value, then deploy the static site."

@@ -1,0 +1,70 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Turnstile-protected contact endpoint for Personal Website site.
+
+Parameters:
+    AllowedOrigin:
+        Type: String
+        Description: Exact HTTPS origin of the website, without a trailing slash.
+    ContactToEmail:
+        Type: String
+        Description: Address that receives website enquiries.
+    SesFromEmail:
+        Type: String
+        Description: Verified SES sender address in this AWS region.
+    TurnstileSecretKey:
+        Type: String
+        NoEcho: true
+        Description: Cloudflare Turnstile secret key.
+
+Resources:
+    ContactApi:
+        Type: AWS::Serverless::HttpApi
+        Properties:
+            CorsConfiguration:
+                AllowOrigins:
+                    - !Ref AllowedOrigin
+                AllowHeaders:
+                    - content-type
+                AllowMethods:
+                    - POST
+                MaxAge: 600
+            DefaultRouteSettings:
+                ThrottlingBurstLimit: 5
+                ThrottlingRateLimit: 1
+
+    ContactFunction:
+        Type: AWS::Serverless::Function
+        Properties:
+            CodeUri: src/
+            Handler: handler.handler
+            Runtime: nodejs24.x
+            MemorySize: 128
+            Timeout: 10
+            Environment:
+                Variables:
+                    ALLOWED_ORIGIN: !Ref AllowedOrigin
+                    CONTACT_TO_EMAIL: !Ref ContactToEmail
+                    SES_FROM_EMAIL: !Ref SesFromEmail
+                    TURNSTILE_SECRET_KEY: !Ref TurnstileSecretKey
+            Policies:
+                - Statement:
+                      - Effect: Allow
+                        Action:
+                            - ses:SendEmail
+                        Resource: '*'
+                        Condition:
+                            StringEquals:
+                                ses:FromAddress: !Ref SesFromEmail
+            Events:
+                Contact:
+                    Type: HttpApi
+                    Properties:
+                        ApiId: !Ref ContactApi
+                        Path: /contact
+                        Method: POST
+
+Outputs:
+    ContactApiUrl:
+        Description: Copy this URL into the CONTACT_API_URL GitHub Actions variable.
+        Value: !Sub 'https://${ContactApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}/contact'
