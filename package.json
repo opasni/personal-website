@@ -34,7 +34,6 @@
         "bootstrap-icons": "^1.10.5",
         "bootstrap-print-css": "^1.0.1",
         "jspdf": "^4.2.1",
-        "ng-recaptcha-2": "^22.0.0",
         "ngx-cookie-service": "^22.0.0",
         "paper-css": "^0.4.1",
         "rxjs": "~7.8.1",
@@ -48,7 +47,7 @@
         "@eslint/js": "^10.0.1",
         "@ngx-builders/analyze": "^4.0.0",
         "@schematics/angular": "^22.1.3",
-        "@stylistic/eslint-plugin": "^5.10.0",
+        "@stylistic/eslint-plugin": "^6.0.1",
         "@stylistic/eslint-plugin-ts": "^4.2.0",
         "@types/crypto-js": "^4.2.2",
         "@types/jasmine": "~6.0.0",
@@ -64,9 +63,9 @@
         "karma-coverage": "~2.2.0",
         "karma-jasmine": "~5.1.0",
         "karma-jasmine-html-reporter": "~2.2.0",
-        "prettier": "^3.5.3",
+        "prettier": "^3.10.1",
         "typescript": "~6.0.3",
-        "typescript-eslint": "8.67.0",
+        "typescript-eslint": "8.73.0",
         "webpack-bundle-analyzer": "^5.3.1"
     }
 }

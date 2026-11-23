@@ -125,46 +125,42 @@
                     }
                 </div>
                 <input type="hidden" name="_honeypot" formControlName="_honeypot" />
-                <!-- recaptcha -->
-                <div class="d-flex justify-content-end">
-                    @if (!verify() && !fail()) {
-                        <button
-                            type="submit"
-                            [title]="'accessibility.buttons.send-contact' | translate"
-                            class="btn btn-primary"
-                        >
-                            {{ 'contact.submit.label' | translate }}
-                        </button>
-                    } @else if (verify()) {
-                        <p class="d-flex">
-                            {{ 'contact.submit.one-last-thing' | translate }}
-                        </p>
-                    } @else {
-                        <p class="d-flex">
-                            {{ 'contact.submit.fail' | translate }}
-                            <a
-                                class="linkedin-icon"
-                                href="https://www.linkedin.com/in/crtharej"
-                                aria-label="Got to my LinkedIn Profile"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <div class="social-icon">
-                                    <i class="bi bi-linkedin"></i>
-                                </div>
+                <p class="privacy-note">
+                    {{ 'contact.privacy-note' | translate }}
+                    <a routerLink="/privacy">{{ 'legal.privacy.title' | translate }}</a>
+                </p>
+                <div aria-live="polite" [attr.aria-busy]="verify() || sending()">
+                    @if (unavailable()) {
+                        <p role="status">{{ 'contact.submit.unavailable' | translate }}</p>
+                    }
+                    @if (fail()) {
+                        <p role="alert">{{ 'contact.submit.retry-hint' | translate }}</p>
+                    }
+                    @if (fail() || unavailable()) {
+                        <p>
+                            <a href="https://www.linkedin.com/in/crtharej" target="_blank" rel="noopener noreferrer">
+                                {{ 'home.contact.linkedin' | translate }}
                             </a>
                         </p>
                     }
-                </div>
-                <div class="separator recaptcha">
-                    @if (submitted() && emailForm.valid && verify()) {
-                        <re-captcha
-                            class="contact-recaptcha"
-                            [theme]="theme === 'white' ? 'light' : theme"
-                            (resolved)="resolved($event)"
-                            [siteKey]="recaptchaKey"
-                        ></re-captcha>
+                    @if (sending()) {
+                        <p>{{ 'contact.submit.sending' | translate }}</p>
+                    } @else if (verify()) {
+                        <p>{{ 'contact.submit.verifying' | translate }}</p>
                     }
+                </div>
+                @if (verify()) {
+                    <app-turnstile
+                        [siteKey]="turnstileSiteKey"
+                        [theme]="theme === 'dark' ? 'dark' : 'light'"
+                        (resolved)="resolved($event)"
+                        (failed)="verificationFailed()"
+                    />
+                }
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" [disabled]="verify() || sending()">
+                        {{ (fail() ? 'contact.submit.retry' : 'contact.submit.label') | translate }}
+                    </button>
                 </div>
             </form>
         </div>

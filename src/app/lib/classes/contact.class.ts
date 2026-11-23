@@ -5,7 +5,7 @@ export class Contact {
     public replyto: string | null = null;
     public subject: string | null = null;
     public message: string | null = null;
-    public recaptcha: string | null = null;
+    public turnstileToken: string | null = null;
     public _honeypot: string | null = null;
     public languageId: Language = Language.EN;
 
@@ -23,8 +23,8 @@ export class Contact {
             if (shape.message != null) {
                 this.message = shape.message;
             }
-            if (shape.recaptcha != null) {
-                this.recaptcha = shape.recaptcha;
+            if (shape.turnstileToken != null) {
+                this.turnstileToken = shape.turnstileToken;
             }
             if (shape._honeypot != null) {
                 this._honeypot = shape._honeypot;

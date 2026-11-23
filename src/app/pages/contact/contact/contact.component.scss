@@ -19,3 +19,12 @@ label {
     padding: 12px;
     border-color: var(--line);
 }
+
+.privacy-note {
+    color: var(--muted);
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+a {
+    color: var(--accent);
+}

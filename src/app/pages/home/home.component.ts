@@ -50,5 +50,4 @@ export class HomeComponent {
         { id: 'achtzig20', start: '11/2018', end: '09/2024', company: 'Achtzig20 GmbH' },
     ];
     readonly languages = ['slovenian', 'english', 'german', 'italian'];
-    readonly year = new Date().getFullYear();
 }

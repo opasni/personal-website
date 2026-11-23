@@ -584,6 +584,13 @@
         "empty": {
             "title": "No posts yet",
             "hint": "Add entries to src/app/pages/linkedin/linkedin-posts.const.ts to display your first embed."
+        },
+        "privacy": {
+            "title": "LinkedIn posts, only if you choose",
+            "body": "Loading these posts connects to LinkedIn, which receives your IP address and browser data and may set cookies, link the visit to your account or process data outside the EEA. Your permission applies only to this page visit.",
+            "load": "Load LinkedIn posts",
+            "hide": "Hide LinkedIn posts",
+            "external": "View directly on LinkedIn"
         }
     },
     "contact": {
@@ -600,7 +607,7 @@
         "email": {
             "label": "Email address",
             "placeholder": "example@gmail.com",
-            "hint": "I'll never share your email with anyone else.",
+            "hint": "Used to reply to your enquiry.",
             "error": {
                 "required": "Please enter your email address.",
                 "email": "Please enter a valid email address."
@@ -633,8 +640,14 @@
             "subject": "Online Contact",
             "one-last-thing": "Just to make sure you are not a bot. I know it's a bit annoying, but bare with me.",
             "fail": "Something went wrong. Please try again or write me on LinkedIn:",
-            "success": "Message was sent successfully! I will reach out to you as soon as possible."
-        }
+            "success": "Message was sent successfully! I will reach out to you as soon as possible.",
+            "unavailable": "The contact form is temporarily unavailable. You can reach me on LinkedIn.",
+            "retry-hint": "Your message could not be sent. Please try again with a fresh security check, or contact me on LinkedIn.",
+            "retry": "Try again",
+            "sending": "Sending your message…",
+            "verifying": "Checking the form for spam…"
+        },
+        "privacy-note": "Your message is used to handle your enquiry. Cloudflare Turnstile loads when you send the form to help prevent spam. Details:"
     },
     "theme": {
         "white": "White Theme",
@@ -770,6 +783,66 @@
         "footer": {
             "notes": "Notes on LinkedIn",
             "top": "Back to top"
+        }
+    },
+    "legal": {
+        "back": "Back to the website",
+        "country": "Slovenia",
+        "email": "Email",
+        "email-pending": "Public contact address to be confirmed before publication.",
+        "footer-nav": "Legal information and further links",
+        "draft": "Draft for review: the public email address, message handling, retention periods and international transfer arrangements still need confirmation before publication.",
+        "imprint": {
+            "title": "Legal notice / Impressum",
+            "intro": "Information about the operator of this website.",
+            "operator": "Website operator",
+            "owner": "Owner",
+            "registration": "Business registration",
+            "form": "Legal form",
+            "sole-trader": "Sole proprietor (s.p.), Slovenia",
+            "register": "Register",
+            "number": "Registration number (matična številka)",
+            "tax": "Tax number (davčna številka)",
+            "vat": "VAT identification number"
+        },
+        "privacy": {
+            "title": "Privacy notice",
+            "intro": "How personal data is handled when you visit this website or get in touch.",
+            "controller": "Data controller",
+            "aws-link": "AWS Privacy Notice",
+            "linkedin-link": "LinkedIn Privacy Policy",
+            "hosting": {
+                "title": "Website delivery and security",
+                "body": "The website uses Amazon Web Services (AWS) S3 and CloudFront for hosting and content delivery. Requests expose technical information such as your IP address, requested URL, time of access and browser information to the infrastructure serving the website. Processing necessary to deliver and secure the website is based on legitimate interests under Article 6(1)(f) GDPR. The contact API is currently configured in AWS region us-east-1 (United States). The exact contracting AWS entity, logging configuration and retention periods must be confirmed before this notice is published."
+            },
+            "contact": {
+                "title": "Contact messages",
+                "body": "The contact form sends your name, email address, selected subject, message, language and a security verification token to the contact API. These details are used to handle your request and reply to you. Processing is based on Article 6(1)(b) GDPR when you request steps towards a contract, or Article 6(1)(f) GDPR for other correspondence, reflecting the interest in responding to enquiries. Providing information is voluntary, but the required fields are needed to process the form and reply. Do not include sensitive personal information. The email delivery provider, receiving mailbox provider, any message database and applicable deletion schedule are still to be confirmed."
+            },
+            "turnstile": {
+                "title": "Spam protection with Cloudflare Turnstile",
+                "body": "Turnstile, provided by Cloudflare, Inc. (United States), loads only after you submit a valid contact form. It processes signals including IP address, browser information, TLS fingerprint and website origin to distinguish people from bots. The verification token is sent with your message and must be checked by the contact server. The proposed legal basis is Article 6(1)(f) GDPR: protecting the contact service against spam and abuse. Cloudflare acts as a processor for website protection and as a separate controller when improving its bot detection. Its privacy addendum explains these roles. The widget is intended to use managed mode without pre-clearance. The final configuration and legal basis require review before launch."
+            },
+            "storage": {
+                "title": "Local storage and cookies",
+                "body": "This application does not include analytics or advertising trackers. Fonts are served with the website. Your chosen language and appearance are stored in your browser’s local storage under “language” and “theme”. Protected document access can also store an access key under “accessKey”. These entries support the preferences and access you request and remain until replaced or removed through your browser settings. The proposed basis for this functional processing is Article 6(1)(f) GDPR. Third-party services may process additional data as described below and in their own notices; the absence of analytics does not mean that no personal data is processed."
+            },
+            "linkedin": {
+                "title": "Optional LinkedIn posts and external links",
+                "body": "LinkedIn embeds are off by default. Choosing “Load LinkedIn posts” gives consent for embedded content from LinkedIn Ireland Unlimited Company, Ireland, and its group companies to load. LinkedIn then receives technical data including your IP address and browser information and may use cookies, associate the visit with your LinkedIn account, or process data outside the EEA. This optional loading is based on consent under Article 6(1)(a) GDPR. You can withdraw it with “Hide LinkedIn posts” or by leaving this page; your choice is not saved. This stops further loading here but does not undo previous processing or remove cookies already set by LinkedIn, which can be managed in your browser. Ordinary external links connect to their destination only when followed."
+            },
+            "transfers": {
+                "title": "Recipients and international transfers",
+                "body": "AWS, Cloudflare and, if you enable embeds, LinkedIn receive data for the purposes described above. Contact delivery and mailbox providers must also be identified before publication. The US-region API and third-party services can involve processing outside the European Economic Area. Before launch, the applicable processor agreements and transfer safeguards must be confirmed for the actual providers and accounts, including any relevant adequacy decision or Standard Contractual Clauses and supplementary measures. This draft does not yet establish which safeguards apply to each data flow."
+            },
+            "retention": {
+                "title": "How long data is kept",
+                "body": "The final notice must specify the actual retention periods or concrete deletion criteria for contact messages, receiving mailboxes, any database, backups and access/security logs. These operational settings have not yet been confirmed. Browser preferences remain until changed or cleared; the permission to load LinkedIn posts lasts only while this page is open. Cloudflare and LinkedIn describe their own processing and retention in their linked privacy notices."
+            },
+            "rights": {
+                "title": "Your rights and questions",
+                "body": "Subject to the GDPR’s conditions, you can request access, correction, deletion, restriction of processing and data portability. You can object to processing based on legitimate interests for reasons relating to your situation and withdraw consent at any time without affecting earlier lawful processing. Contact the controller listed above to exercise these rights. You may complain to the Slovenian Information Commissioner (Informacijski pooblaščenec) or the supervisory authority in your place of habitual residence, work or the alleged infringement. This website does not use your contact message for automated decisions with legal or similarly significant effects."
+            }
         }
     }
 }

@@ -8,6 +8,18 @@ export const routes: Routes = [
         component: PageBackboneComponent,
         children: [
             {
+                path: 'imprint',
+                title: 'Črt Harej — Imprint',
+                loadComponent: async () => (await import('@pages/legal/legal.component')).LegalComponent,
+            },
+            {
+                path: 'privacy',
+                title: 'Črt Harej — Privacy / Datenschutz / Zasebnost',
+                data: { privacy: true },
+                loadComponent: async () => (await import('@pages/legal/legal.component')).LegalComponent,
+            },
+            { path: 'datenschutz', redirectTo: 'privacy', pathMatch: 'full' },
+            {
                 path: '',
                 title: 'Črt Harej — Engineering, Architecture & Leadership',
                 loadComponent: async () => (await import('@pages/home/home.component')).HomeComponent,

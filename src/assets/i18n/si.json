@@ -578,6 +578,13 @@
         "empty": {
             "title": "Ni še dodanih objav",
             "hint": "Dodaj vnose v src/app/pages/linkedin/linkedin-posts.const.ts za prikaz prvega embeda."
+        },
+        "privacy": {
+            "title": "Objave LinkedIn samo po vaši izbiri",
+            "body": "Nalaganje vzpostavi povezavo z LinkedInom, ki prejme vaš naslov IP in podatke o brskalniku ter lahko nastavi piškotke, obisk poveže z vašim računom ali obdeluje podatke zunaj EGP. Dovoljenje velja le za ta obisk strani.",
+            "load": "Naloži objave LinkedIn",
+            "hide": "Skrij objave LinkedIn",
+            "external": "Odpri neposredno na LinkedInu"
         }
     },
     "contact": {
@@ -594,7 +601,7 @@
         "email": {
             "label": "Spletna pošta",
             "placeholder": "primer@gmail.com",
-            "hint": "Vaše spletne pošte ne bom delil z nikomer.",
+            "hint": "Uporabi se za odgovor na vašo poizvedbo.",
             "error": {
                 "required": "Prosimo, vnesite vaš e-poštni naslov.",
                 "email": "Prosimo, vnesite veljaven e-poštni naslov."
@@ -627,8 +634,14 @@
             "subject": "Spletno povpraševanje",
             "one-last-thing": "Samo da se prepričam, da niste robot. Vem, da je malce nadležno, ampak prosim, vztrajajte z menoj.",
             "fail": "Nekaj je šlo narobe. Prosimo, poskusite znova ali mi pišite na LinkedInu:",
-            "success": "Sporočilo uspešno poslano! V kontakt bom stopil v najkrajšem možnem času."
-        }
+            "success": "Sporočilo uspešno poslano! V kontakt bom stopil v najkrajšem možnem času.",
+            "unavailable": "Kontaktni obrazec trenutno ni na voljo. Dosegljiv sem na LinkedInu.",
+            "retry-hint": "Sporočila ni bilo mogoče poslati. Poskusite znova z novim varnostnim preverjanjem ali me kontaktirajte na LinkedInu.",
+            "retry": "Poskusi znova",
+            "sending": "Pošiljanje sporočila…",
+            "verifying": "Preverjanje obrazca za neželena sporočila…"
+        },
+        "privacy-note": "Vaši podatki se uporabijo za obravnavo poizvedbe. Ob oddaji se za zaščito pred neželenimi sporočili naloži Cloudflare Turnstile. Podrobnosti:"
     },
     "theme": {
         "white": "Beli Nacin",
@@ -764,6 +777,66 @@
         "footer": {
             "notes": "Objave na LinkedInu",
             "top": "Na vrh"
+        }
+    },
+    "legal": {
+        "back": "Nazaj na spletno stran",
+        "country": "Slovenija",
+        "email": "E-pošta",
+        "email-pending": "Javni kontaktni e-naslov bo potrjen pred objavo.",
+        "footer-nav": "Pravne informacije in dodatne povezave",
+        "draft": "Osnutek za pregled: pred objavo je treba potrditi javni e-naslov, obravnavo sporočil, roke hrambe in ureditev mednarodnih prenosov podatkov.",
+        "imprint": {
+            "title": "Podatki o ponudniku",
+            "intro": "Informacije o upravljavcu te spletne strani.",
+            "operator": "Ponudnik in upravljavec spletne strani",
+            "owner": "Podjetnik",
+            "registration": "Registrski podatki",
+            "form": "Pravna oblika",
+            "sole-trader": "Samostojni podjetnik posameznik (s.p.), Slovenija",
+            "register": "Register",
+            "number": "Matična številka",
+            "tax": "Davčna številka",
+            "vat": "Identifikacijska številka za DDV"
+        },
+        "privacy": {
+            "title": "Obvestilo o zasebnosti",
+            "intro": "Kako se obdelujejo osebni podatki ob obisku te spletne strani in ob vzpostavitvi stika.",
+            "controller": "Upravljavec osebnih podatkov",
+            "aws-link": "Obvestilo o zasebnosti AWS",
+            "linkedin-link": "Politika zasebnosti LinkedIn",
+            "hosting": {
+                "title": "Delovanje in varnost spletne strani",
+                "body": "Spletna stran za gostovanje in dostavo vsebine uporablja Amazon Web Services (AWS) S3 in CloudFront. Infrastruktura ob zahtevah prejme tehnične podatke, kot so naslov IP, zahtevani URL, čas dostopa in podatki o brskalniku. Obdelava, potrebna za delovanje in varnost strani, temelji na zakonitih interesih po členu 6(1)(f) Splošne uredbe o varstvu podatkov (GDPR). Kontaktni API je trenutno nastavljen v regiji AWS us-east-1 (ZDA). Pred objavo je treba potrditi pogodbeno družbo AWS, nastavitve beleženja in roke hrambe."
+            },
+            "contact": {
+                "title": "Kontaktna sporočila",
+                "body": "Kontaktni obrazec pošlje ime, e-naslov, izbrano zadevo, sporočilo, jezik in varnostni žeton kontaktnemu API-ju. Podatki se uporabljajo za obravnavo poizvedbe in odgovor. Pravna podlaga je člen 6(1)(b) GDPR pri predpogodbenih poizvedbah oziroma člen 6(1)(f) GDPR pri drugi korespondenci zaradi interesa za odgovarjanje na poizvedbe. Posredovanje podatkov je prostovoljno, vendar so obvezna polja potrebna za obdelavo obrazca in odgovor. Ne pošiljajte občutljivih osebnih podatkov. Ponudnik pošiljanja e-pošte, ponudnik prejemnega predala, morebitna podatkovna zbirka sporočil in roki izbrisa še niso potrjeni."
+            },
+            "turnstile": {
+                "title": "Zaščita pred neželenimi sporočili s Cloudflare Turnstile",
+                "body": "Turnstile ponudnika Cloudflare, Inc. (ZDA) se naloži šele po oddaji veljavno izpolnjenega kontaktnega obrazca. Za razlikovanje ljudi od botov obdeluje signale, kot so naslov IP, podatki o brskalniku, prstni odtis TLS in izvor spletne strani. Varnostni žeton se pošlje skupaj s sporočilom in ga mora preveriti kontaktni strežnik. Predvidena pravna podlaga je člen 6(1)(f) GDPR: zaščita kontaktne storitve pred neželenimi sporočili in zlorabo. Cloudflare pri zaščiti strani deluje kot obdelovalec, pri izboljševanju zaznavanja botov pa kot samostojni upravljavec. Njegov dodatek o zasebnosti pojasnjuje ti vlogi. Predvidena je uporaba načina Managed brez funkcije pre-clearance. Končno nastavitev in pravno podlago je treba pregledati pred zagonom."
+            },
+            "storage": {
+                "title": "Lokalna shramba in piškotki",
+                "body": "Aplikacija ne vključuje analitičnih ali oglaševalskih sledilnikov. Pisave se nalagajo s spletne strani. Izbrani jezik in videz se shranita v lokalno shrambo brskalnika pod ključema »language« in »theme«. Dostop do zaščitenih dokumentov lahko shrani tudi dostopni ključ »accessKey«. Ti vnosi podpirajo nastavitve in dostop, ki jih zahtevate, ter ostanejo do zamenjave ali izbrisa v nastavitvah brskalnika. Za to funkcionalno obdelavo je predvidena podlaga po členu 6(1)(f) GDPR. Zunanje storitve lahko obdelujejo dodatne podatke, kot je opisano spodaj in v njihovih obvestilih; odsotnost analitike ne pomeni odsotnosti obdelave osebnih podatkov."
+            },
+            "linkedin": {
+                "title": "Izbirne objave LinkedIn in zunanje povezave",
+                "body": "Vdelane objave LinkedIn so privzeto izklopljene. Z izbiro »Naloži objave LinkedIn« privolite v nalaganje vsebin družbe LinkedIn Ireland Unlimited Company, Irska, in povezanih družb. LinkedIn nato prejme tehnične podatke, vključno z naslovom IP in podatki o brskalniku, ter lahko uporablja piškotke, obisk poveže z vašim računom ali obdeluje podatke zunaj EGP. Podlaga je privolitev po členu 6(1)(a) GDPR. Prekličete jo lahko z izbiro »Skrij objave LinkedIn« ali z odhodom s strani; izbira se ne shranjuje. S tem se ustavi nadaljnje nalaganje tukaj, ne razveljavi pa se pretekla obdelava in ne izbrišejo se že nastavljeni piškotki LinkedIn, ki jih lahko upravljate v brskalniku. Običajne zunanje povezave vzpostavijo povezavo s ciljem šele ob kliku."
+            },
+            "transfers": {
+                "title": "Prejemniki in mednarodni prenosi",
+                "body": "AWS, Cloudflare in ob omogočenih vdelavah LinkedIn prejemajo podatke za opisane namene. Pred objavo je treba navesti tudi ponudnika pošiljanja e-pošte in prejemnega predala. API v ZDA in zunanje storitve lahko vključujejo obdelavo zunaj Evropskega gospodarskega prostora. Pred zagonom je treba za dejanske ponudnike in račune potrditi pogodbe o obdelavi in zaščitne ukrepe za prenose, vključno z ustreznim sklepom o ustreznosti ali standardnimi pogodbenimi določili in dopolnilnimi ukrepi. Ta osnutek še ne določa, kateri ukrepi veljajo za posamezen tok podatkov."
+            },
+            "retention": {
+                "title": "Roki hrambe",
+                "body": "Končno obvestilo mora navesti dejanske roke ali konkretna merila izbrisa za kontaktna sporočila, prejemne predale, morebitne podatkovne zbirke, varnostne kopije ter dnevnike dostopa in varnosti. Te nastavitve še niso potrjene. Nastavitve brskalnika ostanejo do spremembe ali izbrisa; dovoljenje za nalaganje objav LinkedIn velja le med obiskom te strani. Cloudflare in LinkedIn svojo obdelavo in hrambo opisujeta v povezanih obvestilih o zasebnosti."
+            },
+            "rights": {
+                "title": "Vaše pravice in vprašanja",
+                "body": "Pod pogoji GDPR lahko zahtevate dostop, popravek, izbris, omejitev obdelave in prenosljivost podatkov. Obdelavi na podlagi zakonitih interesov lahko ugovarjate iz razlogov, povezanih z vašim posebnim položajem, privolitev pa lahko kadar koli prekličete brez vpliva na zakonitost predhodne obdelave. Za uveljavljanje pravic se obrnite na zgoraj navedenega upravljavca. Pritožbo lahko vložite pri Informacijskem pooblaščencu Slovenije ali nadzornem organu v kraju običajnega prebivališča, zaposlitve ali domnevne kršitve. Ta spletna stran vašega kontaktnega sporočila ne uporablja za avtomatizirano odločanje s pravnimi ali podobno pomembnimi učinki."
+            }
         }
     }
 }

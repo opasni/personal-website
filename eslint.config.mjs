@@ -100,6 +100,10 @@ export default defineConfig([
                     after: true,
                 },
             ],
+            '@stylistic/arrow-spacing': [
+                'error',
+                { before: true, after: true },
+            ],
             '@stylistic/indent': ['error', 4],
 
             '@typescript-eslint/member-ordering': [

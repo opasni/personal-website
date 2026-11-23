@@ -3,4 +3,13 @@
     <main id="main-content" tabindex="-1">
         <router-outlet></router-outlet>
     </main>
+    <footer class="site-footer">
+        <span>© {{ year }} Črt Harej</span>
+        <nav [attr.aria-label]="'legal.footer-nav' | translate">
+            <a routerLink="/linkedin">{{ 'home.footer.notes' | translate }}</a>
+            <a routerLink="/imprint">{{ 'legal.imprint.title' | translate }}</a>
+            <a routerLink="/privacy">{{ 'legal.privacy.title' | translate }}</a>
+            <a routerLink="/" fragment="about">{{ 'home.footer.top' | translate }}</a>
+        </nav>
+    </footer>
 </div>

@@ -33,27 +33,43 @@ describe('One-page navigation', () => {
     });
 
     it('keeps every main navigation link on the page with a matching target', () => {
-        const page = harness.routeNativeElement!;
-        const links = Array.from(page.querySelectorAll('nav a'));
+        const page = harness.routeNativeElement;
+        expect(page).not.toBeNull();
+        if (!page) {
+            return;
+        }
+        const links = Array.from(page.querySelectorAll('#main-nav a'));
         expect(links.length).toBe(6);
         for (const link of links) {
-            const href = link.getAttribute('href')!;
+            const href = link.getAttribute('href');
+            expect(href).not.toBeNull();
+            if (!href) {
+                return;
+            }
             expect(href.startsWith('/#')).toBeTrue();
             expect(page.querySelector(href.slice(1))).not.toBeNull();
         }
     });
 
     it('preserves expanded project details when moving between sections', async () => {
-        const project = harness.routeNativeElement!.querySelector<HTMLDetailsElement>('.project details')!;
+        const project = harness.routeNativeElement?.querySelector<HTMLDetailsElement>('.project details');
+        expect(project).not.toBeNull();
+        if (!project) {
+            return;
+        }
         project.open = true;
         await harness.navigateByUrl('/#personal');
-        expect(harness.routeNativeElement!.querySelector('.project details')).toBe(project);
+        expect(harness.routeNativeElement?.querySelector('.project details')).toBe(project);
         expect(project.open).toBeTrue();
     });
 
     it('does not navigate away when scrolling or pressing arrow keys', async () => {
         await harness.navigateByUrl('/#work');
-        const home = harness.routeNativeElement!.querySelector('app-home')!;
+        const home = harness.routeNativeElement?.querySelector('app-home');
+        expect(home).not.toBeNull();
+        if (!home) {
+            return;
+        }
         home.dispatchEvent(new WheelEvent('wheel', { deltaY: 1000, bubbles: true }));
         document.dispatchEvent(new KeyboardEvent('keyup', { key: 'ArrowDown', bubbles: true }));
         await harness.fixture.whenStable();

@@ -462,23 +462,6 @@ details p {
 .contact-form summary {
     padding: 24px 0;
 }
-.site-footer {
-    border-top: 1px solid var(--line);
-    padding-block: 28px;
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    color: var(--muted);
-    font-size: 0.8125rem;
-}
-.site-footer div {
-    display: flex;
-    gap: 26px;
-}
-.site-footer a {
-    color: var(--muted);
-    text-underline-offset: 4px;
-}
 :where(a, summary):focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 5px;
@@ -559,10 +542,6 @@ details p {
     }
     .personal-stories {
         margin-top: 16px;
-    }
-    .site-footer {
-        flex-direction: column;
-        gap: 16px;
     }
 }
 @media (prefers-reduced-motion: reduce) {
