@@ -199,7 +199,7 @@
             "title": "Partner",
             "link": "8020.eco",
             "abstract": [
-                "Kot partner v 8020 Consulting GmbH sooblikujem svetovalno strategijo, rast podjetja, kakovost izvedbe in razvoj kompetenc. Moje delo povezuje vodstvene odločitve s praktično inženirsko realnostjo: sestavo ekip, komunikacijo z naročniki, prioritete in arhitekturno smer.",
+                "Kot partner povezujem svetovalno strategijo, poslovni razvoj in odgovornost za izvedbo z nadaljnjim praktičnim delom tehničnega vodje in specialista. Arhitektura, razvoj in podpora razvijalcem ostajajo osrednji del mojega dela.",
                 "Novejše pobude vključujejo Catena-X, Bloomfilter integracije, JobCar in Caroline za Graf Hardenberg, AI-podprta orodja, cloud hosting in 8020 AI Agent."
             ],
             "skills": [
@@ -218,7 +218,8 @@
             "link": "achtzig20.si",
             "abstract": [
                 "Vzpostavil in vodim slovensko hčerinsko družbo skupine 8020: od študentskega sodelovanja do podjetja z lokalno prisotnostjo, zaposlovanjem, razvojem ekipe in operativno strukturo.",
-                "Vloga združuje vodenje ljudi, lokalna partnerstva, usklajevanje izvedbe z nemško matično družbo in odgovornost za zdravo in zanesljivo inženirsko organizacijo."
+                "Vloga združuje vodenje ljudi, lokalna partnerstva, usklajevanje izvedbe z nemško matično družbo in odgovornost za zdravo in zanesljivo inženirsko organizacijo.",
+                "Ustanovil sem slovensko podružnico ter vodim njeno ekipo in poslovanje. Ob tem še naprej delujem kot tehnični vodja in specialist na projektih za naročnike."
             ],
             "skills": ["Vodenje", "Rast podjetja", "Operativno vodenje", "Partnerstva", "Razvoj ekipe"]
         },
@@ -689,7 +690,9 @@
             "work": "Raziščite moje delo",
             "contact": "Pogovorimo se",
             "caption": "Radoveden po naravi. Praktičen pri delu.",
-            "pronunciation": "En zlog. Majhen ə pomaga."
+            "pronunciation": "En zlog. Majhen ə pomaga.",
+            "partner-role": "Partner · Tehnično vodenje",
+            "director-role": "Direktor · Praktično razvojno delo"
         },
         "expertise": {
             "title": "Od celotne slike do podrobnosti.",
@@ -745,11 +748,11 @@
         },
         "experience": {
             "title": "Razmišljanje inženirja. Odgovornost vodje.",
-            "intro": "Moja pot se je razširila od raziskovanja in razvoja programske opreme do tehničnega vodenja in gradnje podjetja. Praktično delo ostaja njen del."
+            "intro": "Tehnično vodenje je stalnica moje kariere. Ob odgovornostih direktorja in pozneje partnerja sem ves čas praktično deloval kot tehnični vodja in specialist: načrtoval sisteme, razvijal programsko opremo, reševal zahtevne probleme in usmerjal razvojne ekipe."
         },
         "roles": {
-            "8020": "Oblikovanje svetovalne strategije, kakovosti izvedbe in poslovnega razvoja ob neposredni vključenosti v arhitekturne in razvojne odločitve.",
-            "achtzig20si": "Ustanovitev in vodenje slovenske podružnice: iz sodelovanja s študenti je zraslo podjetje z lastno ekipo, pisarno in operativno strukturo.",
+            "8020": "Kot partner povezujem svetovalno strategijo, poslovni razvoj in odgovornost za izvedbo z nadaljnjim praktičnim delom tehničnega vodje in specialista. Arhitektura, razvoj in podpora razvijalcem ostajajo osrednji del mojega dela.",
+            "achtzig20si": "Ustanovil sem slovensko podružnico ter vodim njeno ekipo in poslovanje. Ob tem še naprej delujem kot tehnični vodja in specialist na projektih za naročnike.",
             "achtzig20": "Vodenje arhitekture in izvedbe poslovnih, spletnih, mobilnih, oblačnih in podatkovnih projektov, skupaj z razvojem in mentorstvom."
         },
         "foundation": {
@@ -785,7 +788,7 @@
         "email": "E-pošta",
         "email-pending": "Javni kontaktni e-naslov bo potrjen pred objavo.",
         "footer-nav": "Pravne informacije in dodatne povezave",
-        "draft": "Osnutek za pregled: pred objavo je treba potrditi javni e-naslov, obravnavo sporočil, roke hrambe in ureditev mednarodnih prenosov podatkov.",
+        "draft": "Osnutek za pregled: pred objavo je treba potrditi nastavitve hrambe in ureditev mednarodnih prenosov podatkov.",
         "imprint": {
             "title": "Podatki o ponudniku",
             "intro": "Informacije o upravljavcu te spletne strani.",
@@ -831,7 +834,7 @@
             },
             "retention": {
                 "title": "Roki hrambe",
-                "body": "Končno obvestilo mora navesti dejanske roke ali konkretna merila izbrisa za kontaktna sporočila, prejemne predale, morebitne podatkovne zbirke, varnostne kopije ter dnevnike dostopa in varnosti. Te nastavitve še niso potrjene. Nastavitve brskalnika ostanejo do spremembe ali izbrisa; dovoljenje za nalaganje objav LinkedIn velja le med obiskom te strani. Cloudflare in LinkedIn svojo obdelavo in hrambo opisujeta v povezanih obvestilih o zasebnosti."
+                "body": "Predvideni roki hrambe, ki jih je treba še urediti: običajne kontaktne poizvedbe se izbrišejo v 12 mesecih od zadnje izmenjave. Korespondenca za tekoče sodelovanje, zakonske obveznosti ali pravne zahtevke se hrani za ustrezen namen in obdobje. Dnevniki dostopa in aplikacij AWS se hranijo 30 dni. Pred objavo je treba te roke nastaviti in izvajati. Nastavitve brskalnika ostanejo do spremembe ali izbrisa; dovoljenje za vdelave LinkedIn velja le za trenutni obisk strani."
             },
             "rights": {
                 "title": "Vaše pravice in vprašanja",

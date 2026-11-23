@@ -78,4 +78,4 @@ jobs:
                     --query "Stacks[0].Outputs[?OutputKey=='ContactApiUrl'].OutputValue | [0]" \
                     --output text)"
                   echo "Contact API URL: $api_url" >> "$GITHUB_STEP_SUMMARY"
-                  echo "Set the GitHub production variable CONTACT_API_URL to this value, then deploy the static site."
+                  echo "Set the GitHub production variable API_URL to this value, then deploy the static site."

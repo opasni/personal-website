@@ -56,7 +56,7 @@ export class ContactComponent extends ThemeComponent implements OnInit {
     private readonly _destroyRef = inject(DestroyRef);
 
     ngOnInit(): void {
-        this.emailForm.getControl('languageId').setValue(this._translateService.currentLang);
+        this.emailForm.getControl('languageId').setValue(this._translateService.currentLang());
     }
 
     onSubmit(): void {

@@ -18,6 +18,7 @@ export const routes: Routes = [
                 data: { privacy: true },
                 loadComponent: async () => (await import('@pages/legal/legal.component')).LegalComponent,
             },
+            { path: 'impressum', redirectTo: 'imprint', pathMatch: 'full' },
             { path: 'datenschutz', redirectTo: 'privacy', pathMatch: 'full' },
             {
                 path: '',

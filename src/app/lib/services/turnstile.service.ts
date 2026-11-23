@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Injectable, inject } from '@angular/core';
+import { Service, inject } from '@angular/core';
 
 export interface TurnstileOptions {
     sitekey: string;
@@ -19,7 +19,7 @@ export interface TurnstileApi {
     remove(widgetId: string): void;
 }
 
-@Injectable({ providedIn: 'root' })
+@Service()
 export class TurnstileService {
     private readonly _document = inject(DOCUMENT);
     private _loading?: Promise<TurnstileApi>;

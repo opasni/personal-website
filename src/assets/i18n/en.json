@@ -199,7 +199,7 @@
             "title": "Partner",
             "link": "8020.eco",
             "abstract": [
-                "I shape consulting strategy, capability building, delivery quality, and business development while staying close to the technical substance of our projects. My work connects executive decisions with practical engineering realities: team setup, client communication, commercial prioritization, and architecture direction.",
+                "As Partner, I combine consulting strategy, business development, and delivery responsibility with ongoing hands-on work as a tech lead and technical specialist. Architecture, implementation, and supporting engineers remain central to my work.",
                 "Recent initiatives span Catena-X data integration, Bloomfilter integrations, JobCar and Caroline for Graf Hardenberg, AI-guided automation tools, cloud hosting, and the 8020 AI Agent. Across these topics I focus on stable delivery, clear ownership, and technology choices that hold up in production."
             ],
             "skills": [
@@ -218,7 +218,8 @@
             "link": "achtzig20.si",
             "abstract": [
                 "I established and manage the Slovenian subsidiary of the 8020 group, building the local delivery foundation from student collaboration into a full company setup with office presence, recruitment, employee development, and operational structure.",
-                "The role combines people leadership, local partnerships, delivery alignment with the German parent company, and day-to-day responsibility for a healthy, reliable engineering organization."
+                "The role combines people leadership, local partnerships, delivery alignment with the German parent company, and day-to-day responsibility for a healthy, reliable engineering organization.",
+                "I established and lead the Slovenian subsidiary, building its team and operations while continuing to work as a tech lead and technical specialist on client projects."
             ],
             "skills": [
                 "Leadership",
@@ -695,7 +696,9 @@
             "work": "Explore my work",
             "contact": "Let’s talk",
             "caption": "Curious by nature. Practical by approach.",
-            "pronunciation": "One syllable. A little ə helps."
+            "pronunciation": "One syllable. A little ə helps.",
+            "partner-role": "Partner · Technical leadership",
+            "director-role": "Managing Director · Hands-on engineering"
         },
         "expertise": {
             "title": "From the big picture to the details.",
@@ -751,11 +754,11 @@
         },
         "experience": {
             "title": "An engineer’s mindset. A leader’s responsibility.",
-            "intro": "My roles have expanded from research and software development to technical leadership and company building. Hands-on work remains part of the picture."
+            "intro": "Technical leadership has been a constant throughout my career. Alongside my responsibilities as managing director and later Partner, I have continued working hands-on as a tech lead and technical specialist: designing systems, writing software, solving difficult problems, and guiding engineering teams."
         },
         "roles": {
-            "8020": "Shaping consulting strategy, delivery quality, and business development while staying involved in architecture and engineering decisions.",
-            "achtzig20si": "Established and lead the Slovenian subsidiary, growing a student collaboration into a company with its own team, office, and operations.",
+            "8020": "As Partner, I combine consulting strategy, business development, and delivery responsibility with ongoing hands-on work as a tech lead and technical specialist. Architecture, implementation, and supporting engineers remain central to my work.",
+            "achtzig20si": "I established and lead the Slovenian subsidiary, building its team and operations while continuing to work as a tech lead and technical specialist on client projects.",
             "achtzig20": "Led architecture and delivery across enterprise, web, mobile, cloud, and data projects, alongside implementation and mentoring."
         },
         "foundation": {
@@ -791,7 +794,7 @@
         "email": "Email",
         "email-pending": "Public contact address to be confirmed before publication.",
         "footer-nav": "Legal information and further links",
-        "draft": "Draft for review: the public email address, message handling, retention periods and international transfer arrangements still need confirmation before publication.",
+        "draft": "Draft for review: retention settings and international transfer arrangements still need confirmation before publication.",
         "imprint": {
             "title": "Legal notice / Impressum",
             "intro": "Information about the operator of this website.",
@@ -837,7 +840,7 @@
             },
             "retention": {
                 "title": "How long data is kept",
-                "body": "The final notice must specify the actual retention periods or concrete deletion criteria for contact messages, receiving mailboxes, any database, backups and access/security logs. These operational settings have not yet been confirmed. Browser preferences remain until changed or cleared; the permission to load LinkedIn posts lasts only while this page is open. Cloudflare and LinkedIn describe their own processing and retention in their linked privacy notices."
+                "body": "Proposed retention policy, pending setup: routine contact enquiries are deleted within 12 months of the last exchange. Correspondence needed for an ongoing engagement, legal obligations or legal claims is retained for the applicable purpose and period. AWS access and application logs are kept for 30 days. These periods must be configured and applied before this notice is published. Browser preferences remain until changed or cleared; LinkedIn embed permission lasts only for the current page visit."
             },
             "rights": {
                 "title": "Your rights and questions",

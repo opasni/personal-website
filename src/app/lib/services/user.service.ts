@@ -1,15 +1,13 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable, inject } from '@angular/core';
+import { Service, inject } from '@angular/core';
 import { Observable, map, shareReplay } from 'rxjs';
 import { environment } from '@env/environment';
 import { User } from '@lib/classes/user.class';
 import { StorageKeys } from '@lib/enums/storage-keys.enum';
 
-@Injectable({
-    providedIn: 'root',
-})
+@Service()
 export class UserApiService {
-    private _url = environment.api + '/user';
+    private _url = environment.apiUrl + '/user';
     private _http = inject(HttpClient);
 
     userData$: Observable<User> | null = null;

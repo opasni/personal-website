@@ -66,5 +66,5 @@ Resources:
 
 Outputs:
     ContactApiUrl:
-        Description: Copy this URL into the CONTACT_API_URL GitHub Actions variable.
-        Value: !Sub 'https://${ContactApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}/contact'
+        Description: Copy this URL into the API_URL GitHub Actions variable.
+        Value: !Sub 'https://${ContactApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}'

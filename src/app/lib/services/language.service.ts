@@ -57,7 +57,9 @@ export class LanguageService {
         localStorage.removeItem(StorageKeys.SELECTED_LANGUAGE);
         localStorage.setItem(StorageKeys.SELECTED_LANGUAGE, language);
         await this._registerLocale(language);
-        await this._refreshApplicationLocaleId();
+        if (!this._destroyRef.destroyed) {
+            await this._refreshApplicationLocaleId();
+        }
     }
 
     private async _registerLocale(language: Language) {

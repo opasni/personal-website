@@ -199,7 +199,7 @@
             "title": "Partner",
             "link": "8020.eco",
             "abstract": [
-                "Als Partner bei der 8020 Consulting GmbH spiele ich eine entscheidende Rolle bei der Gestaltung der strategischen Ausrichtung des Unternehmens und beim Vorantreiben seines Wachstums. Zu meinen Aufgaben gehören das Management wichtiger Kundenbeziehungen, die Überwachung der Projektdurchführung und die Sicherstellung der Ausrichtung unserer Dienstleistungen an den Marktanforderungen. Ich nutze meine umfangreiche Erfahrung in Softwareentwicklung, Projektmanagement und technischer Leitung, um unsere Teams bei der Bereitstellung hochwertiger Lösungen zu unterstützen, die den Bedürfnissen unserer Kunden entsprechen.",
+                "Als Partner verbinde ich Beratungsstrategie, Geschäftsentwicklung und Verantwortung für die Umsetzung mit meiner fortlaufenden praktischen Arbeit als Tech Lead und technischer Spezialist. Architektur, Implementierung und die Unterstützung von Entwicklern bleiben zentrale Aufgaben.",
                 "Mein Weg bei der 8020 Consulting GmbH war geprägt von kontinuierlichem Lernen und Innovation. Ich hatte die Gelegenheit, an vielfältigen Projekten in verschiedenen Branchen zu arbeiten und mit talentierten Fachleuten zusammenzuarbeiten, um wirkungsvolle Lösungen zu schaffen. Mein Engagement für Exzellenz und meine Leidenschaft für Technologie treiben mich an, kontinuierlich nach neuen Herausforderungen und Wachstumschancen zu suchen."
             ],
             "skills": [
@@ -217,7 +217,8 @@
             "title": "CEO",
             "link": "achtzig20.si",
             "abstract": [
-                "Als CEO der Achtzig20 d.o.o. habe ich eine entscheidende Rolle beim Wachstum und Erfolg des Unternehmens gespielt. Alles begann mit Werkstudenten vom e-Študentski Servis, die für die Achtzig20 GmbH tätig wurden. Im Laufe der Zeit erweiterten wir unser Team um Vollzeitmitarbeiter und eröffneten ein schönes Büro im Stadtzentrum von Ljubljana. Wir haben bedeutende Meilensteine erreicht, darunter die Gründung der Achtzig20 d.o.o. als Tochtergesellschaft. Gemeinsam haben wir eine starke und florierende Organisation aufgebaut, angetrieben von unserer Leidenschaft für Exzellenz und unserem Engagement, außergewöhnliche Dienstleistungen zu erbringen."
+                "Als CEO der Achtzig20 d.o.o. habe ich eine entscheidende Rolle beim Wachstum und Erfolg des Unternehmens gespielt. Alles begann mit Werkstudenten vom e-Študentski Servis, die für die Achtzig20 GmbH tätig wurden. Im Laufe der Zeit erweiterten wir unser Team um Vollzeitmitarbeiter und eröffneten ein schönes Büro im Stadtzentrum von Ljubljana. Wir haben bedeutende Meilensteine erreicht, darunter die Gründung der Achtzig20 d.o.o. als Tochtergesellschaft. Gemeinsam haben wir eine starke und florierende Organisation aufgebaut, angetrieben von unserer Leidenschaft für Exzellenz und unserem Engagement, außergewöhnliche Dienstleistungen zu erbringen.",
+                "Ich habe die slowenische Tochtergesellschaft gegründet und führe ihr Team und ihren Betrieb. Parallel arbeite ich weiterhin als Tech Lead und technischer Spezialist in Kundenprojekten."
             ],
             "skills": [
                 "Führung",
@@ -696,7 +697,9 @@
             "work": "Projekte entdecken",
             "contact": "Ins Gespräch kommen",
             "caption": "Neugierig im Denken. Pragmatisch im Handeln.",
-            "pronunciation": "Eine Silbe. Ein kleines ə hilft."
+            "pronunciation": "Eine Silbe. Ein kleines ə hilft.",
+            "partner-role": "Partner · Technische Führung",
+            "director-role": "Geschäftsführer · Praktische Entwicklung"
         },
         "expertise": {
             "title": "Vom großen Ganzen bis ins Detail.",
@@ -752,11 +755,11 @@
         },
         "experience": {
             "title": "Als Entwickler denken. Als Führungskraft handeln.",
-            "intro": "Mein Weg führte von Forschung und Softwareentwicklung zu technischer Führung und Unternehmensaufbau. Die praktische Arbeit ist dabei geblieben."
+            "intro": "Technische Führung zieht sich durch meine gesamte Laufbahn. Parallel zu meinen Aufgaben als Geschäftsführer und später als Partner habe ich durchgehend praktisch als Tech Lead und technischer Spezialist gearbeitet: Systeme entwerfen, Software entwickeln, komplexe Probleme lösen und Entwicklungsteams begleiten."
         },
         "roles": {
-            "8020": "Beratungsstrategie, Lieferqualität und Geschäftsentwicklung gestalten – mit direkter Beteiligung an Architektur- und Entwicklungsentscheidungen.",
-            "achtzig20si": "Die slowenische Tochtergesellschaft gegründet und aufgebaut: aus einer Zusammenarbeit mit Studierenden wurde ein Unternehmen mit eigenem Team, Büro und Betrieb.",
+            "8020": "Als Partner verbinde ich Beratungsstrategie, Geschäftsentwicklung und Verantwortung für die Umsetzung mit meiner fortlaufenden praktischen Arbeit als Tech Lead und technischer Spezialist. Architektur, Implementierung und die Unterstützung von Entwicklern bleiben zentrale Aufgaben.",
+            "achtzig20si": "Ich habe die slowenische Tochtergesellschaft gegründet und führe ihr Team und ihren Betrieb. Parallel arbeite ich weiterhin als Tech Lead und technischer Spezialist in Kundenprojekten.",
             "achtzig20": "Architektur und Umsetzung für Unternehmenssoftware, Web, Mobile, Cloud und Datenprojekte verantwortet – einschließlich eigener Entwicklung und Mentoring."
         },
         "foundation": {
@@ -792,7 +795,7 @@
         "email": "E-Mail",
         "email-pending": "Die öffentliche Kontaktadresse wird vor der Veröffentlichung ergänzt.",
         "footer-nav": "Rechtliche Informationen und weitere Links",
-        "draft": "Entwurf zur Prüfung: Die öffentliche E-Mail-Adresse, die Verarbeitung von Nachrichten, Speicherfristen und Regelungen für internationale Datenübermittlungen müssen vor der Veröffentlichung noch bestätigt werden.",
+        "draft": "Entwurf zur Prüfung: Speicherfristen und Regelungen für internationale Datenübermittlungen müssen vor der Veröffentlichung noch bestätigt werden.",
         "imprint": {
             "title": "Impressum",
             "intro": "Angaben zum Betreiber dieser Website.",
@@ -838,7 +841,7 @@
             },
             "retention": {
                 "title": "Speicherdauer",
-                "body": "Die endgültige Erklärung muss die tatsächlichen Fristen oder konkreten Löschkriterien für Kontaktanfragen, Postfächer, mögliche Datenbanken, Sicherungskopien sowie Zugriffs- und Sicherheitsprotokolle angeben. Diese betrieblichen Einstellungen sind noch nicht bestätigt. Browsereinstellungen bleiben bis zur Änderung oder Löschung gespeichert; die Erlaubnis zum Laden von LinkedIn-Beiträgen gilt nur während des Aufenthalts auf dieser Seite. Cloudflare und LinkedIn erläutern ihre eigene Verarbeitung und Speicherdauer in den verlinkten Datenschutzhinweisen."
+                "body": "Vorgesehene Speicherfristen, noch einzurichten: allgemeine Kontaktanfragen werden innerhalb von 12 Monaten nach dem letzten Austausch gelöscht. Korrespondenz für laufende Aufträge, gesetzliche Pflichten oder Rechtsansprüche bleibt für den jeweiligen Zweck und Zeitraum gespeichert. AWS-Zugriffs- und Anwendungsprotokolle werden 30 Tage aufbewahrt. Diese Fristen müssen vor Veröffentlichung eingerichtet und umgesetzt werden. Browsereinstellungen bleiben bis zur Änderung oder Löschung gespeichert; die Erlaubnis für LinkedIn-Einbettungen gilt nur für den aktuellen Seitenbesuch."
             },
             "rights": {
                 "title": "Ihre Rechte und Fragen",

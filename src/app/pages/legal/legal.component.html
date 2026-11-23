@@ -5,9 +5,6 @@
         <h1>{{ (privacy ? 'legal.privacy.title' : 'legal.imprint.title') | translate }}</h1>
         <p class="intro">{{ (privacy ? 'legal.privacy.intro' : 'legal.imprint.intro') | translate }}</p>
     </header>
-    @if (profile.reviewPending) {
-        <aside class="draft-note" role="note">{{ 'legal.draft' | translate }}</aside>
-    }
     <section aria-labelledby="operator-heading">
         <h2 id="operator-heading">
             {{ (privacy ? 'legal.privacy.controller' : 'legal.imprint.operator') | translate }}
@@ -98,7 +95,7 @@
             </section>
         }
         <p>
-            <a routerLink="/impressum">{{ 'legal.imprint.title' | translate }}</a>
+            <a routerLink="/imprint">{{ 'legal.imprint.title' | translate }}</a>
         </p>
     }
 </article>

@@ -1,5 +1,4 @@
-// Business details cross-checked against public listings; see docs/legal-and-turnstile.md.
-// Keep the notices marked as drafts until the remaining operational facts are confirmed.
+// Business details cross-checked against public listings.
 export const LEGAL_PROFILE = {
     name: 'Črt Harej s.p., IT storitve in razvoj programske opreme',
     owner: 'Črt Harej',
@@ -8,6 +7,5 @@ export const LEGAL_PROFILE = {
     registration: '7395400000',
     taxNumber: '17027080',
     vatId: 'SI17027080',
-    email: '',
-    reviewPending: true,
+    email: 'contact@crtharej.com',
 } as const;
