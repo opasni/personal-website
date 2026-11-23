@@ -650,5 +650,120 @@
             "profile": "Profilna Slika"
         }
     },
-    "insert-password": "Vnesite Geslo"
+    "insert-password": "Vnesite Geslo",
+    "home": {
+        "skip": "Preskoči na vsebino",
+        "menu": "Meni",
+        "close": "Zapri",
+        "navigation": "Glavna navigacija",
+        "language": "Jezik",
+        "technologies": "Tehnologije in kompetence",
+        "credentials": "Potrjeno znanje",
+        "project-details": "Moj prispevek",
+        "nav": {
+            "about": "O meni",
+            "expertise": "Znanje",
+            "work": "Projekti",
+            "experience": "Izkušnje",
+            "personal": "Osebno",
+            "contact": "Kontakt"
+        },
+        "hero": {
+            "role": "Razvijalec, arhitekt in vodja",
+            "title": "Tehnična globina.",
+            "title-accent": "Širši pogled.",
+            "intro": "Kompleksne probleme pretvarjam v programsko opremo, ki deluje v praksi. Povezujem razvoj, arhitekturo v oblaku ter ljudi in odločitve, ki omogočajo izvedbo.",
+            "work": "Raziščite moje delo",
+            "contact": "Pogovorimo se",
+            "caption": "Radoveden po naravi. Praktičen pri delu.",
+            "pronunciation": "En zlog. Majhen ə pomaga."
+        },
+        "expertise": {
+            "title": "Od celotne slike do podrobnosti.",
+            "intro": "Delujem na različnih področjih in ostajam blizu izvedbi. Povezujem poslovne potrebe, tehnične odločitve in ekipe, ki jih uresničujejo.",
+            "architecture": {
+                "title": "Arhitektura in oblak",
+                "text": "Načrtovanje in upravljanje zanesljivih platform: porazdeljene storitve, integracije, infrastruktura in orodja za stabilno produkcijsko okolje."
+            },
+            "engineering": {
+                "title": "Praktičen razvoj programske opreme",
+                "text": "Razvoj zalednih, spletnih in mobilnih rešitev – od API-jev in podatkovnih modelov do vmesnikov, avtomatiziranih testov in namestitve."
+            },
+            "data": {
+                "title": "Podatki in uporabna umetna inteligenca",
+                "text": "Pretvarjanje podatkov v uporabna orodja s procesnim rudarjenjem, analitiko, delovnimi tokovi z umetno inteligenco in integracijami s poslovnimi sistemi."
+            },
+            "leadership": {
+                "title": "Ljudje in izvedba",
+                "text": "Gradnja ekip in podjetja, usmerjanje tehničnega razvoja, sodelovanje s strankami in podpora strokovni rasti razvijalcev.",
+                "tags": ["Vodenje ekip", "Strategija", "Mentorstvo", "Sodelovanje s strankami"]
+            }
+        },
+        "work": {
+            "title": "Različni izzivi. Odgovornost za rezultat.",
+            "intro": "Izbor projektov s področij mobilnosti, poslovne programske opreme, umetne inteligence, analitike in trgovine. Moj prispevek sega od arhitekture in razvoja do obratovanja.",
+            "more": "Vsi projekti in poklicne izkušnje"
+        },
+        "projects": {
+            "job-car": {
+                "category": "Produkt in oblak",
+                "summary": "Platforma za leasing vozil – od arhitekture in uporabniške izkušnje do celovitega razvoja, obratovanja v oblaku in testiranja od začetka do konca."
+            },
+            "squadcheck": {
+                "category": "Poslovna programska oprema in UI",
+                "summary": "Interna platforma za ljudi, projekte in proračune z integracijo MCP, ki njene funkcije povezuje z internim agentom Copilot."
+            },
+            "audi-frequency": {
+                "category": "Mobilni razvoj in uporabna fizika",
+                "summary": "Večplatformska aplikacija za analizo zvočnih frekvenc, dostop do podatkov vozil in delo tehnikov brez internetne povezave."
+            },
+            "vw-ai": {
+                "category": "Uporabna umetna inteligenca",
+                "summary": "Orodja za avtomatizacijo logističnih podatkov in dokumentov, vključno s preslikavo preglednic, pretvorbo poročil in pripravo navodil."
+            },
+            "scania": {
+                "category": "Podatki in procesno rudarjenje",
+                "summary": "Povezovanje razpršenih podatkov za odkrivanje ozkih grl in podporo izboljšavam procesa od naročila do dostave."
+            },
+            "dak": {
+                "category": "Trgovina in avtomatizacija",
+                "summary": "Veleprodajni in maloprodajni sistemi, ki povezujejo plačila, proizvodne procese in avtomatizacijo pošiljanja z zanesljivim gostovanjem v oblaku."
+            }
+        },
+        "experience": {
+            "title": "Razmišljanje inženirja. Odgovornost vodje.",
+            "intro": "Moja pot se je razširila od raziskovanja in razvoja programske opreme do tehničnega vodenja in gradnje podjetja. Praktično delo ostaja njen del."
+        },
+        "roles": {
+            "8020": "Oblikovanje svetovalne strategije, kakovosti izvedbe in poslovnega razvoja ob neposredni vključenosti v arhitekturne in razvojne odločitve.",
+            "achtzig20si": "Ustanovitev in vodenje slovenske podružnice: iz sodelovanja s študenti je zraslo podjetje z lastno ekipo, pisarno in operativno strukturo.",
+            "achtzig20": "Vodenje arhitekture in izvedbe poslovnih, spletnih, mobilnih, oblačnih in podatkovnih projektov, skupaj z razvojem in mentorstvom."
+        },
+        "foundation": {
+            "label": "Temelji",
+            "title": "Izobrazba iz fizike. Veselje do zahtevnih problemov.",
+            "text": "Matematična fizika in raziskovanje sta oblikovala moj pristop k razvoju: razumeti sistem, preveriti predpostavke in preizkusiti ideje na podlagi dokazov.",
+            "more": "Izobrazba in raziskovanje"
+        },
+        "personal": {
+            "title": "Radovednost se ne konča pri delu.",
+            "intro": "Sem več kot sistemi, ki jih razvijam. Potovanja, glasba in čas na prostem so prav tako del mojega življenja.",
+            "travel-title": "Širši pogled",
+            "travel": "Veliko sem potoval in rad odkrivam neznane kraje ter drugačne načine življenja. Ta radovednost spremlja tudi moje delo z mednarodnimi ekipami.",
+            "camino": "Camino Francés mi je dal čas zase, stran od hitrega vsakdana, da sem razmislil in znova ovrednotil, kaj zares šteje. Bil je tudi izkušnja vztrajnosti: ko vse boli in imaš občutek, da ti ne uspeva, vstani in poskusi znova.",
+            "offline-title": "Stran od tipkovnice",
+            "offline": "Petje, igranje kitare, plezanje, tek in partija šaha mi ponujajo drugačne načine preživljanja časa in učenja."
+        },
+        "contact": {
+            "title": "Ustvarimo nekaj uporabnega.",
+            "intro": "Imate tehnični izziv, projekt ali idejo, o kateri bi se bilo vredno pogovoriti? Vesel bom vašega sporočila.",
+            "linkedin": "Povežimo se na LinkedInu",
+            "cv": "Ogled življenjepisa",
+            "write": "Raje pošljete sporočilo? Pišite mi tukaj."
+        },
+        "footer": {
+            "notes": "Objave na LinkedInu",
+            "top": "Na vrh"
+        }
+    }
 }

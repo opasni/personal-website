@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 
-import { ScrollDetectDirective } from '@lib/directives/scroll-detect/scroll-detect.directive';
 import { ThemeComponent } from '@lib/abstracts/theme.component';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -11,7 +10,7 @@ import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
     templateUrl: './experience.component.html',
     styleUrls: ['./experience.component.scss'],
     changeDetection: ChangeDetectionStrategy.Eager,
-    imports: [CommonModule, NgbAccordionModule, TranslatePipe, ScrollDetectDirective],
+    imports: [CommonModule, NgbAccordionModule, TranslatePipe],
 })
 export class ExperienceComponent extends ThemeComponent {
     readonly highlightedProjects = [

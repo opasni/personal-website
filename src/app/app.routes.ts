@@ -9,14 +9,13 @@ export const routes: Routes = [
         children: [
             {
                 path: '',
-                redirectTo: 'about',
-                pathMatch: 'full',
+                title: 'Črt Harej — Engineering, Architecture & Leadership',
+                loadComponent: async () => (await import('@pages/home/home.component')).HomeComponent,
             },
             {
                 path: 'about',
-                title: 'Črt Harej - About Me',
-                loadComponent: async () => (await import('@pages/about/about.component')).AboutComponent,
-                data: { animation: 0 },
+                redirectTo: '/#about',
+                pathMatch: 'full',
             },
             {
                 path: 'skills',

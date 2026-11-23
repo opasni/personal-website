@@ -1,21 +1,20 @@
-<div
-    appScrollDetect
-    class="container"
-    [animate.enter]="routeTransition.enterClass()"
-    [animate.leave]="routeTransition.leaveClass()"
->
+<div class="container" [class.embedded]="embedded">
     @if (selectedTheme(); as theme) {
-        <div class="header">
-            <h1>
-                {{ 'contact.title' | translate }}
-            </h1>
-        </div>
+        @if (!embedded) {
+            <div class="header">
+                <h1>
+                    {{ 'contact.title' | translate }}
+                </h1>
+            </div>
+        }
         <div class="body">
             <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
                 <div class="form-group mt-1 mb-3">
                     <label for="inputName">{{ 'contact.full-name.label' | translate }}</label>
                     <input
                         type="text"
+                        autocomplete="name"
+                        id="inputName"
                         name="name"
                         formControlName="name"
                         class="form-control"
@@ -24,7 +23,6 @@
                             'bg-dark': theme === 'dark',
                             'is-invalid': submitted() && emailForm.getControl('name').invalid,
                         }"
-                        aria-describedby="nameHelp"
                         [placeholder]="'contact.full-name.placeholder' | translate"
                     />
                     @if (submitted() && emailForm.getControl('name').invalid) {
@@ -39,6 +37,8 @@
                     <label for="inputEmail">{{ 'contact.email.label' | translate }}</label>
                     <input
                         type="email"
+                        autocomplete="email"
+                        id="inputEmail"
                         name="replyto"
                         formControlName="replyto"
                         class="form-control"
@@ -65,6 +65,7 @@
                 <div class="form-group mt-1 mb-3">
                     <label for="inputSubject">{{ 'contact.subject.label' | translate }}</label>
                     <select
+                        id="inputSubject"
                         name="subject"
                         formControlName="subject"
                         class="form-select"
@@ -109,9 +110,10 @@
                             'bg-dark': theme === 'dark',
                             'is-invalid': submitted() && emailForm.getControl('message').invalid,
                         }"
+                        id="inputMessage"
                         name="message"
                         formControlName="message"
-                        rows="9"
+                        rows="5"
                         [placeholder]="'contact.message.placeholder' | translate"
                     ></textarea>
                     @if (submitted() && emailForm.getControl('message').invalid) {

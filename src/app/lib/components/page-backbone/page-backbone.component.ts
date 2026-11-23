@@ -1,9 +1,7 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-import { RouterModule } from '@angular/router';
-
+import { ViewportScroller } from '@angular/common';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import { ThemeComponent } from '@lib/abstracts/theme.component';
-import { CommonModule } from '@angular/common';
-import { GaugeComponent } from '@lib/components/gauge/gauge.component';
 import { HeaderComponent } from '@lib/components/header/header.component';
 
 @Component({
@@ -11,14 +9,14 @@ import { HeaderComponent } from '@lib/components/header/header.component';
     templateUrl: './page-backbone.component.html',
     styleUrls: ['./page-backbone.component.scss'],
     changeDetection: ChangeDetectionStrategy.Eager,
-    imports: [CommonModule, GaugeComponent, HeaderComponent, RouterModule],
+    imports: [HeaderComponent, RouterOutlet],
 })
-export class PageBackboneComponent extends ThemeComponent implements OnInit {
-    ngOnInit(): void {
-        document.body.style.overflowY = 'hidden';
-    }
-
-    scrollToTop(container: HTMLElement): void {
-        container.scrollTo({ top: 0, left: 0 });
+export class PageBackboneComponent extends ThemeComponent {
+    constructor() {
+        super();
+        inject(ViewportScroller).setOffset(() => [
+            0,
+            (document.querySelector('app-header')?.getBoundingClientRect().height ?? 84) + 20,
+        ]);
     }
 }

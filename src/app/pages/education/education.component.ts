@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 
-import { ScrollDetectDirective } from '@lib/directives/scroll-detect/scroll-detect.directive';
 import { ThemeComponent } from '@lib/abstracts/theme.component';
 import { Lookup } from '@lib/classes/lookup.class';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
@@ -12,7 +11,7 @@ import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
     templateUrl: './education.component.html',
     styleUrls: ['./education.component.scss'],
     changeDetection: ChangeDetectionStrategy.Eager,
-    imports: [NgbAccordionModule, CommonModule, TranslatePipe, ScrollDetectDirective],
+    imports: [NgbAccordionModule, CommonModule, TranslatePipe],
 })
 export class EducationComponent extends ThemeComponent {
     public publications: Lookup[] = [

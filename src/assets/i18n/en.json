@@ -656,5 +656,120 @@
             "profile": "Profile picture"
         }
     },
-    "insert-password": "Insert Password"
+    "insert-password": "Insert Password",
+    "home": {
+        "skip": "Skip to content",
+        "menu": "Menu",
+        "close": "Close",
+        "navigation": "Main navigation",
+        "language": "Language",
+        "technologies": "Technologies and capabilities",
+        "credentials": "Certified expertise",
+        "project-details": "What I built",
+        "nav": {
+            "about": "About",
+            "expertise": "Expertise",
+            "work": "Work",
+            "experience": "Experience",
+            "personal": "Beyond work",
+            "contact": "Contact"
+        },
+        "hero": {
+            "role": "Engineer, architect & leader",
+            "title": "Technical depth.",
+            "title-accent": "A broader perspective.",
+            "intro": "I turn complex problems into software that works in the real world. My work connects hands-on engineering, cloud architecture, and the people and decisions behind delivery.",
+            "work": "Explore my work",
+            "contact": "Let’s talk",
+            "caption": "Curious by nature. Practical by approach.",
+            "pronunciation": "One syllable. A little ə helps."
+        },
+        "expertise": {
+            "title": "From the big picture to the details.",
+            "intro": "I work across disciplines and stay close to the implementation. That means connecting business needs, technical decisions, and the teams who bring them to life.",
+            "architecture": {
+                "title": "Architecture & cloud",
+                "text": "Designing and operating reliable platforms: distributed services, integrations, infrastructure, and the tools to keep production healthy."
+            },
+            "engineering": {
+                "title": "Hands-on engineering",
+                "text": "Building across backend, web, and mobile—from APIs and data models to interfaces, automated tests, and deployment."
+            },
+            "data": {
+                "title": "Data & applied AI",
+                "text": "Turning data into useful tools through process mining, analytics, AI-assisted workflows, and integrations with business systems."
+            },
+            "leadership": {
+                "title": "People & delivery",
+                "text": "Building teams and a company, shaping technical direction, working with clients, and helping engineers grow.",
+                "tags": ["Team leadership", "Strategy", "Mentoring", "Client collaboration"]
+            }
+        },
+        "work": {
+            "title": "Different challenges. Shared ownership.",
+            "intro": "A selection of work across mobility, enterprise software, AI, analytics, and commerce. My involvement spans architecture, implementation, and operation.",
+            "more": "Explore the full project & career history"
+        },
+        "projects": {
+            "job-car": {
+                "category": "Product & cloud",
+                "summary": "A vehicle leasing platform, from architecture and user experience to full-stack implementation, cloud operations, and end-to-end testing."
+            },
+            "squadcheck": {
+                "category": "Enterprise & AI integration",
+                "summary": "An internal platform for people, projects, and budgets, with an MCP integration connecting its capabilities to an internal Copilot agent."
+            },
+            "audi-frequency": {
+                "category": "Mobile & applied physics",
+                "summary": "A cross-platform app that brings acoustic frequency analysis, vehicle data, and offline workflows into technicians’ hands."
+            },
+            "vw-ai": {
+                "category": "Applied AI",
+                "summary": "Tools that automate logistics data and document work, including spreadsheet mapping, report transformation, and tutorial generation."
+            },
+            "scania": {
+                "category": "Data & process mining",
+                "summary": "Connecting distributed data to reveal bottlenecks and support improvements in the order-to-delivery process."
+            },
+            "dak": {
+                "category": "Commerce & automation",
+                "summary": "Wholesale and retail systems connecting payments, production workflows, and shipping automation with reliable cloud hosting."
+            }
+        },
+        "experience": {
+            "title": "An engineer’s mindset. A leader’s responsibility.",
+            "intro": "My roles have expanded from research and software development to technical leadership and company building. Hands-on work remains part of the picture."
+        },
+        "roles": {
+            "8020": "Shaping consulting strategy, delivery quality, and business development while staying involved in architecture and engineering decisions.",
+            "achtzig20si": "Established and lead the Slovenian subsidiary, growing a student collaboration into a company with its own team, office, and operations.",
+            "achtzig20": "Led architecture and delivery across enterprise, web, mobile, cloud, and data projects, alongside implementation and mentoring."
+        },
+        "foundation": {
+            "label": "The foundation",
+            "title": "Trained in physics. Drawn to difficult problems.",
+            "text": "My background in mathematical physics and research shaped how I approach engineering: understand the system, question assumptions, and test ideas against evidence.",
+            "more": "Education & research"
+        },
+        "personal": {
+            "title": "Curiosity doesn’t stop at work.",
+            "intro": "There is more to me than the systems I build. Travel, music, and time outdoors are also part of my life.",
+            "travel-title": "A wider view",
+            "travel": "I’ve travelled extensively and enjoy discovering unfamiliar places and different ways of life. That curiosity sits alongside my work with international teams.",
+            "camino": "Walking the Camino Francés gave me time away from a busy life to reflect and re-evaluate what really matters. It was also an experience in endurance: when everything hurts and you feel like you’re failing, get up and try again.",
+            "offline-title": "Away from the keyboard",
+            "offline": "Singing, playing guitar, climbing, running, and a game of chess give me different ways to spend my time and keep learning."
+        },
+        "contact": {
+            "title": "Let’s make something useful.",
+            "intro": "Have a technical challenge, a project in mind, or an idea worth discussing? I’d be happy to hear from you.",
+            "linkedin": "Connect on LinkedIn",
+            "cv": "View my CV",
+            "write": "Prefer a message? Write to me here."
+        },
+        "footer": {
+            "notes": "Notes on LinkedIn",
+            "top": "Back to top"
+        }
+    }
 }

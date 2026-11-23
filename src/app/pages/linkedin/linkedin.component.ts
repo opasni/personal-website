@@ -4,7 +4,6 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { TranslatePipe } from '@ngx-translate/core';
 
 import { ThemeComponent } from '@lib/abstracts/theme.component';
-import { ScrollDetectDirective } from '@lib/directives/scroll-detect/scroll-detect.directive';
 
 import { LINKEDIN_POSTS } from './linkedin-posts.const';
 
@@ -13,7 +12,7 @@ import { LINKEDIN_POSTS } from './linkedin-posts.const';
     templateUrl: './linkedin.component.html',
     styleUrls: ['./linkedin.component.scss'],
     changeDetection: ChangeDetectionStrategy.Eager,
-    imports: [CommonModule, TranslatePipe, ScrollDetectDirective],
+    imports: [CommonModule, TranslatePipe],
 })
 export class LinkedinComponent extends ThemeComponent {
     private _sanitizer = inject(DomSanitizer);

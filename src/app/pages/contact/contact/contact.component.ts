@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewChild, inject, signal, ChangeDetectionStrategy } from '@angular/core';
+import { Component, Input, OnInit, ViewChild, inject, signal, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { catchError, finalize, firstValueFrom, of, tap } from 'rxjs';
 import { RecaptchaComponent, RecaptchaModule } from 'ng-recaptcha-2';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
@@ -13,7 +13,6 @@ import { ContactPurpose } from '@lib/enums/contact-purpose.enum';
 import { ThemeComponent } from '@lib/abstracts/theme.component';
 import { EmailService } from '@lib/services/email.service';
 import { FilterErrorPipe } from '@lib/pipes/filter-error/filter-error.pipe';
-import { ScrollDetectDirective } from '@lib/directives/scroll-detect/scroll-detect.directive';
 
 class FormGroupAccessor<T> extends FormGroup {
     getControl(key: keyof T): FormControl<any> {
@@ -26,16 +25,11 @@ class FormGroupAccessor<T> extends FormGroup {
     templateUrl: './contact.component.html',
     styleUrls: ['./contact.component.scss'],
     changeDetection: ChangeDetectionStrategy.Eager,
-    imports: [
-        CommonModule,
-        FilterErrorPipe,
-        ReactiveFormsModule,
-        RecaptchaModule,
-        ScrollDetectDirective,
-        TranslatePipe,
-    ],
+    imports: [CommonModule, FilterErrorPipe, ReactiveFormsModule, RecaptchaModule, TranslatePipe],
 })
 export class ContactComponent extends ThemeComponent implements OnInit {
+    @Input() embedded = false;
+
     @ViewChild(RecaptchaComponent) recaptcha!: RecaptchaComponent;
 
     public emailForm = new FormGroupAccessor<Contact>({
@@ -58,7 +52,6 @@ export class ContactComponent extends ThemeComponent implements OnInit {
     private _contactService = inject(EmailService);
     private _translateService = inject(TranslateService);
     private _router = inject(Router);
-    private _route = inject(ActivatedRoute);
 
     ngOnInit(): void {
         this.emailForm.getControl('languageId').setValue(this._translateService.currentLang);
@@ -85,7 +78,7 @@ export class ContactComponent extends ThemeComponent implements OnInit {
         await firstValueFrom(
             this._contactService.sendEmail(contactData).pipe(
                 tap(() => {
-                    this._router.navigate(['success'], { relativeTo: this._route });
+                    this._router.navigate(['/contact/success']);
                 }),
                 catchError(() => {
                     this.fail.set(true);

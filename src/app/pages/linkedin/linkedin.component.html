@@ -1,9 +1,4 @@
-<div
-    appScrollDetect
-    class="container"
-    [animate.enter]="routeTransition.enterClass()"
-    [animate.leave]="routeTransition.leaveClass()"
->
+<div class="container">
     @if (selectedTheme(); as theme) {
         <div class="header">
             <h1>{{ 'linkedin.title' | translate }}</h1>
