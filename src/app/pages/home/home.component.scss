@@ -334,27 +334,56 @@ details p {
     gap: 80px;
     align-items: start;
 }
-.timeline {
-    padding-left: 27px;
-    border-left: 1px solid var(--line);
+.technical-role {
+    padding: 28px;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    background: var(--surface);
 }
-.role {
-    position: relative;
-    padding-bottom: 32px;
+.technical-role h3 {
+    font-size: 1.6rem;
 }
-.role:last-child {
-    padding-bottom: 0;
+.technical-role > p:last-child,
+.additional-role > p:last-child {
+    margin-bottom: 0;
 }
-.role::before {
-    content: '';
-    position: absolute;
-    left: -33px;
-    top: 8px;
-    width: 11px;
-    height: 11px;
-    border: 2px solid var(--accent);
-    border-radius: 50%;
-    background: var(--page-bg);
+.additional-responsibilities {
+    margin: 0 0 0 28px;
+    padding-top: 24px;
+    border-left: 2px solid var(--line);
+}
+.parallel-label {
+    padding-left: 24px;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+.parallel-roles {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    padding-left: 24px;
+}
+.additional-role {
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+.additional-role h3 {
+    font-size: 1.25rem;
+}
+@media (max-width: 700px) {
+    .parallel-roles {
+        grid-template-columns: 1fr;
+        padding-left: 16px;
+    }
+    .parallel-label {
+        padding-left: 16px;
+    }
+    .additional-responsibilities {
+        margin-left: 12px;
+    }
 }
 .role-date {
     font-size: 0.8125rem;

@@ -135,15 +135,27 @@
         <p>{{ 'home.experience.intro' | translate }}</p>
     </div>
     <div class="career-layout">
-        <div class="timeline">
-            @for (role of roles; track role.id) {
-                <article class="role">
-                    <p class="role-date">{{ role.start }} — {{ role.end || ('experience.present' | translate) }}</p>
-                    <h3>{{ 'experience.' + role.id + '.title' | translate }}</h3>
-                    <p class="company">{{ role.company }}</p>
-                    <p>{{ 'home.roles.' + role.id | translate }}</p>
-                </article>
-            }
+        <div class="career-tracks">
+            <article class="technical-role" aria-labelledby="technical-role-heading">
+                <p class="eyebrow">{{ 'home.experience.continuous' | translate }}</p>
+                <p class="role-date">11/2018 — {{ 'experience.present' | translate }}</p>
+                <h3 id="technical-role-heading">{{ 'home.experience.technical-title' | translate }}</h3>
+                <p class="company">Achtzig20 / 8020 Consulting</p>
+                <p>{{ 'home.experience.technical-description' | translate }}</p>
+            </article>
+            <div class="additional-responsibilities">
+                <p class="parallel-label">{{ 'home.experience.parallel' | translate }}</p>
+                <div class="parallel-roles">
+                    @for (role of roles; track role.id) {
+                        <article class="additional-role">
+                            <p class="role-date">{{ role.start }} — {{ 'experience.present' | translate }}</p>
+                            <h3>{{ 'experience.' + role.id + '.title' | translate }}</h3>
+                            <p class="company">{{ role.company }}</p>
+                            <p>{{ 'home.roles.' + role.id | translate }}</p>
+                        </article>
+                    }
+                </div>
+            </div>
         </div>
         <aside class="foundation" aria-labelledby="foundation-heading">
             <i class="bi bi-lightbulb" aria-hidden="true"></i>

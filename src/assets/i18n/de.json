@@ -755,11 +755,15 @@
         },
         "experience": {
             "title": "Als Entwickler denken. Als Führungskraft handeln.",
-            "intro": "Technische Führung zieht sich durch meine gesamte Laufbahn. Parallel zu meinen Aufgaben als Geschäftsführer und später als Partner habe ich durchgehend praktisch als Tech Lead und technischer Spezialist gearbeitet: Systeme entwerfen, Software entwickeln, komplexe Probleme lösen und Entwicklungsteams begleiten."
+            "intro": "Technische Führung zieht sich durch meine gesamte Laufbahn. Parallel zu meinen Aufgaben als Geschäftsführer und später als Partner habe ich durchgehend praktisch als Tech Lead und technischer Spezialist gearbeitet: Systeme entwerfen, Software entwickeln, komplexe Probleme lösen und Entwicklungsteams begleiten.",
+            "continuous": "Durchgehende technische Rolle",
+            "technical-title": "Tech Lead & technischer Spezialist",
+            "technical-description": "Praktische Arbeit an Architektur, Softwareentwicklung, komplexen Problemen und Mentoring während meiner gesamten Zeit bei Achtzig20 und 8020 Consulting. Diese Arbeit läuft parallel zu den folgenden Aufgaben weiter.",
+            "parallel": "Zusätzliche Verantwortung · parallel übernommen"
         },
         "roles": {
-            "8020": "Als Partner verbinde ich Beratungsstrategie, Geschäftsentwicklung und Verantwortung für die Umsetzung mit meiner fortlaufenden praktischen Arbeit als Tech Lead und technischer Spezialist. Architektur, Implementierung und die Unterstützung von Entwicklern bleiben zentrale Aufgaben.",
-            "achtzig20si": "Ich habe die slowenische Tochtergesellschaft gegründet und führe ihr Team und ihren Betrieb. Parallel arbeite ich weiterhin als Tech Lead und technischer Spezialist in Kundenprojekten.",
+            "8020": "Beratungsstrategie, Geschäftsentwicklung und Verantwortung für die Umsetzung – zusätzlich zu meiner fortlaufenden Arbeit als Tech Lead und technischer Spezialist.",
+            "achtzig20si": "Aufbau und Führung der slowenischen Tochtergesellschaft: Teamentwicklung, Recruiting und Unternehmensbetrieb – zusätzlich zu meiner laufenden technischen Rolle.",
             "achtzig20": "Architektur und Umsetzung für Unternehmenssoftware, Web, Mobile, Cloud und Datenprojekte verantwortet – einschließlich eigener Entwicklung und Mentoring."
         },
         "foundation": {

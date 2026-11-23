@@ -754,11 +754,15 @@
         },
         "experience": {
             "title": "An engineer’s mindset. A leader’s responsibility.",
-            "intro": "Technical leadership has been a constant throughout my career. Alongside my responsibilities as managing director and later Partner, I have continued working hands-on as a tech lead and technical specialist: designing systems, writing software, solving difficult problems, and guiding engineering teams."
+            "intro": "Technical leadership has been a constant throughout my career. Alongside my responsibilities as managing director and later Partner, I have continued working hands-on as a tech lead and technical specialist: designing systems, writing software, solving difficult problems, and guiding engineering teams.",
+            "continuous": "Continuous technical role",
+            "technical-title": "Tech Lead & Technical Specialist",
+            "technical-description": "Hands-on architecture, software engineering, complex problem-solving, and mentoring throughout my time at Achtzig20 and 8020 Consulting. This work continues alongside the responsibilities below.",
+            "parallel": "Additional responsibilities · held in parallel"
         },
         "roles": {
-            "8020": "As Partner, I combine consulting strategy, business development, and delivery responsibility with ongoing hands-on work as a tech lead and technical specialist. Architecture, implementation, and supporting engineers remain central to my work.",
-            "achtzig20si": "I established and lead the Slovenian subsidiary, building its team and operations while continuing to work as a tech lead and technical specialist on client projects.",
+            "8020": "Consulting strategy, business development, and delivery responsibility, added alongside my ongoing work as a tech lead and technical specialist.",
+            "achtzig20si": "Building and leading the Slovenian subsidiary: team development, recruitment, and company operations, alongside my ongoing technical role.",
             "achtzig20": "Led architecture and delivery across enterprise, web, mobile, cloud, and data projects, alongside implementation and mentoring."
         },
         "foundation": {

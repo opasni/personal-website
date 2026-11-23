@@ -45,9 +45,8 @@ export class HomeComponent {
         },
     ];
     readonly roles = [
-        { id: '8020', start: '09/2024', end: '', company: '8020 Consulting GmbH' },
         { id: 'achtzig20si', start: '01/2023', end: '', company: 'Achtzig20 d.o.o.' },
-        { id: 'achtzig20', start: '11/2018', end: '09/2024', company: 'Achtzig20 GmbH' },
+        { id: '8020', start: '09/2024', end: '', company: '8020 Consulting GmbH' },
     ];
     readonly languages = ['slovenian', 'english', 'german', 'italian'];
 }

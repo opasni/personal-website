@@ -748,11 +748,15 @@
         },
         "experience": {
             "title": "Razmišljanje inženirja. Odgovornost vodje.",
-            "intro": "Tehnično vodenje je stalnica moje kariere. Ob odgovornostih direktorja in pozneje partnerja sem ves čas praktično deloval kot tehnični vodja in specialist: načrtoval sisteme, razvijal programsko opremo, reševal zahtevne probleme in usmerjal razvojne ekipe."
+            "intro": "Tehnično vodenje je stalnica moje kariere. Ob odgovornostih direktorja in pozneje partnerja sem ves čas praktično deloval kot tehnični vodja in specialist: načrtoval sisteme, razvijal programsko opremo, reševal zahtevne probleme in usmerjal razvojne ekipe.",
+            "continuous": "Neprekinjena tehnična vloga",
+            "technical-title": "Tehnični vodja in specialist",
+            "technical-description": "Praktično delo na arhitekturi, razvoju programske opreme, zahtevnih problemih in mentorstvu skozi celotno obdobje pri Achtzig20 in 8020 Consulting. To delo nadaljujem vzporedno s spodnjimi odgovornostmi.",
+            "parallel": "Dodatne odgovornosti · opravljane vzporedno"
         },
         "roles": {
-            "8020": "Kot partner povezujem svetovalno strategijo, poslovni razvoj in odgovornost za izvedbo z nadaljnjim praktičnim delom tehničnega vodje in specialista. Arhitektura, razvoj in podpora razvijalcem ostajajo osrednji del mojega dela.",
-            "achtzig20si": "Ustanovil sem slovensko podružnico ter vodim njeno ekipo in poslovanje. Ob tem še naprej delujem kot tehnični vodja in specialist na projektih za naročnike.",
+            "8020": "Svetovalna strategija, poslovni razvoj in odgovornost za izvedbo kot dodatne naloge ob nadaljnjem delu tehničnega vodje in specialista.",
+            "achtzig20si": "Ustanovitev in vodenje slovenske podružnice: razvoj ekipe, zaposlovanje in poslovanje podjetja ob nadaljevanju moje tehnične vloge.",
             "achtzig20": "Vodenje arhitekture in izvedbe poslovnih, spletnih, mobilnih, oblačnih in podatkovnih projektov, skupaj z razvojem in mentorstvom."
         },
         "foundation": {
