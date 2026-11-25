@@ -1,12 +1,14 @@
+import { beforeEach, describe, expect, it } from 'vitest';
 import { TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+import { provideRouter } from '@angular/router';
+import { provideTranslateService } from '@ngx-translate/core';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            imports: [RouterTestingModule],
-            declarations: [AppComponent],
+            imports: [AppComponent],
+            providers: [provideRouter([]), provideTranslateService()],
         }).compileComponents();
     });
 
@@ -16,16 +18,16 @@ describe('AppComponent', () => {
         expect(app).toBeTruthy();
     });
 
-    it("should have as title 'website'", () => {
+    it('uses the site owner\'s name', () => {
         const fixture = TestBed.createComponent(AppComponent);
         const app = fixture.componentInstance;
-        expect(app.title).toEqual('website');
+        expect(app.title).toEqual('Črt Harej');
     });
 
-    it('should render title', () => {
+    it('renders the route outlet', () => {
         const fixture = TestBed.createComponent(AppComponent);
         fixture.detectChanges();
         const compiled = fixture.nativeElement as HTMLElement;
-        expect(compiled.querySelector('.content span')?.textContent).toContain('website app is running!');
+        expect(compiled.querySelector('router-outlet')).not.toBeNull();
     });
 });

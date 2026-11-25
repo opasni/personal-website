@@ -4,6 +4,7 @@ import tseslint from 'typescript-eslint';
 import angular from 'angular-eslint';
 import stylistic from '@stylistic/eslint-plugin';
 import prettier from 'eslint-config-prettier';
+import vitest from '@vitest/eslint-plugin';
 
 export default defineConfig([
     globalIgnores(['projects/**/*', 'e2e/**/*']),
@@ -286,6 +287,13 @@ export default defineConfig([
 
             'use-isnan': 'error',
             'valid-typeof': 'off',
+        },
+    },
+    {
+        files: ['**/*.spec.ts'],
+        plugins: { vitest },
+        rules: {
+            ...vitest.configs.recommended.rules,
         },
     },
     {

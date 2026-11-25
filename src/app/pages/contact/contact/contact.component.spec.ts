@@ -1,3 +1,4 @@
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideRouter, Router } from '@angular/router';
 import { provideTranslateService, TranslateService } from '@ngx-translate/core';
@@ -9,19 +10,19 @@ import translations from '../../../../assets/i18n/en.json';
 
 describe('Embedded contact form', () => {
     let fixture: ComponentFixture<ContactComponent>;
-    let sendEmail: jasmine.Spy;
-    let load: jasmine.Spy;
+    const sendEmail = vi.fn<EmailService['sendEmail']>();
+    const load = vi.fn<TurnstileService['load']>();
     let options: TurnstileOptions;
     const validMessage = { name: 'Test User', replyto: 'test@example.com', subject: 'other', message: 'Hello' };
 
     beforeEach(async () => {
-        sendEmail = jasmine.createSpy('sendEmail').and.returnValue(of({}));
-        load = jasmine.createSpy('load').and.resolveTo({
+        sendEmail.mockReset().mockReturnValue(of(undefined));
+        load.mockReset().mockResolvedValue({
             render: (_: HTMLElement, config: TurnstileOptions) => {
                 options = config;
                 return 'widget';
             },
-            remove: jasmine.createSpy('remove'),
+            remove: vi.fn(),
         });
         await TestBed.configureTestingModule({
             imports: [ContactComponent],
@@ -40,6 +41,8 @@ describe('Embedded contact form', () => {
         fixture.componentInstance.turnstileSiteKey = 'test-public-key';
         fixture.detectChanges();
     });
+
+    afterEach(() => vi.restoreAllMocks());
 
     function submitValidForm(): void {
         fixture.componentInstance.emailForm.patchValue(validMessage);
@@ -66,16 +69,14 @@ describe('Embedded contact form', () => {
     });
 
     it('sends the Turnstile token in the API payload and navigates only after success', async () => {
-        const navigate = spyOn(TestBed.inject(Router), 'navigate').and.resolveTo(true);
+        const navigate = vi.spyOn(TestBed.inject(Router), 'navigate').mockResolvedValue(true);
         submitValidForm();
         await fixture.whenStable();
         expect(options.action).toBe('contact');
         expect(sendEmail).not.toHaveBeenCalled();
         await fixture.componentInstance.resolved('fresh-token');
-        expect(sendEmail).toHaveBeenCalledOnceWith(
-            jasmine.objectContaining({ ...validMessage, turnstileToken: 'fresh-token' }),
-        );
-        expect(sendEmail.calls.mostRecent().args[0].recaptcha).toBeUndefined();
+        expect(sendEmail).toHaveBeenCalledExactlyOnceWith(expect.objectContaining({ ...validMessage, turnstileToken: 'fresh-token' }));
+        expect(sendEmail.mock.lastCall?.[0]).not.toHaveProperty('recaptcha');
         expect(navigate).toHaveBeenCalledWith(['/contact/success']);
     });
 
@@ -83,7 +84,7 @@ describe('Embedded contact form', () => {
         await fixture.componentInstance.resolved('unsolicited');
         expect(sendEmail).not.toHaveBeenCalled();
         const response = new Subject<void>();
-        sendEmail.and.returnValue(response);
+        sendEmail.mockReturnValue(response);
         submitValidForm();
         const pending = fixture.componentInstance.resolved('first');
         await fixture.componentInstance.resolved('duplicate');
@@ -94,8 +95,8 @@ describe('Embedded contact form', () => {
     });
 
     it('keeps the message after an API error and requires a new verification for retry', async () => {
-        sendEmail.and.returnValue(throwError(() => new Error('API rejected token')));
-        const navigate = spyOn(TestBed.inject(Router), 'navigate');
+        sendEmail.mockReturnValue(throwError(() => new Error('API rejected token')));
+        const navigate = vi.spyOn(TestBed.inject(Router), 'navigate');
         submitValidForm();
         await fixture.componentInstance.resolved('used-token');
         fixture.detectChanges();
@@ -113,9 +114,9 @@ describe('Embedded contact form', () => {
         await fixture.whenStable();
         options['expired-callback']();
         fixture.detectChanges();
-        expect(fixture.componentInstance.verify()).toBeFalse();
+        expect(fixture.componentInstance.verify()).toBe(false);
         expect(sendEmail).not.toHaveBeenCalled();
-        expect(fixture.nativeElement.querySelector('button[type="submit"]').disabled).toBeFalse();
+        expect(fixture.nativeElement.querySelector('button[type="submit"]').disabled).toBe(false);
     });
 
     it('shows an alternative contact method when no site key is configured', () => {

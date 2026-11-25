@@ -1,3 +1,4 @@
+import { beforeEach, describe, expect, it } from 'vitest';
 import { TestBed } from '@angular/core/testing';
 import { provideRouter } from '@angular/router';
 import { RouterTestingHarness } from '@angular/router/testing';
@@ -23,11 +24,12 @@ describe('Legal pages and optional embeds', () => {
     it('provides both notices through the common footer and resolves the German privacy alias', async () => {
         const harness = await RouterTestingHarness.create('/impressum');
         expect(harness.routeNativeElement?.textContent).toContain('7395400000');
+        expect(harness.routeNativeElement?.querySelector('.draft-note')).toBeNull();
         expect(harness.routeNativeElement?.querySelector('footer a[href="/privacy"]')).not.toBeNull();
         await harness.navigateByUrl('/datenschutz');
         expect(harness.routeNativeElement?.querySelector('h1')?.textContent).toContain('Privacy notice');
         expect(harness.routeNativeElement?.querySelector('#turnstile-heading')).not.toBeNull();
-        expect(harness.routeNativeElement?.querySelector('footer a[href="/impressum"]')).not.toBeNull();
+        expect(harness.routeNativeElement?.querySelector('footer a[href="/imprint"]')).not.toBeNull();
     });
 
     it('renders translated privacy sections in all supported languages', async () => {

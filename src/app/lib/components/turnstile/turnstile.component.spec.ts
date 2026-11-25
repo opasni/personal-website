@@ -1,3 +1,4 @@
+import { describe, expect, it, vi } from 'vitest';
 import { TestBed } from '@angular/core/testing';
 import { TurnstileComponent } from './turnstile.component';
 import { TurnstileApi, TurnstileOptions, TurnstileService } from '@lib/services/turnstile.service';
@@ -12,7 +13,7 @@ describe('Turnstile widget lifecycle', () => {
 
     it('removes the widget on destruction and ignores late callbacks', async () => {
         let callbacks!: TurnstileOptions;
-        const remove = jasmine.createSpy('remove');
+        const remove = vi.fn();
         const fixture = create(async () => ({
             render: (_, options) => {
                 callbacks = options;
@@ -20,13 +21,13 @@ describe('Turnstile widget lifecycle', () => {
             },
             remove,
         }));
-        const resolved = jasmine.createSpy('resolved');
+        const resolved = vi.fn();
         fixture.componentInstance.resolved.subscribe(resolved);
         fixture.detectChanges();
         await fixture.whenStable();
         fixture.destroy();
         callbacks.callback('late-token');
-        expect(remove).toHaveBeenCalledOnceWith('id');
+        expect(remove).toHaveBeenCalledExactlyOnceWith('id');
         expect(resolved).not.toHaveBeenCalled();
     });
 
@@ -38,7 +39,7 @@ describe('Turnstile widget lifecycle', () => {
                     loaded = resolve;
                 }),
         );
-        const render = jasmine.createSpy('render');
+        const render = vi.fn();
         const initializing = fixture.componentInstance.ngAfterViewInit();
         fixture.destroy();
         loaded({ render, remove: () => {} });
@@ -50,7 +51,7 @@ describe('Turnstile widget lifecycle', () => {
         const fixture = create(async () => {
             throw new Error('blocked');
         });
-        const failed = jasmine.createSpy('failed');
+        const failed = vi.fn();
         fixture.componentInstance.failed.subscribe(failed);
         fixture.detectChanges();
         await fixture.whenStable();

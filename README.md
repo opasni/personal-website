@@ -22,11 +22,11 @@ Keep the Turnstile secret in the backend configuration only. To submit from loca
 
 ```sh
 npm run build
-npm test -- --watch=false --browsers=ChromeHeadless
+npm test -- --watch=false
 npm run lint
 ```
 
-Browser tests require Chrome. Build output is written to `dist/website/browser/`; the build's postbuild step generates hashed translation files and their manifest.
+Unit tests run with Vitest and jsdom. Use `npm test` for watch mode in an interactive terminal. Build output is written to `dist/website/browser/`; the build's postbuild step generates hashed translation files and their manifest.
 
 `npm run deploy` builds the static files and copies `robots.txt`. Uploading to AWS is handled by GitHub Actions.
 

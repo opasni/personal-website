@@ -1,3 +1,4 @@
+import { beforeEach, describe, expect, it } from 'vitest';
 import { TestBed } from '@angular/core/testing';
 import { provideRouter, Router, withRouterConfig } from '@angular/router';
 import { RouterTestingHarness } from '@angular/router/testing';
@@ -25,6 +26,14 @@ describe('One-page navigation', () => {
         harness = await RouterTestingHarness.create('/');
     });
 
+    it('directs old document URLs to contact instead of generating a CV', async () => {
+        for (const url of ['/export/cv', '/export/cover-letter', '/cv', '/cover-letter']) {
+            await harness.navigateByUrl(url);
+            expect(router.url).toBe('/#contact');
+            expect(harness.routeNativeElement?.querySelector('a[href="/export/cv"]')).toBeNull();
+        }
+    });
+
     it('keeps the old about URL working and shows the full page', async () => {
         await harness.navigateByUrl('/about');
         expect(router.url).toBe('/#about');
@@ -46,7 +55,7 @@ describe('One-page navigation', () => {
             if (!href) {
                 return;
             }
-            expect(href.startsWith('/#')).toBeTrue();
+            expect(href.startsWith('/#')).toBe(true);
             expect(page.querySelector(href.slice(1))).not.toBeNull();
         }
     });
@@ -60,7 +69,7 @@ describe('One-page navigation', () => {
         project.open = true;
         await harness.navigateByUrl('/#personal');
         expect(harness.routeNativeElement?.querySelector('.project details')).toBe(project);
-        expect(project.open).toBeTrue();
+        expect(project.open).toBe(true);
     });
 
     it('does not navigate away when scrolling or pressing arrow keys', async () => {
