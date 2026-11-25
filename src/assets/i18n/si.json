@@ -516,14 +516,14 @@
             }
         },
         "subject": {
-            "label": "Zakaj želite vzpostaviti stik?",
-            "placeholder": "Vzpostavljam stik, ker... (prosim izberite eno možnost)",
+            "label": "O čem bi se radi pogovorili?",
+            "placeholder": "Izberite temo",
             "option": {
-                "freelance": "Potrebujem nekaj storjenega.",
-                "offering-position": "Rad bi vam ponudil delo.",
-                "technical-advice": "Potrebujem tehnično svetovanje.",
-                "seeking-job": "Iščem zaposlitev.",
-                "other": "Želim samo klepetati."
+                "freelance": "Projekti in sodelovanje",
+                "offering-position": "Karierne priložnosti",
+                "technical-advice": "Tehnično svetovanje",
+                "books": "Knjige in tehnično uredništvo",
+                "other": "Nekaj drugega"
             },
             "error": {
                 "required": "Prosimo, izberite namen."
