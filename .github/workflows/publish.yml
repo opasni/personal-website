@@ -74,4 +74,4 @@ jobs:
                   echo "INVALIDATE CloudFront ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} /index.html /assets/i18n/manifest.json"
                   aws cloudfront create-invalidation \
                     --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" \
-                    --paths "/index.html" "/assets/i18n/manifest.json"
+                    --paths "/" "/index.html" "/assets/i18n/manifest.json"
