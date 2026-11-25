@@ -623,7 +623,8 @@
         "work": {
             "title": "Različni izzivi. Odgovornost za rezultat.",
             "intro": "Izbor projektov s področij mobilnosti, poslovne programske opreme, umetne inteligence, analitike in trgovine. Moj prispevek sega od arhitekture in razvoja do obratovanja.",
-            "more": "Vsi projekti in poklicne izkušnje"
+            "more": "Vsi projekti in poklicne izkušnje",
+            "personal-project": "Osebni projekt:"
         },
         "projects": {
             "job-car": {
@@ -677,7 +678,9 @@
             "travel": "Veliko sem potoval in rad odkrivam neznane kraje ter drugačne načine življenja. Ta radovednost spremlja tudi moje delo z mednarodnimi ekipami.",
             "camino": "Camino Francés mi je dal čas zase, stran od hitrega vsakdana, da sem razmislil in znova ovrednotil, kaj zares šteje. Bil je tudi izkušnja vztrajnosti: ko vse boli in imaš občutek, da ti ne uspeva, vstani in poskusi znova.",
             "offline-title": "Stran od tipkovnice",
-            "offline": "Petje, igranje kitare, plezanje, tek in partija šaha mi ponujajo drugačne načine preživljanja časa in učenja."
+            "offline": "Petje, igranje kitare, plezanje, tek in partija šaha mi ponujajo drugačne načine preživljanja časa in učenja.",
+            "books-title": "Med platnicami",
+            "books": "Kot tehnični urednik sem sodeloval tudi pri nastajanju knjig — še en način, kako povezujem zanimanje za tehnologijo in deljenje znanja."
         },
         "contact": {
             "title": "Ustvarimo nekaj uporabnega.",

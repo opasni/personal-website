@@ -629,7 +629,8 @@
         "work": {
             "title": "Different challenges. Shared ownership.",
             "intro": "A selection of work across mobility, enterprise software, AI, analytics, and commerce. My involvement spans architecture, implementation, and operation.",
-            "more": "Explore the full project & career history"
+            "more": "Explore the full project & career history",
+            "personal-project": "Personal project:"
         },
         "projects": {
             "job-car": {
@@ -683,7 +684,9 @@
             "travel": "I’ve travelled extensively and enjoy discovering unfamiliar places and different ways of life. That curiosity sits alongside my work with international teams.",
             "camino": "Walking the Camino Francés gave me time away from a busy life to reflect and re-evaluate what really matters. It was also an experience in endurance: when everything hurts and you feel like you’re failing, get up and try again.",
             "offline-title": "Away from the keyboard",
-            "offline": "Singing, playing guitar, climbing, running, and a game of chess give me different ways to spend my time and keep learning."
+            "offline": "Singing, playing guitar, climbing, running, and a game of chess give me different ways to spend my time and keep learning.",
+            "books-title": "Between the pages",
+            "books": "I’ve also contributed to books as a technical editor — another way my interest in technology and sharing knowledge takes shape."
         },
         "contact": {
             "title": "Let’s make something useful.",
