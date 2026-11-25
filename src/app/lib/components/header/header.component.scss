@@ -1,0 +1,143 @@
+:host {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+}
+.site-header {
+    background: color-mix(in srgb, var(--page-bg) 96%, transparent);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--line);
+}
+.nav-shell {
+    max-width: 1240px;
+    margin: auto;
+    min-height: 84px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+a {
+    text-decoration: none;
+    color: var(--ink);
+}
+.wordmark {
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: -0.06em;
+    white-space: nowrap;
+}
+.wordmark span {
+    color: var(--accent);
+}
+nav {
+    display: flex;
+    gap: 24px;
+    margin-left: auto;
+}
+nav a {
+    padding: 30px 0;
+    font-size: 0.875rem;
+    color: var(--muted);
+    border-bottom: 2px solid transparent;
+}
+nav a:hover,
+nav a.active {
+    color: var(--ink);
+    border-bottom-color: var(--accent);
+}
+.preferences {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+select,
+button {
+    color: var(--ink);
+    background: transparent;
+    border: 0;
+    font-size: 0.875rem;
+    min-height: 44px;
+}
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23818b95' viewBox='0 0 12 12'%3E%3Cpath d='m3 4 3 3 3-3'/%3E%3C/svg%3E");
+    background-position: right 4px center;
+    background-repeat: no-repeat;
+    padding: 0 22px 0 8px;
+    cursor: pointer;
+}
+option {
+    background: var(--surface);
+    color: var(--ink);
+}
+.theme-toggle {
+    width: 44px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+}
+.menu-toggle {
+    display: none;
+}
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 16px;
+    padding: 12px 20px;
+    background: var(--surface);
+}
+.skip-link:focus {
+    top: 10px;
+    z-index: 40;
+}
+:where(a, button, select):focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 5px;
+}
+@media (max-width: 1050px) {
+    .nav-shell {
+        gap: 20px;
+        padding: 0 24px;
+    }
+    nav {
+        gap: 16px;
+    }
+}
+@media (max-width: 850px) {
+    .nav-shell {
+        min-height: 72px;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+    .wordmark {
+        margin-right: auto;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    nav {
+        display: none;
+        order: 4;
+        width: 100%;
+        margin: 0;
+        padding: 0 0 16px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px 18px;
+    }
+    nav.is-open {
+        display: grid;
+    }
+    nav a {
+        padding: 10px 0;
+    }
+    .preferences {
+        gap: 2px;
+    }
+}
+@media (max-width: 380px) {
+    .nav-shell {
+        padding: 0 16px;
+        gap: 8px;
+    }
+}

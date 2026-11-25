@@ -57,10 +57,13 @@ export class LanguageService {
         localStorage.removeItem(StorageKeys.SELECTED_LANGUAGE);
         localStorage.setItem(StorageKeys.SELECTED_LANGUAGE, language);
         await this._registerLocale(language);
-        await this._refreshApplicationLocaleId();
+        if (!this._destroyRef.destroyed) {
+            await this._refreshApplicationLocaleId();
+        }
     }
 
     private async _registerLocale(language: Language) {
+        document.documentElement.lang = language === Language.SI ? 'sl' : language;
         switch (language) {
             case Language.SI: {
                 const localeSI = await import('@angular/common/locales/sl');
@@ -85,11 +88,14 @@ export class LanguageService {
      * Re-navigate to current URL, forcing all directives to re-create.
      */
     private async _refreshApplicationLocaleId(): Promise<void> {
-        const fnShouldReuseRoute = this._routeReuseStrategy;
+        const fnShouldReuseRoute = this._routeReuseStrategy.shouldReuseRoute;
         this._routeReuseStrategy.shouldReuseRoute = (): boolean => false;
         this._router.navigated = false;
-        await this._router.navigateByUrl(this._router.url).catch(noop);
-        this._routeReuseStrategy = fnShouldReuseRoute;
+        try {
+            await this._router.navigateByUrl(this._router.url).catch(noop);
+        } finally {
+            this._routeReuseStrategy.shouldReuseRoute = fnShouldReuseRoute;
+        }
     }
 }
 

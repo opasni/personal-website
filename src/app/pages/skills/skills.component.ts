@@ -2,7 +2,6 @@ import { Component, OnInit, inject, ChangeDetectionStrategy } from '@angular/cor
 import { ThemeComponent } from '@lib/abstracts/theme.component';
 import { SkillsService } from '@lib/services/skills.service';
 import { TranslatePipe } from '@ngx-translate/core';
-import { ScrollDetectDirective } from '@lib/directives/scroll-detect/scroll-detect.directive';
 import { SoftSkillsComponent } from '@modules/skills/components/soft-skills/soft-skills.component';
 import { HardSkillsComponent } from '@modules/skills/components/hard-skills/hard-skills.component';
 import { LanguagesComponent } from '@modules/skills/components/languages/languages.component';
@@ -12,14 +11,7 @@ import { HobbiesComponent } from '@modules/skills/components/hobbies/hobbies.com
     selector: 'app-skills',
     templateUrl: './skills.component.html',
     styleUrls: ['./skills.component.scss'],
-    imports: [
-        HardSkillsComponent,
-        SoftSkillsComponent,
-        LanguagesComponent,
-        HobbiesComponent,
-        TranslatePipe,
-        ScrollDetectDirective,
-    ],
+    imports: [HardSkillsComponent, SoftSkillsComponent, LanguagesComponent, HobbiesComponent, TranslatePipe],
     changeDetection: ChangeDetectionStrategy.Eager,
     providers: [SkillsService],
 })

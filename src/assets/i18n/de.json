@@ -22,99 +22,6 @@
             "Ich kommuniziere fließend auf Slowenisch, Englisch und Deutsch und arbeite gerne in internationalen Teams, in denen technische Tiefe, klare Entscheidungen und Vertrauen zählen. Musik, Sport, Schach, Klettern und Reisen halten mich neugierig und ausgeglichen."
         ]
     },
-    "cv": {
-        "menu-item": "Lebenslauf erstellen",
-        "profile-label": "Executive-Profil",
-        "positioning": "Technology Executive | Cloud & Platform Engineer | Solution Architect",
-        "about": "Ich bin <b>Technology Executive</b>, <b>Cloud- und Platform Engineer</b> sowie <b>Solution Architect</b> mit über 10 Jahren Erfahrung in Software Engineering, DevOps, Analytics, AI-gestützten Tools und Delivery Leadership. Als <b>Partner bei 8020 Consulting GmbH</b> und <b>CEO der Achtzig20 d.o.o.</b> verbinde ich technische Tiefe mit kommerzieller Verantwortung, Teamführung und Stakeholder-Management.",
-        "about-tech": "Mein Name ist <b>Črt</b> (ausgesprochen „Chert“). Ich konzipiere, entwickle und betreibe skalierbare Softwareplattformen auf Basis von <b>AWS, Azure, Microservices, APIs, event-getriebenen Integrationen, Datenpipelines und AI-gestützten Systemen</b>. Ich bewege mich sicher zwischen Architektur, Implementierung, DevOps, Testing, Observability und Beratung.",
-        "about-lead": "Technology Executive, <b>AWS Certified Solutions Architect – Professional</b> und hands-on Cloud/Platform Engineer mit über 10 Jahren Erfahrung in der Umsetzung geschäftskritischer Systeme. Als <b>Partner bei 8020 Consulting GmbH</b> und <b>CEO der Achtzig20 d.o.o.</b> verbinde ich Architektur- und Engineering-Tiefe mit Delivery Leadership, Stakeholder-Vertrauen und Unternehmenswachstum.",
-        "selected-impact": {
-            "title": "Ausgewählte Wirkung",
-            "items": [
-                "Verantwortung für Technologiestrategie, Delivery-Qualität, Kompetenzaufbau und Executive-Entscheidungen in Beratungsprojekten und internen Produkten.",
-                "Konzeption und Betrieb von Cloud-Plattformen, verteilten Systemen, APIs und event-getriebenen Integrationen auf AWS und Azure.",
-                "Implementierung einer <b>MCP-Integration</b>, die einen internen Copilot-Agenten mit der Squadcheck-Plattform für Organisations- und Projektplanung verbindet."
-            ]
-        },
-        "focus": {
-            "title": "Kernprofil",
-            "executive": {
-                "title": "Technology Executive",
-                "details": "Strategie, Delivery Leadership, Teams & Wachstum"
-            },
-            "cloud": {
-                "title": "Cloud & Platform Engineer",
-                "details": "AWS, Azure, Kubernetes, IaC & DevOps"
-            },
-            "architecture": {
-                "title": "Solution Architect",
-                "details": "Verteilte Systeme, APIs & Integrationen"
-            }
-        },
-        "experience": {
-            "8020": {
-                "summary": [
-                    "Verantwortung für Unternehmenswachstum, Beratungsstrategie, Delivery-Qualität, Kompetenzaufbau und Executive-Entscheidungen in Kundenprojekten und internen Initiativen.",
-                    "Leitung und Gestaltung transformativer Projekte wie <b>Catena-X, Bloomfilter-Integrationen, JobCar & Caroline, AI-gestützte Automatisierung, Cloud-Plattformen und 8020 AI Agent</b>."
-                ]
-            },
-            "achtzig20si": {
-                "summary": [
-                    "Gründung und operative Leitung der slowenischen Tochtergesellschaft inklusive Recruiting, Teamentwicklung, lokaler Partnerschaften und Delivery-Alignment.",
-                    "Aufbau der Grundlage für eine zuverlässige Engineering-Organisation innerhalb der 8020-Gruppe."
-                ]
-            },
-            "achtzig20": {
-                "summary": [
-                    "Technische Leitung für Softwarearchitektur, Entwicklungsprozesse, DevOps und Produktionsbetrieb über Web-, Desktop-, Mobile-, Cloud- und datenintensive Systeme hinweg.",
-                    "Umsetzung strategischer Arbeit für <b>VW-Konzernmarken, CARIAD, Audi, Porsche, BMW, DZ Bank, Graf Hardenberg, DAK Coffee Roasters, Scania und interne 8020-Plattformen</b>.",
-                    "Schwerpunkte: <i>Microservices, Cloud-Plattformen, API-Integrationen, AI-Tools, Process Mining, Analytics, automatisiertes Testing und Observability</i>."
-                ],
-                "intern-roles": [
-                    {
-                        "role": "CTO @ newonads GmbH",
-                        "duration": "11/2021 – 09/2024",
-                        "description": "Leitung der Architektur und Entwicklung einer SaaS-Digitalwerbeplattform mit Schwerpunkt auf Markenbindung, Leadgenerierung und Umsatzsteigerung."
-                    },
-                    {
-                        "role": "CTO @ Studio3 GmbH",
-                        "duration": "10/2022 – 09/2024",
-                        "description": "Entwicklung einer Web3-basierten Community-Management-Plattform zur Verbesserung der Agentur-Kunden-Interaktionen bei gleichzeitiger Minimierung von Sicherheitsrisiken."
-                    }
-                ]
-            },
-            "akka": {
-                "summary": [
-                    "Entwicklung von carship.online mit Schwerpunkt auf Softwareentwicklung und Gestaltung des Nutzerflusses.",
-                    "Konzeption und Durchführung von Schulungen in den Bereichen Datenanalyse und Blockchain.",
-                    "Analyse der Wiederverkaufspreise von AUDI-Fahrzeugen mit Fokus auf die Auswirkungen von Sonderausstattungen."
-                ]
-            },
-            "institute-js": {
-                "summary": [
-                    "Erworbenes Wissen in Datenanalyse, C++-Programmierung, Durchführung von Simulationen und Dateninterpretation sowie Abschluss eines 6-monatigen Praktikums im Mainz Microtron."
-                ]
-            }
-        },
-        "education": {
-            "masters": {
-                "title": "M.Sc. in Mathematischer Physik",
-                "summary": [
-                    "Notendurchschnitt: 9,0 (entspricht A in den USA, 1,7 in Deutschland)",
-                    "Masterarbeit: <i>„Aufbau eines Experiments zur Messung des axialen Formfaktors des Protons“</i>"
-                ]
-            },
-            "bachelor": {
-                "title": "B.Sc. in Allgemeiner Physik",
-                "summary": [
-                    "Notendurchschnitt: 8,3 (entspricht A in den USA, 2,3 in Deutschland)",
-                    "Vielfältige Kurse: Astronomie, Geophysik, Elektronik, Rechnergestützte Physik.",
-                    "Bachelorarbeit: „Baryogenese durch Leptogenese“"
-                ]
-            }
-        }
-    },
     "skills": {
         "menu-item": "Fähigkeiten",
         "title": "Fähigkeiten",
@@ -199,7 +106,7 @@
             "title": "Partner",
             "link": "8020.eco",
             "abstract": [
-                "Als Partner bei der 8020 Consulting GmbH spiele ich eine entscheidende Rolle bei der Gestaltung der strategischen Ausrichtung des Unternehmens und beim Vorantreiben seines Wachstums. Zu meinen Aufgaben gehören das Management wichtiger Kundenbeziehungen, die Überwachung der Projektdurchführung und die Sicherstellung der Ausrichtung unserer Dienstleistungen an den Marktanforderungen. Ich nutze meine umfangreiche Erfahrung in Softwareentwicklung, Projektmanagement und technischer Leitung, um unsere Teams bei der Bereitstellung hochwertiger Lösungen zu unterstützen, die den Bedürfnissen unserer Kunden entsprechen.",
+                "Als Partner verbinde ich Beratungsstrategie, Geschäftsentwicklung und Verantwortung für die Umsetzung mit meiner fortlaufenden praktischen Arbeit als Tech Lead und technischer Spezialist. Architektur, Implementierung und die Unterstützung von Entwicklern bleiben zentrale Aufgaben.",
                 "Mein Weg bei der 8020 Consulting GmbH war geprägt von kontinuierlichem Lernen und Innovation. Ich hatte die Gelegenheit, an vielfältigen Projekten in verschiedenen Branchen zu arbeiten und mit talentierten Fachleuten zusammenzuarbeiten, um wirkungsvolle Lösungen zu schaffen. Mein Engagement für Exzellenz und meine Leidenschaft für Technologie treiben mich an, kontinuierlich nach neuen Herausforderungen und Wachstumschancen zu suchen."
             ],
             "skills": [
@@ -217,7 +124,8 @@
             "title": "CEO",
             "link": "achtzig20.si",
             "abstract": [
-                "Als CEO der Achtzig20 d.o.o. habe ich eine entscheidende Rolle beim Wachstum und Erfolg des Unternehmens gespielt. Alles begann mit Werkstudenten vom e-Študentski Servis, die für die Achtzig20 GmbH tätig wurden. Im Laufe der Zeit erweiterten wir unser Team um Vollzeitmitarbeiter und eröffneten ein schönes Büro im Stadtzentrum von Ljubljana. Wir haben bedeutende Meilensteine erreicht, darunter die Gründung der Achtzig20 d.o.o. als Tochtergesellschaft. Gemeinsam haben wir eine starke und florierende Organisation aufgebaut, angetrieben von unserer Leidenschaft für Exzellenz und unserem Engagement, außergewöhnliche Dienstleistungen zu erbringen."
+                "Als CEO der Achtzig20 d.o.o. habe ich eine entscheidende Rolle beim Wachstum und Erfolg des Unternehmens gespielt. Alles begann mit Werkstudenten vom e-Študentski Servis, die für die Achtzig20 GmbH tätig wurden. Im Laufe der Zeit erweiterten wir unser Team um Vollzeitmitarbeiter und eröffneten ein schönes Büro im Stadtzentrum von Ljubljana. Wir haben bedeutende Meilensteine erreicht, darunter die Gründung der Achtzig20 d.o.o. als Tochtergesellschaft. Gemeinsam haben wir eine starke und florierende Organisation aufgebaut, angetrieben von unserer Leidenschaft für Exzellenz und unserem Engagement, außergewöhnliche Dienstleistungen zu erbringen.",
+                "Ich habe die slowenische Tochtergesellschaft gegründet und führe ihr Team und ihren Betrieb. Parallel arbeite ich weiterhin als Tech Lead und technischer Spezialist in Kundenprojekten."
             ],
             "skills": [
                 "Führung",
@@ -585,6 +493,13 @@
         "empty": {
             "title": "Noch keine Beiträge",
             "hint": "Füge Einträge in src/app/pages/linkedin/linkedin-posts.const.ts hinzu, um den ersten Embed anzuzeigen."
+        },
+        "privacy": {
+            "title": "LinkedIn-Beiträge nur auf Wunsch",
+            "body": "Das Laden stellt eine Verbindung zu LinkedIn her. LinkedIn erhält Ihre IP-Adresse und Browserdaten und kann Cookies setzen, den Besuch Ihrem Konto zuordnen oder Daten außerhalb des EWR verarbeiten. Ihre Einwilligung gilt nur für diesen Seitenbesuch.",
+            "load": "LinkedIn-Beiträge laden",
+            "hide": "LinkedIn-Beiträge ausblenden",
+            "external": "Direkt auf LinkedIn ansehen"
         }
     },
     "contact": {
@@ -601,7 +516,7 @@
         "email": {
             "label": "E-Mail-Addresse",
             "placeholder": "beispiel@gmx.com",
-            "hint": "Ich werde Ihre E-Mail-Adresse niemals an Dritte weitergeben.",
+            "hint": "Wird zur Beantwortung Ihrer Anfrage verwendet.",
             "error": {
                 "required": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
                 "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
@@ -634,8 +549,14 @@
             "subject": "Online-Kontakt",
             "one-last-thing": "Nur um sicherzugehen, dass Sie kein Bot sind. Ich weiß, es ist ein bisschen lästig, aber bitte haben Sie Geduld.",
             "fail": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie mir auf LinkedIn:",
-            "success": "Nachricht wurde erfolgreich gesendet! Ich werde mich schnellstmöglich bei Ihnen melden."
-        }
+            "success": "Nachricht wurde erfolgreich gesendet! Ich werde mich schnellstmöglich bei Ihnen melden.",
+            "unavailable": "Das Kontaktformular ist vorübergehend nicht verfügbar. Sie erreichen mich auf LinkedIn.",
+            "retry-hint": "Ihre Nachricht konnte nicht gesendet werden. Versuchen Sie es mit einer neuen Sicherheitsprüfung erneut oder kontaktieren Sie mich auf LinkedIn.",
+            "retry": "Erneut versuchen",
+            "sending": "Ihre Nachricht wird gesendet…",
+            "verifying": "Das Formular wird auf Spam geprüft…"
+        },
+        "privacy-note": "Ihre Angaben werden zur Bearbeitung Ihrer Anfrage verwendet. Beim Absenden wird Cloudflare Turnstile zum Spamschutz geladen. Details:"
     },
     "theme": {
         "white": "Weißmodus",
@@ -647,7 +568,6 @@
     },
     "accessibility": {
         "buttons": {
-            "export-pdf": "Als PDF exportieren",
             "menu-open": "Menü öffnen",
             "menu-close": "Menü schließen",
             "send-contact": "Senden",
@@ -657,5 +577,187 @@
             "profile": "Profilbild"
         }
     },
-    "insert-password": "Passwort einfügen"
+    "home": {
+        "skip": "Zum Inhalt springen",
+        "menu": "Menü",
+        "close": "Schließen",
+        "navigation": "Hauptnavigation",
+        "language": "Sprache",
+        "technologies": "Technologien und Kompetenzen",
+        "credentials": "Zertifizierte Expertise",
+        "project-details": "Mein Beitrag",
+        "nav": {
+            "about": "Über mich",
+            "expertise": "Expertise",
+            "work": "Projekte",
+            "experience": "Erfahrung",
+            "personal": "Persönliches",
+            "contact": "Kontakt"
+        },
+        "hero": {
+            "role": "Entwickler, Architekt & Führungskraft",
+            "title": "Technische Tiefe.",
+            "title-accent": "Ein weiter Blick.",
+            "intro": "Ich mache aus komplexen Problemen Software, die im Alltag funktioniert. Dabei verbinde ich praktische Entwicklung und Cloud-Architektur mit den Menschen und Entscheidungen hinter der Umsetzung.",
+            "work": "Projekte entdecken",
+            "contact": "Ins Gespräch kommen",
+            "caption": "Neugierig im Denken. Pragmatisch im Handeln.",
+            "pronunciation": "Eine Silbe. Ein kleines ə hilft.",
+            "partner-role": "Partner · Technische Führung",
+            "director-role": "Geschäftsführer · Praktische Entwicklung"
+        },
+        "expertise": {
+            "title": "Vom großen Ganzen bis ins Detail.",
+            "intro": "Ich arbeite über Fachgrenzen hinweg und bleibe nah an der Umsetzung. So verbinde ich Geschäftsanforderungen, technische Entscheidungen und die Teams, die sie verwirklichen.",
+            "architecture": {
+                "title": "Architektur & Cloud",
+                "text": "Zuverlässige Plattformen entwerfen und betreiben: verteilte Dienste, Integrationen, Infrastruktur und Werkzeuge für einen stabilen Produktionsbetrieb."
+            },
+            "engineering": {
+                "title": "Praktische Softwareentwicklung",
+                "text": "Entwicklung für Backend, Web und Mobile – von APIs und Datenmodellen über Oberflächen bis zu automatisierten Tests und Deployment."
+            },
+            "data": {
+                "title": "Daten & angewandte KI",
+                "text": "Daten nutzbar machen: mit Process Mining, Analysen, KI-gestützten Abläufen und Integrationen in bestehende Geschäftssysteme."
+            },
+            "leadership": {
+                "title": "Menschen & Umsetzung",
+                "text": "Teams und ein Unternehmen aufbauen, technische Richtung geben, Kunden begleiten und die Entwicklung von Engineers fördern.",
+                "tags": ["Teamführung", "Strategie", "Mentoring", "Kundenberatung"]
+            }
+        },
+        "work": {
+            "title": "Vielfältige Aufgaben. Verantwortung für das Ergebnis.",
+            "intro": "Ausgewählte Projekte aus Mobilität, Unternehmenssoftware, KI, Datenanalyse und Handel. Mein Beitrag reicht von der Architektur über die Entwicklung bis zum Betrieb.",
+            "more": "Alle Projekte & beruflichen Stationen",
+            "personal-project": "Eigenes Projekt:"
+        },
+        "projects": {
+            "job-car": {
+                "category": "Produkt & Cloud",
+                "summary": "Eine Fahrzeugleasing-Plattform – von Architektur und Nutzererlebnis über Full-Stack-Entwicklung bis zu Cloud-Betrieb und End-to-End-Tests."
+            },
+            "squadcheck": {
+                "category": "Unternehmenssoftware & KI",
+                "summary": "Eine interne Plattform für Personal, Projekte und Budgets. Eine MCP-Integration macht ihre Funktionen für einen internen Copilot-Agenten zugänglich."
+            },
+            "audi-frequency": {
+                "category": "Mobile & angewandte Physik",
+                "summary": "Eine plattformübergreifende App für akustische Frequenzanalyse, Fahrzeugdaten und Offline-Abläufe im Werkstattalltag."
+            },
+            "vw-ai": {
+                "category": "Angewandte KI",
+                "summary": "Automatisierung von Logistikdaten und Dokumenten: Zuordnung von Excel-Daten, Transformation von Berichten und Erstellung von Anleitungen."
+            },
+            "scania": {
+                "category": "Daten & Process Mining",
+                "summary": "Verteilte Daten zusammenführen, Engpässe sichtbar machen und Verbesserungen im Prozess von der Bestellung bis zur Auslieferung unterstützen."
+            },
+            "dak": {
+                "category": "Handel & Automatisierung",
+                "summary": "Groß- und Einzelhandelssysteme, die Zahlungen, Produktionsabläufe und Versandautomatisierung mit zuverlässigem Cloud-Hosting verbinden."
+            }
+        },
+        "experience": {
+            "title": "Als Entwickler denken. Als Führungskraft handeln.",
+            "intro": "Technische Führung zieht sich durch meine gesamte Laufbahn. Parallel zu meinen Aufgaben als Geschäftsführer und später als Partner habe ich durchgehend praktisch als Tech Lead und technischer Spezialist gearbeitet: Systeme entwerfen, Software entwickeln, komplexe Probleme lösen und Entwicklungsteams begleiten.",
+            "continuous": "Durchgehende technische Rolle",
+            "technical-title": "Tech Lead & technischer Spezialist",
+            "technical-description": "Praktische Arbeit an Architektur, Softwareentwicklung, komplexen Problemen und Mentoring während meiner gesamten Zeit bei Achtzig20 und 8020 Consulting. Diese Arbeit läuft parallel zu den folgenden Aufgaben weiter.",
+            "parallel": "Zusätzliche Verantwortung · parallel übernommen"
+        },
+        "roles": {
+            "8020": "Beratungsstrategie, Geschäftsentwicklung und Verantwortung für die Umsetzung – zusätzlich zu meiner fortlaufenden Arbeit als Tech Lead und technischer Spezialist.",
+            "achtzig20si": "Aufbau und Führung der slowenischen Tochtergesellschaft: Teamentwicklung, Recruiting und Unternehmensbetrieb – zusätzlich zu meiner laufenden technischen Rolle.",
+            "achtzig20": "Architektur und Umsetzung für Unternehmenssoftware, Web, Mobile, Cloud und Datenprojekte verantwortet – einschließlich eigener Entwicklung und Mentoring."
+        },
+        "foundation": {
+            "label": "Die Grundlage",
+            "title": "In der Physik ausgebildet. An schwierigen Fragen interessiert.",
+            "text": "Mathematische Physik und Forschung prägen meinen Blick auf Softwareentwicklung: Systeme verstehen, Annahmen hinterfragen und Ideen anhand von Ergebnissen prüfen.",
+            "more": "Ausbildung & Forschung"
+        },
+        "personal": {
+            "title": "Neugier kennt keinen Feierabend.",
+            "intro": "Zu mir gehört mehr als die Systeme, die ich entwickle. Reisen, Musik und Zeit draußen sind ebenfalls Teil meines Lebens.",
+            "travel-title": "Den Blick weiten",
+            "travel": "Ich bin viel gereist und entdecke gerne unbekannte Orte und andere Lebensweisen. Diese Neugier begleitet auch meine Arbeit mit internationalen Teams.",
+            "camino": "Auf dem Camino Francés konnte ich Abstand vom hektischen Alltag gewinnen, nachdenken und neu bewerten, was wirklich zählt. Es ging auch ums Durchhalten: Wenn alles wehtut und man das Gefühl hat zu scheitern, wieder aufstehen und es noch einmal versuchen.",
+            "offline-title": "Abseits der Tastatur",
+            "offline": "Singen, Gitarre spielen, Klettern, Laufen und eine Partie Schach bieten mir andere Wege, meine Zeit zu verbringen und Neues zu lernen.",
+            "books-title": "Zwischen den Seiten",
+            "books": "Ich habe auch als technischer Redakteur an Büchern mitgewirkt — eine weitere Möglichkeit, mein Interesse an Technik mit der Weitergabe von Wissen zu verbinden."
+        },
+        "contact": {
+            "title": "Gemeinsam etwas Sinnvolles schaffen.",
+            "intro": "Eine technische Herausforderung, ein Projekt oder eine Idee, über die es sich zu sprechen lohnt? Ich freue mich auf den Austausch.",
+            "linkedin": "Auf LinkedIn vernetzen",
+            "write": "Lieber eine Nachricht? Hier schreiben."
+        },
+        "footer": {
+            "notes": "Beiträge auf LinkedIn",
+            "top": "Nach oben"
+        }
+    },
+    "legal": {
+        "back": "Zurück zur Website",
+        "country": "Slowenien",
+        "email": "E-Mail",
+        "email-pending": "Die öffentliche Kontaktadresse wird vor der Veröffentlichung ergänzt.",
+        "footer-nav": "Rechtliche Informationen und weitere Links",
+        "draft": "Entwurf zur Prüfung: Speicherfristen und Regelungen für internationale Datenübermittlungen müssen vor der Veröffentlichung noch bestätigt werden.",
+        "imprint": {
+            "title": "Impressum",
+            "intro": "Angaben zum Betreiber dieser Website.",
+            "operator": "Betreiber der Website",
+            "owner": "Inhaber",
+            "registration": "Unternehmensangaben",
+            "form": "Rechtsform",
+            "sole-trader": "Einzelunternehmer (s.p.), Slowenien",
+            "register": "Register",
+            "number": "Registernummer (matična številka)",
+            "tax": "Steuernummer (davčna številka)",
+            "vat": "Umsatzsteuer-Identifikationsnummer"
+        },
+        "privacy": {
+            "title": "Datenschutzerklärung",
+            "intro": "Wie personenbezogene Daten beim Besuch dieser Website und bei der Kontaktaufnahme verarbeitet werden.",
+            "controller": "Verantwortlicher",
+            "aws-link": "AWS-Datenschutzhinweise",
+            "linkedin-link": "LinkedIn-Datenschutzrichtlinie",
+            "hosting": {
+                "title": "Bereitstellung und Sicherheit der Website",
+                "body": "Die Website nutzt Amazon Web Services (AWS) S3 und CloudFront für Hosting und Auslieferung. Dabei erhält die Infrastruktur technische Informationen wie IP-Adresse, angefragte URL, Zugriffszeitpunkt und Browserinformationen. Die für Bereitstellung und Schutz erforderliche Verarbeitung beruht auf berechtigten Interessen gemäß Art. 6 Abs. 1 lit. f DSGVO. Die Kontakt-API ist derzeit in der AWS-Region us-east-1 (USA) konfiguriert. Die konkrete AWS-Vertragsgesellschaft, die Protokollierung und die Speicherfristen müssen vor Veröffentlichung dieser Erklärung bestätigt werden."
+            },
+            "contact": {
+                "title": "Kontaktanfragen",
+                "body": "Das Kontaktformular übermittelt Name, E-Mail-Adresse, Betreff, Nachricht, Sprache und einen Sicherheitstoken an die Kontakt-API. Diese Angaben dienen der Bearbeitung und Beantwortung Ihrer Anfrage. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO bei vorvertraglichen Anfragen oder Art. 6 Abs. 1 lit. f DSGVO bei sonstiger Korrespondenz, gestützt auf das Interesse an der Beantwortung von Anfragen. Die Angaben sind freiwillig; die Pflichtfelder werden jedoch benötigt, um das Formular zu verarbeiten und zu antworten. Bitte übermitteln Sie keine sensiblen personenbezogenen Daten. Versanddienst, Postfachanbieter, eine mögliche Nachrichtendatenbank und die Löschfristen sind noch zu bestätigen."
+            },
+            "turnstile": {
+                "title": "Spamschutz mit Cloudflare Turnstile",
+                "body": "Turnstile von Cloudflare, Inc. (USA) wird erst nach dem Absenden eines gültig ausgefüllten Kontaktformulars geladen. Zur Unterscheidung zwischen Menschen und Bots verarbeitet es unter anderem IP-Adresse, Browserinformationen, TLS-Fingerabdruck und Website-Herkunft. Der Sicherheitstoken wird mit der Nachricht übermittelt und muss vom Kontaktserver geprüft werden. Als Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO vorgesehen: der Schutz des Kontaktangebots vor Spam und Missbrauch. Cloudflare handelt beim Schutz der Website als Auftragsverarbeiter und bei der Verbesserung der Bot-Erkennung als eigenständiger Verantwortlicher. Der verlinkte Datenschutzzusatz erläutert diese Rollen. Vorgesehen ist der Managed-Modus ohne Pre-Clearance. Konfiguration und Rechtsgrundlage sind vor dem Start abschließend zu prüfen."
+            },
+            "storage": {
+                "title": "Lokaler Speicher und Cookies",
+                "body": "Diese Anwendung enthält keine Analyse- oder Werbetracker. Schriftarten werden mit der Website ausgeliefert. Die gewählte Sprache und Darstellung werden im lokalen Browserspeicher unter „language“ und „theme“ gespeichert. Diese Einträge unterstützen die von Ihnen gewählten Einstellungen und Zugriffe und bleiben bestehen, bis sie ersetzt oder in den Browsereinstellungen gelöscht werden. Als Grundlage für diese funktionale Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO vorgesehen. Drittanbieter können weitere Daten wie nachfolgend und in ihren eigenen Hinweisen beschrieben verarbeiten; der Verzicht auf Analysewerkzeuge bedeutet nicht, dass keine personenbezogenen Daten verarbeitet werden."
+            },
+            "linkedin": {
+                "title": "Optionale LinkedIn-Beiträge und externe Links",
+                "body": "LinkedIn-Einbettungen sind zunächst deaktiviert. Mit „LinkedIn-Beiträge laden“ willigen Sie ein, Inhalte von LinkedIn Ireland Unlimited Company, Irland, und verbundenen Unternehmen zu laden. LinkedIn erhält dann technische Daten wie IP-Adresse und Browserinformationen und kann Cookies verwenden, den Besuch Ihrem LinkedIn-Konto zuordnen oder Daten außerhalb des EWR verarbeiten. Grundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO. Sie können diese über „LinkedIn-Beiträge ausblenden“ oder durch Verlassen der Seite widerrufen; die Auswahl wird nicht gespeichert. Dadurch wird weiteres Laden hier beendet, frühere Verarbeitung aber nicht rückgängig gemacht. Bereits gesetzte LinkedIn-Cookies können Sie im Browser verwalten. Normale externe Links verbinden erst beim Anklicken mit ihrem Ziel."
+            },
+            "transfers": {
+                "title": "Empfänger und internationale Übermittlungen",
+                "body": "AWS, Cloudflare und bei aktivierten Einbettungen LinkedIn erhalten Daten für die beschriebenen Zwecke. Versand- und Postfachanbieter müssen vor der Veröffentlichung ebenfalls benannt werden. Die API in den USA und Drittanbieterdienste können eine Verarbeitung außerhalb des Europäischen Wirtschaftsraums mit sich bringen. Vor dem Start sind für die tatsächlichen Anbieter und Konten die Auftragsverarbeitungsverträge und Übermittlungsgarantien zu bestätigen, einschließlich einschlägiger Angemessenheitsbeschlüsse oder Standardvertragsklauseln und ergänzender Maßnahmen. Dieser Entwurf legt noch nicht fest, welche Garantien für den jeweiligen Datenfluss gelten."
+            },
+            "retention": {
+                "title": "Speicherdauer",
+                "body": "Vorgesehene Speicherfristen, noch einzurichten: allgemeine Kontaktanfragen werden innerhalb von 12 Monaten nach dem letzten Austausch gelöscht. Korrespondenz für laufende Aufträge, gesetzliche Pflichten oder Rechtsansprüche bleibt für den jeweiligen Zweck und Zeitraum gespeichert. AWS-Zugriffs- und Anwendungsprotokolle werden 30 Tage aufbewahrt. Diese Fristen müssen vor Veröffentlichung eingerichtet und umgesetzt werden. Browsereinstellungen bleiben bis zur Änderung oder Löschung gespeichert; die Erlaubnis für LinkedIn-Einbettungen gilt nur für den aktuellen Seitenbesuch."
+            },
+            "rights": {
+                "title": "Ihre Rechte und Fragen",
+                "body": "Unter den Voraussetzungen der DSGVO können Sie Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit verlangen. Einer Verarbeitung auf Grundlage berechtigter Interessen können Sie aus Gründen Ihrer besonderen Situation widersprechen. Eine Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen. Wenden Sie sich zur Ausübung Ihrer Rechte an den oben genannten Verantwortlichen. Sie können sich beim slowenischen Informationsbeauftragten (Informacijski pooblaščenec) oder bei der Aufsichtsbehörde an Ihrem gewöhnlichen Aufenthaltsort, Arbeitsplatz oder dem Ort des vermuteten Verstoßes beschweren. Ihre Kontaktanfrage wird auf dieser Website nicht für automatisierte Entscheidungen mit rechtlicher oder ähnlich erheblicher Wirkung verwendet."
+            }
+        }
+    }
 }

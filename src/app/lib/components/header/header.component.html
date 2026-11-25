@@ -1,107 +1,51 @@
-<!-- TOGGLE MOBILE BUTTON ICON-->
-<button
-    class="sidebar-toggle-button btn menu-icon position-absolute"
-    [title]="'accessibility.buttons.menu-open' | translate"
-    (click)="toggleMenu()"
-    [ngClass]="{ 'button-hidden': isMenuOpen() }"
->
-    <i class="bi bi-list"></i>
-</button>
-<nav
-    id="sidebar"
-    [ngClass]="{ 'mobile-sidebar-open': isMenuOpen(), 'sidebar-expanded': isSidebarExpanded() }"
-    class="sidebar language-icon"
->
-    <!-- CLOSE MOBILE MENU BUTTON-->
-    <button
-        class="btn menu-icon close-mobile-menu-button"
-        [title]="'accessibility.buttons.menu-close' | translate"
-        (click)="toggleMenu()"
-    >
-        <i class="bi bi-chevron-left"></i>
-    </button>
-    <!-- DESKTOP EXPAND/COLLAPSE BUTTON -->
-    <button
-        class="btn sidebar-expand-button d-none d-lg-flex justify-content-center align-items-center position-absolute"
-        [title]="isSidebarExpanded() ? 'Collapse sidebar' : 'Expand sidebar'"
-        (click)="toggleSidebar()"
-    >
-        <i class="bi" [ngClass]="isSidebarExpanded() ? 'bi-chevron-left' : 'bi-chevron-right'"></i>
-    </button>
-    <div class="sidebar-content">
-        <ul class="nav flex-column flex-nowrap h-100">
-            <!-- NAVI -->
-            <li [routerLinkActive]="['active']" class="nav-item">
+<a class="skip-link" href="#main-content">{{ 'home.skip' | translate }}</a>
+<header class="site-header">
+    <div class="nav-shell">
+        <a class="wordmark" routerLink="/" fragment="about" (click)="closeMenu()">
+            Črt Harej
+            <span>.</span>
+        </a>
+        <button
+            class="menu-toggle"
+            type="button"
+            [attr.aria-expanded]="menuOpen()"
+            aria-controls="main-nav"
+            (click)="menuOpen.set(!menuOpen())"
+        >
+            {{ (menuOpen() ? 'home.close' : 'home.menu') | translate }}
+        </button>
+        <nav id="main-nav" [class.is-open]="menuOpen()" [attr.aria-label]="'home.navigation' | translate">
+            @for (section of sections; track section) {
                 <a
-                    class="nav-link d-flex align-items-center"
-                    (click)="toggleMenu()"
-                    [routerLink]="['about']"
-                    aria-label="Go to About Me Section"
+                    routerLink="/"
+                    [fragment]="section"
+                    [class.active]="activeSection() === section"
+                    [attr.aria-current]="activeSection() === section ? 'location' : null"
+                    (click)="closeMenu()"
                 >
-                    <i class="bi bi-person-circle"></i>
-                    <span class="nav-label ms-2">{{ 'about.menu-item' | translate }}</span>
+                    {{ 'home.nav.' + section | translate }}
                 </a>
-            </li>
-            <li [routerLinkActive]="['active']" class="nav-item">
-                <a
-                    class="nav-link d-flex align-items-center"
-                    (click)="toggleMenu()"
-                    [routerLink]="['skills']"
-                    aria-label="Go to Skills Section"
-                >
-                    <i class="bi bi-person-fill-gear"></i>
-                    <span class="nav-label ms-2">{{ 'skills.menu-item' | translate }}</span>
-                </a>
-            </li>
-            <li [routerLinkActive]="['active']" class="nav-item">
-                <a
-                    class="nav-link d-flex align-items-center"
-                    (click)="toggleMenu()"
-                    [routerLink]="['experience']"
-                    aria-label="Go to Experience Section"
-                >
-                    <i class="bi bi-lightbulb-fill"></i>
-                    <span class="nav-label ms-2">{{ 'experience.menu-item' | translate }}</span>
-                </a>
-            </li>
-            <li [routerLinkActive]="['active']" class="nav-item">
-                <a
-                    class="nav-link d-flex align-items-center"
-                    (click)="toggleMenu()"
-                    [routerLink]="['education']"
-                    aria-label="Go to Education Section"
-                >
-                    <i class="bi bi-mortarboard-fill"></i>
-                    <span class="nav-label ms-2">{{ 'education.menu-item' | translate }}</span>
-                </a>
-            </li>
-            <li [routerLinkActive]="['active']" class="nav-item">
-                <a
-                    class="nav-link d-flex align-items-center"
-                    (click)="toggleMenu()"
-                    [routerLink]="['linkedin']"
-                    aria-label="Go to LinkedIn Posts"
-                >
-                    <i class="bi bi-linkedin"></i>
-                    <span class="nav-label ms-2">{{ 'linkedin.menu-item' | translate }}</span>
-                </a>
-            </li>
-            <li [routerLinkActive]="['active']" class="nav-item">
-                <a
-                    class="nav-link d-flex align-items-center"
-                    (click)="toggleMenu()"
-                    [routerLink]="['contact']"
-                    aria-label="Go to Contact"
-                >
-                    <i class="bi bi-send-fill"></i>
-                    <span class="nav-label ms-2">{{ 'contact.menu-item' | translate }}</span>
-                </a>
-            </li>
-            <li class="bottom-area mt-auto">
-                <div>
-                    <app-profile></app-profile>
-                </div>
-            </li>
-        </ul>
+            }
+        </nav>
+        <div class="preferences">
+            <select
+                name="language"
+                [value]="language.selectedLanguage()"
+                (change)="changeLanguage($event)"
+                [attr.aria-label]="'home.language' | translate"
+            >
+                <option value="en">EN</option>
+                <option value="de">DE</option>
+                <option value="si">SL</option>
+            </select>
+            <button
+                type="button"
+                class="theme-toggle"
+                (click)="toggleTheme()"
+                [attr.aria-label]="(theme.selectedTheme() === 'dark' ? 'theme.light' : 'theme.dark') | translate"
+            >
+                <i [class]="theme.selectedTheme() === 'dark' ? 'bi bi-sun' : 'bi bi-moon'" aria-hidden="true"></i>
+            </button>
+        </div>
     </div>
-</nav>
+</header>

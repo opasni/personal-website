@@ -22,99 +22,6 @@
             "I communicate fluently in Slovenian, English, and German, and I enjoy working with international teams where technical depth, clear decisions, and trust matter. Outside work, music, sport, chess, climbing, and travel keep me balanced and curious."
         ]
     },
-    "cv": {
-        "menu-item": "Generate CV",
-        "profile-label": "Executive Profile",
-        "positioning": "Technology Executive | Cloud & Platform Engineer | Solution Architect",
-        "about": "I am a <b>technology executive</b>, <b>cloud and platform engineer</b>, and <b>solution architect</b> with 10+ years of experience across software engineering, DevOps, analytics, AI tooling, and delivery leadership. As <b>Partner at 8020 Consulting GmbH</b> and <b>CEO of Achtzig20 d.o.o.</b>, I combine hands-on technical depth with commercial responsibility, team leadership, and stakeholder management.",
-        "about-tech": "My name is <b>Črt</b> (pronounced “Chert”). I design, build, and operate scalable software platforms across <b>AWS, Azure, microservices, APIs, event-driven integrations, data pipelines, and AI-supported systems</b>. I move comfortably between architecture, implementation, DevOps, testing, observability, and consulting, with a strong bias toward production-ready systems that are clear to maintain.",
-        "about-lead": "Technology executive, <b>AWS Certified Solutions Architect – Professional</b>, and hands-on cloud/platform engineer with 10+ years of experience delivering business-critical systems. As <b>Partner at 8020 Consulting GmbH</b> and <b>CEO of Achtzig20 d.o.o.</b>, I connect architecture and engineering depth with delivery leadership, stakeholder trust, and company growth.",
-        "selected-impact": {
-            "title": "Selected Impact",
-            "items": [
-                "Lead technology strategy, delivery quality, capability building, and executive decision-making across consulting engagements and internal products.",
-                "Design and operate cloud platforms, distributed systems, APIs, and event-driven integrations across AWS and Azure.",
-                "Implemented an <b>MCP integration</b> connecting an internal Copilot agent to the Squadcheck organizational and project-planning platform."
-            ]
-        },
-        "focus": {
-            "title": "Core Profile",
-            "executive": {
-                "title": "Technology Executive",
-                "details": "Strategy, delivery leadership, teams & growth"
-            },
-            "cloud": {
-                "title": "Cloud & Platform Engineer",
-                "details": "AWS, Azure, Kubernetes, IaC & DevOps"
-            },
-            "architecture": {
-                "title": "Solution Architect",
-                "details": "Distributed systems, APIs & integrations"
-            }
-        },
-        "experience": {
-            "8020": {
-                "summary": [
-                    "Drive company growth, consulting strategy, delivery quality, capability building, and executive decision-making across client work and internal initiatives.",
-                    "Lead and shape transformative projects including <b>Catena-X, Bloomfilter integrations, JobCar & Caroline, AI-guided automation, cloud platforms, and the 8020 AI Agent</b>."
-                ]
-            },
-            "achtzig20si": {
-                "summary": [
-                    "Established and operationally manage the Slovenian subsidiary, including recruitment, team development, local partnerships, and delivery alignment.",
-                    "Built the foundation for a reliable engineering organization connected to the wider 8020 group strategy."
-                ]
-            },
-            "achtzig20": {
-                "summary": [
-                    "Led software architecture, development processes, DevOps, and production delivery across web, desktop, mobile, cloud, and data-heavy systems.",
-                    "Delivered strategic work for <b>VW Group brands, CARIAD, Audi, Porsche, BMW, DZ Bank, Graf Hardenberg, DAK Coffee Roasters, Scania, and internal 8020 platforms</b>.",
-                    "Key themes: <i>microservices, cloud platforms, API integrations, AI tools, process mining, analytics, automated testing, and observability</i>."
-                ],
-                "intern-roles": [
-                    {
-                        "role": "CTO @ newonads GmbH",
-                        "duration": "11/2021 – 09/2024",
-                        "description": "Led the architecture and development of a SaaS digital advertising platform, focusing on brand engagement, lead generation, and revenue growth."
-                    },
-                    {
-                        "role": "CTO @ Studio3 GmbH",
-                        "duration": "10/2022 – 09/2024",
-                        "description": "Developed a web3-based community management platform, enhancing agency-client interactions while minimizing security risks."
-                    }
-                ]
-            },
-            "akka": {
-                "summary": [
-                    "Developed carship.online, focusing on software development and user flow design.",
-                    "Conception and implementation of training courses in the areas of data analytics and blockchain.",
-                    "Analyzed AUDI vehicles' resale prices, emphasizing the impact of optional features."
-                ]
-            },
-            "institute-js": {
-                "summary": [
-                    "Acquired skills in data analysis, C++ programming, running simulations, and data interpretation and completed a 6-month internship in Mainz Microtron."
-                ]
-            }
-        },
-        "education": {
-            "masters": {
-                "title": "MSc in Mathematical Physics",
-                "summary": [
-                    "GPA: 9.0 (Equivalent to A in USA, 1.7 in Germany)",
-                    "Thesis: \"Establishment of an Experiment for Measuring the Axial Form Factor of the Proton\""
-                ]
-            },
-            "bachelor": {
-                "title": "BSc in General Physics",
-                "summary": [
-                    "GPA: 8.3 (Equivalent to A in USA, 2.3 in Germany)",
-                    "Diverse coursework: astronomy, geophysics, electronics, computational physics.",
-                    "Thesis: \"Bariogenesis via Leptogenesis\""
-                ]
-            }
-        }
-    },
     "skills": {
         "menu-item": "Skills",
         "title": "Skills",
@@ -199,7 +106,7 @@
             "title": "Partner",
             "link": "8020.eco",
             "abstract": [
-                "I shape consulting strategy, capability building, delivery quality, and business development while staying close to the technical substance of our projects. My work connects executive decisions with practical engineering realities: team setup, client communication, commercial prioritization, and architecture direction.",
+                "As Partner, I combine consulting strategy, business development, and delivery responsibility with ongoing hands-on work as a tech lead and technical specialist. Architecture, implementation, and supporting engineers remain central to my work.",
                 "Recent initiatives span Catena-X data integration, Bloomfilter integrations, JobCar and Caroline for Graf Hardenberg, AI-guided automation tools, cloud hosting, and the 8020 AI Agent. Across these topics I focus on stable delivery, clear ownership, and technology choices that hold up in production."
             ],
             "skills": [
@@ -218,7 +125,8 @@
             "link": "achtzig20.si",
             "abstract": [
                 "I established and manage the Slovenian subsidiary of the 8020 group, building the local delivery foundation from student collaboration into a full company setup with office presence, recruitment, employee development, and operational structure.",
-                "The role combines people leadership, local partnerships, delivery alignment with the German parent company, and day-to-day responsibility for a healthy, reliable engineering organization."
+                "The role combines people leadership, local partnerships, delivery alignment with the German parent company, and day-to-day responsibility for a healthy, reliable engineering organization.",
+                "I established and lead the Slovenian subsidiary, building its team and operations while continuing to work as a tech lead and technical specialist on client projects."
             ],
             "skills": [
                 "Leadership",
@@ -584,6 +492,13 @@
         "empty": {
             "title": "No posts yet",
             "hint": "Add entries to src/app/pages/linkedin/linkedin-posts.const.ts to display your first embed."
+        },
+        "privacy": {
+            "title": "LinkedIn posts, only if you choose",
+            "body": "Loading these posts connects to LinkedIn, which receives your IP address and browser data and may set cookies, link the visit to your account or process data outside the EEA. Your permission applies only to this page visit.",
+            "load": "Load LinkedIn posts",
+            "hide": "Hide LinkedIn posts",
+            "external": "View directly on LinkedIn"
         }
     },
     "contact": {
@@ -600,7 +515,7 @@
         "email": {
             "label": "Email address",
             "placeholder": "example@gmail.com",
-            "hint": "I'll never share your email with anyone else.",
+            "hint": "Used to reply to your enquiry.",
             "error": {
                 "required": "Please enter your email address.",
                 "email": "Please enter a valid email address."
@@ -633,8 +548,14 @@
             "subject": "Online Contact",
             "one-last-thing": "Just to make sure you are not a bot. I know it's a bit annoying, but bare with me.",
             "fail": "Something went wrong. Please try again or write me on LinkedIn:",
-            "success": "Message was sent successfully! I will reach out to you as soon as possible."
-        }
+            "success": "Message was sent successfully! I will reach out to you as soon as possible.",
+            "unavailable": "The contact form is temporarily unavailable. You can reach me on LinkedIn.",
+            "retry-hint": "Your message could not be sent. Please try again with a fresh security check, or contact me on LinkedIn.",
+            "retry": "Try again",
+            "sending": "Sending your message…",
+            "verifying": "Checking the form for spam…"
+        },
+        "privacy-note": "Your message is used to handle your enquiry. Cloudflare Turnstile loads when you send the form to help prevent spam. Details:"
     },
     "theme": {
         "white": "White Theme",
@@ -646,7 +567,6 @@
     },
     "accessibility": {
         "buttons": {
-            "export-pdf": "Export to PDF",
             "menu-open": "Open Menu",
             "menu-close": "Close Menu",
             "send-contact": "Send",
@@ -656,5 +576,187 @@
             "profile": "Profile picture"
         }
     },
-    "insert-password": "Insert Password"
+    "home": {
+        "skip": "Skip to content",
+        "menu": "Menu",
+        "close": "Close",
+        "navigation": "Main navigation",
+        "language": "Language",
+        "technologies": "Technologies and capabilities",
+        "credentials": "Certified expertise",
+        "project-details": "What I built",
+        "nav": {
+            "about": "About",
+            "expertise": "Expertise",
+            "work": "Work",
+            "experience": "Experience",
+            "personal": "Beyond work",
+            "contact": "Contact"
+        },
+        "hero": {
+            "role": "Engineer, architect & leader",
+            "title": "Technical depth.",
+            "title-accent": "A broader perspective.",
+            "intro": "I turn complex problems into software that works in the real world. My work connects hands-on engineering, cloud architecture, and the people and decisions behind delivery.",
+            "work": "Explore my work",
+            "contact": "Let’s talk",
+            "caption": "Curious by nature. Practical by approach.",
+            "pronunciation": "One syllable. A little ə helps.",
+            "partner-role": "Partner · Technical leadership",
+            "director-role": "Managing Director · Hands-on engineering"
+        },
+        "expertise": {
+            "title": "From the big picture to the details.",
+            "intro": "I work across disciplines and stay close to the implementation. That means connecting business needs, technical decisions, and the teams who bring them to life.",
+            "architecture": {
+                "title": "Architecture & cloud",
+                "text": "Designing and operating reliable platforms: distributed services, integrations, infrastructure, and the tools to keep production healthy."
+            },
+            "engineering": {
+                "title": "Hands-on engineering",
+                "text": "Building across backend, web, and mobile—from APIs and data models to interfaces, automated tests, and deployment."
+            },
+            "data": {
+                "title": "Data & applied AI",
+                "text": "Turning data into useful tools through process mining, analytics, AI-assisted workflows, and integrations with business systems."
+            },
+            "leadership": {
+                "title": "People & delivery",
+                "text": "Building teams and a company, shaping technical direction, working with clients, and helping engineers grow.",
+                "tags": ["Team leadership", "Strategy", "Mentoring", "Client collaboration"]
+            }
+        },
+        "work": {
+            "title": "Different challenges. Shared ownership.",
+            "intro": "A selection of work across mobility, enterprise software, AI, analytics, and commerce. My involvement spans architecture, implementation, and operation.",
+            "more": "Explore the full project & career history",
+            "personal-project": "Personal project:"
+        },
+        "projects": {
+            "job-car": {
+                "category": "Product & cloud",
+                "summary": "A vehicle leasing platform, from architecture and user experience to full-stack implementation, cloud operations, and end-to-end testing."
+            },
+            "squadcheck": {
+                "category": "Enterprise & AI integration",
+                "summary": "An internal platform for people, projects, and budgets, with an MCP integration connecting its capabilities to an internal Copilot agent."
+            },
+            "audi-frequency": {
+                "category": "Mobile & applied physics",
+                "summary": "A cross-platform app that brings acoustic frequency analysis, vehicle data, and offline workflows into technicians’ hands."
+            },
+            "vw-ai": {
+                "category": "Applied AI",
+                "summary": "Tools that automate logistics data and document work, including spreadsheet mapping, report transformation, and tutorial generation."
+            },
+            "scania": {
+                "category": "Data & process mining",
+                "summary": "Connecting distributed data to reveal bottlenecks and support improvements in the order-to-delivery process."
+            },
+            "dak": {
+                "category": "Commerce & automation",
+                "summary": "Wholesale and retail systems connecting payments, production workflows, and shipping automation with reliable cloud hosting."
+            }
+        },
+        "experience": {
+            "title": "An engineer’s mindset. A leader’s responsibility.",
+            "intro": "Technical leadership has been a constant throughout my career. Alongside my responsibilities as managing director and later Partner, I have continued working hands-on as a tech lead and technical specialist: designing systems, writing software, solving difficult problems, and guiding engineering teams.",
+            "continuous": "Continuous technical role",
+            "technical-title": "Tech Lead & Technical Specialist",
+            "technical-description": "Hands-on architecture, software engineering, complex problem-solving, and mentoring throughout my time at Achtzig20 and 8020 Consulting. This work continues alongside the responsibilities below.",
+            "parallel": "Additional responsibilities · held in parallel"
+        },
+        "roles": {
+            "8020": "Consulting strategy, business development, and delivery responsibility, added alongside my ongoing work as a tech lead and technical specialist.",
+            "achtzig20si": "Building and leading the Slovenian subsidiary: team development, recruitment, and company operations, alongside my ongoing technical role.",
+            "achtzig20": "Led architecture and delivery across enterprise, web, mobile, cloud, and data projects, alongside implementation and mentoring."
+        },
+        "foundation": {
+            "label": "The foundation",
+            "title": "Trained in physics. Drawn to difficult problems.",
+            "text": "My background in mathematical physics and research shaped how I approach engineering: understand the system, question assumptions, and test ideas against evidence.",
+            "more": "Education & research"
+        },
+        "personal": {
+            "title": "Curiosity doesn’t stop at work.",
+            "intro": "There is more to me than the systems I build. Travel, music, and time outdoors are also part of my life.",
+            "travel-title": "A wider view",
+            "travel": "I’ve travelled extensively and enjoy discovering unfamiliar places and different ways of life. That curiosity sits alongside my work with international teams.",
+            "camino": "Walking the Camino Francés gave me time away from a busy life to reflect and re-evaluate what really matters. It was also an experience in endurance: when everything hurts and you feel like you’re failing, get up and try again.",
+            "offline-title": "Away from the keyboard",
+            "offline": "Singing, playing guitar, climbing, running, and a game of chess give me different ways to spend my time and keep learning.",
+            "books-title": "Between the pages",
+            "books": "I’ve also contributed to books as a technical editor — another way my interest in technology and sharing knowledge takes shape."
+        },
+        "contact": {
+            "title": "Let’s make something useful.",
+            "intro": "Have a technical challenge, a project in mind, or an idea worth discussing? I’d be happy to hear from you.",
+            "linkedin": "Connect on LinkedIn",
+            "write": "Prefer a message? Write to me here."
+        },
+        "footer": {
+            "notes": "Notes on LinkedIn",
+            "top": "Back to top"
+        }
+    },
+    "legal": {
+        "back": "Back to the website",
+        "country": "Slovenia",
+        "email": "Email",
+        "email-pending": "Public contact address to be confirmed before publication.",
+        "footer-nav": "Legal information and further links",
+        "draft": "Draft for review: retention settings and international transfer arrangements still need confirmation before publication.",
+        "imprint": {
+            "title": "Legal notice / Impressum",
+            "intro": "Information about the operator of this website.",
+            "operator": "Website operator",
+            "owner": "Owner",
+            "registration": "Business registration",
+            "form": "Legal form",
+            "sole-trader": "Sole proprietor (s.p.), Slovenia",
+            "register": "Register",
+            "number": "Registration number (matična številka)",
+            "tax": "Tax number (davčna številka)",
+            "vat": "VAT identification number"
+        },
+        "privacy": {
+            "title": "Privacy notice",
+            "intro": "How personal data is handled when you visit this website or get in touch.",
+            "controller": "Data controller",
+            "aws-link": "AWS Privacy Notice",
+            "linkedin-link": "LinkedIn Privacy Policy",
+            "hosting": {
+                "title": "Website delivery and security",
+                "body": "The website uses Amazon Web Services (AWS) S3 and CloudFront for hosting and content delivery. Requests expose technical information such as your IP address, requested URL, time of access and browser information to the infrastructure serving the website. Processing necessary to deliver and secure the website is based on legitimate interests under Article 6(1)(f) GDPR. The contact API is currently configured in AWS region us-east-1 (United States). The exact contracting AWS entity, logging configuration and retention periods must be confirmed before this notice is published."
+            },
+            "contact": {
+                "title": "Contact messages",
+                "body": "The contact form sends your name, email address, selected subject, message, language and a security verification token to the contact API. These details are used to handle your request and reply to you. Processing is based on Article 6(1)(b) GDPR when you request steps towards a contract, or Article 6(1)(f) GDPR for other correspondence, reflecting the interest in responding to enquiries. Providing information is voluntary, but the required fields are needed to process the form and reply. Do not include sensitive personal information. The email delivery provider, receiving mailbox provider, any message database and applicable deletion schedule are still to be confirmed."
+            },
+            "turnstile": {
+                "title": "Spam protection with Cloudflare Turnstile",
+                "body": "Turnstile, provided by Cloudflare, Inc. (United States), loads only after you submit a valid contact form. It processes signals including IP address, browser information, TLS fingerprint and website origin to distinguish people from bots. The verification token is sent with your message and must be checked by the contact server. The proposed legal basis is Article 6(1)(f) GDPR: protecting the contact service against spam and abuse. Cloudflare acts as a processor for website protection and as a separate controller when improving its bot detection. Its privacy addendum explains these roles. The widget is intended to use managed mode without pre-clearance. The final configuration and legal basis require review before launch."
+            },
+            "storage": {
+                "title": "Local storage and cookies",
+                "body": "This application does not include analytics or advertising trackers. Fonts are served with the website. Your chosen language and appearance are stored in your browser’s local storage under “language” and “theme”. These entries support the preferences and access you request and remain until replaced or removed through your browser settings. The proposed basis for this functional processing is Article 6(1)(f) GDPR. Third-party services may process additional data as described below and in their own notices; the absence of analytics does not mean that no personal data is processed."
+            },
+            "linkedin": {
+                "title": "Optional LinkedIn posts and external links",
+                "body": "LinkedIn embeds are off by default. Choosing “Load LinkedIn posts” gives consent for embedded content from LinkedIn Ireland Unlimited Company, Ireland, and its group companies to load. LinkedIn then receives technical data including your IP address and browser information and may use cookies, associate the visit with your LinkedIn account, or process data outside the EEA. This optional loading is based on consent under Article 6(1)(a) GDPR. You can withdraw it with “Hide LinkedIn posts” or by leaving this page; your choice is not saved. This stops further loading here but does not undo previous processing or remove cookies already set by LinkedIn, which can be managed in your browser. Ordinary external links connect to their destination only when followed."
+            },
+            "transfers": {
+                "title": "Recipients and international transfers",
+                "body": "AWS, Cloudflare and, if you enable embeds, LinkedIn receive data for the purposes described above. Contact delivery and mailbox providers must also be identified before publication. The US-region API and third-party services can involve processing outside the European Economic Area. Before launch, the applicable processor agreements and transfer safeguards must be confirmed for the actual providers and accounts, including any relevant adequacy decision or Standard Contractual Clauses and supplementary measures. This draft does not yet establish which safeguards apply to each data flow."
+            },
+            "retention": {
+                "title": "How long data is kept",
+                "body": "Proposed retention policy, pending setup: routine contact enquiries are deleted within 12 months of the last exchange. Correspondence needed for an ongoing engagement, legal obligations or legal claims is retained for the applicable purpose and period. AWS access and application logs are kept for 30 days. These periods must be configured and applied before this notice is published. Browser preferences remain until changed or cleared; LinkedIn embed permission lasts only for the current page visit."
+            },
+            "rights": {
+                "title": "Your rights and questions",
+                "body": "Subject to the GDPR’s conditions, you can request access, correction, deletion, restriction of processing and data portability. You can object to processing based on legitimate interests for reasons relating to your situation and withdraw consent at any time without affecting earlier lawful processing. Contact the controller listed above to exercise these rights. You may complain to the Slovenian Information Commissioner (Informacijski pooblaščenec) or the supervisory authority in your place of habitual residence, work or the alleged infringement. This website does not use your contact message for automated decisions with legal or similarly significant effects."
+            }
+        }
+    }
 }

@@ -1,8 +1,60 @@
-.wrapper {
-    align-items: stretch;
-    min-height: 100vh;
+:host {
+    display: block;
 }
-
-#scrollingContainer {
-    position: relative;
+.portfolio {
+    --page-bg: #f7f8fa;
+    --surface: #ffffff;
+    --ink: #20272e;
+    --muted: #59636d;
+    --line: #dce0e4;
+    --accent: #b73e28;
+    --tint: #eef0f3;
+    --font-color: var(--ink);
+    --background-color: var(--page-bg);
+    --light-background: var(--surface);
+    min-height: 100vh;
+    background: var(--page-bg);
+    color: var(--ink);
+}
+.dark-theme {
+    --page-bg: #181d22;
+    --surface: #20262d;
+    --ink: #f3f4f6;
+    --muted: #adb7c1;
+    --line: #38414a;
+    --accent: #f18e76;
+    --tint: #242b33;
+}
+.white-theme {
+    --page-bg: #fff;
+    --surface: #f7f8fa;
+}
+main {
+    outline: none;
+}
+.site-footer {
+    width: min(1180px, calc(100% - 48px));
+    margin-inline: auto;
+    padding: 28px 0;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    color: var(--muted);
+    font-size: 0.875rem;
+}
+.site-footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+}
+.site-footer a {
+    color: inherit;
+    text-underline-offset: 0.2em;
+}
+@media print {
+    .site-footer {
+        display: none;
+    }
 }

@@ -22,99 +22,6 @@
             "Tekoče komuniciram v slovenščini, angleščini in nemščini ter rad delam v mednarodnih ekipah, kjer štejejo tehnična globina, jasne odločitve in zaupanje. Glasba, šport, šah, plezanje in potovanja skrbijo za ravnovesje in radovednost."
         ]
     },
-    "cv": {
-        "menu-item": "Ustvari življenjepis",
-        "profile-label": "Izvršni profil",
-        "positioning": "Technology Executive | Cloud & Platform Engineer | Solution Architect",
-        "about": "Sem <b>tehnološki vodja</b>, <b>cloud in platform engineer</b> ter <b>arhitekt rešitev</b> z več kot 10 leti izkušenj na področjih razvoja programske opreme, DevOps, analitike, AI-podprtih orodij in vodenja izvedbe. Kot <b>partner v 8020 Consulting GmbH</b> in <b>direktor Achtzig20 d.o.o.</b> povezujem tehnično globino s poslovno odgovornostjo, vodenjem ekip in upravljanjem deležnikov.",
-        "about-tech": "Moje ime je <b>Črt</b>. Načrtujem, razvijam in upravljam razširljive programske platforme na osnovi <b>AWS, Azure, mikrostoritev, API-jev, event-driven integracij, podatkovnih tokov in AI-podprtih sistemov</b>. Dobro se znajdem med arhitekturo, implementacijo, DevOps, testiranjem, observability in svetovanjem.",
-        "about-lead": "Tehnološki vodja, <b>AWS Certified Solutions Architect – Professional</b> in praktično usmerjen cloud/platform engineer z več kot 10 leti izkušenj pri izvedbi poslovno kritičnih sistemov. Kot <b>partner v 8020 Consulting GmbH</b> in <b>direktor Achtzig20 d.o.o.</b> povezujem arhitekturno in inženirsko globino z vodenjem izvedbe, zaupanjem deležnikov in rastjo podjetja.",
-        "selected-impact": {
-            "title": "Izbrani dosežki",
-            "items": [
-                "Vodenje tehnološke strategije, kakovosti izvedbe, razvoja kompetenc in ključnih odločitev v svetovalnih projektih ter internih produktih.",
-                "Načrtovanje in upravljanje cloud platform, distribuiranih sistemov, API-jev in event-driven integracij na AWS in Azure.",
-                "Implementacija <b>MCP-integracije</b>, ki internega Copilot agenta povezuje s platformo Squadcheck za organizacijsko in projektno planiranje."
-            ]
-        },
-        "focus": {
-            "title": "Ključni profil",
-            "executive": {
-                "title": "Technology Executive",
-                "details": "Strategija, vodenje izvedbe, ekipe in rast"
-            },
-            "cloud": {
-                "title": "Cloud & Platform Engineer",
-                "details": "AWS, Azure, Kubernetes, IaC in DevOps"
-            },
-            "architecture": {
-                "title": "Solution Architect",
-                "details": "Distribuirani sistemi, API-ji in integracije"
-            }
-        },
-        "experience": {
-            "8020": {
-                "summary": [
-                    "Vodenje rasti podjetja, svetovalne strategije, kakovosti izvedbe, razvoja kompetenc in ključnih odločitev v projektih za naročnike ter internih pobudah.",
-                    "Vodenje in oblikovanje transformativnih projektov, kot so <b>Catena-X, Bloomfilter integracije, JobCar & Caroline, AI-podprta avtomatizacija, cloud platforme in 8020 AI Agent</b>."
-                ]
-            },
-            "achtzig20si": {
-                "summary": [
-                    "Ustanovitev in operativno vodenje slovenske hčerinske družbe, vključno z zaposlovanjem, razvojem ekipe, lokalnimi partnerstvi in usklajevanjem izvedbe.",
-                    "Vzpostavitev temeljev za zanesljivo inženirsko organizacijo znotraj skupine 8020."
-                ]
-            },
-            "achtzig20": {
-                "summary": [
-                    "Tehnično vodenje arhitekture, razvojnih procesov, DevOps in produkcijske izvedbe za web, desktop, mobile, cloud in podatkovno intenzivne sisteme.",
-                    "Izvedba strateškega dela za <b>znamke skupine VW, CARIAD, Audi, Porsche, BMW, DZ Bank, Graf Hardenberg, DAK Coffee Roasters, Scania in interne 8020 platforme</b>.",
-                    "Ključne teme: <i>mikrostoritve, cloud platforme, API integracije, AI orodja, process mining, analitika, avtomatizirano testiranje in observability</i>."
-                ],
-                "intern-roles": [
-                    {
-                        "role": "CTO @ newonads GmbH",
-                        "duration": "11/2021 – 09/2024",
-                        "description": "Vodil arhitekturo in razvoj SaaS digitalne oglaševalske platforme s poudarkom na angažiranosti blagovnih znamk, pridobivanju potencialnih strank in rasti prihodkov."
-                    },
-                    {
-                        "role": "CTO @ Studio3 GmbH",
-                        "duration": "10/2022 – 09/2024",
-                        "description": "Razvil platformo za upravljanje skupnosti na osnovi Web3, ki izboljšuje interakcijo med agencijami in strankami ter hkrati zmanjšuje varnostna tveganja."
-                    }
-                ]
-            },
-            "akka": {
-                "summary": [
-                    "Razvoj carship.online s poudarkom na programskem razvoju in oblikovanju uporabniškega toka.",
-                    "Zasnova in izvedba izobraževanj na področju analitike podatkov in blockchain tehnologije.",
-                    "Analiza preprodajnih cen vozil AUDI s poudarkom na vplivu dodatne opreme."
-                ]
-            },
-            "institute-js": {
-                "summary": [
-                    "Pridobljeno znanje iz analize podatkov, programiranja v C++, izvajanja simulacij in interpretacije podatkov ter zaključeno 6-mesečno prakso v pospeševalniku Mainz Microtron."
-                ]
-            }
-        },
-        "education": {
-            "masters": {
-                "title": "Mag. matematične fizike",
-                "summary": [
-                    "Povprečna ocena: 9,0 (enakovredno oceni A v ZDA, 1,7 v Nemčiji)",
-                    "Magistrska naloga: »Vzpostavitev eksperimenta za merjenje aksialnega formnega faktorja protona«"
-                ]
-            },
-            "bachelor": {
-                "title": "Univ. dipl. splošne fizike",
-                "summary": [
-                    "Povprečna ocena: 8,3 (enakovredno oceni A v ZDA, 2,3 v Nemčiji)",
-                    "Raznolik študij: astronomija, geofizika, elektronika, računalniška fizika.",
-                    "Diplomska naloga: »Bariogeneza prek leptogeneze«"
-                ]
-            }
-        }
-    },
     "skills": {
         "menu-item": "Spretnosti",
         "title": "Spretnosti",
@@ -199,7 +106,7 @@
             "title": "Partner",
             "link": "8020.eco",
             "abstract": [
-                "Kot partner v 8020 Consulting GmbH sooblikujem svetovalno strategijo, rast podjetja, kakovost izvedbe in razvoj kompetenc. Moje delo povezuje vodstvene odločitve s praktično inženirsko realnostjo: sestavo ekip, komunikacijo z naročniki, prioritete in arhitekturno smer.",
+                "Kot partner povezujem svetovalno strategijo, poslovni razvoj in odgovornost za izvedbo z nadaljnjim praktičnim delom tehničnega vodje in specialista. Arhitektura, razvoj in podpora razvijalcem ostajajo osrednji del mojega dela.",
                 "Novejše pobude vključujejo Catena-X, Bloomfilter integracije, JobCar in Caroline za Graf Hardenberg, AI-podprta orodja, cloud hosting in 8020 AI Agent."
             ],
             "skills": [
@@ -218,7 +125,8 @@
             "link": "achtzig20.si",
             "abstract": [
                 "Vzpostavil in vodim slovensko hčerinsko družbo skupine 8020: od študentskega sodelovanja do podjetja z lokalno prisotnostjo, zaposlovanjem, razvojem ekipe in operativno strukturo.",
-                "Vloga združuje vodenje ljudi, lokalna partnerstva, usklajevanje izvedbe z nemško matično družbo in odgovornost za zdravo in zanesljivo inženirsko organizacijo."
+                "Vloga združuje vodenje ljudi, lokalna partnerstva, usklajevanje izvedbe z nemško matično družbo in odgovornost za zdravo in zanesljivo inženirsko organizacijo.",
+                "Ustanovil sem slovensko podružnico ter vodim njeno ekipo in poslovanje. Ob tem še naprej delujem kot tehnični vodja in specialist na projektih za naročnike."
             ],
             "skills": ["Vodenje", "Rast podjetja", "Operativno vodenje", "Partnerstva", "Razvoj ekipe"]
         },
@@ -578,6 +486,13 @@
         "empty": {
             "title": "Ni še dodanih objav",
             "hint": "Dodaj vnose v src/app/pages/linkedin/linkedin-posts.const.ts za prikaz prvega embeda."
+        },
+        "privacy": {
+            "title": "Objave LinkedIn samo po vaši izbiri",
+            "body": "Nalaganje vzpostavi povezavo z LinkedInom, ki prejme vaš naslov IP in podatke o brskalniku ter lahko nastavi piškotke, obisk poveže z vašim računom ali obdeluje podatke zunaj EGP. Dovoljenje velja le za ta obisk strani.",
+            "load": "Naloži objave LinkedIn",
+            "hide": "Skrij objave LinkedIn",
+            "external": "Odpri neposredno na LinkedInu"
         }
     },
     "contact": {
@@ -594,7 +509,7 @@
         "email": {
             "label": "Spletna pošta",
             "placeholder": "primer@gmail.com",
-            "hint": "Vaše spletne pošte ne bom delil z nikomer.",
+            "hint": "Uporabi se za odgovor na vašo poizvedbo.",
             "error": {
                 "required": "Prosimo, vnesite vaš e-poštni naslov.",
                 "email": "Prosimo, vnesite veljaven e-poštni naslov."
@@ -627,8 +542,14 @@
             "subject": "Spletno povpraševanje",
             "one-last-thing": "Samo da se prepričam, da niste robot. Vem, da je malce nadležno, ampak prosim, vztrajajte z menoj.",
             "fail": "Nekaj je šlo narobe. Prosimo, poskusite znova ali mi pišite na LinkedInu:",
-            "success": "Sporočilo uspešno poslano! V kontakt bom stopil v najkrajšem možnem času."
-        }
+            "success": "Sporočilo uspešno poslano! V kontakt bom stopil v najkrajšem možnem času.",
+            "unavailable": "Kontaktni obrazec trenutno ni na voljo. Dosegljiv sem na LinkedInu.",
+            "retry-hint": "Sporočila ni bilo mogoče poslati. Poskusite znova z novim varnostnim preverjanjem ali me kontaktirajte na LinkedInu.",
+            "retry": "Poskusi znova",
+            "sending": "Pošiljanje sporočila…",
+            "verifying": "Preverjanje obrazca za neželena sporočila…"
+        },
+        "privacy-note": "Vaši podatki se uporabijo za obravnavo poizvedbe. Ob oddaji se za zaščito pred neželenimi sporočili naloži Cloudflare Turnstile. Podrobnosti:"
     },
     "theme": {
         "white": "Beli Nacin",
@@ -640,7 +561,6 @@
     },
     "accessibility": {
         "buttons": {
-            "export-pdf": "Izvozi v PDF",
             "menu-open": "Odpri menu",
             "menu-close": "Zapri menu",
             "send-contact": "Pošlji",
@@ -650,5 +570,187 @@
             "profile": "Profilna Slika"
         }
     },
-    "insert-password": "Vnesite Geslo"
+    "home": {
+        "skip": "Preskoči na vsebino",
+        "menu": "Meni",
+        "close": "Zapri",
+        "navigation": "Glavna navigacija",
+        "language": "Jezik",
+        "technologies": "Tehnologije in kompetence",
+        "credentials": "Potrjeno znanje",
+        "project-details": "Moj prispevek",
+        "nav": {
+            "about": "O meni",
+            "expertise": "Znanje",
+            "work": "Projekti",
+            "experience": "Izkušnje",
+            "personal": "Osebno",
+            "contact": "Kontakt"
+        },
+        "hero": {
+            "role": "Razvijalec, arhitekt in vodja",
+            "title": "Tehnična globina.",
+            "title-accent": "Širši pogled.",
+            "intro": "Kompleksne probleme pretvarjam v programsko opremo, ki deluje v praksi. Povezujem razvoj, arhitekturo v oblaku ter ljudi in odločitve, ki omogočajo izvedbo.",
+            "work": "Raziščite moje delo",
+            "contact": "Pogovorimo se",
+            "caption": "Radoveden po naravi. Praktičen pri delu.",
+            "pronunciation": "En zlog. Majhen ə pomaga.",
+            "partner-role": "Partner · Tehnično vodenje",
+            "director-role": "Direktor · Praktično razvojno delo"
+        },
+        "expertise": {
+            "title": "Od celotne slike do podrobnosti.",
+            "intro": "Delujem na različnih področjih in ostajam blizu izvedbi. Povezujem poslovne potrebe, tehnične odločitve in ekipe, ki jih uresničujejo.",
+            "architecture": {
+                "title": "Arhitektura in oblak",
+                "text": "Načrtovanje in upravljanje zanesljivih platform: porazdeljene storitve, integracije, infrastruktura in orodja za stabilno produkcijsko okolje."
+            },
+            "engineering": {
+                "title": "Praktičen razvoj programske opreme",
+                "text": "Razvoj zalednih, spletnih in mobilnih rešitev – od API-jev in podatkovnih modelov do vmesnikov, avtomatiziranih testov in namestitve."
+            },
+            "data": {
+                "title": "Podatki in uporabna umetna inteligenca",
+                "text": "Pretvarjanje podatkov v uporabna orodja s procesnim rudarjenjem, analitiko, delovnimi tokovi z umetno inteligenco in integracijami s poslovnimi sistemi."
+            },
+            "leadership": {
+                "title": "Ljudje in izvedba",
+                "text": "Gradnja ekip in podjetja, usmerjanje tehničnega razvoja, sodelovanje s strankami in podpora strokovni rasti razvijalcev.",
+                "tags": ["Vodenje ekip", "Strategija", "Mentorstvo", "Sodelovanje s strankami"]
+            }
+        },
+        "work": {
+            "title": "Različni izzivi. Odgovornost za rezultat.",
+            "intro": "Izbor projektov s področij mobilnosti, poslovne programske opreme, umetne inteligence, analitike in trgovine. Moj prispevek sega od arhitekture in razvoja do obratovanja.",
+            "more": "Vsi projekti in poklicne izkušnje",
+            "personal-project": "Osebni projekt:"
+        },
+        "projects": {
+            "job-car": {
+                "category": "Produkt in oblak",
+                "summary": "Platforma za leasing vozil – od arhitekture in uporabniške izkušnje do celovitega razvoja, obratovanja v oblaku in testiranja od začetka do konca."
+            },
+            "squadcheck": {
+                "category": "Poslovna programska oprema in UI",
+                "summary": "Interna platforma za ljudi, projekte in proračune z integracijo MCP, ki njene funkcije povezuje z internim agentom Copilot."
+            },
+            "audi-frequency": {
+                "category": "Mobilni razvoj in uporabna fizika",
+                "summary": "Večplatformska aplikacija za analizo zvočnih frekvenc, dostop do podatkov vozil in delo tehnikov brez internetne povezave."
+            },
+            "vw-ai": {
+                "category": "Uporabna umetna inteligenca",
+                "summary": "Orodja za avtomatizacijo logističnih podatkov in dokumentov, vključno s preslikavo preglednic, pretvorbo poročil in pripravo navodil."
+            },
+            "scania": {
+                "category": "Podatki in procesno rudarjenje",
+                "summary": "Povezovanje razpršenih podatkov za odkrivanje ozkih grl in podporo izboljšavam procesa od naročila do dostave."
+            },
+            "dak": {
+                "category": "Trgovina in avtomatizacija",
+                "summary": "Veleprodajni in maloprodajni sistemi, ki povezujejo plačila, proizvodne procese in avtomatizacijo pošiljanja z zanesljivim gostovanjem v oblaku."
+            }
+        },
+        "experience": {
+            "title": "Razmišljanje inženirja. Odgovornost vodje.",
+            "intro": "Tehnično vodenje je stalnica moje kariere. Ob odgovornostih direktorja in pozneje partnerja sem ves čas praktično deloval kot tehnični vodja in specialist: načrtoval sisteme, razvijal programsko opremo, reševal zahtevne probleme in usmerjal razvojne ekipe.",
+            "continuous": "Neprekinjena tehnična vloga",
+            "technical-title": "Tehnični vodja in specialist",
+            "technical-description": "Praktično delo na arhitekturi, razvoju programske opreme, zahtevnih problemih in mentorstvu skozi celotno obdobje pri Achtzig20 in 8020 Consulting. To delo nadaljujem vzporedno s spodnjimi odgovornostmi.",
+            "parallel": "Dodatne odgovornosti · opravljane vzporedno"
+        },
+        "roles": {
+            "8020": "Svetovalna strategija, poslovni razvoj in odgovornost za izvedbo kot dodatne naloge ob nadaljnjem delu tehničnega vodje in specialista.",
+            "achtzig20si": "Ustanovitev in vodenje slovenske podružnice: razvoj ekipe, zaposlovanje in poslovanje podjetja ob nadaljevanju moje tehnične vloge.",
+            "achtzig20": "Vodenje arhitekture in izvedbe poslovnih, spletnih, mobilnih, oblačnih in podatkovnih projektov, skupaj z razvojem in mentorstvom."
+        },
+        "foundation": {
+            "label": "Temelji",
+            "title": "Izobrazba iz fizike. Veselje do zahtevnih problemov.",
+            "text": "Matematična fizika in raziskovanje sta oblikovala moj pristop k razvoju: razumeti sistem, preveriti predpostavke in preizkusiti ideje na podlagi dokazov.",
+            "more": "Izobrazba in raziskovanje"
+        },
+        "personal": {
+            "title": "Radovednost se ne konča pri delu.",
+            "intro": "Sem več kot sistemi, ki jih razvijam. Potovanja, glasba in čas na prostem so prav tako del mojega življenja.",
+            "travel-title": "Širši pogled",
+            "travel": "Veliko sem potoval in rad odkrivam neznane kraje ter drugačne načine življenja. Ta radovednost spremlja tudi moje delo z mednarodnimi ekipami.",
+            "camino": "Camino Francés mi je dal čas zase, stran od hitrega vsakdana, da sem razmislil in znova ovrednotil, kaj zares šteje. Bil je tudi izkušnja vztrajnosti: ko vse boli in imaš občutek, da ti ne uspeva, vstani in poskusi znova.",
+            "offline-title": "Stran od tipkovnice",
+            "offline": "Petje, igranje kitare, plezanje, tek in partija šaha mi ponujajo drugačne načine preživljanja časa in učenja.",
+            "books-title": "Med platnicami",
+            "books": "Kot tehnični urednik sem sodeloval tudi pri nastajanju knjig — še en način, kako povezujem zanimanje za tehnologijo in deljenje znanja."
+        },
+        "contact": {
+            "title": "Ustvarimo nekaj uporabnega.",
+            "intro": "Imate tehnični izziv, projekt ali idejo, o kateri bi se bilo vredno pogovoriti? Vesel bom vašega sporočila.",
+            "linkedin": "Povežimo se na LinkedInu",
+            "write": "Raje pošljete sporočilo? Pišite mi tukaj."
+        },
+        "footer": {
+            "notes": "Objave na LinkedInu",
+            "top": "Na vrh"
+        }
+    },
+    "legal": {
+        "back": "Nazaj na spletno stran",
+        "country": "Slovenija",
+        "email": "E-pošta",
+        "email-pending": "Javni kontaktni e-naslov bo potrjen pred objavo.",
+        "footer-nav": "Pravne informacije in dodatne povezave",
+        "draft": "Osnutek za pregled: pred objavo je treba potrditi nastavitve hrambe in ureditev mednarodnih prenosov podatkov.",
+        "imprint": {
+            "title": "Podatki o ponudniku",
+            "intro": "Informacije o upravljavcu te spletne strani.",
+            "operator": "Ponudnik in upravljavec spletne strani",
+            "owner": "Podjetnik",
+            "registration": "Registrski podatki",
+            "form": "Pravna oblika",
+            "sole-trader": "Samostojni podjetnik posameznik (s.p.), Slovenija",
+            "register": "Register",
+            "number": "Matična številka",
+            "tax": "Davčna številka",
+            "vat": "Identifikacijska številka za DDV"
+        },
+        "privacy": {
+            "title": "Obvestilo o zasebnosti",
+            "intro": "Kako se obdelujejo osebni podatki ob obisku te spletne strani in ob vzpostavitvi stika.",
+            "controller": "Upravljavec osebnih podatkov",
+            "aws-link": "Obvestilo o zasebnosti AWS",
+            "linkedin-link": "Politika zasebnosti LinkedIn",
+            "hosting": {
+                "title": "Delovanje in varnost spletne strani",
+                "body": "Spletna stran za gostovanje in dostavo vsebine uporablja Amazon Web Services (AWS) S3 in CloudFront. Infrastruktura ob zahtevah prejme tehnične podatke, kot so naslov IP, zahtevani URL, čas dostopa in podatki o brskalniku. Obdelava, potrebna za delovanje in varnost strani, temelji na zakonitih interesih po členu 6(1)(f) Splošne uredbe o varstvu podatkov (GDPR). Kontaktni API je trenutno nastavljen v regiji AWS us-east-1 (ZDA). Pred objavo je treba potrditi pogodbeno družbo AWS, nastavitve beleženja in roke hrambe."
+            },
+            "contact": {
+                "title": "Kontaktna sporočila",
+                "body": "Kontaktni obrazec pošlje ime, e-naslov, izbrano zadevo, sporočilo, jezik in varnostni žeton kontaktnemu API-ju. Podatki se uporabljajo za obravnavo poizvedbe in odgovor. Pravna podlaga je člen 6(1)(b) GDPR pri predpogodbenih poizvedbah oziroma člen 6(1)(f) GDPR pri drugi korespondenci zaradi interesa za odgovarjanje na poizvedbe. Posredovanje podatkov je prostovoljno, vendar so obvezna polja potrebna za obdelavo obrazca in odgovor. Ne pošiljajte občutljivih osebnih podatkov. Ponudnik pošiljanja e-pošte, ponudnik prejemnega predala, morebitna podatkovna zbirka sporočil in roki izbrisa še niso potrjeni."
+            },
+            "turnstile": {
+                "title": "Zaščita pred neželenimi sporočili s Cloudflare Turnstile",
+                "body": "Turnstile ponudnika Cloudflare, Inc. (ZDA) se naloži šele po oddaji veljavno izpolnjenega kontaktnega obrazca. Za razlikovanje ljudi od botov obdeluje signale, kot so naslov IP, podatki o brskalniku, prstni odtis TLS in izvor spletne strani. Varnostni žeton se pošlje skupaj s sporočilom in ga mora preveriti kontaktni strežnik. Predvidena pravna podlaga je člen 6(1)(f) GDPR: zaščita kontaktne storitve pred neželenimi sporočili in zlorabo. Cloudflare pri zaščiti strani deluje kot obdelovalec, pri izboljševanju zaznavanja botov pa kot samostojni upravljavec. Njegov dodatek o zasebnosti pojasnjuje ti vlogi. Predvidena je uporaba načina Managed brez funkcije pre-clearance. Končno nastavitev in pravno podlago je treba pregledati pred zagonom."
+            },
+            "storage": {
+                "title": "Lokalna shramba in piškotki",
+                "body": "Aplikacija ne vključuje analitičnih ali oglaševalskih sledilnikov. Pisave se nalagajo s spletne strani. Izbrani jezik in videz se shranita v lokalno shrambo brskalnika pod ključema »language« in »theme«. Ti vnosi podpirajo nastavitve in dostop, ki jih zahtevate, ter ostanejo do zamenjave ali izbrisa v nastavitvah brskalnika. Za to funkcionalno obdelavo je predvidena podlaga po členu 6(1)(f) GDPR. Zunanje storitve lahko obdelujejo dodatne podatke, kot je opisano spodaj in v njihovih obvestilih; odsotnost analitike ne pomeni odsotnosti obdelave osebnih podatkov."
+            },
+            "linkedin": {
+                "title": "Izbirne objave LinkedIn in zunanje povezave",
+                "body": "Vdelane objave LinkedIn so privzeto izklopljene. Z izbiro »Naloži objave LinkedIn« privolite v nalaganje vsebin družbe LinkedIn Ireland Unlimited Company, Irska, in povezanih družb. LinkedIn nato prejme tehnične podatke, vključno z naslovom IP in podatki o brskalniku, ter lahko uporablja piškotke, obisk poveže z vašim računom ali obdeluje podatke zunaj EGP. Podlaga je privolitev po členu 6(1)(a) GDPR. Prekličete jo lahko z izbiro »Skrij objave LinkedIn« ali z odhodom s strani; izbira se ne shranjuje. S tem se ustavi nadaljnje nalaganje tukaj, ne razveljavi pa se pretekla obdelava in ne izbrišejo se že nastavljeni piškotki LinkedIn, ki jih lahko upravljate v brskalniku. Običajne zunanje povezave vzpostavijo povezavo s ciljem šele ob kliku."
+            },
+            "transfers": {
+                "title": "Prejemniki in mednarodni prenosi",
+                "body": "AWS, Cloudflare in ob omogočenih vdelavah LinkedIn prejemajo podatke za opisane namene. Pred objavo je treba navesti tudi ponudnika pošiljanja e-pošte in prejemnega predala. API v ZDA in zunanje storitve lahko vključujejo obdelavo zunaj Evropskega gospodarskega prostora. Pred zagonom je treba za dejanske ponudnike in račune potrditi pogodbe o obdelavi in zaščitne ukrepe za prenose, vključno z ustreznim sklepom o ustreznosti ali standardnimi pogodbenimi določili in dopolnilnimi ukrepi. Ta osnutek še ne določa, kateri ukrepi veljajo za posamezen tok podatkov."
+            },
+            "retention": {
+                "title": "Roki hrambe",
+                "body": "Predvideni roki hrambe, ki jih je treba še urediti: običajne kontaktne poizvedbe se izbrišejo v 12 mesecih od zadnje izmenjave. Korespondenca za tekoče sodelovanje, zakonske obveznosti ali pravne zahtevke se hrani za ustrezen namen in obdobje. Dnevniki dostopa in aplikacij AWS se hranijo 30 dni. Pred objavo je treba te roke nastaviti in izvajati. Nastavitve brskalnika ostanejo do spremembe ali izbrisa; dovoljenje za vdelave LinkedIn velja le za trenutni obisk strani."
+            },
+            "rights": {
+                "title": "Vaše pravice in vprašanja",
+                "body": "Pod pogoji GDPR lahko zahtevate dostop, popravek, izbris, omejitev obdelave in prenosljivost podatkov. Obdelavi na podlagi zakonitih interesov lahko ugovarjate iz razlogov, povezanih z vašim posebnim položajem, privolitev pa lahko kadar koli prekličete brez vpliva na zakonitost predhodne obdelave. Za uveljavljanje pravic se obrnite na zgoraj navedenega upravljavca. Pritožbo lahko vložite pri Informacijskem pooblaščencu Slovenije ali nadzornem organu v kraju običajnega prebivališča, zaposlitve ali domnevne kršitve. Ta spletna stran vašega kontaktnega sporočila ne uporablja za avtomatizirano odločanje s pravnimi ali podobno pomembnimi učinki."
+            }
+        }
+    }
 }

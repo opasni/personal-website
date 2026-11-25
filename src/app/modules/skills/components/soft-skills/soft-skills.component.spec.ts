@@ -1,3 +1,10 @@
+import { beforeEach, describe, expect, it } from 'vitest';
+import { provideHttpClientTesting } from '@angular/common/http/testing';
+import translations from '../../../../../assets/i18n/en.json';
+import { provideRouter } from '@angular/router';
+import { provideHttpClient } from '@angular/common/http';
+import { provideTranslateService, TranslateService } from '@ngx-translate/core';
+import { SkillsService } from '@lib/services/skills.service';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SoftSkillsComponent } from './soft-skills.component';
@@ -8,12 +15,22 @@ describe('SoftSkillsComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [SoftSkillsComponent],
+            providers: [
+                provideRouter([]),
+                provideHttpClient(),
+                provideHttpClientTesting(),
+                provideTranslateService(),
+                SkillsService,
+            ],
+            imports: [SoftSkillsComponent],
         }).compileComponents();
 
+        TestBed.inject(TranslateService).setTranslation('en', translations);
+        TestBed.inject(TranslateService).use('en');
         fixture = TestBed.createComponent(SoftSkillsComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
+        await fixture.whenStable();
     });
 
     it('should create', () => {

@@ -57,90 +57,6 @@ a {
     min-height: calc(100vh - 6rem);
 }
 
-:is(.route-enter-forward, .route-enter-backward, .route-leave-forward, .route-leave-backward) {
-    position: absolute;
-    top: 3rem;
-    left: 3rem;
-    width: calc(100% - 6rem);
-}
-
-.route-enter-forward {
-    animation: route-enter-from-bottom 0.8s ease-out;
-}
-
-.route-leave-forward {
-    animation: route-leave-to-top 0.8s ease-out;
-}
-
-.route-enter-backward {
-    animation: route-enter-from-top 0.8s ease-out;
-}
-
-.route-leave-backward {
-    animation: route-leave-to-bottom 0.8s ease-out;
-}
-
-@keyframes route-enter-from-bottom {
-    from {
-        transform: translateY(100%);
-        opacity: 1;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes route-leave-to-top {
-    from {
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-    to {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-}
-
-@keyframes route-enter-from-top {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes route-leave-to-bottom {
-    from {
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-    to {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-}
-
-@media (max-width: variables.$breakpoint-small) {
-    :is(.route-enter-forward, .route-enter-backward, .route-leave-forward, .route-leave-backward) {
-        left: 0;
-        width: 100%;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    :is(.route-enter-forward, .route-enter-backward, .route-leave-forward, .route-leave-backward) {
-        animation-duration: 1ms;
-    }
-}
-
 .card-header:first-child {
     border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
 }
@@ -374,54 +290,6 @@ app-header {
 
             .bottom-area {
                 display: list-item;
-
-                app-profile > ul .date {
-                    display: none;
-                }
-
-                app-profile > ul .nav-item {
-                    padding: 0.4em 0;
-                }
-
-                app-profile > ul .nav-link {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 0;
-                }
-
-                app-profile > ul .nav-link i {
-                    margin: 0;
-                    font-size: 1.1rem;
-                }
-
-                app-profile > ul .nav-link .settings-icon {
-                    display: inline-block;
-                    width: 1rem;
-                    height: 1rem;
-                    margin-left: 0;
-                    margin-right: 0;
-                }
-
-                app-profile .profile {
-                    min-width: auto;
-                    border: none !important;
-                    padding: 0 !important;
-                    margin-top: 0.8rem !important;
-                    justify-content: center;
-                }
-
-                app-profile .profile .profile-image-container {
-                    width: 42px;
-                }
-
-                app-profile .profile .profile-image-container.me-3 {
-                    margin-right: 0 !important;
-                }
-
-                app-profile .profile .w-100 {
-                    display: none;
-                }
             }
 
             &.sidebar-expanded {
@@ -448,51 +316,6 @@ app-header {
 
                 .bottom-area {
                     display: list-item;
-
-                    app-profile > ul .date {
-                        display: list-item;
-                    }
-
-                    app-profile > ul .nav-item {
-                        padding: 0;
-                    }
-
-                    app-profile > ul .nav-link {
-                        display: block;
-                        font-size: inherit;
-                    }
-
-                    app-profile > ul .nav-link i {
-                        margin-left: 1em;
-                        margin-right: 0.5em;
-                        padding: 0;
-                        font-size: inherit;
-                    }
-
-                    app-profile > ul .nav-link .settings-icon {
-                        margin-left: 1em;
-                        margin-right: 0.5em;
-                    }
-
-                    app-profile .profile {
-                        min-width: 190px;
-                        border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-                        padding: 0.5rem !important;
-                        margin-top: 1rem !important;
-                        justify-content: flex-start;
-                    }
-
-                    app-profile .profile .profile-image-container {
-                        width: 100px;
-                    }
-
-                    app-profile .profile .profile-image-container.me-3 {
-                        margin-right: 1rem !important;
-                    }
-
-                    app-profile .profile .w-100 {
-                        display: block;
-                    }
                 }
             }
         }
@@ -644,4 +467,27 @@ app-header {
             margin: 0 0.35rem 0.45rem 0;
         }
     }
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 105px;
+}
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+.portfolio main > :is(app-skills, app-experience, app-education, app-linkedin, app-contact, app-success) {
+    display: block;
+    max-width: 1160px;
+    margin: auto;
+    padding: 56px 24px;
+}
+.portfolio .container {
+    min-height: 0;
+}
+.portfolio :where(input, textarea, select, button):focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
 }

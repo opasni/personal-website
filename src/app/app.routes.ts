@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { PageBackboneComponent } from '@lib/components/page-backbone/page-backbone.component';
-import { ExportBackboneComponent } from '@lib/components/export-backbone/export-backbone.component';
 
 export const routes: Routes = [
     {
@@ -8,15 +7,27 @@ export const routes: Routes = [
         component: PageBackboneComponent,
         children: [
             {
+                path: 'imprint',
+                title: 'Črt Harej — Imprint',
+                loadComponent: async () => (await import('@pages/legal/legal.component')).LegalComponent,
+            },
+            {
+                path: 'privacy',
+                title: 'Črt Harej — Privacy / Datenschutz / Zasebnost',
+                data: { privacy: true },
+                loadComponent: async () => (await import('@pages/legal/legal.component')).LegalComponent,
+            },
+            { path: 'impressum', redirectTo: 'imprint', pathMatch: 'full' },
+            { path: 'datenschutz', redirectTo: 'privacy', pathMatch: 'full' },
+            {
                 path: '',
-                redirectTo: 'about',
-                pathMatch: 'full',
+                title: 'Črt Harej — Engineering, Architecture & Leadership',
+                loadComponent: async () => (await import('@pages/home/home.component')).HomeComponent,
             },
             {
                 path: 'about',
-                title: 'Črt Harej - About Me',
-                loadComponent: async () => (await import('@pages/about/about.component')).AboutComponent,
-                data: { animation: 0 },
+                redirectTo: '/#about',
+                pathMatch: 'full',
             },
             {
                 path: 'skills',
@@ -48,9 +59,8 @@ export const routes: Routes = [
             },
         ],
     },
-    {
-        path: 'export',
-        component: ExportBackboneComponent,
-        loadChildren: async () => (await import('@pages/export')).routes,
-    },
+    { path: 'export/cv', redirectTo: '/#contact', pathMatch: 'full' },
+    { path: 'export/cover-letter', redirectTo: '/#contact', pathMatch: 'full' },
+    { path: 'cv', redirectTo: '/#contact', pathMatch: 'full' },
+    { path: 'cover-letter', redirectTo: '/#contact', pathMatch: 'full' },
 ];

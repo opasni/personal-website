@@ -57,18 +57,4 @@
         <priority>0</priority>
     </url>
 
-    <!-- CV Page -->
-    <url>
-        <loc>https://crtharej.com/cv</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <!-- Cover Letter Page -->
-    <url>
-        <loc>https://crtharej.com/cover-letter</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0</priority>
-    </url>
-
 </urlset>

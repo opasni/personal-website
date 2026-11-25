@@ -5,7 +5,7 @@ import {
     provideAppInitializer,
     provideZonelessChangeDetection,
 } from '@angular/core';
-import { provideRouter, withComponentInputBinding, withInMemoryScrolling } from '@angular/router';
+import { provideRouter, withComponentInputBinding, withInMemoryScrolling, withRouterConfig } from '@angular/router';
 import { routes } from './app.routes';
 import { provideHttpClient, withXhr } from '@angular/common/http';
 import { provideTranslateService } from '@ngx-translate/core';
@@ -19,6 +19,7 @@ export const appConfig: ApplicationConfig = {
         provideRouter(
             routes,
             withComponentInputBinding(),
+            withRouterConfig({ onSameUrlNavigation: 'reload' }),
             withInMemoryScrolling({ scrollPositionRestoration: 'top', anchorScrolling: 'enabled' }),
         ),
         provideHttpClient(withXhr()),

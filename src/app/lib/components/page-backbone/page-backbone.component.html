@@ -1,13 +1,15 @@
-<div class="d-flex w-100 wrapper background-color" [ngClass]="selectedTheme() + '-theme'">
-    <app-gauge></app-gauge>
+<div class="portfolio" [class]="'portfolio ' + selectedTheme() + '-theme'">
     <app-header></app-header>
-
-    <div
-        #scrollingContainer
-        id="scrollingContainer"
-        class="w-100 p-sm-5 pt-5"
-        style="overflow-x: hidden; overflow-y: scroll; max-height: 100vh"
-    >
-        <router-outlet (activate)="scrollToTop(scrollingContainer)"></router-outlet>
-    </div>
+    <main id="main-content" tabindex="-1">
+        <router-outlet></router-outlet>
+    </main>
+    <footer class="site-footer">
+        <span>© {{ year }} Črt Harej</span>
+        <nav [attr.aria-label]="'legal.footer-nav' | translate">
+            <a routerLink="/linkedin">{{ 'home.footer.notes' | translate }}</a>
+            <a routerLink="/imprint">{{ 'legal.imprint.title' | translate }}</a>
+            <a routerLink="/privacy">{{ 'legal.privacy.title' | translate }}</a>
+            <a routerLink="/" fragment="about">{{ 'home.footer.top' | translate }}</a>
+        </nav>
+    </footer>
 </div>

@@ -4,6 +4,7 @@ import tseslint from 'typescript-eslint';
 import angular from 'angular-eslint';
 import stylistic from '@stylistic/eslint-plugin';
 import prettier from 'eslint-config-prettier';
+import vitest from '@vitest/eslint-plugin';
 
 export default defineConfig([
     globalIgnores(['projects/**/*', 'e2e/**/*']),
@@ -100,6 +101,7 @@ export default defineConfig([
                     after: true,
                 },
             ],
+            '@stylistic/arrow-spacing': ['error', { before: true, after: true }],
             '@stylistic/indent': ['error', 4],
 
             '@typescript-eslint/member-ordering': [
@@ -288,11 +290,15 @@ export default defineConfig([
         },
     },
     {
+        files: ['**/*.spec.ts'],
+        plugins: { vitest },
+        rules: {
+            ...vitest.configs.recommended.rules,
+        },
+    },
+    {
         files: ['**/*.html'],
-        extends: [
-            ...angular.configs.templateRecommended,
-            ...angular.configs.templateAccessibility,
-        ],
+        extends: [...angular.configs.templateRecommended, ...angular.configs.templateAccessibility],
 
         rules: {
             '@angular-eslint/template/eqeqeq': [
