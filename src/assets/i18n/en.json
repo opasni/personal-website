@@ -522,14 +522,14 @@
             }
         },
         "subject": {
-            "label": "Why do you want to get in contact?",
-            "placeholder": "I am contacting you because... (please choose one)",
+            "label": "What would you like to discuss?",
+            "placeholder": "Choose a topic",
             "option": {
-                "freelance": "I need something done.",
-                "offering-position": "I would like to offer you a job.",
-                "technical-advice": "I need a technical advice.",
-                "seeking-job": "I am searching for a job.",
-                "other": "Just want to chat."
+                "freelance": "Projects & collaboration",
+                "offering-position": "Career opportunities",
+                "technical-advice": "Technical advice",
+                "books": "Books & technical editing",
+                "other": "Something else"
             },
             "error": {
                 "required": "Please select a purpose of contact."
