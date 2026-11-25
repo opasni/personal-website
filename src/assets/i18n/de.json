@@ -523,14 +523,14 @@
             }
         },
         "subject": {
-            "label": "Warum möchten Sie Kontakt aufnehmen?",
-            "placeholder": "Ich nehme Kontakt auf, weil... (bitte wählen Sie eine Option)",
+            "label": "Worum geht es?",
+            "placeholder": "Thema auswählen",
             "option": {
-                "freelance": "Ich benötige eine Dienstleistung.",
-                "offering-position": "Ich möchte Ihnen einen Job anbieten.",
-                "technical-advice": "Ich benötige technische Beratung.",
-                "seeking-job": "Ich suche nach einer Stelle.",
-                "other": "Ich möchte nur plaudern."
+                "freelance": "Projekte & Zusammenarbeit",
+                "offering-position": "Berufliche Möglichkeiten",
+                "technical-advice": "Technische Beratung",
+                "books": "Bücher & technische Redaktion",
+                "other": "Etwas anderes"
             },
             "error": {
                 "required": "Bitte wählen Sie einen Zweck aus."
