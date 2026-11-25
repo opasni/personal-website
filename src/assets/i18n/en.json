@@ -22,99 +22,6 @@
             "I communicate fluently in Slovenian, English, and German, and I enjoy working with international teams where technical depth, clear decisions, and trust matter. Outside work, music, sport, chess, climbing, and travel keep me balanced and curious."
         ]
     },
-    "cv": {
-        "menu-item": "Generate CV",
-        "profile-label": "Executive Profile",
-        "positioning": "Technology Executive | Cloud & Platform Engineer | Solution Architect",
-        "about": "I am a <b>technology executive</b>, <b>cloud and platform engineer</b>, and <b>solution architect</b> with 10+ years of experience across software engineering, DevOps, analytics, AI tooling, and delivery leadership. As <b>Partner at 8020 Consulting GmbH</b> and <b>CEO of Achtzig20 d.o.o.</b>, I combine hands-on technical depth with commercial responsibility, team leadership, and stakeholder management.",
-        "about-tech": "My name is <b>Črt</b> (pronounced “Chert”). I design, build, and operate scalable software platforms across <b>AWS, Azure, microservices, APIs, event-driven integrations, data pipelines, and AI-supported systems</b>. I move comfortably between architecture, implementation, DevOps, testing, observability, and consulting, with a strong bias toward production-ready systems that are clear to maintain.",
-        "about-lead": "Technology executive, <b>AWS Certified Solutions Architect – Professional</b>, and hands-on cloud/platform engineer with 10+ years of experience delivering business-critical systems. As <b>Partner at 8020 Consulting GmbH</b> and <b>CEO of Achtzig20 d.o.o.</b>, I connect architecture and engineering depth with delivery leadership, stakeholder trust, and company growth.",
-        "selected-impact": {
-            "title": "Selected Impact",
-            "items": [
-                "Lead technology strategy, delivery quality, capability building, and executive decision-making across consulting engagements and internal products.",
-                "Design and operate cloud platforms, distributed systems, APIs, and event-driven integrations across AWS and Azure.",
-                "Implemented an <b>MCP integration</b> connecting an internal Copilot agent to the Squadcheck organizational and project-planning platform."
-            ]
-        },
-        "focus": {
-            "title": "Core Profile",
-            "executive": {
-                "title": "Technology Executive",
-                "details": "Strategy, delivery leadership, teams & growth"
-            },
-            "cloud": {
-                "title": "Cloud & Platform Engineer",
-                "details": "AWS, Azure, Kubernetes, IaC & DevOps"
-            },
-            "architecture": {
-                "title": "Solution Architect",
-                "details": "Distributed systems, APIs & integrations"
-            }
-        },
-        "experience": {
-            "8020": {
-                "summary": [
-                    "Drive company growth, consulting strategy, delivery quality, capability building, and executive decision-making across client work and internal initiatives.",
-                    "Lead and shape transformative projects including <b>Catena-X, Bloomfilter integrations, JobCar & Caroline, AI-guided automation, cloud platforms, and the 8020 AI Agent</b>."
-                ]
-            },
-            "achtzig20si": {
-                "summary": [
-                    "Established and operationally manage the Slovenian subsidiary, including recruitment, team development, local partnerships, and delivery alignment.",
-                    "Built the foundation for a reliable engineering organization connected to the wider 8020 group strategy."
-                ]
-            },
-            "achtzig20": {
-                "summary": [
-                    "Led software architecture, development processes, DevOps, and production delivery across web, desktop, mobile, cloud, and data-heavy systems.",
-                    "Delivered strategic work for <b>VW Group brands, CARIAD, Audi, Porsche, BMW, DZ Bank, Graf Hardenberg, DAK Coffee Roasters, Scania, and internal 8020 platforms</b>.",
-                    "Key themes: <i>microservices, cloud platforms, API integrations, AI tools, process mining, analytics, automated testing, and observability</i>."
-                ],
-                "intern-roles": [
-                    {
-                        "role": "CTO @ newonads GmbH",
-                        "duration": "11/2021 – 09/2024",
-                        "description": "Led the architecture and development of a SaaS digital advertising platform, focusing on brand engagement, lead generation, and revenue growth."
-                    },
-                    {
-                        "role": "CTO @ Studio3 GmbH",
-                        "duration": "10/2022 – 09/2024",
-                        "description": "Developed a web3-based community management platform, enhancing agency-client interactions while minimizing security risks."
-                    }
-                ]
-            },
-            "akka": {
-                "summary": [
-                    "Developed carship.online, focusing on software development and user flow design.",
-                    "Conception and implementation of training courses in the areas of data analytics and blockchain.",
-                    "Analyzed AUDI vehicles' resale prices, emphasizing the impact of optional features."
-                ]
-            },
-            "institute-js": {
-                "summary": [
-                    "Acquired skills in data analysis, C++ programming, running simulations, and data interpretation and completed a 6-month internship in Mainz Microtron."
-                ]
-            }
-        },
-        "education": {
-            "masters": {
-                "title": "MSc in Mathematical Physics",
-                "summary": [
-                    "GPA: 9.0 (Equivalent to A in USA, 1.7 in Germany)",
-                    "Thesis: \"Establishment of an Experiment for Measuring the Axial Form Factor of the Proton\""
-                ]
-            },
-            "bachelor": {
-                "title": "BSc in General Physics",
-                "summary": [
-                    "GPA: 8.3 (Equivalent to A in USA, 2.3 in Germany)",
-                    "Diverse coursework: astronomy, geophysics, electronics, computational physics.",
-                    "Thesis: \"Bariogenesis via Leptogenesis\""
-                ]
-            }
-        }
-    },
     "skills": {
         "menu-item": "Skills",
         "title": "Skills",
@@ -660,7 +567,6 @@
     },
     "accessibility": {
         "buttons": {
-            "export-pdf": "Export to PDF",
             "menu-open": "Open Menu",
             "menu-close": "Close Menu",
             "send-contact": "Send",
@@ -670,7 +576,6 @@
             "profile": "Profile picture"
         }
     },
-    "insert-password": "Insert Password",
     "home": {
         "skip": "Skip to content",
         "menu": "Menu",
@@ -784,7 +689,6 @@
             "title": "Let’s make something useful.",
             "intro": "Have a technical challenge, a project in mind, or an idea worth discussing? I’d be happy to hear from you.",
             "linkedin": "Connect on LinkedIn",
-            "cv": "View my CV",
             "write": "Prefer a message? Write to me here."
         },
         "footer": {
@@ -832,7 +736,7 @@
             },
             "storage": {
                 "title": "Local storage and cookies",
-                "body": "This application does not include analytics or advertising trackers. Fonts are served with the website. Your chosen language and appearance are stored in your browser’s local storage under “language” and “theme”. Protected document access can also store an access key under “accessKey”. These entries support the preferences and access you request and remain until replaced or removed through your browser settings. The proposed basis for this functional processing is Article 6(1)(f) GDPR. Third-party services may process additional data as described below and in their own notices; the absence of analytics does not mean that no personal data is processed."
+                "body": "This application does not include analytics or advertising trackers. Fonts are served with the website. Your chosen language and appearance are stored in your browser’s local storage under “language” and “theme”. These entries support the preferences and access you request and remain until replaced or removed through your browser settings. The proposed basis for this functional processing is Article 6(1)(f) GDPR. Third-party services may process additional data as described below and in their own notices; the absence of analytics does not mean that no personal data is processed."
             },
             "linkedin": {
                 "title": "Optional LinkedIn posts and external links",

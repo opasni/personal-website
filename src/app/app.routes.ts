@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { PageBackboneComponent } from '@lib/components/page-backbone/page-backbone.component';
-import { ExportBackboneComponent } from '@lib/components/export-backbone/export-backbone.component';
 
 export const routes: Routes = [
     {
@@ -60,9 +59,8 @@ export const routes: Routes = [
             },
         ],
     },
-    {
-        path: 'export',
-        component: ExportBackboneComponent,
-        loadChildren: async () => (await import('@pages/export')).routes,
-    },
+    { path: 'export/cv', redirectTo: '/#contact', pathMatch: 'full' },
+    { path: 'export/cover-letter', redirectTo: '/#contact', pathMatch: 'full' },
+    { path: 'cv', redirectTo: '/#contact', pathMatch: 'full' },
+    { path: 'cover-letter', redirectTo: '/#contact', pathMatch: 'full' },
 ];

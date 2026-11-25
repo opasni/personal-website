@@ -22,99 +22,6 @@
             "Tekoče komuniciram v slovenščini, angleščini in nemščini ter rad delam v mednarodnih ekipah, kjer štejejo tehnična globina, jasne odločitve in zaupanje. Glasba, šport, šah, plezanje in potovanja skrbijo za ravnovesje in radovednost."
         ]
     },
-    "cv": {
-        "menu-item": "Ustvari življenjepis",
-        "profile-label": "Izvršni profil",
-        "positioning": "Technology Executive | Cloud & Platform Engineer | Solution Architect",
-        "about": "Sem <b>tehnološki vodja</b>, <b>cloud in platform engineer</b> ter <b>arhitekt rešitev</b> z več kot 10 leti izkušenj na področjih razvoja programske opreme, DevOps, analitike, AI-podprtih orodij in vodenja izvedbe. Kot <b>partner v 8020 Consulting GmbH</b> in <b>direktor Achtzig20 d.o.o.</b> povezujem tehnično globino s poslovno odgovornostjo, vodenjem ekip in upravljanjem deležnikov.",
-        "about-tech": "Moje ime je <b>Črt</b>. Načrtujem, razvijam in upravljam razširljive programske platforme na osnovi <b>AWS, Azure, mikrostoritev, API-jev, event-driven integracij, podatkovnih tokov in AI-podprtih sistemov</b>. Dobro se znajdem med arhitekturo, implementacijo, DevOps, testiranjem, observability in svetovanjem.",
-        "about-lead": "Tehnološki vodja, <b>AWS Certified Solutions Architect – Professional</b> in praktično usmerjen cloud/platform engineer z več kot 10 leti izkušenj pri izvedbi poslovno kritičnih sistemov. Kot <b>partner v 8020 Consulting GmbH</b> in <b>direktor Achtzig20 d.o.o.</b> povezujem arhitekturno in inženirsko globino z vodenjem izvedbe, zaupanjem deležnikov in rastjo podjetja.",
-        "selected-impact": {
-            "title": "Izbrani dosežki",
-            "items": [
-                "Vodenje tehnološke strategije, kakovosti izvedbe, razvoja kompetenc in ključnih odločitev v svetovalnih projektih ter internih produktih.",
-                "Načrtovanje in upravljanje cloud platform, distribuiranih sistemov, API-jev in event-driven integracij na AWS in Azure.",
-                "Implementacija <b>MCP-integracije</b>, ki internega Copilot agenta povezuje s platformo Squadcheck za organizacijsko in projektno planiranje."
-            ]
-        },
-        "focus": {
-            "title": "Ključni profil",
-            "executive": {
-                "title": "Technology Executive",
-                "details": "Strategija, vodenje izvedbe, ekipe in rast"
-            },
-            "cloud": {
-                "title": "Cloud & Platform Engineer",
-                "details": "AWS, Azure, Kubernetes, IaC in DevOps"
-            },
-            "architecture": {
-                "title": "Solution Architect",
-                "details": "Distribuirani sistemi, API-ji in integracije"
-            }
-        },
-        "experience": {
-            "8020": {
-                "summary": [
-                    "Vodenje rasti podjetja, svetovalne strategije, kakovosti izvedbe, razvoja kompetenc in ključnih odločitev v projektih za naročnike ter internih pobudah.",
-                    "Vodenje in oblikovanje transformativnih projektov, kot so <b>Catena-X, Bloomfilter integracije, JobCar & Caroline, AI-podprta avtomatizacija, cloud platforme in 8020 AI Agent</b>."
-                ]
-            },
-            "achtzig20si": {
-                "summary": [
-                    "Ustanovitev in operativno vodenje slovenske hčerinske družbe, vključno z zaposlovanjem, razvojem ekipe, lokalnimi partnerstvi in usklajevanjem izvedbe.",
-                    "Vzpostavitev temeljev za zanesljivo inženirsko organizacijo znotraj skupine 8020."
-                ]
-            },
-            "achtzig20": {
-                "summary": [
-                    "Tehnično vodenje arhitekture, razvojnih procesov, DevOps in produkcijske izvedbe za web, desktop, mobile, cloud in podatkovno intenzivne sisteme.",
-                    "Izvedba strateškega dela za <b>znamke skupine VW, CARIAD, Audi, Porsche, BMW, DZ Bank, Graf Hardenberg, DAK Coffee Roasters, Scania in interne 8020 platforme</b>.",
-                    "Ključne teme: <i>mikrostoritve, cloud platforme, API integracije, AI orodja, process mining, analitika, avtomatizirano testiranje in observability</i>."
-                ],
-                "intern-roles": [
-                    {
-                        "role": "CTO @ newonads GmbH",
-                        "duration": "11/2021 – 09/2024",
-                        "description": "Vodil arhitekturo in razvoj SaaS digitalne oglaševalske platforme s poudarkom na angažiranosti blagovnih znamk, pridobivanju potencialnih strank in rasti prihodkov."
-                    },
-                    {
-                        "role": "CTO @ Studio3 GmbH",
-                        "duration": "10/2022 – 09/2024",
-                        "description": "Razvil platformo za upravljanje skupnosti na osnovi Web3, ki izboljšuje interakcijo med agencijami in strankami ter hkrati zmanjšuje varnostna tveganja."
-                    }
-                ]
-            },
-            "akka": {
-                "summary": [
-                    "Razvoj carship.online s poudarkom na programskem razvoju in oblikovanju uporabniškega toka.",
-                    "Zasnova in izvedba izobraževanj na področju analitike podatkov in blockchain tehnologije.",
-                    "Analiza preprodajnih cen vozil AUDI s poudarkom na vplivu dodatne opreme."
-                ]
-            },
-            "institute-js": {
-                "summary": [
-                    "Pridobljeno znanje iz analize podatkov, programiranja v C++, izvajanja simulacij in interpretacije podatkov ter zaključeno 6-mesečno prakso v pospeševalniku Mainz Microtron."
-                ]
-            }
-        },
-        "education": {
-            "masters": {
-                "title": "Mag. matematične fizike",
-                "summary": [
-                    "Povprečna ocena: 9,0 (enakovredno oceni A v ZDA, 1,7 v Nemčiji)",
-                    "Magistrska naloga: »Vzpostavitev eksperimenta za merjenje aksialnega formnega faktorja protona«"
-                ]
-            },
-            "bachelor": {
-                "title": "Univ. dipl. splošne fizike",
-                "summary": [
-                    "Povprečna ocena: 8,3 (enakovredno oceni A v ZDA, 2,3 v Nemčiji)",
-                    "Raznolik študij: astronomija, geofizika, elektronika, računalniška fizika.",
-                    "Diplomska naloga: »Bariogeneza prek leptogeneze«"
-                ]
-            }
-        }
-    },
     "skills": {
         "menu-item": "Spretnosti",
         "title": "Spretnosti",
@@ -654,7 +561,6 @@
     },
     "accessibility": {
         "buttons": {
-            "export-pdf": "Izvozi v PDF",
             "menu-open": "Odpri menu",
             "menu-close": "Zapri menu",
             "send-contact": "Pošlji",
@@ -664,7 +570,6 @@
             "profile": "Profilna Slika"
         }
     },
-    "insert-password": "Vnesite Geslo",
     "home": {
         "skip": "Preskoči na vsebino",
         "menu": "Meni",
@@ -778,7 +683,6 @@
             "title": "Ustvarimo nekaj uporabnega.",
             "intro": "Imate tehnični izziv, projekt ali idejo, o kateri bi se bilo vredno pogovoriti? Vesel bom vašega sporočila.",
             "linkedin": "Povežimo se na LinkedInu",
-            "cv": "Ogled življenjepisa",
             "write": "Raje pošljete sporočilo? Pišite mi tukaj."
         },
         "footer": {
@@ -826,7 +730,7 @@
             },
             "storage": {
                 "title": "Lokalna shramba in piškotki",
-                "body": "Aplikacija ne vključuje analitičnih ali oglaševalskih sledilnikov. Pisave se nalagajo s spletne strani. Izbrani jezik in videz se shranita v lokalno shrambo brskalnika pod ključema »language« in »theme«. Dostop do zaščitenih dokumentov lahko shrani tudi dostopni ključ »accessKey«. Ti vnosi podpirajo nastavitve in dostop, ki jih zahtevate, ter ostanejo do zamenjave ali izbrisa v nastavitvah brskalnika. Za to funkcionalno obdelavo je predvidena podlaga po členu 6(1)(f) GDPR. Zunanje storitve lahko obdelujejo dodatne podatke, kot je opisano spodaj in v njihovih obvestilih; odsotnost analitike ne pomeni odsotnosti obdelave osebnih podatkov."
+                "body": "Aplikacija ne vključuje analitičnih ali oglaševalskih sledilnikov. Pisave se nalagajo s spletne strani. Izbrani jezik in videz se shranita v lokalno shrambo brskalnika pod ključema »language« in »theme«. Ti vnosi podpirajo nastavitve in dostop, ki jih zahtevate, ter ostanejo do zamenjave ali izbrisa v nastavitvah brskalnika. Za to funkcionalno obdelavo je predvidena podlaga po členu 6(1)(f) GDPR. Zunanje storitve lahko obdelujejo dodatne podatke, kot je opisano spodaj in v njihovih obvestilih; odsotnost analitike ne pomeni odsotnosti obdelave osebnih podatkov."
             },
             "linkedin": {
                 "title": "Izbirne objave LinkedIn in zunanje povezave",

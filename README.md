@@ -36,18 +36,18 @@ Both workflows use the GitHub `production` environment and AWS OIDC authenticati
 
 Set these GitHub environment variables:
 
-| Variable | Value |
-| --- | --- |
-| `AWS_ACCOUNT_ID` | Target AWS account ID |
-| `AWS_OIDC_ROLE_NAME` | Deployment role name |
-| `AWS_DEFAULT_REGION` | Deployment region, e.g. `eu-central-1` |
-| `S3_BUCKET_NAME` | Website bucket |
-| `CLOUDFRONT_DISTRIBUTION_ID` | Website distribution ID |
-| `API_URL` | Contact API **base** URL, without `/contact` or a trailing slash |
-| `TURNSTILE_SITE_KEY` | Public production Turnstile site key |
-| `CONTACT_ALLOWED_ORIGIN` | Exact website HTTPS origin, without a trailing slash |
-| `CONTACT_TO_EMAIL` | Mailbox receiving enquiries |
-| `SES_FROM_EMAIL` | Sender verified in SES in the deployment region |
+| Variable                     | Value                                                            |
+| ---------------------------- | ---------------------------------------------------------------- |
+| `AWS_ACCOUNT_ID`             | Target AWS account ID                                            |
+| `AWS_OIDC_ROLE_NAME`         | Deployment role name                                             |
+| `AWS_DEFAULT_REGION`         | Deployment region, e.g. `eu-central-1`                           |
+| `S3_BUCKET_NAME`             | Website bucket                                                   |
+| `CLOUDFRONT_DISTRIBUTION_ID` | Website distribution ID                                          |
+| `API_URL`                    | Contact API **base** URL, without `/contact` or a trailing slash |
+| `TURNSTILE_SITE_KEY`         | Public production Turnstile site key                             |
+| `CONTACT_ALLOWED_ORIGIN`     | Exact website HTTPS origin, without a trailing slash             |
+| `CONTACT_TO_EMAIL`           | Mailbox receiving enquiries                                      |
+| `SES_FROM_EMAIL`             | Sender verified in SES in the deployment region                  |
 
 Set `TURNSTILE_SECRET_KEY` as a GitHub environment **secret**. Configure the Turnstile widget for the production hostname, using Managed mode without pre-clearance.
 

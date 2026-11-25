@@ -25,12 +25,7 @@
                         "tsConfig": "tsconfig.app.json",
                         "inlineStyleLanguage": "scss",
                         "assets": ["src/favicon.ico", "src/assets", "src/robots.txt", "src/sitemap.xml"],
-                        "styles": [
-                            "node_modules/bootstrap-icons/font/bootstrap-icons.css",
-                            "node_modules/bootstrap-print-css/css/bootstrap-print.css",
-                            "node_modules/paper-css/paper.css",
-                            "src/styles/styles.scss"
-                        ],
+                        "styles": ["node_modules/bootstrap-icons/font/bootstrap-icons.css", "src/styles/styles.scss"],
                         "scripts": [],
                         "browser": "src/main.ts",
                         "stylePreprocessorOptions": {

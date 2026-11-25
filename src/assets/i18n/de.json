@@ -22,99 +22,6 @@
             "Ich kommuniziere fließend auf Slowenisch, Englisch und Deutsch und arbeite gerne in internationalen Teams, in denen technische Tiefe, klare Entscheidungen und Vertrauen zählen. Musik, Sport, Schach, Klettern und Reisen halten mich neugierig und ausgeglichen."
         ]
     },
-    "cv": {
-        "menu-item": "Lebenslauf erstellen",
-        "profile-label": "Executive-Profil",
-        "positioning": "Technology Executive | Cloud & Platform Engineer | Solution Architect",
-        "about": "Ich bin <b>Technology Executive</b>, <b>Cloud- und Platform Engineer</b> sowie <b>Solution Architect</b> mit über 10 Jahren Erfahrung in Software Engineering, DevOps, Analytics, AI-gestützten Tools und Delivery Leadership. Als <b>Partner bei 8020 Consulting GmbH</b> und <b>CEO der Achtzig20 d.o.o.</b> verbinde ich technische Tiefe mit kommerzieller Verantwortung, Teamführung und Stakeholder-Management.",
-        "about-tech": "Mein Name ist <b>Črt</b> (ausgesprochen „Chert“). Ich konzipiere, entwickle und betreibe skalierbare Softwareplattformen auf Basis von <b>AWS, Azure, Microservices, APIs, event-getriebenen Integrationen, Datenpipelines und AI-gestützten Systemen</b>. Ich bewege mich sicher zwischen Architektur, Implementierung, DevOps, Testing, Observability und Beratung.",
-        "about-lead": "Technology Executive, <b>AWS Certified Solutions Architect – Professional</b> und hands-on Cloud/Platform Engineer mit über 10 Jahren Erfahrung in der Umsetzung geschäftskritischer Systeme. Als <b>Partner bei 8020 Consulting GmbH</b> und <b>CEO der Achtzig20 d.o.o.</b> verbinde ich Architektur- und Engineering-Tiefe mit Delivery Leadership, Stakeholder-Vertrauen und Unternehmenswachstum.",
-        "selected-impact": {
-            "title": "Ausgewählte Wirkung",
-            "items": [
-                "Verantwortung für Technologiestrategie, Delivery-Qualität, Kompetenzaufbau und Executive-Entscheidungen in Beratungsprojekten und internen Produkten.",
-                "Konzeption und Betrieb von Cloud-Plattformen, verteilten Systemen, APIs und event-getriebenen Integrationen auf AWS und Azure.",
-                "Implementierung einer <b>MCP-Integration</b>, die einen internen Copilot-Agenten mit der Squadcheck-Plattform für Organisations- und Projektplanung verbindet."
-            ]
-        },
-        "focus": {
-            "title": "Kernprofil",
-            "executive": {
-                "title": "Technology Executive",
-                "details": "Strategie, Delivery Leadership, Teams & Wachstum"
-            },
-            "cloud": {
-                "title": "Cloud & Platform Engineer",
-                "details": "AWS, Azure, Kubernetes, IaC & DevOps"
-            },
-            "architecture": {
-                "title": "Solution Architect",
-                "details": "Verteilte Systeme, APIs & Integrationen"
-            }
-        },
-        "experience": {
-            "8020": {
-                "summary": [
-                    "Verantwortung für Unternehmenswachstum, Beratungsstrategie, Delivery-Qualität, Kompetenzaufbau und Executive-Entscheidungen in Kundenprojekten und internen Initiativen.",
-                    "Leitung und Gestaltung transformativer Projekte wie <b>Catena-X, Bloomfilter-Integrationen, JobCar & Caroline, AI-gestützte Automatisierung, Cloud-Plattformen und 8020 AI Agent</b>."
-                ]
-            },
-            "achtzig20si": {
-                "summary": [
-                    "Gründung und operative Leitung der slowenischen Tochtergesellschaft inklusive Recruiting, Teamentwicklung, lokaler Partnerschaften und Delivery-Alignment.",
-                    "Aufbau der Grundlage für eine zuverlässige Engineering-Organisation innerhalb der 8020-Gruppe."
-                ]
-            },
-            "achtzig20": {
-                "summary": [
-                    "Technische Leitung für Softwarearchitektur, Entwicklungsprozesse, DevOps und Produktionsbetrieb über Web-, Desktop-, Mobile-, Cloud- und datenintensive Systeme hinweg.",
-                    "Umsetzung strategischer Arbeit für <b>VW-Konzernmarken, CARIAD, Audi, Porsche, BMW, DZ Bank, Graf Hardenberg, DAK Coffee Roasters, Scania und interne 8020-Plattformen</b>.",
-                    "Schwerpunkte: <i>Microservices, Cloud-Plattformen, API-Integrationen, AI-Tools, Process Mining, Analytics, automatisiertes Testing und Observability</i>."
-                ],
-                "intern-roles": [
-                    {
-                        "role": "CTO @ newonads GmbH",
-                        "duration": "11/2021 – 09/2024",
-                        "description": "Leitung der Architektur und Entwicklung einer SaaS-Digitalwerbeplattform mit Schwerpunkt auf Markenbindung, Leadgenerierung und Umsatzsteigerung."
-                    },
-                    {
-                        "role": "CTO @ Studio3 GmbH",
-                        "duration": "10/2022 – 09/2024",
-                        "description": "Entwicklung einer Web3-basierten Community-Management-Plattform zur Verbesserung der Agentur-Kunden-Interaktionen bei gleichzeitiger Minimierung von Sicherheitsrisiken."
-                    }
-                ]
-            },
-            "akka": {
-                "summary": [
-                    "Entwicklung von carship.online mit Schwerpunkt auf Softwareentwicklung und Gestaltung des Nutzerflusses.",
-                    "Konzeption und Durchführung von Schulungen in den Bereichen Datenanalyse und Blockchain.",
-                    "Analyse der Wiederverkaufspreise von AUDI-Fahrzeugen mit Fokus auf die Auswirkungen von Sonderausstattungen."
-                ]
-            },
-            "institute-js": {
-                "summary": [
-                    "Erworbenes Wissen in Datenanalyse, C++-Programmierung, Durchführung von Simulationen und Dateninterpretation sowie Abschluss eines 6-monatigen Praktikums im Mainz Microtron."
-                ]
-            }
-        },
-        "education": {
-            "masters": {
-                "title": "M.Sc. in Mathematischer Physik",
-                "summary": [
-                    "Notendurchschnitt: 9,0 (entspricht A in den USA, 1,7 in Deutschland)",
-                    "Masterarbeit: <i>„Aufbau eines Experiments zur Messung des axialen Formfaktors des Protons“</i>"
-                ]
-            },
-            "bachelor": {
-                "title": "B.Sc. in Allgemeiner Physik",
-                "summary": [
-                    "Notendurchschnitt: 8,3 (entspricht A in den USA, 2,3 in Deutschland)",
-                    "Vielfältige Kurse: Astronomie, Geophysik, Elektronik, Rechnergestützte Physik.",
-                    "Bachelorarbeit: „Baryogenese durch Leptogenese“"
-                ]
-            }
-        }
-    },
     "skills": {
         "menu-item": "Fähigkeiten",
         "title": "Fähigkeiten",
@@ -661,7 +568,6 @@
     },
     "accessibility": {
         "buttons": {
-            "export-pdf": "Als PDF exportieren",
             "menu-open": "Menü öffnen",
             "menu-close": "Menü schließen",
             "send-contact": "Senden",
@@ -671,7 +577,6 @@
             "profile": "Profilbild"
         }
     },
-    "insert-password": "Passwort einfügen",
     "home": {
         "skip": "Zum Inhalt springen",
         "menu": "Menü",
@@ -785,7 +690,6 @@
             "title": "Gemeinsam etwas Sinnvolles schaffen.",
             "intro": "Eine technische Herausforderung, ein Projekt oder eine Idee, über die es sich zu sprechen lohnt? Ich freue mich auf den Austausch.",
             "linkedin": "Auf LinkedIn vernetzen",
-            "cv": "Lebenslauf ansehen",
             "write": "Lieber eine Nachricht? Hier schreiben."
         },
         "footer": {
@@ -833,7 +737,7 @@
             },
             "storage": {
                 "title": "Lokaler Speicher und Cookies",
-                "body": "Diese Anwendung enthält keine Analyse- oder Werbetracker. Schriftarten werden mit der Website ausgeliefert. Die gewählte Sprache und Darstellung werden im lokalen Browserspeicher unter „language“ und „theme“ gespeichert. Beim Zugriff auf geschützte Dokumente kann zusätzlich ein Zugangsschlüssel unter „accessKey“ gespeichert werden. Diese Einträge unterstützen die von Ihnen gewählten Einstellungen und Zugriffe und bleiben bestehen, bis sie ersetzt oder in den Browsereinstellungen gelöscht werden. Als Grundlage für diese funktionale Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO vorgesehen. Drittanbieter können weitere Daten wie nachfolgend und in ihren eigenen Hinweisen beschrieben verarbeiten; der Verzicht auf Analysewerkzeuge bedeutet nicht, dass keine personenbezogenen Daten verarbeitet werden."
+                "body": "Diese Anwendung enthält keine Analyse- oder Werbetracker. Schriftarten werden mit der Website ausgeliefert. Die gewählte Sprache und Darstellung werden im lokalen Browserspeicher unter „language“ und „theme“ gespeichert. Diese Einträge unterstützen die von Ihnen gewählten Einstellungen und Zugriffe und bleiben bestehen, bis sie ersetzt oder in den Browsereinstellungen gelöscht werden. Als Grundlage für diese funktionale Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO vorgesehen. Drittanbieter können weitere Daten wie nachfolgend und in ihren eigenen Hinweisen beschrieben verarbeiten; der Verzicht auf Analysewerkzeuge bedeutet nicht, dass keine personenbezogenen Daten verarbeitet werden."
             },
             "linkedin": {
                 "title": "Optionale LinkedIn-Beiträge und externe Links",

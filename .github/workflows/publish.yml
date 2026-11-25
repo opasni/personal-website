@@ -38,13 +38,13 @@ jobs:
 
             - name: Set production environment
               env:
-                API_URL: ${{ vars.API_URL }}
-                TURNSTILE_SITE_KEY: ${{ vars.TURNSTILE_SITE_KEY }}
+                  API_URL: ${{ vars.API_URL }}
+                  TURNSTILE_SITE_KEY: ${{ vars.TURNSTILE_SITE_KEY }}
               run: |
-                sed -i \
-                  -e "s|apiUrl: ''|apiUrl: '${API_URL}'|" \
-                  -e "s|turnstileSiteKey: ''|turnstileSiteKey: '${TURNSTILE_SITE_KEY}'|" \
-                  src/environments/environment.prod.ts
+                  sed -i \
+                    -e "s|apiUrl: ''|apiUrl: '${API_URL}'|" \
+                    -e "s|turnstileSiteKey: ''|turnstileSiteKey: '${TURNSTILE_SITE_KEY}'|" \
+                    src/environments/environment.prod.ts
 
             - name: Setup Node
               uses: actions/setup-node@v5
